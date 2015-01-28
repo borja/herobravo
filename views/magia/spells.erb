@@ -1,0 +1,35 @@
+<%= erb :menu %><br>
+<h1>Hechizos de <%= @heroe.name %></h1>
+
+<% unless @heroe.elementos.empty? %>
+	<table id='table-2'>
+		<thead>
+			<th>Icono</th>
+			<th>Elemento</th>
+			<th>Nivel</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+		</thead>
+		<tbody>
+			<% leyes.each do |ley| %>
+				<% if h = @heroe.send(ley[:nombre]) %>
+					<% h.each do |magia|%>	
+						<% m = send(ley[:method], magia) %>
+						<tr style=<%= m.color %>>				
+							<td><% img_path = "'../../images/spells/#{m.name}.png'" %>
+								<img src=<%= img_path %> alt=<%= m.name %>, id='icon' />
+							</td>
+							<td><%= m.elemento.capitalize %></td>
+							<td><%= m.nivel %></td>
+							<td><%= m.name.capitalize %></td>
+							<td><%= m.efecto %></td>
+						</tr>
+					<% end %>
+				<% end %>
+			<% end %>
+		</tbody>
+	</table>
+<% else %>
+	<h3>El personaje no conoce ningun hechizo.</h3>
+<% end %>
+<br>

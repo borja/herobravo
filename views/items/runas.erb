@@ -1,0 +1,34 @@
+<title>Herosheet: Runas</title>
+<%= erb :menu %><br>
+<h1>Lista de Runas</h1>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>1D12</th>
+			<th>Nombre</th>
+			<% runa_ranuras.each do |ranura| %>
+				<th><%= ranura %></th>
+			<% end %>	
+		</tr>	
+	</thead>
+	<tbody>
+		<% runas.each do |r| %>
+			<tr>
+				<td><%= r.id + 1 %></td>
+				<td><%= r.name.upcase %></td>
+				<% runa_ranuras.each do |ranura| %>
+					<% if r.fits[ranura.to_sym] %>
+						<td><%= erb :'display/display', :locals => { 
+								:title       => r.name.upcase, 
+								:path        => r.img_path,
+								:description => r.fits[ranura.to_sym] } %></td>
+					<% else %>
+						<td><%= "x" %></td>
+					<% end %>
+				<% end %>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<br>

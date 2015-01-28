@@ -1,0 +1,30 @@
+<title>Herosheet: Lista de protecciones</title>
+<%= erb :menu %><br>
+
+<h1>Lista de Protecciones</h1><br>
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Categoría</th>
+			<th>Defensa</th>
+			<th>Ranuras Permitidas</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% proteccions.each do |prot| %>
+		<% p = Proteccion.new(prot) %>
+			<tr>
+				<td>
+					<% img_path = "'../images/proteccions/#{p.name}.png'" %>
+					<img src=<%=img_path%> alt=<%=p.name%>, id='icon' />
+				</td>
+				<td><%= p.name.capitalize %></td>
+				<td><%= p.categoria.capitalize %></td>
+				<td><%= p.defensa %></td>
+				<td><%= p.ranuras %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table><br>

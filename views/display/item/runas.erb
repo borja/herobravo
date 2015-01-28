@@ -1,0 +1,11 @@
+<% item.runas.each do |r| %>
+	<table id='tablaengarces'>
+		<tbody>
+			<tr>
+				<td id="engarce"><img src=<%= runa(r).img_path %> alt=<%= runa(r).name %>, id='icon' /></td>
+				<td id="nombre"><%= runa(r).name.upcase %></b></td>
+				<td id="descriptor"><%= runa(r).bonificador(item) %></td>
+			<tr>
+		</tbody>
+	</table>
+<% end %>

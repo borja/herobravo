@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head><%= erb :head, :locals => {:title => "HeroSheet"} %></head>
+	<body>
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "HeroSheet" } %>
+			<div id="banner">
+				<div class="container">
+					<div class="row">
+						<div class="6u">
+							<p>
+								Web oficial del proyecto HeroSheet.<br>
+								Basado en el juego de mesa HeroQuest.
+							</p>
+							<a href="heroes" class="button-big">Ver héroes</a>
+						</div>
+						<div class="6u">
+							<a href="#" class="bordered-feature-image"><img src="images/banner.jpg" alt="banner" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :features, :locals => {:site => "index"} %>
+		<%= erb :content,  :locals => {:site => "index"} %>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

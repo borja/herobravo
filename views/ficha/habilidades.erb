@@ -1,0 +1,20 @@
+<h3>Habilidades</h3>
+<table id='table-2'>
+	<thead>
+		<tr><% habs.each do |h| %>
+				<th><%= h.capitalize %></th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<% heroe.habilidades.each do |hab| %>
+			<tr><td><% img_path = "'../images/skills/#{heroe.personaje.gsub('señor de las bestias','beastlord')}/#{hab.name}.png'" %>
+					<img src=<%=img_path%> alt=<%= hab.name %>, id='icon' />
+				</td>
+				<td><%=    hab.type  %></td>
+				<td><%=    hab.name  %></td>
+				<td><i><%= hab.description  %></i></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

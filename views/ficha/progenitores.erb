@@ -1,0 +1,34 @@
+<table id='table-2'>
+	<tbody>
+		<tr>
+			<td>
+				<% if @heroe.padre %>
+					<% if @heroe.padre[:type] == 'pj' %>
+						<a href=<%= "/hero/#{@heroe.padre[:char].id}" %>>
+							<%= erb :'display/portrait', :locals => { :h => @heroe.padre[:char] } %>
+						</a>
+					<% else %>
+						<%= erb :'display/display', :locals => { 
+						  :title       => @heroe.padre[:char], 
+						  :path        => @heroe.img_path,
+						  :description => "" } %>
+					<% end %>
+				<% end %>
+			</td>
+			<td>
+				<% if @heroe.madre %>
+					<% if @heroe.madre[:type] == 'pj' %>
+						<a href=<%= "/hero/#{@heroe.madre[:char].id}" %> >
+							<%= erb :'display/portrait', :locals => { :h => @heroe.madre[:char] } %>
+						</a>
+					<% else %>
+						<%= erb :'display/display', :locals => { 
+						  :title       => @heroe.madre[:char], 
+						  :path        => @heroe.img_path,
+						  :description => "" } %>
+					<% end %>
+				<% end %>
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,29 @@
+<title>HeroSheet: Hechizos</title>
+<%= erb :menu %>	
+<br>
+<h1>Hechizos <%= @elemento ? "de #{@elemento}" : "elementales" %> de nivel <%= @spelllevel || 1 %></h1>
+
+<table id='table-2'>
+	<thead>
+		<th>Icono</th>
+		<% unless @elemento %><th>Elemento</th><% end %>
+		<th>Nombre</th>
+		<th>Descripción</th>
+		<% if @spelllevel == 1 %>
+			<th><%= @elemento == "luz" ? "Summun" : "Diablura" %></th>
+			<% unless ["sombra","sangre"].include?(@elemento) %>
+				<th><%= @elemento == "luz" ? "Chakra" : "Ardid" %></th>
+				<th>Maestría</th>
+			<% end %>
+		<% end %>
+		<th>Potencia</th>
+	</thead>
+	<tbody>
+ 		<% case @elemento  
+ 		   when "sombra" %><%= erb :'magia/hechizos/sombra' %>
+ 		<% when "sangre" %><%= erb :'magia/hechizos/sangre' %>
+ 		<% when "luz"    %><%= erb :'magia/hechizos/plegarias' %>
+ 		<% else %>		   <%= erb :'magia/hechizos/elemental' %>
+ 		<% end %>	
+	</tbody>
+</table><br>

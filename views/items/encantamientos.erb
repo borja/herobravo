@@ -1,0 +1,24 @@
+<title>HeroSheet: lista de encantamientos</title>
+<%= erb :menu %><br>
+<h1>Lista de Encantamientos</h1>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Tipo</th>
+			<th>Descripcion</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% enchants.each do |e| %>
+			<tr>
+				<td><%= e[:id] %></td>
+				<td><%= e[:name].capitalize %></td>
+				<td><%= e[:tipo].capitalize %></td>
+				<td><%= e[:descripcion] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

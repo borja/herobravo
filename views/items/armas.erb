@@ -1,0 +1,32 @@
+<title>Herosheet: Lista de Armas</title>
+<%= erb :menu %><br>
+<h1>Lista de Armas</h1>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Categoría</th>
+			<th>Ataque</th>
+			<th>Diagonal</th>
+			<th>Ranuras</th>
+			<th>Precio</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% armas.each do |item| %>
+			<% a = Arma.new(item) %>
+			<tr>
+				<td><img src=<%= a.img_path %> alt=<%=a.name%>, id='icon' /></td>
+				<td><%= a.name %></td>
+				<td><%= a.categoria %></td>
+				<td><%= a.ataque %></td>
+				<td><%= a.diagonal %></td>
+				<td><%= a.ranuras %></td>
+				<td><%= a.precio %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<br>

@@ -1,0 +1,14 @@
+<title>Herosheet: Caminos</title>
+<%= erb :menu %><br>
+<h1>Los Caminos del Héroe</h1>
+
+<table id='table-2'>
+	<tbody>
+		<% caminos.keys.each do |c| %>
+			<tr>
+				<td><%= c %></td>
+				<td><%= erb :'ficha/caminos' , :locals => {:path => c } %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

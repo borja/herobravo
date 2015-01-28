@@ -1,0 +1,13 @@
+<tr>
+	<br>
+	<table id='tabalorios'>
+		<thead>
+			<tr>
+				<th width='18%'>Abalorios</th>
+				<% @heroe.abalorios.each do |a| %>
+					<td><%= erb :"display/item", :locals => {:item => a} %></td>
+				<% end %>
+			</tr>
+		</thead>
+	</table>
+</tr>

@@ -1,0 +1,32 @@
+<%= erb :menu %><br>
+<h1>Escuelas de la magia</h1>
+
+<table id='tlabel'>
+	<tbody>
+		<tr>
+			<% escuelas.keys.each do |escuela| %>
+				<td width='10%'>
+					<% img_path = "'../images/schools/#{escuela}.png'" %>
+					<img src=<%=img_path%> alt=<%= escuela %>, id='icon4' />
+					<br>
+					<table id='table-2'>
+						<thead>
+							<tr>
+								<th><%= escuela.capitalize %></th>
+							</tr>	
+						</thead>
+						<tbody>
+							<% 4.times do |nivel| %>
+								<tr>
+									<td><a href='<%= "/escuela/#{escuela}/#{nivel+1}" %>'>
+										Nivel <%= nivel+1 %></a>
+									</td>
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+				</td>	
+			<% end %>	
+		</tr>
+	</tbody>
+</table>

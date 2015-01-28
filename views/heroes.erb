@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<%= erb :head, :locals => {:title => "HeroSheet"} %>
+	</head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "Lista de héroes" } %>
+		</div>
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="9u">
+								<section><%= erb :'heroes/lista' %></section>                           
+							</div>
+							<div class="3u">								
+								<%= erb :sidebar %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

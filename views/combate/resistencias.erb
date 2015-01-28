@@ -1,0 +1,25 @@
+<title>Herosheet: Resistencias</title>
+<%= erb :menu %><br>
+<h1>Resistencias</h1>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th colspan=2>Resistencia</th>
+			<th>Descripción</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% resistencias.each do |r| %>
+			<tr>
+				<td><%= erb :'display/display', :locals => { 
+						:title       => r[:nombre], 
+						:path        => "'../images/elements/#{r[:nombre]}.png'",
+						:description => r[:description]} %>
+				</td>
+				<td><%= r[:nombre] %></td>
+				<td><%= r[:description] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

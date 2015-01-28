@@ -1,0 +1,74 @@
+<h3>Útiles</h3>
+<table id='table-2'>
+	<thead>
+		<tr><th>Pociones</th>
+			<th>Pergaminos</th>
+			<th>Piezas</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td><% if @heroe.pociones %>
+					<table id='table-2'>
+						<tbody>
+							<tr>
+								<% @heroe.pociones.each do |p| %>
+                        			<td>
+										<%= erb :'display/display', :locals => { 
+												:title       => pocion(p)[:name], 
+												:path        => "'../images/utiles/pociones/#{pocion(p)[:name]}.png'",
+												:description => pocion(p)[:efecto] } %>
+									</td>
+								<% end %>
+							</tr>
+						</tbody>
+					</table>
+				<% else %>
+					El héroe no tiene pociones.
+				<% end %>
+			</td>
+			<td>
+				<table id='table-2'>
+					<tbody>
+						<tr><% if @heroe.pergaminos %>
+								<% @heroe.pergaminos.each do |s| %>
+									<td><div class="information_popup_container">
+											<div class="information">
+												<img src=<%= s.img_path %> alt=<%= s.name %>, id='icon' />
+											</div>
+											<div class="popup_information">
+												<center><h3>	
+													Pergamino <%= s.name %><br><br>
+													<img src=<%= s.img_path %> alt=<%= s.name %>, id='icon3' />
+												</h3></center>
+												<%= s.hechizos %>
+											</div>
+										</div>
+									</td>
+								<% end %>
+							<% else %>
+								El héroe no tiene pergaminos.
+							<% end %>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td><% if @heroe.cacharros %>
+					<table id='table-2'>
+						<tbody>
+							<tr><% @heroe.cacharros.each do |c| %>
+                        			<td><%= erb :'display/display', :locals => { 
+												:title       => c.name, 
+												:path        => c.img_path,
+												:description => c.uso } %>
+									</td>
+								<% end %>
+							</tr>
+						</tbody>
+					</table>
+				<% else %>
+					El héroe no tiene piezas.
+				<% end %>
+			</td>
+		</tr>
+	</tbody>
+</table>

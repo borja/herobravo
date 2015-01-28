@@ -1,0 +1,33 @@
+<title>Herosheet: Profesiones</title>
+<%= erb :menu %><br>
+
+<% profesion = profesions.find { |p| p[:name] == params[:profesion] } %>
+<h1>Lista técnicas de <%= profesion[:name] %></h1>
+<table id='tlabel'>
+	<tr>
+		<% grados.each do |grado| %>
+			<td width='20%'>
+				<h3><%= grado.capitalize %></h3>
+				<table id='table-2'>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nombre</th>
+							<th>Coste</th>
+							<th>Efecto</th>
+						</tr>	
+					</thead>
+					<tbody>
+						<% profesion[grado.to_sym].each do |tecnica| %>
+							<tr><td><%= tecnica[:id]     %></td>
+								<td><%= tecnica[:name]   %></td>
+								<td><%= tecnica[:coste]  %></td>
+								<td><%= tecnica[:efecto] %></td>
+							</tr>
+						<% end %>
+					</tbody>
+				</table>
+			</td>
+		<% end %>
+	</tr>
+</table>

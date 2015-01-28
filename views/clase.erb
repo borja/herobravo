@@ -1,0 +1,25 @@
+<title>Hero Sheet: <%= @clase.capitalize %></title>
+<%= erb :menu %><br><br><br<br>
+
+<h1>El <%= @clase.capitalize %></h1>
+
+<% if personajes.include?(@clase) %>
+	<table id='table-2'>
+		<thead>
+			<tr>
+				<th>Dibujo</th>
+				<th>Descripción</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><% img_path = "'../images/clases/#{@clase.gsub('señor de las bestias','beastlord')}.png'" %>
+					<img src=<%=img_path%> alt=<%= @clase %>, id='icon4' /></td>
+				<td>YYY</td>
+			</tr>
+		</tbody>
+	</table>
+<% else %>
+	<center>Este personaje no existe en heroquest</center>
+<% end %>
+<br>

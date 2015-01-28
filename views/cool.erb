@@ -1,0 +1,30 @@
+<title>Herosheet: Hidden</title>
+<%= erb :menu %><br>
+
+<h1>Ficha renovada de personaje</h1>
+<%= erb :'ficha/heroe', :locals => { :heroe => @heroe } %>
+
+<div class="fichalista">
+	<div class="description">	
+		<img src="1images/ficha/skills.png" alt="Habilidades", id='resistencias' />
+		<img src="1images/ficha/spells.png" alt="Hechizos",    id='hechizos' />
+		<img src="/images/ficha/camino.png" alt="Camino",      id='habilidades' />
+		<img src="/images/ficha/combat.png" alt="Combate",     id='combat' />
+	</div>
+	<div class="mainbody">
+		<div id="fstats"><%= erb :'ficha/stats' %></div>
+		<div id="fresistencias"><%= erb :'ficha/resistencias' %></div>
+		<div id="fhabilidades"><%= erb :'ficha/habilidades', :locals => { :heroe => @heroe } if @heroe.skills %></div>
+		<div id="fmagias"><%= erb :'ficha/hechizos' if @heroe.hechizos %></div>
+		<div id="fscrolls"><%= erb :'ficha/utiles', :locals => { :heroe => @heroe } unless @heroe.desprovisto? %></div>	
+		<div id="ftesoros"><%= erb :'ficha/tesoros', :locals => { :heroe => @heroe } unless @heroe.sin_recursos %></div>
+		<img src=<%= @heroe.big_path %> alt=<%= @heroe.name %>, id='portraitbig' />
+	</div>
+	<div class="bodymenu">
+		<img src="/images/ficha/logros.png"  alt="Logros",      id='rostro' />
+		<img src="/images/ficha/potions.png" alt="Pociones",    id='scrolls' />
+		<img src="/images/ficha/scrolls.png" alt="Pergaminos",  id='scrolls' />
+		<img src="/images/ficha/tesoros.png" alt="Tesoros",     id='tesoros' />
+	</div>	
+</div>
+<br>

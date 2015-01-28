@@ -1,0 +1,16 @@
+<table id='table-2'>
+	<thead>
+		<tr><th width='80%'>Mano principal</th>
+			<td><%= erb :'display/arma', :locals => { :a => @heroe.armas.first} %></td>
+		</tr>
+		<tr><th width='80%'>Mano secundaria</th>
+			<td>
+				<% if a = @heroe.armas[1] %>
+					<%= erb :'display/arma', :locals => { :a => a } %>
+				<% else %>
+					<%= erb :'display/ranura' %>
+				<% end %>
+			</td>
+		</tr>
+	</thead>
+</table>

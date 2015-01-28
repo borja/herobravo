@@ -1,0 +1,56 @@
+<table id='table-2'>
+	<thead>
+		<tr>
+			<% lore.each do |f| %>
+				<th><%= f.capitalize %></th>
+			<% end%>
+			<% if @heroe.progenitores %>
+				<th>Progenitores</th>
+			<% end %>
+			<% if @heroe.pet %>
+				<th>Familiar</th>
+			<% end %>
+			<% if @heroe.montura %>
+				<th>Montura</th>
+			<% end %>
+			<% if @heroe.historia %>
+				<th>Historia</th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= erb :'display/portrait', :locals => { :h => @heroe } %></td>
+			<td><%= @heroe.name %></td>
+			<td><a href='/city/<%= @heroe.empadronado %>'>
+					<%= @heroe.empadronado %>
+				</a>
+			</td>
+			<td><%= @heroe.raza.capitalize %></td>
+			<td>X</td>
+			<% if @heroe.progenitores %>
+				<td><%= erb :'ficha/progenitores' %></td>
+			<% end %>
+			<% if p = @heroe.pet %>
+				<td><%= erb :'display/display', :locals => { 
+						:title       => p.nombre, 
+						:path        => p.img_path,
+						:description => p.descripcion } %>
+				</td>
+			<% end %>
+			<% if m = @heroe.montura %>
+				<td><%= erb :'display/display', :locals => { 
+						:title       => m.name, 
+						:path        => m.img_path,
+						:description => m.bono } %>
+				</td>
+			<% end %>
+			<% if @heroe.historia %>
+			<td><%= erb :'display/display', :locals => { 
+						:title       => "Historia", 
+						:path        => "/images/ficha/historia.png",
+						:description => @heroe.historia } %></td>
+			<% end %>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,20 @@
+<title>Herosheet: Posiciones</title>
+<%= erb :menu %><br>
+<h1>Posiciones de combate</h1>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>Posición</th>
+			<th>Efecto</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% posiciones.each do |p| %>
+			<tr>
+				<td><%= p[:nombre] %></td>
+				<td><%= p[:efecto] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

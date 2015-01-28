@@ -1,0 +1,86 @@
+<title>Hero Sheet: <%= @ciudad %></title>
+<%= erb :menu %>
+<br><h1>La Ciudad de <%= @ciudad %></h1>
+
+
+<table id='tlabel'>
+	<tbody>
+		<tr>
+			<td width='25%'>
+				<% img_path = "'../images/ciudad/ayuntamiento.png'" %>
+				<img src=<%= img_path %> alt=<%= "ayuntamiento" %>, id='icon4' />
+				<table id='table-2'>
+					<thead>
+						<tr><th>Ayuntamiento</th></tr>
+					</thead>
+					<tbody>
+						<tr><td><a href='/ciudad/notaria'>Consejo de Notables</a></td></tr>
+						<tr><td><a href='/ciudad/palacio'>Palacio Imperial</a></td></tr>
+						<tr><td><a href='/ciudad/templo'>Templo de Sigmar</a></td></tr>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td width='25%'>
+				<% img_path = "'../images/ciudad/torre de magia.png'" %>
+				<img src=<%= img_path %> alt=<%= "torre de magia" %>, id='icon4' />
+				<table id='table-2'>
+					<thead>
+						<tr><th>Torre de magia</th></tr>
+					</thead>
+					<tbody>
+						<tr><td><a href='/magia/escuelas'>Escuelas de magia</a></td></tr>
+						<tr><td>Magisters</td></tr>
+						<tr><td><a href='/magia/especializaciones'>Especializaciones</a></td></tr>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td width='25%'>
+				<% img_path = "'../images/ciudad/gremio de artesanos.png'" %>
+				<img src=<%= img_path %> alt=<%= "torre de magia" %>, id='icon4' />
+				<table id='table-2'>
+					<thead>
+						<tr><th>Gremio de Artesanos</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>
+							<a href='/items/equipo'>Herrero:</a>
+							<a href='/items/armas'>armas</a>,
+							<a href='/items/armaduras'>armaduras,</a>						
+							<a href='/items/protecciones'>protecciones</a>						
+						</td></tr>
+						<tr><td>
+							Orfebre:
+							<a href='/items/joyas'>joyas,</a>						
+							<a href='/items/gemas'>gemas,</a>						
+							<a href='/items/runas'>runas,</a>	
+							<a href='/items/miscelaneas'>bisutería</a>											
+						</td></tr>
+						<tr><td><a href='/items/piezas'>Ingeniero</a></td></tr>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td width='25%'>
+				<% img_path = "'../images/ciudad/cuarteles.png'" %>
+				<img src=<%= img_path %> alt=<%= "cuarteles" %>, id='icon4' />
+				<table id='table-2'>
+					<thead>
+						<tr><th>Los cuarteles</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>
+							<a href='/<%= @ciudad == "Xanandra" ? "extranjeros" : "heroes" %>'>
+								Héroes de la Ciudad
+							</a>
+						</td></tr>
+						<tr><td><a href='/maestrodearmas'>Maestro de Armas</a></td></tr>
+						<tr><td><a href='/licenciados'>Muro de la Gloria</a></td></tr>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>

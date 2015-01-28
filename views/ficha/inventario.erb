@@ -1,0 +1,47 @@
+<table id='tlabel'>
+	<tr>
+		<td width='20%'>
+			<%= erb :'ficha/inventario/armas' %>
+			<br>
+			<table id='table-2'>
+				<thead>
+					<tr><th width='80%'>Armadura</th>
+						<td><%= erb :'display/armadura', :locals => { :a => @heroe.armadura } %></td>
+					</tr>
+					<% fields[1].each do |field| %>
+						<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
+					<% end %>
+				</thead>
+			</table>
+		</td>
+		<td width='20%'>
+			<%= erb :'ficha/inventario/anillos' %>
+			<br>
+			<table id='table-2'>
+				<thead>
+					<% fields[2].each do |field| %>
+						<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
+					<% end %>
+					</tr>
+				</thead>
+			</table>
+		</td>
+		<td width='20%'>
+			<%= erb :'ficha/inventario/amuletos' %>
+			<br>
+			<table id='table-2'>
+				<thead>
+					<% fields[3].each do |field| %>
+						<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
+					<% end %>
+				</thead>
+			</table>
+		</td>
+		<td width='40%'>
+			<%= erb :'ficha/stats' %>
+			<%= erb :'ficha/hechizos' unless @heroe.elementos.empty? %>
+			<%= erb :'ficha/resistencias' %>
+		</td>
+	</tr>
+	<%= erb :'ficha/abalorios' if @heroe.abalorios %>
+</table>

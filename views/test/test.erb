@@ -1,0 +1,10 @@
+<title>HeroSheet: Test</title>
+<%= erb :menu %><br>
+
+<h1>Test de Personaje</h1>
+
+<% if @num_pregunta <= preguntas.count %>
+	<%= erb :'test/question'%>
+<% elsif  @num_pregunta > preguntas.count %>
+	<%= erb :'test/solution' %>
+<% end %>

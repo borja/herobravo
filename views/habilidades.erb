@@ -1,0 +1,32 @@
+<title>Hero Sheet: Habilidades %></title>
+<%= erb :menu %><br>
+
+<h1>Árbol de Habilidades</h1>
+<table id='table-2'>
+	<thead>
+		<tr>
+			<% clases.each do |pj| %>
+				<td><%= pj.capitalize %></td>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<% clases.each do |clase| %>
+				<td><img src=../images/personajes/<%= clase %>.png alt="<%= clase %>" /, id='icon2'></td>
+			<% end %>
+		</tr>
+		<% 3.times do |i| %>
+			<tr>
+				<% clases.each do |clase| %>
+					<td>
+						<% h = send("clase_#{clase}")[i] %>
+						<a href="/habilidades/<%= h.gsub('señor de las bestias', 'beastlord') %>">
+						<%= h %><br>
+						<img src="../images/clases/<%= h %>.png" alt=<%= h %> /, id='icon4'></a>
+					</td>
+				<% end %>
+			</tr>	
+		<% end %>
+	</tbody>
+</table><
