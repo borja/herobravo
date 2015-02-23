@@ -88,14 +88,14 @@ class App < Sinatra::Base
     erb :ciudad
   end
   
-  # Try root-view
-  get '/:view' do |view|
-    erb :"#{view}"
-  end
-  
   get '/cool/:id' do |hero|
     @heroe = heros[hero.to_i]
     erb :'cool'
+  end
+  
+  get '/historias/:hero' do |hero|
+    @heroe = heros[hero.to_i]
+    erb :'historias'
   end
   
   # Our cool pj-test
@@ -104,4 +104,10 @@ class App < Sinatra::Base
     @num_pregunta = x.length
     erb :'test/test'
   end
+  
+  # Try root-view
+  get '/:view' do |view|
+    erb :"#{view}"
+  end
+  
 end

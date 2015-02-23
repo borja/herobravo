@@ -1,23 +1,39 @@
-<%= erb :menu %><br><br>
-<link rel="stylesheet" href="../../css/map.css"  type="text/css" />
-
-<title>Herosheet: Mapa del mundo</title>
-
-<body>
-	<h1>Mapa del mundo</h1>
-	<div class="mapa_imagen">
-	  <img src="/images/mapa.png" id='mapamundi'>
-	  <ul class="notas">
-	   	<li id="nota1"><p>El Gran Lago</p></li>
-		<li id="nota2"><p>La temible costa de los piratas</p></li>
-	    <li id="nota3"><p>Altdorf, capital del Imperio</p></li>
-	    <li id="nota4"><p>El Desierto prohibido</p></li>	
-		<% cities.each do |c| %>
-			<a href='/city/<%= c[:name] %>'>
-				<li style='<%= c[:style] %>'><p><%= c[:name] %></p></li>
-			</a>
-		<% end %>
-	  </ul>
-	</div>
-	<br>
-</body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%= erb :head, :locals => {:title => "HeroSheet"} %>
+		<link rel="stylesheet" href="css/map.css" />
+	</head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "Mapa" } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							<section>
+								<div class="mapa_imagen">
+								  <img src="/images/mapa.png" id='mapamundi'>
+								  <ul class="notas">
+								   	<li id="nota1"><p>El Gran Lago</p></li>
+									<li id="nota2"><p>La temible costa de los piratas</p></li>
+								    <li id="nota3"><p>Altdorf, capital del Imperio</p></li>
+								    <li id="nota4"><p>El Desierto prohibido</p></li>	
+									<% cities.each do |c| %>
+										<a href='/city/<%= c[:name] %>'>
+											<li style='<%= c[:style] %>'><p><%= c[:name] %></p></li>
+										</a>
+									<% end %>
+								  </ul>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

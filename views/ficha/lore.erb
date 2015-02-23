@@ -46,10 +46,11 @@
 				</td>
 			<% end %>
 			<% if @heroe.historia %>
-			<td><%= erb :'display/display', :locals => { 
-						:title       => "Historia", 
-						:path        => "/images/ficha/historia.png",
-						:description => @heroe.historia } %></td>
+				<td>
+					<a href=<%= "/historias/#{@heroe.id }" %>>
+						<img src="../images/ficha/historia.png" alt="historia" /, id='icon'>
+					</a>
+				</td>
 			<% end %>
 		</tr>
 	</tbody>

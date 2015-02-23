@@ -7,6 +7,7 @@ def h14
    :jugador      => "Cristina",
    :gender       => "female",
    :status       => "activo",
+   :historia     => true,
    :nivel        => 6,
    :cuerpo       => 8,
    :mente        => 4,
@@ -25,7 +26,6 @@ def h14
    :pociones     => [6,0],
    :piezas       => [0,4],
    :pergaminos   => [Pergamino.new({:id => 1, :spells   => [11] })],
-   :tesoro       => {:gemas => [1]},
-   :historia     => "Inscrito en el concurso",
+   :tesoro       => {:gemas => [1]}
   }
 end

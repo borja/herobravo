@@ -7,7 +7,6 @@ def h0
   :status => "extranjero",
   :camino => ["El Oscuro",2],
   :ciudad => "Xanandra",
-  :historia => "Amru es en verdad el Dios Absoluto. Creó este universo, un día que tuvo dolor de cabeza.",
   :repu => 1,
   :nivel => 6,
   :cuerpo => 5,

@@ -7,6 +7,8 @@ def h49
     :personaje    => "brujo",
     :jugador      => "Javier Galindo",
     :status       => "retirado",
+    :muerto       => true,
+    :historia     => true,
     :nivel        => 2,
     :cuerpo       => 6,
     :mente        => 5,
@@ -16,7 +18,6 @@ def h49
     :armas        => [Arma.new({:id =>  3})],
     :armadura     => Armadura.new({:id => 1}),
     :skills       => [0,1],
-    :pet          => Pet.new({:id  => 20, :name => "terry"}),
-    :muerto       => true,
+    :pet          => Pet.new({:id  => 20, :name => "terry"})
   }
 end

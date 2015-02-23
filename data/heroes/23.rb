@@ -5,6 +5,7 @@ def h23
     :name         => "Roek",
     :personaje    => "matador",
     :jugador      => "Roek",
+    :historia     => true,
     :nivel        => 1,
     :cuerpo       => 7,
     :mente        => 3,

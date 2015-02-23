@@ -8,7 +8,6 @@ def h1
     :jugador      => "Alberto",
     :status       => "activo",
     :camino       => ["El Heredero",3],
-    :historia     => "Inscrito en el concurso",
     :repu         => 11,
     :nivel        => 21,
     :cuerpo       => 11,

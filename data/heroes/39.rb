@@ -7,6 +7,8 @@ def h39
     :jugador      => "Javier Galindo",
     :status       => "retirado",
     :maldicion    => "peludo",
+    :muerto       => true,
+    :historia     => true,
     :repu         => 2,
     :nivel        => 10,
     :cuerpo       => 4,
@@ -19,8 +21,6 @@ def h39
     :miscelaneas  => [Miscelanea.new({:id => 3, :enchants =>[44,53], :ranuras => 1, :gemas =>[18]}),
                       Miscelanea.new({:id => 2, :enchants =>[68,69]})],
     :skills       => [1,2,3,4,5,6,8,9,10],
-    :pergaminos   => [Pergamino.new({:id => 1, :spells  => [51]})],
-    :muerto       => true,
-    :historia     => "Inscrito en el concurso",
+    :pergaminos   => [Pergamino.new({:id => 1, :spells  => [51]})]
     }
 end
