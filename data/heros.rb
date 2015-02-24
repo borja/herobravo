@@ -1,7 +1,7 @@
 ﻿# encoding: UTF-8
-# Number of heroes = 49, please refactor this.
-50.times { |i| require "./data/heroes/#{i}" }
-def heros      ; [*0..49].map { |i| Hero.new(send("h#{i}")) } end
+# Number of heroes = 50, please refactor this.
+51.times { |i| require "./data/heroes/#{i}" }
+def heros      ; [*0..50].map { |i| Hero.new(send("h#{i}")) } end
 def hero id    ; heros[id] end
 def personajes ; heros.map{ |p| p.personaje }.uniq end
 def clases     ; heros.map{ |p| p.clase     }.uniq end
