@@ -1,17 +1,30 @@
-<title>Hero Sheet: Ficha de <%= @heroe.name %></title>
-<%= erb :menu %>
-<%= erb :'ficha/heroe', :locals => { :heroe => @heroe } %>		
-<table id='tficha'>
-	<tbody>
-		<tr>
-			<td>
-				<%= erb :'ficha/label' %>
-				<%= erb :'ficha/inventario' %>
-				<%= erb :'ficha/habilidades', :locals => { :heroe => @heroe } if @heroe.skills %>	
-				<%= erb :'ficha/tesoros',     :locals => { :heroe => @heroe } unless @heroe.sin_recursos %>	
-				<%= erb :'ficha/utiles',      :locals => { :heroe => @heroe } unless @heroe.desprovisto? %>	
-			</td>
-		</tr>
-	</tbody>
-</table>
-<br>
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<%= erb :head, :locals => {:title => "HeroSheet: Ficha de #{@heroe.name}" } %>
+	</head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => @heroe.name } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<%= erb :'historias/izquierda/retrato' %>
+						</div>
+						<div class="6u important(collapse)">
+							<%= erb :"ficha/centro/main" %>
+						</div>
+						<div class="3u">
+							<%= erb :'historias/derecha/clase' %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

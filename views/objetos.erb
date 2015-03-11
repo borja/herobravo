@@ -6,98 +6,25 @@
 		<div id="header-wrapper">
 			<%= erb :header, :locals => { :title => "Objetos" } %>
 		</div>
-
-		<!-- Content -->
-			<div id="content-wrapper">
-				<div id="content">
-					<div class="container">
-						<div class="row">
-							<div class="3u">
-								<%= erb :"objetos/left/content1" %>
-								<%= erb :"objetos/left/content2" %>
-							</div>
-							<div class="6u important(collapse)">
-								<%= erb :"objetos/center/main" %>
-							</div>
-							<div class="3u">
-								<%= erb :"objetos/right/content1" %>
-								<%= erb :"objetos/right/content2" %>
-							</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<%= erb :"objetos/left/content1" %>
+							<%= erb :"objetos/left/content2" %>
+						</div>
+						<div class="6u important(collapse)">
+							<%= erb :"objetos/center/main" %>
+						</div>
+						<div class="3u">
+							<%= erb :"objetos/right/content1" %>
+							<%= erb :"objetos/right/content2" %>
 						</div>
 					</div>
 				</div>
 			</div>
-
-		<!-- Footer -->
-			<div id="footer-wrapper">
-				<footer id="footer" class="container">
-					<div class="row">
-						<div class="8u">
-						
-							<!-- Links -->
-								<section>
-									<h2>Links to Important Stuff</h2>
-									<div>
-										<div class="row">
-											<div class="3u">
-												<ul class="link-list last-child">
-													<li><a href="#">Neque amet dapibus</a></li>
-													<li><a href="#">Sed mattis quis rutrum</a></li>
-													<li><a href="#">Accumsan suspendisse</a></li>
-													<li><a href="#">Eu varius vitae magna</a></li>
-												</ul>
-											</div>
-											<div class="3u">
-												<ul class="link-list last-child">
-													<li><a href="#">Neque amet dapibus</a></li>
-													<li><a href="#">Sed mattis quis rutrum</a></li>
-													<li><a href="#">Accumsan suspendisse</a></li>
-													<li><a href="#">Eu varius vitae magna</a></li>
-												</ul>
-											</div>
-											<div class="3u">
-												<ul class="link-list last-child">
-													<li><a href="#">Neque amet dapibus</a></li>
-													<li><a href="#">Sed mattis quis rutrum</a></li>
-													<li><a href="#">Accumsan suspendisse</a></li>
-													<li><a href="#">Eu varius vitae magna</a></li>
-												</ul>
-											</div>
-											<div class="3u">
-												<ul class="link-list last-child">
-													<li><a href="#">Neque amet dapibus</a></li>
-													<li><a href="#">Sed mattis quis rutrum</a></li>
-													<li><a href="#">Accumsan suspendisse</a></li>
-													<li><a href="#">Eu varius vitae magna</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</section>
-
-						</div>
-						<div class="4u">
-							
-							<!-- Blurb -->
-								<section>
-									<h2>An Informative Text Blurb</h2>
-									<p>
-										Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu 
-										varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, 
-										dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh 
-										lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
-									</p>
-								</section>
-						
-						</div>
-					</div>
-				</footer>
-			</div>
-
-		<!-- Copyright -->
-			<div id="copyright">
-				&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
-			</div>
-
+		</div>
+		<%= erb :'footer/footer' %>	
 	</body>
 </html>
