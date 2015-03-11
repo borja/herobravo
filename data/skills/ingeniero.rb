@@ -46,7 +46,7 @@ def ingenieros
     {
       :id           => 7,
       :name         => "cachivache",
-      :description  => "A cambio de 3 piezas de éter creas un cachivache que puede hacer las siguientes funciones: autodestrucción, +1 a buscar si se coloca en el casco,  permite disparo oblicuo si se coloca en la mirilla.",
+      :description  => "A cambio de 2 piezas, creas un cachivache con 3 puntos de eter que puede hacer las siguientes funciones: autodestrucción, +1 a buscar si se coloca en el casco,  permite disparo oblicuo si se coloca en la mirilla.",
       :type         => "pasiva"
     },
     {
@@ -59,6 +59,24 @@ def ingenieros
       :id           => 9,
       :name         => "disparo doble",
       :description  => "Permite disparar 2 veces.",
+      :type         => "pasiva"
+    },
+    {
+      :id           => 10,
+     :name         => "disparo a bocajarro",
+      :description  => "Permite disparar a melee con el arma, otorgando fuerza +1 en el disparo",
+      :type         => "pasiva"
+    },
+    {
+      :id           => 11,
+      :name         => "eter curativo",
+      :description  => "Permite utilizar el eter para recuperar puntos de cuerpo",
+      :type         => "pasiva"
+    },
+    {
+      :id           => 12,
+      :name         => "maestro de cachivaches",
+      :description  => "Permite llevar 1 cachivache adicional",
       :type         => "pasiva"
     },
   ]
