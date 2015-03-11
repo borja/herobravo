@@ -1,0 +1,14 @@
+<section>
+	<header>
+		<h2>Habilidades</h2>
+	</header>
+	<table id='tresp'>
+		<tbody>
+			<tr>
+				<td>
+					<%= erb :'ficha/habilidades', :locals => { :heroe => @heroe } if @heroe.skills %>	
+				</td>
+			</tr>
+		</tbody>
+	</table>					
+</section>
