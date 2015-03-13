@@ -102,7 +102,7 @@ class App < Sinatra::Base
   
   # Root-viewer
   get '/:view' do |view|
-    vistas_personaje = ["familiares", "habilidades", "caminos", "jugadores"]
+    vistas_personaje = ["familiares", "habilidades", "caminos", "jugadores","profesiones"]
     tema = case
       when vistas_personaje.include?(view) then "personaje"
       else view
