@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head><%= erb :head, :locals => {:title => "Herosheet: Jugadores"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "Jugadores" } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<%= erb :"objetos/left/content1" %>
+							<%= erb :"objetos/left/content2" %>
+						</div>
+						<div class="6u important(collapse)">
+							<table id='table-2'>
+								<thead>
+									<tr>
+										<th>Jugador</th>
+										<th>Personajes</th>
+									</tr>
+								</thead>
+								<tbody>
+									<% jugadores.each do |j| %>
+									<tr>
+										<td><%= j %></td>
+										<td>
+											<table id='table-2'>
+												<tbody>
+													<tr>
+														<% heros.each do |hero| %>
+															<% if hero.jugador == j %>
+																<td><%= erb :'display/portrait', :locals => { :h => hero } %>
+																	<%= hero.nivel %></td>
+															<% end %>
+														<% end %>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<% end %>
+								</tbody>
+							</table>
+						</div>
+						<div class="3u">
+							<%= erb :"objetos/right/content1" %>
+							<%= erb :"objetos/right/content2" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

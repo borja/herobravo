@@ -41,10 +41,6 @@ class App < Sinatra::Base
     erb :'personaje/disciplinas'
   end
   
-  get '/habilidades' do
-    erb :'personaje/habilidades'
-  end
-  
   get '/dado/:veces' do |veces|
     @dados = veces
     erb :dado
@@ -98,35 +94,19 @@ class App < Sinatra::Base
     erb :'historias/historias'
   end
   
-  # Our cool pj-test
   get '/test/:question' do |x|
     @respuestas   = x
     @num_pregunta = x.length
     erb :'test/test'
   end
-
-  get '/mapa' do
-    erb :'mapa/mapa'
-  end
   
-  get '/torre' do
-    erb :'torre/torre'
-  end
-  
-  get '/caminos' do
-    erb :'personaje/caminos'
-  end
-  get '/familiares' do
-    erb :'personaje/familiares'
-  end
-  
-  get '/objetos' do
-    erb :'objetos/objetos'
-  end
-  
-  # Try root-view
+  # Root-viewer
   get '/:view' do |view|
-    erb :"#{view}"
+    vistas_personaje = ["familiares", "habilidades", "caminos", "jugadores"]
+    tema = case
+      when vistas_personaje.include?(view) then "personaje"
+      else view
+    end   
+    erb :"#{tema}/#{view}"
   end
-  
 end
