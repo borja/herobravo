@@ -1,0 +1,28 @@
+<%= erb :menu %><br>
+<h1>Lista de Pociones</h1>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Icono</th>
+			<th>Precio</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% pociones.each do |p| %>
+			<tr>
+				<td><%= p[:id] %></td>
+				<td>
+					<% img_path = "'../images/utiles/pociones/#{p[:name]}.png'" %>
+					<img src=<%=img_path%> alt=<%=p[:name]%>, id='icon' />
+				</td>
+				<td><%= p[:precio] %></td>
+				<td>Poción de <%= p[:name] %></td>
+				<td><%= p[:efecto] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table><br>

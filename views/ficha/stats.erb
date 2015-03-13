@@ -1,0 +1,48 @@
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th width='33%'>Cuerpo</th>
+			<th width='33%'>Mente</th>
+			<th width='33%'>Movimiento</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= @heroe.cuerpo %></td>
+			<td><%= @heroe.mente  %></td>
+			<td><%= @heroe.movimiento %></td>
+		</tr>
+	</tbody>
+</table><br>	
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th width='33%'>Melee</th>
+			<th width='33%'>Rango</th>
+			<th width='33%'>Defensa</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= @heroe.ataque %></td>
+			<td><%= @heroe.rango %></td>
+			<td><%= @heroe.defensa %></td>
+		</tr>
+	</tbody>
+</table><br>
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th width='33%'>Pociones</th>
+			<th width='33%'>Pergaminos</th>
+			<th width='33%'>Oro</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td><%= @heroe.oro || 0 %></td>
+		</tr>
+	</tbody>
+</table>

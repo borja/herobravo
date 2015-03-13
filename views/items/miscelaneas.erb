@@ -1,0 +1,23 @@
+<title>Herosheet: Lista de Misceláneas</title>
+<%= erb :menu %><br>
+<h1>Lista de Misceláneas</h1>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Permitidos</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% miscelaneas.each do |misc| %>
+		<% m = Miscelanea.new(misc)%>
+			<tr>
+				<td><img src=<%= m.img_path %> alt=<%= m.name %>, id='icon' /></td>
+				<td><%= m.name %></td>
+				<td><%= m.max %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table><br>

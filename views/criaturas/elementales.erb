@@ -1,0 +1,41 @@
+<title>Hero Sheet: Elementales</title>
+<%= erb :menu %>
+<br><h1>Elementales</h1>
+<table id='table-2'>
+	<thead>
+		<tr><td>Icono</td>
+			<% elementals.first.keys[1..-1].each do |column| %>
+				<th><%= column %></th>
+			<% end %>
+		</tr>	
+	</thead>
+	<tbody>
+		<% elementals.each do |d| %>
+			<tr><td><% img_path = "'../images/criaturas/elementales/#{d[:nombre]}.png'" %>
+					<img src=<%=img_path%> alt=<%=d[:nombre]%>, id='icon' />
+				</td>
+				<td>Elemental de <%= d[:nombre].capitalize %></td>
+				<td><%= d[:cuerpo]      %></td>
+				<td><%= d[:mente]       %></td>
+				<td><%= d[:movimiento]  %></td>
+				<td><% if d[:hechizos] %>
+						<table id = 'table-2'>
+							<tbody>
+								<tr><% d[:hechizos].map{|id| spell(id)}.each do |s| %>
+										<td><img style="vertical-align:middle" 
+										 	src=<%= s.img_path %> alt=<%= s.name %>, id='icon' />		
+										 	<%= s.name.capitalize %>
+										</td>
+									<% end %>	
+								</tr>
+							</tbody>
+						</table>
+					<% else %>
+						Ninguno.
+					<% end %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<br>

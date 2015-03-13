@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head><%= erb :head, :locals => {:title => "HeroSheet"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => @heroe.name } %>
+		</div>
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="3u">
+								<%= erb :'historias/izquierda/retrato' %>
+							</div>
+							<div class="6u important(collapse)">
+								<%= erb :"historias/relatos/#{@heroe.id}" %>
+							</div>
+							<div class="3u">
+								<%= erb :'historias/derecha/clase' %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

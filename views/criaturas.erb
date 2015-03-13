@@ -1,0 +1,29 @@
+<title>Herosheet: Criaturas</title>
+<%= erb :menu %><br>
+
+<h1>Los esbirros del Malvado Brujo</h1><br>
+
+<table id='tlabel'>
+	<tbody>
+		<tr>
+			<% criaturas.each do |criatura| %>
+				<td width='10%'>
+					<a href=/criaturas/<%= criatura %> >
+						<% img_path = "'../images/criaturas/#{criatura}.png'" %>
+						<img src=<%=img_path%> alt=<%= criatura %>, id='icon4' />
+					</a>
+					<br>
+					<table id='table-2'>
+						<thead>
+							<tr>
+								<th><a href=/criaturas/<%= criatura %> ><%= criatura %></a></th>
+							</tr>	
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</td>	
+			<% end %>	
+		</tr>
+	</tbody>
+</table>

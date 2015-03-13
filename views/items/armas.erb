@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head><%= erb :head, :locals => {:title => "HeroSheet: Armas"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "Armas" } %>
+		</div>
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="3u">
+							</div>
+							<div class="9u important(collapse)">
+								<table id='tresp'>
+									<thead>
+										<tr>
+											<th>Icono</th>
+											<th>Nombre</th>
+											<th>Categoría</th>
+											<th>Ataque</th>
+											<th>Diagonal</th>
+											<th>Ranuras</th>
+											<th>Precio</th>
+										</tr>	
+									</thead>
+									<tbody>
+										<% armas.each do |item| %>
+											<% a = Arma.new(item) %>
+											<tr>
+												<td><img src=<%= a.img_path %> alt=<%=a.name%>, id='icon' /></td>
+												<td><%= a.name %></td>
+												<td><%= a.categoria %></td>
+												<td><%= a.ataque %></td>
+												<td><%= a.diagonal %></td>
+												<td><%= a.ranuras %></td>
+												<td><%= a.precio %></td>
+											</tr>
+										<% end %>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

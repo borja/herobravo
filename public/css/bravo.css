@@ -1,0 +1,164 @@
+/* 
+Displaying Info as original
+*/
+#icon {
+	padding: 2px;
+	weight: 40px;
+	height: 40px;
+}
+#icon2 {
+	padding: 2px;
+	weight: 60px;
+	height: 60px;
+}
+#icon3 {
+	padding: 2px;
+	weight: 80px;
+	height: 80px;
+}
+#icon4 {
+	padding: 2px;
+	weight: 130px;
+	height: 130px;
+}
+#portrait {
+	padding: 2px;
+	weight: 204px;
+	height: 321px;
+}
+#tier {
+	border: 0px solid #ffffff;
+    width: 100%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+ 	vertical-align: middle;
+}
+
+div.information_popup_container {
+	/* Position Information */
+	/* Appearance Information */
+}
+div.information_popup_container > div.information {
+	/* Position Information */
+	/* Appearance Information */
+}
+div.information_popup_container > div.popup_information {
+	position:   absolute;
+	visibility: hidden;
+	line-height: 20px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:   14px;
+	color: #CBCBCB;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-color: #222;
+	padding: .1em 1em 1em 1em;
+	text-align: left;
+	/* Position Information */
+	/* Appearance Information */
+}
+div.information_popup_container > div.information:hover + div.popup_information {
+	visibility: visible;
+	z-index:    200;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-left:auto; 
+  margin-right:auto;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  vertical-align: middle;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  text-align: center; 
+  vertical-align: middle;
+}
+
+#table-2 {
+    width: 100%;
+ 	vertical-align: middle;
+    margin-left:auto; 
+    margin-right:auto;
+}
+#table-2 td, #table-2 th {
+	text-align:center;
+ 	vertical-align: middle;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the main data
+	*/
+	td:nth-of-type(1):before { content: "Retrato"; }
+	td:nth-of-type(2):before { content: "Héroe"; }
+	td:nth-of-type(3):before { content: "Personaje"; }
+	td:nth-of-type(4):before { content: "Nivel"; }
+	td:nth-of-type(5):before { content: "Familiar"; }
+	td:nth-of-type(6):before { content: "Profesión"; }
+	td:nth-of-type(7):before { content: "Armas"; }
+	td:nth-of-type(8):before { content: "Armaduras"; }
+	td:nth-of-type(9):before { content: "Reputación"; }
+	
+	td td:nth-of-type(1):before { content: "Principal"; }
+	td td:nth-of-type(2):before { content: "Secundaria"; }
+}

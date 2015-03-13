@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%= erb :head, :locals => {:title => "HeroSheet"} %>
+		<link rel="stylesheet" href="css/bravo.css" />
+	</head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "Habilidades" } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							<section>
+								<table id='tresp'>
+									<thead>
+										<tr>
+											<% clases.each do |pj| %>
+												<td><%= pj.capitalize %></td>
+											<% end %>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<% clases.each do |clase| %>
+												<td><img src=../images/personajes/<%= clase %>.png alt="<%= clase %>" /, id='icon2'></td>
+											<% end %>
+										</tr>
+										<% 3.times do |i| %>
+											<tr>
+												<% clases.each do |clase| %>
+													<td>
+														<% h = send("clase_#{clase}")[i] %>
+														<a href="/habilidades/<%= h.gsub('señor de las bestias', 'beastlord') %>">
+														<%= h %><br>
+														<img src="../images/clases/<%= h %>.png" alt=<%= h %> /, id='icon4'></a>
+													</td>
+												<% end %>
+											</tr>	
+										<% end %>
+									</tbody>
+								</table>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>
