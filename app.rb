@@ -7,23 +7,23 @@ class App < Sinatra::Base
 
   get '/heroes' do
     @status = "activo"
-    erb :heroes
+    erb :'heroes/heroes'
   end
   get '/reservistas' do
     @status = "reserva"
-    erb :heroes
+    erb :'heroes/heroes'
   end
   get '/extranjeros' do
     @status = "extranjero"
-    erb :heroes
+    erb :'heroes/heroes'
   end
   get '/ausentes' do
     @status = "ausente"
-    erb :heroes
+    erb :'heroes/heroes'
   end
   get '/licenciados' do
     @status = "retirado"
-    erb :heroes
+    erb :'heroes/heroes'
   end  
   get '/hero/:id' do |id|
     @heroe = heros[ id.to_i ]
