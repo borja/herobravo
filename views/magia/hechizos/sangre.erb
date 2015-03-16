@@ -1,0 +1,11 @@
+<% sangres.each do |s|%>
+	<% if @spelllevel.to_i == s.nivel %>
+		<tr style=<%= s.color %>>				
+			<td><img src=<%= s.img_path%> alt=<%= s.name %>, id='icon' /></td>
+			<td><%= s.name.capitalize %></td>
+			<td><%= s.efecto %></td>
+			<% if @spelllevel == 1 %><td><%= s.diablura %></td><% end %>
+			<td><%= s.potencia %></td>
+		</tr>
+	<% end %>
+<% end %>

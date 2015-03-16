@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%= erb :head, :locals => {:title => "HeroSheet: " + @char.gsub('beastlord','señor de las bestias').capitalize} %>
+	</head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => @char.gsub('beastlord','señor de las bestias').capitalize } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							<section>
+								<table id='table-2'>
+									<thead>
+										<tr><% disciplinas.each do |d| %>
+												<th><%= d.capitalize %></th>
+											<% end %>
+										</tr>
+									</thead>
+									<tbody>
+										<% send(@char+"s").each do |c| %>
+											<tr><td><%= c[:id] %></td>
+												<td><% img_path = "'../images/skills/#{@char}/#{c[:name]}.png'" %>
+													<img src=<%=img_path%> alt=<%= c[:name] %>, id='icon' />
+												</td>
+												<td><%= c[:type].capitalize %></td>
+												<td><%= c[:name] %></td>
+												<td><i><%= c[:description] %></i></td>
+												<td><%= c[:nivel] || "Sin definir" %></td>
+												<td><%= c[:requisitos] || "In progress" %></td>
+											</tr>
+										<% end %>
+									</tbody>
+								</table>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

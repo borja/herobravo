@@ -1,0 +1,23 @@
+<br>
+<table id='table-2'>
+	<thead>
+		<tr><th><a href=../magia/spells/<%= @heroe.id %>>Lista de hechizos conocidos</a></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td><table id='table-2'>
+					<tbody>
+						<tr><% @heroe.elementos.each do |e| %>	
+								<td><%= erb :'display/display', :locals => { 
+									:title       => e, 
+									:path        => "'../images/elements/#{e}.png'",
+									:description => "" } %>
+								</td>
+							<% end %>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>

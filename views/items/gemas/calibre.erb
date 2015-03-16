@@ -1,0 +1,24 @@
+<section>
+	<header>
+		<h1><%= gema_calidades[i] %></h1>
+	</header>
+	<link rel="stylesheet" href="../css/bravo.css" />
+	<table id='tresp'>							
+		<thead>							
+			<tr><th>ID</th>							
+				<th>Icono</th>							
+				<th>Nombre</th>							
+			</tr>								
+		</thead>							
+		<tbody>							
+			<% gemas.each do |g| %>							
+				<% if g.calidad == gema_calidades[i] %>							
+					<tr><td><%= g.id %></td>							
+						<td><%= erb :'display/gema', :locals => { :gema => g } %></td>							
+						<td><%= g.name %></td>							
+					</tr>							
+				<% end%>							
+			<% end %>							
+		</tbody>							
+	</table>
+</section>

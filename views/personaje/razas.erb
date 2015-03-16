@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head><%= erb :head, :locals => {:title => "Herosheet: #{@raza ? @raza.capitalize : "Razas"}"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => @raza ? @raza.capitalize : "Razas" } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<%= erb :"personaje/razas/left/links" %>
+						</div>
+						<div class="6u important(collapse)">
+							<%= erb :"personaje/razas/center/#{@raza || "main"}" %>
+						</div>
+						<div class="3u">
+							<%= erb :"personaje/razas/right/#{@raza || "stats"}" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<h3>Solución</h3>
+
+<table id='table-2'>
+	<tbody>
+		<% quiensoy(@respuestas).each do |k,v| %>
+			<tr>
+				<td>
+					<% img_path = "'../images/personajes/#{k}.png'"  %>
+					<img src=<%= img_path %> alt=<%= k %> , id='icon' />
+				</td>
+				<td><%= k %></td>
+				<td><h2><%= v %></h2></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table><br>
+
+<% #Tu código es <%= quiensoy(@respuestas) %>

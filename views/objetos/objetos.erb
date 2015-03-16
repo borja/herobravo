@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head><%= erb :head, :locals => {:title => "Herosheet: Objetos"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "Objetos" } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<%= erb :"objetos/left/content1" %>
+							<%= erb :"objetos/left/content2" %>
+						</div>
+						<div class="6u important(collapse)">
+							<%= erb :"objetos/center/main" %>
+						</div>
+						<div class="3u">
+							<%= erb :"objetos/right/content1" %>
+							<%= erb :"objetos/right/content2" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

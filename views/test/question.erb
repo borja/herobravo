@@ -1,0 +1,19 @@
+<h3>Pregunta Nº <%= @num_pregunta %> / <%= preguntas.count %></h3>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th colspan=2><%= preguntas[@num_pregunta-1][:pregunta] %></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% preguntas[@num_pregunta-1][:respuestas].each_with_index do |respuesta,num| %>
+			<tr>
+				<td><%= num %></td>
+				<td><a href=/test/<%= @respuestas + num.to_s %>>
+					<%= respuesta.first %>
+				</a></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table><br>

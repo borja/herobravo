@@ -1,0 +1,31 @@
+<title>Hero Sheet: Especializaciones</title>
+<meta charset="utf-8"> 
+<body>
+	<%= erb :menu %>
+	<link rel="stylesheet" href="../../css/main.css" type="text/css" />
+	<link rel="stylesheet" href="../../app.css"      type="text/css" />	
+	<br>
+	<h1>Lista de especializaciones de magia</h1><br><br>
+	<table id='table-2'>
+		<thead>
+			<th>ID</th>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Descripcion</th>
+			<th>Coste</th>
+		</thead>
+		<tbody>
+			<% especializacions.each do |e| %>
+					<tr>
+						<td><%= e[:id] %></td>
+						<td><% img_path = "'../images/skills/especializaciones/#{e[:name]}.png'" %>
+							<img src=<%=img_path%> alt=<%= e[:name] %>, id='icon' />
+						</td>
+						<td><%= e[:name].capitalize %></td>
+						<td><%= e[:description] %></td>
+						<td><%= e[:coste] %></td>
+					</tr>
+				<% end %>
+		</tbody>
+	</table><br>
+</body>
