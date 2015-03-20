@@ -180,6 +180,21 @@
 			display: block;
 			width: 100%;
 		}
+	.city-image
+	{
+		display: block;
+		margin: 0 0 2em 0;
+		outline: 0;
+	}
+	
+		.city-image img
+		{
+			display: block;
+			height: 8em;
+		    margin-left: auto;
+		    margin-right: auto
+		}
+		
 
 	.bordered-feature-image
 	{

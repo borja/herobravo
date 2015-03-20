@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="../css/bravo.css" />
 <section>
-	<%= erb :'ficha/jugador' %>
-	<br>
+	<%= erb :'ficha/jugador' %><br>
 	<%= erb :'ficha/lore' %>
 	<%= erb :'ficha/hechizos' unless @heroe.elementos.empty? %>
 	<%= erb :'ficha/resistencias' %>

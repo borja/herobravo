@@ -80,13 +80,9 @@ class App < Sinatra::Base
     erb :"combate/#{tema}"
   end  
   
-  # Sección de la ciudad
-  get '/ciudad/:topic' do |tema|
-    erb :"ciudad/#{tema}"
-  end
   get '/city/:city' do |city|
     @ciudad = city
-    erb :ciudad
+    erb :'ciudad/ciudad'
   end
 
   get '/historias' do
@@ -109,15 +105,21 @@ class App < Sinatra::Base
     erb :'personaje/razas'
   end
   
+  
   # Root-viewer
   get '/:view' do |view|
-    vistas_personaje  = ["familiares", "habilidades", "caminos", "jugadores","profesiones","razas"]
+    vistas_personaje  = ["familiares", "habilidades", "caminos","profesiones","razas"]
     vistas_reglamento = ["manuales","tesoro","criaturas"]
     vistas_objetos    = ["armaduras","armas","protecciones","miscelaneas","piezas","gemas"]
+    vistas_ciudad     = ["maestrodearmas","notaria","palacio","templo"]
+    vistas_magia      = ["escuelas","biblioteca"]
     tema = case
       when vistas_personaje.include?(view)  then "personaje"
       when vistas_reglamento.include?(view) then "reglamento"
+      when vistas_ciudad.include?(view)     then "ciudad"
       when vistas_objetos.include?(view)    then "items/#{view}"
+      when vistas_magia.include?(view)      then "magia"
+      when view == 'jugadores' then "personaje/jugadores"
       else view
     end  
     erb :"#{tema}/#{view}"
