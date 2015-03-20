@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<%= erb :head, :locals => {:title => "HeroSheet: Test"} %>
-		
+		<%= erb :head, :locals => {:title => "HeroSheet: Test"} %>	
 	</head>
 	<body class="subpage">
 		<div id="header-wrapper">
@@ -12,21 +11,11 @@
 				<div id="content">
 					<div class="container">
 						<div class="row">
-							<div class="3u">
-								<%= erb :'reglamento/izquierda/bestiario' %>
-							</div>
+							<div class="3u"><%= erb :"personaje/razas/left/links" %></div>
 							<div class="6u important(collapse)">
-								<section>
-									<% if @num_pregunta <= preguntas.count %>
-										<%= erb :'test/question'%>
-									<% elsif  @num_pregunta > preguntas.count %>
-										<%= erb :'test/solution' %>
-									<% end %>
-								</section>
+								<%= erb :"test/#{(@num_pregunta <= preguntas.count) ? "question" : "solution"}"%>
 							</div>
-							<div class="3u">
-								<%= erb :'reglamento/derecha/combate' %>
-							</div>
+							<div class="3u"><%= erb :'reglamento/derecha/combate' %></div>
 						</div>
 					</div>
 				</div>
