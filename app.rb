@@ -41,11 +41,6 @@ class App < Sinatra::Base
     erb :'personaje/disciplinas'
   end
   
-  get '/dado/:veces' do |veces|
-    @dados = veces
-    erb :dado
-  end
-
   get '/criaturas/:monster' do |criature|
     erb :"reglamento/criaturas/#{criature}"
   end
@@ -105,6 +100,10 @@ class App < Sinatra::Base
     erb :'personaje/razas'
   end
   
+  get '/dado/:veces' do |veces|
+    @dados = veces
+    erb :'reglamento/dado'
+  end
   
   # Root-viewer
   get '/:view' do |view|

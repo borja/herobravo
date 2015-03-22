@@ -15,7 +15,10 @@
 							<div class="6u important(collapse)">
 								<%= erb :"test/#{(@num_pregunta <= preguntas.count) ? "question" : "solution"}"%>
 							</div>
-							<div class="3u"><%= erb :'reglamento/derecha/combate' %></div>
+							<div class="3u">
+								<%= erb :'reglamento/derecha/combate' %>
+								<%= erb :"reglamento/derecha/personajes" %>
+							</div>
 						</div>
 					</div>
 				</div>
