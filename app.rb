@@ -1,6 +1,8 @@
 require 'sinatra/base'
 
 class App < Sinatra::Base
+  
+  # Main Website
   get '/' do
     erb :index
   end
@@ -80,10 +82,6 @@ class App < Sinatra::Base
     erb :'ciudad/ciudad'
   end
 
-  get '/historias' do
-    erb :'lore/leyendas'
-  end
-  
   get '/historias/:hero' do |hero|
     @heroe = heros[hero.to_i]
     erb :'historias/historias'
@@ -105,20 +103,37 @@ class App < Sinatra::Base
     erb :'reglamento/dado'
   end
   
+  get '/prueba' do
+    erb :template, :locals => {
+      :title    => "Prueba",
+      :template => {
+        :left  => 'personaje/razas/left/links',
+        :main  => 'lore/centro',
+        :right => 'lore/derecha',
+      }
+    }
+  end
+  
   # Root-viewer
   get '/:view' do |view|
+    # Pre-defined routes
     vistas_personaje  = ["familiares", "habilidades", "caminos","profesiones","razas"]
     vistas_reglamento = ["manuales","tesoro","criaturas"]
     vistas_objetos    = ["armaduras","armas","protecciones","miscelaneas","piezas","gemas"]
     vistas_ciudad     = ["maestrodearmas","notaria","palacio","templo"]
     vistas_magia      = ["escuelas","biblioteca"]
+    vistas_lore       = ["historias"]
+    
+    # Pre-router
     tema = case
       when vistas_personaje.include?(view)  then "personaje"
       when vistas_reglamento.include?(view) then "reglamento"
       when vistas_ciudad.include?(view)     then "ciudad"
       when vistas_objetos.include?(view)    then "items/#{view}"
       when vistas_magia.include?(view)      then "magia"
+      when vistas_lore.include?(view)       then "lore"
       when view == 'jugadores' then "personaje/jugadores"
+      # Main fallback: return root-view
       else view
     end  
     erb :"#{tema}/#{view}"
