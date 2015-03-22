@@ -103,15 +103,8 @@ class App < Sinatra::Base
     erb :'reglamento/dado'
   end
   
-  get '/prueba' do
-    erb :template, :locals => {
-      :title    => "Prueba",
-      :template => {
-        :left  => 'personaje/razas/left/links',
-        :main  => 'lore/centro',
-        :right => 'lore/derecha',
-      }
-    }
+  get '/historias' do
+    erb :template, :locals => view('historias')
   end
   
   # Root-viewer
@@ -122,7 +115,6 @@ class App < Sinatra::Base
     vistas_objetos    = ["armaduras","armas","protecciones","miscelaneas","piezas","gemas"]
     vistas_ciudad     = ["maestrodearmas","notaria","palacio","templo"]
     vistas_magia      = ["escuelas","biblioteca"]
-    vistas_lore       = ["historias"]
     
     # Pre-router
     tema = case

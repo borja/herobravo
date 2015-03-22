@@ -1,6 +1,5 @@
 # Fake Data Base
 require './data/heros'
-require './data/menu'
 require './data/magia/spells'
 require './data/skills'
 require './data/profesiones'
@@ -14,3 +13,6 @@ require './data/items/items'
 require './data/criaturas/criaturas'
 require './data/combate/combate'
 require './data/ciudades'
+
+# Template-views information
+require './data/views'
