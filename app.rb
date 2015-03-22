@@ -120,10 +120,21 @@ class App < Sinatra::Base
     erb :template, :locals => view('habilidades')
   end
   
+  get '/caminos' do 
+    erb :template, :locals => view('caminos')
+  end
+  
+  get '/profesiones' do 
+    erb :template, :locals => view('profesiones')
+  end
+  
+  get '/razas' do 
+    erb :template, :locals => view('razas')
+  end
+  
   # Root-viewer
   get '/:view' do |view|
     # Pre-defined routes
-    vistas_personaje  = ["caminos","profesiones","razas"]
     vistas_reglamento = ["manuales","tesoro","criaturas"]
     vistas_objetos    = ["armaduras","armas","protecciones","miscelaneas","piezas","gemas"]
     vistas_ciudad     = ["maestrodearmas","notaria","palacio","templo"]
@@ -131,7 +142,6 @@ class App < Sinatra::Base
     
     # Pre-router
     tema = case
-      when vistas_personaje.include?(view)  then "personaje"
       when vistas_reglamento.include?(view) then "reglamento"
       when vistas_ciudad.include?(view)     then "ciudad"
       when vistas_objetos.include?(view)    then "items/#{view}"

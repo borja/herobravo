@@ -1,39 +1,23 @@
-<!DOCTYPE HTML>
-
-<html>
-	<head><%= erb :head, :locals => {:title => "Herosheet: Caminos"} %></head>
-	<body class="subpage">
-		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => "Caminos de Héroe" } %>
-		</div>
-		<div id="content-wrapper">
-			<div id="content">
-				<div class="container">
-					<div class="row">
-						<div class="3u">
-							<%= erb :"objetos/left/content1" %>
-							<%= erb :"objetos/left/content2" %>
-						</div>
-						<div class="6u important(collapse)">
-							<table id='tresp'>
-								<tbody>
-									<% caminos.keys.each do |c| %>
-										<tr>
-											<td><%= c %></td>
-											<td><%= erb :'ficha/caminos' , :locals => {:path => c } %></td>
-										</tr>
-									<% end %>
-								</tbody>
-							</table>
-						</div>
-						<div class="3u">
-							<%= erb :"objetos/right/content1" %>
-							<%= erb :"objetos/right/content2" %>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<%= erb :'footer/footer' %>	
-	</body>
-</html>
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th>Camino</th>
+				<% caminos.keys.each_with_index do |c,i| %>
+					<th><%= i %></th>
+				<% end %>
+			</tr>
+		</thead>
+		<tbody>
+			<% caminos.keys.each do |c| %>
+				<tr>
+					<td><%= c %></td>
+					<td><%= c.class %></td>
+					<%#= erb :'ficha/caminos' , :locals => {:path => c } %>
+					<td>X</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

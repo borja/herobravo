@@ -22,15 +22,30 @@ def views
     {
       :route    => "familiares",
       :title    => "Familiares",
-      :template => {
-        :main   => 'personaje/familiares',
-      }
+      :template => { :main => 'personaje/familiares'}
     },
     {
       :route    => "habilidades",
       :title    => "Habilidades",
+      :template => { :main => 'personaje/habilidades'}
+    },
+    {
+      :route    => "caminos",
+      :title    => "Caminos",
+      :template => { :main => 'personaje/caminos'}
+    },
+    {
+      :route    => "profesiones",
+      :title    => "Profesiones",
+      :template => { :main => 'personaje/profesiones'}
+    },
+    {
+      :route    => "razas",
+      :title    => @raza ? @raza.capitalize : "Razas",
       :template => {
-        :main   => 'personaje/habilidades',
+        :left   => 'personaje/razas/left/links',
+        :main   => "personaje/razas/center/#{@raza || "main"}",
+        :right  => "personaje/razas/right/#{ @raza || "stats"}",
       }
     },
   ]
