@@ -1,62 +1,36 @@
-<!DOCTYPE HTML>
-
-<html>
-	<head><%= erb :head, :locals => {:title => "Herosheet: Familiares"} %></head>
-	<body class="subpage">
-		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => "Familiares" } %>
-		</div>
-		<div id="content-wrapper">
-			<div id="content">
-				<div class="container">
-					<div class="row">
-						<div class="3u">
-							<%= erb :"objetos/left/content1" %>
-							<%= erb :"objetos/left/content2" %>
-						</div>
-						<div class="6u important(collapse)">
-							<table id='table-2'>
-								<thead>
-									<tr>
-										<th>Icono</th>
-										<th>Nombre</th>
-										<th>Dueños</th>
-										<th>Bonificador</th>
-										<th>Penalizador</th>
-									</tr>	
-								</thead>
-								<tbody>
-									<% pets.each do |familiar| %>
-									<% p = Pet.new(familiar) %>
-										<tr>
-											<td><img src=<%= p.img_path %> alt=<%= p.bicho %>, id='icon2' /></td>
-											<td><%= p.bicho %></td>
-											<td>
-												<table id='table-2'>
-							 						<tbody>
-														<tr><% p.personajes.each do |pj| %>
-															<td><img src=../images/personajes/<%= pj %>.png alt=<%= pj %> /, id='icon'>
-															</td>
-														<% end %>
-														</tr>
-													</tbody>
-												</table
-											</td>
-											<td><%= p.bono %></td>
-											<td><%= p.lacra %></td>
-										</tr>
-									<% end %>
-								</tbody>
-							</table>
-						</div>
-						<div class="3u">
-							<%= erb :"objetos/right/content1" %>
-							<%= erb :"objetos/right/content2" %>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<%= erb :'footer/footer' %>	
-	</body>
-</html>
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th>Icono</th>
+				<th>Nombre</th>
+				<th>Dueños</th>
+				<th>Bonificador</th>
+				<th>Penalizador</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% pets.each do |familiar| %>
+			<% p = Pet.new(familiar) %>
+				<tr>
+					<td><img src=<%= p.img_path %> alt=<%= p.bicho %>, id='icon2' /></td>
+					<td><%= p.bicho %></td>
+					<td>
+						<table id='table-2'>
+	 						<tbody>
+								<tr><% p.personajes.each do |pj| %>
+									<td><img src=../images/personajes/<%= pj %>.png alt=<%= pj %> /, id='icon'>
+									</td>
+								<% end %>
+								</tr>
+							</tbody>
+						</table
+					</td>
+					<td><%= p.bono %></td>
+					<td><%= p.lacra %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

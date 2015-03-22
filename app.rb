@@ -103,14 +103,27 @@ class App < Sinatra::Base
     erb :'reglamento/dado'
   end
   
+  # Templates
   get '/historias' do
     erb :template, :locals => view('historias')
+  end
+  
+  get '/mapa' do
+    erb :template, :locals => view('mapa')
+  end
+  
+  get '/familiares' do
+    erb :template, :locals => view('familiares')
+  end
+  
+  get '/habilidades' do 
+    erb :template, :locals => view('habilidades')
   end
   
   # Root-viewer
   get '/:view' do |view|
     # Pre-defined routes
-    vistas_personaje  = ["familiares", "habilidades", "caminos","profesiones","razas"]
+    vistas_personaje  = ["caminos","profesiones","razas"]
     vistas_reglamento = ["manuales","tesoro","criaturas"]
     vistas_objetos    = ["armaduras","armas","protecciones","miscelaneas","piezas","gemas"]
     vistas_ciudad     = ["maestrodearmas","notaria","palacio","templo"]
@@ -123,7 +136,6 @@ class App < Sinatra::Base
       when vistas_ciudad.include?(view)     then "ciudad"
       when vistas_objetos.include?(view)    then "items/#{view}"
       when vistas_magia.include?(view)      then "magia"
-      when vistas_lore.include?(view)       then "lore"
       when view == 'jugadores' then "personaje/jugadores"
       # Main fallback: return root-view
       else view

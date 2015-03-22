@@ -10,7 +10,29 @@ def views
         :main   => 'lore/centro',
         :right  => 'lore/derecha',
       }
-    }
+    },
+    {
+      :route    => "mapa",
+      :title    => "Mapa",
+      :template => {
+        :left   => 'mapa/ciudades',
+        :main   => 'mapa/mapa',
+      }
+    },
+    {
+      :route    => "familiares",
+      :title    => "Familiares",
+      :template => {
+        :main   => 'personaje/familiares',
+      }
+    },
+    {
+      :route    => "habilidades",
+      :title    => "Habilidades",
+      :template => {
+        :main   => 'personaje/habilidades',
+      }
+    },
   ]
 end
 
