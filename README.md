@@ -1,8 +1,9 @@
 Herosheet Dashboard
 ===================
 
-[![Dependency Status](https://travis-ci.org/Borja/herobravo.svg)](https://travis-ci.org/Borja/herobravo)
+[![Testing CI Status](https://travis-ci.org/Borja/herobravo.svg)](https://travis-ci.org/Borja/herobravo)
 [![Dependency Status](https://gemnasium.com/Borja/herobravo.svg)](https://gemnasium.com/Borja/herobravo)
+[![Deployment Status](https://heroku-deployment-badges.herokuapp.com/?app=herosheet)](https://heroku-deployment-badges.herokuapp.com/?app=herosheet)
 
 Running this application locally
 ----------------------------------
