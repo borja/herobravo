@@ -1,0 +1,33 @@
+<div class="information_popup_container">
+	<div class="information">
+		<img src=<%= a.img_path %> alt=<%= a.name %>, id='icon' />
+	</div>
+	<div class="popup_information">
+		<center>
+			<h3>
+				<%= a.name %>
+				<% if a.enchants %>
+					<%= enchant(a.enchants.first)[:name] %><br><br>
+				<% end %>
+			</h3>
+			<img src=<%= a.img_path %> alt=<%= a.name %>, id='icon3' />
+		</center>
+		
+		<li>Dados de defensa: <%= a.defensa %></li>
+		<li>Categoría: <%= a.categoria %></li>
+		<% if a.mundano? %>
+			<li>Armadura mundana</li>
+		<% else %>
+			<br><%= erb :'display/item/engarces', :locals => {:item => a}%>
+		<% end %>
+		<% if a.enchants %>	
+			<br>
+			<h4>Propiedades mágicas</h4>
+			<% a.enchants.each do |e| %>
+				<li><b><%= enchant(e)[:name].capitalize %></b>:
+				 	<i><%= enchant(e)[:descripcion] %></i>
+				</li>
+			<% end %>
+		<% end %>	
+	</div>
+</div>

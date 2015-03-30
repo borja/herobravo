@@ -1,0 +1,26 @@
+<table id='table-2'>
+	<tdead>
+		<tr>
+			<td widtd='80%'>Anillo Izquierdo</td>
+				<td>
+					<% if a = @heroe.anillos.first %>
+						<%= erb :'display/item', :locals => {:item => a } %></td>
+					<% else %>
+						<%= erb :'display/ranura' %>
+					<% end %>
+				</td>
+			</td>
+		</tr>
+		<tr>
+			<td widtd='80%'>Anillo Derecho</td>
+				<td>
+					<% if a = @heroe.anillos[1] %>
+						<%= erb :'display/item', :locals => {:item => a } %></td>
+					<% else %>
+						<%= erb :'display/ranura' %>
+					<% end %>
+				</td>
+			</td>
+		</tr>
+	</tdead>
+</table>

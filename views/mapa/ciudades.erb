@@ -1,0 +1,10 @@
+<section>
+	<header>
+		<h2>Ciudades</h2>
+	</header>
+	<ul class="link-list">
+		<% cities.each do |c| %>
+			<li><a href='/city/<%= c[:name] %>'><%= c[:name] %></a></li>
+		<% end %>
+	</ul>
+</section>

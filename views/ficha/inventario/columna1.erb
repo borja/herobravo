@@ -1,0 +1,17 @@
+<section>
+	<header>
+		<h2>Armas</h2>
+	</header>
+	<%= erb :'ficha/inventario/armas' %>
+	<br>
+	<table id='table-2'>
+		<tdead>
+			<tr><td widtd='80%'>Armadura</td>
+				<td><%= erb :'display/armadura', :locals => { :a => @heroe.armadura } %></td>
+			</tr>
+			<% fields[1].each do |field| %>
+				<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
+			<% end %>
+		</tdead>
+	</table>
+</section>

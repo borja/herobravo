@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head><%= erb :head, :locals => {:title => "Herosheet: #{@ciudad}"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => @ciudad } %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="container">
+					<div class="row">
+						<% ["ayuntamiento","magia","artesanos","cuarteles"].each do |plaza| %>
+							<div class="3u"><%= erb :"ciudad/plazas/#{plaza}" %></div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<% spells.each do |s|%>
+	<% if @spelllevel.to_i == s.nivel %>
+		<% if (@elemento == s.elemento) || @elemento.nil? %>
+			<% magic = spell(s.id) %>
+			<tr style=<%= magic.color %>>				
+				<td><img src=<%= magic.img_path%> alt=<%=magic.name%>, id='icon' /></td>
+				<% unless @elemento %>
+					<td><%= magic.elemento.capitalize %></td>
+				<% end %>
+				<td><%= magic.name.capitalize %></td>
+				<td><%= magic.efecto %></td>
+				<% if @spelllevel == 1 %>
+					<td><%= magic.diablura %></td>
+					<td><%= magic.ardid %></td>
+					<td><%= magic.maestría %></td>
+				<% end %>	
+				<td><%= magic.potencia %></td>			
+			</tr>
+		<% end %>
+	<% end %>
+<% end %>

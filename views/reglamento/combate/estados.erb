@@ -1,0 +1,19 @@
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th>Estado</th>
+				<th>Efecto</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% estados.each do |e| %>
+				<tr>
+					<td><%= e[:nombre] %></td>
+					<td><%= e[:efecto] %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

@@ -1,0 +1,14 @@
+<section>
+	<header>
+		<h2>Amuletos</h2>
+	</header>
+	<%= erb :'ficha/inventario/amuletos' %>
+	<br>
+	<table id='table-2'>
+		<thead>
+			<% fields[3].each do |field| %>
+				<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
+			<% end %>
+		</thead>
+	</table>
+</section>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%= erb :head, :locals => {:title => "HeroSheet"} %>
+	</head>
+	<body>
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "HeroSheet" } %>
+			<%= erb :'index/banner' %>
+		</div>
+		<%= erb :'index/features' %>
+		<%= erb :'index/content'  %>
+		<%= erb :'footer/footer'  %>	
+	</body>
+</html>

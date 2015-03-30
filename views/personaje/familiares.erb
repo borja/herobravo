@@ -1,0 +1,36 @@
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th>Icono</th>
+				<th>Nombre</th>
+				<th>Dueños</th>
+				<th>Bonificador</th>
+				<th>Penalizador</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% pets.each do |familiar| %>
+			<% p = Pet.new(familiar) %>
+				<tr>
+					<td><img src=<%= p.img_path %> alt=<%= p.bicho %>, id='icon2' /></td>
+					<td><%= p.bicho %></td>
+					<td>
+						<table id='table-2'>
+	 						<tbody>
+								<tr><% p.personajes.each do |pj| %>
+									<td><img src=../images/personajes/<%= pj %>.png alt=<%= pj %> /, id='icon'>
+									</td>
+								<% end %>
+								</tr>
+							</tbody>
+						</table
+					</td>
+					<td><%= p.bono %></td>
+					<td><%= p.lacra %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

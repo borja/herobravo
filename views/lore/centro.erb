@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="css/bravo.css" />
+<section>
+	<header>
+		<h2>Primer Certamen de Historias</h2>
+	</header>
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th>Autor</th>
+				<th>Héroe</th>
+				<th>Historia</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% narrados.each do |n| %>
+			<tr>
+				<td><%= n.jugador %></td>
+				<td><%= erb :'display/portrait', :locals => { :h => n } %></td>
+				<td class='wrapper'>
+					<a href='/historias/<%= n.id %>'><%= n.name %></a>
+				    <% if n.historia == "primer premio" %>
+						<div class="ribbon-wrapper-golden"><div class="ribbon-golden">1º</div>
+					<% end %>
+				    <% if n.historia == "segundo premio" %>
+						<div class="ribbon-wrapper-silvered"><div class="ribbon-silvered">2º</div>
+					<% end %>
+				</td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

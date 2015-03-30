@@ -1,0 +1,13 @@
+<table id='table-2'>
+	<tbody>
+		<tr>
+			<% @heroe.descendientes.each do |d| %>
+				<td>
+					<a href=<%= "/hero/#{d}" %> >
+						<%= erb :'display/portrait', :locals => { :h => hero(d) } %>
+					</a>
+				</td>
+			<% end %>
+		</tr>
+	</tbody>
+</table>
