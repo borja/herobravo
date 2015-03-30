@@ -2,7 +2,7 @@ Herosheet Dashboard
 ===================
 
 [![Dependency Status](https://travis-ci.org/Borja/herobravo.svg)](https://travis-ci.org/Borja/herobravo)
-[![Dependency Status](https://gemnasium.com/Borja/herosinatra.svg)](https://gemnasium.com/Borja/herosinatra)
+[![Dependency Status](https://gemnasium.com/Borja/herobravo.svg)](https://gemnasium.com/Borja/herobravo)
 
 Running this application locally
 ----------------------------------
