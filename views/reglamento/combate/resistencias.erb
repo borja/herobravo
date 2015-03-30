@@ -1,0 +1,24 @@
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th colspan=2>Resistencia</th>
+				<th>Descripción</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% resistencias.each do |r| %>
+				<tr>
+					<td><%= erb :'display/display', :locals => { 
+							:title       => r[:nombre], 
+							:path        => "'../images/elements/#{r[:nombre]}.png'",
+							:description => r[:description]} %>
+					</td>
+					<td><%= r[:nombre] %></td>
+					<td><%= r[:description] %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

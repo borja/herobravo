@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../css/bravo.css" />
+<table id='tresp'>
+	<thead>
+		<tr>
+			<% armaduras[1..-1].each do |item| %>
+				<th width='12%'><%= item[:name].gsub("armadura","").gsub("de","") %></th>
+			<% end %>
+		</tr>	
+	</thead>
+	<tbody>
+		<tr>
+			<% armaduras[1..-1].each do |item| %>
+			<% a = Armadura.new(item) %>
+				<td><%= erb :'display/display', :locals => {
+					:title       => a.name,
+					:path        => a.img_path,
+					:description => a.description} %>
+				</td>
+			<% end %>
+		</tr>	
+	</tbody>
+</table>

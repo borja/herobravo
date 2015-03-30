@@ -1,0 +1,23 @@
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+			<th>Diablura</th>
+			<th>Potencia</th>
+		</thead>
+		<tbody>
+			<% sombras.each do |s|%>
+				<tr style=<%= s.color %>>				
+					<td><img src=<%= s.img_path %> alt=<%= s.name %>, id='icon' /></td>
+					<td><%= s.name.capitalize %></td>
+					<td><%= s.efecto %></td>
+					<td><%= s.diablura %></td>
+					<td><%= s.potencia %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

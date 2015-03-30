@@ -1,0 +1,11 @@
+<% item.gemas.each do |g| %>
+	<table id='tablaengarces'>
+		<tbody>
+			<tr>
+				<td id="engarce"><img src=<%= gema(g).img_path %> alt=<%= gema(g).name %>, id='icon' /></td>
+				<td id="nombre"><%= gema(g).name %></b></td>
+				<td id="descriptor"><%= gema(g).bonificador(item) %></td>
+			<tr>
+		</tbody>
+	</table>
+<% end %>

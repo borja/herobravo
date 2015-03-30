@@ -1,0 +1,30 @@
+<%= erb :menu %><br><br><br<br>
+
+<link rel="stylesheet" href="../../css/main.css" type="text/css" />
+<link rel="stylesheet" href="../../app.css" type="text/css" />
+
+<h1>Lista de Pergaminos</h1><br><br>
+
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Hechizos</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% pergaminos.each do |p| %>
+			<tr>
+				<td><%= p[:id] %></td>
+				<td>
+					<% img_path = "'../images/utiles/pergaminos/#{p[:name]}.png'" %>
+					<img src=<%=img_path%> alt=<%=p[:name]%>, id='icon' />
+				</td>
+				<td>Pergamino <%= p[:name] %></td>
+				<td><%= p[:hechizos] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

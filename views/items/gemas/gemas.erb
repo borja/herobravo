@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head><%= erb :head, :locals => {:title => "HeroSheet: Gemas"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => "Gemas" } %>
+		</div>
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<% 6.times do |i| %>	
+								<div class="2u">					
+									<%= erb :'items/gemas/calibre', :locals => { :i => i } %>
+								</div>							
+							<% end%>							
+						</div>
+					</div>
+				</div>
+			</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

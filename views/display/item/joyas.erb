@@ -1,0 +1,11 @@
+<% item.joyas.each do |j| %>
+	<table id='tablaengarces'>
+		<tbody>
+			<tr>
+				<td id="engarce"><img src=<%= joya(j).img_path %> alt=<%= joya(j).name %>, id='icon' /></td>
+				<td id="nombre"><%= joya(j).name %></b></td>
+				<td id="descriptor"><%= joya(j).bonificador(item) %></td>
+			<tr>
+		</tbody>
+	</table>
+<% end %>

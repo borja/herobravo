@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head><%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %></head>
+	<body class="subpage">
+		<div id="header-wrapper">
+			<%= erb :header, :locals => { :title => title } %>
+		</div>
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<% if template[:left] %>
+								<div class="3u">
+									<%= erb :"#{ template[:left] }" %>
+									<% if template[:left2] %>
+										<%= erb :"#{ template[:left2] }"%>
+									<% end %>
+								</div>
+							<% end %>
+							<div class='<%= get_center(template) %>'>
+								<%= erb :"#{ template[:main] }" %>
+							</div>							
+							<% if template[:right] %>
+								<div class="3u">
+									<%= erb :"#{ template[:right] }" %>
+									<% if template[:right2] %>
+										<%= erb :"#{ template[:right2] }"%>
+									<% end %>
+								</div>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+		<%= erb :'footer/footer' %>	
+	</body>
+</html>

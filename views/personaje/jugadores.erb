@@ -1,0 +1,39 @@
+<section>
+	<header>
+		<h2>Listado de los <%= jugadores.count %> jugadores y sus personajes</h2>
+	</header>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th>Jugador</th>
+				<th>Personajes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% jugadores.each do |j| %>
+			<tr>
+				<td><%= j %></td>
+				<td>
+					<table>
+						<tbody>
+							<tr>
+								<% heros.each do |hero| %>
+									<% if hero.jugador == j %>
+										<td>
+											<a href='/hero/<%= hero.id %>'>
+												<%= erb :'display/portrait', :locals => { :h => hero } %>
+											</a>
+											<%= hero.nivel %>
+										</td>
+									<% end %>
+								<% end %>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

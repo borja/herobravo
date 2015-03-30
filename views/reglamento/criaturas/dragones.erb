@@ -1,0 +1,46 @@
+<title>Hero Sheet: Dragones</title>
+<body>
+
+<br><h1>Dragones</h1><br><br>
+
+<table id='table-2'>
+	<thead>
+		<tr><th>Icono</th>
+			<% dragons.first.keys[1..-1].each do |column| %>
+				<th><%= column %></th>
+			<% end %>
+		</tr>	
+	</thead>
+	<tbody>
+		<% dragons.each do |d| %>
+			<tr><td><% img_path = "'../images/criaturas/dragones/#{d[:name]}.png'" %>
+					<img src=<%=img_path%> alt=<%=d[:name]%>, id='icon3' />
+				</td>
+				<td>Dragón <%= d[:name].capitalize %></td>
+				<td><%= d[:cuerpo]      %></td>
+				<td><%= d[:mente]       %></td>
+				<td><%= d[:movimiento]  %></td>
+				<td>
+					<% if d[:hechizos] %>
+						<table id = 'table-2'>
+							<tbody>
+								<tr><% d[:hechizos].each do |magia| %>
+										<td><%= erb :'display/display', :locals => { 
+													:title       => nombre = (spell(magia)).name, 
+													:path        => "'../images/spells/#{nombre}.png'",
+													:description => (spell(magia)).efecto } %>
+										</td>
+									<% end %>	
+								</tr>
+							</tbody>
+						</table>
+					<% else %>
+						Ninguno.
+					<% end %>
+				</td>
+				<td><%= d[:miedo] %>+</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<br>
