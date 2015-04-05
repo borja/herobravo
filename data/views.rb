@@ -38,6 +38,14 @@ def views
       :template => { :main => 'personaje/habilidades'}
     },
     {
+      :route    => "tarot",
+      :title    => "Tarot Maligno",
+      :template => { 
+        :left  => 'items/tarot/left',
+        :main  => 'items/tarot/tarot',
+        :right => 'reglamento/derecha/combate'}
+    },
+    {
       :route    => "disciplinas",
       :title    => "Habilidades",
       :template => { :main => 'personaje/disciplinas'}
