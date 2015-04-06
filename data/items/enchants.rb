@@ -421,6 +421,11 @@ def enchants
       :name         => "de fuego súbito",
       :descripcion  => "Cuando defiendes, tiras aleatoriamente una magia de fuego de nivel 1 o 2",
       :tipo         => "fuego",
+    },
+    { :id           => 84,
+      :name         => "imperial",
+      :descripcion  => "1/reto: Puedes repetir 1d6.",
+      :tipo         => "imperial",
     }
   ]
 end
