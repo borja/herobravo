@@ -18,7 +18,7 @@ def h48
     Arma.new({:id => 5}),
     Arma.new({:id => 7})],
   :proteccions => [
-    Proteccion.new({:id => 1}),
+    Proteccion.new({:id => 1, :enchants => [84] }),
     Proteccion.new({:id => 4}),
     Proteccion.new({:id => 8})],
   :skills => [0,1,2,3],
