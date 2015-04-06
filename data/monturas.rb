@@ -15,6 +15,11 @@ def monturas
       :name      => "barco",
       :distancia => "6",
       :bono      => "Permite surcar los mares.",
+    },
+    { :id        => 3,
+      :name      => "alfombra voladora",
+      :distancia => "4",
+      :bono      => "Permite transportar al portador a su amad@ por el aire.",
     }
   ]
 end
