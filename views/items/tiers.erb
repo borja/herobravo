@@ -1,49 +1,53 @@
-<title>HeroSheet: Tiers</title>
-<h1>Lista de Tiers</h1>
-<table id='table-2'>
-	<thead>
-		<tr>
-			<th>Combo</th>
-			<th>Nombre</th>
-			<th>Bonificador</th>
-		</tr>	
-	</thead>
-	<tbody>
-		<% tiers.each do |t| %>
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='tresp'>
+		<thead>
 			<tr>
-				<td><table id='table-2'>
-						<tbody>
-							<tr>
-								<% t[:mix].keys.each do |familia| %>
-									<% t[:mix][familia.to_sym].each do |id| %>
-										<td>
-											<div class="information_popup_container">
-												<div class="information">
-													<% engarce = send(familia)[id][:name] %>
-													<% img_path = "'../images/treasures/#{familia}/#{engarce}.png'" %>
-													<img src=<%=img_path%> alt=<%= engarce %>, id='icon' />
+				<th>Combo</th>
+				<th>Nombre</th>
+				<th>Bonificador</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% tiers.each do |t| %>
+				<tr>
+					<td>
+						<table id='tresp'>
+							<tbody>
+								<tr>
+									<% t[:mix].keys.each do |familia| %>
+										<% if t[:mix][familia.to_sym] %>
+											<% t[:mix][familia.to_sym].each do |id| %>
+												<td>
+												<div class="information_popup_container">
+													<div class="information">
+														<% engarce = send(familia)[id].name %>
+														<% img_path = "'../images/treasures/#{familia}/#{engarce}.png'" %>
+														<img src=<%= img_path %> alt=<%= engarce %>, id='icon' />
+													</div>
+													<div class="popup_information">
+														<center><h3>	
+															<%= engarce %><br><br>
+															<img src=<%=img_path%> alt=<%= engarce %>, id='icon3' />
+														</h3></center>
+														<% if familia.to_s == 'gemas' %><br>
+															<%= "calidad..." %>
+														<% end %>
+													</div>
 												</div>
-												<div class="popup_information">
-													<center><h3>	
-														<%= engarce.capitalize %><br><br>
-														<img src=<%=img_path%> alt=<%= engarce %>, id='icon3' />
-													</h3></center>
-													<% if familia.to_s == 'gemas' %><br>
-														<%= "calidad..." %>
-													<% end %>
-												</div>
-											</div>
-										</td>
+											</td>
+											<% end %>
+										<% end %>
 									<% end %>
-								<% end %>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-				<td><%= t[:name].capitalize %></td>
-				<td><%= t[:bono].capitalize %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td><%= t[:name].capitalize %></td>
+					<td><%= t[:bono].capitalize %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>
 

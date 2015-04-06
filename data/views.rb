@@ -56,6 +56,21 @@ def views
       :template => { :main => 'personaje/caminos'}
     },
     {
+      :route    => "joyas",
+      :title    => "Joyas",
+      :template => { :main => 'items/joyas'}
+    },
+    {
+      :route    => "runas",
+      :title    => "Runas",
+      :template => { :main => 'items/runas'}
+    },
+    {
+      :route    => "tiers",
+      :title    => "Tiers",
+      :template => { :main => 'items/tiers'}
+    },
+    {
       :route    => "profesiones",
       :title    => "Profesiones",
       :template => { :main => 'personaje/profesiones'}
