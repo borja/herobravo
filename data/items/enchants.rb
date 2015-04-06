@@ -426,7 +426,18 @@ def enchants
       :name         => "imperial",
       :descripcion  => "1/reto: Puedes repetir 1d6.",
       :tipo         => "imperial",
-    }
+    },
+    { :id           => 85,
+      :name         => "escarchada",
+      :descripcion  => "2 escudos blancos al defender: +1PM",
+      :tipo         => "imperial",
+    },
+    { :id           => 86,
+      :name         => "de voluntades frías",
+      :descripcion  => "-1 vs escarcha, +2 vs calor, +2 vs psiónica.",
+      :tipo         => "imperial",
+    },
+    
   ]
 end
 def enchant id ;  enchants[id] end
