@@ -5,21 +5,35 @@ def dado_sigmar ; ['hammer','comet','plus','blank','eagle','eagle'][rand(6)] end
 def dado_tesoro ; rand(6) +1 end
 
 def tesoro(sigmar, dado1, dado2)
-  valores = ['pifia','vacia','vacia','comida','perg','oro',"monstruo",'pot','trampa', "caja",'cofre']
+  valores = ['pifia','vacia','maldición','trampa','monstruo','oro',"perg",'pot','comida', "alijo",'cofre']
   return send(valores[dado1+dado2-2],sigmar, dado1, dado2)
 end
 
 # Resultados según sigmar
-def pifia sigmar, dado1, dado2 ; sigmar == 'eagle' ? 'pifia ligera' : 'pifia'         end
-def vacia sigmar, dado1, dado2 ; sigmar == 'hammer' ? 'desconcentrado' : 'sala vacia' end
+def pifia sigmar, dado1, dado2 # 2 
+  if sigmar == 'eagle'
+    "Tropiezas y pierdes 1PC. A pesar de tu torpeza, te levantas disimuladamente..."
+  else
+    "Tropiezas y pierdes 1PC forma patética." 
+  end        
+end
 
-def comida(sigmar, dado1, dado2)
+def vacia sigmar, dado1, dado2 # 3
+  if sigmar == 'hammer'
+    "La sala está vacía y no se podrá rebuscar más."
+  else
+    "La sala está vacía pero aún se pueden buscar tesoros"
+  end 
+end
+
+def maldición sigmar, dado1, dado2 # 4
+  doble = dado1 == dado2 
   case sigmar
-    when 'eagle'  then 'comida : asado'
-    when 'plus'   then 'comida : manzanas'
-    when 'blank'  then 'comida : podrida'
-    when 'hammer' then 'comida : agua'
-    when 'comet'  then 'comida : sidra'
+    when 'eagle'  then "Maldición: #{ doble ? ' ' : ' ' } "
+    when 'plus'   then "Maldición: #{ doble ? ' ' : ' ' } "
+    when 'blank'  then "Maldición: #{ doble ? ' ' : ' ' } "
+    when 'hammer' then "Maldición: #{ doble ? ' ' : ' ' } "
+    when 'comet'  then "Maldición: #{ doble ? ' ' : ' ' } "
   end
 end
 
@@ -61,6 +75,16 @@ def pot(sigmar, dado1, dado2)
   end
 end
 
+def comida sigmar, dado1, dado2 # 10
+  case sigmar
+    when 'eagle'  then 'comida : asado'
+    when 'plus'   then 'comida : manzanas'
+    when 'blank'  then 'comida : podrida'
+    when 'hammer' then 'comida : agua'
+    when 'comet'  then 'comida : sidra'
+  end
+end
+
 def trampa(sigmar, dado1, dado2)
   case sigmar
     when 'eagle'  then 'trampa de flecha'
@@ -71,7 +95,7 @@ def trampa(sigmar, dado1, dado2)
   end
 end
 
-def caja(sigmar, dado1, dado2)
+def alijo(sigmar, dado1, dado2)
   case sigmar
     when 'eagle'  then 'gema: ' + gema(rand(1..41)).name
     when 'plus'   then 'runa: ' + joya(rand(1..12)).name
