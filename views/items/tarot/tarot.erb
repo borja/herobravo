@@ -1,11 +1,12 @@
 <section>
-	
-	<% tirada   = tarot %>
+	<% ordinal  = rand(4) %>
+	<% tirada   = tarot ordinal %>
 	<% arcano   = tirada.keys.first %>
 	<% cardinal = tirada.values.first %>
+	<% posicion  = ["del Norte", "del Sur", "Occidental", "Oriental"][ordinal] %>
 	
 	<header>
-		<h2><%= arcano %></h2>
+		<h2><%= arcano %> <%= posicion %></h2>
 	</header>
 	
 	<h3><%= cardinal %></h3>
