@@ -5,7 +5,7 @@ def h28
     :name         => "Namhayd",
     :personaje    => "conjurador",
     :jugador      => "Alpa",
-    :status       => "activo",
+    :status       => "ausente",
     :nivel        => 6,
     :cuerpo       => 5,
     :mente        => 11,
