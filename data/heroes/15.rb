@@ -5,7 +5,7 @@ def h15
     :name         => "Tim el mago",
     :personaje    => "hechicero",
     :jugador      => "Luis",
-    :status       => "activo",
+    :status       => "ausente",
     :nivel        => 6,
     :cuerpo       => 6,
     :mente        => 9,
