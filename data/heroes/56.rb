@@ -5,7 +5,6 @@ def h56
     :name         => "Kant Borriquero",
     :personaje    => "hoplita",
     :jugador      => "Borja",
-    :status       => "extranjero",
     :ciudad       => "Zindor",
     :nivel        => 1,
     :cuerpo       => 8,
