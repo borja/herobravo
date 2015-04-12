@@ -112,8 +112,9 @@ class Hero < Hash
   def blood_magic   ; self.blood.map    {|num| sangre(num)} if self.blood    end
   def shadow_magic  ; self.shadows.map  {|num| sombra(num)} if self.shadows  end  
   def sin_recursos  ; self.tesoro.nil? end
-  def empadronado   ; self.ciudad || "Jadessvärd"  end
   def potis         ; self.pociones.map { |pot| Pocion.new(p) } end
+  def empadronado   ; self.ciudad || "Jadessvärd"  end
+  def estado        ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
   
   def resistencia(elemento) # I'm sorry for this...
     total = 0 # Initialize default returns 0

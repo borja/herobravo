@@ -5,7 +5,6 @@ def h45
     :name         => "Moorp",
     :personaje    => "conjurador",
     :jugador      => "Arturo Salcedo",
-    :status       => "ausente",
     :nivel        => 1,
     :cuerpo       => 4,
     :mente        => 6,
