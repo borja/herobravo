@@ -5,7 +5,6 @@ def h54
     :name         => "Ana Cardo",
     :personaje    => "conjurador",
     :jugador      => "Irene",
-    :status       => "extranjero",
     :ciudad       => "Zindor",
     :gender       => "female",
     :nivel        => 1,

@@ -5,7 +5,7 @@ def h38
     :name         => "Pumba",
     :personaje    => "bersérker",
     :jugador      => "Alberto",
-    :status       => "extranjero",
+    :ciudad       => "Xanandra",
     :repu         => 1,
     :nivel        => 2,
     :cuerpo       => 8,

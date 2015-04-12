@@ -5,7 +5,7 @@ def h40
     :name         => "Loras",
     :personaje    => "derviche",
     :jugador      => "Daniel Cabañas",
-    :status       => "extranjero",
+    :ciudad       => "Xanandra",
     :nivel        => 2,
     :cuerpo       => 6,
     :mente        => 4,

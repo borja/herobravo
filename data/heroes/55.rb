@@ -6,7 +6,6 @@ def h55
     :personaje    => "nigromante",
     :jugador      => "Iris",
     :gender       => "female",
-    :status       => "extranjero",
     :ciudad       => "Zindor",
     :nivel        => 1,
     :cuerpo       => 5,

@@ -5,7 +5,7 @@ def h37
     :name         => "Vintor Steelengard",
     :personaje    => "matador",
     :jugador      => "Daniel Acha",
-    :status       => "extranjero",
+    :ciudad       => "Xanandra",
     :nivel        => 2,
     :cuerpo       => 8,
     :mente        => 3,

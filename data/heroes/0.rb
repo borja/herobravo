@@ -4,7 +4,6 @@ def h0
   :name      => "Amru",
   :jugador   => "Borja",
   :personaje => "hechicero",
-  :status    => "extranjero",
   :camino    => ["El Oscuro",2],
   :ciudad    => "Xanandra",
   :repu      => 1,
