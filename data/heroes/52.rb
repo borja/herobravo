@@ -5,7 +5,6 @@ def h52
     :name         => "Tu Verag",
     :personaje    => "matador",
     :jugador      => "Judith",
-    :status       => "ausente",
     :nivel        => 9,
     :cuerpo       => 13,
     :mente        => 5,

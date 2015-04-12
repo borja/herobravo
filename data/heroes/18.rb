@@ -5,7 +5,6 @@ def h18
     :name         => "Paul Baloff",
     :personaje    => "bersérker",
     :jugador      => "Adrián",
-    :status       => "ausente",
     :nivel        => 2,
     :cuerpo       => 8,
     :mente        => 3,

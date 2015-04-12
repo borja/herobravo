@@ -15,7 +15,7 @@ def h55
     :armadura     => Armadura.new({:id => 2}),
     :armas        => [
       Arma.new({:id => 1}),
-      Arma.new({:id => 3})
+      Arma.new({:id => 3, :ranuras => 1 })
     ],
   }
 end
