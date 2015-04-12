@@ -6,7 +6,7 @@ def h44
     :personaje    => "arquero",
     :jugador      => "Celia",
     :gender       => "female",
-    :status       => "activo",
+    :status       => "ausente",
     :progenitores => [47,"Carmenchu"],
     :nivel        => 14,
     :repu         => 5,
