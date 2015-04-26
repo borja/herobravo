@@ -1,5 +1,5 @@
 <tr>
-	<td widtd='80%'><%= fits.capitalize %></td>
+	<td width='80%'><%= fits.capitalize %></td>
 	<td>
 		<% if @heroe.send(fits) %>
 			<%= erb :'display/item', :locals => {:item => @heroe.send(fits)} %>

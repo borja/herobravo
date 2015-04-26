@@ -4,7 +4,7 @@
 class Hero < Hash
   attr_accessor :id,         
     :name, :personaje, :jugador, :status, :muerto, :gender,
-    :repu, :nivel, :cuerpo, :mente, :mov, :historia,       
+    :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,       
     :pet,:montura, :descendencia, :pareja, :progenitores,        
     :hechizos, :shadows, :blood, :skills,   
     :armas, :armadura, :proteccions, :miscelaneas, :abalorios,          

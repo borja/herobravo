@@ -6,6 +6,7 @@ def h46
     :personaje    => "derviche",
     :jugador      => "Daniel Cabañas",
     :status       => "retirado",
+    :historia     => 2,
     :muerto       => true,
     :nivel        => 1,
     :cuerpo       => 6,

@@ -5,6 +5,7 @@ def h15
     :name         => "Tim el mago",
     :personaje    => "hechicero",
     :jugador      => "Luis",
+    :historia     => 1,
     :nivel        => 6,
     :cuerpo       => 6,
     :mente        => 9,
@@ -21,7 +22,6 @@ def h15
     :piezas       => [8],
     :pociones     => [1,3,3],
     :profesion    => Profesion.new({:id => 1,  :aprendiz => [0,3]}),  
-    :pet          => Pet.new({:id  => 8, :name => "Naussyca", :torpe => true}),
-    :historia     => true               
+    :pet          => Pet.new({:id  => 8, :name => "Naussyca", :torpe => true}),            
   }
 end

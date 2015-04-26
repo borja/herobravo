@@ -6,7 +6,7 @@ def h32
     :personaje    => "señor de las bestias",
     :jugador      => "Alberto",
     :status       => "retirado",
-    :historia     => true,
+    :historia     => 1,
     :nivel        => 10,
     :cuerpo       => 15,
     :mente        => 7,

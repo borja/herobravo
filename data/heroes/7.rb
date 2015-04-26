@@ -27,6 +27,5 @@ def h7
                       Pergamino.new({:id => 1, :spells  => [32]})],
     :skills       => [0,1,2,3,4,5,6,7,8,9,10,11,12],
     :profesion    => Profesion.new({:id => 2,  :aprendiz => [0,1]}),
-    :historia     => "true",
   }
 end

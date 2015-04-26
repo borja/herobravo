@@ -6,7 +6,7 @@ def hero id    ; heros[id] end
 def personajes ; heros.map{ |p| p.personaje }.uniq end
 def clases     ; heros.map{ |p| p.clase     }.uniq end
 def jugadores  ; heros.map{ |p| p.jugador   }.uniq end
-def narrados   ; heros.select{ |p| p.historia  }.sort_by{ |p| p.historia.to_s } end
+def narrados n ; heros.select{ |p| p.historia if p.historia == n }.sort_by { |p| p.premio ? p.premio : 3 } end 
 
 def clase_bárbaro  ; ["señor de las bestias","bersérker","hoplita"] end
 def clase_enano    ; ["falangista","matador","ingeniero"]           end

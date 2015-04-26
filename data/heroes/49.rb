@@ -8,7 +8,7 @@ def h49
     :jugador      => "Javier Galindo",
     :status       => "retirado",
     :muerto       => true,
-    :historia     => true,
+    :historia     => 1,
     :nivel        => 2,
     :cuerpo       => 6,
     :mente        => 5,

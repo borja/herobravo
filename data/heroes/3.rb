@@ -7,7 +7,7 @@ def h3
     :jugador      => "Iris",
     :gender       => "female",
     :status       => "reserva",
-    :historia     => true,
+    :historia     => 1,
     :nivel        => 6,
     :repu         => 1,
     :cuerpo       => 9,

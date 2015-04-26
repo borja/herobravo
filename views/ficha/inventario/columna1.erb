@@ -4,14 +4,14 @@
 	</header>
 	<%= erb :'ficha/inventario/armas' %>
 	<br>
-	<table id='table-2'>
-		<tdead>
-			<tr><td widtd='80%'>Armadura</td>
+	<table id='tresp'>
+		<thead>
+			<tr><td width='80%'>Armadura</td>
 				<td><%= erb :'display/armadura', :locals => { :a => @heroe.armadura } %></td>
 			</tr>
 			<% fields[1].each do |field| %>
 				<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
 			<% end %>
-		</tdead>
+		</thead>
 	</table>
 </section>

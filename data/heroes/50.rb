@@ -2,10 +2,11 @@
 def h50
   { 
     :id           => 50,
-    :name         => "Claudio Apio",
+    :name         => "Filomeno Apio",
     :personaje    => "matador",
     :jugador      => "Irene",
     :status       => "activo",
+    :historia     => 2,
     :nivel        => 2,
     :cuerpo       => 8,
     :mente        => 3,
