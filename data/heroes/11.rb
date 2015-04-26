@@ -6,7 +6,7 @@ def h11
     :personaje    => "derviche",
     :jugador      => "Nora",
     :gender       => "female",
-    :historia     => true,
+    :historia     => 1,
     :nivel        => 8,
     :repu         => 2,
     :cuerpo       => 10,

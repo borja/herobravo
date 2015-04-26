@@ -6,6 +6,8 @@ def h20
     :personaje    => "invocador",
     :jugador      => "Javier Galindo",
     :status       => "retirado",
+    :muerto       => true,
+    :historia     => 2,
     :nivel        => 3,
     :cuerpo       => 5,
     :mente        => 7,
@@ -15,6 +17,5 @@ def h20
     :armadura     => Armadura.new({:id => 0}),
     :skills       => [0,1,2,3],
     :pet          => Pet.new({:id  => 8, :name => "owlovicius", :torpe => true}),
-    :muerto       => true,
   }
 end

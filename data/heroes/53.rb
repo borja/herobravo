@@ -6,6 +6,7 @@ def h53
     :personaje    => "arquero",
     :jugador      => "Daniel de Haro",
     :status       => "reserva",
+    :historia     => 2,
     :nivel        => 2,
     :cuerpo       => 6,
     :mente        => 4,

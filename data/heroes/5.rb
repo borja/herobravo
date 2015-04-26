@@ -6,7 +6,7 @@ def h5
     :personaje    => "conjurador",
     :jugador      => "Daniel Cabañas",
     :status       => "activo",
-    :historia     => true,
+    :historia     => 1,
     :nivel        => 15,
     :repu         => 6,
     :cuerpo       => 5,

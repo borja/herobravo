@@ -8,7 +8,7 @@ def h39
     :status       => "retirado",
     :maldicion    => "peludo",
     :muerto       => true,
-    :historia     => true,
+    :historia     => 1,
     :repu         => 2,
     :nivel        => 10,
     :cuerpo       => 4,
