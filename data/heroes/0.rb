@@ -11,8 +11,16 @@ def h0
   :cuerpo    => 5,
   :mente     => 10,
   :mov       => 7,
-  :pet       => Pet.new({:id => 8, :name => "Peróculo", :torpe => true}),
-  :armas     => [Arma.new({:id => 8, :enchants => [59], :ranuras => 1})],
+  :pet       => Pet.new({
+    :id    => 8, 
+    :name  => "Peróculo", 
+    :torpe => true}),
+  :armas     => [
+    Arma.new({
+      :id       => 8, 
+      :enchants => [59], 
+      :ranuras  => 1})
+  ],
   :armadura  => Armadura.new({:id => 1}),
   
   :miscelaneas => [
@@ -27,8 +35,7 @@ def h0
     })
   ],
   :proteccions  => [Proteccion.new({:id => 8})],
-  :pergaminos   => [Pergamino.new({:id => 1, :spells => [11] })],
-  
+  :pergaminos   => [Pergamino.new({:id => 1, :spells => [11] })],  
   :skills       => [0,1,2,3,4,5,6,8],
   :hechizos     => [0,1,2,6,7,8,12,13,14,18,19,20,29,39],
   :descendencia => true,
