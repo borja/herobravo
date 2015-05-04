@@ -29,11 +29,11 @@ end
 def maldición sigmar, dado1, dado2 # 4
   doble = dado1 == dado2 
   case sigmar
-    when 'eagle'  then "Maldición: #{ doble ? ' ' : ' ' } "
-    when 'plus'   then "Maldición: #{ doble ? ' ' : ' ' } "
-    when 'blank'  then "Maldición: #{ doble ? ' ' : ' ' } "
-    when 'hammer' then "Maldición: #{ doble ? ' ' : ' ' } "
-    when 'comet'  then "Maldición: #{ doble ? ' ' : ' ' } "
+    when 'eagle'  then "Maldición: #{ doble ? ' ' : 'Hirsutismo: -1 Reputación' } "
+    when 'plus'   then "Maldición: #{ doble ? ' ' : 'Alopecia: -1 Reputación si eres enano o mujer.' } "
+    when 'blank'  then "Maldición: #{ doble ? ' ' : 'Yuyu: En un momento dado, el MB puede hacer repetir 1d6.' } "
+    when 'hammer' then "Maldición: #{ doble ? ' ' : 'Alopecia: -1 Reputación si eres enano o mujer.' } "
+    when 'comet'  then "Maldición: #{ doble ? ' ' : 'Infortunio: El MB podrá hacer repetir una tirada cualquiera.' } "
   end
 end
 
@@ -49,11 +49,11 @@ end
 
 def oro(sigmar, dado1, dado2)
   case sigmar
-    when 'eagle'  then 'oro : 50'
-    when 'plus'   then 'oro : 35'
-    when 'blank'  then 'oro : 10'
-    when 'hammer' then 'oro : 25'
-    when 'comet'  then 'oro : 60'
+    when 'eagle'  then '50 piezas de oro.'
+    when 'plus'   then '35 piezas de oro.'
+    when 'blank'  then '10 piezas de oro.'
+    when 'hammer' then '25 piezas de oro.'
+    when 'comet'  then '60 piezas de oro.'
   end
 end
 

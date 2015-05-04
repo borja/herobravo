@@ -88,6 +88,7 @@ def armas
       :ranuras      => 3,
       :diagonal     => true,
       :unico        => true,
+      :precio       => 1000,
     },
     { 
       :id           => 10,
@@ -122,7 +123,8 @@ def armas
       :categoria    => "contundentes",
       :ataque       => 2,
       :ranuras      => 4,
-      :diagonal     => false
+      :diagonal     => false,
+      :precio       => 150
     },
     { 
       :id           => 14,
@@ -139,7 +141,8 @@ def armas
       :categoria    => "asta",
       :ataque       => 3,
       :ranuras      => 4,
-      :diagonal     => true
+      :diagonal     => true,
+      :precio       => 300,
     },
     { 
       :id           => 16,
@@ -147,7 +150,8 @@ def armas
       :categoria    => "copa",
       :ataque       => 1,
       :ranuras      => 6,
-      :diagonal     => false
+      :diagonal     => false,
+      :precio       => 100,
     },
     { 
       :id           => 17,
@@ -157,6 +161,7 @@ def armas
       :ranuras      => 4,
       :diagonal     => true,
       :artefacto    => true,
+      :precio       => 500,
     },
     { 
       :id           => 18,
@@ -173,7 +178,8 @@ def armas
       :categoria    => "filo",
       :ataque       => 2,
       :ranuras      => 2,
-      :diagonal     => false
+      :diagonal     => false,
+      :precio       => 250,
     },
     { 
       :id           => 20,
@@ -181,7 +187,8 @@ def armas
       :categoria    => "distancia",
       :ataque       => 0,
       :ranuras      => 2,
-      :diagonal     => true
+      :diagonal     => true,
+      :precio       => 100,
     },
     { 
       :id           => 21,
@@ -191,6 +198,7 @@ def armas
       :ranuras      => 4,
       :diagonal     => true,
       :legendario   => true,
+      :precio       => 300,
     },
     { 
       :id           => 22,
@@ -200,6 +208,7 @@ def armas
       :ranuras      => 0,
       :diagonal     => true,
       :artefacto    => true,
+      :precio       => 175,
     },
     { 
       :id           => 23,
@@ -209,6 +218,7 @@ def armas
       :ranuras      => 4,
       :diagonal     => true,
       :legendario   => true,
+      :precio       => 700,
     },
     { 
       :id           => 24,
@@ -217,6 +227,7 @@ def armas
       :ataque       => 4,
       :ranuras      => 4,
       :diagonal     => false,
+      :precio       => 450,
     },
     { 
       :id           => 25,
@@ -225,6 +236,7 @@ def armas
       :ataque       => 0,
       :ranuras      => 0,
       :diagonal     => false,
+      :precio       => 1,
     },
   ]
 end

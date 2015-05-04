@@ -37,7 +37,7 @@ class App < Sinatra::Base
   end
   get '/magia/hechizos/:level' do |level|
     @spelllevel = level.to_i
-    erb :'magia/hechizos'
+    erb :template, :locals => view('hechizos')
   end
    
   get '/escuela/:escuela/:nivel' do |escuela, level|
