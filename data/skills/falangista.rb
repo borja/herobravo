@@ -47,7 +47,8 @@ def falangistas
       :id           => 7,
       :name         => "gloria del héroe",
       :description  => "Ignora cualquier mal. Se debe declarar al inicio del turno del Malvado Brujo.",
-      :type         => "única"
+      :type         => "única",
+      :nivel        => 6,
     },
     {
       :id           => 8,

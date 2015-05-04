@@ -77,6 +77,4 @@ def hoplitas
   ]
 end
 
-def hoplita(id)
-  hoplitas[id]
-end
+def hoplita id; hoplitas[id] end
