@@ -11,7 +11,7 @@ def nigromantes
     {
       :id           => 1,
       :name         => "explotar cadáver",
-      :description  => "1PM: Explota un cadáver en la sala o pasillo, causando 1DC psiónicos a su alrededor.",
+      :description  => "1PM: Explota un cadáver reciente en la sala o pasillo, causando 1DC psiónicos a su alrededor.",
       :type         => "Reactiva",
       :nivel        => 1
     },
