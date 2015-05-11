@@ -16,6 +16,4 @@ def sacerdotes
   ]
 end
 
-def sacerdote(id)
-  sacerdotes[id]
-end
+def sacerdote id ; sacerdotes[id] end
