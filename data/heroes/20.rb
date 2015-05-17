@@ -8,6 +8,7 @@ def h20
     :status       => "retirado",
     :muerto       => true,
     :historia     => 2,
+    :premio       => 1,
     :nivel        => 3,
     :cuerpo       => 5,
     :mente        => 7,

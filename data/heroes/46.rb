@@ -7,6 +7,7 @@ def h46
     :jugador      => "Daniel Cabañas",
     :status       => "retirado",
     :historia     => 2,
+    :premio       => 2,
     :muerto       => true,
     :nivel        => 1,
     :cuerpo       => 6,
