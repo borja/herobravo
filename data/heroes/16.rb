@@ -6,6 +6,7 @@ def h16
     :personaje    => "hechicero",
     :jugador      => "Chorni",
     :gender       => "female",
+    :historia     => 2,
     :nivel        => 5,
     :cuerpo       => 4,
     :mente        => 13,
