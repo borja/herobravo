@@ -12,9 +12,14 @@ def app
   Sinatra::Application
 end
 
-describe "herobravo" do
+describe ".hero" do
 
   it "should say true" do
     assert hero(2).id == 2
   end
+  it "should say true" do
+    heroes.each do |heroe|
+      File.exist?(heroe.big_path)
+    end
+  end  
 end

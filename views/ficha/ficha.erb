@@ -30,7 +30,25 @@
 								<%= erb :"ficha/inventario/columna#{i+1}", :locals => { :heroe => @heroe } %>	
 							</div>
 						<% end %>
-					</div>					
+					</div>
+					<div class="row">
+						<div class="4u">
+							<%= erb :'ficha/abalorios' %>
+						</div>
+						<div class="4u">
+							<%= erb :'ficha/piezas' %>
+						</div>
+						<div class="4u">
+							<%= erb :'ficha/materiales' %>
+						</div>
+					</div>
+					<%if @heroe.tesoro %>
+					<div class="row">
+						<div class="12u">
+							<%= erb :'ficha/tesoros' %>
+						</div>
+					</div>
+					<% end %>				
 					<div class="row">
 						<div class="12u">
 							<%= erb :'ficha/habilidades', :locals => { :heroe => @heroe } if @heroe.skills %>	
