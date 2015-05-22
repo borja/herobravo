@@ -115,6 +115,7 @@ class Hero < Hash
   def potis         ; self.pociones.map { |pot| Pocion.new(p) } end
   def empadronado   ; self.ciudad || "Jadessvärd"  end
   def estado        ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
+  def capacidad     ; @heroe.nivel/3 + 3  end #inventario
   
   def resistencia(elemento) # I'm sorry for this...
     total = 0 # Initialize default returns 0
@@ -205,5 +206,5 @@ class Hero < Hash
       end
     else return self.clase
     end
-  end  
+  end
 end

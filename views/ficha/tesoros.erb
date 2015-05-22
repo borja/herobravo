@@ -1,35 +1,39 @@
-<h3>Tesoros</h3>
-<table id='table-2'>
-	<thead>
-		<tr><% engarces.each do |engarce| %>
-				<th><%= engarce.capitalize %></th>
-			<% end %>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>				
-			<% engarces.each do |engarce| %>
-				<td>
-					<% if tesoros = heroe.tesoro[engarce.to_sym] %>
-						<table id='table-2'>
-							<tbody>
-								<tr>
-									<% tesoros.each do |t| %>
-                    	    			<td>
-											<%= erb :'display/display', :locals => { 
-													:title       => nombre = send(engarce.gsub('s',''),t).name, 
-													:path        => "'../images/treasures/#{engarce}/#{nombre}.png'",
-													:description => engarce == 'gemas' ? send(engarce.gsub('s',''),t).calidad : ""} %>
-										</td>
-									<% end %>
-								</tr>
-							</tbody>
-						</table>
-					<% else %>
-						El héroe no tiene <%= engarce %>.
-					<% end %>
-				</td>
-			<% end %>
-		</tr>
-	</tbody>
-</table>
+<section>	
+	<header>
+		<center><h2>Tesoros</h2></center>
+	</header>
+	<table id='table-2'>
+		<thead>
+			<tr><% engarces.each do |engarce| %>
+					<th><%= engarce.capitalize %></th>
+				<% end %>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>				
+				<% engarces.each do |engarce| %>
+					<td>
+						<% if tesoros = @heroe.tesoro[engarce.to_sym] %>
+							<table id='table-2'>
+								<tbody>
+									<tr>
+										<% tesoros.each do |t| %>
+	                    	    			<td>
+												<%= erb :'display/display', :locals => { 
+														:title       => nombre = send(engarce.gsub('s',''),t).name, 
+														:path        => "'../images/treasures/#{engarce}/#{nombre}.png'",
+														:description => engarce == 'gemas' ? send(engarce.gsub('s',''),t).calidad : ""} %>
+											</td>
+										<% end %>
+									</tr>
+								</tbody>
+							</table>
+						<% else %>
+							El héroe no tiene <%= engarce %>.
+						<% end %>
+					</td>
+				<% end %>
+			</tr>
+		</tbody>
+	</table>
+</section>
