@@ -1,6 +1,6 @@
 <section>
 	<header>
-		<h2>Habilidades del <%= char = request.path_info.split('/').last.encode('utf-8') %></h2>
+		<h2>Habilidades del <%= char = request.path_info.split('/').last.gsub('palad%C3%ADn','paladín') %></h2>
 	</header>
 	<link rel="stylesheet" href="../css/bravo.css" />
 	<table id='tresp'>
