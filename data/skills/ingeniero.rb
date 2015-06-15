@@ -63,19 +63,19 @@ def ingenieros
     },
     {
       :id           => 10,
-     :name         => "disparo a bocajarro",
+     :name         => "Disparo a bocajarro",
       :description  => "Permite disparar a melee con el arma, otorgando fuerza +1 en el disparo",
       :type         => "pasiva"
     },
     {
       :id           => 11,
-      :name         => "eter curativo",
+      :name         => "Éter curativo",
       :description  => "Permite utilizar el eter para recuperar puntos de cuerpo",
       :type         => "pasiva"
     },
     {
       :id           => 12,
-      :name         => "maestro de cachivaches",
+      :name         => "Maestro de cachivaches",
       :description  => "Permite llevar 1 cachivache adicional",
       :type         => "pasiva"
     },
