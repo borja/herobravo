@@ -24,3 +24,11 @@ def razas
     "tiefling" => { :cuerpo => 6, :mente => 4, :movimiento => 7 },
   } 
 end
+
+def nomalize_pj (pj)
+  case pj
+  when 'palad%C3%ADn' then 'paladín'
+  when 'ladr%C3%B3n'  then 'ladrón'
+  else pj
+  end
+end

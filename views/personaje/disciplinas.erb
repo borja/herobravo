@@ -1,6 +1,7 @@
 <section>
 	<header>
-		<h2>Habilidades del <%= char = request.path_info.split('/').last.gsub('palad%C3%ADn','paladín') %></h2>
+		<% char = nomalize_pj(request.path_info.split('/').last) %>
+		<h2>Habilidades del <%= char %></h2>
 	</header>
 	<link rel="stylesheet" href="../css/bravo.css" />
 	<table id='tresp'>
