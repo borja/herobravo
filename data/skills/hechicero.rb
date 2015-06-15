@@ -3,19 +3,19 @@ def hechiceros
   [
     {
       :id           => 0,
-      :name         => "hechizar",
+      :name         => "Hechizar",
       :description  => "El hechicero puede ejecutar magias elementales",
       :type         => "pasiva",
     },
     {
       :id           => 1,
-      :name         => "recuperar",
+      :name         => "Recuperar",
       :description  => "6+: Recupera una magia",
       :type         => "pasiva",
     },
     {
       :id           => 2,
-      :name         => "chistera mágica",
+      :name         => "Chistera mágica",
       :description  => "acción: permite almacenar una magica en 'chistera': el hechizo se recuperará pero deberá ser ejecutado el primero",
       :type         => "activa",
     },
@@ -51,7 +51,7 @@ def hechiceros
     },
     {
       :id           => 8,
-      :name         => "gloria del héroe",
+      :name         => "Gloria del héroe",
       :description  => "Ignora cualquier daño que le fuera a ser realizado al héroe. El efecto cesa al finalizar el turno del Malvado Brujo. Debe utilizarse ANTES de la tirada de ataque.",
       :type         => "Única"
     },
