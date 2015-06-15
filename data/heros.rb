@@ -30,6 +30,7 @@ def nomalize_pj pj
     when 'palad%C3%ADn'   then 'paladín'
     when 'ladr%C3%B3n'    then 'ladrón'
     when 'bers%C3%A9rker' then 'bersérker'
+    when 'cl%C3%A9rigo'   then 'clérigo'
     else pj
   end
 end
