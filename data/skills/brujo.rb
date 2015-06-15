@@ -3,7 +3,7 @@ def brujos
   [
     {
       :id           => 0,
-      :name         => "Pacto Demoníaco",
+      :name         => "Pacto demoníaco",
       :description  => "1 PM: + 1 dado azul de defensa este turno.",
       :type         => "Instinto",
       :nivel        => 1,
