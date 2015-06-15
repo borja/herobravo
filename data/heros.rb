@@ -25,10 +25,11 @@ def razas
   } 
 end
 
-def nomalize_pj (pj)
+def nomalize_pj pj
   case pj
-  when 'palad%C3%ADn' then 'paladín'
-  when 'ladr%C3%B3n'  then 'ladrón'
-  else pj
+    when 'palad%C3%ADn'   then 'paladín'
+    when 'ladr%C3%B3n'    then 'ladrón'
+    when 'bers%C3%A9rker' then 'bersérker'
+    else pj
   end
 end
