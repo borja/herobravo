@@ -8,7 +8,7 @@ Herosheet Dashboard
 Running this application locally
 ----------------------------------
 
-To run this application locally, cd into the sinatra-example directory that you cloned and run
+To run this application locally, run:
 
 		bundle install
 		bundle exec ruby -S rackup -w config.ru

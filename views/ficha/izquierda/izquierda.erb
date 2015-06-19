@@ -5,4 +5,9 @@
 	<a href=<%= "/hero/#{@heroe.id }" %> class="feature-image">
 		<img src=<%= @heroe.big_path %> alt=<%= @heroe.name %>, id='portrait' />
 	</a>
+	<% if  @heroe.historia %>
+		<center>
+			<a href='<%= "/historias/#{@heroe.id }" %>'>Historia de <%= @heroe.name %></a>
+		</center>
+	<% end %>
 </section>
