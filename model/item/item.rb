@@ -83,11 +83,11 @@ end
 class Abalorio < Item
   def name     ; abalorio(self.id)[:name] end
   def fits     ; "abalorio" end
+  def efecto   ; abalorio(self.id)[:efecto] end
 end
 
 class Util < Item
-  attr_accessor :id, :spells # Only for pergaminos
-  
+  attr_accessor :id, :spells
   def initialize args
     args.each do |k,v|
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
