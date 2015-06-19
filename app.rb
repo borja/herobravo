@@ -2,6 +2,15 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
   
+  error do
+    "La hemos liado parda"
+  end
+  
+  get '/div_by_zero' do
+    0 / 0
+    "You won't see me."
+  end
+  
   # Main Website
   get '/' do
     erb :index
