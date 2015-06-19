@@ -18,8 +18,8 @@ describe ".hero" do
     assert hero(2).id == 2
   end
   it "should say true" do
-    heroes.each do |heroe|
-      File.exist?(heroe.big_path)
+    heros.each do |h|
+      File.exist?(h.big_path)
     end
   end  
 end
