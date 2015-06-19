@@ -25,6 +25,9 @@
 				<li><b><%= enchant(e)[:name].capitalize %></b>:
 				 	<i><%= enchant(e)[:descripcion] %></i>
 			<% end %>
+		<% end %>
+		<% if item.item == "abalorio" %>
+			<li><%= item.efecto %></li>
 		<% end %>	
 	</div>
 </div>

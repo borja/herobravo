@@ -37,6 +37,7 @@ def h2
                      Pergamino.new({:id => 1, :spells  => [71]})],
     :tesoro       => {:gemas => [51,24,25,25,17,35,16,27,18,39],
                      :runas => [7,9]},
-    :abalorios    => [Abalorio.new({:id  =>1})],                      
+    :abalorios    => [Abalorio.new({:id => 1}),
+                      Abalorio.new({:id => 2})],                      
   }
 end
