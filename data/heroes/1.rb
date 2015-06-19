@@ -8,6 +8,7 @@ def h1
     :jugador      => "Alberto",
     :status       => "activo",
     :camino       => ["El Heredero",3],
+    :titulo       => "Príncipe Bastardo",
     :repu         => 11,
     :nivel        => 21,
     :cuerpo       => 11,
