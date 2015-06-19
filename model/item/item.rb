@@ -85,7 +85,7 @@ class Abalorio < Item
   def fits     ; "abalorio" end
 end
 
-class Util < Hash
+class Util < Item
   attr_accessor :id, :spells # Only for pergaminos
   
   def initialize args

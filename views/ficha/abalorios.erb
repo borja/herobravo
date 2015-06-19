@@ -2,17 +2,17 @@
 	<header>
 		<center><h2>Abalorios</h2></center>
 	</header>
-	<% if @heroe.abalorios %>
 	<table>
 		<tbody>
 			<tr>
-				<% @heroe.abalorios.each do |a| %>
-					<td><%= erb :"display/item", :locals => {:item => a} %></td>
+				<% if @heroe.abalorios %>
+					<% @heroe.abalorios.each do |a| %>
+						<td><%= erb :"display/item", :locals => {:item => a} %></td>
+					<% end %>
+				<% else %>
+					<td>Sin abalorios</td>
 				<% end %>
 			</tr>
 		</tbody>
 	</table>
-	<% else %>
-		<p>El héroe no tiene abalorios</p>
-	<% end %>
 </section>
