@@ -5,4 +5,5 @@
 	<a href=<%= "/habilidades/#{@heroe.personaje }" %> class="feature-image">
 		<img src="../images/clases/<%= @heroe.personaje %>.png" alt=<%= @heroe.personaje %> /, id='box'>
 	</a>
+	<%= erb :'ficha/hechizos' unless @heroe.elementos.empty? %>
 </section>

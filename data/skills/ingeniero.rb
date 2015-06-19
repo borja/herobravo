@@ -79,6 +79,20 @@ def ingenieros
       :description  => "Permite llevar 1 cachivache adicional",
       :type         => "pasiva"
     },
+    {
+      :id           => 13,
+      :name         => "Explotapelota",
+      :description  => "1 Éter: fabrica B.O.M.B.I.T.A (Balón-Orgánico-Mecánico-Bastante-Inestable-Totalmente-Abrasador) (Dura hasta final de reto: se usa como arrojadiza, pudiendo rebotar por cada escudo negro. Causa 1d6 daños de fuego en una área 2x2).",
+      :type         => "Activa",
+      :nivel        => 4
+    },
+    {
+      :id           => 14,
+      :name         => "Recoger fosfitos",
+      :description  => "El ingeniero puede fabricar pimienta cada vez que invierta una acción inmediatamente después de fallar un disparo.",
+      :type         => "Reactiva",
+      :nivel        => 6
+    },
   ]
 end
 

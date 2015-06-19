@@ -5,6 +5,7 @@ def h3
     :name         => "Elysa Demoneye",
     :personaje    => "vengador",
     :jugador      => "Iris",
+    :titulo       => "Condesa de Zelmuria",
     :gender       => "female",
     :status       => "reserva",
     :historia     => 1,
