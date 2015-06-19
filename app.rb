@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
   
   error do
-    "La hemos liado parda"
+    erb :error
   end
   
   get '/div_by_zero' do
