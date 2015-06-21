@@ -1,44 +1,44 @@
 # encoding: UTF-8
-def caóticos
+def humanoides
   [
     { :id         => 0,
-      :nombre     => 'demonio',
+      :nombre     => 'pirata',
       :ataque     => 4,
       :defensa    => 2,
       :movimiento => 7,
       :mente      => 4,
       :cuerpo     => 4,
-      :especial   => "El daño causado se añade a su cuerpo total.",
+      :especial   => "5+ vs hechizos de agua",
     },
     { :id         => 1,
-      :nombre     => 'guerrero',
+      :nombre     => 'bandido',
       :ataque     => 3,
       :defensa    => 4,
       :movimiento => 6,
       :mente      => 3,
       :cuerpo     => 3,
-      :especial   => "",
+      :especial   => "aturde",
     },
     { :id         => 2,
-      :nombre     => 'ungor',
+      :nombre     => 'asesino',
       :ataque     => 3,
       :defensa    => 3,
       :movimiento => 6,
       :mente      => 1,
       :cuerpo     => 2,
-      :especial   => "",
+      :especial   => "Armas envenenadas. Sigilo al matar.",
     },
     { :id         => 3,
-      :nombre     => 'lobo',
+      :nombre     => 'bárbaro',
       :ataque     => 4,
       :defensa    => 2,
       :movimiento => 10,
       :mente      => 1,
       :cuerpo     => 2,
-      :especial   => "Caballería",
+      :especial   => "Odio",
     }
     
   ]
 end
 
-def caótico id ; caóticos[id] end
+def humanoide id ; humanoides[id] end

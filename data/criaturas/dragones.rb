@@ -1,8 +1,8 @@
 # encoding: UTF-8
-def dragons
+def dragones
   [
     { :id           => 0,
-      :name         => "terrestre",
+      :nombre       => "terrestre",
       :cuerpo       => 10,
       :mente        => 7,
       :movimiento   => 9,
@@ -10,7 +10,7 @@ def dragons
       :miedo        => 4,
     },
     { :id           => 1,
-      :name         => "verde",
+      :nombre       => "verde",
       :cuerpo       => 11,
       :mente        => 6,
       :movimiento   => 9,
@@ -18,7 +18,7 @@ def dragons
       :miedo        => 4,
     },
     { :id           => 2,
-      :name         => "rojo",
+      :nombre       => "rojo",
       :cuerpo       => 12,
       :mente        => 6,
       :movimiento   => 9,
@@ -26,7 +26,7 @@ def dragons
       :miedo        => 4,
     },
     { :id           => 3,
-      :name         => "azul",
+      :nombre       => "azul",
       :cuerpo       => 9,
       :mente        => 10,
       :movimiento   => 9,
@@ -34,7 +34,7 @@ def dragons
       :miedo        => 4,
     },
     { :id           => 4,
-      :name         => "blanco",
+      :nombre       => "blanco",
       :cuerpo       => 8,
       :mente        => 7,
       :movimiento   => 9,
@@ -42,7 +42,7 @@ def dragons
       :miedo        => 4,
     },
     { :id           => 5,
-      :name         => "negro",
+      :nombre       => "negro",
       :cuerpo       => 10,
       :mente        => 7,
       :movimiento   => 9,
@@ -50,7 +50,7 @@ def dragons
       :miedo        => 4,
     },
     { :id           => 6,
-      :name         => "liche",
+      :nombre       => "liche",
       :cuerpo       => 10,
       :mente        => 8,
       :movimiento   => 9,
@@ -60,4 +60,4 @@ def dragons
   ]
 end
 
-def dargon id ; dragons[id] end
+def dargon id ; dragones[id] end

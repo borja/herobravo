@@ -8,7 +8,8 @@ require './data/criaturas/caos'
 require './data/criaturas/pielverdes'
 require './data/criaturas/bestias'
 require './data/criaturas/guardians'
+require './data/criaturas/humanoides'
 
 def criaturas
-  ["bestias","pielverdes","nomuertos","dragones","elementales","caos","guardianes","humanoides"]
+  ["bestias","pielverdes","nomuertos","dragones","elementales","caóticos","guardianes","humanoides"]
 end

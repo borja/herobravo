@@ -32,8 +32,23 @@ def nomuertos
       :movimiento => 8,
       :mente      => 0,
       :cuerpo     => 2,
+    },
+    { :id         => 4,
+      :nombre     => 'liche',
+      :ataque     => 3,
+      :defensa    => 3,
+      :movimiento => 8,
+      :mente      => 0,
+      :cuerpo     => 2,
+    },
+    { :id         => 5,
+      :nombre     => 'sombra',
+      :ataque     => 3,
+      :defensa    => 3,
+      :movimiento => 8,
+      :mente      => 0,
+      :cuerpo     => 2,
     }
-    
   ]
 end
 
