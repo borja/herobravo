@@ -1,0 +1,27 @@
+<section>
+	<link rel="stylesheet" href="../css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<% send(@criature).first.keys.each do |att| %>
+					<th><%= att.capitalize %></th>
+				<% end %>
+			</tr>	
+		</thead>
+		<tbody>
+			<% send(@criature).each do |c| %>
+				<tr>
+					<td>
+						<% img_path = "'../images/criaturas/#{@criature}/#{c[:nombre]}.png'" %>
+						<img src=<%=img_path%> alt='icono', id='icon2' />
+					</td>
+					<% c.keys.each do |att| %>
+						<% if att != :id %>
+							<td><%= c[att] %></td>
+						<% end %>
+					<% end %>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

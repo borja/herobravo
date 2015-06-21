@@ -1,5 +1,5 @@
 # encoding: UTF-8
-def elementals
+def elementales
   [
     { :id           => 0,
       :nombre       => "agua",
@@ -52,4 +52,4 @@ def elementals
     }
   ]
 end
-def elemental id ; elementals[id] end
+def elemental id ; elementales[id] end

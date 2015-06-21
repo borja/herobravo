@@ -215,11 +215,13 @@ def views
       :route    => "estados",
       :title    => "Estados de Combate",
       :template => { :main  => 'reglamento/combate/estados' }
-    },    {
+    },    
+    {
       :route    => "posiciones",
       :title    => "Posiciones de Combate",
       :template => { :main  => 'reglamento/combate/posiciones' }
-    },    {
+    },    
+    {
       :route    => "resistencias",
       :title    => "Resistencias",
       :template => { :main  => 'reglamento/combate/resistencias' }
@@ -242,6 +244,11 @@ def views
         :main   => 'torre/magisters',
         :right  => 'torre/right/ancestrales',
       }
+    },
+    {
+      :route    => "criature",
+      :title    => "Criaturas",
+      :template => { :main  => 'reglamento/criature' }
     },
   ]
 end

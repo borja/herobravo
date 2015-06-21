@@ -31,7 +31,8 @@ class App < Sinatra::Base
   end
   
   get '/criaturas/:monster' do |criature|
-    erb :"reglamento/criaturas/#{criature}"
+    @criature = criature
+    erb :template, :locals => view('criature')    
   end
   
   
@@ -88,9 +89,6 @@ class App < Sinatra::Base
   
   get '/gemas' do 
     erb :'items/gemas/gemas'
-  end
-  get '/criaturas' do 
-    erb :'reglamento/criaturas'
   end
   
   get '/escuelas' do 

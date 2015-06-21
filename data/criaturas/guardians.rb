@@ -1,5 +1,5 @@
 # encoding: UTF-8
-def guardians
+def guardianes
   [
     { :id               => 0,
       :nombre           => 'rata',
@@ -124,4 +124,4 @@ def guardians
   ]
 end
 
-def guardian id ; guardians[id] end
+def guardian id ; guardianes[id] end
