@@ -116,12 +116,24 @@ def profesions
           :coste   => 250,
           :efecto  => "A cambio de 3 pieles se fabrica 1 Cota de cuero endurecida. Se vende por 100g.",
         },
+        {
+          :id      => 4,
+          :name    => "Pulseras",
+          :coste   => 50,
+          :efecto  => "A cambio de una piel, puedes fabricar una pulsera de cuero (+0P), que cuenta como muñequera con un engarce.",
+        },
       ],
       :artesano  => [
         { :id      => 0,
           :name    => "Artesano taxidermista",
           :coste   => 500,
           :efecto  => "Permite extraer pieles de criaturas mágicas. (Éxito: 8+) ",
+        },
+        {
+          :id      => 5,
+          :name    => "Hombreras encantadas",
+          :coste   => 450,
+          :efecto  => "2 cueros mágicos, 8 polvos arcanos: Crea unas hombreras de cuero (+2P) que otorgan +2 vs Fuego.",
         }
       ],
       :maestro   => [
@@ -204,7 +216,7 @@ def profesions
           :id      => 3,
           :name    => "Recargar",
           :coste   => 100,
-          :efecto  => "El encantador puede invertir nX PM para recargar un objeto sin cargar. N=Nivel de la propiedad mágica. X=nº cargas que quiere invertir. Nota: No funciona con objetos que funcionan 1/reto.",
+          :efecto  => "El encantador puede invertir nX PM/PC para recargar un objeto sin cargar. N=Nivel de la propiedad mágica. X=nº cargas que quiere invertir. Nota: No funciona con objetos que funcionan 1/reto.",
         },
       ],
       :artesano  => [
@@ -212,6 +224,11 @@ def profesions
           :name    => "Artesano encantador",
           :coste   => 500,
           :efecto  => "Puedes usar dos polvos de un nivel inferior para obtener uno superior.",
+        },
+        { :id      => 1,
+          :name    => "Redirigir maldición",
+          :coste   => 450,
+          :efecto  => "Requiere una varita mágica: Redirige una maldición a la varita mágica, anulando el poder de la varita hasta final del reto.",
         }
       ],
       :maestro   => [
