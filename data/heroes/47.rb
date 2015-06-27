@@ -7,6 +7,11 @@ def h47
     :jugador      => "Iris",
     :status       => "licenciado",
     :progenitores => [29,"Conde Ragnar"],
+    :pareja       => {
+      :nombre      => "Stella", 
+      :raza        => "tabernera", 
+      :tipo        => "pnj", 
+      :descripcion => "Una humilde tabernera humana de Altdorf." },
     :nivel        => 17,
     :repu         => 9,
     :cuerpo       => 14,

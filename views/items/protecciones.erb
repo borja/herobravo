@@ -7,7 +7,7 @@
 		</tr>	
 	</thead>
 	<tbody>
-		<% proteccions.each do |prot| %>
+		<% proteccions.sort_by {|p| p[:categoria]}.each do |prot| %>
 		<% p = Proteccion.new(prot) %>
 			<tr>
 				<td>

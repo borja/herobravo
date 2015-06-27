@@ -5,6 +5,7 @@ def h15
     :name         => "Tim el mago",
     :personaje    => "hechicero",
     :jugador      => "Luis",
+    :pareja       => {:char => 14, :tipo => "pj"},
     :historia     => 1,
     :nivel        => 6,
     :cuerpo       => 6,

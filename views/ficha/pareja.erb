@@ -1,0 +1,10 @@
+<% if @heroe.pareja[:tipo] == 'pj' %>
+	<a href=<%= "/hero/#{@heroe.pareja[:char]}" %>>
+		<%= erb :'display/portrait', :locals => { :h => hero(@heroe.pareja[:char]) } %>
+	</a>
+<% else %>
+	<%= erb :'display/display', :locals => { 
+	  :title       => @heroe.pareja[:nombre], 
+	  :path        => "'../images/personajes/#{@heroe.pareja[:raza]}.png'" ,
+	  :description => @heroe.pareja[:descripcion] } %>
+<% end %>

@@ -4,6 +4,9 @@
 			<% lore.each do |f| %>
 				<th><%= f.capitalize %></th>
 			<% end%>
+			<% if @heroe.pareja %>
+				<th>Pareja</th>
+			<% end %>
 			<% if @heroe.progenitores %>
 				<th>Progenitores</th>
 			<% end %>
@@ -25,7 +28,9 @@
 				</a>
 			</td>
 			<td><a href='/raza/<%= @heroe.raza %>s'><%= @heroe.raza.capitalize %></a></td>
-			<td>X</td>
+			<% if @heroe.pareja %>
+				<td><%= erb :'ficha/pareja' %></td>
+			<% end %>
 			<% if @heroe.progenitores %>
 				<td><%= erb :'ficha/progenitores' %></td>
 			<% end %>
