@@ -1,12 +1,9 @@
 <link rel="stylesheet" href="../css/bravo.css" />
 <table id='tresp'>
 	<thead>
-		<tr>
-			<th>Icono</th>
-			<th>Nombre</th>
-			<th>Categoría</th>
-			<th>Defensa</th>
-			<th>Ranuras Permitidas</th>
+		<tr><% ["Icono", "Nombre", "Categoría", "Defensa", "Precio", "Ranuras Permitidas"].each do |stat| %>
+				<th><%= stat %></th>
+			<% end %>
 		</tr>	
 	</thead>
 	<tbody>
@@ -20,6 +17,7 @@
 				<td><%= p.name.capitalize %></td>
 				<td><%= p.categoria.capitalize %></td>
 				<td><%= p.defensa %></td>
+				<td><%= p.precio %></td>
 				<td><%= p.ranuras %></td>
 			</tr>
 		<% end %>
