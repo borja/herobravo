@@ -1,6 +1,6 @@
 # encoding: UTF-8
 def descripcion  ;["Jugador", "nivel", "reputación"]                                      end
-def lore         ;["ciudad", "raza", "pareja"]                                            end
+def lore         ;["ciudad", "raza"]                                                      end
 def disciplinas  ;["id", "icono", "tipo", "nombre", "descripción", "nivel", "requisitos"] end
 def engarces     ;["gemas","joyas","runas"]                                               end
 def habs         ;["icono", "tipo", "nombre", "descripción"]                              end

@@ -6,6 +6,7 @@ def h14
    :personaje    => "derviche",
    :jugador      => "Cristina",
    :gender       => "female",
+   :pareja       => {:char => 15, :tipo => "pj"},
    :historia     => 1,
    :nivel        => 6,
    :cuerpo       => 8,
