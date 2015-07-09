@@ -48,6 +48,7 @@ def gemas
       :espalda  => "Al huir invocas un espectro en tu espalda.",
       :anillo   => "+1 potencia a las magias de sombras.",
       :muñecas  => "Golpes inflingidos pueden ser profanos",
+      :arma     => "+1 dado profano al ataque.",
     } }),
     Gema.new({ :id => 25, :name => "esmeralda", :fits => {
       :cuello   => "+1 magia de tierra de nivel 2 a elegir al inicio del reto.",
@@ -55,7 +56,7 @@ def gemas
       :pecho    => "+3 vs Peste",
       :espalda  => "+1 turno de envenamiento a tu agresor por la espalda.",
       :anillo   => "+1 potencia a las magias de tierra.",
-      :arma     => "Añade un dado de peste al ataque.",
+      :arma     => "+1 un dado de peste al ataque.",
       :cadena   => " +1 magia élfica",
     } }),
     Gema.new({ :id => 26, :name => "zafiro", :fits => {
