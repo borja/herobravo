@@ -9,9 +9,16 @@
 				<div id="content">
 					<div class="container">
 						<div class="row">
-							<% 6.times do |i| %>	
-								<div class="2u">					
+							<% 3.times do |i| %>	
+								<div class="4u">					
 									<%= erb :'items/gemas/calibre', :locals => { :i => i } %>
+								</div>							
+							<% end%>							
+						</div>
+						<div class="row">
+							<% 3.times do |i| %>	
+								<div class="4u">					
+									<%= erb :'items/gemas/calibre', :locals => { :i => i+3 } %>
 								</div>							
 							<% end%>							
 						</div>
