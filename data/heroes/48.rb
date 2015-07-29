@@ -8,6 +8,7 @@ def h48
     :jugador   => "Iris",
     :gender    => "female",
     :status    => "reserva",
+    :muerto       => true,
     :historia  => 2,
     :nivel     => 3,
     :cuerpo    => 9,
