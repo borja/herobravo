@@ -33,25 +33,39 @@ def gemas
     } }),
     ## Gemas Valiosas
     Gema.new({ :id => 16, :name => "jade", :fits => {
+      :cabeza   => "1/reto: El demonio atacador deberá defender con defensa verdadera.",
+      :cuello   => "+1 magia de tierra de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Peste",
     } }),
     Gema.new({ :id => 17, :name => "aguamarina", :fits => {
+      :cuello   => "+1 magia de agua de nivel 1 a elegir al inicio del reto.",
+      :cabeza   => "+1 PM si tu puntuación de cuerpo es superior.",
       :pies     => "2 escudos blancos -> 1 genio",
       :arma     => "+1 dado de escarcha",
       :pecho    => "+2 vs Escarcha",
     } }),
     Gema.new({ :id => 18, :name => "ámbar", :fits => {
+      :cuello   => "+1 magia de aire de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Rayo",
     } }),
     Gema.new({ :id => 19, :name => "piropo", :fits => {
+      :cuello   => "+1 magia de fuego de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Calor",
     } }),
-    Gema.new({ :id => 20, :name => "olivino", :fits => {} }),
+    Gema.new({ :id => 20, :name => "olivino", :fits => {
+      :cuello   => "+1 magia de sombras de nivel 1 a elegir al inicio del reto.",
+    } }),
     Gema.new({ :id => 21, :name => "perla", :fits => {
+      :cuello   => "+1 plegaria",
       :cabeza => "5/reto: El ataque se considera bendito."
     } }),
-    Gema.new({ :id => 22, :name => "jaspe", :fits => {} }),
-    Gema.new({ :id => 23, :name => "coral", :fits => {} }),
+    Gema.new({ :id => 22, :name => "jaspe", :fits => {
+      :cuello   => "+1 magia de sangre de nivel 1 a elegir al inicio del reto.",
+    } }),
+    Gema.new({ :id => 23, :name => "coral", :fits => {
+      :cuello   => "+1 PC. El portador obtiene un punto de vida adicional al ser sanado con el hechizo: agua que cura.",
+      :cabeza   => "+1 PC si tu puntuación de mente es superior.",
+    } }),
     ## Piedras Preciosas
     Gema.new({ :id => 24, :name => "amatista", :fits => {
       :cabeza   => "+1 infundir miedo",
