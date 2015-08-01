@@ -1,33 +1,60 @@
 # encoding: UTF-8
 def gemas
   [
-    Gema.new({ :id => 0,  :name => "halita", :fits => {} }),
-    Gema.new({ :id => 1,  :name => "antracita", :fits => {} }),
-    Gema.new({ :id => 2,  :name => "pirita", :fits => {} }),
+    Gema.new({ :id => 0,  :name => "halita", :fits => {
+      :cabeza   => "+1 buscar para detectar enemigos en sigilo.",
+      :pecho    => "+1 defensa vs elementales".
+    } }),
+    Gema.new({ :id => 1,  :name => "antracita", :fits => {
+      :cabeza   => "No-muertos gobernados tienen +1 protección",
+      :pecho    => "+1 defensa vs no-muertos".
+    } }),
+    Gema.new({ :id => 2,  :name => "pirita", :fits => {
+      :cabeza   => "Ilumina",
+      :pecho    => "+1 vs hechizos de Aire".
+    } }),
     Gema.new({ :id => 3,  :name => "serpentina", :fits => {
-      :arma   => "envenena"
+      :cabeza   => "Si tu familiar es una serpiente, duplica su efecto.",
+      :arma     => "envenena"
+      :pecho    => "+1 defensa vs pieles verdes".
     } }),
     Gema.new({ :id => 4,  :name => "ojo de tigre", :fits => {
-      :armadura => "Los ataques por el flanco se consideran frontales.",
+      :cabeza   => "1/reto: Puedes desvelar todas las trampas de una sala o pasillo.",
+      :pecho  => "Los ataques por uno de los flancos, se consideran frontales.",
     } }),
-    Gema.new({ :id => 5,  :name => "hematites", :fits => {} }),
-    Gema.new({ :id => 6,  :name => "piedra pómez", :fits => {} }),
+    Gema.new({ :id => 5,  :name => "hematites", :fits => {
+      :cabeza   => "+1 PM si no puedes lanzar hechizos.",
+      :pecho    => "+1 defensa vs constructos".
+    } }),
+    Gema.new({ :id => 6,  :name => "piedra pómez", :fits => {
+      :cabeza   => "+1 vs hechizos de Tierra",
+      :pecho    => "-2 penalizador de movimiento de la armadura.".
+    } }),
     Gema.new({ :id => 7,  :name => "cuarzo", :fits => {} }),
     ## Gemas Infrecuentes
-    Gema.new({ :id => 8,  :name => "almandino", :fits => {} }),
-    Gema.new({ :id => 9,  :name => "heliotropo", :fits => {} }),
-    Gema.new({ :id => 10, :name => "turquesa", :fits => {} }),
+    Gema.new({ :id => 8,  :name => "almandino", :fits => {
+      :pecho    => "+1 vs Miedo",
+    } }),
+    Gema.new({ :id => 9,  :name => "heliotropo", :fits => {
+      :pecho    => "+1 todas las resistencias durante 1d6 turnos cuando un aliado lance una bendición sobre el portador".
+    } }),
+    Gema.new({ :id => 10, :name => "turquesa", :fits => {
+      :pecho    => "+1 vs Psiónica",
+    } }),
     Gema.new({ :id => 11, :name => "lapislázuli", :fits => {
       :hombros  => "2 escudos negros al defender: magia de agua nivel 1 aleatoria",
       :pecho    => "+1 vs Escarcha",
     } }),
     Gema.new({ :id => 12, :name => "espinela", :fits => {
-      :pecho    => "+1 vs Peste",
+      :pecho    => "+1 vs Calor",
     } }),
     Gema.new({ :id => 13, :name => "hessonita", :fits => {
       :anillo   => "+2 PM",
+      :pecho    => "+1 vs Rayo",
     } }),
-    Gema.new({ :id => 14, :name => "malaquita", :fits => {} }),
+    Gema.new({ :id => 14, :name => "malaquita", :fits => {
+      :pecho    => "+1 vs Peste",
+    } }),
     Gema.new({ :id => 15, :name => "obsidiana", :fits => {
       :pecho    => "+1 vs Tenebro",
     } }),
