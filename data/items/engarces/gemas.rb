@@ -3,32 +3,39 @@ def gemas
   [
     Gema.new({ :id => 0,  :name => "halita", :fits => {
       :cabeza   => "+1 buscar para detectar enemigos en sigilo.",
-      :pecho    => "+1 defensa vs elementales".
+      :cuello   => "1/reto: +1 PC a un aliado (no puede ser sobre ti mismo)",
+      :pecho    => "+1 defensa vs elementales.",
     } }),
     Gema.new({ :id => 1,  :name => "antracita", :fits => {
       :cabeza   => "No-muertos gobernados tienen +1 protección",
-      :pecho    => "+1 defensa vs no-muertos".
+      :cuello   => "Recuperas 1PM cuando un aliado sufre miedo.",
+      :pecho    => "+1 defensa vs no-muertos.",
     } }),
     Gema.new({ :id => 2,  :name => "pirita", :fits => {
       :cabeza   => "Ilumina",
-      :pecho    => "+1 vs hechizos de Aire".
+      :cuello   => "Si objetivo de un hechizo de aire acumulas 1 carga. 3 cargas: Lanzas un genio (obligatoriamente en fase trepidante)",
+      :pecho    => "+1 vs hechizos de Aire.",
     } }),
     Gema.new({ :id => 3,  :name => "serpentina", :fits => {
       :cabeza   => "Si tu familiar es una serpiente, duplica su efecto.",
-      :arma     => "envenena"
-      :pecho    => "+1 defensa vs pieles verdes".
+      :cuello   => "1 carga de áspid al causar daño por veneno. 2 cargas de áspid: +2 de movimiento.",
+      :arma     => "envenena",
+      :pecho    => "+1 defensa vs pieles verdes.",
     } }),
     Gema.new({ :id => 4,  :name => "ojo de tigre", :fits => {
       :cabeza   => "1/reto: Puedes desvelar todas las trampas de una sala o pasillo.",
+      :cuello   => "1 carga de áspid al causar daño por veneno. 2 cargas de áspid: +2 de movimiento.",
       :pecho  => "Los ataques por uno de los flancos, se consideran frontales.",
     } }),
     Gema.new({ :id => 5,  :name => "hematites", :fits => {
       :cabeza   => "+1 PM si no puedes lanzar hechizos.",
-      :pecho    => "+1 defensa vs constructos".
+      :cuello   => "1/reto: +1 potencia en un hechizo de nivel 1. Si matara, puedes invertir 2PM en recuperar esta habilidad.",
+      :pecho    => "+1 defensa vs constructos.",
     } }),
     Gema.new({ :id => 6,  :name => "piedra pómez", :fits => {
       :cabeza   => "+1 vs hechizos de Tierra",
-      :pecho    => "-2 penalizador de movimiento de la armadura.".
+      :cuello   => "1/reto: +1 saltar fosos. Si tuvieras éxito, puedes gastar 1PM en recuperar esta habilidad.",
+      :pecho    => "-2 penalizador de movimiento de la armadura.",
     } }),
     Gema.new({ :id => 7,  :name => "cuarzo", :fits => {} }),
     ## Gemas Infrecuentes
@@ -36,7 +43,7 @@ def gemas
       :pecho    => "+1 vs Miedo",
     } }),
     Gema.new({ :id => 9,  :name => "heliotropo", :fits => {
-      :pecho    => "+1 todas las resistencias durante 1d6 turnos cuando un aliado lance una bendición sobre el portador".
+      :pecho    => "+1 todas las resistencias durante 1d6 turnos cuando un aliado lance una bendición sobre el portador.",
     } }),
     Gema.new({ :id => 10, :name => "turquesa", :fits => {
       :pecho    => "+1 vs Psiónica",
@@ -87,12 +94,12 @@ def gemas
       :pecho    => "+2 vs Tenebro",
     } }),
     Gema.new({ :id => 21, :name => "perla", :fits => {
-      :cabeza   => "1/reto: El ataque se considera bendito (causa daño verdadero a ciertas unidades)."
+      :cabeza   => "1/reto: El ataque se considera bendito (causa daño verdadero a ciertas unidades).",
       :cuello   => "+1 plegaria",
       :pecho    => "+2 vs Miedo",
     } }),
     Gema.new({ :id => 22, :name => "jaspe", :fits => {
-      :cabeza => "1/reto: Puedes aplicar robo de vida a un ataque, una vez haya sido tirado (antes de la defensa)."
+      :cabeza => "1/reto: Puedes aplicar robo de vida a un ataque, una vez haya sido tirado (antes de la defensa).",
       :cuello   => "+1 magia de sangre de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+1 carga al sufrir una herida cuerpo a cuerpo. 3 cargas: +1 fuerza en tu siguiente ataque. 4 cargas: +2 de fuerza en tu siguiente ataque.",
     } }),
