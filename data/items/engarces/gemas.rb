@@ -115,8 +115,10 @@ def gemas
       :pecho    => "+3 vs Tenebro",
       :espalda  => "Al huir invocas un espectro en tu espalda.",
       :anillo   => "+1 potencia a las magias de sombras.",
-      :muñecas  => "Golpes inflingidos pueden ser profanos",
       :arma     => "+1 dado profano al ataque.",
+      :cintura  => "El primer ataque después de un turno de reposo (sin enemigos visibles) puede ser con dados negros.",
+      :hombros  => "+1 galardón al matar por la espalda. Activa, 3G: Tu siguiente ataque roba mente. Pasiva (5G): +1 causar miedo.",
+      :muñecas  => "+1 opresión al sufrir daño por Tenebro o maldiciones. Activa, 3o.: Lanza caricia de Nagash. Pasiva (5o.): +3 vs Tenebro"
     } }),
     Gema.new({ :id => 25, :name => "esmeralda", :fits => {
       :cabeza   => "Recupera 1PC en cada fase trepidante",
@@ -126,6 +128,9 @@ def gemas
       :anillo   => "+1 potencia a las magias de tierra.",
       :arma     => "+1 dado de peste al ataque.",
       :cadena   => " +1 magia élfica",
+      :cintura  => "+1 dado de peste al primer ataque después de un turno de reposo (sin enemigos visibles)",
+      :hombros  => "+1 galardón al matar con esbirros. Activa, 3G: +2 PC al portador. Pasiva (5G): esbirros defienden con dados verdes",
+      :muñecas  => "+1 opresión al recibir daño por peste. Activa, 3o.: Elimina un estado de peste. Pasiva (5o.): +1PC y +1PM/turno mientras haya enemigos visibles.",
     } }),
     Gema.new({ :id => 26, :name => "zafiro", :fits => {
       :cuello   => "+1 magia de agua de nivel 2 a elegir al inicio del reto.",
@@ -134,7 +139,9 @@ def gemas
       :espalda  => "+1 turno de congelación a tu agresor por la espalda.",
       :anillo   => "+1 potencia a las magias de agua.",
       :arma     => "+1 dado de escarcha al ataque.",
-      :hombros  => "+1 PM",
+      :cintura  => "+1 dado de escarcha al primer ataque después de un turno de reposo (sin enemigos visibles)",
+      :hombros  => "+1 galardón al matar con hechizos de nivel 1. Activa, 3G: Lanzas genio. Pasiva (5G): +1 penetración mágica",
+      :muñecas  => "+1 opresión al fallar hechizos de nivel 1. Activa, 3o.: Lanzas niebla como aura. Pasiva (5o.): +1 vs todos los hechizos."
     } }),
     Gema.new({ :id => 27, :name => "topacio", :fits => {
       :cuello   => "+1 nivel del tesoro al obtener: ¡Oro!",
@@ -143,6 +150,9 @@ def gemas
       :espalda  => "Al ser atacado por la espalda: +1 fuerza a un dado de rayo (interruptor)",
       :anillo   => "+1 px al obtener un resultado doble en el tesoro (máximo 1 por topacio)",
       :arma     => "+1 dado de rayo al ataque.",
+      :cintura  => "+1 dado de rayo al primer ataque después de un turno de reposo (sin enemigos visibles)",
+      :hombros  => "+1 galardón al obtener tesoros beneficiosos. Activa, 3G: Tira un tesoro adicional. Pasiva (5G): +1 nivel de tus tesoros.",
+      :muñecas  => "+1 opresión al obtener tesoros perjudiciales. Activa, 3o.: Repite una tirada de tesoro. Pasiva (5o.): En los tesoros de piezas de engarces + 1 dado a repetir.",
     } }),
     Gema.new({ :id => 28, :name => "rubí", :fits => {
       :cuello   => "+1 magia de fuego de nivel 2 a elegir al inicio del reto.",
@@ -152,6 +162,9 @@ def gemas
       :anillo   => "+1 potencia a las magias de fuego.",
       :pies     => "+1 PC y +1 PM",
       :arma     => "+1 dado de fuego al ataque.",
+      :cintura  => "+1 dado de fuego al primer ataque después de un turno de reposo (sin enemigos visibles)",
+      :hombros  => "+1 galardón al matar frontalmente cuerpo a cuerpo. Activa, 3G: Elimina efectos de fuego y sangrado. Pasiva (5G): +1 fuerza a un éxito al atacar.",
+      :muñecas  => "+1 opresión al fallar recibir daño físico. Activa, 3o.: +2PC. Pasiva (5o.): Tu/s arma/s ganan: Prender Arma",
     } }),
     Gema.new({ :id => 29, :name => "diamante", :fits => {
       :cuello   => "1/reto: No puedes ser objetivo de hechizos ni habilidades (Instinto)",
@@ -161,6 +174,9 @@ def gemas
       :anillo   => "-1 potencia a las magias enemigas",
       :cadena   => "+ 1 potencia defensiva",
       :arma     => "+1 dado sagrado al ataque.",
+      :cintura  => "+1 habilidad única de tu especialización de personaje.",
+      :hombros  => "+1 galardón al bloquear ataques. Activa, 3G: Elimina aturdimientos. Pasiva (5G): +1 protección",
+      :muñecas  => "+1 opresión al recibir ataques en conjunto. Activa, 3o.: Lanzas obelisco con/sin diablura. Pasiva (5o.): +1 empujar",
     } }),
     Gema.new({ :id => 30, :name => "jacinto", :fits => {
       :cuello   => "+1 magia de sangre de nivel 2 a elegir al inicio del reto.",
@@ -169,6 +185,9 @@ def gemas
       :espalda  => "+1 turno de sangrado de tu agresor por la espalda.",
       :anillo   => "+1 potencia a las magias de sangre.",
       :arma     => "+1 dado desangrador al ataque.",
+      :cintura  => "+1 dado de desangrador al primer ataque después de un turno de reposo (sin enemigos visibles)",
+      :hombros  => "+1 galardón al matar en conjunto. Activa, 3G: Todos odian a la víctima. Pasiva (5G): En conjunto, todos cobran la pieza.",
+      :muñecas  => "+1 opresión al ser el único héroe en recibir daño durante el turno del MB. Activa, 3o.: Lanzas anemia. Pasiva (5o.): obtienes la plegaria: lágrimas del mártir",
     } }),
     Gema.new({ :id => 31, :name => "ágata", :fits => {
       :cuello   => "+1 magia de aire de nivel 2 a elegir al inicio del reto.",
@@ -177,11 +196,14 @@ def gemas
       :espalda  => "-1 flanco al orientar tu espalda contra un muro o un enano.",
       :anillo   => "+1 potencia a las magias de aire.",
       :arma     => "-1 al calibre del arma al ser empuñada.",
+      :cintura  => "-1 al empuje de los enemigos durante el turno posterior a una fase trepidante.",
+      :hombros  => "+1 galardón al saltar fosos y esquivar trampas. Activa, 3G: Lanzas una plegaria. Pasiva (5G): +1 saltar fosos /esquivar trampas.",
+      :muñecas  => "+1 opresión al ser penalizado en movimiento/turno. Activa, 3o.: Lanzas ráfaga como aura. Pasiva (5o.): Tus instintos interrumpen",
     } }),
     ## Piedras de Poder
     Gema.new({ :id => 32, :name => "cráneo", :fits => {
       :armadura => "Los dados de defensa que aporte la armadura tienen éxito con escudo negro.",
-      :arma     => "Los dados de ataque que aporte el arma tienen éxito con escudo negro."
+      :arma     => "Los dados de ataque que aporte el arma tienen éxito con escudo negro.",
     } }),
     Gema.new({ :id => 33, :name => "piedra lunar", :fits => {} }),
     Gema.new({ :id => 34, :name => "rama de olivo", :fits => {} }),
