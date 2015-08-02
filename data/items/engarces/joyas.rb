@@ -97,6 +97,4 @@ def joyas
     } }),
   ]
 end
-
 def joya id ; joyas[id] end
-def joya_ranuras ; joyas.map{|r| r.fits.keys}.flatten.uniq end

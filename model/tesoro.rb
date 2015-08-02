@@ -44,9 +44,39 @@ class Gema < Engarce
 end
 
 class Runa < Engarce
+  def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
+    total = []
+    heros.each do |h|
+      if t = h.tesoro
+        if rs = t[:runas]
+          rs.each do |runa|
+            if runa == self.id
+              total << h.id
+            end
+          end
+        end
+      end
+    end
+    return total
+  end
 end
 
 class Joya < Engarce
+  def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
+    total = []
+    heros.each do |h|
+      if t = h.tesoro
+        if js = t[:joyas]
+          js.each do |joya|
+            if joya == self.id
+              total << h.id
+            end
+          end
+        end
+      end
+    end
+    return total
+  end
 end
 
 def gema_calidades
