@@ -13,17 +13,17 @@ def gemas
     } }),
     Gema.new({ :id => 2,  :name => "pirita", :fits => {
       :cabeza   => "Ilumina",
-      :cuello   => "Si objetivo de un hechizo de aire acumulas 1 carga. 3 cargas: Lanzas un genio (obligatoriamente en fase trepidante)",
+      :cuello   => "Si eres objetivo de un hechizo de Aire acumulas 1 carga. 3 cargas: Lanzas un genio (obligatoriamente en fase trepidante)",
       :pecho    => "+1 vs hechizos de Aire.",
     } }),
     Gema.new({ :id => 3,  :name => "serpentina", :fits => {
       :cabeza   => "Si tu familiar es una serpiente, duplica su efecto.",
-      :cuello   => "1 carga de áspid al causar daño por veneno. 2 cargas de áspid: +2 de movimiento.",
+      :cuello   => "+1 carga de áspid al causar daño por veneno. 2 cargas de áspid: +2 de movimiento.",
       :arma     => "envenena",
       :pecho    => "+1 defensa vs pieles verdes.",
     } }),
     Gema.new({ :id => 4,  :name => "ojo de tigre", :fits => {
-      :cabeza   => "1/reto: Puedes desvelar todas las trampas de una sala o pasillo.",
+      :cabeza   => "1/reto: Puedes desvelar todas las trampas de tu sala o pasillo.",
       :cuello   => "1 carga de áspid al causar daño por veneno. 2 cargas de áspid: +2 de movimiento.",
       :pecho  => "Los ataques por uno de los flancos, se consideran frontales.",
     } }),

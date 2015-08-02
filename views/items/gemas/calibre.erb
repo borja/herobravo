@@ -6,7 +6,8 @@
 	<table id='tresp'>							
 		<thead>							
 			<tr><th>ID</th>							
-				<th>Icono</th>							
+				<th>Icono</th>
+				<th>Disponibles</th>							
 				<th>Nombre</th>							
 			</tr>								
 		</thead>							
@@ -14,7 +15,8 @@
 			<% gemas.each do |g| %>							
 				<% if g.calidad == gema_calidades[i] %>							
 					<tr><td><%= g.id %></td>							
-						<td><%= erb :'display/gema', :locals => { :gema => g } %></td>							
+						<td><%= erb :'display/gema',  :locals => { :gema  => g } %></td>
+						<td><%= erb :'display/bazar', :locals => { :bazar => g.disponibles, :gema => g.id } %></td>						
 						<td><%= g.name %></td>							
 					</tr>							
 				<% end%>							

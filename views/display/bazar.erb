@@ -1,0 +1,23 @@
+<div class="information_popup_container">
+	<div class="information">
+		<h2><%= bazar.count %></h2>
+	</div>
+	<div class="popup_information">
+		<h2 style="padding: 5px 5px 5px 5px; color:white;">Disponibilidad</h2>
+		<center><img src='bazar.png' alt='bazar', id='icon3' /></center>
+		<br/>
+		<table>
+			<tr>
+				<th colspan=2>Héroe</th>
+				<th>Disponibles</th>
+			</tr>
+			<% bazar.uniq.each do |h| %>
+				<tr>
+					<th><img src=<%= hero(h).img_path %> alt='<%= hero(h).name %>', id='icon' /></th>
+					<th><%= hero(h).name %></th>
+					<th><%= hero(h).tesoro[:gemas].count(gema) %></th>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+</div>
