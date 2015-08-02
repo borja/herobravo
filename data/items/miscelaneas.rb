@@ -127,5 +127,4 @@ def miscelaneas
     },
   ]
 end
-
 def miscelanea id ; miscelaneas[id] end

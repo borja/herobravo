@@ -35,6 +35,9 @@ class App < Sinatra::Base
     erb :template, :locals => view('criature')    
   end
   
+  get '/criaturas/' do
+    erb :'reglamento/criaturas'    
+  end
   
   # Sección de magia
   get '/magia/hechizos' do
