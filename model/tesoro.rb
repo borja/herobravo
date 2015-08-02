@@ -25,6 +25,22 @@ end
 
 class Gema < Engarce
   def calidad ; gema_calidades[self.id/8] end
+  
+  def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
+    total = []
+    heros.each do |h|
+      if t = h.tesoro
+        if gemas = t[:gemas]
+          gemas.each do |gem|
+            if gem == self.id
+              total << h.id
+            end
+          end
+        end
+      end
+    end
+    return total
+  end
 end
 
 class Runa < Engarce
