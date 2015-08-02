@@ -24,7 +24,7 @@ def gemas
     } }),
     Gema.new({ :id => 4,  :name => "ojo de tigre", :fits => {
       :cabeza   => "1/reto: Puedes desvelar todas las trampas de tu sala o pasillo.",
-      :cuello   => "1 carga de áspid al causar daño por veneno. 2 cargas de áspid: +2 de movimiento.",
+      :cuello   => "",
       :pecho  => "Los ataques por uno de los flancos, se consideran frontales.",
     } }),
     Gema.new({ :id => 5,  :name => "hematites", :fits => {

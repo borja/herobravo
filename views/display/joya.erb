@@ -1,0 +1,18 @@
+<div class="information_popup_container">
+	<div class="information">
+		<img src=<%= joya.img_path %> alt=<%= joya.name %>, id='icon' />
+	</div>
+	<div class="popup_information">
+		<h2 style="padding: 5px 5px 5px 5px; color:white;"><%= joya.name.capitalize %></h2>
+		<center><img src=<%= joya.img_path %> alt=<%= joya.name %>, id='icon3'/></center>
+		<br/>
+		<table>
+			<% joya.fits.keys.each_with_index do |posicion, i| %>
+				<tr>
+					<th><%= posicion %></th>
+					<th><%= joya.fits.values[i] %></th>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+</div>

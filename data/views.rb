@@ -63,7 +63,7 @@ def views
     {
       :route    => "runas",
       :title    => "Runas",
-      :template => { :main => 'items/runas'}
+      :template => { :main => 'items/runas/runas'}
     },
     {
       :route    => "tiers",

@@ -1,0 +1,18 @@
+<div class="information_popup_container">
+	<div class="information">
+		<img src=<%= runa.img_path %> alt=<%= runa.name %>, id='icon' />
+	</div>
+	<div class="popup_information">
+		<h2 style="padding: 5px 5px 5px 5px; color:white;"><%= runa.name.upcase %></h2>
+		<center><img src=<%= runa.img_path %> alt=<%= runa.name.upcase %>, id='icon3'/></center>
+		<br/>
+		<table>
+			<% runa.fits.keys.each_with_index do |posicion, i| %>
+				<tr>
+					<th><%= posicion %></th>
+					<th><%= runa.fits.values[i] %></th>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+</div>
