@@ -1,0 +1,23 @@
+<section>
+	<link rel="stylesheet" href="css/bravo.css" />
+	<table id='table-2'>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Icono</th>
+				<th>Nombre</th>
+				<th>Descripción</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% materiales.each do |m| %>
+				<tr>
+					<td><%= m.id %></td>
+					<td>X</td>
+					<td><%= m.name %></td>
+					<td><%= m.description %></td>						
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

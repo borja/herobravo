@@ -56,6 +56,11 @@ def views
       :template => { :main => 'personaje/caminos'}
     },
     {
+      :route    => "materiales",
+      :title    => "Materiales",
+      :template => { :main => 'items/materiales'}
+    },    
+    {
       :route    => "joyas",
       :title    => "Joyas",
       :template => { :main => 'items/joyas'}
@@ -246,9 +251,9 @@ def views
       }
     },
     {
-      :route    => "criature",
+      :route    => "criaturas",
       :title    => "Criaturas",
-      :template => { :main  => 'reglamento/criature' }
+      :template => { :main  => 'reglamento/criaturas' }
     },
   ]
 end
