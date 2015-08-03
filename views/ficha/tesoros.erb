@@ -18,12 +18,7 @@
 								<tbody>
 									<tr>
 										<% tesoros.each do |t| %>
-	                    	    			<td>
-												<%= erb :'display/display', :locals => { 
-														:title       => nombre = send(engarce.gsub('s',''),t).name, 
-														:path        => "'../images/treasures/#{engarce}/#{nombre}.png'",
-														:description => engarce == 'gemas' ? send(engarce.gsub('s',''),t).calidad : ""} %>
-											</td>
+	                    	    			<td><%= erb :"display/engarce", :locals => { :engarce => send(engarce)[t] } %></td>
 										<% end %>
 									</tr>
 								</tbody>
