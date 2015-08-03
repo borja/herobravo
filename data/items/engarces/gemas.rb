@@ -41,29 +41,37 @@ def gemas
     ## Gemas Infrecuentes
     Gema.new({ :id => 8,  :name => "almandino", :fits => {
       :pecho    => "+1 vs Miedo",
+      :hombros  => "+1 galardón al matar con ataques sin armas. Activa, 3G: +2 de fuerza en tu siguiente ataque sin armas.",
     } }),
     Gema.new({ :id => 9,  :name => "heliotropo", :fits => {
       :pecho    => "+1 todas las resistencias durante 1d6 turnos cuando un aliado lance una bendición sobre el portador.",
+      :hombros  => "+1 galardón al resistir vs Miedo. Activa, 3G: +5 vs Miedo hasta final del turno.",
     } }),
     Gema.new({ :id => 10, :name => "turquesa", :fits => {
       :pecho    => "+1 vs Psiónica",
+      :hombros  => "+1 galardón al resistir vs Psiónica. Activa, 3G: +5 vs Psiónica hasta final del turno.",
     } }),
     Gema.new({ :id => 11, :name => "lapislázuli", :fits => {
       :hombros  => "2 escudos negros al defender: magia de agua nivel 1 aleatoria",
       :pecho    => "+1 vs Escarcha",
+      :hombros  => "+1 galardón al conjurar hechizos de agua en la fase trepidante. Activa, 3G: Lanzas un hechizo aleatorio de agua de nivel 1. (Se puede usar durante la fase trepidante)",
     } }),
     Gema.new({ :id => 12, :name => "espinela", :fits => {
       :pecho    => "+1 vs Calor",
+      :hombros  => "+1 galardón al resistir vs Calor. Activa, 3G: +5 vs Calor hasta final del turno.",
     } }),
     Gema.new({ :id => 13, :name => "hessonita", :fits => {
       :anillo   => "+2 PM",
       :pecho    => "+1 vs Rayo",
+      :hombros  => "+1 galardón al resistir vs Escarcha. Activa, 3G: +5 vs Escarcha hasta final del turno.",
     } }),
     Gema.new({ :id => 14, :name => "malaquita", :fits => {
       :pecho    => "+1 vs Peste",
+      :hombros  => "+1 galardón al lanzar el hechizo: Cura Corporal. Activa, 3G: +5 vs Peste hasta final del turno.",
     } }),
     Gema.new({ :id => 15, :name => "obsidiana", :fits => {
       :pecho    => "+1 vs Tenebro",
+      :hombros  => "+1 galardón al resistir vs Tenebro. Activa, 3G: +5 vs Tenebro hasta final del turno.",
     } }),
     ## Gemas Valiosas
     Gema.new({ :id => 16, :name => "jade", :fits => {
