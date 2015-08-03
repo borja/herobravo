@@ -70,6 +70,7 @@ def gemas
       :cabeza   => "1/reto: 1 demonio atacado deberá defender con defensa verdadera.",
       :cuello   => "+1 magia de tierra de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Peste",
+      :hombros  => "+1 galardón al sanar completamente a un aliado. Activa, 3G: Elimina un efecto de Peste de un aliado (no puedes ser tú mismo)",
     } }),
     Gema.new({ :id => 17, :name => "aguamarina", :fits => {
       :cabeza   => "+1 PM si tu puntuación de cuerpo es superior.",
@@ -77,36 +78,43 @@ def gemas
       :pecho    => "+2 vs Escarcha",
       :pies     => "2 escudos blancos -> 1 genio",
       :arma     => "+1 dado de escarcha",
+      :hombros  => "+1 galardón al matar con hechizos/efectos de escarcha/agua. Activa, 3G: Ignora tu siguiente herida mental",
     } }),
     Gema.new({ :id => 18, :name => "ámbar", :fits => {
       :cabeza   => "1/reto: Lanzará Tempestad con potencia igual al número de apariciones de: ¡Monstruo Errante!.",
       :cuello   => "+1 magia de aire de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Rayo",
+      :hombros  => "+1 galardón al matar con hechizos/efectos de aire/rayo. Activa, 3G: +4 movimiento hasta el final del turno.",
     } }),
     Gema.new({ :id => 19, :name => "piropo", :fits => {
       :cabeza   => "1/reto: Lanzará aliento de dragón con potencia igual a tu dado de mayor fuerza.",
       :cuello   => "+1 magia de fuego de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Calor",
+      :hombros  => "+1 galardón al matar con hechizos/efectos de fuego. Activa, 3G: +1 PM (Si estuvieras al máximo, puedes recuperar Bola de Fuego)",
     } }),
     Gema.new({ :id => 20, :name => "olivino", :fits => {
       :cabeza   => "1/reto: Absorberá un veneno de tu organismo.",
       :cuello   => "+1 magia de sombras de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Tenebro",
+      :hombros  => "+1 galardón ser objetivo de una bendición de tierra. Activa, 3G: Tu siguiente ataque envenena con potencia 2.",
     } }),
     Gema.new({ :id => 21, :name => "perla", :fits => {
       :cabeza   => "1/reto: El ataque se considera bendito (causa daño verdadero a ciertas unidades).",
       :cuello   => "+1 plegaria",
       :pecho    => "+2 vs Miedo",
+      :hombros  => "+1 galardón al aturdir a un enemigo. Activa, 3G: +1 PM ó +1PC",
     } }),
     Gema.new({ :id => 22, :name => "jaspe", :fits => {
       :cabeza => "1/reto: Puedes aplicar robo de vida a un ataque, una vez haya sido tirado (antes de la defensa).",
       :cuello   => "+1 magia de sangre de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+1 carga al sufrir una herida cuerpo a cuerpo. 3 cargas: +1 fuerza en tu siguiente ataque. 4 cargas: +2 de fuerza en tu siguiente ataque.",
+      :hombros  => "+1 galardón al causar críticos de sangrado. Activa, 3G: Eres bendecido con vampirismo",
     } }),
     Gema.new({ :id => 23, :name => "coral", :fits => {
       :cabeza   => "+1 PC si tu puntuación de mente es superior.",
       :cuello   => "+1 PC. El portador obtiene un punto de vida adicional al ser sanado con el hechizo: agua que cura.",
       :pecho    => "+2 vs Psiónica",
+      :hombros  => "+1 galardón al matar con hechizos de agua. Activa, 3G: Lanzas choque de agua",
     } }),
     ## Piedras Preciosas
     Gema.new({ :id => 24, :name => "amatista", :fits => {
