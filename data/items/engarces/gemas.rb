@@ -53,7 +53,7 @@ def gemas
       :hombros  => "+1 galardón al resistir vs Psiónica. Activa, 3G: +5 vs Psiónica hasta final del turno.",
     } }),
     Gema.new({ :id => 11, :name => "lapislázuli", :fits => {
-      :hombros  => "2 escudos negros al defender: magia de agua nivel 1 aleatoria",
+      #:hombros  => "2 escudos negros al defender: magia de agua nivel 1 aleatoria",
       :pecho    => "+1 vs Escarcha",
       :hombros  => "+1 galardón al conjurar hechizos de agua en la fase trepidante. Activa, 3G: Lanzas un hechizo aleatorio de agua de nivel 1. (Se puede usar durante la fase trepidante)",
     } }),
