@@ -43,6 +43,7 @@ def joyas
       :cabeza   => "4+ resistencia vs magia",
       :arma     => "El objetivo queda silenciado si es dañado",
       :colgante => "1/reto: Puede repetir una tirada de defensa mágica",
+      :hombros  => "+1 galardón al matar en conjunto. Activa, 3G: Todos odian a la víctima. Pasiva (5G): En conjunto, todos cobran la pieza.",
     } }),
     Joya.new({ :id => 7,  :name => "del artesano",  :fits => {
       :hacha    => "+2 ranuras engarzables",
@@ -60,6 +61,7 @@ def joyas
       :daga     => "+ 2 potencia",
       :arma     => "+2 dados de ataque",
       :anillo   => "El personaje puede llevar +1 anillo",
+      :hombros  => "+1 galardón al obtener un galardón. Pasiva (5G): Puedes acumular 6 galardones y apilar dos efectos activos simultáneamente.",
     } }),
     Joya.new({ :id => 10, :name => "de la sangre",  :fits => {
       :espada   => "Triplica el daño (máximo 3 dados de ataque)",
