@@ -437,7 +437,11 @@ def enchants
       :descripcion  => "-1 vs escarcha, +2 vs calor, +2 vs psiónica.",
       :tipo         => "imperial",
     },
-    
+    { :id           => 87,
+      :name         => "de zapador",
+      :descripcion  => "+1 buscar trampas",
+      :tipo         => "ingenieril",
+    }      
   ]
 end
 def enchant id ;  enchants[id] end
