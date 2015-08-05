@@ -19,7 +19,7 @@ def abalorios
     { 
       :id           => 3,
       :name         => "engranaje mágico",
-      :efecto       => "ataque por proximidad (1 dado, interruptor). +1 desactivar trampas. Se considera herramientas.",
+      :efecto       => "ataque por proximidad (1 dado, interruptor).<br/>+1 desactivar trampas.<br/>Se considera herramientas.",
     },
   ]
 end
