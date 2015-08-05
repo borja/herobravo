@@ -26,7 +26,7 @@ def gemas
     Gema.new({ :id => 4,  :name => "ojo de tigre", :fits => {
       :cabeza   => "1/reto: Puedes desvelar todas las trampas de tu sala o pasillo.",
       :cuello   => "",
-      :pecho  => "Los ataques por uno de los flancos, se consideran frontales.",
+      :pecho    => "Los ataques por uno de los flancos, se consideran frontales.",
     } }),
     Gema.new({ :id => 5,  :name => "hematites", :fits => {
       :cabeza   => "+1 PM si no puedes lanzar hechizos.",
@@ -197,7 +197,7 @@ def gemas
       :pecho    => "+1 Protección",
       :espalda  => "+1 dado blanco al defender por la espalda (águila: inmune, martillo: -1 potencia)",
       :anillo   => "-1 potencia a las magias enemigas",
-      :cadena   => "+ 1 potencia defensiva",
+      :cadena   => "+1 potencia defensiva",
       :arma     => "+1 dado sagrado al ataque.",
       :cintura  => "+1 habilidad única de tu especialización de personaje.",
       :hombros  => "+1 galardón al bloquear ataques. Activa, 3G: Elimina aturdimientos. Pasiva (5G): +1 protección",
@@ -231,7 +231,9 @@ def gemas
       :arma     => "Los dados de ataque que aporte el arma tienen éxito con escudo negro.",
     } }),
     Gema.new({ :id => 33, :name => "piedra lunar", :fits => {} }),
-    Gema.new({ :id => 34, :name => "rama de olivo", :fits => {} }),
+    Gema.new({ :id => 34, :name => "rama de olivo", :fits => {
+      :armadura => "Los dados de defensa que aporte la armadura serán verdes.",
+    } }),
     Gema.new({ :id => 35, :name => "glicerita", :fits => {} }),
     Gema.new({ :id => 36, :name => "diestra", :fits => {
       :armadura => "No puede ser objetivo de un ataque en conjunto.",
