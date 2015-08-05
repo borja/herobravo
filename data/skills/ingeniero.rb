@@ -34,14 +34,14 @@ def ingenieros
     {
       :id           => 5,
       :name         => "disparo perforante",
-      :description  => "El exceso de daño que no se pueda parar un enemigo, le atravesará, yendo el disparo hacia otro enemigo que esté adyacente.",
+      :description  => "El exceso de daño que no se pueda parar un enemigo, le atravesará, yendo el disparo hacia otro enemigo que esté detrás.",
       :type         => "pasiva"
     },
     {
       :id           => 6,
       :name         => "éter",
-      :description  => "Por describir.",
-      :type         => "activa"
+      :description  => "+3 éter al inicio del juego.",
+      :type         => "Pasiva"
     },
     {
       :id           => 7,
@@ -92,6 +92,13 @@ def ingenieros
       :description  => "El ingeniero puede fabricar pimienta cada vez que invierta una acción inmediatamente después de fallar un disparo.",
       :type         => "Reactiva",
       :nivel        => 6
+    },
+    {
+      :id           => 15,
+      :name         => "Francotirador",
+      :description  => "3 de movimiento: El siguiente disparo de artillería será con +1 potencia. El bonificador desaparece si el ingeniero se mueve.",
+      :type         => "Activa",
+      :nivel        => 7
     },
   ]
 end
