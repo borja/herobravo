@@ -36,13 +36,15 @@ def h1
                       Miscelanea.new({:id => 2,  :gemas    => [27], :enchants => [6] }),
                       Miscelanea.new({:id => 11, :enchants => [35,42]}),
                       Miscelanea.new({:id => 6,  :enchants => [37]})],
+    :abalorios    => [Abalorio.new({:id => 4})],
     :profesion    => Profesion.new({:id => 0,  :aprendiz => [0,1,2,3]}), 
     :pet          => Pet.new({:id  => 17, :name => "Scumbag"}),
     :montura      => Montura.new({:id => 2}),                
     :skills       => [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
-    :shadows      => [4],
-    :blood        => [1],
-    :tesoro       => {:gemas => [3,31]},
+    :shadows      => [4,5],
+    :blood        => [0,1,5],
+    :tesoro       => {:gemas => [5,5,5,13,11,0,40,40,29,29,3,3,3,26,25,25,4,17,1,1,1]},
     :pociones     => [10],
+    :piezas       => [2,3],
   }
 end
