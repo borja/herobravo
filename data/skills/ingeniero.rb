@@ -95,7 +95,7 @@ def ingenieros
     },
     {
       :id           => 15,
-      :name         => "Francotirador",
+      :name         => "francotirador",
       :description  => "3 de movimiento: El siguiente disparo de artillería será con +1 potencia. El bonificador desaparece si el ingeniero se mueve.",
       :type         => "Activa",
       :nivel        => 7
