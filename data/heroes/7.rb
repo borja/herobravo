@@ -21,6 +21,7 @@ def h7
                       Proteccion.new({:id => 3, :ranuras => 1}),
                       Proteccion.new({:id => 4})],
     :miscelaneas  => [Miscelanea.new({:id => 1, :ranuras => 2, :enchants => [25]})],
+    :abalorios    => [Abalorio.new({:id => 3}) ],
     :tesoro       => {:gemas => [3,8,11,16,25,29],
                       :runas => [3,6,8]},  
     :pergaminos   => [Pergamino.new({:id => 2, :spells  => [8,10]}),
