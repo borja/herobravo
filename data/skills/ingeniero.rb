@@ -46,8 +46,9 @@ def ingenieros
     {
       :id           => 7,
       :name         => "cachivache",
-      :description  => "A cambio de 2 piezas, creas un cachivache con 3 puntos de eter que puede hacer las siguientes funciones: autodestrucción, +1 a buscar si se coloca en el casco,  permite disparo oblicuo si se coloca en la mirilla.",
-      :type         => "pasiva"
+      :description  => "Comienzas el reto con 1 cachivache (un droide con forma de araña y un depósito líquido con 3 puntos de éter). A cambio de 2 piezas, puedes regenerarlo. Puede hacer las siguientes funciones: autodestrucción (dado de fuego), +1 a buscar si se coloca en el casco,  permite disparo oblicuo si se coloca en la mirilla.",
+      :type         => "pasiva",
+      :nivel        => 3,
     },
     {
       :id           => 8,
