@@ -305,7 +305,14 @@ def druidas
       :nivel        => 19,
       :requisitos   => "Transformación druídica",
     },
-   
+    {
+      :id           => 38,
+      :name         => "Salvajismo II",
+      :description  => "+1 potencia a los espíritus invocados",
+      :type         => "Pasiva",
+      :nivel        => 8,
+      :requisitos   => "Salvajismo",
+    } 
   ]
 end
 def druida id ; druidas[id] end
