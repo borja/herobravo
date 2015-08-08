@@ -62,6 +62,7 @@ def joyas
       :arma     => "+2 dados de ataque",
       :anillo   => "El personaje puede llevar +1 anillo",
       :hombros  => "+1 galardón al obtener un galardón. Pasiva (5G): Puedes acumular 6 galardones y apilar dos efectos activos simultáneamente.",
+      :muñecas  => "+1 opresión al obtener opresión. Pasiva (5G): Puedes acumular 6 p. de opresión y apilar dos efectos activos simultáneamente.",
     } }),
     Joya.new({ :id => 10, :name => "de la sangre",  :fits => {
       :espada   => "Triplica el daño (máximo 3 dados de ataque)",
@@ -96,6 +97,9 @@ def joyas
     } }),
     Joya.new({ :id => 19, :name => "talismán guardabosques",:fits => { 
       :cabeza   => "+1PM al defender con éxito",  
+    } }),
+    Joya.new({ :id => 20, :name => "del Trueno", :fits => { 
+      :muñecas  => "+1 opresión al no dañar con un hechizo de aire. Activa, 3o.: Lanzas un genio durante la fase de instintos. Pasiva (5o.): +1 para recuperar el hechizo: genio",
     } }),
   ]
 end
