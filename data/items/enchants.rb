@@ -441,6 +441,11 @@ def enchants
       :name         => "de zapador",
       :descripcion  => "+1 buscar trampas",
       :tipo         => "ingenieril",
+    },  
+    { :id           => 88,
+      :name         => "de las sombras",
+      :descripcion  => "Permite usar el set de sombras de nivel 1 en lugar de un set elemental a tu elección.",
+      :tipo         => "sombras",
     }      
   ]
 end
