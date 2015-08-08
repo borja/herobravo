@@ -297,6 +297,14 @@ def druidas
       :nivel        => 11,
       :requisitos   => "Espíritu guardián II, Oso furioso y Dragón verde",
     },
+    {
+      :id           => 37,
+      :name         => "Forma verdadera",
+      :description  => "Al transformarse el druida en espíritu, le afectan todas las habilidades pasivas de los espíritus",
+      :type         => "Pasiva",
+      :nivel        => 19,
+      :requisitos   => "Transformación druídica",
+    },
    
   ]
 end
