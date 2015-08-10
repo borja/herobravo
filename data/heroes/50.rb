@@ -13,7 +13,7 @@ def h50
     :mov          => 6,
     :oro          => 58,
     :skills       => [1,2],
-    :montura      => Montura.new({:id => 3 }),                
+    :mounts       => [3],                
     :armas        => [
       Arma.new({:id => 11}),
       Arma.new({:id => 7})

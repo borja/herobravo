@@ -227,12 +227,13 @@ def gemas
     } }),
     ## Piedras de Poder
     Gema.new({ :id => 32, :name => "cráneo", :fits => {
-      :armadura => "Los dados de defensa que aporte la armadura tienen éxito con escudo negro.",
-      :arma     => "Los dados de ataque que aporte el arma tienen éxito con escudo negro.",
+      :pecho    => "Los dados de defensa que aporte la armadura tienen éxito con escudo negro, y se consideran con +1 potencia. +1 vs Miedo",
+      :arma     => "Los dados de ataque que aporte el arma tienen éxito con escudo negro, y se consideran con +1 potencia y +1 fuerza.",
     } }),
     Gema.new({ :id => 33, :name => "piedra lunar", :fits => {} }),
     Gema.new({ :id => 34, :name => "rama de olivo", :fits => {
-      :armadura => "Los dados de defensa que aporte la armadura serán verdes.",
+      :pecho    => "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste",
+      :arma     => "",
     } }),
     Gema.new({ :id => 35, :name => "glicerita", :fits => {} }),
     Gema.new({ :id => 36, :name => "diestra", :fits => {

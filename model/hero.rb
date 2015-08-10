@@ -5,7 +5,7 @@ class Hero < Hash
   attr_accessor :id,         
     :name, :personaje, :jugador, :status, :muerto, :gender,
     :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,       
-    :pet,:montura, :descendencia, :pareja, :progenitores,        
+    :pet, :mounts, :descendencia, :pareja, :progenitores,        
     :hechizos, :shadows, :blood, :skills,   
     :armas, :armadura, :proteccions, :miscelaneas, :abalorios,          
     :profesion, :ciudad, :titulo,
@@ -108,14 +108,16 @@ class Hero < Hash
   def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
   def defensa       ; self.armadura.defensa end
   def cacharros     ; self.piezas.map   {|num| Pieza.new(:id => num) } if self.piezas end
-  def magias        ; self.hechizos.map {|num|  spell(num)} if self.hechizos end
-  def blood_magic   ; self.blood.map    {|num| sangre(num)} if self.blood    end
-  def shadow_magic  ; self.shadows.map  {|num| sombra(num)} if self.shadows  end  
+  def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
+  def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
+  def shadow_magic  ; self.shadows.map  {|num| sombra(num)}  if self.shadows  end 
+  def transportes   ; self.mounts.map   {|num| montura(num)} if self.mounts   end 
   def sin_recursos  ; self.tesoro.nil? end
   def potis         ; self.pociones.map { |pot| Pocion.new(p) } end
   def empadronado   ; self.ciudad || "Jadessvärd"  end
   def estado        ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
   def capacidad     ; @heroe.nivel/3 + 3  end #inventario
+  
   
   def resistencia(elemento) # I'm sorry for this...
     total = 0 # Initialize default returns 0
@@ -192,7 +194,7 @@ class Hero < Hash
     hijos  = padres.each_index.select{|i| padres[i].include?(self.id) unless padres[i].nil?  }
     hijos.empty? ? nil : hijos
   end
-    
+      
   def genderize
     if self.gender == "female" 
       case self.clase

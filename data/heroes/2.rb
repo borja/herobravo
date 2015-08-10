@@ -14,7 +14,7 @@ def h2
     :mente        => 12,
     :mov          => 12,
     :pet          => Pet.new({:id  => 11, :name => "Basidio"}),
-    :montura      => Montura.new({:id => 1}),
+    :mounts       => [1],
     :hechizos     => [1,2,3,6,7,8,12,16,17,18,19,20],
     :armas        => [Arma.new({ :id => 9,  :gemas    => [25,17,26], :enchants => [18,1,2,3,4,17]}),
                       Arma.new({ :id => 23, :joyas    => [14,18,15], :enchants => [23,24]})],

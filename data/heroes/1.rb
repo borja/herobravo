@@ -39,7 +39,7 @@ def h1
     :abalorios    => [Abalorio.new({:id => 4})],
     :profesion    => Profesion.new({:id => 0,  :aprendiz => [0,1,2,3]}), 
     :pet          => Pet.new({:id  => 17, :name => "Scumbag"}),
-    :montura      => Montura.new({:id => 2}),                
+    :mounts       => [2],                
     :skills       => [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
     :shadows      => [4,5],
     :blood        => [0,1,5],
