@@ -13,7 +13,7 @@
 			<% if @heroe.pet %>
 				<th>Familiar</th>
 			<% end %>
-			<% if @heroe.montura %>
+			<% if @heroe.transportes %>			
 				<th>Montura</th>
 			<% end %>
 			<% if @heroe.historia %>
@@ -41,11 +41,11 @@
 						:description => p.descripcion } %>
 				</td>
 			<% end %>
-			<% if m = @heroe.montura %>
+			<% if m = @heroe.transportes %>
 				<td><%= erb :'display/display', :locals => { 
-						:title       => m.name, 
-						:path        => m.img_path,
-						:description => m.bono } %>
+						:title       => m.first.name, 
+						:path        => m.first.img_path,
+						:description => m.first.bono } %>
 				</td>
 			<% end %>
 			<% if @heroe.historia %>

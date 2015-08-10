@@ -66,6 +66,14 @@ def views
       :template => { :main => 'items/joyas'}
     },
     {
+      :route    => "monturas",
+      :title    => "Monturas",
+      :template => { 
+        :left   => 'mapa/ciudades',
+        :main  => 'ficha/monturas'
+      }
+    },
+    {
       :route    => "runas",
       :title    => "Runas",
       :template => { :main => 'items/runas/runas'}

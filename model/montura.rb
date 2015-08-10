@@ -2,7 +2,7 @@
 # encoding: UTF-8
 
 class Montura < Hash
-  attr_accessor :id
+  attr_accessor :id, :name, :recorrido, :distancia, :bono, :precio
   
   def initialize args
     args.each do |k,v|
@@ -10,7 +10,5 @@ class Montura < Hash
     end
   end
   
-  def bono     ; montura(self.id)[:bono] end
-  def name     ; montura(self.id)[:name] end
-  def img_path ; "'../../images/monturas/#{montura(self.id)[:name]}.png'" end
+  def img_path ; "'../../images/monturas/#{self.name}.png'" end
 end

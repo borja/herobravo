@@ -1,0 +1,32 @@
+<section>	
+	<header>
+		<h2>Monturas</h2>
+		<h3>Un héroe solo puede tener una montura para cada recorrido</h3>
+	</header>
+	<link rel="stylesheet" href="../css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th colspan=2>Montura</th>	
+				<th>Recorrido</th>							
+				<th>Distancia</th>				
+				<th>Precio</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% monturas.each do |montura| %>
+				<tr>
+					<td><%= erb :'display/display', :locals => {
+						:title       => montura.name,
+						:path        => montura.img_path,
+						:description => montura.bono } %>
+					</td>
+					<td><%= montura.name %></td>
+					<td><%= montura.recorrido.capitalize %></td>
+					<td><%= montura.distancia %></td>
+					<td><%= montura.precio %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>
