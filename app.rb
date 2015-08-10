@@ -71,8 +71,14 @@ class App < Sinatra::Base
   end
   
   get '/raza/:raza' do |raza|
-    @raza = raza
-    erb :template, :locals => view('razas')
+    erb :template, :locals => {
+      :title    => raza.capitalize,
+      :template => {
+        :left   => 'personaje/razas/left/links',
+        :main   => "personaje/razas/center/#{raza}",
+        :right  => "personaje/razas/right/#{raza}",
+      }
+    }
   end
   
   get '/pnj/:pnj' do |pnj|
