@@ -2,6 +2,9 @@
 	<header>
 		<h2>Ciudades</h2>
 	</header>
+	<a href=<%= '/mapa' %> class='feature-image'>
+		<img src='../images/mapeando.png' alt='mapeando'/>
+	</a>
 	<ul class="link-list">
 		<% cities.each do |c| %>
 			<li><a href='/city/<%= c[:name] %>'><%= c[:name] %></a></li>
