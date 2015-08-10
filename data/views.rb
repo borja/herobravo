@@ -24,6 +24,7 @@ def views
       :title    => "Mapa",
       :template => {
         :left   => 'mapa/ciudades',
+        :left2  => 'mapa/monturas',
         :main   => 'mapa/mapa',
       }
     },
