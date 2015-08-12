@@ -86,14 +86,8 @@ class App < Sinatra::Base
     erb :template, :locals => view('pnj')
   end
   
-  #get '/razas' do 
-  #  @raza = nil  
-  #  erb :template, :locals => view('razas')
-  #end
-  
-  get '/dado/:veces' do |veces|
-    @dados = veces
-    erb :'reglamento/dado'
+  get '/dado/:dados' do |veces|
+    erb :template, :locals => view('dado')
   end
   
   get '/gemas' do 
