@@ -29,7 +29,6 @@ def views
     },
     {
       :route    => "mapa",
-      :title    => "Mapa",
       :template => {
         :left   => 'mapa/ciudades',
         :left2  => 'mapa/monturas',
@@ -38,12 +37,10 @@ def views
     },
     {
       :route    => "familiares",
-      :title    => "Familiares",
       :template => { :main => 'personaje/familiares'}
     },
     {
       :route    => "habilidades",
-      :title    => "Habilidades",
       :template => { :main => 'personaje/habilidades'}
     },
     {
@@ -61,45 +58,43 @@ def views
     },
     {
       :route    => "caminos",
-      :title    => "Caminos",
       :template => { :main => 'personaje/caminos'}
     },
     {
       :route    => "materiales",
-      :title    => "Materiales",
       :template => { :main => 'items/materiales'}
-    },    
-    {
-      :route    => "joyas",
-      :title    => "Joyas",
-      :template => { :main => 'items/joyas'}
-    },
+    }, 
     {
       :route    => "monturas",
-      :title    => "Monturas",
       :template => { 
         :left   => 'mapa/ciudades',
         :main  => 'ficha/monturas'
       }
+    },   
+    {
+      :route    => "joyas",
+      :template => { 
+        :left   => 'objetos/left/content2',
+        :main   => 'items/joyas'
+      }
     },
     {
       :route    => "runas",
-      :title    => "Runas",
-      :template => { :main => 'items/runas/runas'}
+      :template => { 
+        :left   => 'objetos/left/content2',
+        :main   => 'items/runas/runas'
+      }
     },
     {
       :route    => "tiers",
-      :title    => "Tiers",
       :template => { :main => 'items/tiers'}
     },
     {
       :route    => "profesiones",
-      :title    => "Profesiones",
       :template => { :main => 'personaje/profesiones'}
     },
     {
       :route    => "razas",
-      :title    => "Razas" ,
       :template => {
         :left   => 'personaje/razas/left/links',
         :main   => "personaje/razas/center/main",
@@ -118,7 +113,6 @@ def views
     },
     {
       :route    => "objetos",
-      :title    => "Objetos",
       :template => {
         :left   => 'objetos/left/content1',
         :left2  => 'objetos/left/content2',
@@ -129,14 +123,12 @@ def views
     },
     {
       :route    => "tesoro",
-      :title    => "Tesoro",
       :template => {
         :main   => 'reglamento/tesoro',
         :right  => 'reglamento/derecha/combate' }
     },
     {
       :route    => "armaduras",
-      :title    => "Armaduras",
       :template => { 
         :left   => 'objetos/left/content1',
         :left2  => 'objetos/left/content2',
@@ -145,22 +137,18 @@ def views
     },
     {
       :route    => "armas",
-      :title    => "Armas",
       :template => { :main => 'items/armas' }
     },
     {
       :route    => "protecciones",
-      :title    => "Protecciones",
       :template => { :main => 'items/protecciones' }
     },
     {
       :route    => "miscelaneas",
-      :title    => "Misceláneas",
       :template => { :main => 'items/miscelaneas' }
     },
     {
       :route    => "piezas",
-      :title    => "Piezas",
       :template => { :main => 'items/piezas' }
     },
     {
@@ -175,12 +163,10 @@ def views
     },
     {
       :route    => "palacio",
-      :title    => "Palacio",
       :template => { :main => 'ciudad/palacio' }
     },
     {
       :route    => "templo",
-      :title    => "Templo",
       :template => { :main => 'ciudad/templo' }
     },
     {
@@ -193,17 +179,14 @@ def views
     },
     {
       :route    => "hechizos",
-      :title    => "Hechizos",
       :template => { :main => 'magia/hechizos' }
     },
     {
       :route    => "sombras",
-      :title    => "Sombras",
       :template => { :main => 'magia/sombras' }
     },
     {
       :route    => "plegarias",
-      :title    => "Plegarias",
       :template => { :main => 'magia/plegarias' }
     },
     {
@@ -218,12 +201,10 @@ def views
     },
     {
       :route    => "biblioteca",
-      :title    => "Biblioteca",
       :template => { :main => 'magia/biblioteca' }
     },
     {
       :route    => "jugadores",
-      :title    => "Jugadores",
       :template => { 
         :main  => 'personaje/jugadores',
         :right => 'heroes/sidebar'
@@ -249,7 +230,6 @@ def views
     },    
     {
       :route    => "resistencias",
-      :title    => "Resistencias",
       :template => { :main  => 'reglamento/combate/resistencias' }
     },
     {
@@ -264,7 +244,6 @@ def views
     },
     {
       :route    => "magisters",
-      :title    => "Magisters",
       :template => {
         :left   => 'torre/left/enseñanzas',
         :main   => 'torre/magisters',
@@ -273,7 +252,6 @@ def views
     },
     {
       :route    => "criaturas",
-      :title    => "Criaturas",
       :template => { :main  => 'reglamento/criaturas' }
     },
   ]
