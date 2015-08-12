@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-	<head><%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %></head>
+	<head>
+		<% title ||= route.capitalize %>
+		<%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %>
+	</head>
 	<body class="subpage">
 		<div id="header-wrapper">
 			<%= erb :header, :locals => { :title => title } %>
