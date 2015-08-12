@@ -137,7 +137,11 @@ def views
     {
       :route    => "armaduras",
       :title    => "Armaduras",
-      :template => { :main => 'items/armaduras' }
+      :template => { 
+        :left   => 'objetos/left/content1',
+        :left2  => 'objetos/left/content2',
+        :main   => 'items/armaduras'
+      }
     },
     {
       :route    => "armas",
