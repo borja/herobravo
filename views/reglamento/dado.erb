@@ -1,66 +1,41 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<%= erb :head, :locals => {:title => "HeroSheet: Combate"} %>
-		<link rel="stylesheet" href="../css/bravo.css" />
-	</head>
-	<body class="subpage">
-		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => "Combate" } %>
-		</div>
-			<div id="content-wrapper">
-				<div id="content">
-					<div class="container">
-						<div class="row">
-							<div class="9u important(collapse)">
-								<section>
-									<header>
-										<h2>Tirada de dados de combate</h2>
-									</header>
-									<table id='tresp'>
-										<thead>
-											<tr>
-												<th>Tirada</th>
-												<th colspan=2>Resultado</th>
-												<th>Calaveras</th>
-												<th>Defensas</th>
-												<th>Negros</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><%= @dados %> dados de combate</td>
-												<td>
-													<% calaveras = 0 ; defensas = 0; negros = 0 %>
-													<% caras = ['attack','attack','attack','defend','defend','black']%>
-				
-													<% @dados.to_i.times do %>
-														<% resultado = caras[rand(6)] %>
-															<% calaveras += 1 if resultado == 'attack' %>
-															<% defensas  += 1 if resultado == 'defend' %>
-															<% negros    += 1 if resultado == 'black' %>
-														<% img_path  = "../images/dado/#{resultado}.png"%>
-														<img src=<%=img_path%> alt=<%= resultado %>, id='icon' />
-													<% end %>
-												</td>
-												<td width="10%"><a href="/dado/4">
-													<img style="vertical-align:middle" src="/images/refresh.png" alt="reload", id='icon'/></a>
-												</td>
-												<td><%= calaveras %></td>
-												<td><%= defensas  %></td>
-												<td><%= negros    %></td>
-											</tr>
-										</tbody>
-									</table>
-								</section>
-							</div>
-							<div class="3u">
-								<%= erb :'reglamento/derecha/combate' %>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<%= erb :'footer/footer' %>	
-	</body>
-</html>
+<section>
+	<header>
+		<h2>Tirada de dados de combate</h2>
+	</header>
+	<link rel="stylesheet" href="/css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th>Tirada</th>
+				<th colspan=2>Resultado</th>
+				<th>Calaveras</th>
+				<th>Defensas</th>
+				<th>Negros</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><%= params[:dados] %> dados de combate</td>
+				<td>
+					<% calaveras = 0 ; defensas = 0; negros = 0 %>
+					<% caras = ['attack','attack','attack','defend','defend','black']%>
+
+					<% params[:dados].to_i.times do %>
+						<% resultado = caras[rand(6)] %>
+							<% calaveras += 1 if resultado == 'attack' %>
+							<% defensas  += 1 if resultado == 'defend' %>
+							<% negros    += 1 if resultado == 'black' %>
+						<% img_path  = "../images/dado/#{resultado}.png"%>
+						<img src=<%=img_path%> alt=<%= resultado %>, id='icon' />
+					<% end %>
+				</td>
+				<td width="10%"><a href="/dado/<%= params[:dados] %>">
+					<img style="vertical-align:middle" src="/images/refresh.png" alt="reload", id='icon'/></a>
+				</td>
+				<td><%= calaveras %></td>
+				<td><%= defensas  %></td>
+				<td><%= negros    %></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
