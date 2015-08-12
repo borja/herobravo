@@ -6,12 +6,6 @@ class App < Sinatra::Base
     erb :error
   end
   
-  get '/div_by_zero' do
-    0 / 0
-    "You won't see me."
-  end
-  
-  # Main Website
   get '/' do
     erb :index
   end 
@@ -21,21 +15,25 @@ class App < Sinatra::Base
     erb :'ficha/ficha'
   end
       
-  get '/profesiones/:profesion' do |prof|
+  get '/profesiones/:profesion' do
     erb :"ciudad/profesiones"
   end
   
-  get '/city/:city' do |city|
-    @ciudad = city
+  get '/city/:ciudad' do
     erb :'ciudad/ciudad'
   end
   
-  get '/criaturas/:monster' do |criature|
-    @criature = criature
-    erb :template, :locals => view('criature')    
+  get '/criaturas/:criature' do
+    erb :template, :locals => {
+      :title    => params[:criature].capitalize,
+      :template => { 
+        :left   => 'reglamento/izquierda/bestiario',
+        :main  => 'reglamento/criature' 
+      }
+    }   
   end
   
-  get '/criaturas/' do
+  get '/criaturas' do
     erb :'reglamento/criaturas'    
   end
   
@@ -81,12 +79,11 @@ class App < Sinatra::Base
     }
   end
   
-  get '/pnj/:pnj' do |pnj|
-    @pnj = pnj
+  get '/pnj/:pnj' do
     erb :template, :locals => view('pnj')
   end
   
-  get '/dado/:dados' do |veces|
+  get '/dado/:dados' do
     erb :template, :locals => view('dado')
   end
   
