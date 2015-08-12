@@ -227,23 +227,42 @@ def gemas
     } }),
     ## Piedras de Poder
     Gema.new({ :id => 32, :name => "cráneo", :fits => {
+      :cabeza   => "+1 vs Miedo. +1 infundir miedo.",
+      :cuello   => "+1 infundir miedo. Si un enemigo huye a causa del miedo que infundes, ejecuta sobre él: Caricia de Nagash. Si muere, invoca un esqueleto a tu servicio.",
       :pecho    => "Los dados de defensa que aporte la armadura tienen éxito con escudo negro, y se consideran con +1 potencia. +1 vs Miedo",
       :arma     => "Los dados de ataque que aporte el arma tienen éxito con escudo negro, y se consideran con +1 potencia y +1 fuerza.",
     } }),
-    Gema.new({ :id => 33, :name => "piedra lunar", :fits => {} }),
-    Gema.new({ :id => 34, :name => "rama de olivo", :fits => {
-      :pecho    => "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste",
-      :arma     => "",
+    Gema.new({ :id => 33, :name => "piedra lunar", :fits => {
+      :cabeza   => "+1 Movimiento. Mientras tengas la bendición ráfaga, +1 fuerza de ataque.",
+      :cuello   => "+1 Movimiento. Mientras tengas la bendición: niebla, todos tus ataques son por la espalda.",
     } }),
-    Gema.new({ :id => 35, :name => "glicerita", :fits => {} }),
+    Gema.new({ :id => 34, :name => "rama de olivo", :fits => {
+      :cabeza   => "+2 vs Psiónica. +1 dado blanco a tu ataque principal, cuya potencia es el número de esbirros que controles y cuya fuerza el número de enemigos en S/P.",
+      :cuello   => "+1 maestría a los hechizos de tierra",
+      :pecho    => "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste",
+    } }),
+    Gema.new({ :id => 35, :name => "glicerita", :fits => {
+      :cabeza   => "+1 vs Calor. Los críticos de fuego recuperan +1PM. +1 fuerza en los ataques del dado de fuego",
+      :cuello   => "+1 maestría a los hechizos de fuego",
+    } }),
     Gema.new({ :id => 36, :name => "diestra", :fits => {
+      :cabeza   => "+1 Protección por cada aliado en el reto.",
+      :cuello   => "1/reto: Tienes una acción extra, después de tu acción de movimiento.",
       :armadura => "No puede ser objetivo de un ataque en conjunto.",
     } }),
     Gema.new({ :id => 37, :name => "siniestra", :fits => {
+      :cabeza   => "+1 Protección por cada dado de defensa de tu armadura",
+      :cuello   => "1/reto: Tienes una acción extra, antes de tu acción de movimiento.",
       :armadura => "Solo puede ser atacado una vez por turno.",
     } }),
-    Gema.new({ :id => 38, :name => "ónice", :fits => {} }),
-    Gema.new({ :id => 39, :name => "sigmarita", :fits => {} }),
+    Gema.new({ :id => 38, :name => "ónice", :fits => {
+      :cabeza   => "+1 PM al matar con hechizos. +1 PC al matar con armas. Si excedes tu puntuación de mente/cuerpo por esta sanación, pierdes 1d6 puntos de mente/cuerpo.",
+      :cuello   => "1/reto: durante la fase trepidante elige una casilla libre: Creas sobre ella un pozo de oscuridad. (Los aliados deben saltar) Cada miniatura que muera en la sala otorga una carga. En cualquier momento puedes disolver el pozo y recuperar X hechizos de nivel Y, siendo X+Y las cargas acumuladas.",
+    } }),
+    Gema.new({ :id => 39, :name => "sigmarita", :fits => {
+      :cabeza   => "+1 ataque extra a todos los ángeles invocados. +1 de sanación a todas las plegarias. +1PC al lanzar una plegaria en chakra.",
+      :cuello   => "1/reto: Resucitas a un aliado muerto, que volverá a la vida con un único punto de cuerpo y de mente. (Conservando sus hechizos y habilidades tal y como los tuviera)",
+    } }),
     ## Gemas Legendarias
     Gema.new({ :id => 40, :name => "perla negra", :fits => {
       :cuello   => "Otorga el legendario navío 'La perla negra'. El objetivo causa miedo +1. +20 al oro del tesoro, por nivel del tesoro.",
