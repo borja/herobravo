@@ -3,16 +3,16 @@
 	<table id='tresp'>
 		<thead>
 			<tr>
-				<% send(@criature).first.keys.each do |att| %>
+				<% send(params[:criature]).first.keys.each do |att| %>
 					<th><%= att.capitalize %></th>
 				<% end %>
 			</tr>	
 		</thead>
 		<tbody>
-			<% send(@criature).each do |c| %>
+			<% send(params[:criature]).each do |c| %>
 				<tr>
 					<td>
-						<% img_path = "'../images/criaturas/#{@criature}/#{c[:nombre]}.png'" %>
+						<% img_path = "'../images/criaturas/#{params[:criature]}/#{c[:nombre]}.png'" %>
 						<img src=<%=img_path%> alt='icono', id='icon2' />
 					</td>
 					<% c.keys.each do |att| %>

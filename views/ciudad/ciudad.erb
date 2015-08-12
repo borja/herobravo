@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head><%= erb :head, :locals => {:title => "Herosheet: #{@ciudad}"} %></head>
+	<head><%= erb :head, :locals => {:title => "Herosheet: #{params[:ciudad]}"} %></head>
 	<body class="subpage">
 		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => @ciudad } %>
+			<%= erb :header, :locals => { :title => params[:ciudad] } %>
 		</div>
 		<div id="content-wrapper">
 			<div id="content">
