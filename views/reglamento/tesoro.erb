@@ -1,6 +1,6 @@
 <% dado1 = dado_tesoro; dado2 = dado_tesoro; sigmar = dado_sigmar %>
+<% dado1 = 4; dado2 = 2; sigmar = 'hammer' %>
 <% total = (dado1 + dado2)%>
-<% total = 7 if total == 6 %>
 <% resultado = tesoro(sigmar, dado1, dado2)%>
 <section>
 	<link rel="stylesheet" href="css/bravo.css" />
@@ -17,21 +17,19 @@
 				<td width="15%"><h1><%= total.to_s %><% img_path  = "../images/tesoro/#{sigmar}.png"%>
 					<img style="vertical-align:middle" src=<%=img_path%> alt=<%= sigmar %>, id='icon2' /></h1>
 				<td><%= resultado %></td>
+				<td><%= erb :"reglamento/tesoro/#{total}", :locals => { 
+					:dado1 => dado1 , :dado2 => dado2, :sigmar => sigmar, :resultado => resultado } %>
+				</td>
 				<td><% case total
-						when 2 then %>
-							<% img_path  = "../images/tesoro/pifia/#{pifia(sigmar,dado1,dado2)}.png"%>
+						when 6 then %>
+							<% img_path  = "'../images/tesoro/monstruo.png'"%>
 							<img style="vertical-align:middle" 
-								 src='<%= img_path %>' alt='<%= pifia(sigmar,dado1,dado2) %>', id='icon2' />
-					<%	when 3,4 then %>
-						<% img_path  = "'../images/tesoro/nada.png'"%>
-						<img style="vertical-align:middle" 
-							 src=<%= img_path %> alt='nada', id='icon2' />													
-					<%	when 5 then %>
-							<% alimento  = resultado.split(':')[1].strip %>
-							<% img_path  = "'../images/food/#{alimento}.png'"%>
+								 src=<%= img_path %> alt='monstruo', id='icon2' />
+					<%	when 7 then %>
+							<% img_path  = "'../images/tesoro/gold.png'"%>
 							<img style="vertical-align:middle" 
-								 src=<%= img_path %> alt=<%= alimento %>, id='icon2' />	
-					<%	when 6 then %>
+								 src=<%= img_path %> alt='oro', id='icon2' />	
+					<%	when 8 then %>
 							<% perg      = {:id => rand(1..5), :spells  => [rand(1..16),rand(1..16)]} %>
 							<div class="information_popup_container">
 								<div class="information">
@@ -57,14 +55,6 @@
 									<% end %>
 								</div>
 							</div>
-					<%	when 7 then %>
-							<% img_path  = "'../images/tesoro/gold.png'"%>
-							<img style="vertical-align:middle" 
-								 src=<%= img_path %> alt='oro', id='icon2' />	
-					<%	when 8 then %>
-							<% img_path  = "'../images/tesoro/monstruo.png'"%>
-							<img style="vertical-align:middle" 
-								 src=<%= img_path %> alt='monstruo', id='icon2' />	
 					<%	when 9 then %>
 							<% img_path  = "'../images/utiles/pociones/#{resultado.gsub('pocion de ','')}.png'"%>
 							<img style="vertical-align:middle" 
