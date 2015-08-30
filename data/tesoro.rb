@@ -47,6 +47,14 @@ def trampa(sigmar, dado1, dado2) #5
   end
 end
 
+def monstruo(sigmar, dado1, dado2)
+  case sigmar
+    when 'eagle'  then 'monstruo errante lento'
+    when 'plus'   then 'monstruo errante rápido'
+    else 'monstruo errante'
+  end
+end
+
 def perg(sigmar, dado1, dado2)
   case sigmar
     when 'eagle'  then 'pergamino: doble'
@@ -64,14 +72,6 @@ def oro(sigmar, dado1, dado2)
     when 'blank'  then '10 piezas de oro.'
     when 'hammer' then '25 piezas de oro.'
     when 'comet'  then '60 piezas de oro.'
-  end
-end
-
-def monstruo(sigmar, dado1, dado2)
-  case sigmar
-    when 'eagle'  then 'monstruo errante lento'
-    when 'plus'   then 'monstruo errante rapido'
-    else 'monstruo errante'
   end
 end
 

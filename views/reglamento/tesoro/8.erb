@@ -1,0 +1,26 @@
+<%= perg = {:id => rand(1..5), :spells  => [rand(1..16),rand(1..16)]} %>
+
+<div class="information_popup_container">
+	<div class="information">
+		<% name = pergamino(perg[:id])[:name] %>
+		<% img_path = "'../images/utiles/pergaminos/#{name}.png'" %>
+		<img src=<%=img_path%> alt=<%= name %>, id='icon2' />
+	</div>
+	<div class="popup_information">
+		<center><h3>	
+			Pergamino <%= pergamino(perg[:id])[:name] %><br><br>
+			<img src=<%=img_path%> alt=<%= name %>, id='icon3' />
+		</h3></center>
+		<% if perg[:spells] %>
+			<% perg[:spells].each do |magia| %>
+				<% hechizo  = (spell(magia))[:name] %>									
+				<% img_path = "'../images/spells/#{hechizo}.png'" %>
+				<img style="vertical-align:middle" 
+					 src=<%=img_path%> alt=<%= hechizo %>, id='icon' />		
+				<%= hechizo.capitalize %><br>
+			<% end %>	
+		<% else %>
+			El pergamino no contiene hechizos.
+		<% end %>
+	</div>
+</div>
