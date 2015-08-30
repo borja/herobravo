@@ -1,5 +1,5 @@
 <% dado1 = dado_tesoro; dado2 = dado_tesoro; sigmar = dado_sigmar %>
-<%# dado1 = 4;# dado2 = 4; #sigmar = 'eagle' %>
+<% dado1 = 4; dado2 = 6; #sigmar = 'eagle' %>
 <% total = (dado1 + dado2)%>
 <% resultado = tesoro(sigmar, dado1, dado2)%>
 <section>
@@ -22,9 +22,7 @@
 				</td>
 				<td><% case total
 						when 10 then %>
-							<% img_path  = "'../images/tesoro/trampas/#{resultado.gsub('trampa de ','')}.png'"%>
-							<img style="vertical-align:middle" 
-								 src=<%= img_path %> alt='trampa', id='icon2' />	
+	
 		 			<%	when 11 then %>
 							<% engarce = resultado.split(':') %>
 		 					<% img_path  = "../images/treasures/#{engarce.first + 's'}/#{engarce[1].strip}.png"%>
