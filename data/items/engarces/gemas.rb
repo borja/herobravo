@@ -27,6 +27,7 @@ def gemas
       :cabeza   => "1/reto: Puedes desvelar todas las trampas de tu sala o pasillo.",
       :cuello   => "",
       :pecho    => "Los ataques por uno de los flancos, se consideran frontales.",
+      :pies     => "1/reto: +90º de giro en cualquier momento.",      
     } }),
     Gema.new({ :id => 5,  :name => "hematites", :fits => {
       :cabeza   => "+1 PM si no puedes lanzar hechizos.",
@@ -43,36 +44,44 @@ def gemas
     Gema.new({ :id => 8,  :name => "almandino", :fits => {
       :pecho    => "+1 vs Miedo",
       :hombros  => "+1 galardón al matar con ataques sin armas. Activa, 3G: +2 de fuerza en tu siguiente ataque sin armas.",
+      :pies     => "-1 al empuje vs bestias",
     } }),
     Gema.new({ :id => 9,  :name => "heliotropo", :fits => {
       :pecho    => "+1 todas las resistencias durante 1d6 turnos cuando un aliado lance una bendición sobre el portador.",
       :hombros  => "+1 galardón al resistir vs Miedo. Activa, 3G: +5 vs Miedo hasta final del turno.",
+      :pies     => "-1 al empuje vs elementales",
     } }),
     Gema.new({ :id => 10, :name => "turquesa", :fits => {
       :pecho    => "+1 vs Psiónica",
       :hombros  => "+1 galardón al resistir vs Psiónica. Activa, 3G: +5 vs Psiónica hasta final del turno.",
+      :pies     => "-1 al empuje vs caóticos",
     } }),
     Gema.new({ :id => 11, :name => "lapislázuli", :fits => {
-      #:hombros  => "2 escudos negros al defender: magia de agua nivel 1 aleatoria",
       :pecho    => "+1 vs Escarcha",
       :hombros  => "+1 galardón al conjurar hechizos de agua en la fase trepidante. Activa, 3G: Lanzas un hechizo aleatorio de agua de nivel 1. (Se puede usar durante la fase trepidante)",
+      :pies     => "-1 al empuje vs humanoides",
     } }),
     Gema.new({ :id => 12, :name => "espinela", :fits => {
       :pecho    => "+1 vs Calor",
       :hombros  => "+1 galardón al resistir vs Calor. Activa, 3G: +5 vs Calor hasta final del turno.",
+      :pies     => "-1 al empuje vs demonios",
     } }),
     Gema.new({ :id => 13, :name => "hessonita", :fits => {
       :anillo   => "+2 PM",
       :pecho    => "+1 vs Rayo",
       :hombros  => "+1 galardón al resistir vs Escarcha. Activa, 3G: +5 vs Escarcha hasta final del turno.",
+      :pies     => "-1 al empuje vs constructos",
     } }),
     Gema.new({ :id => 14, :name => "malaquita", :fits => {
       :pecho    => "+1 vs Peste",
       :hombros  => "+1 galardón al lanzar el hechizo: Cura Corporal. Activa, 3G: +5 vs Peste hasta final del turno.",
+      :pies     => "-1 al empuje vs pieles-verdes",
     } }),
     Gema.new({ :id => 15, :name => "obsidiana", :fits => {
       :pecho    => "+1 vs Tenebro",
       :hombros  => "+1 galardón al resistir vs Tenebro. Activa, 3G: +5 vs Tenebro hasta final del turno.",
+      :pies     => "-1 al empuje vs no-muertos",
+      
     } }),
     ## Gemas Valiosas (nivel 3)
     Gema.new({ :id => 16, :name => "jade", :fits => {
@@ -81,15 +90,16 @@ def gemas
       :pecho    => "+2 vs Peste",
       :hombros  => "+1 galardón al sanar completamente a un aliado. Activa, 3G: Elimina un efecto de Peste de un aliado (no puedes ser tú mismo)",
       :muñecas  => "+1 opresión al ser atacado por pieles verdes. Activa, 3o.: +1 dado verde a tu siguiente tirada de defensa (instinto)",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier bendición/aura de tierra.",      
     } }),
     Gema.new({ :id => 17, :name => "aguamarina", :fits => {
       :cabeza   => "+1 PM si tu puntuación de cuerpo es superior.",
       :cuello   => "+1 magia de agua de nivel 1 a elegir al inicio del reto.",
       :pecho    => "+2 vs Escarcha",
-      :pies     => "2 escudos blancos -> 1 genio",
       :arma     => "+1 dado de escarcha",
       :hombros  => "+1 galardón al matar con hechizos/efectos de escarcha/agua. Activa, 3G: Ignora tu siguiente herida mental",
       :muñecas  => "+1 opresión al fallar el hechizo: Dormir. Activa, 3o.: Recupera un hechizo aleatorio de agua (de nivel 1)",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier bendición/aura de agua.",      
     } }),
     Gema.new({ :id => 18, :name => "ámbar", :fits => {
       :cabeza   => "1/reto: Lanzará Tempestad con potencia igual al número de apariciones de: ¡Monstruo Errante!.",
@@ -97,6 +107,7 @@ def gemas
       :pecho    => "+2 vs Rayo",
       :hombros  => "+1 galardón al matar con hechizos/efectos de aire/rayo. Activa, 3G: +4 movimiento hasta el final del turno.",
       :muñecas  => "+1 opresión al fallar Genio. Activa, 3o.: Tu próximo hechizo de aire tiene +1 potencia",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier bendición/aura de aire.",      
     } }),
     Gema.new({ :id => 19, :name => "piropo", :fits => {
       :cabeza   => "1/reto: Lanzará aliento de dragón con potencia igual a tu dado de mayor fuerza.",
@@ -104,6 +115,7 @@ def gemas
       :pecho    => "+2 vs Calor",
       :hombros  => "+1 galardón al matar con hechizos/efectos de fuego. Activa, 3G: +1 PM (Si estuvieras al máximo, puedes recuperar Bola de Fuego)",
       :muñecas  => "+1 opresión al fallar Fuego de Ira. Activa, 3o.: Tu próximo hechizo de fuego tiene +1 potencia",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier bendición/aura de fuego.",      
     } }),
     Gema.new({ :id => 20, :name => "olivino", :fits => {
       :cabeza   => "1/reto: Absorberá un veneno de tu organismo.",
@@ -111,6 +123,7 @@ def gemas
       :pecho    => "+2 vs Tenebro",
       :hombros  => "+1 galardón ser objetivo de una bendición de tierra. Activa, 3G: Tu siguiente ataque envenena con potencia 2.",
       :muñecas  => "+1 opresión al ser atacado por demonios. Activa, 3o.: Lanzas el hechizo: Restituir",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier bendición/aura de sombras.",      
     } }),
     Gema.new({ :id => 21, :name => "perla", :fits => {
       :cabeza   => "1/reto: El ataque se considera bendito (causa daño verdadero a ciertas unidades).",
@@ -118,6 +131,7 @@ def gemas
       :pecho    => "+2 vs Miedo",
       :hombros  => "+1 galardón al aturdir a un enemigo. Activa, 3G: +1 PM ó +1PC",
       :muñecas  => "+1 opresión al recibir daño por Tenebro. Activa, 3o.: +1 Fuerza a un ataque vs No-muertos o demonios.",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier bendición/aura sagrada.",      
     } }),
     Gema.new({ :id => 22, :name => "jaspe", :fits => {
       :cabeza => "1/reto: Puedes aplicar robo de vida a un ataque, una vez haya sido tirado (antes de la defensa).",
@@ -125,6 +139,7 @@ def gemas
       :pecho    => "+1 carga al sufrir una herida cuerpo a cuerpo. 3 cargas: +1 fuerza en tu siguiente ataque. 4 cargas: +2 de fuerza en tu siguiente ataque.",
       :hombros  => "+1 galardón al causar críticos de sangrado. Activa, 3G: Eres bendecido con vampirismo",
       :muñecas  => "+1 opresión al ser envenenado por trampas. Activa, 3o.: Si estás envenenado replicas el efecto en un enemigo a melé.",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier maldición.",      
     } }),
     Gema.new({ :id => 23, :name => "coral", :fits => {
       :cabeza   => "+1 PC si tu puntuación de mente es superior.",
@@ -132,6 +147,7 @@ def gemas
       :pecho    => "+2 vs Psiónica",
       :hombros  => "+1 galardón al matar con hechizos de agua. Activa, 3G: Lanzas choque de agua",
       :muñecas  => "+1 opresión al ser congelado. Activa, 3o.: Lanzas el hechizo: Pacto de Sangre",
+      :pies     => "+1 movimiento bajo los ejectos de cualquier bendición/aura de sangre.",      
     } }),
     ## Piedras Preciosas
     Gema.new({ :id => 24, :name => "amatista", :fits => {
@@ -144,6 +160,7 @@ def gemas
       :cintura  => "El primer ataque después de un turno de reposo (sin enemigos visibles) puede ser con dados negros.",
       :hombros  => "+1 galardón al matar por la espalda. Activa, 3G: Tu siguiente ataque roba mente. Pasiva (5G): +1 causar miedo.",
       :muñecas  => "+1 opresión al sufrir daño por Tenebro o maldiciones. Activa, 3o.: Lanza caricia de Nagash. Pasiva (5o.): +3 vs Tenebro",
+      :pies     => "Puedes atravesar +1 no-muerto durante la fase trepidante",
     } }),
     Gema.new({ :id => 25, :name => "esmeralda", :fits => {
       :cabeza   => "Recupera 1PC en cada fase trepidante",
@@ -156,6 +173,7 @@ def gemas
       :cintura  => "+1 dado de peste al primer ataque después de un turno de reposo (sin enemigos visibles)",
       :hombros  => "+1 galardón al matar con esbirros. Activa, 3G: +2 PC al portador. Pasiva (5G): esbirros defienden con dados verdes",
       :muñecas  => "+1 opresión al recibir daño por peste. Activa, 3o.: Elimina un estado de peste. Pasiva (5o.): +1PC y +1PM/turno mientras haya enemigos visibles.",
+      :pies     => "-1 empuje de enemigos en casillas colindantes con paredes.",
     } }),
     Gema.new({ :id => 26, :name => "zafiro", :fits => {
       :cuello   => "+1 magia de agua de nivel 2 a elegir al inicio del reto.",
@@ -166,7 +184,8 @@ def gemas
       :arma     => "+1 dado de escarcha al ataque.",
       :cintura  => "+1 dado de escarcha al primer ataque después de un turno de reposo (sin enemigos visibles)",
       :hombros  => "+1 galardón al matar con hechizos de nivel 1. Activa, 3G: Lanzas genio. Pasiva (5G): +1 penetración mágica",
-      :muñecas  => "+1 opresión al fallar hechizos de nivel 1. Activa, 3o.: Lanzas niebla como aura. Pasiva (5o.): +1 vs todos los hechizos."
+      :muñecas  => "+1 opresión al fallar hechizos de nivel 1. Activa, 3o.: Lanzas niebla como aura. Pasiva (5o.): +1 vs todos los hechizos.",
+      :pies     => "3PM - N : Levitar. N es el número de zafiros engarzados.",
     } }),
     Gema.new({ :id => 27, :name => "topacio", :fits => {
       :cuello   => "+1 nivel del tesoro al obtener: ¡Oro!",
@@ -178,6 +197,7 @@ def gemas
       :cintura  => "+1 dado de rayo al primer ataque después de un turno de reposo (sin enemigos visibles)",
       :hombros  => "+1 galardón al obtener tesoros beneficiosos. Activa, 3G: Tira un tesoro adicional. Pasiva (5G): +1 nivel de tus tesoros.",
       :muñecas  => "+1 opresión al obtener tesoros perjudiciales. Activa, 3o.: Repite una tirada de tesoro. Pasiva (5o.): En los tesoros de piezas de engarces + 1 dado a repetir.",
+      :pies     => "+1 movimiento",
     } }),
     Gema.new({ :id => 28, :name => "rubí", :fits => {
       :cuello   => "+1 magia de fuego de nivel 2 a elegir al inicio del reto.",
@@ -185,11 +205,11 @@ def gemas
       :pecho    => "+3 vs Calor",
       :espalda  => "+1 turno ardiendo de tu agresor por la espalda.",
       :anillo   => "+1 potencia a las magias de fuego.",
-      :pies     => "+1 PC y +1 PM",
       :arma     => "+1 dado de fuego al ataque.",
       :cintura  => "+1 dado de fuego al primer ataque después de un turno de reposo (sin enemigos visibles)",
       :hombros  => "+1 galardón al matar frontalmente cuerpo a cuerpo. Activa, 3G: Elimina efectos de fuego y sangrado. Pasiva (5G): +1 fuerza a un éxito al atacar.",
       :muñecas  => "+1 opresión al fallar recibir daño físico. Activa, 3o.: +2PC. Pasiva (5o.): Tu/s arma/s ganan: Prender Arma",
+      :pies     => "5 movimiento: Reduce -1 efecto de ardiendo.",
     } }),
     Gema.new({ :id => 29, :name => "diamante", :fits => {
       :cuello   => "1/reto: No puedes ser objetivo de hechizos ni habilidades (Instinto)",
@@ -202,6 +222,7 @@ def gemas
       :cintura  => "+1 habilidad única de tu especialización de personaje.",
       :hombros  => "+1 galardón al bloquear ataques. Activa, 3G: Elimina aturdimientos. Pasiva (5G): +1 protección",
       :muñecas  => "+1 opresión al recibir ataques en conjunto. Activa, 3o.: Lanzas obelisco con/sin diablura. Pasiva (5o.): +1 empujar",
+      :pies     => "1PM: Puedes girar +90º durante la fase de instintos",
     } }),
     Gema.new({ :id => 30, :name => "jacinto", :fits => {
       :cuello   => "+1 magia de sangre de nivel 2 a elegir al inicio del reto.",
@@ -213,6 +234,7 @@ def gemas
       :cintura  => "+1 dado de desangrador al primer ataque después de un turno de reposo (sin enemigos visibles)",
       :hombros  => "+1 galardón al matar en conjunto. Activa, 3G: Todos odian a la víctima. Pasiva (5G): En conjunto, todos cobran la pieza.",
       :muñecas  => "+1 opresión al ser el único héroe en recibir daño durante el turno del MB. Activa, 3o.: Lanzas anemia. Pasiva (5o.): obtienes la plegaria: lágrimas del mártir",
+      :pies     => "Puedes retroceder +1 casilla cada vez que recibas daño físico.",
     } }),
     Gema.new({ :id => 31, :name => "ágata", :fits => {
       :cuello   => "+1 magia de aire de nivel 2 a elegir al inicio del reto.",
@@ -224,6 +246,7 @@ def gemas
       :cintura  => "-1 al empuje de los enemigos durante el turno posterior a una fase trepidante.",
       :hombros  => "+1 galardón al saltar fosos y esquivar trampas. Activa, 3G: Lanzas una plegaria. Pasiva (5G): +1 saltar fosos /esquivar trampas.",
       :muñecas  => "+1 opresión al ser penalizado en movimiento/turno. Activa, 3o.: Lanzas ráfaga como aura. Pasiva (5o.): Tus instintos interrumpen",
+      :pies     => "Puedes ignorar +1 interrupción causada por acciones reactivas a tu movimiento.",
     } }),
     ## Piedras de Poder
     Gema.new({ :id => 32, :name => "cráneo", :fits => {
@@ -231,37 +254,45 @@ def gemas
       :cuello   => "+1 infundir miedo. Si un enemigo huye a causa del miedo que infundes, ejecuta sobre él: Caricia de Nagash. Si muere, invoca un esqueleto a tu servicio.",
       :pecho    => "Los dados de defensa que aporte la armadura tienen éxito con escudo negro, y se consideran con +1 potencia. +1 vs Miedo",
       :arma     => "Los dados de ataque que aporte el arma tienen éxito con escudo negro, y se consideran con +1 potencia y +1 fuerza.",
+      :pies     => "+1 casilla de avance por cada escudo negro durante la defensa.",
     } }),
     Gema.new({ :id => 33, :name => "piedra lunar", :fits => {
       :cabeza   => "+1 Movimiento. Mientras tengas la bendición ráfaga, +1 fuerza de ataque.",
       :cuello   => "+1 Movimiento. Mientras tengas la bendición: niebla, todos tus ataques son por la espalda.",
+      :pies     => "5 movimiento: Reduce -1 turno de aturdimiento.",
     } }),
     Gema.new({ :id => 34, :name => "rama de olivo", :fits => {
       :cabeza   => "+2 vs Psiónica. +1 dado blanco a tu ataque principal, cuya potencia es el número de esbirros que controles y cuya fuerza el número de enemigos en S/P.",
       :cuello   => "+1 maestría a los hechizos de tierra",
       :pecho    => "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste",
+      :pies     => "Renuncar a tu movimiento: +1 objetivo visible pierde la minus-mitad de su movimiento. (maldición psiónica)",
     } }),
     Gema.new({ :id => 35, :name => "glicerita", :fits => {
       :cabeza   => "+1 vs Calor. Los críticos de fuego recuperan +1PM. +1 fuerza en los ataques del dado de fuego",
       :cuello   => "+1 maestría a los hechizos de fuego",
+      :pies     => "Al sprintar: puedes conjurar un muero de fuego de +1 potencia por las casillas recorridas siempre que cumplas el requisito.",      
     } }),
     Gema.new({ :id => 36, :name => "diestra", :fits => {
       :cabeza   => "+1 Protección por cada aliado en el reto.",
       :cuello   => "1/reto: Tienes una acción extra, después de tu acción de movimiento.",
       :armadura => "No puede ser objetivo de un ataque en conjunto.",
+      :pies     => "-1 al empuje enemigo a tus aliados, en las casillas colindantes a tu miniatura",
     } }),
     Gema.new({ :id => 37, :name => "siniestra", :fits => {
       :cabeza   => "+1 Protección por cada dado de defensa de tu armadura",
       :cuello   => "1/reto: Tienes una acción extra, antes de tu acción de movimiento.",
       :armadura => "Solo puede ser atacado una vez por turno.",
+      :pies     => "-1 al empuje de tus enemigos, en las casillas colindantes a tus aliados",
     } }),
     Gema.new({ :id => 38, :name => "ónice", :fits => {
       :cabeza   => "+1 PM al matar con hechizos. +1 PC al matar con armas. Si excedes tu puntuación de mente/cuerpo por esta sanación, pierdes 1d6 puntos de mente/cuerpo.",
       :cuello   => "1/reto: durante la fase trepidante elige una casilla libre: Creas sobre ella un pozo de oscuridad. (Los aliados deben saltar) Cada miniatura que muera en la sala otorga una carga. En cualquier momento puedes disolver el pozo y recuperar X hechizos de nivel Y, siendo X+Y las cargas acumuladas.",
+      :pies     => "+1 sigilo al sprintar",
     } }),
     Gema.new({ :id => 39, :name => "sigmarita", :fits => {
       :cabeza   => "+1 ataque extra a todos los ángeles invocados. +1 de sanación a todas las plegarias. +1PC al lanzar una plegaria en chakra.",
       :cuello   => "1/reto: Resucitas a un aliado muerto, que volverá a la vida con un único punto de cuerpo y de mente. (Conservando sus hechizos y habilidades tal y como los tuviera)",
+      :pies     => "Sprintar: Lanzas una plegaria de nivel +1 (no consume contador)"
     } }),
     ## Gemas Legendarias
     Gema.new({ :id => 40, :name => "perla negra", :fits => {
