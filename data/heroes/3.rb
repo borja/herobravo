@@ -25,7 +25,7 @@ def h3
     :skills       => [0,1,2,4,5,6,7,8,9],
     :profesion    => Profesion.new({:id => 3,  :aprendiz => [0]}),
     :tesoro       => {:runas => [3],
-                     :gemas => [18,27,25,21,52,10]},
+                     :gemas => [18,19,27,29,21,52,10]},
     :pet          => Pet.new({:id  => 20, :name => "Jazzy"}),
   }
 end
