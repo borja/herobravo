@@ -4,42 +4,49 @@ def asesinos
     {
       :id           => 0,
       :name         => "sigilo",
+      :nivel        => 2,
       :description  => "Si no hay objetivos visibles el asesino entra en sigilo. Ciertos objetivos son inmunes al sigilo. El efecto de esta habilidad cesará cuando el asesino realice una acción distinta a movimiento. Rango I: los enemigos no empujan al asesino. Rango II: Los enemigos dejan de ver al asesino pero se pierde 1/2 MOV. Rango III: Se pierde la penalización de MOV. ",
-      :type         => "Reactiva"
+      :type         => "Reactiva",
     },
     {
       :id           => 1,
       :name         => "dos armas",
+      :nivel        => 2,
       :description  => "Permite llevar un arma en la mano torpe. Rango I: permite llevar armas pequeñas",
       :type         => "Pasiva"
     },
     {
       :id           => 2,
       :name         => "puñalada trapera",
+      :nivel        => 2,
       :description  => "Requiere daga.Si tras haber declarado un ataque contra un aliado el enemigo se desplaza por la zona de combate del asesino, este podrá realizar un ataque. Se puede emplear más de 1 puñalada trapera por turno.",
       :type         => "Única"
     },
     {
       :id           => 3,
       :name         => "emboscada",
+      :nivel        => 3,
       :description  => "Requiere sigilo y daga. Añade 3 dados de combate a la tirada de ataque. Rango I: Cuesta 5 MOV/emboscada. Rango II: Cuesta 4 MOV/emboscada.",
       :type         => "Activa"
     },
     {
       :id           => 4,
       :name         => "acrobacias",
+      :nivel        => 3,
       :description  => "Permite que el asesino atraviese una casilla ocupada por un enemigo u obstáculo. Se pueden realizar acrobacias dobles.",
       :type         => "Única"
     },
     {
       :id           => 5,
       :name         => "venenos",
+      :nivel        => 4,
       :description  => "El asesino recubre sus armas con venenos. Rango I: añade un dado de combate blanco a tus ataques. Rango II: añade un dado de combate negro a tus ataques. Estos venenos pueden resistirse.",
       :type         => "Pasiva"
     },
     {
       :id           => 6,
       :name         => "dagas voladoras",
+      :nivel        => 3,
       :description  => "El asesino es capaz de realizar ataques extra con dagas. Cada rango en esta habilidad permite lanzar una daga extra. Alcance: 5.",
       :type         => "Pasiva"
     },
