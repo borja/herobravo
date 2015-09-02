@@ -9,8 +9,8 @@ def h2
     :jugador      => "Iris",
     :status       => "activo",
     :repu         => 9,
-    :nivel        => 18,
-    :cuerpo       => 14,
+    :nivel        => 19,
+    :cuerpo       => 15,
     :mente        => 12,
     :mov          => 12,
     :pet          => Pet.new({:id  => 11, :name => "Basidio"}),
@@ -41,14 +41,15 @@ def h2
     :skills       => [0,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,25,26,27,28,29,30,32,33,34,35,36,37,38],
     :profesion    => Profesion.new({:id => 5, :aprendiz => [0,3,4]}),
     :piezas       => [3,6,4],
-    :pociones     => [4,6,7,7,11],
+    :pociones     => [0,4,6,7,7,11],
     :pergaminos   => [
       Pergamino.new({:id => 1, :spells  => [66]}),
       Pergamino.new({:id => 1, :spells  => [95]}),
       Pergamino.new({:id => 1, :spells  => [59]})],
     :tesoro => {
       :gemas => [14,51,24,25,25,17,35,16,16,27,18,39,30],
-      :runas => [7,9]
+      :runas => [7,9],
+      :joyas => [9]
     },
     :abalorios => [
       Abalorio.new({:id => 1}),
