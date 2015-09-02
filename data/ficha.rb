@@ -4,9 +4,9 @@ def lore         ;["ciudad", "raza"]                                            
 def disciplinas  ;["id", "icono", "tipo", "nombre", "descripción", "nivel", "requisitos"] end
 def engarces     ;["gemas","joyas","runas"]                                               end
 def habs         ;["icono", "tipo", "nombre", "descripción"]                              end
-def fields       ;{ 1 => ["cabeza","hombros","muñecas","cintura","pies"],
-                    2 => ["cuello","espalda","pechera","manos","hebilla","tobillos"],
-                    3 => ["argolla","pendientes","tatuajes","cadena","broche","entrepierna"],
+def fields       ;{ 1 => ["cabeza","hombros","muñecas","cintura","entrepierna"],
+                    2 => ["espalda","pechera","manos","hebilla","pies","tatuajes"],
+                    3 => ["cuello","argolla","pendientes","cadena","broche","tobillos"],
                   } end
 def resistencias
  [

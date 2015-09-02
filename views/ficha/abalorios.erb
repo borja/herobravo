@@ -1,8 +1,8 @@
 <section>
-	<header>
-		<center><h2>Abalorios</h2></center>
-	</header>
 	<table>
+		<theader>
+			<tr><th colspan='<%= @heroe.abalorios.count if @heroe.abalorios %>'>Abalorios</th></tr>
+		</theader>
 		<tbody>
 			<tr>
 				<% if @heroe.abalorios %>
