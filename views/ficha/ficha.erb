@@ -30,11 +30,14 @@
 						<% end %>
 					</div>
 					<div class="row">
-						<div class="3u"><%= erb :'ficha/abalorios'  %></div>
-						<div class="3u"><%= erb :'ficha/piezas'     %></div>
-						<div class="3u"><%= erb :'ficha/materiales' %></div>
-						<div class="3u"><%= erb :'ficha/pociones'   %></div>
+					  <div class="4u"><%= erb :'ficha/abalorios'  %></div>
+					  <div class="4u"><%= erb :'ficha/piezas'     %></div>
+					  <div class="4u"><%= erb :'ficha/materiales' %></div>
 					</div>
+					<div class="row">
+					  <div class="6u"><%= erb :'ficha/pociones'   %></div>
+					  <div class="6u"><%= erb :'ficha/pergaminos'   %></div>
+					</div>	
 					<%if @heroe.tesoro %>
 					<div class="row">
 						<div class="12u">

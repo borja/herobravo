@@ -9,7 +9,7 @@ class Hero < Hash
     :hechizos, :shadows, :blood, :skills,   
     :armas, :armadura, :proteccions, :miscelaneas, :abalorios,          
     :profesion, :ciudad, :titulo,
-    :piezas, :pociones, :pergaminos,
+    :piezas, :pociones, :pergaminos, :materiales,
     :oro, :tesoro            
 
   def initialize args
