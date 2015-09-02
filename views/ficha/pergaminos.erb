@@ -1,16 +1,16 @@
 <section>
 	<table>
 		<theader>
-			<tr><th colspan='<%= @heroe.materiales.count if @heroe.materiales %>'>Materiales</th></tr>
+			<tr><th colspan='<%= @heroe.pergaminos.count if @heroe.pergaminos %>'>Pergaminos</th></tr>
 		</theadr>
 		<tbody>
 			<tr>
-				<% if @heroe.materiales %>
-					<% @heroe.materiales.each do |perga| %>
+				<% if @heroe.pergaminos %>
+					<% @heroe.pergaminos.each do |perga| %>
 						<td><%= erb :"display/item", :locals => {:item => perga} %></td>
 					<% end %>
 				<% else %>
-					<td>Sin materiales</td>
+					<td>Sin pergaminos</td>
 				<% end %>
 			</tr>
 		</tbody>
