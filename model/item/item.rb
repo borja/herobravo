@@ -87,7 +87,7 @@ class Abalorio < Item
 end
 
 class Util < Item
-  attr_accessor :id, :spells
+  attr_accessor :id, :name
   def initialize args
     args.each do |k,v|
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
