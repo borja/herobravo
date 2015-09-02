@@ -15,6 +15,7 @@ def h2
     :mov          => 12,
     :pet          => Pet.new({:id  => 11, :name => "Basidio"}),
     :mounts       => [1],
+    :materiales   => [3],
     :hechizos     => [1,2,3,6,7,8,12,16,17,18,19,20],
     :armas        => [
       Arma.new({ :id => 9,  :gemas    => [25,17,26], :enchants => [18,1,2,3,4,17]}),

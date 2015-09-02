@@ -3,6 +3,7 @@ def h0
   :id        => 0,
   :name      => "Amru",
   :jugador   => "Borja",
+  :titulo    => "Creador del Universo",
   :personaje => "hechicero",
   :camino    => ["El Oscuro",2],
   :ciudad    => "Xanandra",

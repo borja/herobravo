@@ -107,8 +107,9 @@ class Hero < Hash
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
   def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
   def defensa       ; self.armadura.defensa end
-  def cacharros     ; self.piezas.map   {|num| Pieza.new( :id => num)} if self.piezas  end
-  def brebajes      ; self.pociones.map {|num| Pocion.new(:id => num)} if self.pociones end
+  def cacharros     ; self.piezas.map     {|num|    Pieza.new(:id => num)} if self.piezas     end
+  def brebajes      ; self.pociones.map   {|num|   Pocion.new(:id => num)} if self.pociones   end
+  def componentes   ; self.materiales.map {|num| Material.new(:id => num)} if self.materiales end
   def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
   def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
   def shadow_magic  ; self.shadows.map  {|num| sombra(num)}  if self.shadows  end 
