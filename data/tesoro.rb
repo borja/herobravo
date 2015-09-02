@@ -47,21 +47,11 @@ def trampa(sigmar, dado1, dado2) #5
   end
 end
 
-def monstruo(sigmar, dado1, dado2)
+def monstruo(sigmar, dado1, dado2) #6
   case sigmar
     when 'eagle'  then 'monstruo errante lento'
     when 'plus'   then 'monstruo errante rápido'
     else 'monstruo errante'
-  end
-end
-
-def perg(sigmar, dado1, dado2)
-  case sigmar
-    when 'eagle'  then 'pergamino: doble'
-    when 'plus'   then 'pergamino: documentos'
-    when 'blank'  then 'pergamino: blanco'
-    when 'hammer' then 'pergamino: basico'
-    when 'comet'  then 'pergamino: arcano'
   end
 end
 
@@ -75,7 +65,17 @@ def oro(sigmar, dado1, dado2)
   end
 end
 
-def pot(sigmar, dado1, dado2)
+def perg(sigmar, dado1, dado2) #8
+  case sigmar
+    when 'eagle'  then 'pergamino: doble'
+    when 'plus'   then 'pergamino: documentos'
+    when 'blank'  then 'pergamino: blanco'
+    when 'hammer' then 'pergamino: básico'
+    when 'comet'  then 'pergamino: arcano'
+  end
+end
+
+def pot(sigmar, dado1, dado2) #9
   case sigmar
     when 'eagle'  then "pocion de curacion"
     when 'plus'   then "pocion de resistencia"
@@ -95,21 +95,21 @@ def comida sigmar, dado1, dado2 # 10
   end
 end
 
-def alijo(sigmar, dado1, dado2)
+def alijo(sigmar, dado1, dado2) #11
   case sigmar
-    when 'eagle'  then 'gema: ' + gema(rand(1..41)).name
-    when 'plus'   then 'runa: ' + joya(rand(1..12)).name
+    when 'eagle'  then 'gema: ' + gema(rand(1..47)).name
+    when 'plus'   then 'runa: ' + runa(rand(1..11)).name
     when 'blank'  then 'gema: estropeada'
-    when 'hammer' then 'gema: ' + gema(rand(1..41)).name
-    when 'comet'  then 'joya: ' + joya(rand(1..14)).name
+    when 'hammer' then 'gema: ' + gema(rand(1..47)).name
+    when 'comet'  then 'joya: ' + joya(rand(1..11)).name
   end
 end
 
-def cofre(sigmar, dado1, dado2)
+def cofre(sigmar, dado1, dado2) #12
   case sigmar
-    when 'eagle'  then gema(rand(1..41)).name + " + " + gema(rand(1..41)).name
-    when 'plus'   then joya(rand(1..14)).name + " + " + joya(rand(1..14)).name
-    when 'blank'  then runa(rand(1..12)).name + " + " + runa(rand(1..12)).name
+    when 'eagle'  then gema(rand(0..47)).name + " + " + gema(rand(1..47)).name
+    when 'plus'   then joya(rand(0..11)).name + " + " + joya(rand(1..11)).name
+    when 'blank'  then runa(rand(0..11)).name + " + " + runa(rand(1..11)).name
     when 'hammer' then 'objeto'
     when 'comet'  then 'artefacto'
   end
