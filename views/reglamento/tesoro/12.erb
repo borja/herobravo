@@ -1,0 +1,9 @@
+<% case resultado 
+	when 'artefacto' then %>	
+		<% a = ['armadura de borin', 'talisman', 'espada tumularia'] %>
+		<%= a[rand(0..a.size)]%>
+	<% when 'objeto' then %>
+		<%= resultado %>
+	<% else %>
+		Aún sin implementar 
+<% end %>
