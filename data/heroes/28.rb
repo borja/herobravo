@@ -19,6 +19,9 @@ def h28
     :proteccions  => [ Proteccion.new({:id => 8, :joyas => [20,9] })],
     :miscelaneas  => [ Miscelanea.new({:id => 1})],
     :profesion    =>   Profesion.new({:id => 0,  :aprendiz => [0]}),
-    :tesoro       => {:gemas => [5]},
+    :tesoro       => {:gemas => [2,5,31]},
+    :pergaminos   => [Pergamino.new({:id => 1, :spells  => [57]}),
+                      Pergamino.new({:id => 1, :spells  => [59]})],
+    :pociones     => [9],
   }
 end

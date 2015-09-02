@@ -30,5 +30,6 @@ def h7
     :profesion    => Profesion.new({:id => 2,  :aprendiz => [0,1]}),
     :pociones     => [10],
     :materiales   => [2,2,2,2],
+    :piezas       => [4,4],
   }
 end

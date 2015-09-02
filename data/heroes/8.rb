@@ -12,6 +12,7 @@ def h8
     :cuerpo       => 11,
     :mente        => 4,
     :mov          => 8,
+    :mounts       => [1],
     :armas        => [Arma.new({:id => 7, :runas => [9]}), 
                       Arma.new({:id => 7})],
     :armadura     => Armadura.new({:id => 7}),
