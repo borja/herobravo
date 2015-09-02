@@ -446,6 +446,11 @@ def enchants
       :name         => "de las sombras",
       :descripcion  => "Permite usar el set de sombras de nivel 1 en lugar de un set elemental a tu elección.",
       :tipo         => "sombras",
+    },  
+    { :id           => 89,
+      :name         => "fulgurante",
+      :descripcion  => "+1 potencia al ataque físico vs demonios",
+      :tipo         => "sombras",
     }      
   ]
 end

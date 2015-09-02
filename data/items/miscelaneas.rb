@@ -125,6 +125,12 @@ def miscelaneas
       :max  => 1,
       :fits => "amuleto", 
     },
+    {
+      :id   => 20,
+      :name => "broche",  
+      :max  => 1,
+      :fits => "broche", 
+    }
   ]
 end
 def miscelanea id ; miscelaneas[id] end
