@@ -6,16 +6,40 @@
 				<th>ID</th>
 				<th>Icono</th>
 				<th>Nombre</th>
-				<th>Descripción</th>
+				<th>Disponibles</th>
+				<th>Usado en ...</th>
 			</tr>	
 		</thead>
 		<tbody>
 			<% materiales.each do |m| %>
+			<% mat = Material.new(m) %>
 				<tr>
-					<td><%= m.id %></td>
-					<td>X</td>
-					<td><%= m.name %></td>
-					<td><%= m.description %></td>						
+					<td><%= mat.id %></td>
+					<td>
+						<img src=<%= mat.img_path %> alt=<%= mat.name %>, id='icon' />
+					</td>
+					<td><%= mat.name %></td>
+					<td><%= erb :'display/bazar', :locals => { 
+							:bazar   => mat.disponibles, 
+							:item_id => mat.id, 
+							:engarce => "materiales" } %>
+					</td>
+					<td>
+						<table>
+							<tbody>
+								<tr>	
+								  <% mat.usado_en.each do |uso| %>
+								    <td>
+								      <%= erb :'display/display', :locals => { 
+								        :title       => p = profesion(uso[:prof])[:name], 
+								        :path        => "'../../images/profesiones/#{p}.png'",
+								        :description => profesion(uso[:prof])[uso[:grado].to_sym][uso[:receta]][:name] } %>
+							        </td>
+							      <% end %>
+						        </tr>
+							</tbody>
+						</table>
+					</td>
 				</tr>
 			<% end %>
 		</tbody>

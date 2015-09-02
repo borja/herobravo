@@ -6,8 +6,8 @@
 		<tbody>
 			<tr>
 				<% if @heroe.materiales %>
-					<% @heroe.materiales.each do |perga| %>
-						<td><%= erb :"display/item", :locals => {:item => perga} %></td>
+					<% @heroe.componentes.each do |m| %>
+						<td><%= erb :"display/item", :locals => {:item => m} %></td>
 					<% end %>
 				<% else %>
 					<td>Sin materiales</td>

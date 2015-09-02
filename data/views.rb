@@ -62,7 +62,10 @@ def views
     },
     {
       :route    => "materiales",
-      :template => { :main => 'items/materiales'}
+      :template => { 
+        :left => 'objetos/right/content2',
+        :main => 'items/materiales'
+      }
     }, 
     {
       :route    => "monturas",
