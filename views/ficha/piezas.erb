@@ -1,8 +1,8 @@
 <section>
-	<header>
-		<center><h2>Piezas</h2></center>
-	</header>
 	<table>
+		<theader>
+			<tr><th colspan='<%= @heroe.piezas.count if @heroe.piezas %>'>Piezas</th></tr>
+		</theader>
 		<tbody>
 			<tr>
 				<% if @heroe.piezas %>
