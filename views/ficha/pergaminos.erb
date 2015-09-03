@@ -1,12 +1,13 @@
+<% h = hero(params[:param].to_i) %>
 <section>
 	<table>
 		<theader>
-			<tr><th colspan='<%= @heroe.pergaminos.count if @heroe.pergaminos %>'>Pergaminos</th></tr>
+			<tr><th colspan='<%= h.pergaminos.count if h.pergaminos %>'>Pergaminos</th></tr>
 		</theader>
 		<tbody>
 			<tr>
-				<% if @heroe.pergaminos %>
-					<% @heroe.pergaminos.each do |perga| %>
+				<% if h.pergaminos %>
+					<% h.pergaminos.each do |perga| %>
 						<td><%= erb :"display/item", :locals => {:item => perga} %></td>
 					<% end %>
 				<% else %>

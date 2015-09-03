@@ -9,20 +9,7 @@ class App < Sinatra::Base
   get '/' do
     erb :index
   end 
-  
-  get '/hero/:id' do |id|
-    @heroe = heros[ id.to_i ]
-    erb :'ficha/ficha'
-  end
       
-  get '/profesiones/:profesion' do
-    erb :"ciudad/profesiones"
-  end
-  
-  get '/city/:ciudad' do
-    erb :'ciudad/ciudad'
-  end
-  
   get '/criaturas/:criature' do
     erb :template, :locals => {
       :title    => params[:criature].capitalize,
@@ -52,43 +39,35 @@ class App < Sinatra::Base
     @elemento   = escuela
     erb :"magia/hechizos"
   end
-
-  get '/historias/:hero' do |hero|
-    @heroe = heros[hero.to_i]
-    erb :'historias/historias'
-  end
   
   get '/test/:question' do |x|
     @respuestas   = x
     @num_pregunta = x.length
     erb :'test/test'
   end
-  
-  get '/raza/:raza' do |raza|
-    erb :template, :locals => {
-      :title    => raza.capitalize,
-      :template => {
-        :left   => 'personaje/razas/left/links',
-        :main   => "personaje/razas/center/#{raza}",
-        :right  => "personaje/razas/right/#{raza}",
-      }
-    }
-  end
-  
-  get '/pnj/:pnj' do
-    erb :template, :locals => view('pnj')
-  end
-  
-  get '/dado/:dados' do
-    erb :template, :locals => view('dado')
-  end
-  
-  
-  get '/habilidades/:char' do
-    erb :template, :locals => view('disciplinas')
+    
+  # Templates with double-routing
+  get '/:view/:param' do |view,param|
+    case view
+      when 'hero'        then erb :'ficha/ficha'
+      when 'habilidades' then erb :template, :locals => view('disciplinas')
+      when 'dado'        then erb :template, :locals => view('dado')
+      when 'pnj'         then erb :template, :locals => view('pnj')  
+      when 'city'        then erb :'ciudad/ciudad'
+      when 'profesiones' then erb :"ciudad/profesiones"
+      when 'historias'   then erb :'historias/historias' 
+      when 'raza'        then erb :template, :locals => {
+        :title    => param.capitalize,
+        :template => {
+          :left   => 'personaje/razas/left/links',
+          :main   => "personaje/razas/center/#{param}",
+          :right  => "personaje/razas/right/#{param}",
+        }
+      }              
+    end
   end
     
-  # Templates with root-viewer  
+  # Templates with simple root-viewer  
   get '/:view' do |v|
     lista_heroes = ["heroes","reservistas","extranjeros","ausentes","licenciados"]
     case

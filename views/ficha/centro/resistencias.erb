@@ -1,4 +1,5 @@
-<br>
+<br/>
+<% h = hero(params[:param].to_i) %>
 <table id='table-2'>
 	<thead>
 		<tr><% resistencias.each do |r| %>	
@@ -12,7 +13,7 @@
 	</thead>
 	<tbody>
 		<tr><% resistencias.each do |r| %>
-				<td>+<%= @heroe.resistencia(r[:nombre]) %></td>
+				<td>+<%= h.resistencia(r[:nombre]) %></td>
 			<% end%>
 		</tr>
 	</tbody>

@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html>
-	<head><%= erb :head, :locals => {:title => "HeroSheet: historia de #{@heroe.name}"} %></head>
+	<% h = hero(params[:param].to_i) %>
+	<head><%= erb :head, :locals => {:title => "HeroSheet: historia de #{h.name}"} %></head>
 	<body class="subpage">
 		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => @heroe.name } %>
+			<%= erb :header, :locals => { :title => h.name } %>
 		</div>
 			<div id="content-wrapper">
 				<div id="content">
@@ -13,7 +14,7 @@
 								<%= erb :'ficha/izquierda/izquierda' %>
 							</div>
 							<div class="6u important(collapse)">
-								<%= erb :"historias/relatos#{@heroe.historia}/#{@heroe.id}" %>
+								<%= erb :"historias/relatos#{h.historia}/#{h.id}" %>
 							</div>
 							<div class="3u">
 								<%= erb :'ficha/derecha/derecha' %>

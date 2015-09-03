@@ -1,3 +1,4 @@
+<% h = hero(params[:param].to_i) %>
 <section>	
 	<header>
 		<center><h2>Tesoros</h2></center>
@@ -13,7 +14,7 @@
 			<tr>				
 				<% engarces.each do |engarce| %>
 					<td>
-						<% if tesoros = @heroe.tesoro[engarce.to_sym] %>
+						<% if tesoros = h.tesoro[engarce.to_sym] %>
 							<table id='table-2'>
 								<tbody>
 									<tr>

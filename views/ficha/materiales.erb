@@ -1,12 +1,13 @@
+<% h = hero(params[:param].to_i) %>
 <section>
 	<table>
 		<theader>
-			<tr><th colspan='<%= @heroe.materiales.count if @heroe.materiales %>'>Materiales</th></tr>
+			<tr><th colspan='<%= h.materiales.count if h.materiales %>'>Materiales</th></tr>
 		</theadr>
 		<tbody>
 			<tr>
-				<% if @heroe.materiales %>
-					<% @heroe.componentes.each do |m| %>
+				<% if h.materiales %>
+					<% h.componentes.each do |m| %>
 						<td><%= erb :"display/item", :locals => {:item => m} %></td>
 					<% end %>
 				<% else %>

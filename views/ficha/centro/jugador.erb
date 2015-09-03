@@ -1,29 +1,30 @@
+<% h = hero(params[:param].to_i) %>
 <table id='tresp'>
 	<thead>
 		<tr>
 			<% descripcion.each do |f| %>
 				<th><%= f.capitalize %></th>
 			<% end%>
-			<% if @heroe.descendientes %>
+			<% if h.descendientes %>
 				<th>Descendientes</th>
 			<% end %>
-			<% if @heroe.profesion %>
+			<% if h.profesion %>
 				<th>Profesión</th>
 			<% end %>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td><%= @heroe.jugador %></td>
-			<td><h2><%= @heroe.nivel %></h2></td>
+			<td><%= h.jugador %></td>
+			<td><h2><%= h.nivel %></h2></td>
 			<td style="background-image:url(../images/ficha/star.png); 
 				background-repeat: no-repeat; background-position:center;">
-				<%= @heroe.repu || 0 %></td>
-			<% if @heroe.descendientes %>
+				<%= h.repu || 0 %></td>
+			<% if h.descendientes %>
 				<td><%= erb :'ficha/descendientes' %></td>
 			<% end %>	
-			<% if @heroe.profesion %>
-				<td><%= erb :'ficha/profesion', :locals => { :prof => @heroe.profesion } %></td>
+			<% if h.profesion %>
+				<td><%= erb :'ficha/profesion', :locals => { :prof => h.profesion } %></td>
 			<% end %>
 		</tr>
 	</tbody>

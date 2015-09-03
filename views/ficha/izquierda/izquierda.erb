@@ -1,13 +1,14 @@
 <section>
+	<% h = hero(params[:param].to_i) %>
 	<header>
-		<h2><center><%= @heroe.titulo %></center></h2>
+		<h2><center><%= h.titulo %></center></h2>
 	</header>
-	<a href=<%= "/hero/#{@heroe.id }" %> class="feature-image">
-		<img src=<%= @heroe.big_path %> alt=<%= @heroe.name %>, id='portrait' />
+	<a href=<%= "/hero/#{h.id }" %> class="feature-image">
+		<img src=<%= h.big_path %> alt=<%= h.name %>, id='portrait' />
 	</a>
-	<% if  @heroe.historia %>
+	<% if  h.historia %>
 		<center>
-			<a href='<%= "/historias/#{@heroe.id }" %>'>Historia de <%= @heroe.name %></a>
+			<a href='<%= "/historias/#{h.id }" %>'>Historia de <%= h.name %></a>
 		</center>
 	<% end %>
 </section>
