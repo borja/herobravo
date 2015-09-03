@@ -25,7 +25,9 @@ def profesions
           :id      => 3,
           :name    => "Poción antídoto",
           :coste   => 200,
-          :efecto  => "Disipa los efectos de un veneno instantáneamente. Coste de fabricación: 100g. Venderlo: 50g",
+          :efecto  => "Crea una poción que disipa los efectos de un veneno instantáneamente.",
+          :crear   => 100,
+          :venta   => 50,
         },
       ],
       :artesano  => [
@@ -37,7 +39,8 @@ def profesions
         { :id      => 1,
           :name    => "Piedra filosofal",
           :coste   => 600,
-          :efecto  => "1 piedra pómez, 1 aguamarina, 1 cráneo + 200 piezas de oro: La piedra filosofal.",
+          :efecto  => "1 piedra pómez, 1 aguamarina, 1 cráneo: La piedra filosofal.",
+          :crear   => 200,
         }
       ],
       :maestro   => [
@@ -66,7 +69,10 @@ def profesions
           :id      => 2,
           :name    => "Libro de hechizos",
           :coste   => 150,
-          :efecto  => "Imbuye 6 hechizos de la misma escuela. Bono: +1Pot. a los hechizos de la escuela que se haya inscrito. Coste de fabricación: 150g.",
+          :efecto  => "Imbuye 6 hechizos de la misma escuela. Bono: +1Pot. a los hechizos de la escuela que se haya inscrito.",
+          :matts   => [9,9,9],
+          :crear   => 150,
+          :venta   => 300,
         },
         {
           :id      => 3,
@@ -177,7 +183,8 @@ def profesions
           :id      => 4,
           :name    => "Camuflaje de guerra",
           :coste   => 150,
-          :efecto  => "1 Polvo de ceniza: Entras en sigilo de nivel 1",
+          :matts   => [3],
+          :efecto  => "Entras en sigilo de nivel 1",
         },
       ],
       :artesano  => [
@@ -319,12 +326,14 @@ def profesions
           :id      => 2,
           :name    => "Ballesta de repetición",
           :coste   => 300,
+          :matts   => [5,5,5,5],
           :efecto  => "4 piezas : ballesta que no necesita recargase. Se vende por 200g.",
         },
         {
           :id      => 3,
           :name    => "Cayado",
           :coste   => 150,
+          :matts   => [5,5,5],
           :efecto  => "3 piezas : bastón que ataca con 1 dado y en diagonal. Se vende por 50g.",
         }
       ],
@@ -332,25 +341,36 @@ def profesions
         { :id      => 0,
           :name    => "Artesano carpintero",
           :coste   => 500,
+          :matts   => [5,5,5],
           :efecto  => "Permite usar 3 piezas de madera para crear una talla exquisita."
         },
         {
           :id      => 1,
           :name    => "Báculo",
           :coste   => 300,
+          :matts   => [6,6,6],
           :efecto  => "3 tallas exquisitas: bastón que ataca con 2 dados y en diagonal. Se vende por 150g.",
         },
         {
           :id      => 2,
           :name    => "Varita mágica",
           :coste   => 100,
-          :efecto  => "1 talla exquisita + 20 Polvos Dorados + Diamante + 200 oro: Varita (1 mano) que permite lanzar 2 hechizos/turno.",
+          :matts   => [6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+          :efecto  => "Diamante + 200 oro: Varita (1 mano) que permite lanzar 2 hechizos/turno.",
+        },
+        {
+          :id      => 3,
+          :name    => "Atril de animista",
+          :coste   => 450,
+          :matts   => [6,6,5,5,8],
+          :efecto  => "Joya del artesano + joya simbionte: Permite crear un atril que persigue al poseedor. El atril permite portar un libro en una mano extra.",
         }
       ],
       :maestro   => [
         { :id      => 0,
           :name    => "Maestro de carpintería",
           :coste   => 1000,
+          :matts   => [6,6,6],
           :efecto  => "Permite usar 3 tallas exquisitas para crear una obra maestra."
         }
       ],

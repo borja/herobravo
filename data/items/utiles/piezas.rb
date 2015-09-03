@@ -36,6 +36,10 @@ def piezas
     { :id    => 8,
       :name  => "saco roto del Padre del Invierno",
       :uso   => "ocupa un espacio de inventario y permite almacenar 4 objetos. Feliz no-Navidad",
+    },
+    { :id    => 9,
+      :name  => "Piedra Filosofal",
+      :uso   => "Usada por los artesanos para fabricar objetos mágicos.",
     }
   ]
 end

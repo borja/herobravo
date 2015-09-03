@@ -14,7 +14,7 @@ def h3
     :cuerpo       => 9,
     :mente        => 7,
     :mov          => 7,
-    :skills       => [0,1,2,4,5,6,7,8,9],
+    :skills       => [0,1,2,3,4,5,6,7,8,9,11],
     :hechizos     => [0,1,2],
     :shadows      => [0,1,2,5],
     :materiales   => [0],
