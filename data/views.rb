@@ -52,6 +52,14 @@ def views
         :right => 'reglamento/derecha/combate'}
     },
     {
+      :route    => "espadaroja",
+      :title    => "Espada Roja",
+      :template => { 
+        :left  => 'items/espadaroja/left',
+        :main  => 'items/espadaroja/adivinanza',
+        :right => 'reglamento/derecha/combate'}
+    },
+    {
       :route    => "disciplinas",
       :title    => "Habilidades",
       :template => { :main => 'personaje/disciplinas'}
