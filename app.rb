@@ -31,12 +31,8 @@ class App < Sinatra::Base
         :main  => 'reglamento/criature' 
       }
     }   
-  end
-  
-  get '/criaturas' do
-    erb :'reglamento/criaturas'    
-  end
-  
+  end  
+
   # Sección de magia
   get '/magia/hechizos' do
     @spelllevel = 1
@@ -87,22 +83,18 @@ class App < Sinatra::Base
     erb :template, :locals => view('dado')
   end
   
-  get '/gemas' do 
-    erb :'items/gemas/gemas'
-  end
-  
-  get '/escuelas' do 
-    erb :'magia/escuelas'
-  end
   
   get '/habilidades/:char' do
     erb :template, :locals => view('disciplinas')
   end
-  
+    
   # Templates with root-viewer  
   get '/:view' do |v|
     lista_heroes = ["heroes","reservistas","extranjeros","ausentes","licenciados"]
     case
+      when v == 'gemas'     then erb :'items/gemas/gemas'
+      when v == 'escuelas'  then erb :'magia/escuelas'
+      when v == 'criaturas' then erb :'reglamento/criaturas'
       when lista_heroes.include?(v) then erb :template, :locals => view('heroes')
       else erb :template, :locals => view(v) # Try same view as URL
     end
