@@ -24,6 +24,22 @@ def materiales
     {
       :id   => 5,
       :name => "madera",
+    },
+    {
+      :id   => 6,
+      :name => "talla exquisita",
+    },
+    {
+      :id   => 7,
+      :name => "polvo dorado",
+    },
+    {
+      :id   => 8,
+      :name => "arcanóleo",
+    },
+    {
+      :id   => 9,
+      :name => "papiro",
     }
   ]
 end
