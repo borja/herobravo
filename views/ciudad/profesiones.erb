@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<% profesion = profesions.find { |p| p[:name] == params[:profesion] } %>
+<% profesion = profesions.find { |p| p[:name] == params[:param] } %>
 <html>
 	<head><%= erb :head, :locals => {:title => "Herosheet: " + profesion[:name].capitalize } %></head>
 	<body class="subpage">

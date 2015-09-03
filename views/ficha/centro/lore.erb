@@ -1,56 +1,57 @@
+<% h = hero(params[:param].to_i) %>
 <table id='tresp'>
 	<thead>
 		<tr>
 			<% lore.each do |f| %>
 				<th><%= f.capitalize %></th>
 			<% end%>
-			<% if @heroe.pareja %>
+			<% if h.pareja %>
 				<th>Pareja</th>
 			<% end %>
-			<% if @heroe.progenitores %>
+			<% if h.progenitores %>
 				<th>Progenitores</th>
 			<% end %>
-			<% if @heroe.pet %>
+			<% if h.pet %>
 				<th>Familiar</th>
 			<% end %>
-			<% if @heroe.transportes %>			
+			<% if h.transportes %>			
 				<th>Montura</th>
 			<% end %>
-			<% if @heroe.historia %>
+			<% if h.historia %>
 				<th>Historia</th>
 			<% end %>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href='/city/<%= @heroe.empadronado %>'>
-					<%= @heroe.empadronado %>
+			<td><a href='/city/<%= h.empadronado %>'>
+					<%= h.empadronado %>
 				</a>
 			</td>
-			<td><a href='/raza/<%= @heroe.raza %>s'><%= @heroe.raza.capitalize %></a></td>
-			<% if @heroe.pareja %>
+			<td><a href='/raza/<%= h.raza %>s'><%= h.raza.capitalize %></a></td>
+			<% if h.pareja %>
 				<td><%= erb :'ficha/pareja' %></td>
 			<% end %>
-			<% if @heroe.progenitores %>
+			<% if h.progenitores %>
 				<td><%= erb :'ficha/progenitores' %></td>
 			<% end %>
-			<% if p = @heroe.pet %>
+			<% if p = h.pet %>
 				<td><%= erb :'display/display', :locals => { 
 						:title       => p.nombre, 
 						:path        => p.img_path,
 						:description => p.descripcion } %>
 				</td>
 			<% end %>
-			<% if m = @heroe.transportes %>
+			<% if m = h.transportes %>
 				<td><%= erb :'display/display', :locals => { 
 						:title       => m.first.name, 
 						:path        => m.first.img_path,
 						:description => m.first.bono } %>
 				</td>
 			<% end %>
-			<% if @heroe.historia %>
+			<% if h.historia %>
 				<td>
-					<a href=<%= "/historias/#{@heroe.id }" %>>
+					<a href=<%= "/historias/#{h.id }" %>>
 						<img src="../images/ficha/historia.png" alt="historia" /, id='icon'>
 					</a>
 				</td>

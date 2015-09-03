@@ -1,12 +1,13 @@
 <table id='table-2'>
+	<% h = hero(params[:param].to_i) %>
 	<thead>
-		<tr><th><a href=../magia/spells/<%= @heroe.id %>>Lista de hechizos</a></th>
+		<tr><th><a href=../magia/spells/<%= h.id %>>Lista de hechizos</a></th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr><td><table id='table-2'>
 					<tbody>
-						<tr><% @heroe.elementos.each do |e| %>	
+						<tr><% h.elementos.each do |e| %>	
 								<td><%= erb :'display/display', :locals => { 
 									:title       => e, 
 									:path        => "'../images/elements/#{e}.png'",

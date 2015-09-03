@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 
 <html>
+	<% h = hero(params[:param].to_i) %>
 	<head>
-		<%= erb :head, :locals => {:title => "HeroSheet: Ficha de #{@heroe.name}" } %>
+		<%= erb :head, :locals => {:title => "HeroSheet: Ficha de #{h.name}" } %>
 	</head>
 	<body class="subpage">
 		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => @heroe.name } %>
+			<%= erb :header, :locals => { :title => h.name } %>
 		</div>
 		<div id="content-wrapper">
 			<div id="content">
@@ -16,7 +17,7 @@
 							<%= erb :'ficha/izquierda/izquierda' %>
 						</div>
 						<div class="6u important(collapse)">							
-							<%= erb :"ficha/centro/main", :locals => { :heroe => @heroe } %>
+							<%= erb :"ficha/centro/main", :locals => { :heroe => h } %>
 						</div>
 						<div class="3u">
 							<%= erb :'ficha/derecha/derecha' %>
@@ -25,7 +26,7 @@
 					<div class="row">
 						<% 3.times do |i| %>
 							<div class="4u">
-								<%= erb :"ficha/inventario/columna#{i+1}", :locals => { :heroe => @heroe } %>	
+								<%= erb :"ficha/inventario/columna#{i+1}", :locals => { :heroe => h } %>	
 							</div>
 						<% end %>
 					</div>
@@ -38,7 +39,7 @@
 					  <div class="6u"><%= erb :'ficha/pociones'   %></div>
 					  <div class="6u"><%= erb :'ficha/pergaminos'   %></div>
 					</div>	
-					<%if @heroe.tesoro %>
+					<%if h.tesoro %>
 					<div class="row">
 						<div class="12u">
 							<%= erb :'ficha/tesoros' %>
@@ -47,7 +48,7 @@
 					<% end %>				
 					<div class="row">
 						<div class="12u">
-							<%= erb :'ficha/habilidades', :locals => { :heroe => @heroe } if @heroe.skills %>	
+							<%= erb :'ficha/habilidades', :locals => { :heroe => h } if h.skills %>	
 						</div>
 					</div>
 				</div>

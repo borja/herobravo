@@ -1,9 +1,10 @@
 <section>
+	<% h = hero(params[:param].to_i) %>
 	<header>
-		<h2><center>El <%= @heroe.clase %> <%= @heroe.personaje %></center></h2>
+		<h2><center>El <%= h.clase %> <%= h.personaje %></center></h2>
 	</header>
-	<a href=<%= "/habilidades/#{@heroe.personaje }" %> class="feature-image">
-		<img src="../images/clases/<%= @heroe.personaje %>.png" alt=<%= @heroe.personaje %> /, id='box'>
+	<a href=<%= "/habilidades/#{h.personaje }" %> class="feature-image">
+		<img src="../images/clases/<%= h.personaje %>.png" alt=<%= h.personaje %> /, id='box'>
 	</a>
-	<%= erb :'ficha/hechizos' unless @heroe.elementos.empty? %>
+	<%= erb :'ficha/hechizos' unless h.elementos.empty? %>
 </section>
