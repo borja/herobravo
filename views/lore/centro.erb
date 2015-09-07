@@ -18,7 +18,7 @@
 					<td><%= n.jugador %></td>
 					<td><%= erb :'display/portrait', :locals => { :h => n } %></td>
 					<td class='wrapper'>
-						<a href='/historias/<%= n.id %>'><%= n.name %></a>
+						<a href='/historia/<%= n.id %>'><%= n.name %></a>
 					    <% if n.premio %>
 							<% color = n.premio == 1 ? "golden" : "silvered" %>
 							<div class="ribbon-wrapper-<%= color %>"><div class="ribbon-<%= color %>"><%= n.premio %>º</div>

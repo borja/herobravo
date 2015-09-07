@@ -3,6 +3,7 @@
 	<head>
 		<% title ||= route.capitalize %>
 		<% title = params[:param].capitalize if title == 'view' %>
+		<% title = hero(params[:param].to_i).name if params[:view] == 'historia' %>
 		<%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %>
 	</head>
 	<body class="subpage">
@@ -15,20 +16,20 @@
 						<div class="row">
 							<% if template[:left] %>
 								<div class="3u">
-									<%= erb :"#{ template[:left] }" %>
+									<%= load_partial(template[:left]) %>
 									<% if template[:left2] %>
-										<%= erb :"#{ template[:left2] }"%>
+										<%= load_partial(template[:left2]) %>
 									<% end %>
 								</div>
 							<% end %>
 							<div class='<%= get_center(template) %>'>
-								<%= erb :"#{ template[:main] }" %>
+								<%= load_partial(template[:main]) %>
 							</div>							
 							<% if template[:right] %>
 								<div class="3u">
-									<%= erb :"#{ template[:right] }" %>
+									<%= load_partial(template[:right]) %>
 									<% if template[:right2] %>
-										<%= erb :"#{ template[:right2] }"%>
+										<%= load_partial(template[:right2]) %>
 									<% end %>
 								</div>
 							<% end %>

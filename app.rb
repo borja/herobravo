@@ -11,7 +11,7 @@ class App < Sinatra::Base
       when 'hero'        then erb :'ficha/ficha'
       when 'city'        then erb :'ciudad/ciudad'
       when 'profesiones' then erb :'ciudad/profesiones'
-      when 'historias'   then erb :'historias/historias'
+      when 'historia'    then preview('historia')
       when 'test'        then preview('test')
       when 'hechizos'    then preview('hechizos')
       when 'aire'        then preview('hechizos')
@@ -23,14 +23,7 @@ class App < Sinatra::Base
       when 'dado'        then preview('dado')
       when 'pnj'         then preview('pnj')  
       when 'criaturas'   then preview('criature') 
-      when 'raza'        then erb :template, :locals => {
-        :title    => param.capitalize,
-        :template => {
-          :left   => 'personaje/razas/left/links',
-          :main   => "personaje/razas/center/#{param}",
-          :right  => "personaje/razas/right/#{param}",
-        }
-      }              
+      when 'raza'        then preview('raza')              
     end
   end
   

@@ -20,6 +20,15 @@ def views
       }
     },
     {
+      :route    => "historia",
+      :title    => "view",
+      :template => {
+        :left   => 'ficha/izquierda/izquierda',
+        :main   => 'historias/historias',
+        :right  => 'ficha/derecha/derecha',
+      }
+    },
+    {
       :route    => "pnj",
       :title    => "Personaje",
       :template => {
@@ -110,6 +119,15 @@ def views
         :left   => 'personaje/razas/left/links',
         :main   => "personaje/razas/center/main",
         :right  => "personaje/razas/right/stats",
+      }
+    },
+    {
+      :route    => "raza",
+      :title    => 'view',
+      :template => {
+        :left   => 'personaje/razas/left/links',
+        :main   => 'personaje/razas/center/:param',
+        :right  => 'personaje/razas/right/:param',
       }
     },
     {
@@ -303,3 +321,7 @@ end
 
 def view    route ; views.find{ |v| v[:route] == route }  end
 def preview route ; erb :template, :locals => view(route) end
+def load_partial position
+  partial = position.gsub(':param', (params[:param].to_s)  ) 
+  erb :"#{partial}"
+end
