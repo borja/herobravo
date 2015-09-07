@@ -9,8 +9,7 @@ class App < Sinatra::Base
   get '/:view/:param' do |view,param|
     case view
       when 'hero'        then erb :'ficha/ficha'
-      when 'city'        then erb :'ciudad/ciudad'
-      when 'profesiones' then erb :'ciudad/profesiones'
+      when 'city'        then erb :'ciudad/ciudad'        
       when 'habilidades' then preview('disciplinas')
       when 'criaturas'   then preview('criature') 
       when 'aire' || 'agua' || 'fuego' || 'tierra' then preview('hechizos')      
