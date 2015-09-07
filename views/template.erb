@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<% title ||= route.capitalize %>
+		<% title = params[:param].capitalize if title == 'view' %>
 		<%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %>
 	</head>
 	<body class="subpage">

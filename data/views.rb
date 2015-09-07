@@ -280,6 +280,24 @@ def views
       :route    => "criaturas",
       :template => { :main  => 'reglamento/criaturas' }
     },
+    {
+      :route    => "criature",
+      :title    => 'view',
+      :template => { 
+        :left   => 'reglamento/izquierda/bestiario',
+        :main   => 'reglamento/criature' 
+      }
+    },
+    {
+      :route    => "test",
+      :template => { 
+        :left   => 'personaje/razas/left/links',
+        :main   => 'test/test',
+				:right  => 'reglamento/derecha/combate',
+				:right2 => 'reglamento/derecha/personajes',
+      }
+    },
+    
   ]
 end
 

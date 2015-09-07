@@ -12,7 +12,7 @@ class App < Sinatra::Base
       when 'city'        then erb :'ciudad/ciudad'
       when 'profesiones' then erb :'ciudad/profesiones'
       when 'historias'   then erb :'historias/historias'
-      when 'test'        then erb :'test/test'
+      when 'test'        then preview('test')
       when 'hechizos'    then preview('hechizos')
       when 'aire'        then preview('hechizos')
       when 'agua'        then preview('hechizos')
@@ -22,13 +22,7 @@ class App < Sinatra::Base
       when 'habilidades' then preview('disciplinas')
       when 'dado'        then preview('dado')
       when 'pnj'         then preview('pnj')  
-      when 'criaturas'   then erb :template, :locals => {
-        :title    => param.capitalize,
-        :template => { 
-          :left   => 'reglamento/izquierda/bestiario',
-          :main   => 'reglamento/criature' 
-        }
-      }         
+      when 'criaturas'   then preview('criature') 
       when 'raza'        then erb :template, :locals => {
         :title    => param.capitalize,
         :template => {
@@ -41,15 +35,14 @@ class App < Sinatra::Base
   end
   
   # Templates with simple root-viewer  
-  get '/:view' do |v|
+  get '/:view' do |view|
     lista_heroes = ["heroes","reservistas","extranjeros","ausentes","licenciados"]
     case
-      when v == 'gemas'     then erb :'items/gemas/gemas'
-      when v == 'escuelas'  then erb :'magia/escuelas'
-      when v == 'criaturas' then erb :'reglamento/criaturas'
-      when lista_heroes.include?(v) then erb :template, :locals => view('heroes')
-      else preview(v) # Try same view as URL
+      when view == 'gemas'     then erb :'items/gemas/gemas'
+      when view == 'escuelas'  then erb :'magia/escuelas'
+      when view == 'criaturas' then erb :'reglamento/criaturas'
+      when lista_heroes.include?(view) then erb :template, :locals => view('heroes')
+      else preview(view) # Try same view as URL
     end
   end
-  
 end
