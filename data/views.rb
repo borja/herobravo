@@ -111,7 +111,15 @@ def views
     },
     {
       :route    => "profesiones",
-      :template => { :main => 'personaje/profesiones'}
+      :template => { 
+        :main  => 'personaje/profesiones',
+        :right => 'reglamento/derecha/personajes'
+      }
+    },
+    {
+      :route    => "profesion",
+      :title    => "view",
+      :template => { :main => 'ciudad/profesiones'}
     },
     {
       :route    => "razas",

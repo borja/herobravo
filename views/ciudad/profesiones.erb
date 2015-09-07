@@ -1,48 +1,32 @@
-<!DOCTYPE HTML>
 <% profesion = profesions.find { |p| p[:name] == params[:param] } %>
-<html>
-	<head><%= erb :head, :locals => {:title => "Herosheet: " + profesion[:name].capitalize } %></head>
-	<body class="subpage">
-		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => profesion[:name].capitalize } %>
+<div class="row">
+	<link rel="stylesheet" href="../css/bravo.css" />
+	<% grados.each do |grado| %>
+		<div class="4u">
+			<section>
+				<header>
+					<h2><%= grado.capitalize %></h2>
+				</header>
+				<table id='tresp'>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nombre</th>
+							<th>Coste</th>
+							<th>Efecto</th>
+						</tr>	
+					</thead>
+					<tbody>
+						<% profesion[grado.to_sym].each do |tecnica| %>
+							<tr><td><%= tecnica[:id]     %></td>
+								<td><%= tecnica[:name]   %></td>
+								<td><%= tecnica[:coste]  %></td>
+								<td><%= tecnica[:efecto] %></td>
+							</tr>
+						<% end %>
+					</tbody>
+				</table>
+			</section>
 		</div>
-		<div id="content-wrapper">
-			<div id="content">
-				<div class="container">
-					<div class="row">
-						<link rel="stylesheet" href="../css/bravo.css" />
-						<% grados.each do |grado| %>
-							<div class="4u">
-								<section>
-									<header>
-										<h2><%= grado.capitalize %></h2>
-									</header>
-									<table id='tresp'>
-										<thead>
-											<tr>
-												<th>ID</th>
-												<th>Nombre</th>
-												<th>Coste</th>
-												<th>Efecto</th>
-											</tr>	
-										</thead>
-										<tbody>
-											<% profesion[grado.to_sym].each do |tecnica| %>
-												<tr><td><%= tecnica[:id]     %></td>
-													<td><%= tecnica[:name]   %></td>
-													<td><%= tecnica[:coste]  %></td>
-													<td><%= tecnica[:efecto] %></td>
-												</tr>
-											<% end %>
-										</tbody>
-									</table>
-								</section>
-							</div>
-						<% end %>	
-					</div>
-				</div>
-			</div>
-		</div>
-		<%= erb :'footer/footer' %>	
-	</body>
-</html>
+	<% end %>	
+</div>
