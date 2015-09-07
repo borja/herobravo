@@ -13,15 +13,15 @@ class App < Sinatra::Base
       when 'profesiones' then erb :'ciudad/profesiones'
       when 'historias'   then erb :'historias/historias'
       when 'test'        then erb :'test/test'
-      when 'hechizos'    then erb :template, :locals => view('hechizos')
-      when 'aire'        then erb :template, :locals => view('hechizos')
-      when 'agua'        then erb :template, :locals => view('hechizos')
-      when 'fuego'       then erb :template, :locals => view('hechizos')
-      when 'tierra'      then erb :template, :locals => view('hechizos')
-      when 'spells'      then erb :template, :locals => view('spells')
-      when 'habilidades' then erb :template, :locals => view('disciplinas')
-      when 'dado'        then erb :template, :locals => view('dado')
-      when 'pnj'         then erb :template, :locals => view('pnj')  
+      when 'hechizos'    then preview('hechizos')
+      when 'aire'        then preview('hechizos')
+      when 'agua'        then preview('hechizos')
+      when 'fuego'       then preview('hechizos')
+      when 'tierra'      then preview('hechizos')
+      when 'spells'      then preview('spells')
+      when 'habilidades' then preview('disciplinas')
+      when 'dado'        then preview('dado')
+      when 'pnj'         then preview('pnj')  
       when 'criaturas'   then erb :template, :locals => {
         :title    => param.capitalize,
         :template => { 
@@ -48,7 +48,7 @@ class App < Sinatra::Base
       when v == 'escuelas'  then erb :'magia/escuelas'
       when v == 'criaturas' then erb :'reglamento/criaturas'
       when lista_heroes.include?(v) then erb :template, :locals => view('heroes')
-      else erb :template, :locals => view(v) # Try same view as URL
+      else preview(v) # Try same view as URL
     end
   end
   
