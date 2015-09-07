@@ -11,19 +11,10 @@ class App < Sinatra::Base
       when 'hero'        then erb :'ficha/ficha'
       when 'city'        then erb :'ciudad/ciudad'
       when 'profesiones' then erb :'ciudad/profesiones'
-      when 'historia'    then preview('historia')
-      when 'test'        then preview('test')
-      when 'hechizos'    then preview('hechizos')
-      when 'aire'        then preview('hechizos')
-      when 'agua'        then preview('hechizos')
-      when 'fuego'       then preview('hechizos')
-      when 'tierra'      then preview('hechizos')
-      when 'spells'      then preview('spells')
       when 'habilidades' then preview('disciplinas')
-      when 'dado'        then preview('dado')
-      when 'pnj'         then preview('pnj')  
       when 'criaturas'   then preview('criature') 
-      when 'raza'        then preview('raza')              
+      when 'aire' || 'agua' || 'fuego' || 'tierra' then preview('hechizos')      
+      else preview(view) # Try same view as URL (with params)            
     end
   end
   
