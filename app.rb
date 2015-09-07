@@ -2,60 +2,33 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
   
-  error do
-    erb :error
-  end
-  
-  get '/' do
-    erb :index
-  end 
-      
-  get '/criaturas/:criature' do
-    erb :template, :locals => {
-      :title    => params[:criature].capitalize,
-      :template => { 
-        :left   => 'reglamento/izquierda/bestiario',
-        :main  => 'reglamento/criature' 
-      }
-    }   
-  end  
-
-  # Sección de magia
-  get '/magia/hechizos' do
-    @spelllevel = 1
-    erb :template, :locals => view('hechizos')
-  end
-  get '/magia/spells/:hero' do |hero_id|
-    @heroe = heros[ hero_id.to_i ]
-    erb :template, :locals => view('spells')
-  end
-  get '/magia/hechizos/:level' do |level|
-    @spelllevel = level.to_i
-    erb :template, :locals => view('hechizos')
-  end
-   
-  get '/escuela/:escuela/:nivel' do |escuela, level|
-    @spelllevel = level.to_i
-    @elemento   = escuela
-    erb :"magia/hechizos"
-  end
-  
-  get '/test/:question' do |x|
-    @respuestas   = x
-    @num_pregunta = x.length
-    erb :'test/test'
-  end
+  get '/' do erb :index end 
+  error   do erb :error end
     
   # Templates with double-routing
   get '/:view/:param' do |view,param|
     case view
       when 'hero'        then erb :'ficha/ficha'
+      when 'city'        then erb :'ciudad/ciudad'
+      when 'profesiones' then erb :'ciudad/profesiones'
+      when 'historias'   then erb :'historias/historias'
+      when 'test'        then erb :'test/test'
+      when 'hechizos'    then erb :template, :locals => view('hechizos')
+      when 'aire'        then erb :template, :locals => view('hechizos')
+      when 'agua'        then erb :template, :locals => view('hechizos')
+      when 'fuego'       then erb :template, :locals => view('hechizos')
+      when 'tierra'      then erb :template, :locals => view('hechizos')
+      when 'spells'      then erb :template, :locals => view('spells')
       when 'habilidades' then erb :template, :locals => view('disciplinas')
       when 'dado'        then erb :template, :locals => view('dado')
       when 'pnj'         then erb :template, :locals => view('pnj')  
-      when 'city'        then erb :'ciudad/ciudad'
-      when 'profesiones' then erb :"ciudad/profesiones"
-      when 'historias'   then erb :'historias/historias' 
+      when 'criaturas'   then erb :template, :locals => {
+        :title    => param.capitalize,
+        :template => { 
+          :left   => 'reglamento/izquierda/bestiario',
+          :main   => 'reglamento/criature' 
+        }
+      }         
       when 'raza'        then erb :template, :locals => {
         :title    => param.capitalize,
         :template => {
@@ -66,7 +39,7 @@ class App < Sinatra::Base
       }              
     end
   end
-    
+  
   # Templates with simple root-viewer  
   get '/:view' do |v|
     lista_heroes = ["heroes","reservistas","extranjeros","ausentes","licenciados"]

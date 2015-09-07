@@ -1,30 +1,36 @@
 <section>
 	<header>
-		<% title = "Hechizos #{ @elemento ? "de #{@elemento}" : "elementales" } de nivel #{@spelllevel || 1}" %>
-		<h2><%= title %></h2>
+		<h2><% if params[:view] == 'hechizos' %>
+				Hechizos elementales de nivel <%= params[:param].to_i || 1 %>				
+			<% else %>
+				Hechizos de <%= params[:view] %> de nivel <%= params[:param].to_i || 1 %>
+			<% end %>
+		</h2>
 	</header>	
 	<link rel="stylesheet" href="../../css/bravo.css" />								
 	<table id='tresp'>
 		<thead>
 			<th>Icono</th>
-			<% unless @elemento %><th>Elemento</th><% end %>
+			<% unless ["aire","tierra","fuego","agua"].include?(params[:view]) %>
+				<th>Elemento</th>
+			<% end %>
 			<th>Nombre</th>
 			<th>Descripción</th>
-			<% if @spelllevel == 1 %>
-				<th><%= @elemento == "luz" ? "Summun" : "Diablura" %></th>
-				<% unless ["sombra","sangre"].include?(@elemento) %>
-					<th><%= @elemento == "luz" ? "Chakra" : "Ardid" %></th>
+			<% if params[:param].to_i == 1 %>
+				<th><%= params[:view] == "luz" ? "Summun" : "Diablura" %></th>
+				<% unless ["sombra","sangre"].include?(params[:view]) %>
+					<th><%= params[:view] == "luz" ? "Chakra" : "Ardid" %></th>
 					<th>Maestría</th>
 				<% end %>
 			<% end %>
 			<th>Potencia</th>
 		</thead>
 		<tbody>
-	 		<% case @elemento  
-	 		   when "sombra" %><%= erb :'magia/hechizos/sombra' %>
-	 		<% when "sangre" %><%= erb :'magia/hechizos/sangre' %>
-	 		<% when "luz"    %><%= erb :'magia/hechizos/plegarias' %>
-	 		<% else %>		   <%= erb :'magia/hechizos/elemental' %>
+	 		<% case params[:view]  
+	 		     when "sombra" %><%= erb :'magia/hechizos/sombra' %>
+	 		  <% when "sangre" %><%= erb :'magia/hechizos/sangre' %>
+	 		  <% when "luz"    %><%= erb :'magia/hechizos/plegarias' %>
+	 		  <% else %>		 <%= erb :'magia/hechizos/elemental' %>
 	 		<% end %>	
 		</tbody>
 	</table>
