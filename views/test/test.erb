@@ -13,7 +13,7 @@
 						<div class="row">
 							<div class="3u"><%= erb :"personaje/razas/left/links" %></div>
 							<div class="6u important(collapse)">
-								<%= erb :"test/#{(@num_pregunta <= preguntas.count) ? "question" : "solution"}"%>
+								<%= erb :"test/#{(params[:param].length <= preguntas.count) ? "question" : "solution"}"%>
 							</div>
 							<div class="3u">
 								<%= erb :'reglamento/derecha/combate' %>

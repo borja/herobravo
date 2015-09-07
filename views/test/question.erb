@@ -1,11 +1,11 @@
 <section>
 	<header>
-		<h2>Pregunta Nº <%= @num_pregunta %> / <%= preguntas.count %></h2>
-		<h3><%= preguntas[@num_pregunta-1][:pregunta] %></h3>
+		<h2>Pregunta Nº <%= params[:param].length %> / <%= preguntas.count %></h2>
+		<h3><%= preguntas[params[:param].length-1][:pregunta] %></h3>
 	</header>
 	<ul class="link-list">
-		<% preguntas[@num_pregunta-1][:respuestas].each_with_index do |respuesta,num| %>
-			<li><%= num %>) <a href=/test/<%= @respuestas + num.to_s %>><%= respuesta.first %></a></li>
+		<% preguntas[params[:param].length-1][:respuestas].each_with_index do |respuesta,num| %>
+			<li><%= num %>) <a href=/test/<%= params[:param] + num.to_s %>><%= respuesta.first %></a></li>
 		<% end %>
 	</ul>
 </section>

@@ -1,10 +1,10 @@
 <section>
 	<header>
-		<h2>Hechizos de <%= @heroe.name %></h2>
+		<h2>Hechizos de <%= hero(params[:param].to_i).name %></h2>
 	</header>
 	<link rel="stylesheet" href="../../css/bravo.css" />
 
-	<% unless @heroe.elementos.empty? %>
+	<% unless hero(params[:param].to_i).elementos.empty? %>
 		<table id='tresp'>
 			<thead>
 				<th>Icono</th>
@@ -15,7 +15,7 @@
 			</thead>
 			<tbody>
 				<% leyes.each do |ley| %>
-					<% if h = @heroe.send(ley[:nombre]) %>
+					<% if h = hero(params[:param].to_i).send(ley[:nombre]) %>
 						<% h.each do |magia|%>	
 							<% m = send(ley[:method], magia) %>
 							<tr style=<%= m.color %>>				

@@ -190,25 +190,40 @@ def views
     },
     {
       :route    => "hechizos",
-      :template => { :main => 'magia/hechizos' }
+      :template => { 
+        :left  => 'torre/left/magias',
+        :main  => 'magia/hechizos' 
+      }
     },
     {
       :route    => "sombras",
-      :template => { :main => 'magia/sombras' }
+      :template => { 
+        :left  => 'torre/left/magias',
+        :main => 'magia/sombras' 
+      }
     },
     {
       :route    => "plegarias",
-      :template => { :main => 'magia/plegarias' }
+      :template => {
+        :left => 'torre/left/magias', 
+        :main => 'magia/plegarias' 
+      }
     },
     {
       :route    => "elficas",
       :title    => "Magias élficas",
-      :template => { :main => 'magia/elficas' }
+      :template => {
+        :left => 'torre/left/magias',
+        :main => 'magia/elficas' 
+      }
     },
     {
       :route    => "sangre",
       :title    => "Magia de sangre",
-      :template => { :main => 'magia/sangre' }
+      :template => { 
+        :left => 'torre/left/magias',
+        :main => 'magia/sangre' 
+      }
     },
     {
       :route    => "biblioteca",
@@ -268,4 +283,5 @@ def views
   ]
 end
 
-def view route ; views.find{ |v| v[:route] == route } end
+def view    route ; views.find{ |v| v[:route] == route }  end
+def preview route ; erb :template, :locals => view(route) end

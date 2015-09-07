@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="../css/bravo.css" />
 	<table id='tresp'>
 		<tbody>
-			<% quiensoy(@respuestas).each do |k,v| %>
+			<% quiensoy(params[:param]).each do |k,v| %>
 				<tr>
 					<td>
 						<% img_path = "'../images/personajes/#{k}.png'"  %>
@@ -18,5 +18,5 @@
 		</tbody>
 	</table><br>
 
-<% #Tu código es <%= quiensoy(@respuestas) %>
+<% #Tu código es <%= quiensoy(params[:param]) %>
 </section>
