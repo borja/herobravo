@@ -3,6 +3,16 @@
 def views
   [
     {
+      :route    => "hero",
+      :title    => "view",
+      :template => {
+        :left  => 'ficha/izquierda/izquierda',
+        :main  => 'ficha/centro/main',
+        :right => 'ficha/derecha/derecha',
+        :row2  => 'ficha/ficha'
+      }
+    },
+    {
       :route    => "dado",
       :title    => "Combate",
       :template => {

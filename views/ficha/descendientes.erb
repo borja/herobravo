@@ -1,7 +1,8 @@
+<% hero = hero(params[:param].to_i) %>
 <table id='table-2'>
 	<tbody>
 		<tr>
-			<% @heroe.descendientes.each do |d| %>
+			<% hero.descendientes.each do |d| %>
 				<td>
 					<a href=<%= "/hero/#{d}" %> >
 						<%= erb :'display/portrait', :locals => { :h => hero(d) } %>

@@ -3,7 +3,9 @@
 	<head>
 		<% title ||= route.capitalize %>
 		<% title = params[:param].capitalize if title == 'view' %>
-		<% title = hero(params[:param].to_i).name if params[:view] == 'historia' %>
+		<% if (params[:view] == 'historia' || params[:view] == 'hero') %>
+			<% title = hero(params[:param].to_i).name %>
+		<% end %>
 		<%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %>
 	</head>
 	<body class="subpage">
@@ -34,6 +36,9 @@
 								</div>
 							<% end %>
 						</div>
+						<% if template[:row2] %>
+							<%= load_partial(template[:row2]) %>
+						<% end %>
 					</div>
 				</div>
 			</div>
