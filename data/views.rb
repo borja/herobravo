@@ -55,6 +55,11 @@ def views
       }
     },
     {
+      :route    => "city",
+      :title    => 'view',
+      :template => { :main => 'ciudad/ciudad' }
+    },
+    {
       :route    => "familiares",
       :template => { :main => 'personaje/familiares'}
     },
