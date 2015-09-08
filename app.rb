@@ -18,8 +18,7 @@ class App < Sinatra::Base
   # Templates with simple root-viewer  
   get '/:view' do |view|
     case view
-      when 'criaturas' then erb :'reglamento/criaturas'
-      when "heroes" || "reservistas" || "extranjeros" || "ausentes" || "licenciados" then preview('heroes')
+      when "heroes","reservistas","extranjeros","ausentes","licenciados" then preview('heroes')
       else preview(view) # Try same view as URL
     end
   end

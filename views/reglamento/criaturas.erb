@@ -1,47 +1,30 @@
-<!DOCTYPE HTML>
-<html>
-	<head><%= erb :head, :locals => {:title => "HeroSheet: Criaturas"} %></head>
-	<body class="subpage">
-		<link rel="stylesheet" href="css/bravo.css" />
-		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => "Criaturas" } %>
+<div class="row">
+	<% criaturas[0..3].each do |criatura| %>
+		<div class="3u">
+			<section>
+				<header>
+					<h2 align='center'><%= criatura %></h2>
+				</header>	
+				<a href=/criatura/<%= criatura %> class='city-image' >
+					<% img_path = "'../images/criaturas/#{criatura}.png'" %>
+					<img src=<%=img_path%> alt=<%= criatura %> />
+				</a>
+			</section>
 		</div>
-			<div id="content-wrapper">
-				<div id="content">
-					<div class="container">
-						<div class="row">
-							<% criaturas[0..3].each do |criatura| %>
-								<div class="3u">
-									<section>
-										<header>
-											<h2><%= criatura %></h2>
-										</header>	
-										<a href=/criatura/<%= criatura %> >
-											<% img_path = "'../images/criaturas/#{criatura}.png'" %>
-											<img src=<%=img_path%> alt=<%= criatura %>, id='icon4' />
-										</a>
-									</section>
-								</div>
-							<% end %>
-						</div>
-						<div class="row">
-							<% criaturas[4..8].each do |criatura| %>
-								<div class="3u">
-									<section>
-										<header>
-											<h2><%= criatura %></h2>
-										</header>					
-										<a href=/criatura/<%= criatura %> >
-											<% img_path = "'../images/criaturas/#{criatura}.png'" %>
-											<img src=<%=img_path%> alt=<%= criatura %>, id='icon4' />
-										</a>
-									</section>
-								</div>
-							<% end %>
-						</div>
-					</div>
-				</div>
-			</div>
-		<%= erb :'footer/footer' %>	
-	</body>
-</html>
+	<% end %>
+</div>
+<div class="row">
+	<% criaturas[4..8].each do |criatura| %>
+		<div class="3u">
+			<section>
+				<header>
+					<h2 align='center'><%= criatura %></h2>
+				</header>					
+				<a href=/criatura/<%= criatura %> class='city-image' >
+					<% img_path = "'../images/criaturas/#{criatura}.png'" %>
+					<img src=<%=img_path%> alt=<%= criatura %> />
+				</a>
+			</section>
+		</div>
+	<% end %>
+</div>
