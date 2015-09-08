@@ -111,7 +111,10 @@ def views
     },
     {
       :route    => "tiers",
-      :template => { :main => 'items/tiers'}
+      :template => { 
+        :left => 'objetos/left/content2',
+        :main => 'items/tiers'
+      }
     },
     {
       :route    => "profesiones",
@@ -178,7 +181,11 @@ def views
     },
     {
       :route    => "armas",
-      :template => { :main => 'items/armas' }
+      :template => { 
+        :left  => 'objetos/left/content1',
+        :left2 => 'objetos/left/content2',
+        :main  => 'items/armas'
+      }
     },
     {
       :route    => "protecciones",

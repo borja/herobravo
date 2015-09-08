@@ -1,28 +1,30 @@
-<link rel="stylesheet" href="../css/bravo.css" />
-<table id='tresp'>
-	<thead>
-		<tr>
-			<th>Icono</th>
-			<th>Nombre</th>
-			<th>Categoría</th>
-			<th>Ataque</th>
-			<th>Diagonal</th>
-			<th>Ranuras</th>
-			<th>Precio</th>
-		</tr>	
-	</thead>
-	<tbody>
-		<% armas.each do |item| %>
-			<% a = Arma.new(item) %>
+<section>
+	<link rel="stylesheet" href="/css/bravo.css" />
+	<table id='tresp'>
+		<thead>
 			<tr>
-				<td><img src=<%= a.img_path %> alt=<%=a.name%>, id='icon' /></td>
-				<td><%= a.name %></td>
-				<td><%= a.categoria %></td>
-				<td><%= a.ataque %></td>
-				<td><%= a.diagonal %></td>
-				<td><%= a.ranuras %></td>
-				<td><%= a.precio %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+				<th>Icono</th>
+				<th>Nombre</th>
+				<th>Categoría</th>
+				<th>Ataque</th>
+				<th>Diagonal</th>
+				<th>Ranuras</th>
+				<th>Precio</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% armas.each do |item| %>
+				<% a = Arma.new(item) %>
+				<tr>
+					<td><img src=<%= a.img_path %> alt=<%=a.name%>, id='icon' /></td>
+					<td><%= a.name %></td>
+					<td><%= a.categoria %></td>
+					<td><%= a.ataque %></td>
+					<td><%= a.diagonal %></td>
+					<td><%= a.ranuras %></td>
+					<td><%= a.precio %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</section>

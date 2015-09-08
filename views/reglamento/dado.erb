@@ -15,12 +15,12 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td><%= params[:dados] %> dados de combate</td>
+				<td><%= params[:param] %> dados de combate</td>
 				<td>
 					<% calaveras = 0 ; defensas = 0; negros = 0 %>
 					<% caras = ['attack','attack','attack','defend','defend','black']%>
 
-					<% params[:dados].to_i.times do %>
+					<% params[:param].to_i.times do %>
 						<% resultado = caras[rand(6)] %>
 							<% calaveras += 1 if resultado == 'attack' %>
 							<% defensas  += 1 if resultado == 'defend' %>
@@ -29,7 +29,7 @@
 						<img src=<%=img_path%> alt=<%= resultado %>, id='icon' />
 					<% end %>
 				</td>
-				<td width="10%"><a href="/dado/<%= params[:dados] %>">
+				<td width="10%"><a href="/dado/<%= params[:param] %>">
 					<img style="vertical-align:middle" src="/images/refresh.png" alt="reload", id='icon'/></a>
 				</td>
 				<td><%= calaveras %></td>
