@@ -6,7 +6,6 @@ class App < Sinatra::Base
     
   get '/:view/:param' do |view,param| # Templates with double-routing
     case view
-    when 'city' then erb :'ciudad/ciudad'        
       when 'aire','agua','fuego','tierra' then preview('hechizos')      
       else preview(view) # Try same view as URL (with params) 
     end
