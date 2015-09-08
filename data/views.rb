@@ -189,7 +189,11 @@ def views
     },
     {
       :route    => "protecciones",
-      :template => { :main => 'items/protecciones' }
+      :template => { 
+        :left  => 'objetos/left/content1',
+        :left2 => 'objetos/left/content2',
+        :main => 'items/protecciones' 
+      }
     },
     {
       :route    => "miscelaneas",

@@ -1,25 +1,27 @@
-<link rel="stylesheet" href="../css/bravo.css" />
-<table id='tresp'>
-	<thead>
-		<tr><% ["Icono", "Nombre", "Categoría", "Defensa", "Precio", "Ranuras Permitidas"].each do |stat| %>
-				<th><%= stat %></th>
+<section>
+	<link rel="stylesheet" href="../css/bravo.css" />
+	<table id='tresp'>
+		<thead>
+			<tr><% ["Icono", "Nombre", "Categoría", "Defensa", "Precio", "Ranuras Permitidas"].each do |stat| %>
+					<th><%= stat %></th>
+				<% end %>
+			</tr>	
+		</thead>
+		<tbody>
+			<% proteccions.sort_by {|p| p[:categoria]}.each do |prot| %>
+			<% p = Proteccion.new(prot) %>
+				<tr>
+					<td>
+						<% img_path = "'../images/proteccions/#{p.name}.png'" %>
+						<img src=<%=img_path%> alt=<%=p.name%>, id='icon' />
+					</td>
+					<td><%= p.name.capitalize %></td>
+					<td><%= p.categoria.capitalize %></td>
+					<td><%= p.defensa %></td>
+					<td><%= p.precio %></td>
+					<td><%= p.ranuras %></td>
+				</tr>
 			<% end %>
-		</tr>	
-	</thead>
-	<tbody>
-		<% proteccions.sort_by {|p| p[:categoria]}.each do |prot| %>
-		<% p = Proteccion.new(prot) %>
-			<tr>
-				<td>
-					<% img_path = "'../images/proteccions/#{p.name}.png'" %>
-					<img src=<%=img_path%> alt=<%=p.name%>, id='icon' />
-				</td>
-				<td><%= p.name.capitalize %></td>
-				<td><%= p.categoria.capitalize %></td>
-				<td><%= p.defensa %></td>
-				<td><%= p.precio %></td>
-				<td><%= p.ranuras %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</tbody>
+	</table>
+</section>
