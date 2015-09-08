@@ -9,7 +9,6 @@ class App < Sinatra::Base
     case view
       when 'hero'        then erb :'ficha/ficha'
       when 'city'        then erb :'ciudad/ciudad'        
-      when 'habilidades' then preview('disciplinas')
       when 'aire','agua','fuego','tierra' then preview('hechizos')      
       else preview(view) # Try same view as URL (with params) 
     end
