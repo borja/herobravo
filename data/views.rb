@@ -307,7 +307,7 @@ def views
       :template => { :main  => 'reglamento/criaturas' }
     },
     {
-      :route    => "criature",
+      :route    => "criatura",
       :title    => 'view',
       :template => { 
         :left   => 'reglamento/izquierda/bestiario',

@@ -11,7 +11,6 @@ class App < Sinatra::Base
       when 'hero'        then erb :'ficha/ficha'
       when 'city'        then erb :'ciudad/ciudad'        
       when 'habilidades' then preview('disciplinas')
-      when 'criaturas'   then preview('criature') 
       when 'aire' || 'agua' || 'fuego' || 'tierra' then preview('hechizos')      
       else preview(view) # Try same view as URL (with params)            
     end
