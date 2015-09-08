@@ -1,59 +1,29 @@
-<!DOCTYPE HTML>
-
-<html>
-	<% h = hero(params[:param].to_i) %>
-	<head>
-		<%= erb :head, :locals => {:title => "HeroSheet: Ficha de #{h.name}" } %>
-	</head>
-	<body class="subpage">
-		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => h.name } %>
+<% h = hero(params[:param].to_i) %>
+<div class="row">
+	<% 3.times do |i| %>
+		<div class="4u">
+			<%= erb :"ficha/inventario/columna#{i+1}", :locals => { :heroe => h } %>	
 		</div>
-		<div id="content-wrapper">
-			<div id="content">
-				<div class="container">
-					<div class="row">
-						<div class="3u">
-							<%= erb :'ficha/izquierda/izquierda' %>
-						</div>
-						<div class="6u important(collapse)">							
-							<%= erb :"ficha/centro/main", :locals => { :heroe => h } %>
-						</div>
-						<div class="3u">
-							<%= erb :'ficha/derecha/derecha' %>
-						</div>
-					</div>
-					<div class="row">
-						<% 3.times do |i| %>
-							<div class="4u">
-								<%= erb :"ficha/inventario/columna#{i+1}", :locals => { :heroe => h } %>	
-							</div>
-						<% end %>
-					</div>
-					<div class="row">
-					  <div class="4u"><%= erb :'ficha/abalorios'  %></div>
-					  <div class="4u"><%= erb :'ficha/piezas'     %></div>
-					  <div class="4u"><%= erb :'ficha/materiales' %></div>
-					</div>
-					<div class="row">
-					  <div class="6u"><%= erb :'ficha/pociones'   %></div>
-					  <div class="6u"><%= erb :'ficha/pergaminos'   %></div>
-					</div>	
-					<%if h.tesoro %>
-					<div class="row">
-						<div class="12u">
-							<%= erb :'ficha/tesoros' %>
-						</div>
-					</div>
-					<% end %>				
-					<div class="row">
-						<div class="12u">
-							<%= erb :'ficha/habilidades', :locals => { :heroe => h } if h.skills %>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<%= erb :'footer/footer' %>	
-	</body>
-</html>
+	<% end %>
+</div>
+<div class="row">
+  <div class="4u"><%= erb :'ficha/abalorios'  %></div>
+  <div class="4u"><%= erb :'ficha/piezas'     %></div>
+  <div class="4u"><%= erb :'ficha/materiales' %></div>
+</div>
+<div class="row">
+  <div class="6u"><%= erb :'ficha/pociones'   %></div>
+  <div class="6u"><%= erb :'ficha/pergaminos'   %></div>
+</div>	
+<%if h.tesoro %>
+<div class="row">
+	<div class="12u">
+		<%= erb :'ficha/tesoros' %>
+	</div>
+</div>
+<% end %>				
+<div class="row">
+	<div class="12u">
+		<%= erb :'ficha/habilidades', :locals => { :heroe => h } if h.skills %>	
+	</div>
+</div>

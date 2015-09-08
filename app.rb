@@ -4,20 +4,17 @@ class App < Sinatra::Base
   get '/' do erb :index end 
   error   do erb :error end
     
-  # Templates with double-routing
-  get '/:view/:param' do |view,param|
+  get '/:view/:param' do |view,param| # Templates with double-routing
     case view
-      when 'hero'        then erb :'ficha/ficha'
-      when 'city'        then erb :'ciudad/ciudad'        
+    when 'city' then erb :'ciudad/ciudad'        
       when 'aire','agua','fuego','tierra' then preview('hechizos')      
       else preview(view) # Try same view as URL (with params) 
     end
   end
   
-  # Templates with simple root-viewer  
-  get '/:view' do |view|
+  get '/:view' do |view| # Templates with simple root-viewer  
     case view
-      when "heroes","reservistas","extranjeros","ausentes","licenciados" then preview('heroes')
+      when "reservistas","extranjeros","ausentes","licenciados" then preview('heroes')
       else preview(view) # Try same view as URL
     end
   end
