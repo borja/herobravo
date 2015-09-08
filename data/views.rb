@@ -106,6 +106,10 @@ def views
       }
     },
     {
+      :route    => "gemas",
+      :template => { :main   => 'items/gemas/gemas' }
+    },
+    {
       :route    => "tiers",
       :template => { :main => 'items/tiers'}
     },
@@ -323,7 +327,10 @@ def views
 				:right2 => 'reglamento/derecha/personajes',
       }
     },
-    
+    {
+      :route    => "escuelas",
+      :template => { :main => 'magia/escuelas' }      
+    },
   ]
 end
 

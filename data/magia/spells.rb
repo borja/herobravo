@@ -685,11 +685,11 @@ end
 def spell id ; spells[id] end
 
 def escuelas # TODO: Complete this.
- { "sombra"  => "" ,
-   "aire"    => "" ,
+ { "aire"    => "" ,
    "fuego"   => "" ,
    "agua"    => "" ,
    "tierra"  => "" ,
+   "sombras" => "" ,
    "tenebro" => "" ,
    "sangre"  => "" ,
    "luz"     => "" 
