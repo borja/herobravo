@@ -69,7 +69,7 @@ def views
         :right => 'reglamento/derecha/combate'}
     },
     {
-      :route    => "disciplinas",
+      :route    => "habilidad",
       :title    => "Habilidades",
       :template => { :main => 'personaje/disciplinas'}
     },
