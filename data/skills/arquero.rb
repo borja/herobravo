@@ -2,6 +2,12 @@
 def arqueros
   [
     {
+      :id           => 0,
+      :name         => "salto liviano",
+      :description  => "+1 saltar fosos",
+      :type         => "Pasiva"
+    },
+    {
       :id           => 1,
       :name         => "disparo oblicuo",
       :description  => "Permite disparar en diagonal",
@@ -135,7 +141,4 @@ def arqueros
     },
   ]
 end
-
-def arquero(id)
-  arqueros[id-1]
-end
+def arquero id ; arqueros[id].merge({:char => 'arquero'}) end

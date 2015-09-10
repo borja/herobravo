@@ -115,5 +115,4 @@ def brujos
     },
   ]
 end
-
-def brujo id ; brujos[id] end
+def brujo id ; brujos[id].merge({:char => 'brujo'}) end

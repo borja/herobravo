@@ -1,6 +1,6 @@
 <section>
 	<header>
-		<center><h2>Habilidades</h2></center>
+		<h2 text-align='center'>Habilidades</h2>
 	</header>
 	
 	<table id='tresp'>
@@ -12,12 +12,9 @@
 		</thead>
 		<tbody>
 			<% heroe.habilidades.each do |hab| %>
-				<tr><td><% img_path = "'../images/skills/#{heroe.personaje.gsub('señor de las bestias','beastlord')}/#{hab.name}.png'" %>
-						<img src=<%=img_path%> alt=<%= hab.name %>, id='icon' />
-					</td>
-					<td><%=    hab.type  %></td>
-					<td><%=    hab.name  %></td>
-					<td><i><%= hab.description  %></i></td>
+				<tr><td><%= erb :'display/skill', :locals => {:skill => hab} %></td>
+					<td><%= hab.name %></td>
+					<td><%= hab.description %></td>
 				</tr>
 			<% end %>
 		</tbody>

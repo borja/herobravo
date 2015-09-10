@@ -98,5 +98,4 @@ def bersérkers
     
   ]
 end
-
-def bersérker id ; bersérkers[id] end
+def bersérker id ; bersérkers[id].merge({:char => 'bersérker'}) end

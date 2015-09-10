@@ -57,5 +57,4 @@ def hechiceros
     },
   ]
 end
-
-def hechicero id ; hechiceros[id] end
+def hechicero id ; hechiceros[id].merge({:char => 'hechicero'}) end

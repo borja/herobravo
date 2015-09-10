@@ -101,4 +101,4 @@ def paladíns
     },
   ]
 end
-def paladín id ; paladíns[id] end
+def paladín id ; paladíns[id].merge({:char => 'paladín'}) end

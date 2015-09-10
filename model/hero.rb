@@ -68,10 +68,6 @@ class Hero < Hash
     end
   end
   
-  def habilidades
-    self.skills.map { |id| Habilidad.new(send(self.personaje.gsub('señor de las bestias', 'beastlord'), id )) }
-  end
-  
   def lista_status view
     case view
     when "licenciados"  then "retirado"   
@@ -107,18 +103,18 @@ class Hero < Hash
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
   def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
   def defensa       ; self.armadura.defensa end
-  def cacharros     ; self.piezas.map     {|num|    Pieza.new(:id => num)} if self.piezas     end
-  def brebajes      ; self.pociones.map   {|num|   Pocion.new(:id => num)} if self.pociones   end
-  def componentes   ; self.materiales.map {|num| Material.new(:id => num)} if self.materiales end
+  def cacharros     ; self.piezas.map     {|num|     Pieza.new(:id => num)} if self.piezas     end
+  def brebajes      ; self.pociones.map   {|num|    Pocion.new(:id => num)} if self.pociones   end
+  def componentes   ; self.materiales.map {|num|  Material.new(:id => num)} if self.materiales end
+  def habilidades   ; self.skills.map     {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','bestlord'),num)) } if self.skills end
   def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
   def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
   def shadow_magic  ; self.shadows.map  {|num| sombra(num)}  if self.shadows  end 
   def transportes   ; self.mounts.map   {|num| montura(num)} if self.mounts   end 
   def sin_recursos  ; self.tesoro.nil? end
-  def empadronado   ; self.ciudad || "Jadessvärd"  end
+  def empadronado   ; self.ciudad || "Jadessvärd" end
   def estado        ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
-  def capacidad     ; @heroe.nivel/3 + 3  end #inventario
-  
+  def capacidad     ; @heroe.nivel/3 + 3 end #inventario
   
   def resistencia(elemento) # I'm sorry for this...
     total = 0 # Initialize default returns 0
@@ -133,12 +129,12 @@ class Hero < Hash
               texto =  enchant(e)[:descripcion] # takes description
               if m = (regex =~ texto) # if positive (TODO: tune up this)
                 bono  = texto[m.to_i-2].to_i # add the bonificator
-                puts "#{elemento}, #{item.name},magia: #{texto}"
+                #puts "#{elemento}, #{item.name},magia: #{texto}"
                 total += bono
               end
               if m = (reg2x =~ texto) # if positive (TODO: tune up this)
                 bono  = texto[m.to_i-2].to_i # add the bonificator
-                puts "+1 todas las resistencias"
+                #puts "+1 todas las resistencias"
                 total += bono
               end
             end
@@ -149,13 +145,13 @@ class Hero < Hash
                 eng.each do |id|
                   texto = send(engarce[0..-2], id).fits[item.fits.to_sym] # takes description
                   if m = (regex =~ texto) # if positive (TODO: tune up this)
-                    puts "#{elemento}, #{item.name},#{engarce} #{texto}"
+                    #puts "#{elemento}, #{item.name},#{engarce} #{texto}"
                     bono  = texto[m.to_i-2].to_i # add the bonificator
                     total += bono
                   end
                   if m = (reg2x =~ texto) # if positive (TODO: tune up this)
                     bono  = texto[m.to_i-2].to_i # add the bonificator
-                    puts "+1 todas las resistencias"
+                    #puts "+1 todas las resistencias"
                     total += bono
                   end
                 end

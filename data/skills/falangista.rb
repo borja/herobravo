@@ -82,4 +82,4 @@ def falangistas
     },
   ]
 end
-def falangista id ; falangistas[id] end
+def falangista id ; falangistas[id].merge({:char => 'falangista'}) end

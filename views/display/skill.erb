@@ -1,0 +1,23 @@
+<div class="information_popup_container" >
+	<div class="information">
+		<img src='<%= skill.img_path %>' alt=<%= skill.name %>, id='icon' />
+	</div>
+	<div class="popup_information">
+		<center>
+			<header>
+				<h3><%= skill.name %></h3>
+			</header>
+			<img src='<%= skill.img_path %>' alt='<%= skill.name %>', id='icon3' />
+			<br/>
+			Habilidad <%= skill.type.capitalize %><br/>
+			<% if skill.coste %>
+				Coste: <%= skill.coste %><br/>
+			<% end %>
+			<% if r = skill.rangos %>
+				Rangos: <%= p  r %><br/>
+			<% end %>
+			<br/>
+			<p><%= skill.description %></p>		
+		</center>
+	</div>
+</div>

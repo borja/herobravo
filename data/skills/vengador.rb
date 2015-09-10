@@ -87,5 +87,4 @@ def vengadors
     }
   ]
 end
-
-def vengador id ;  vengadors[id] end
+def vengador id ; vengadors[id].merge({:char => 'vengador'}) end
