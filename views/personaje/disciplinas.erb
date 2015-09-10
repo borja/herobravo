@@ -3,7 +3,7 @@
 		<% char = nomalize_pj(request.path_info.split('/').last) %>
 		<h2>Habilidades del <%= char %></h2>
 	</header>
-	<link rel="stylesheet" href="../css/bravo.css" />
+	<link rel="stylesheet" href="/css/bravo.css" />
 	<table id='tresp'>
 		<thead>
 			<tr><% disciplinas.each do |d| %>
@@ -12,14 +12,26 @@
 			</tr>
 		</thead>
 		<tbody>
-			<% send(char+"s").each do |c| %>
-				<tr><td><%= c[:id] %></td>
-					<td><img src='<%= "../images/skills/#{char}/#{c[:name]}.png" %>' alt='<%= c[:name] %>', id='icon' /></td>
-					<td><%= c[:type].capitalize %></td>
-					<td><%= c[:name] %></td>
-					<td><i><%= c[:description] %></i></td>
-					<td><%= c[:nivel] || "Sin definir" %></td>
-					<td><%= c[:requisitos] || "In progress" %></td>
+			<% send(char+"s").count.times do |i| %>
+				<% c = Habilidad.new(send(char,i)) %>		
+				<tr><td width='9%'><h2><%= c.nivel %></h2></td>
+					<td><%= erb :'display/skill', :locals => {:skill => c} %></td>
+					<td><%= c.name %></td>
+					<td>
+						<% if c.requisitos %>
+						<table>
+							<tr>
+						  		<% c.requisitos.each do |r| %>
+						  			<% req = Habilidad.new(send(char,r)) %>
+						  			<td><%= erb :'display/skill', :locals => {:skill => req} %></td>
+						  		<% end %>
+							</tr>
+						</table>
+						<% else %>
+						  Sin requisitos
+						<% end %>
+					</td>	
+					<td><i><%= c.description %></i></td>
 				</tr>
 			<% end %>
 		</tbody>

@@ -164,5 +164,4 @@ def caminantes
     },
   ]
 end
-
-def caminante id ; caminantes[id] end
+def caminante id ; caminantes[id].merge({:char => 'caminante'}) end

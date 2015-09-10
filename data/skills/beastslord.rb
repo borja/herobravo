@@ -69,7 +69,4 @@ def beastlords
     },
   ]
 end
-
-def beastlord(id)
-  beastlords[id]
-end
+def beastlord id ; beastlords[id].merge({:char => 'beastlord'}) end
