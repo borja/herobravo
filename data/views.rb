@@ -87,8 +87,9 @@ def views
       :route    => "habilidad",
       :title    => "view",
       :template => { 
-        :left => 'personaje/left/personajes',
-        :main => 'personaje/disciplinas'
+        :left  => 'personaje/left/logo',
+        :left2 => 'personaje/left/personajes',
+        :main  => 'personaje/disciplinas'
       }
     },
     {
