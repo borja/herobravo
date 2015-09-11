@@ -1,9 +1,5 @@
 # encoding: UTF-8
-def descripcion  ;["Jugador","nivel","reputación"]                      end
-def lore         ;["ciudad","raza"]                                     end
-def disciplinas  ;["nivel","icono","nombre","requisitos",'descripción'] end
 def engarces     ;["gemas","joyas","runas"]                             end
-def habs         ;["icono", "nombre", "descripción"]                    end
 def fields       ;{ 1 => ["cabeza","hombros","muñecas","cintura","entrepierna"],
                     2 => ["espalda","pechera","manos","hebilla","pies","tatuajes"],
                     3 => ["cuello","argolla","pendientes","cadena","broche","tobillos"],

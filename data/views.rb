@@ -85,7 +85,7 @@ def views
     },
     {
       :route    => "habilidad",
-      :title    => "Habilidades",
+      :title    => "view",
       :template => { :main => 'personaje/disciplinas'}
     },
     {
