@@ -366,8 +366,7 @@ def views
       :template => { 
         :left   => 'personaje/razas/left/links',
         :main   => 'test/test',
-				:right  => 'reglamento/derecha/combate',
-				:right2 => 'reglamento/derecha/personajes',
+        :right  => "personaje/razas/right/stats",
       }
     },
     {

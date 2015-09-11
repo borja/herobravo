@@ -6,23 +6,23 @@ def preguntas
        :id         => 0,
        :pregunta   => "¿De qué color te vas a comprar tu nueva y flamante capa?",
        :respuestas => [
-        ["Verde",{:elfo => 3}],
-        ["Rojo",{:mago => 1, :tiefling => 2, :bárbaro => 2}],
-        ["Dorado",{:enano => 2, :clérgio =>1}],
-        ["Negro",{:ladrón => 2, :mago => 1, :tiefling => 2}],
-        ["Invisible",{:ladrón => 3, :mago => 1}],
+        ["Verde",     {:elfo => 3}],
+        ["Rojo",      {:mago => 1, :tiefling => 2, :bárbaro => 2}],
+        ["Dorado",    {:enano => 2, :clérigo =>1}],
+        ["Negro",     {:ladrón => 2, :mago => 1, :tiefling => 2}],
+        ["Invisible", {:ladrón => 3, :mago => 1}],
         ["Multicolor",{:mago => 2, :elfo =>2}],
-        ["Blanco",{:clérigo => 3}],
-        ["Púrpura",{:elfo => 1, :mago =>1}],
-        ["Gris",{:bárbaro =>2, :enano => 2}],
-        ["Metal",{:bárbaro =>1, :enano => +3}]
+        ["Blanco",    {:clérigo => 3}],
+        ["Púrpura",   {:elfo => 1, :mago =>1}],
+        ["Gris",      {:bárbaro =>2, :enano => 2}],
+        ["Metal",     {:bárbaro =>1, :enano => 3}]
        ]
      },
      {
        :id         => 1,
        :pregunta   => "¿Qué sueles pedir en la taberna de la esquina?",
        :respuestas => [
-        ["Cerveza",{:enano => +3, :bárbaro => 2}],
+        ["Cerveza",{:enano => 3, :bárbaro => 2}],
         ["Agua clara en vaso limpio",{:clérigo => 3, :mago =>1, :elfo => 1}],
         ["Vodka & Monster",{:bárbaro => 3}],
         ["Zumo de ciruelas",{:elfo => 3, :mago => 1}],
@@ -37,7 +37,7 @@ def preguntas
       :id         => 2,
       :pregunta   => "¿Con quién te diste tu primer beso con lengua?",
       :respuestas => [ 
-        ["Con Emma, la posadera, 1 chelín de cobre",{:ladrón => 2, :enano => 1, :bárbaro=> 1}],
+        ["Con Emma, la posadera, 1 chelín de cobre",{:ladrón => 2, :enano => 1, :bárbaro => 1}],
         ["Aún no he hecho esas marranadas",{:clérigo => 3}],
         ["Con mi prima Alba",{:elfo => 2, :bárbaro => 2, :mago => 2}],
         ["Con la diosa de la Luna oscura",{:tiefling => 2, :mago => 2, :ladrón => 1}],
@@ -147,15 +147,15 @@ def preguntas
       :id         => 10,
       :pregunta   => "¿Qué música te gusta más?",
       :respuestas => [ 
-        ["La música del barroco",{ :mago => 2, :elfo => 2}],
-        ["Death metal",{:tiefling => 2}],
-        ["La flauta dulce",{:elfo => 2}],
-        ["La música celta",{:elfo => 2, :enano => 2, :bárbaro => 2}],
-        ["El canto gregoriano",{:clérigo => 2}],
-        ["Estoy sordo, no oigo bien",{:enano => 2, :mago => 2}],
-        ["Tambores",{:bárbaro => 2}],
-        ["La que se pueda bailar",{:elfo => 2}],
-        ["Música tecno de saxofón",{:ladrón => 2}],
+        ["La música del barroco",      { :mago    => 2, :elfo => 2}],
+        ["Death metal",                {:tiefling => 2}],
+        ["La flauta dulce",            {:elfo     => 2}],
+        ["La música celta",            {:elfo     => 2, :enano => 2, :bárbaro => 2}],
+        ["El canto gregoriano",        {:clérigo  => 2}],
+        ["Estoy sordo, no oigo bien",  {:enano    => 2, :mago => 2}],
+        ["Tambores",                   {:bárbaro  => 2}],
+        ["La que se pueda bailar",     {:elfo     => 2}],
+        ["Música tecno de saxofón",    {:ladrón   => 2}],
 
       ],       
     },
@@ -201,7 +201,8 @@ def preguntas
   ]
 end
 
-def quiensoy(codigo) # this is a caos!!! >=D
+def quiensoy codigo # this is a caos!!! >=D
+  def pregunta id ; preguntas[id] end
   a = []
   for q in 0..preguntas.length-1
     b = preguntas[q][:respuestas][codigo[q].to_i]
