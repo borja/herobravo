@@ -1,14 +1,12 @@
 <section>
-	<header>
-		<% char = nomalize_pj(request.path_info.split('/').last) %>
-		<h2>Habilidades del <%= char %></h2>
-	</header>
+	<% char = nomalize_pj(request.path_info.split('/').last) %>
 	<link rel="stylesheet" href="/css/bravo.css" />
 	<table id='tresp'>
 		<thead>
-			<tr><% disciplinas.each do |d| %>
-					<th><%= d.capitalize %></th>
-				<% end %>
+			<tr><th>Nivel</th>
+				<th colspan='2'>Habilidad</th>
+				<th>Requisitos</th>
+				<th>Descripción</th>
 			</tr>
 		</thead>
 		<tbody>
