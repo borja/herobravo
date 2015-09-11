@@ -4,7 +4,7 @@
 class Item < Hash
   attr_accessor :id, :enchants, :max, :precio,
                 :runas, :joyas, :ranuras, :gemas,
-                :legendario, :unico, :artefacto
+                :legendario, :unico, :artefacto, :size
                   
   def initialize args
     args.each do |k,v|
