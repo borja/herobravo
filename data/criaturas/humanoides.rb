@@ -36,6 +36,15 @@ def humanoides
       :mente      => 1,
       :cuerpo     => 2,
       :especial   => "Odio",
+    },
+    { :id         => 4,
+      :nombre     => 'drow',
+      :ataque     => 3,
+      :defensa    => 2,
+      :movimiento => 8,
+      :mente      => 4,
+      :cuerpo     => 2,
+      :especial   => "Sigilo, defensa total",
     }
     
   ]

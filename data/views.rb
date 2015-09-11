@@ -216,7 +216,10 @@ def views
     },
     {
       :route    => "miscelaneas",
-      :template => { :main => 'items/miscelaneas' }
+      :template => {
+        :left => 'objetos/left/content2',
+        :main => 'items/miscelaneas' 
+      }
     },
     {
       :route    => "piezas",
