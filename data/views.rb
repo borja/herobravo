@@ -223,7 +223,17 @@ def views
     },
     {
       :route    => "piezas",
-      :template => { :main => 'items/piezas' }
+      :template => { 
+        :left => 'objetos/right/content2',
+        :main => 'items/piezas' 
+      }
+    },
+    {
+      :route    => "abalorios",
+      :template => { 
+        :left => 'objetos/right/content2',
+        :main => 'items/abalorios' 
+      }
     },
     {
       :route    => "maestrodearmas",
