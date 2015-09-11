@@ -1,28 +1,24 @@
-<section>
-	<header>
-		<h2>Tu héroe preferente es...</h2>
-	</header>
-	<link rel="stylesheet" href="/css/bravo.css" />
-	<table id='tresp'>
-		<thead>
+<header>
+	<h2>Tu héroe preferente es...</h2>
+</header>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th colspan='2'>Personaje</th>
+			<th>Afinidad</th>
+		</tr>
+	<thead>
+	<tbody>
+		<% quiensoy(params[:param][1..-1]).each do |k,v| %>
 			<tr>
-				<th colspan='2'>Personaje</th>
-				<th>Afinidad</th>
+				<td>
+					<% img_path = "'../images/personajes/#{k}.png'"  %>
+					<img src=<%= img_path %> alt=<%= k %> , id='icon' />
+				</td>
+				<td><%= k.capitalize %></td>
+				<td><h2><%= v %></h2></td>
 			</tr>
-		<thead>
-		<tbody>
-			<% quiensoy(params[:param][1..-1]).each do |k,v| %>
-				<tr>
-					<td>
-						<% img_path = "'../images/personajes/#{k}.png'"  %>
-						<img src=<%= img_path %> alt=<%= k %> , id='icon' />
-					</td>
-					<td><%= k.capitalize %></td>
-					<td><h2><%= v %></h2></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table><br>
-
+		<% end %>
+	</tbody>
+</table>
 <%#= "Tu código es: #{quiensoy(params[:param])}" %>
-</section>

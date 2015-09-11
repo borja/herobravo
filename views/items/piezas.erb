@@ -1,23 +1,16 @@
-<link rel="stylesheet" href="../css/bravo.css" />
-<section>
-	<table id='tresp'>
-		<thead>
+<table id='tresp'>
+	<thead>
+		<th colspan='2'>Pieza</th>
+		<th>Uso</th>
+	</thead>
+	<tbody>
+		<% piezas.each do |pieza| %>
+		<% p = Pieza.new(pieza) %>
 			<tr>
-				<th colspan='2'>Pieza</th>
-				<th>Uso</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<% piezas.each do |p| %>
-				<tr>
-					<td>
-						<% img_path = "'../images/utiles/piezas/#{p[:name]}.png'" %>
-						<img src=<%=img_path%> alt=<%=p[:name]%>, id='icon' />
-					</td>
-					<td><%= p[:name].capitalize %></td>
-					<td><%= p[:uso ].capitalize %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</section>
+				<td><img src=<%= p.img_path%> alt=<%=p.name%>, id='icon' /></td>
+				<td><%= p.name.capitalize %></td>
+				<td><%= p.uso.capitalize %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -1,10 +1,8 @@
-<section>
-	<header>
-		<h2>Bestiario</h2>
-	</header>
-	<ul class="link-list">
-		<% criaturas.each do |c| %>
-			<li><a href="/criatura/<%= c %>"><%= c %></a></li>
-		<% end %>
-	</ul>
-</section>
+<header>
+	<h2>Bestiario</h2>
+</header>
+<ul class="link-list">
+	<% criaturas.each do |c| %>
+		<li><a href="/criatura/<%= c %>"><%= c %></a></li>
+	<% end %>
+</ul>

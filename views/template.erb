@@ -18,20 +18,20 @@
 						<div class="row">
 							<% if template[:left] %>
 								<div class="3u">
-									<%= load_partial(template[:left]) %>
+									<section><%= load_partial(template[:left]) %></section>
 									<% if template[:left2] %>
-										<%= load_partial(template[:left2]) %>
+										<section><%= load_partial(template[:left2]) %></section>
 									<% end %>
 								</div>
 							<% end %>
 							<div class='<%= get_center(template) %>'>
-								<%= load_partial(template[:main]) %>
+								<section><%= load_partial(template[:main]) %></section>
 							</div>							
 							<% if template[:right] %>
 								<div class="3u">
-									<%= load_partial(template[:right]) %>
+									<section><%= load_partial(template[:right]) %></section>
 									<% if template[:right2] %>
-										<%= load_partial(template[:right2]) %>
+										<section><%= load_partial(template[:right2]) %></section>
 									<% end %>
 								</div>
 							<% end %>
