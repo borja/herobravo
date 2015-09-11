@@ -1,18 +1,14 @@
 <section>
-	<link rel="stylesheet" href="css/bravo.css" />
 	<table id='table-2'>
 		<thead>
 			<tr>
-				<th>ID</th>
-				<th>Icono</th>
-				<th>Nombre</th>
-				<th>Disponibles</th>
+				<th colspan='2'>Joya</th>
+				<th width='20%'>Disponibles</th>
 			</tr>	
 		</thead>
 		<tbody>
 			<% joyas.each do |j| %>
 				<tr>
-					<td><%= j.id %></td>
 					<td><%= erb :'display/joya',  :locals => { :joya  => j } %></td>
 					<td><%= "Joya " + j.name %></td>
 					<td><%= erb :'display/bazar', :locals => { 

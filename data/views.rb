@@ -40,9 +40,9 @@ def views
     },
     {
       :route    => "pnj",
-      :title    => "Personaje",
+      :title    => "view",
       :template => {
-        :main   => 'lore/pnj',
+        :main   => 'lore/pnjs/:param',
         :right  => 'lore/derecha',
       }
     },
@@ -61,7 +61,10 @@ def views
     },
     {
       :route    => "familiares",
-      :template => { :main => 'personaje/familiares'}
+      :template => { 
+        :main  => 'personaje/familiares',
+        :right => 'heroes/sidebar'
+      }
     },
     {
       :route    => "habilidades",
@@ -94,7 +97,10 @@ def views
     },
     {
       :route    => "caminos",
-      :template => { :main => 'personaje/caminos'}
+      :template => { 
+        :main  => 'personaje/caminos',
+        :right => 'heroes/sidebar'
+      }
     },
     {
       :route    => "materiales",
@@ -229,6 +235,13 @@ def views
       }
     },
     {
+      :route    => "pociones",
+      :template => { 
+        :left => 'objetos/right/content2',
+        :main => 'items/pociones' 
+      }
+    },
+    {
       :route    => "abalorios",
       :template => { 
         :left => 'objetos/right/content2',
@@ -264,21 +277,24 @@ def views
     {
       :route    => "hechizos",
       :template => { 
-        :left  => 'torre/left/magias',
+        :left  => 'torre/left/elementales',
+        :left2 => 'torre/left/especializaciones',
         :main  => 'magia/hechizos' 
       }
     },
     {
       :route    => "sombras",
       :template => { 
-        :left  => 'torre/left/magias',
+        :left  => 'torre/left/elementales',
+        :left2 => 'torre/left/sagradas',
         :main => 'magia/sombras' 
       }
     },
     {
       :route    => "plegarias",
       :template => {
-        :left => 'torre/left/magias', 
+        :left  => 'torre/left/elementales',
+        :left2 => 'torre/left/sagradas',
         :main => 'magia/plegarias' 
       }
     },
@@ -286,7 +302,8 @@ def views
       :route    => "elficas",
       :title    => "Magias élficas",
       :template => {
-        :left => 'torre/left/magias',
+        :left  => 'torre/left/elementales',
+        :left2 => 'torre/left/sagradas',
         :main => 'magia/elficas' 
       }
     },
@@ -294,7 +311,8 @@ def views
       :route    => "sangre",
       :title    => "Magia de sangre",
       :template => { 
-        :left => 'torre/left/magias',
+        :left  => 'torre/left/elementales',
+        :left2 => 'torre/left/sagradas',
         :main => 'magia/sangre' 
       }
     },
@@ -335,10 +353,10 @@ def views
       :route    => "torre",
       :title    => "Torre de Magia",
       :template => {
-        :left   => 'torre/left/magias',
-        :left2  => 'torre/left/especializaciones',
-        :main   => 'torre/main',
-        :right  => 'torre/right/tipos',
+        :left  => 'torre/left/elementales',
+        :left2 => 'torre/left/sagradas',
+        :main  => 'torre/main',
+        :right => 'torre/right/tipos',
       }
     },
     {

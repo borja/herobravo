@@ -1,45 +1,43 @@
-<section>
-	<header>
-		<h2>Mapa del Viejo Mundo</h2>
-	</header>
-	<div class="mapa_imagen">
-	  <link rel="stylesheet" href="css/map.css" />
-	  <img src="/images/mapa.png" id='mapamundi'>
-	  <ul class="notas">
-	   	<li id="nota1"><p>El Gran Lago</p></li>
-		<li id="nota2"><p>La temible costa de los piratas</p></li>
-	    <li id="nota3"><p>Altdorf, capital del Imperio</p></li>
-	    <li id="nota4"><p>El Desierto prohibido</p></li>	
-		<% cities.each do |c| %>
-			<a href='/city/<%= c[:name] %>'>
-				<li style='<%= c[:style] %>'><p><%= c[:name] %></p></li>
-			</a>
-		<% end %>
-	  </ul>
-	</div>
-	<h3>Geografía</h3>
-	<p>
-		Geográficamente, está limitado por el Gran Océano tanto al Oeste como el Sur, 
-		y el Rio Sangre es la frontera que separa los Reinos Fronterizos de las Tierras Yermas. 
-		Al Norte la frontera se encuentra con el Territorio Troll,
-		y sus fronteras orientales son delineadas por las Montañas del Fin del Mundo. 
-	</p>
-	<h3>Principales Reinos</h3>
-	<p>
-		Los principales reinos humanos del Viejo Mundo son el Imperio, Bretonia y Kislev. 
-		Al sur se encuentran los reinos de Estalia y las ciudades-estado de Tilea, 
-		los cuales carecen de una autoridad y un gobierno central, 
-		así como una amalgama anárquica de pequeños reinos conocidos como los Reinos Fronterizos, 
-		en las fronteras del sudeste del Viejo Mundo.
-	</p>
-	<p>
-		Técnicamente Norsca no forma parte del Viejo Mundo, aunque comparte similitudes culturales con ella, 
-		y está más cerca del viejo mundo en términos de distancia. 
-		Lo mismo ocurre con la isla de Albión, que está frente a las costas del Viejo Mundo, 
-		que no forma parte del Viejo Mundo pero no está completamente separada de él.
-	</p>
-	<p>
-		El Viejo Mundo es también el hogar de otras razas, como los Enanos y los Elfos Silvanos.
-		Dentro de los límites del Imperio es la zona administrada por Halflings conocida como la Asamblea.
-	</p>
-</section>
+<header>
+	<h2>Mapa del Viejo Mundo</h2>
+</header>
+<div class="mapa_imagen">
+  <link rel="stylesheet" href="css/map.css" />
+  <img src="/images/mapa.png" id='mapamundi'>
+  <ul class="notas">
+   	<li id="nota1"><p>El Gran Lago</p></li>
+	<li id="nota2"><p>La temible costa de los piratas</p></li>
+    <li id="nota3"><p>Altdorf, capital del Imperio</p></li>
+    <li id="nota4"><p>El Desierto prohibido</p></li>	
+	<% cities.each do |c| %>
+		<a href='/city/<%= c[:name] %>'>
+			<li style='<%= c[:style] %>'><p><%= c[:name] %></p></li>
+		</a>
+	<% end %>
+  </ul>
+</div>
+<h3>Geografía</h3>
+<p>
+	Geográficamente, está limitado por el Gran Océano tanto al Oeste como el Sur, 
+	y el Rio Sangre es la frontera que separa los Reinos Fronterizos de las Tierras Yermas. 
+	Al Norte la frontera se encuentra con el Territorio Troll,
+	y sus fronteras orientales son delineadas por las Montañas del Fin del Mundo. 
+</p>
+<h3>Principales Reinos</h3>
+<p>
+	Los principales reinos humanos del Viejo Mundo son el Imperio, Bretonia y Kislev. 
+	Al sur se encuentran los reinos de Estalia y las ciudades-estado de Tilea, 
+	los cuales carecen de una autoridad y un gobierno central, 
+	así como una amalgama anárquica de pequeños reinos conocidos como los Reinos Fronterizos, 
+	en las fronteras del sudeste del Viejo Mundo.
+</p>
+<p>
+	Técnicamente Norsca no forma parte del Viejo Mundo, aunque comparte similitudes culturales con ella, 
+	y está más cerca del viejo mundo en términos de distancia. 
+	Lo mismo ocurre con la isla de Albión, que está frente a las costas del Viejo Mundo, 
+	que no forma parte del Viejo Mundo pero no está completamente separada de él.
+</p>
+<p>
+	El Viejo Mundo es también el hogar de otras razas, como los Enanos y los Elfos Silvanos.
+	Dentro de los límites del Imperio es la zona administrada por Halflings conocida como la Asamblea.
+</p>

@@ -1,10 +1,12 @@
-<section>
-	<header>
-		<h2 align='center'>Personajes</h2>
-	</header>
-	<ul class="link-list">
-		<% personajes.each do |p| %>
-		<li><a href='/habilidad/<%= p.gsub('señor de las bestias','beastlord') %>' ><%= p.capitalize %></a></li>
-        <% end %>	
-	</ul>
-</section>
+<header>
+	<h2 align='center'>Personajes</h2>
+</header>
+<ul class="link-list">
+	<% personajes.each do |p| %>
+		<li>
+			<a href='/habilidad/<%= p.gsub('señor de las bestias','beastlord') %>' >
+				<%= p.capitalize %>
+			</a>
+		</li>
+    <% end %>	
+</ul>

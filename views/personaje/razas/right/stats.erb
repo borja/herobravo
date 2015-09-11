@@ -1,53 +1,50 @@
-<link rel="stylesheet" href="css/bravo.css" />
-<section>
-	<header>
-		<h2>Estadísticas</h2>
-	</header>
-	<h3>Iniciales de cada raza</h3>
-	<table id='tresp'>
-		<thead>
+<header>
+	<h2>Estadísticas</h2>
+</header>
+<h3>Iniciales de cada raza</h3>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>Raza</th>
+			<th>PC</th>
+			<th>PM</th>
+			<th>Mov</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% razas.each do |r| %>
 			<tr>
-				<th>Raza</th>
-				<th>PC</th>
-				<th>PM</th>
-				<th>Mov</th>
+				<td><%= r.first %></td>					
+				<td><%= r.last[:cuerpo] %></td>
+				<td><%= r.last[:mente] %></td>
+				<td><%= r.last[:movimiento] %></td>
 			</tr>
-		</thead>
-		<tbody>
-			<% razas.each do |r| %>
-				<tr>
-					<td><%= r.first %></td>					
-					<td><%= r.last[:cuerpo] %></td>
-					<td><%= r.last[:mente] %></td>
-					<td><%= r.last[:movimiento] %></td>
-				</tr>
-			<% end %> 
-		</tbody>
-	</table>
-	<br>
-	<h3>Humanos sin parangón</h3>
-	<table id='tresp'>
-		<thead>
-			<tr>
-				<th>Clase</th>
-				<th>PC</th>
-				<th>PM</th>
-				<th>Mov</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Mago</td>
-				<td>4</td>
-				<td>6</td>
-				<td>7</td>
-			</tr>
-			<tr>
-				<td>Bárbaro</td>
-				<td>8</td>
-				<td>2</td>
-				<td>7</td>
-			</tr>
-		</tbody>
-	</table>
-</section>
+		<% end %> 
+	</tbody>
+</table>
+<br>
+<h3>Humanos sin parangón</h3>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>Clase</th>
+			<th>PC</th>
+			<th>PM</th>
+			<th>Mov</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Mago</td>
+			<td>4</td>
+			<td>6</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>Bárbaro</td>
+			<td>8</td>
+			<td>2</td>
+			<td>7</td>
+		</tr>
+	</tbody>
+</table>
