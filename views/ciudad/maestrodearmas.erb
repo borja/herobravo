@@ -1,25 +1,22 @@
-<section>
-	<link rel="stylesheet" href="../../css/bravo.css" />
-	<table id='tresp'>
-		<thead>
-			<th>ID</th>
-			<th>Icono</th>
-			<th>Nombre</th>
-			<th>Descripcion</th>
-			<th>Coste</th>
-		</thead>
-		<tbody>
-			<% maestrodearmas.each do |m| %>
-				<tr>
-					<td><%= m[:id] %></td>
-					<td><% img_path = "'../images/skills/maestrodearmas/#{m[:name]}.png'" %>
-						<img src=<%=img_path%> alt=<%=m[:name]%>, id='icon' />
-					</td>
-					<td><%= m[:name].capitalize %></td>
-					<td><%= m[:descripcion] %></td>
-					<td><%= m[:coste].capitalize %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</section>
+<table id='tresp'>
+	<thead>
+		<th>ID</th>
+		<th>Icono</th>
+		<th>Nombre</th>
+		<th>Descripcion</th>
+		<th>Coste</th>
+	</thead>
+	<tbody>
+		<% maestrodearmas.each do |m| %>
+			<tr>
+				<td><%= m[:id] %></td>
+				<td><% img_path = "'../images/skills/maestrodearmas/#{m[:name]}.png'" %>
+					<img src=<%=img_path%> alt=<%=m[:name]%>, id='icon' />
+				</td>
+				<td><%= m[:name].capitalize %></td>
+				<td><%= m[:descripcion] %></td>
+				<td><%= m[:coste].capitalize %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
