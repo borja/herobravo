@@ -1,15 +1,12 @@
 <table id='tresp'>
 	<thead>
-		<th>Icono</th>
-		<th>Nombre</th>
+		<th colspan='2'>Hechizo</th>
 		<th>Descripción</th>
 	</thead>
 	<tbody>
 		<% elficas.each do |e| %>
 			<tr style=<%= e.color %>>				
-				<td><% img_path = "'../../images/spells/#{ e.name }.png'" %>
-					<img src=<%=img_path%> alt=<%= e.name %>, id='icon' />
-				</td>
+				<td><img src=<%= e.img_path %> alt=<%= e.name %>, id='icon' /></td>
 				<td><%= e.name.capitalize %></td>
 				<td><%= e.efecto %></td>
 			</tr>

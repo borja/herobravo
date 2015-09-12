@@ -1,26 +1,21 @@
-<section>
-	<table id='table-2'>
-		<thead>
+<table id='table-2'>
+	<thead>
+		<tr>
+			<th colspan='2'>Runa</th>
+			<th>Disponibles</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% runas.each do |r| %>
 			<tr>
-				<th>ID</th>
-				<th>Icono</th>
-				<th>Nombre</th>
-				<th>Disponibles</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<% runas.each do |r| %>
-				<tr>
-					<td><%= r.id %></td>
-					<td><%= erb :'display/runa',  :locals => { :runa  => r } %></td>
-					<td><%= r.name.upcase %></td>
-					<td><%= erb :'display/bazar', :locals => { 
-						:bazar   => r.disponibles, 
-						:engarce => "runas", 
-						:item_id => r.id } %>
-					</td>						
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</section>
+				<td><%= erb :'display/runa',  :locals => { :runa  => r } %></td>
+				<td><%= r.name.upcase %></td>
+				<td><%= erb :'display/bazar', :locals => { 
+					:bazar   => r.disponibles, 
+					:engarce => "runas", 
+					:item_id => r.id } %>
+				</td>						
+			</tr>
+		<% end %>
+	</tbody>
+</table>
