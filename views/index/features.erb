@@ -4,7 +4,9 @@
 			<div class="row">
 				<% 4.times do |i| %>
 					<div class="3u">
-						<%= erb :"index/features/feature#{i+1}" %>
+						<section>
+							<%= erb :"index/features/feature#{i+1}" %>
+						</section>
 					</div>
 				<% end %>
 			</div>
