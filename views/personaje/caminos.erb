@@ -1,19 +1,26 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<th>Camino</th>
-			<% caminos.keys.each_with_index do |c,i| %>
-				<th><%= i %></th>
+			<th colspan='2'>Camino</th>
+			<th>En curso</td>
+			<% 7.times do |i| %>
+				<th><%= i+1 %></th>
 			<% end %>
 		</tr>
 	</thead>
 	<tbody>
-		<% caminos.keys.each do |c| %>
+		<% caminos.keys.each_with_index do |camino,i| %>
 			<tr>
-				<td><%= c %></td>
-				<td><%= c.class %></td>
-				<%#= erb :'ficha/caminos' , :locals => {:path => c } %>
-				<td>X</td>
+				<td><img src='images/caminos/<%=camino%>.png' alt='<%= camino %>', id='icon' /></td>
+				<td><%= camino %></td>
+				<td><%= 0 %></td>
+				<% camino(camino).each do |paso| %>
+					<td><%= erb :'display/camino', :locals => { 
+							  :camino => camino,
+							  :paso   => paso
+							} %>
+					</td>
+				<% end %>
 			</tr>
 		<% end %>
 	</tbody>

@@ -8,6 +8,7 @@
 			<% if h.descendientes %>
 				<th>Descendientes</th>
 			<% end %>
+			<th>Raza</th>
 			<% if h.profesion %>
 				<th>Profesión</th>
 			<% end %>
@@ -23,6 +24,7 @@
 			<% if h.descendientes %>
 				<td><%= erb :'ficha/descendientes' %></td>
 			<% end %>	
+			<td><a href='/raza/<%= h.raza %>s'><%= h.raza.capitalize %></a></td>
 			<% if h.profesion %>
 				<td><%= erb :'ficha/profesion', :locals => { :prof => h.profesion } %></td>
 			<% end %>
