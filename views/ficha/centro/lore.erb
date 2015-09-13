@@ -2,8 +2,7 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<th>Ciudad</th>
-			<th>Raza</th>
+			<th>Ciudad</th>			
 			<% if h.pareja %>
 				<th>Pareja</th>
 			<% end %>
@@ -19,6 +18,9 @@
 			<% if h.historia %>
 				<th>Historia</th>
 			<% end %>
+			<% if h.camino %>
+				<th>Camino</th>
+			<% end %>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,7 +29,6 @@
 					<%= h.empadronado %>
 				</a>
 			</td>
-			<td><a href='/raza/<%= h.raza %>s'><%= h.raza.capitalize %></a></td>
 			<% if h.pareja %>
 				<td><%= erb :'ficha/pareja' %></td>
 			<% end %>
@@ -53,6 +54,14 @@
 					<a href=<%= "/historia/#{h.id }" %>>
 						<img src="../images/ficha/historia.png" alt="historia" /, id='icon'>
 					</a>
+				</td>
+			<% end %>
+			<% if h.camino %>
+				<td>
+					<%= erb :'display/camino', :locals => { 
+												  :camino => h.camino,
+												  :paso   => h.camino
+												} %>
 				</td>
 			<% end %>
 		</tr>

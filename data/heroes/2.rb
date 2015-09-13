@@ -5,6 +5,7 @@ def h2
     :name         => "Eruan Amarie",
     :progenitores => [47,33],
     :pareja       => {:nombre => "Lauranna", :raza => "dead", :tipo => "pnj" },
+    :camino       => ["El Justiciero",1],
     :personaje    => "druida",
     :jugador      => "Iris",
     :status       => "activo",

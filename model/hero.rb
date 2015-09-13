@@ -8,7 +8,7 @@ class Hero < Hash
     :pet, :mounts, :descendencia, :pareja, :progenitores,        
     :hechizos, :shadows, :blood, :skills,   
     :armas, :armadura, :proteccions, :miscelaneas, :abalorios,          
-    :profesion, :ciudad, :titulo,
+    :profesion, :ciudad, :titulo, :camino,
     :piezas, :pociones, :pergaminos, :materiales,
     :oro, :tesoro            
 
