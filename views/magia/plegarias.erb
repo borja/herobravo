@@ -1,34 +1,22 @@
 <table id='tresp'>
 	<thead>
-		<th>Icono</th>	
-		<th>Nivel</th>	
-		<th>Nombre</th>
-		<th>Tipo</th>		
+		<th colspan='2'>Plegaria</th>	
+		<th>Tipo</th>
 		<th>Duración</th>
 		<th>Potencia</th>		
 		<th>Alcance</th>
-		<th>Efecto</th>		
-		<th>Summun</th>
-		<th>Chakra</th>		
+		<th>Efecto</th>			
 	</thead>
 	<tbody>
 		<% plegarias.each do |p|%>
 			<tr style=<%= p.color %>>
-				<td>
-					<%= erb :'display/display', :locals => { 
-							:title       => p.name , 
-							:path        => p.img_path,
-							:description => 'in progress' } %>
-				</td>
-				<td><%= p.nivel %></td>	
+				<td><%= erb :'display/spell', :locals => {:spell => p} %></td>
 				<td><%= p.name.capitalize %></td>
 				<td><%= p.tipo.capitalize %></td>
 				<td><%= p.duracion.to_s.capitalize %></td>
 				<td><%= p.potencia.to_s.capitalize %></td>
 				<td><%= p.alcance.to_s.capitalize %></td>
 				<td><%= p.efecto %></td>
-				<td><%= p.summun.to_s.capitalize %></td>	
-				<td><%= p.chakra.to_s.capitalize %></td>
 			</tr>
 		<% end %>
 	</tbody>

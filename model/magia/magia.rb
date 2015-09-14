@@ -34,7 +34,7 @@ class Plegaria < Magia
   def nivel    ; ( (self.id / 8) + 1 ).to_i end
   def elemento ; "plegaria" end
   def img_path 
-    "'../../images/magia/plegarias1/#{ self.name }.png'"
+    "'../../images/magia/plegarias#{self.nivel}/#{ self.name }.png'"
   end
 end
 

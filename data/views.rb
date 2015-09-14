@@ -293,8 +293,8 @@ def views
     {
       :route    => "plegarias",
       :template => {
-        :left  => 'torre/left/elementales',
-        :left2 => 'torre/left/sagradas',
+        :left  => 'torre/left/sagradas',
+        :left2 => 'torre/left/elementales',
         :main => 'magia/plegarias' 
       }
     },
