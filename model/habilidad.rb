@@ -11,7 +11,7 @@ class Habilidad < Hash
     end
   end
   
-  def rangos ; 6 if self.type == 'única'  end
+  def ranks    ; (self.type == 'única') ? 6 : self.rangos  end
   def img_path ; "/images/skills/#{self.char}/#{self.name}.png" end
     
 end
