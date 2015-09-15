@@ -6,7 +6,7 @@ def vengadors
       :name         => "Venganza",
       :description  => "Al recibir 1 herida, el tiefling recibe 1 punto de sombra (PS) y tiene Agravio contra el atacante.",
       :type         => "Reactiva",
-      :requisitos   => 2,
+      :requisitos   => [2],
       :nivel        => 2,
     },
     {

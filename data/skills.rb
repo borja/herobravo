@@ -11,12 +11,9 @@ pjs = ["caminante","brujo","vengador",
        "ladrón","asesino","nigromante",
        "matador","falangista","ingeniero"]
 
-pjs.each do |pj|
-  require './data/skills/' + pj
-end
-
 # Generic clase creator
 pjs.each do |pj| 
+  require './data/skills/' + pj
   define_method(pj) do |id|
      send(pj+'s')[id].merge({:char => pj})
   end
