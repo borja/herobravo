@@ -38,4 +38,3 @@ def ladróns
     }
   ]
 end
-def ladrón id ; ladróns[id].merge({:char => 'ladrón'}) end

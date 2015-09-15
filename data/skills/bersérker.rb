@@ -6,7 +6,6 @@ def bersérkers
       :name         => "furia",
       :description  => "1 PM: +1 dado de ataque",
       :type         => "activa",
-      :nivel        => 1,
     },
     {
       :id           => 1,
@@ -32,8 +31,10 @@ def bersérkers
     {
       :id           => 4,
       :name         => "dos armas",
-      :description  => "Permite atacar con dos armas",
-      :type         => "Pasiva"
+      :description  => "Permite llevar un arma pequeña en la mano torpe.",
+      :rangos       => 3,
+      :type         => "Pasiva",
+      :nivel        => 3,
     },
     {
       :id           => 5,
@@ -63,19 +64,19 @@ def bersérkers
       :id           => 9,
       :name         => "grito de sangre",
       :description  => "+1 PC al matar",
-      :type         => "Pasiva"
+      :type         => "reactiva"
     },
     {
       :id           => 10,
       :name         => "gloria berserker",
-      :description  => "+1 ataque si es superado en numero",
+      :description  => "+1 ataque si es superado en número",
       :type         => "Pasiva"
     },
     {
       :id           => 11,
       :name         => "himno de honor",
       :description  => "+1 grito al matar de manera frontal",
-      :type         => "Pasiva"
+      :type         => "reactiva"
     },
     {
       :id           => 12,
@@ -98,4 +99,3 @@ def bersérkers
     
   ]
 end
-def bersérker id ; bersérkers[id].merge({:char => 'bersérker'}) end

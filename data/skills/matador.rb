@@ -13,6 +13,7 @@ def matadors
       :name         => "Dos armas",
       :description  => "el matador puede llevar un hacha de mano en la mano torpe",
       :type         => "pasiva",
+      :requisitos   => [0],
       :nivel        => 2,
     },
     {
@@ -38,4 +39,3 @@ def matadors
     }
   ]
 end
-def matador id ; matadors[id].merge({:char => 'matador'}) end

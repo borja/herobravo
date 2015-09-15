@@ -17,4 +17,3 @@ def sacerdotes
     }
   ]
 end
-def sacerdote id ; sacerdotes[id].merge({:char => 'sacerdote'}) end
