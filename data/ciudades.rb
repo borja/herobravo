@@ -23,6 +23,12 @@ def cities
        :name   => "Oszthgard",
        :style  => "width: 30px; height: 30px; top: 30px; left: 550px;",
        :master => "Iris",
+    },
+    {
+	     :id     => 4,
+       :name   => "Kellen",
+       :style  => "width: 30px; height: 30px; top: 360px; left: 90px;",
+       :master => "Daniel Cabañas",
     }
   ]
 end
