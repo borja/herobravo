@@ -6,6 +6,7 @@ def vengadors
       :name         => "Venganza",
       :description  => "Al recibir 1 herida, el tiefling recibe 1 punto de sombra (PS) y tiene Agravio contra el atacante.",
       :type         => "Reactiva",
+      :requisitos   => 2,
       :nivel        => 2,
     },
     {
@@ -87,4 +88,3 @@ def vengadors
     }
   ]
 end
-def vengador id ; vengadors[id].merge({:char => 'vengador'}) end

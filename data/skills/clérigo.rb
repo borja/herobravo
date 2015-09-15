@@ -75,4 +75,3 @@ def clérigos
     }
   ]
 end
-def clérigo id ; clérigos[id].merge({:char => 'clérigo'}) end

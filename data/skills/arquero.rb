@@ -162,4 +162,3 @@ def arqueros
     },
   ]
 end
-def arquero id ; arqueros[id].merge({:char => 'arquero'}) end

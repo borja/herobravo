@@ -95,4 +95,3 @@ def hoplitas
     }
   ]
 end
-def hoplita id ; hoplitas[id].merge({:char => 'hoplita'}) end

@@ -103,4 +103,3 @@ def ingenieros
     },
   ]
 end
-def ingeniero id ; ingenieros[id].merge({:char => 'ingeniero'}) end

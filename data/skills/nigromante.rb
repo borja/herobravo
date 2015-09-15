@@ -26,4 +26,3 @@ def nigromantes
     }
   ]
 end
-def nigromante id ; nigromantes[id].merge({:char => 'nigromante'}) end

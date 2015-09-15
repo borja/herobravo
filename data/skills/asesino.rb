@@ -136,4 +136,3 @@ def asesinos
     },
   ]
 end
-def asesino id ; asesinos[id].merge({:char => 'asesino'}) end

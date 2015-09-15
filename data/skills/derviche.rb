@@ -74,4 +74,3 @@ def derviches
     },
   ]
 end
-def derviche id ; derviches[id].merge({:char => 'derviche'}) end

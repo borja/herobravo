@@ -93,4 +93,3 @@ def conjuradors
     },
   ]
 end
-def conjurador id ; conjuradors[id].merge({:char => 'conjurador'}) end

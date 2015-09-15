@@ -324,4 +324,3 @@ def druidas
     }
   ]
 end
-def druida id ; (druidas[id]).merge({:char => 'druida' }) end

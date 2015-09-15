@@ -122,4 +122,3 @@ def invocadors
     },
   ]
 end
-def invocador id ; invocadors[id].merge({:char => 'invocador'}) end
