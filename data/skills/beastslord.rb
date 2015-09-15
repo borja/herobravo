@@ -1,5 +1,5 @@
 # encoding: UTF-8
-def beastlords
+def beastslords
   [
     {
       :id           => 0,

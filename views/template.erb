@@ -6,6 +6,7 @@
 		<% if (params[:view] == 'historia' || params[:view] == 'hero') %>
 			<% title = hero(params[:param].to_i).name %>
 		<% end %>
+		<% title.gsub!('Beastslord','Señor de las Bestias')%>
 		<%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %>
 	</head>
 	<body class="subpage">
