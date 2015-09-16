@@ -336,6 +336,14 @@ def views
        }
     },
     {
+      :route    => "extranjeros",
+      :title    => "view",
+      :template => { 
+        :main  => 'heroes/heroes',
+        :right => 'heroes/sidebar'
+       }
+    },
+    {
       :route    => "estados",
       :title    => "Estados de Combate",
       :template => { :main  => 'reglamento/combate/estados' }

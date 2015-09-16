@@ -13,7 +13,7 @@ class App < Sinatra::Base
   
   get '/:view' do |view| # Templates with simple root-viewer  
     case view
-      when "reservistas","extranjeros","ausentes","licenciados" then preview('heroes')
+      when "reservistas","ausentes","licenciados" then preview('heroes')
       else preview(view) # Try same view as URL
     end
   end

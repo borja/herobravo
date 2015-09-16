@@ -2,13 +2,15 @@
 	<h2>Ciudades</h2>
 </header>
 <a href=<%= '/mapa' %> class='feature-image'>
-	<img src='../images/mapeando.png' alt='mapeando'/>
+	<img src='/images/mapeando.png' alt='mapeando'/>
 </a>
 <ul class="link-list">
 	<% cities.each do |c| %>
 		<li>
-			<a href='/city/<%= c[:name] %>'><%= c[:name] %></a>
-			(<%= c[:master] %>)
+			<a href='/city/<%= c[:name] %>'><%= c[:name] %></a>(<%= c[:master] %>) 
+			<% unless c[:name] == 'Jadessvärd' %>
+				: <a href='/extranjeros/<%= c[:name] %>'>ver héroes</a>
+			<% end %>
 		</li>
 	<% end %>
 </ul>
