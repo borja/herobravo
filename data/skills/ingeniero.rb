@@ -3,102 +3,137 @@ def ingenieros
   [
     {
       :id           => 0,
-      :name         => "artillería",
-      :description  => "1 pieza: permite disparar a distancia con el arma (pudiendo ser melee) equipada.",
-      :type         => "activa"
+      :name         => "Chatarrero",
+      :description  => "+1 pieza al desactivar satisfactoriamente una trampa",
+      :type         => "disparada",
+      :nivel        => 2,
+      :rangos       => 2,
     },
     {
       :id           => 1,
-      :name         => "chatarrero",
-      :description  => "Permite obtener una pieza al desactivar satisfactoriamente una trampa",
-      :type         => "Pasiva"
+      :name         => "Artillería",
+      :description  => "Disparo a distancia con el arma (pudiendo ser melee) equipada.",
+      :type         => "activa",
+      :coste        => "1 pieza",
+      :nivel        => 2,
     },
     {
       :id           => 2,
-      :name         => "desvalijar",
-      :description  => "Permite obtener una pieza de las puertas.",
-      :type         => "activa"
+      :name         => "Fuego amigo",
+      :description  => "Permite disparar a través de aliados sin dañarlos.",
+      :type         => "pasiva",
+      :nivel        => 2,
     },
     {
       :id           => 3,
-      :name         => "fuego amigo",
-      :description  => "Permite disparar a través de aliados sin dañarlos.",
-      :type         => "pasiva"
+      :name         => "Cachivache",
+      :description  => "Comienzas el reto con rango/cachivaches. Solo podrás llevar 1 activo.",
+      :invocacion   => "droide con forma de araña y un depósito líquido con 3 PE. A cambio de 2 piezas, puedes regenerarlo. Puede hacer las siguientes funciones: autodestrucción (dado de fuego), +1 a buscar si se coloca en el casco,  permite disparo oblicuo si se coloca en la mirilla.",
+      :type         => "pasiva",
+      :rangos       => 4,
+      :nivel        => 2,
+      :requisitos   => [0],
     },
     {
       :id           => 4,
-      :name         => "retroceso",
-      :description  => "El exceso de potencia hará que el ingeniero retroceda, pudiendo golpear al posible enemigo con el que se choque.",
-      :type         => "pasiva"
+      :name         => "Desvalijar",
+      :description  => "Permite desmontar una puerta para obtener 1 pieza",
+      :type         => "activa",
+      :nivel        => 3,
+      :requisitos   => [0,0],
     },
+
     {
       :id           => 5,
-      :name         => "disparo perforante",
-      :description  => "El exceso de daño que no se pueda parar un enemigo, le atravesará, yendo el disparo hacia otro enemigo que esté detrás.",
-      :type         => "pasiva"
+      :name         => "retroceso",
+      :description  => "El exceso de potencia de disparo hará que el ingeniero pueda elegir retroceder, pudiendo golpear al posible enemigo con el que se choque.",
+      :type         => "disparada",
+      :nivel        => 3,
+      :requisitos   => [1],
     },
     {
       :id           => 6,
-      :name         => "éter",
-      :description  => "+3 éter al inicio del juego.",
-      :type         => "Pasiva"
+      :name         => "Éter",
+      :description  => "+3 puntos de éter (PE) al inicio del juego.",
+      :type         => "pasiva",
+      :nivel        => 3
     },
     {
       :id           => 7,
-      :name         => "cachivache",
-      :description  => "Comienzas el reto con 1 cachivache (un droide con forma de araña y un depósito líquido con 3 puntos de éter). A cambio de 2 piezas, puedes regenerarlo. Puede hacer las siguientes funciones: autodestrucción (dado de fuego), +1 a buscar si se coloca en el casco,  permite disparo oblicuo si se coloca en la mirilla.",
+      :name         => "Disparo a bocajarro",
+      :description  => "Permite disparar a melee con el arma, otorgando fuerza +1 en el disparo",
       :type         => "pasiva",
       :nivel        => 3,
+      :requisitos   => [1],
     },
     {
       :id           => 8,
-      :name         => "diógenes",
-      :description  => "Si tienes éxito, no gastas piezas.",
-      :type         => "pasiva"
+      :name         => "disparo perforante",
+      :description  => "El exceso de daño, atravesará, propagándose el exceso del daño, como impacto, hacia otro enemigo que esté detrás, en línea.",
+      :type         => "pasiva",
+      :nivel        => 4,
+      :rangos       => 3,
+      :requisitos   => [1],
     },
     {
       :id           => 9,
-      :name         => "disparo doble",
-      :description  => "Permite disparar 2 veces.",
-      :type         => "pasiva"
+      :name         => "diógenes",
+      :description  => "Si causas daños al disparar artillería, no gastas piezas.",
+      :type         => "pasiva",
+      :nivel        => 4,  
+      :requisitos   => [1,5],   
     },
     {
       :id           => 10,
-     :name         => "Disparo a bocajarro",
-      :description  => "Permite disparar a melee con el arma, otorgando fuerza +1 en el disparo",
-      :type         => "pasiva"
+      :name         => "Éter curativo",
+      :description  => "Permite utilizar el eter para recuperar 1 PC/rango por PE.",
+      :type         => "pasiva",
+      :nivel        => 4,
+      :requisitos   => [6],
+      :rangos       => 2,
     },
     {
       :id           => 11,
-      :name         => "Éter curativo",
-      :description  => "Permite utilizar el eter para recuperar puntos de cuerpo",
-      :type         => "pasiva"
+      :name         => "Fuego a discreción",
+      :description  => "Permite disparar una vez adicional/rango con artillería y armas de fuego.",
+      :type         => "pasiva",
+      :nivel        => 5,
+      :rangos       => 2,
+      :requisitos   => [1],
     },
     {
       :id           => 12,
       :name         => "Maestro de cachivaches",
-      :description  => "Permite llevar 1 cachivache adicional",
-      :type         => "pasiva"
+      :description  => "Permite llevar 1 cachivache adicional activo",
+      :type         => "pasiva",
+      :nivel        => 5,
+      :rangos       => 2,
+      :requisitos   => [3,3],
     },
     {
       :id           => 13,
       :name         => "Explotapelota",
-      :description  => "1 Éter: fabrica B.O.M.B.I.T.A (Balón-Orgánico-Mecánico-Bastante-Inestable-Totalmente-Abrasador) (Dura hasta final de reto: se usa como arrojadiza, pudiendo rebotar por cada escudo negro. Causa 1d6 daños de fuego en una área 2x2).",
-      :type         => "Activa",
-      :nivel        => 4
+      :description  => "fabricas y lanzas 1 B.O.M.B.I.T.A",
+      :type         => "activa",
+      :coste        => "2 PE",
+      :invocacion   => "B.O.M.B.I.T.A (Balón-Orgánico-Mecánico-Bastante-Inestable-Totalmente-Abrasador) (Dura hasta final de reto: se usa como arrojadiza, pudiendo rebotar por cada escudo negro. Causa 1d6 daños de fuego en una área 2x2).",
+      :requisitos   => [6],
+      :nivel        => 6,
     },
     {
       :id           => 14,
       :name         => "Recoger fosfitos",
-      :description  => "El ingeniero puede fabricar pimienta cada vez que invierta una acción inmediatamente después de fallar un disparo.",
-      :type         => "Reactiva",
-      :nivel        => 6
+      :description  => "El ingeniero puede fabricar 1 punto de pimienta (PP) cada vez que invierta una acción (innecesario en rango 2) inmediatamente después de fallar un disparo.",
+      :type         => "reactiva",
+      :rangos       => 2,
+      :requisitos   => [1,9],
+      :nivel        => 6,
     },
     {
       :id           => 15,
       :name         => "francotirador",
       :description  => "3 de movimiento: El siguiente disparo de artillería será con +1 potencia. El bonificador desaparece si el ingeniero se mueve.",
-      :type         => "Activa",
+      :type         => "activa",
       :nivel        => 7
     },
   ]
