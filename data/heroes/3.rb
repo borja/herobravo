@@ -2,14 +2,13 @@
 def h3
   { 
     :id           => 3,
-    :name         => "Elysa Demoneye",
+    :name         => "Bietka Demoneye",
     :personaje    => "vengador",
     :jugador      => "Iris",
-    :progenitores => ["Beliel","Elena"],
+    :progenitores => [3,"Prio"],
     :titulo       => "Condesa de Zelmuria",
     :gender       => "female",
     :status       => "reserva",
-    :historia     => 1,
     :nivel        => 7,
     :repu         => 2,
     :cuerpo       => 9,
