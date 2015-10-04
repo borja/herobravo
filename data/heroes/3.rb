@@ -5,7 +5,7 @@ def h3
     :name         => "Bietka Demoneye",
     :personaje    => "vengador",
     :jugador      => "Iris",
-    :progenitores => [3,"Prio"],
+    :progenitores => [70,"Prio"],
     :titulo       => "Condesa de Zelmuria",
     :gender       => "female",
     :status       => "reserva",
