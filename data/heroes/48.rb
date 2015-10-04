@@ -15,7 +15,6 @@ def h48
     :mente     => 3,
     :mov       => 8,
     :profesion => Profesion.new({:id => 3, :aprendiz => [0,1]}),
-    :pet       => Pet.new({:id => 17, :name => "Chop"}),
     :armadura  => Armadura.new({:id => 2}),
     :armas     => [
       Arma.new({:id => 5}),

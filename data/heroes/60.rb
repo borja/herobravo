@@ -6,6 +6,7 @@ def h60
     :jugador      => "Iris",
     :status       => "reserva",
     :progenitores => [48,"Amílcar"],
+    :pet          => Pet.new({:id => 17, :name => "Chop"}),
     :nivel        => 2,
     :cuerpo       => 8,
     :mente        => 2,
