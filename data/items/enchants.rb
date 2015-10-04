@@ -476,6 +476,11 @@ def enchants
       :name         => "ansiosa de peligro",
       :descripcion  => "Al defender con éxito: Obtienes ansia de sangre (n.1) durante 1 (acumulable) turno.",
       :tipo         => "sangre",
+    }, 
+    { :id           => 95,
+      :name         => "Oscuro",
+      :descripcion  => "+2 hechizos de sombras a elegir al inicio del reto.",
+      :tipo         => "sombras",
     },     
   ]
 end
