@@ -1,0 +1,29 @@
+<div class="information_popup_container">
+	<div class="information">
+		<h2><%= bazar.count %></h2>
+	</div>
+	<% unless bazar.empty? %>
+		<div class="popup_information">
+			<h2 style="padding: 5px 5px 5px 5px; color:white;">Familiares conocidos</h2>
+			<center><img src='/bazarfamiliares.png' alt='Familiares', id='icon3' /></center>
+			<br/>
+			<table>
+				<tr>
+					<th colspan=2>Héroe</th>
+					<th>Familiar</th>
+					<th>¿Torpe?</th>
+				</tr>
+				<% bazar.each do |h| %>
+					<tr>
+						<th><img src=<%= hero(h).img_path %> alt='<%= hero(h).name %>', id='icon' /></th>
+						<th><%= hero(h).name %> (<%= hero(h).jugador %>)</th>
+						<th>
+							<%= hero(h).pet.name %>
+						</th>
+						<th><%= hero(h).pet.torpe ? "Sí" : "No" %></th>
+					</tr>
+				<% end %>
+			</table>
+		</div>
+	<% end %>
+</div>

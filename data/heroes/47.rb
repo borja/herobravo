@@ -5,7 +5,7 @@ def h47
     :name         => "Elros Amarie",
     :personaje    => "druida",
     :jugador      => "Iris",
-    :status       => "licenciado",
+    :status       => "retirado",
     :progenitores => [29,"Conde Ragnar"],
     :pareja       => {
       :nombre      => "Stella", 
@@ -17,7 +17,6 @@ def h47
     :cuerpo       => 14,
     :mente        => 12,
     :mov          => 11,
-    :pet          => Pet.new({:id => 11, :name => "Basidio"}),
     :hechizos     => [1,2,3,6,7,8,12,16,17,18,19,20],
     :armas        => [Arma.new({:id => 0})],
     :armadura     => Armadura.new({:id => 0}),

@@ -23,5 +23,17 @@ class Pet < Hash
   
   def descripcion
     "<b>Bonificador</b>: <i>#{self.bono}</i>#{"<br><b>Penalizador: </b><i>#{self.lacra}</i>" if self.torpe}"
-  end 
+  end
+  
+  def conocidos 
+    total = []
+    heros.each do |h|
+      if h.pet
+        if h.pet.id == self.id
+          total << h.id
+        end
+      end
+    end
+    return total
+  end
 end
