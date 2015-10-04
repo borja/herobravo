@@ -96,7 +96,7 @@ def hechiceros
     },
     {
       :id           => 11,
-      :name         => "Hechicería Elemental",
+      :name         => "Hechicería elemental",
       :description  => "Recupera un hechizo de la misma escuela (No recupera la chistera)",
       :type         => "reactiva",
       :coste        => "Consumir hechizo enchisterado",
