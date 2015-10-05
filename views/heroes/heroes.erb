@@ -17,7 +17,7 @@
 			<% if main_hero || alter_hero %>
 				<tr>
 					<td><%= erb :'display/portrait', :locals => { :h => hero } %></td>
-					<td><a href=hero/<%= hero.id %>><%= hero.name %></a><br>
+					<td><a href='/hero/<%= hero.id %>'><%= hero.name %></a><br>
 						<% if ciudad?(hero.jugador).empty? %>
 							<i><%= hero.jugador %></i>
 						<% else %>

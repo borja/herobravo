@@ -3,7 +3,9 @@
 		<tr>
 			<th>Icono</th>
 			<th>Nombre</th>
-			<th>Permitidos</th>
+			<th>Pieza</th>
+			<th>Ranuras</th>
+			<th>Precio</th>
 		</tr>	
 	</thead>
 	<tbody>
@@ -12,7 +14,9 @@
 			<tr>
 				<td><img src=<%= m.img_path %> alt=<%= m.name %>, id='icon' /></td>
 				<td><%= m.name %></td>
+				<td><%= m.fits.capitalize %></td>
 				<td><%= m.max %></td>
+				<td><%= m.precio %></td>
 			</tr>
 		<% end %>
 	</tbody>
