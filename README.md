@@ -2,8 +2,7 @@ Herosheet Dashboard
 ===================
 
 [![Testing CI Status](https://travis-ci.org/borja/herobravo.svg?branch=master)](https://travis-ci.org/borja/herobravo)
-[![Dependency Status](https://gemnasium.com/Borja/herobravo.svg)](https://gemnasium.com/Borja/herobravo)
-[![Deployment Status](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)
+[![Dependency Status](https://gemnasium.com/0b53bca79633e4b1580d097e4ee23f39.svg)](https://gemnasium.com/1b264c0c7bc267406724e3b38385a310)[![Deployment Status](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)
 
 Running this application locally
 ----------------------------------
