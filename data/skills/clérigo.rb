@@ -1,77 +1,92 @@
 # encoding: UTF-8
 def clérigos
   [
+    # Nivel 2
     {
       :id           => 0,
-      :name         => "luz sagrada",
-      :description  => "El sacerdote reza y tira con 1d20 para obtener su plegaria.",
-      :type         => "pasiva",
+      :nivel        => 2,
+      :name         => "Zen",
+      :description  => "Permite repetir una plegaria.",
+      :type         => "única",
     },
     {
       :id           => 1,
-      :name         => "última plegaria",
-      :description  => "La última plegaria se considera summun",
-      :type         => "única"
+      :nivel        => 2,
+      :name         => "Rosario",
+      :description  => "Hasta el final del turno, la próxima plegaria obtiene chakra.",
+      :type         => "activa",
+      :coste        => "Movimiento"
     },
     {
       :id           => 2,
-      :name         => "teocracia",
-      :description  => "sin definir",
-      :type         => "pasiva"
+      :nivel        => 2,
+      :name         => "Última plegaria",
+      :description  => "La última plegaria se considera summun",
+      :type         => "reactiva",
     },
     {
       :id           => 3,
-      :name         => "rosario",
-      :description  => "Si el sacerdote sacrifica su movimiento, la plegaria obtiene chakra",
-      :type         => "activa"
+      :nivel        => 2,
+      :name         => "Baluarte",
+      :description  => "Los aliados heridos adyacentes, recuperan 1 PC/PM (a elegir) cuando defiendes con éxito.",
+      :type         => "reactiva",      
     },
+    # Nivel 3
     {
       :id           => 4,
-      :name         => "zen",
-      :description  => "Por cada nivel de Zen, se puede repetir una plegaria.",
-      :type         => "pasiva"
+      :nivel        => 3,
+      :name         => "Teocracia",
+      :description  => "Mientras tus heridas superen a los enemigos de la sala, puedes sumar 1 al valor del dado de plegaria.",
+      :type         => "reactiva"
     },
     {
       :id           => 5,
-      :name         => "gloria del héroe",
-      :description  => "Ignora cualquier mal. El efecto cesa al finalizar el turno del malvado brujo. Debe utilizarse antes de la tirada de ataque del malvado brujo.",
-      :type         => "pasiva"
+      :nivel        => 3,
+      :name         => "Aura de entusiasmo",
+      :description  => "+1 movimiento de todos los aliados de la S/P",
+      :type         => "pasiva",
+      :requisitos   => [0],
     },
     {
       :id           => 6,
-      :name         => "armonía",
-      :description  => "Si el sacerdote cura a 1 aliado, obtiene +1/Zen.",
-      :type         => "pasiva"
+      :nivel        => 3,
+      :name         => "Suplicar",
+      :description  => "Cuando un aliado adyacente sufra daños mientras no tengas más plegarias, recupera una.",
+      :type         => "reactiva",
+      :requisitos   => [2],
     },
     {
       :id           => 7,
-      :name         => "aura de valor",
-      :description  => "Permite obtener +1 Zen.",
-      :type         => "pasiva"
+      :nivel        => 3,
+      :name         => "Bendecir Arma",
+      :description  => "+1 dado sagrado a tu arma.",
+      :type         => "activa",
+      :coste        => "1PM",
     },
+    # Nivel 4
     {
       :id           => 8,
-      :name         => "súplica",
-      :description  => "Por definir.",
-      :type         => "única"
+      :nivel        => 4,
+      :name         => "Rezar con el corazón",
+      :description  => "Tira 1d20 en lugar de 1d10 al ejecutar una plgaria. (11-18, plegarias de nivel 2)",
+      :type         => "pasiva",
     },
     {
       :id           => 9,
-      :name         => "bendecir",
-      :description  => "A cambio de 1PM, el sacerdote bendice un arma, obteniendo así un arma sagrada.",
+      :nivel        => 4,
+      :name         => "El Martillo de Sigmar",
+      :description  => "+1 fuerza al bendecir tu arma.",
       :type         => "pasiva",
+      :requisitos   => [7],
     },
     {
       :id           => 10,
-      :name         => "crítico",
-      :description  => "Con 2d6, si se obtiene 9+ la plegaria se ejecuta con summun/chakra.",
-      :type         => "pasiva",
+      :nivel        => 4,
+      :name         => "Scutum fidei",
+      :description  => "Todos los golpes este turno se consideran frontales. +1 a tu potencia defensiva en todos los dados.",
+      :type         => "activa",
+      :coste        => "1 Plegaria",
+      :requisitos   => [3],
     },
-    {
-      :id           => 11,
-      :name         => "último ruego",
-      :description  => "Se aplica cuando el sacerdote está muriendo.",
-      :type         => "pasiva",
-    }
   ]
 end
