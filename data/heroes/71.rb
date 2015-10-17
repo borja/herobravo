@@ -10,6 +10,7 @@ def h71
     :cuerpo       => 5,
     :mente        => 5,
     :mov          => 8,
+    :repu         => 1,
     :armas        => [
       Arma.new({:id => 13 }),
       Arma.new({:id => 7 })
