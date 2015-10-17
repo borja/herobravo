@@ -11,7 +11,7 @@ def h59
     :cuerpo       => 6,
     :mente        => 5,
     :mov          => 8,
-    :repu         => 1,
+    :repu         => 2,
     :hechizos     => [12,13,14,18,19,20],
     :armas        => [Arma.new({:id =>  1}),
                       Arma.new({:id =>  4, , :enchants => [96]})],
