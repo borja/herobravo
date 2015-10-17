@@ -10,6 +10,9 @@
 			<img src='<%= skill.img_path %>' alt='<%= skill.name %>', id='icon3' />
 			<br/>
 			Habilidad <%= skill.type.capitalize %><br/>
+			<% if f = skill.foco %>
+				Foco: <%= f %><br/>
+			<% end %>
 			<% if skill.coste %>
 				Coste: <%= skill.coste %><br/>
 			<% end %>

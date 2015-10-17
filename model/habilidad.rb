@@ -3,7 +3,7 @@
 
 class Habilidad < Hash
   attr_accessor :id, :name, :description, 
-    :type, :nivel, :requisitos, :rangos, :coste, :char
+    :type, :nivel, :requisitos, :foco, :rangos, :coste, :char
   
   def initialize args
     args.each do |k,v|
