@@ -11,8 +11,11 @@ def h57
     :cuerpo       => 6,
     :mente        => 4,
     :mov          => 7,
+    :repu         => 1,
     :skills       => [0],
-    :armadura     => Armadura.new({:id => 1}),
-    :armas        => [Arma.new({:id => 3})],
+    :armadura     => Armadura.new({:id => 2}),
+    :armas        => [Arma.new({:id => 2}),
+                      Arma.new({:id => 7})],
+    :pociones => [1],
   }
 end
