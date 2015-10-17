@@ -41,7 +41,7 @@ def h2
       Miscelanea.new({:id => 18, :enchants => [66,65,67]})
     ],
     :skills       => [0,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,25,26,27,28,29,30,32,33,34,35,36,37],
-    :profesion    => Profesion.new({:id => 5, :aprendiz => [0,3,4]}),
+    :profesion    => Profesion.new({:id => 5, :aprendiz => [0,3,4,5]}),
     :piezas       => [3,6,4],
     :pociones     => [0,4,6,7,7,11],
     :pergaminos   => [
