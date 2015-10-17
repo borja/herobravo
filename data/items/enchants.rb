@@ -481,7 +481,12 @@ def enchants
       :name         => "Oscuro",
       :descripcion  => "+2 hechizos de sombras a elegir al inicio del reto.",
       :tipo         => "sombras",
-    },     
+    },
+    { :id           => 96,
+      :name         => "robusto",
+      :descripcion  => "+1 potencia a magias de tierra.",
+      :tipo         => "tierra",
+    }, 
   ]
 end
 def enchant id ;  enchants[id] end
