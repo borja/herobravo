@@ -186,6 +186,12 @@ def profesions
           :matts   => [3],
           :efecto  => "Entras en sigilo de nivel 1",
         },
+        {
+          :id      => 5,
+          :name    => "Muro de lanzas",
+          :coste   => 200,
+          :efecto  => "Si te sitúas entre un aliado con lanza y un enemigo en línea recta, le permites atacar al enemigo.",
+        },
       ],
       :artesano  => [
         { :id      => 0,
@@ -239,6 +245,11 @@ def profesions
           :name    => "Redirigir maldición",
           :coste   => 450,
           :efecto  => "Requiere una varita mágica: Redirige una maldición a la varita mágica, anulando el poder de la varita hasta final del reto.",
+        },
+        { :id      => 2,
+          :name    => "XXX",
+          :coste   => 450,
+          :efecto  => "Crear nueva, por loot de misión.",
         }
       ],
       :maestro   => [
@@ -279,8 +290,14 @@ def profesions
           :id      => 4,
           :name    => "Cabuchón I",
           :coste   => 350,
-          :efecto  => "N+: Engasta gratuitamente una gema en una ranura. (N es el nivel de la gema)",
-        }
+          :efecto  => "N+: Engasta gratuitamente una gema en una ranura. (N es el nivel de la gema).",
+        },
+        {
+          :id      => 5,
+          :name    => "Aguja de plata",
+          :coste   => 300,
+          :efecto  => "Permite a otro jugador engastar gratuitamente gemas en la ropa que haya creado como taxidermista.",
+        },
       ],
       :artesano  => [
         { :id      => 0,
