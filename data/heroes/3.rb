@@ -28,7 +28,7 @@ def h3
       Miscelanea.new({:id => 17, :enchants => [64] })
     ],
     :pet          => Pet.new({:id => 20, :name => "Jazzy"}),
-    :profesion    => Profesion.new({:id => 3, :aprendiz => [0]}),
+    :profesion    => Profesion.new({:id => 3, :aprendiz => [0,5]}),
     :tesoro       => {
       :runas => [3],
       :gemas => [18,19,27,29,21,52,10]
