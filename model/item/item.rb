@@ -28,6 +28,24 @@ class Item < Hash
     total -= self.joyas.size if self.joyas
     return total
   end
+  
+  def precio_venta
+    pvp = self.precio
+    pvp += (self.enchants.count * 100) if self.enchants 
+    pvp += (self.runas.count * 100 ) if self.runas
+    pvp += (self.joyas.count * 100 ) if self.joyas 
+    if self.gemas
+      self.gemas.each do |g| 
+        pvp += [10,25,50,100,250,500,50][g/8]
+      end
+    end
+    if (self.ranuras_libres > 0)  
+      ranuras_libres.times do |i|
+        pvp *= 1.1 
+      end
+    end
+    return pvp.to_i
+  end
    
   def img_path
     carpeta = self.enchanted? ? "magic/#{self.name + self.enchants.size.to_s}" : self.name
@@ -53,11 +71,13 @@ class Proteccion < Item
   def defensa   ; proteccion(self.id)[:defensa]   end
   def fits      ; proteccion(self.id)[:fits]      end
   def categoria ; proteccion(self.id)[:categoria] end
+  def precio    ; proteccion(self.id)[:precio]    end
 end
 
 class Miscelanea < Item
-  def name     ; miscelanea(self.id)[:name] end
-  def fits     ; miscelanea(self.id)[:fits] end
+  def name     ; miscelanea(self.id)[:name]   end
+  def fits     ; miscelanea(self.id)[:fits]   end
+  def precio   ; miscelanea(self.id)[:precio] end
 end
 
 class Arma < Item
@@ -65,6 +85,7 @@ class Arma < Item
   def ataque   ; arma(self.id)[:ataque]    end
   def diagonal ; arma(self.id)[:diagonal]  end
   def categoria; arma(self.id)[:categoria] end
+  def precio   ; arma(self.id)[:precio]    end
   def fits     ; "arma" end
 end
 
@@ -72,6 +93,7 @@ class Armadura < Item
   def name     ; armadura(self.id)[:name] end
   def defensa  ; armadura(self.id)[:defensa] end
   def categoria; armadura(self.id)[:categoria] end
+  def precio   ; armadura(self.id)[:precio] end
   def fits     ; "armadura" end
   def description 
     "<li>Categoría: #{ self.categoria}</li>
@@ -84,6 +106,7 @@ class Abalorio < Item
   def name     ; abalorio(self.id)[:name] end
   def fits     ; "abalorio" end
   def efecto   ; abalorio(self.id)[:efecto] end
+  def precio   ; abalorio(self.id)[:precio] end
 end
 
 class Util < Item
@@ -99,8 +122,9 @@ class Util < Item
 end
 
 class Pieza < Util
-  def name ; pieza(self.id)[:name]  end
-  def uso  ; pieza(self.id)[:uso]   end 
+  def name   ; pieza(self.id)[:name]  end
+  def uso    ; pieza(self.id)[:uso]   end 
+  def precio ; pieza(self.id)[:precio] end 
 end
 
 class Pocion < Util
@@ -113,6 +137,7 @@ class Pergamino < Util
   def name     ; pergamino(self.id)[:name]     end
   def max      ; pergamino(self.id)[:hechizos] end # Máximo número permitido  
   def hechizos ; self.spells.map { |s| Elemental.new({:id => s}).name } end
+  def precio   ; pergamino(self.id)[:precio] end 
 end
 
 class Material < Util
