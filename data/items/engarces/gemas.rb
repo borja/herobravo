@@ -6,6 +6,7 @@ def gemas
       :cabeza   => "+1 buscar para detectar enemigos en sigilo.",
       :cuello   => "1/reto: +1 PC a un aliado (no puede ser sobre ti mismo)",
       :pecho    => "+1 defensa vs elementales.",
+      :pies     => "1/reto: +2 movimiento. (Solo puede usarse durante la fase de movimiento)",
     } }),
     Gema.new({ :id => 1,  :name => "antracita", :fits => {
       :cabeza   => "No-muertos gobernados tienen +1 protección",
@@ -16,32 +17,42 @@ def gemas
       :cabeza   => "Ilumina",
       :cuello   => "Si eres objetivo de un hechizo de Aire acumulas 1 carga. 3 cargas: Lanzas un genio (obligatoriamente en fase trepidante)",
       :pecho    => "+1 vs hechizos de Aire.",
+      :pies     => "1/reto: Si has encontrado ¡Oro! en la búsqueda de tesoros, dispones de tu fase de movimiento",
     } }),
     Gema.new({ :id => 3,  :name => "serpentina", :fits => {
       :cabeza   => "Si tu familiar es una serpiente, duplica su efecto.",
       :cuello   => "+1 carga de áspid al causar daño por veneno. 2 cargas de áspid: +2 de movimiento.",
       :arma     => "envenena",
       :pecho    => "+1 defensa vs pieles verdes.",
+      :pies     => "+2 movimiento mientras estés envenenado",
     } }),
     Gema.new({ :id => 4,  :name => "ojo de tigre", :fits => {
       :cabeza   => "1/reto: Puedes desvelar todas las trampas de tu sala o pasillo.",
       :cuello   => "",
       :pecho    => "Los ataques por uno de los flancos, se consideran frontales.",
-      :pies     => "1/reto: +90º de giro en cualquier momento.",      
+      :pies     => "1/reto: +90º de giro en cualquier momento.", 
     } }),
     Gema.new({ :id => 5,  :name => "hematites", :fits => {
       :cabeza   => "+1 PM si no puedes lanzar hechizos.",
       :cuello   => "1/reto: +1 potencia en un hechizo de nivel 1. Si matara, puedes invertir 2PM en recuperar esta habilidad.",
       :pecho    => "+1 defensa vs constructos.",
+      :pies     => "1/reto: +1 movimiento por cada hechizo lanzado en S/P. (Solo puede usarse durante la fase de movimiento)",
     } }),
     Gema.new({ :id => 6,  :name => "piedra pómez", :fits => {
       :cabeza   => "+1 vs hechizos de Tierra",
       :cuello   => "1/reto: +1 saltar fosos. Si tuvieras éxito, puedes gastar 1PM en recuperar esta habilidad.",
       :pecho    => "-2 penalizador de movimiento de la armadura.",
+      :pies     => "1/reto: +1 saltar fosos. Si tienes éxito, 1PM: Recupera esta habilidad.",
     } }),
-    Gema.new({ :id => 7,  :name => "cuarzo", :fits => {} }),
+    Gema.new({ :id => 7,  :name => "cuarzo", :fits => {
+      :cabeza   => "+1 vs hechizos de Agua",
+      :cuello   => "1/reto: +1 potencia a un hechizo no-dañino.",
+      :pecho    => "1/reto: duplica el efecto de una habilidad otorgada por una gema engarzada en la pieza del pecho. (Salvo cuarzo)",
+      :pies     => "+3 PC ó 2PM (a elegir) al cruzar por primera vez una puerta secreta.",
+    } }),
     ## Gemas Infrecuentes (nivel 2)
     Gema.new({ :id => 8,  :name => "almandino", :fits => {
+      :cabeza   => "+5 movimiento al buscar con éxito, hasta final del turno.",     
       :pecho    => "+1 vs Miedo",
       :hombros  => "+1 galardón al matar con ataques sin armas. Activa, 3G: +2 de fuerza en tu siguiente ataque sin armas.",
       :pies     => "-1 al empuje vs bestias",

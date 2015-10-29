@@ -10,14 +10,10 @@ class Profesion < Hash
     end
   end
   
-  def img_path
-    "'../../images/profesiones/#{self.name}.png'"
-  end
+  def img_path ; "'../../images/profesiones/#{self.name}.png'" end
   
   def name         ;  profesion(self.id)[:name]     end
   def aprendizajes ;  profesion(self.id)[:aprendiz] end
   def artesanias   ;  profesion(self.id)[:artesano] end
   def maestrias    ;  profesion(self.id)[:maestro]  end
-  
-  
 end
