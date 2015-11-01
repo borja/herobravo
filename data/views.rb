@@ -110,6 +110,14 @@ def views
       }
     }, 
     {
+      :route    => "calculador",
+      :template => { 
+        :left  => 'objetos/left/content2',
+        :main  => 'objetos/calculador',
+        :right => 'objetos/left/content1',
+      }
+    }, 
+    {
       :route    => "monturas",
       :template => { 
         :left   => 'mapa/ciudades',
