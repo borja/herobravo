@@ -2,15 +2,12 @@ ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'rack/test'
 require_relative 'app.rb'
-# Fake Data Base
-require './data/db'
+require './data/db' # Fake Data Base
 require './model/model'
  
 include Rack::Test::Methods
  
-def app
-  Sinatra::Application
-end
+def app ; Sinatra::Application end
 
 describe ".hero" do
 
