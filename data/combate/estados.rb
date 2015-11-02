@@ -45,6 +45,16 @@ def estados
       :id     => 8,
       :nombre => "paralizado",
       :efecto => "No puedes mover, -2 de ataque y -2 de defensa.",
+    },
+    {
+      :id     => 9,
+      :nombre => "ardiendo",
+      :efecto => "Al inicio de tu turno tirarás 1 dado especial rojo por cada contador de "ardiendo" sobre ti.",
+    },
+    {
+      :id     => 10,
+      :nombre => "envenenado",
+      :efecto => "Al inicio de tu turno tirarás 1 dado especial verde por cada contador de "veneno" sobre ti.",
     }
   ]
 end
