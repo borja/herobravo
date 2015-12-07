@@ -1,10 +1,6 @@
 <table id='tresp'>
 	<thead>
 		<th colspan='2'>Plegaria</th>	
-		<th>Tipo</th>
-		<th>Duración</th>
-		<th>Potencia</th>		
-		<th>Alcance</th>
 		<th>Efecto</th>			
 	</thead>
 	<tbody>
@@ -12,10 +8,6 @@
 			<tr style=<%= p.color %>>
 				<td><%= erb :'display/spell', :locals => {:spell => p} %></td>
 				<td><%= p.name.capitalize %></td>
-				<td><%= p.tipo.capitalize %></td>
-				<td><%= p.duracion.to_s.capitalize %></td>
-				<td><%= p.potencia.to_s.capitalize %></td>
-				<td><%= p.alcance.to_s.capitalize %></td>
 				<td><%= p.efecto %></td>
 			</tr>
 		<% end %>
