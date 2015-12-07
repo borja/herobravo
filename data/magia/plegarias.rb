@@ -125,7 +125,7 @@ def plegarias
     }),
     Plegaria.new({ 
       :id       => 11,
-      :name     => "Dictamen Sagrado",
+      :name     => "Dictamen sagrado",
       :tipo     => "evocación",
       :duracion => 'E',
       :potencia => 2,
