@@ -158,7 +158,7 @@ def plegarias
     }),
     Plegaria.new({ 
       :id       => 14,
-      :name     => "Forma Espiritual",
+      :name     => "Forma espiritual",
       :tipo     => "evocación",
       :duracion => 'E',
       :potencia => 2,
