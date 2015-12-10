@@ -24,8 +24,12 @@
 			</table><br/>
 		</center>
 		<% if spell.class == Plegaria %>
-			<ul><li>Chakra : <%= spell.chakra %>
-				<li>Summun : <%= spell.summun %>
+			<ul><li>Chakra : <%= spell.chakra %></li>
+				<li>Summun : <%= spell.summun %></li>
+			</ul>
+		<% end %>
+		<% if spell.diablura %>
+			<ul><li>Diablura : <%= spell.diablura %></li>
 			</ul>
 		<% end %>
 	</div>

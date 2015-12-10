@@ -5,10 +5,9 @@
 <% unless hero.elementos.empty? %>
 	<table id='tresp'>
 		<thead>
-			<th>Icono</th>
-			<th>Elemento</th>
 			<th>Nivel</th>
-			<th>Nombre</th>
+			<th>Elemento</th>
+			<th colspan=2>Hechizo</th>
 			<th>Descripción</th>
 		</thead>
 		<tbody>
@@ -16,10 +15,10 @@
 				<% if h = hero.send(ley[:nombre]) %>
 					<% h.each do |magia|%>	
 						<% m = send(ley[:method], magia) %>
-						<tr style=<%= m.color %>>				
-							<td><img src=<%= m.img_path %> alt=<%= m.name %>, id='icon' /></td>
+						<tr style=<%= m.color %>>	
+							<td><%= m.nivel %></td>	
 							<td><%= m.elemento.capitalize %></td>
-							<td><%= m.nivel %></td>
+							<td><%= erb :'display/spell', :locals => {:spell => m} %></td>		
 							<td><%= m.name.capitalize %></td>
 							<td><%= m.efecto %></td>
 						</tr>

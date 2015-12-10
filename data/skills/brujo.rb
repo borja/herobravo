@@ -3,11 +3,10 @@ def brujos
   [
     {
       :id           => 0,
-      :name         => "Pacto demoníaco",
-      :description  => "Instinto: 1 dado azul de defensa este turno.",
-      :type         => "activa",
-      :coste        => "1PM",
-      :nivel        => 1,
+      :name         => "Titiritero",
+      :description  => "Los demonios invocados tienen robo de vida mientras tus PC actuales superen los suyos.",
+      :type         => "pasiva",
+      :nivel        => 2,
     },
     {
       :id           => 1,
@@ -46,8 +45,9 @@ def brujos
     {
       :id           => 5,
       :name         => "Demonología sanguinaria",
-      :description  => "Si en su turno se autoinflinge daños por habilidades, sus invocaciones obtienen +1 de ataque hasta que sean destruidas.",
+      :description  => "Si en su turno se autoinflinge daños por habilidades, sus invocaciones obtienen +1/rango de ataque hasta que sean destruidas.",
       :type         => "reactiva",
+      :rangos       => 2,
       :nivel        => 3,
       :requisitos   => [1,3]
     },
@@ -126,6 +126,24 @@ def brujos
       :coste        => "1PC",
       :nivel        => 6,
       :requisitos   => [3,12],
+    },
+    {
+      :id           => 15,
+      :name         => "Fanatismo impío",
+      :description  => "Recupera consumir lacayo, cuando éste mata a un objetivo atormentado o maldito.",
+      :type         => "reactiva",
+      :nivel        => 6,
+      :requisitos   => [8,9],
+    },
+    {
+      :id           => 16,
+      :name         => "Huargo infernal",
+      :description  => "Invoca un huargo infernal",
+      :type         => "activa",
+      :coste        => "2PC y 2PM",
+      :nivel        => 6,
+      :invocación   => "4/2, con 1 PM y 2 PC. Habilidades: Cargar, morder, miedo 6+, permite lanzar hechizos de sombras gratuitamente al causar miedo.",
+      :requisitos   => [3,5,6,12],
     }
   ]
 end

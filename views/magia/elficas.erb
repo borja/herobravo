@@ -6,7 +6,7 @@
 	<tbody>
 		<% elficas.each do |e| %>
 			<tr style=<%= e.color %>>				
-				<td><img src=<%= e.img_path %> alt=<%= e.name %>, id='icon' /></td>
+				<td><%= erb :'display/spell', :locals => {:spell => e} %></td>
 				<td><%= e.name.capitalize %></td>
 				<td><%= e.efecto %></td>
 			</tr>
