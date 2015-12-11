@@ -1,6 +1,7 @@
 <div class="information_popup_container" >
 	<div class="information">
-		<% img_path = "images/caminos/#{camino}/#{paso.first}.png" %>
+		<% paso_path = "images/caminos/#{camino}/#{paso.first}.png" %>
+		<%  img_path = "images/caminos/#{camino.first}.png" %>
 		<img src='<%= img_path %>' alt=<%= paso.first %>, id='icon' />
 	</div>
 	<div class="popup_information">
@@ -8,7 +9,7 @@
 			<header>
 				<h3><%= paso.first %></h3>
 			</header>
-			<img src='<%= img_path %>' alt='<%= paso.first %>', id='icon3' />
+			<img src='<%= paso_path %>' alt='<%= paso.first %>', id='icon3' />
 			<br/>
 			<p><%= paso.last %></p>		
 		</center>
