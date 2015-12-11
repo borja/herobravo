@@ -172,6 +172,7 @@ def gemas
       :hombros  => "+1 galardón al matar por la espalda. Activa, 3G: Tu siguiente ataque roba mente. Pasiva (5G): +1 causar miedo.",
       :muñecas  => "+1 opresión al sufrir daño por Tenebro o maldiciones. Activa, 3o.: Lanza caricia de Nagash. Pasiva (5o.): +3 vs Tenebro",
       :pies     => "Puedes atravesar +1 no-muerto durante la fase trepidante",
+      :abalorio => "1/reto: Un ataque en conjunto en el que participes tiene Odio.",
     } }),
     Gema.new({ :id => 25, :name => "esmeralda", :fits => {
       :cabeza   => "Recupera 1PC en cada fase trepidante",
@@ -185,6 +186,7 @@ def gemas
       :hombros  => "+1 galardón al matar con esbirros. Activa, 3G: +2 PC al portador. Pasiva (5G): esbirros defienden con dados verdes",
       :muñecas  => "+1 opresión al recibir daño por peste. Activa, 3o.: Elimina un estado de peste. Pasiva (5o.): +1PC y +1PM/turno mientras haya enemigos visibles.",
       :pies     => "-1 empuje de enemigos en casillas colindantes con paredes.",
+      :abalorio => "1/reto: Absorbe un veneno a otra miniatura (cesa el efecto) y aplícaselo a su arma principal.",
     } }),
     Gema.new({ :id => 26, :name => "zafiro", :fits => {
       :cuello   => "+1 magia de agua de nivel 2 a elegir al inicio del reto.",
@@ -197,6 +199,7 @@ def gemas
       :hombros  => "+1 galardón al matar con hechizos de nivel 1. Activa, 3G: Lanzas genio. Pasiva (5G): +1 penetración mágica",
       :muñecas  => "+1 opresión al fallar hechizos de nivel 1. Activa, 3o.: Lanzas niebla como aura. Pasiva (5o.): +1 vs todos los hechizos.",
       :pies     => "3PM - N : Levitar. N es el número de zafiros engarzados.",
+      :abalorio => "1/reto: congela a todas las unidades a tu alrededor",
     } }),
     Gema.new({ :id => 27, :name => "topacio", :fits => {
       :cuello   => "+1 nivel del tesoro al obtener: ¡Oro!",
@@ -209,6 +212,7 @@ def gemas
       :hombros  => "+1 galardón al obtener tesoros beneficiosos. Activa, 3G: Tira un tesoro adicional. Pasiva (5G): +1 nivel de tus tesoros.",
       :muñecas  => "+1 opresión al obtener tesoros perjudiciales. Activa, 3o.: Repite una tirada de tesoro. Pasiva (5o.): En los tesoros de piezas de engarces + 1 dado a repetir.",
       :pies     => "+1 movimiento",
+      :abalorio => "1/reto: Arrojas un arma a 2 manos como acción gratuita ó +1 potencia a tu siguiente hechizo de aire.",
     } }),
     Gema.new({ :id => 28, :name => "rubí", :fits => {
       :cuello   => "+1 magia de fuego de nivel 2 a elegir al inicio del reto.",
@@ -221,6 +225,7 @@ def gemas
       :hombros  => "+1 galardón al matar frontalmente cuerpo a cuerpo. Activa, 3G: Elimina efectos de fuego y sangrado. Pasiva (5G): +1 fuerza a un éxito al atacar.",
       :muñecas  => "+1 opresión al fallar recibir daño físico. Activa, 3o.: +2PC. Pasiva (5o.): Tu/s arma/s ganan: Prender Arma",
       :pies     => "5 movimiento: Reduce -1 efecto de ardiendo.",
+      :abalorio => "1/reto: La siguiente herida que recibas sanará (la misma cantidad) en lugar de dañar",
     } }),
     Gema.new({ :id => 29, :name => "diamante", :fits => {
       :cuello   => "1/reto: No puedes ser objetivo de hechizos ni habilidades (Instinto)",
@@ -234,6 +239,7 @@ def gemas
       :hombros  => "+1 galardón al bloquear ataques. Activa, 3G: Elimina aturdimientos. Pasiva (5G): +1 protección",
       :muñecas  => "+1 opresión al recibir ataques en conjunto. Activa, 3o.: Lanzas obelisco con/sin diablura. Pasiva (5o.): +1 empujar",
       :pies     => "1PM: Puedes girar +90º durante la fase de instintos",
+      :abalorio => "1/reto: (Instinto) Tirarás defensa por separado en los ataques en conjunto.",
     } }),
     Gema.new({ :id => 30, :name => "jacinto", :fits => {
       :cuello   => "+1 magia de sangre de nivel 2 a elegir al inicio del reto.",
@@ -246,6 +252,7 @@ def gemas
       :hombros  => "+1 galardón al matar en conjunto. Activa, 3G: Todos odian a la víctima. Pasiva (5G): En conjunto, todos cobran la pieza.",
       :muñecas  => "+1 opresión al ser el único héroe en recibir daño durante el turno del MB. Activa, 3o.: Lanzas anemia. Pasiva (5o.): obtienes la plegaria: lágrimas del mártir",
       :pies     => "Puedes retroceder +1 casilla cada vez que recibas daño físico.",
+      :abalorio => "1/reto: Invoca un espíritu guardián murciélago, a tu servicio. (Solo se puede tener un espíritu invocado)",
     } }),
     Gema.new({ :id => 31, :name => "ágata", :fits => {
       :cuello   => "+1 magia de aire de nivel 2 a elegir al inicio del reto.",
@@ -258,6 +265,7 @@ def gemas
       :hombros  => "+1 galardón al saltar fosos y esquivar trampas. Activa, 3G: Lanzas una plegaria. Pasiva (5G): +1 saltar fosos /esquivar trampas.",
       :muñecas  => "+1 opresión al ser penalizado en movimiento/turno. Activa, 3o.: Lanzas ráfaga como aura. Pasiva (5o.): Tus instintos interrumpen",
       :pies     => "Puedes ignorar +1 interrupción causada por acciones reactivas a tu movimiento.",
+      :abalorio => "1/reto: Añade una fase de movimiento al final de tu turno.",
     } }),
     ## Piedras de Poder
     Gema.new({ :id => 32, :name => "cráneo", :fits => {
