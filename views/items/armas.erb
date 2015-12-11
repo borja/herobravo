@@ -1,8 +1,7 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<th>Icono</th>
-			<th>Nombre</th>
+			<th colspan=2>Arma</th>
 			<th>Categoría</th>
 			<th>Ataque</th>
 			<th>Diagonal</th>
@@ -14,7 +13,7 @@
 		<% armas.each do |item| %>
 			<% a = Arma.new(item) %>
 			<tr>
-				<td><img src=<%= a.img_path %> alt=<%=a.name%>, id='icon' /></td>
+				<td><%= erb :'display/arma', :locals => { :a => a} %></td>
 				<td><%= a.name %></td>
 				<td><%= a.categoria %></td>
 				<td><%= a.ataque %></td>
