@@ -24,6 +24,6 @@ def h15
     :piezas       => [8],
     :pociones     => [1,3,3],
     :profesion    => Profesion.new({:id => 1,  :aprendiz => [0,3]}),  
-    :pet          => Pet.new({:id  => 8, :name => "Naussyca"}),            
+    :pet          => Pet.new({:id  => 2, :name => "Naussyca"}),            
   }
 end

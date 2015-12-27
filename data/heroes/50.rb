@@ -7,13 +7,16 @@ def h50
     :jugador      => "Irene",
     :status       => "activo",
     :historia     => 2,
-    :nivel        => 2,
-    :cuerpo       => 8,
+    :nivel        => 4,
+    :cuerpo       => 9,
     :mente        => 3,
-    :mov          => 6,
+    :mov          => 7,
     :oro          => 58,
-    :skills       => [1,2],
-    :mounts       => [3],                
+    :skills       => [2,4],
+    :mounts       => [3],    
+    :pet          => Pet.new({:id  => 2, :name => "Aserrín Aserrán"}), 
+    :profesion    => Profesion.new({:id => 6, :aprendiz => [0]}),
+    :piezas       => [3],           
     :armas        => [
       Arma.new({:id => 11}),
       Arma.new({:id => 7})
@@ -25,6 +28,6 @@ def h50
     ],
     :tesoro       => {
       :runas => [3]
-    }
+    },
   }
 end
