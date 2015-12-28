@@ -259,7 +259,10 @@ def views
     {
       :route    => "maestrodearmas",
       :title    => "Maestro de Armas",
-      :template => { :main => 'ciudad/maestrodearmas' }
+      :template => { 
+        :main => 'ciudad/maestrodearmas',
+        :right => 'reglamento/derecha/personajes'
+      }
     },
     {
       :route    => "notaria",

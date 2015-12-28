@@ -1,15 +1,14 @@
 # encoding: UTF-8
 
-# Comunes
-require './data/skills/maestrodearmas'
-
 pjs = ["caminante","brujo","vengador",
        "hoplita","beastslord","bersérker",
        "hechicero","invocador","conjurador",
        "paladín","clérigo","sacerdote",
        "derviche","arquero","druida",
        "ladrón","asesino","nigromante",
-       "matador","falangista","ingeniero"]
+       "matador","falangista","ingeniero",
+       "maestrodearma"
+     ]
 
 # Generic clase creator
 pjs.each do |pj| 
