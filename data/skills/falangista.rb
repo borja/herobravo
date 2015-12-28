@@ -5,7 +5,8 @@ def falangistas
       :id           => 0,
       :name         => "empujar",
       :description  => "Los enemigos suman un punto al multiplicador de proximidad del falangista cuando se desplacen a su alrededor.",
-      :type         => "pasiva"
+      :type         => "pasiva",
+      :nivel        => 2,
     },
     {
       :id           => 1,
@@ -45,10 +46,9 @@ def falangistas
     },
     {
       :id           => 7,
-      :name         => "gloria del héroe",
-      :description  => "Ignora cualquier mal. Se debe declarar al inicio del turno del Malvado Brujo.",
-      :type         => "única",
-      :nivel        => 6,
+      :name         => "Aguantar posición",
+      :description  => "Si el falangista renuncia a su movimiento voluntariamente (o por cualquier otro motivo voluntario), no podrá ser desplazado por habilidades o efectos",
+      :type         => "Reactiva"
     },
     {
       :id           => 8,
@@ -59,26 +59,33 @@ def falangistas
     {
       :id           => 9,
       :name         => "provocar",
-      :descripcion  => "incita a un enemigo en concreto a atacarle",
+      :description  => "incita a un enemigo en concreto a atacarle",
       :type         => "activa"
     },
     {
       :id           => 10,
       :name         => "bandeja",
-      :descripcion  => "porta sobre sí a un aliado que adquiere su defensa",
+      :description  => "porta sobre sí a un aliado que adquiere su defensa",
       :type         => "activa",
     }, 
     {
       :id           => 11,
       :name         => "rompedientes",
-      :descripcion  => "+1 fuerza al atacar con escudos",
+      :description  => "+1 fuerza al atacar con escudos",
       :type         => "pasiva",
     },
     {
       :id           => 12,
       :name         => "sangramos todos",
-      :descripcion  => "1 Punto de Honor: En la fase trepidante recibe -1 daño de cada aliado",
+      :description  => "1 Punto de Honor: En la fase trepidante recibe -1 daño de cada aliado",
       :type         => "activa",
+    },
+    {
+      :id           => 13,
+      :name         => "Escudo de espalda",
+      :description  => "Permite llevar un tercer escudo. (Los ataques por la espalda se consideran flanco)",
+      :type         => "Pasiva",
+      :nivel        => 10,
     },
   ]
 end

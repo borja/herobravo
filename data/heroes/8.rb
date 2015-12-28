@@ -8,10 +8,10 @@ def h8
     :status       => "activo",
     :historia     => 1,
     :premio       => 1,
-    :nivel        => 8,
-    :cuerpo       => 11,
-    :mente        => 4,
-    :mov          => 8,
+    :nivel        => 10,
+    :cuerpo       => 13,
+    :mente        => 5,
+    :mov          => 10,
     :mounts       => [1],
     :armas        => [Arma.new({:id => 7, :runas => [9]}), 
                       Arma.new({:id => 7})],
@@ -24,7 +24,7 @@ def h8
     :piezas       => [3],
     :pet          => Pet.new({:id  => 18, :name => "pendeja", :torpe => true}),
     :profesion    => Profesion.new({:id => 3,  :aprendiz => [0,1,3]}),
-    :skills       => [0,1,2,3,4,5,6,7,8,9,10,11,12],
+    :skills       => [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
     :tesoro       => {:gemas => [3,12,29,2,13,2,30] },
   }
 end
