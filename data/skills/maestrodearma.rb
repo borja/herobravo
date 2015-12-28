@@ -24,7 +24,7 @@ def maestrodearmas
     {
       :id           => 4,
       :name         => "Esgrima",
-      :descripcion  => "El exceso de éxitos de ataque se pueden añadir como éxitos en la defensa.",
+      :descripcion  => "El exceso de éxitos de ataque se pueden añadir como éxitos en la defensa. (Al combatir con armas de filo, excepto dagas)",
       :coste        => "250",
     },
     {
@@ -50,6 +50,18 @@ def maestrodearmas
       :name         => "Dominio de la maza",
       :descripcion  => "Las águilas imperiales causan ambos efectos: aturden e inflingen daño.",
       :coste        => "100",
+    },
+    {
+      :id           => 9,
+      :name         => "Dominio de puñales",
+      :descripcion  => "Desenvainar/Envainar dagas es una acción gratuita.",
+      :coste        => "100",
+    },
+    {
+      :id           => 10,
+      :name         => "Pértiga",
+      :descripcion  => "+1 saltar fosos al estar equipado con un bastón.",
+      :coste        => "250",
     }
   ]
 end
