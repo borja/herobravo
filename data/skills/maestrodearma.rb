@@ -2,7 +2,7 @@
 def maestrodearmas
   [
     { :id           => 0,
-      :name         => "empujar",
+      :name         => "Empujar",
       :descripcion  => "Los enemigos suman un punto al multiplicador de proximidad del personaje cuando se desplacen a su alrededor.",
       :coste        => "300",
     },
@@ -41,7 +41,7 @@ def maestrodearmas
     },
     {
       :id           => 7,
-      :name         => "Hacha Voladora",
+      :name         => "Hacha voladora",
       :descripcion  => "Se pueden arrojar hachas en diagonal",
       :coste        => "100",
     },
