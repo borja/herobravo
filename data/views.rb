@@ -357,12 +357,18 @@ def views
     {
       :route    => "estados",
       :title    => "Estados de Combate",
-      :template => { :main  => 'reglamento/combate/estados' }
+      :template => { 
+        :main  => 'reglamento/combate/estados',
+        :right => 'reglamento/derecha/combate'
+      }
     },    
     {
       :route    => "posiciones",
       :title    => "Posiciones de Combate",
-      :template => { :main  => 'reglamento/combate/posiciones' }
+      :template => { 
+        :main  => 'reglamento/combate/posiciones', 
+        :right => 'reglamento/derecha/combate'
+      }
     },    
     {
       :route    => "resistencias",
