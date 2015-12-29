@@ -486,7 +486,12 @@ def enchants
       :name         => "robusto",
       :descripcion  => "+1 potencia a magias de tierra.",
       :tipo         => "tierra",
-    }, 
+    },
+    { :id           => 97,
+      :name         => "de ópalo",
+      :descripcion  => "+2 vs Rayo, +2 vs Psiónica",
+      :tipo         => "tierra",
+    } 
   ]
 end
 def enchant id ;  enchants[id] end
