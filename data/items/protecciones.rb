@@ -145,7 +145,16 @@ def proteccions
       :fits       => "cabeza",
       :legendario => true,
       :precio     => 1000,
-    }
+    },
+    { 
+      :id        => 16,
+      :name      => "guanteletes",
+      :categoria => "metal",
+      :defensa   => 1,
+      :ranuras   => 2,
+      :fits      => "manos",
+      :precio	   => 600,
+    },
   ]
 end
 

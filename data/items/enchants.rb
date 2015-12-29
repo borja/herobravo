@@ -491,7 +491,17 @@ def enchants
       :name         => "de ópalo",
       :descripcion  => "+2 vs Rayo, +2 vs Psiónica",
       :tipo         => "tierra",
-    } 
+    },
+    { :id           => 98,
+      :name         => "de mithril",
+      :descripcion  => "+1 dado azul de defensa. +1p a todos los dados azules de defensa.",
+      :tipo         => "tierra",
+    }, 
+    { :id           => 99,
+      :name         => "de competencia",
+      :descripcion  => "Al usarse para sujetar un escudo: +1PM/escudo.<br/>Al usarse para sujetar un arma: +1PC/arma.",
+      :tipo         => "psiónica",
+    }, 
   ]
 end
 def enchant id ;  enchants[id] end

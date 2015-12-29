@@ -13,11 +13,16 @@ def h8
     :mente        => 5,
     :mov          => 10,
     :mounts       => [1],
-    :armas        => [Arma.new({:id => 7, :runas => [9]}), 
-                      Arma.new({:id => 7})],
+    :armas        => [
+      Arma.new({:id => 7, :runas => [9]}), 
+      Arma.new({:id => 7})
+    ],
     :armadura     => Armadura.new({:id => 7}),
-    :proteccions  => [Proteccion.new({:id => 13}),
-                      Proteccion.new({:id => 3, :enchants => [0]})],
+    :proteccions  => [
+      Proteccion.new({:id => 13}),
+      Proteccion.new({:id => 3, :enchants => [0]}),
+      Proteccion.new({:id => 16, :ranuras => 2, :enchants => [98,99] })
+    ],
     :miscelaneas  => [Miscelanea.new({:id => 1, :enchants => [10]}),
                       Miscelanea.new({:id => 10,:enchants => [0]})],
     :pergaminos   => [Pergamino.new({:id => 2, :spells   => [14]})],
