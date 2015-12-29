@@ -359,20 +359,26 @@ def views
       :title    => "Estados de Combate",
       :template => { 
         :main  => 'reglamento/combate/estados',
-        :right => 'reglamento/derecha/combate'
+        :right => 'reglamento/derecha/combate',
+        :right2 => 'reglamento/derecha/dados'
       }
     },    
     {
       :route    => "posiciones",
       :title    => "Posiciones de Combate",
       :template => { 
-        :main  => 'reglamento/combate/posiciones', 
-        :right => 'reglamento/derecha/combate'
+        :main   => 'reglamento/combate/posiciones', 
+        :right  => 'reglamento/derecha/combate',
+        :right2 => 'reglamento/derecha/dados'
       }
     },    
     {
       :route    => "resistencias",
-      :template => { :main  => 'reglamento/combate/resistencias' }
+      :template => { 
+        :main  => 'reglamento/combate/resistencias',
+        :right => 'reglamento/derecha/combate',
+        :right2 => 'reglamento/derecha/dados'
+      }
     },
     {
       :route    => "torre",
