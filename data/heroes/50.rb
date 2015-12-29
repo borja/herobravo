@@ -12,7 +12,7 @@ def h50
     :mente        => 3,
     :mov          => 7,
     :oro          => 58,
-    :skills       => [2,4],
+    :skills       => [2,3,4,5,8,9],
     :mounts       => [3],    
     :pet          => Pet.new({:id  => 2, :name => "Aserrín Aserrán"}), 
     :profesion    => Profesion.new({:id => 6, :aprendiz => [0]}),
