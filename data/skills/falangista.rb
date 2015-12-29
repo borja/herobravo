@@ -12,76 +12,104 @@ def falangistas
       :id           => 1,
       :name         => "doble escudo",
       :description  => "permite llevar dos escudos a la vez. Se puede atacar y defender con ellos.",
-      :type         => "Pasiva"
+      :type         => "Pasiva",
+      :nivel        => 2,
     },
     {
       :id           => 2,
       :name         => "tortuga",
-      :description  => "por cada aliado que este a su lado cuerpo a cuerpo, salvo delante de detras, tiene +1 potencia en la defensa",
-      :type         => "Pasiva"
+      :description  => "+1 potencia en la defensa por cada aliado que este a su lado cuerpo a cuerpo. (Expcepto las 3 casillas de la espalda).",
+      :type         => "Pasiva",
+      :nivel        => 2,
     },
     {
       :id           => 3,
       :name         => "represalias",
       :description  => "El atacante recibe el exceso de defensa como ataque defendible.",
-      :type         => "Pasiva"
+      :type         => "Pasiva",
+      :nivel        => 2,
     },
     {
       :id           => 4,
       :name         => "¡A salvo!",
-      :description  => "sacrificando el movimiento, el falangista le da su defensa a un aliado.",
-      :type         => "Pasiva"
+      :description  => "Otorga tu defensa a un aliado adyacente.",
+      :type         => "Activa",
+      :coste        => "Su próximo movimiento", 
+      :nivel        => 3,
     },
     {
       :id           => 5,
       :name         => "honorable",
-      :description  => "al recibir una herida, recibe 1 punto de honor",
-      :type         => "Pasiva"
+      :description  => "+1 punto de honor (PH) al recibir una herida",
+      :type         => "Reactiva",
+      :nivel        => 3,
     },
     {
       :id           => 6,
       :name         => "bastión",
-      :description  => "por 1 punto de honor aumenta en +1 potencia en la defensa",
-      :type         => "Pasiva"
+      :description  => "+1 potencia en un dado de defensa durante 1/rango turnos.",
+      :type         => "Activa",
+      :coste        => "1 PH",
+      :rangos       => 3,
+      :nivel        => 3,
     },
     {
       :id           => 7,
       :name         => "Aguantar posición",
       :description  => "Si el falangista renuncia a su movimiento voluntariamente (o por cualquier otro motivo voluntario), no podrá ser desplazado por habilidades o efectos",
-      :type         => "Reactiva"
+      :type         => "Reactiva",
+      :nivel        => 4,
     },
     {
       :id           => 8,
       :name         => "zona de combate",
       :description  => "permite golpear a cualquier enemigo en 180º con escudos.",
-      :type         => "pasiva"
+      :type         => "pasiva",
+      :nivel        => 4,
     },
     {
       :id           => 9,
       :name         => "provocar",
-      :description  => "incita a un enemigo en concreto a atacarle",
-      :type         => "activa"
+      :description  => "Incita a un enemigo/rango en concreto a atacarle. (psicología)",
+      :type         => "activa",
+      :nivel        => 5,
+      :rangos       => 2,
     },
     {
       :id           => 10,
       :name         => "bandeja",
-      :description  => "porta sobre sí a un aliado que adquiere su defensa",
+      :description  => "Porta sobre 1/rango escudo a un aliado, otorgándole su defensa",
+      :rangos       => 3,
       :type         => "activa",
+      :nivel        => 6,
+      :coste        => "1 acción"
     }, 
     {
       :id           => 11,
       :name         => "rompedientes",
       :description  => "+1 fuerza al atacar con escudos",
       :type         => "pasiva",
+      :nivel        => 7,
     },
     {
       :id           => 12,
       :name         => "sangramos todos",
-      :description  => "1 Punto de Honor: En la fase trepidante recibe -1 daño de cada aliado",
-      :type         => "activa",
+      :description  => "Redirige 1/rango daño inflingido a cada aliado durante el turno del Malvado Brujo. Se declara durante la fase trepidante",
+      :type         => "Activa",
+      :coste        => "1PH",
+      :rangos       => 2,
+      :nivel        => 7,
     },
     {
       :id           => 13,
+      :name         => "Defensor templado",
+      :description  => "+1PM/rango al defender con éxito",
+      :type         => "Reactiva",
+      :rangos       => 2,
+      :nivel        => 8,
+    },
+    {
+      :id           => 14,
       :name         => "Escudo de espalda",
       :description  => "Permite llevar un tercer escudo. (Los ataques por la espalda se consideran flanco)",
       :type         => "Pasiva",

@@ -24,7 +24,7 @@ def h8
     :piezas       => [3],
     :pet          => Pet.new({:id  => 18, :name => "pendeja", :torpe => true}),
     :profesion    => Profesion.new({:id => 3,  :aprendiz => [0,1,3]}),
-    :skills       => [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+    :skills       => [0,1,2,3,4,5,6,7,8,9,10,11,12,14],
     :tesoro       => {:gemas => [3,12,29,2,13,2,30] },
   }
 end
