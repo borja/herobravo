@@ -55,7 +55,9 @@ def h2
     },
     :abalorios => [
       Abalorio.new({:id => 1}),
-      Abalorio.new({:id => 2})
+      Abalorio.new({:id => 2}),
+      Abalorio.new({:id => 5}),
+      Abalorio.new({:id => 6})
     ],                      
   }
 end
