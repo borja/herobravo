@@ -30,7 +30,21 @@ def abalorios
       :name   => "La Lista Negra",
       :efecto => "Contiene un listado de víctimas a ejecutar. Algunas ya están tachadas.",
       :size   => 1,
-    }
+    },
+    {
+      :id     => 5,
+      :name   => "lámpara encantada",  
+      :efecto => "",
+      :size   => 4,
+      :precio => 850,
+    },
+    {
+      :id     => 6,
+      :name   => "cornucopia",  
+      :efecto => "+10 oro/tesoro(x nivel de tesoro), +1 gema/runa en la tirada, +2 rentas",
+      :size   => 4,
+      :precio => 1000,
+    },
   ]
 end
 def abalorio id ; abalorios[id] end

@@ -133,10 +133,10 @@ def miscelaneas
     },
     {
       :id   => 18,
-      :name => "lámpara",  
-      :max  => 4,
+      :name => "engranaje",  
+      :max  => 1,
       :fits => "amuleto", 
-      :precio => 850,
+      :precio => 125,
     },
     {
       :id   => 19,
