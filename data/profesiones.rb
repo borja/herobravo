@@ -131,6 +131,20 @@ def profesions
           :matts   => [2],
           :efecto  => "A cambio de una piel, puedes fabricar una pulsera de cuero (+0P), que cuenta como muñequera con un engarce.",
         },
+        {
+          :id      => 5,
+          :name    => "Cinturón",
+          :coste   => 75,
+          :matts   => [2],
+          :efecto  => "A cambio de 2 pieles, puedes fabricar un cinturón (+1P)",
+        },
+        {
+          :id      => 6,
+          :name    => "Botas",
+          :coste   => 75,
+          :matts   => [2],
+          :efecto  => "A cambio de 2 pieles, puedes fabricar unas botas que te aislan del frío. (+1 vs Escarcha)",
+        }
       ],
       :artesano  => [
         { :id      => 0,
