@@ -238,6 +238,15 @@ def armas
       :diagonal     => false,
       :precio       => 1,
     },
+    { 
+      :id           => 26,
+      :name         => "Maza pesada",
+      :categoria    => "contundentes",
+      :ataque       => 4,
+      :ranuras      => 4,
+      :diagonal     => false,
+      :precio       => 500
+    }
   ]
 end
 
