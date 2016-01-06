@@ -501,7 +501,12 @@ def enchants
       :name         => "de competencia",
       :descripcion  => "Al usarse para sujetar un escudo: +1PM/escudo.<br/>Al usarse para sujetar un arma: +1PC/arma.",
       :tipo         => "psiónica",
-    }, 
+    },
+    { :id           => 100,
+      :name         => "Oscura",
+      :descripcion  => "+1 magia de sombras al inicio del reto",
+      :tipo         => "sombras",
+    } 
   ]
 end
 def enchant id ;  enchants[id] end

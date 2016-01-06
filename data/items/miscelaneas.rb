@@ -151,6 +151,13 @@ def miscelaneas
       :max  => 1,
       :fits => "broche", 
       :precio => 450,
+    },
+    {
+      :id   => 21,
+      :name => "Gema",
+      :max  => 0,
+      :fits => "amuleto",
+      :precio => 500,
     }
   ]
 end
