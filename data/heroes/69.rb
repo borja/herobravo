@@ -5,7 +5,6 @@ def h69
     :name         => "Haspo",
     :personaje    => "bersérker",
     :jugador      => "Luis Lucas",
-    :status       => "activo",
     :nivel        => 1,
     :cuerpo       => 8,
     :mente        => 2,
