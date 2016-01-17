@@ -1,30 +1,37 @@
+<h3>Profundizar en una profesión</h3>
 <p>
 	Cuando un personaje completa un reto con éxito, puede invetir su oro
 	para avanzar en su profesión. Para poder aprender recetas de aprendiz,
 	es necesario desbloquear la primera receta (aprendizaje). Lo mismo ocurre
 	para aprender recetas de artesano y posteriormente de maestro.
-</p>
-<p>
-	Además es necesario conocer 5 recetas de aprendiz para poder desbloquear
+	Además, es necesario conocer 5 recetas de aprendiz para poder desbloquear
 	la artesanía, y 10 recetas de la profesión (independientemente del rango) 
-	para aprender la maestría. Ésta es la tabla de profesiones:
+	para aprender la maestría.
 </p>
-<table id='tresp'>
-	<thead>
-		<tr><% profesions.each do |p| %>
-				<th><%= p[:name].capitalize %></th>
-			<% end %>
-		</tr>	
-	</thead>
-	<tbody>
-		<tr><% profesions.each do |p| %>
-				<% nombre = p[:name] %>
-				<td><a href=<%="/profesion/#{p[:name]}"%>>
-						<% img_path = "'../images/profesiones/#{nombre}.png'" %>
-						<img src=<%=img_path%> alt=<%= nombre %>, id='icon2' />
-					</a>
-				</td>
-			<% end %>
-		</tr>
-	</tbody>
-</table>
+
+<h3>El trabajo de cada día</h3>
+<p>
+	El personaje, mientras no está en las aventuras se dedica básicamente a su profesión.
+	Por este motivo, obtiene +1 renta por cada grado de profesión que tenga.
+</p>
+
+<p>
+	<table id='tresp'>
+		<thead>
+			<tr><% profes.each do |p| %>
+					<th><%= p.capitalize %></th>
+				<% end %>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr><% profes.each do |p| %>
+					<td><a href=<%="/profesion/#{p}"%>>
+							<% img_path = "'../images/profesiones/#{p}.png'" %>
+							<img src=<%=img_path%> alt=<%= p %>, id='icon2' />
+						</a>
+					</td>
+				<% end %>
+			</tr>
+		</tbody>
+	</table>
+</p>
