@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler'
 require 'require_all'
+require 'yaml'
 
 # Fake Data Base
 require_all './data'
