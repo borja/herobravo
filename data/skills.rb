@@ -23,6 +23,10 @@ def ingenieros
   YAML::load_file(File.join(__dir__, 'skills/ingeniero.yml'))
 end
 
+def brujos
+  YAML::load_file(File.join(__dir__, 'skills/brujo.yml'))
+end
+
 # Generic clase creator
 pjs.each do |pj|
   define_method(pj) do |id|
