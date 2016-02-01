@@ -1,8 +1,10 @@
 require 'rubygems'
 require 'bundler'
-# Fake commit
+require 'require_all'
+
 # Fake Data Base
-require './data/db'
+require_all './data'
+
 require './model/model'
 
 Bundler.require
