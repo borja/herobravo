@@ -7,6 +7,6 @@ gem 'tilt', '~> 2.0.2'
 gem 'minitest', '~> 5.8.3'
 
 group :test do
-  gem "rack-test"
-  gem "rake", '~> 10.5.0'
+  gem 'rack-test'
+  gem 'rake', '~> 10.5.0'
 end

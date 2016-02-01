@@ -1,31 +1,40 @@
 #!/usr/bin/ruby
 # encoding: UTF-8
-
+# Engarce = objetos engarzables: gemas, joyas y runas
 class Engarce < Hash
   attr_accessor :id, :name, :fits
-                  
-  def initialize args
-    args.each do |k,v|
+
+  def initialize(args)
+    args.each do |k, v|
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
     end
   end
-  def item ; self.class.to_s.downcase end
-  def img_path ; "'../../images/treasures/#{self.item}s/#{self.name}.png'" end
   
+  def item 
+    self.class.to_s.downcase 
+  end
+
+  def img_path
+    "'../../images/treasures/#{self.item}s/#{self.name}.png'"
+  end
+
   def bonificador item
-    case 
-      when item.fits == "arma"         then return self.fits[item.categoria.to_sym] || self.fits[:arma] || "TBD"
-      when item.fits == "armadura"     then return self.fits[item.categoria.to_sym] || self.fits[:armadura] || "TBD"
-      when self.fits[item.fits.to_sym] then return self.fits[item.fits.to_sym]
-      when item.class == Proteccion    then return self.fits[:armadura] || "Sin bonificador"
-      else return "Sin efecto"
+    case
+    when item.fits == "arma"         then return self.fits[item.categoria.to_sym] || self.fits[:arma] || "TBD"
+    when item.fits == "armadura"     then return self.fits[item.categoria.to_sym] || self.fits[:armadura] || "TBD"
+    when self.fits[item.fits.to_sym] then return self.fits[item.fits.to_sym]
+    when item.class == Proteccion    then return self.fits[:armadura] || "Sin bonificador"
+    else return "Sin efecto"
     end
   end
 end
 
 class Gema < Engarce
-  def calidad ; gema_calidades[self.id/8] end
-  
+
+  def calidad
+    gema_calidades[self.id/8]
+  end
+
   def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
     total = []
     heros.each do |h|
@@ -39,12 +48,14 @@ class Gema < Engarce
         end
       end
     end
-    return total
+    total
   end
 end
 
 class Runa < Engarce
-  def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
+  # returns from heros.tesoro, the list of (maybe repeated) ids
+  #of the heros with self.id gem available
+  def disponibles
     total = []
     heros.each do |h|
       if t = h.tesoro
@@ -57,12 +68,14 @@ class Runa < Engarce
         end
       end
     end
-    return total
+    total
   end
 end
 
 class Joya < Engarce
-  def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
+  # returns from heros.tesoro, the list of (maybe repeated) ids
+  # of the heros with self.id gem available.
+  def disponibles
     total = []
     heros.each do |h|
       if t = h.tesoro
@@ -75,16 +88,12 @@ class Joya < Engarce
         end
       end
     end
-    return total
+    total
   end
 end
 
 def gema_calidades
-  ["Gemas Comunes",
-   "Gemas Infrecuentes",
-   "Gemas Valiosas",
-   "Piedras Preciosas",
-   "Piedras de Poder",
-   "Gemas Legendarias",
-   "Gemas Insólitas"]
-end  
+  ['Gemas Comunes', 'Gemas Infrecuentes', 'Gemas Valiosas',
+   'Piedras Preciosas', 'Piedras de Poder', 'Gemas Legendarias',
+   'Gemas Insólitas']
+end

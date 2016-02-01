@@ -1,4 +1,4 @@
-# Fake Data Base
+# Fake data base
 require './data/monturas'
 require './data/heros'
 require './data/magia/spells'
