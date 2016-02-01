@@ -15,6 +15,14 @@ def paladíns
   YAML::load_file(File.join(__dir__, 'skills/paladín.yml'))
 end
 
+def matadors
+  YAML::load_file(File.join(__dir__, 'skills/matador.yml'))
+end
+
+def ingenieros
+  YAML::load_file(File.join(__dir__, 'skills/ingeniero.yml'))
+end
+
 # Generic clase creator
 pjs.each do |pj|
   define_method(pj) do |id|
