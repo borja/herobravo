@@ -1,0 +1,99 @@
+-
+  id: 0
+  name: 'Dos armas'
+  description: 'Permite llevar un arma de 1+1/rango dados de ataque base en la mano torpe'
+  type: 'pasiva'
+  nivel: 2
+  rangos: 4
+-
+  id: 1
+  name: 'Ataque combinado'
+  description: "Permite usar dos armas simultáneamente en un ataque conjunto."
+  type: "única"
+  requisitos: [0]
+  nivel: 2
+-
+  id: 2
+  name: 'Arrojar'
+  description: "Permite arrojar un arma como acción gratuita."
+  type: 'pasiva'
+  nivel: 2
+  rangos: 2
+-
+  id: 3
+  name: 'Bloquear proyectil'
+  description: 'Tira tus dados de ataque de ambas armas adicionalmente en la defensa de un tiro de proyectil. (Solo funciona de frente)'
+  type: 'activa'
+  coste: 'tu siguiente ataque'
+  requisitos: [0]
+  nivel: 2
+-
+  id: 4
+  name: 'Sangre por sangre'
+  description: "+1 fuerza / inferioridad numérica en meleé."
+  type: 'reactiva'
+  nivel: 3
+-
+  id: 5
+  name: 'Tenaza del enano'
+  description: '+1 Potencia/rango al golpear por el flanco a enemigos con menos movimiento.'
+  type: 'reactiva'
+  rangos: 3
+  nivel: 3
+-
+  id: 6
+  name: 'Improperios familiares'
+  description: "Al asesinar a una miniatura podrá provocar a 1/rango enemigos de la misma raza."
+  type: 'reactiva'
+  requisitos: [4]
+  rangos: 3
+  nivel: 3
+-
+  id: 7
+  name: "Energúmeno"
+  description: "Al sufrir daño de un enemigo provocado puedes golpearle inmediatamente con tu arma principal."
+  type: 'reactiva'
+  requisitos: [6]
+  nivel: 4
+-
+  id: 8
+  name: 'Escupir con despotismo'
+  description: 'Marcas a un enemigo con 1/rango esputos. Al matarlo recupera 1PM'
+  type: 'activa'
+  coste: '1 ataque'
+  rangos: 3
+  nivel: 4
+-
+  id: 9
+  name: "Ímpetu"
+  description: "+1 fuerza/rango a 1 solo éxito después del ataque al golpear después de mover."
+  type: 'pasiva'
+  rangos: 3
+  nivel: 4
+-
+  id: 10
+  name: "Himno de la montaña"
+  description: "+1 potencia a todos los aliados que golpean a melé este turno. (Se usa solamente durante la fase trepidante)"
+  type: "única"
+  nivel: 4
+-
+  id: 11
+  name: 'Escupir mientras grita'
+  description: "Al lanzar improperios el matador escupirá también a los enemigos insultados."
+  type: 'reactiva'
+  requisitos: [6,8]
+  nivel: 5
+-
+  id: 12
+  name: 'Rajar'
+  description: 'Golpea con tu arma principal a las 3 casillas frontales.'
+  type: "única"
+  requisitos: [5,9]
+  nivel: 5
+-
+  id: 13
+  name: 'Asestar castigo'
+  description: 'Recuperas rajar al matar con la tenaza del enano.'
+  type: 'reactiva'
+  requisitos: [5,12]
+  nivel: 6

@@ -2,7 +2,6 @@ ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'rack/test'
 require_relative 'app.rb'
-require './data/db' # Fake Data Base
 require './model/model'
  
 include Rack::Test::Methods
