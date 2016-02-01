@@ -19,15 +19,14 @@ def clase_clérigo  ; ["clérigo", "paladín", "sacerdote"]            end
 def clase_tiefling ; ["vengador", "caminante", "brujo"]             end
 
 def razas
-  {
-    "enano"    => { :cuerpo => 7, :mente => 3, :movimiento => 6 },
-    "elfo"     => { :cuerpo => 6, :mente => 4, :movimiento => 8 },
-    "humano"   => { :cuerpo => 5, :mente => 5, :movimiento => 7 },
-    "tiefling" => { :cuerpo => 6, :mente => 4, :movimiento => 7 },
+  { "enano"    => { cuerpo: 7, mente: 3, movimiento: 6 },
+    "elfo"     => { cuerpo: 6, mente: 4, movimiento: 8 },
+    "humano"   => { cuerpo: 5, mente: 5, movimiento: 7 },
+    "tiefling" => { cuerpo: 6, mente: 4, movimiento: 7 },
   } 
 end
 
-def nomalize_pj pj
+def nomalize_pj(pj)
   case pj
     when 'palad%C3%ADn'   then 'paladín'
     when 'ladr%C3%B3n'    then 'ladrón'
