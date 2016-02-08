@@ -1,0 +1,113 @@
+-
+      id:           0 
+      name:         "Hechicería" 
+      description:  "N+: Recupera una magia (N = 7-rango)" 
+      type:         "disparada" 
+      nivel:        2 
+      rangos:       4 
+-
+      id:           1 
+      name:         "Chistera mágica" 
+      description:  "Permite almacenar una magica en (rangos) 'chisteras': el hechizo se recuperará. (No se podrán ejecutar los demás no-enchisterados)" 
+      type:         "única" 
+      coste:        "acción" 
+      nivel:        2 
+-
+      id:           2 
+      name:         "Resaca Arcana" 
+      description:  "Recupera 1d6xN puntos de mente." 
+      type:         "activa" 
+      coste:        "1 hechizo de nivel N" 
+      nivel:        2 
+-
+      id:           3 
+      name:         "Velocidad arcana" 
+      description:  "+1 movimiento durante el sprint  por cada escuela entre tus hechizos disponibles." 
+      type:         "pasiva" 
+      rangos:       3 
+      nivel:        2 
+-
+      id:           4 
+      name:         "Diabolismo arcano" 
+      description:  "al recuperar con hechicería el hechizo ejecutado se lanza con diablura." 
+      type:         "disparada" 
+      nivel:        3 
+      requisitos:   [0] 
+-
+      id:           5 
+      name:         "Risticismo" 
+      description:  "Al recuperar con hechicería se recupera chistera mágica" 
+      type:         "disparada" 
+      nivel:        3 
+      requisitos:   [0,1] 
+-
+      id:           6 
+      name:         "Magia intrépida" 
+      description:  "Enchisterar es una acción gratuita." 
+      type:         "pasiva" 
+      requisitos:   [1] 
+      nivel:        3 
+-
+      id:           7 
+      name:         "Armadura de mago" 
+      description:  "Instinto: +1 dado azul por rango  de potencia defensiva N" 
+      type:         "activa" 
+      coste:        "N PM" 
+      rangos:       3 
+      nivel:        3 
+-
+      id:           8 
+      name:         "Réplica" 
+      description:  "En lugar de recuperar una magia  puedes lanzar una copia de la misma por rango. En caso de ser posible ha de ser a un objetivo diferente." 
+      type:         "reactiva" 
+      requisitos:   [0] 
+      nivel:        4 
+      rangos:       2 
+-
+      id:           9 
+      name:         "Trazado mágico" 
+      description:  "Puedes elegir no recuperar una chistera para dejar una marca (por rango) de trazado mágico en tu posición. En tu próximo hechizo recuperado  podrás teletransportarte al trazado  consumiéndolo." 
+      type:         "reactiva" 
+      requisitos:   [0,1] 
+      nivel:        4 
+      rangos:       3 
+-
+      id:           10 
+      name:         "Ecos" 
+      description:  "Replica N veces (rango)  un hechizo al ser recuperado" 
+      type:         "reactiva" 
+      coste:        "2PM" 
+      requisitos:   [0] 
+      nivel:        4 
+      rangos:       2       
+-
+      id:           11 
+      name:         "Hechicería elemental" 
+      description:  "Recupera un hechizo de la misma escuela (No recupera la chistera)" 
+      type:         "reactiva" 
+      coste:        "Consumir hechizo enchisterado" 
+      requisitos:   [0,1,5] 
+      nivel:        4 
+-
+      id:           12 
+      name:         "Masa arcana" 
+      description:  "+1 de potencia a tu siguiente magia elemental" 
+      type:         "única" 
+      requisitos:   [2] 
+      nivel:        5 
+-
+      id:           13 
+      name:         "Polarizar hechizos" 
+      description:  "Puedes lanzar como la misma acción N(rango) hechizo/s adicionales de escuelas distinta. (Se recuperan por separado)" 
+      type:         "activa" 
+      coste:        "1PM por hechizo extra" 
+      rangos:       3 
+      requisitos:   [0,1,6] 
+      nivel:        6 
+-
+      id:           14 
+      name:         "Estruendo" 
+      description:  "Puedes lanzar la siguiente magia de este turno  con +1 maestría si en el mismo turno has recuperado otro hechizo previamente." 
+      type:         "reactiva" 
+      requisitos:   [0,8,10,12] 
+      nivel:        7       
