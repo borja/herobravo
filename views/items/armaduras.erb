@@ -3,7 +3,7 @@
 	<thead>
 		<tr>
 			<% armaduras[1..-1].each do |item| %>
-				<th width='12%'><%= item[:name].gsub("armadura","").gsub("de","") %></th>
+				<th width='12%'><%= item['name'].gsub("armadura","").gsub("de","") %></th>
 			<% end %>
 		</tr>	
 	</thead>

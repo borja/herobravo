@@ -67,46 +67,46 @@ class Item < Hash
 end
 
 class Proteccion < Item
-  def name      ; proteccion(self.id)[:name]      end
-  def defensa   ; proteccion(self.id)[:defensa]   end
-  def fits      ; proteccion(self.id)[:fits]      end
-  def categoria ; proteccion(self.id)[:categoria] end
-  def precio    ; proteccion(self.id)[:precio]    end
+  def name      ; proteccion(id)['name']      end
+  def defensa   ; proteccion(id)['defensa']   end
+  def fits      ; proteccion(id)['fits']      end
+  def categoria ; proteccion(id)['categoria'] end
+  def precio    ; proteccion(id)['precio']    end
 end
 
 class Miscelanea < Item
-  def name     ; miscelanea(self.id)[:name]   end
-  def fits     ; miscelanea(self.id)[:fits]   end
-  def precio   ; miscelanea(self.id)[:precio] end
+  def name      ; miscelanea(id)['name']   end
+  def fits      ; miscelanea(id)['fits']   end
+  def precio    ; miscelanea(id)['precio'] end
 end
 
 class Arma < Item
-  def name     ; arma(self.id)[:name]      end
-  def ataque   ; arma(self.id)[:ataque]    end
-  def diagonal ; arma(self.id)[:diagonal]  end
-  def categoria; arma(self.id)[:categoria] end
-  def precio   ; arma(self.id)[:precio]    end
-  def fits     ; "arma" end
+  def name      ; arma(id)['name']      end
+  def ataque    ; arma(id)['ataque']    end
+  def diagonal  ; arma(id)['diagonal']  end
+  def categoria ; arma(id)['categoria'] end
+  def precio    ; arma(id)['precio']    end
+  def fits      ; "arma" end
 end
 
 class Armadura < Item  
-  def name     ; armadura(self.id)[:name] end
-  def defensa  ; armadura(self.id)[:defensa] end
-  def categoria; armadura(self.id)[:categoria] end
-  def precio   ; armadura(self.id)[:precio] end
+  def name     ; armadura(id)['name']      end
+  def defensa  ; armadura(id)['defensa']   end
+  def categoria; armadura(id)['categoria'] end
+  def precio   ; armadura(id)['precio']    end
   def fits     ; "armadura" end
   def description 
-    "<li>Categoría: #{ self.categoria}</li>
-		 <li>Defensa: #{ self.defensa.to_s}</li>
-		 <li>Precio: #{ self.precio}</li>"
+    "<li>Categoría: #{categoria}</li>
+		 <li>Defensa:   #{defensa.to_s}</li>
+		 <li>Precio:    #{precio}</li>"
   end
 end
 
 class Abalorio < Item
-  def name     ; abalorio(self.id)[:name] end
+  def name     ; abalorio(id)['name']   end
+  def efecto   ; abalorio(id)['efecto'] end
+  def precio   ; abalorio(id)['precio'] end
   def fits     ; "abalorio" end
-  def efecto   ; abalorio(self.id)[:efecto] end
-  def precio   ; abalorio(self.id)[:precio] end
 end
 
 class Util < Item
@@ -122,26 +122,26 @@ class Util < Item
 end
 
 class Pieza < Util
-  def name   ; pieza(self.id)[:name]  end
-  def uso    ; pieza(self.id)[:uso]   end 
-  def precio ; pieza(self.id)[:precio] end 
+  def name   ; pieza(id)['name']   end
+  def uso    ; pieza(id)['uso']    end 
+  def precio ; pieza(id)['precio'] end 
 end
 
 class Pocion < Util
-  def name   ; pocion(self.id)[:name]   end
-  def efecto ; pocion(self.id)[:efecto] end 
-  def precio ; pocion(self.id)[:precio] end 
+  def name   ; pocion(id)['name']   end
+  def efecto ; pocion(id)['efecto'] end 
+  def precio ; pocion(id)['precio'] end 
 end
 
 class Pergamino < Util
-  def name     ; pergamino(self.id)[:name]     end
-  def max      ; pergamino(self.id)[:hechizos] end # Máximo número permitido  
+  def name     ; pergamino(id)['name']     end
+  def precio   ; pergamino(id)['precio']   end 
+  def max      ; pergamino(id)['hechizos'] end # Máximo número permitido  
   def hechizos ; self.spells.map { |s| Elemental.new({:id => s}).name } end
-  def precio   ; pergamino(self.id)[:precio] end 
 end
 
 class Material < Util
-  def name ; material(self.id)[:name]  end
+  def name ; material(self.id)['name']  end
   def disponibles # returns from heros.materiales, the list of (maybe repeated) ids of the heros with self.id material available
     total = []
     heros.each do |h|

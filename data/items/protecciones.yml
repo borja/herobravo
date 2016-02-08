@@ -1,0 +1,137 @@
+-
+  id:        0
+  name:      'huevera'
+  categoria: 'metal'
+  defensa:   1
+  ranuras:   1
+  fits:      'entrepierna'
+  precio:	 250
+-
+  id:        1
+  name:      'capa'
+  categoria: 'tela'
+  defensa:   1
+  ranuras:   4
+  fits:      'espalda'
+  precio:    350
+-
+  id:        2
+  name:      'casco'
+  categoria: 'metal'
+  defensa:   1
+  ranuras:   1
+  fits:      'cabeza'
+  precio:	 125
+-
+  id:        3
+  name:      'botas'
+  categoria: 'cuero'
+  defensa:   1
+  ranuras:   2
+  fits:      'pies'
+  precio:	 250
+-
+  id:        4
+  name:      'cinturón'
+  categoria: 'cuero'
+  defensa:   1
+  ranuras:   1
+  fits:      'cintura'
+  precio:	 150
+-
+  id:        5
+  name:      'hombreras'
+  categoria: 'metal'
+  defensa:   1
+  ranuras:   2
+  fits:      'hombros'
+  precio:	 300
+-
+  id:        6
+  name:      'corona'
+  categoria: 'metal'
+  defensa:   1
+  ranuras:   6
+  fits:      'cabeza'
+  precio:	 400
+-
+  id:        7
+  name:      'cinta'
+  categoria: 'tela'
+  defensa:   0
+  ranuras:   1
+  fits:      'cabeza'
+  precio:	 150
+-
+  id:        8
+  name:      'brazales'
+  categoria: 'tela'
+  defensa:   1
+  ranuras:   2
+  fits:      'muñecas'
+  precio:	 250
+-
+  id:        9
+  name:      'arnés'
+  categoria: 'cuero'
+  defensa:   1
+  ranuras:   2
+  fits:      'pechera'
+  precio:	 250
+-
+  id:        10
+  name:      'guantes'
+  categoria: 'cuero'
+  defensa:   0
+  ranuras:   2
+  fits:      'manos'
+  precio:	 200
+-
+  id:        11
+  name:      'cinturón alquímico'
+  categoria: 'cuero'
+  defensa:   1
+  ranuras:   1
+  fits:      'cintura'
+  precio:	 300
+-
+  id:        12
+  name:      'embozo'
+  categoria: 'cuero'
+  defensa:   1
+  ranuras:   2
+  fits:      'cabeza'
+  precio:    225
+-
+  id:        13
+  name:      'yelmo con visera'
+  categoria: 'metal'
+  defensa:   2
+  ranuras:   1
+  fits:      'cabeza'
+  precio:    300
+-
+  id:        14
+  name:      'gambax'
+  categoria: 'cuero'
+  defensa:   1
+  ranuras:   2
+  fits:      'pechera'
+  precio:    250
+-
+  id:         15
+  name:       'corona de antiguos reyes'
+  categoria:  'oro'
+  defensa:    1
+  ranuras:    6
+  fits:       'cabeza'
+  legendario: true
+  precio:     1000
+-
+  id:        16
+  name:      'guanteletes'
+  categoria: 'metal'
+  defensa:   1
+  ranuras:   2
+  fits:      'manos'
+  precio:	 600
