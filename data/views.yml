@@ -1,0 +1,331 @@
+-
+  ruta:  "hero"
+  title: "view"
+  template:
+    left: "ficha/izquierda/izquierda"
+    main: "ficha/centro/main"
+    right: "ficha/derecha/derecha"
+    row2: "ficha/ficha"
+-
+  ruta:  "dado"
+  title: "Combate"
+  template:
+    main: "reglamento/dado"
+    right: "reglamento/derecha/combate"
+-
+  ruta:  "historias"
+  title: "Leyendas"
+  template:
+    left: "personaje/razas/left/links"
+    main: "lore/centro"
+    right: "lore/derecha"
+-
+  ruta:  "historia"
+  title: "view"
+  template:
+    left: "ficha/izquierda/izquierda"
+    main: "historias/historias"
+    right: "ficha/derecha/derecha"
+-
+  ruta:  "pnj"
+  title: "view"
+  template:
+    main: "lore/pnjs/:param"
+    right: "lore/derecha"
+-
+  ruta:  "mapa"
+  template:
+    left: "mapa/ciudades"
+    left2: "mapa/monturas"
+    main: "mapa/mapa"
+-
+  ruta:  "city"
+  title: "view"
+  template:
+    main: "ciudad/ciudad"
+-
+  ruta:  "familiares"
+  template:
+    main: "personaje/familiares"
+    right: "heroes/sidebar"
+-
+  ruta:  "habilidades"
+  template:
+    main: "personaje/habilidades"
+-
+  ruta:  "tarot"
+  title: "Tarot Maligno"
+  template:
+    left: "items/tarot/left"
+    main: "items/tarot/tarot"
+    right: "reglamento/derecha/combate"
+-
+  ruta:  "espadaroja"
+  title: "Espada Roja"
+  template:
+    left: "items/espadaroja/left"
+    main: "items/espadaroja/adivinanza"
+    right: "reglamento/derecha/combate"
+-
+  ruta:  "habilidad"
+  title: "view"
+  template:
+    left: "personaje/left/logo"
+    left2: "personaje/left/personajes"
+    main: "personaje/disciplinas"
+-
+  ruta:  "caminos"
+  template:
+    main: "personaje/caminos"
+    right: "heroes/sidebar"
+-
+  ruta:  "materiales"
+  template:
+    left: "objetos/right/content2"
+    main: "items/materiales"
+-
+  ruta:  "calculador"
+  template:
+    left: "objetos/left/content2"
+    main: "objetos/calculador"
+    right: "objetos/left/content1"
+-
+  ruta:  "monturas"
+  template:
+    left: "mapa/ciudades"
+    main: "ficha/monturas"
+-
+  ruta:  "joyas"
+  template:
+    left: "objetos/left/content2"
+    main: "items/joyas"
+-
+  ruta:  "runas"
+  template:
+    left: "objetos/left/content2"
+    main: "items/runas/runas"
+-
+  ruta:  "gemas"
+  template:
+    main: "items/gemas/gemas"
+-
+  ruta:  "tiers"
+  template:
+    left: "objetos/left/content2"
+    main: "items/tiers"
+-
+  ruta:  "profesiones"
+  template:
+    main: "personaje/profesiones"
+    right: "reglamento/derecha/personajes"
+-
+  ruta:  "profesion"
+  title: "view"
+  template:
+    main: "ciudad/profesiones"
+    right: "reglamento/derecha/personajes"
+    right2: "reglamento/derecha/personajes"
+-
+  ruta:  "razas"
+  template:
+    left: "personaje/razas/left/links"
+    main: "personaje/razas/center/main"
+    right: "personaje/razas/right/stats"
+-
+  ruta:  "raza"
+  title: "view"
+  template:
+    left: "personaje/razas/left/links"
+    main: "personaje/razas/center/:param"
+    right: "personaje/razas/right/:param"
+-
+  ruta:  "manuales"
+  title: "Reglamento"
+  template:
+    left: "reglamento/izquierda/bestiario"
+    main: "reglamento/principal"
+    right: "reglamento/derecha/combate"
+    right2: "reglamento/derecha/personajes"
+-
+  ruta:  "objetos"
+  template:
+    left: "objetos/left/content1"
+    left2: "objetos/left/content2"
+    main: "objetos/main"
+    right: "objetos/right/content1"
+    right2: "objetos/right/content2"
+-
+  ruta:  "tesoro"
+  template:
+    main: "reglamento/tesoro"
+    right: "reglamento/derecha/combate"
+-
+  ruta:  "armaduras"
+  template:
+    left: "objetos/left/content1"
+    left2: "objetos/left/content2"
+    main: "items/armaduras"
+-
+  ruta:  "armas"
+  template:
+    left: "objetos/left/content1"
+    left2: "objetos/left/content2"
+    main: "items/armas"
+-
+  ruta:  "protecciones"
+  template:
+    left: "objetos/left/content1"
+    left2: "objetos/left/content2"
+    main: "items/protecciones"
+-
+  ruta:  "miscelaneas"
+  template:
+    left: "objetos/left/content2"
+    main: "items/miscelaneas"
+-
+  ruta:  "piezas"
+  template:
+    left: "objetos/right/content2"
+    main: "items/piezas"
+-
+  ruta:  "pociones"
+  template:
+    left: "objetos/right/content2"
+    main: "items/pociones"
+-
+  ruta:  "abalorios"
+  template:
+    left: "objetos/right/content2"
+    main: "items/abalorios"
+-
+  ruta:  "maestrodearmas"
+  title: "Maestro de Armas"
+  template:
+    main: "ciudad/maestrodearmas"
+    right: "reglamento/derecha/personajes"
+-
+  ruta:  "notaria"
+  title: "Notaría"
+  template:
+    main: "ciudad/notaria"
+-
+  ruta:  "palacio"
+  template:
+    main: "ciudad/palacio"
+-
+  ruta:  "templo"
+  template:
+    main: "ciudad/templo"
+-
+  ruta:  "spells"
+  title: "Hechizos"
+  template:
+    left: "ficha/izquierda/izquierda"
+    main: "magia/spells"
+-
+  ruta:  "hechizos"
+  template:
+    left: "torre/left/elementales"
+    left2: "torre/left/especializaciones"
+    main: "magia/hechizos"
+-
+  ruta:  "sombras"
+  template:
+    left: "torre/left/elementales"
+    left2: "torre/left/sagradas"
+    main: "magia/sombras"
+-
+  ruta:  "plegarias"
+  template:
+    left: "torre/left/sagradas"
+    left2: "torre/left/elementales"
+    main: "magia/plegarias"
+-
+  ruta:  "elficas"
+  title: "Magias élficas"
+  template:
+    left: "torre/left/elementales"
+    left2: "torre/left/sagradas"
+    main: "magia/elficas"
+-
+  ruta:  "sangre"
+  title: "Magia de sangre"
+  template:
+    left: "torre/left/elementales"
+    left2: "torre/left/sagradas"
+    main: "magia/sangre"
+-
+  ruta:  "biblioteca"
+  template:
+    main: "magia/biblioteca"
+-
+  ruta:  "jugadores"
+  template:
+    main: "personaje/jugadores"
+    right: "heroes/sidebar"
+-
+  ruta:  "heroes"
+  title: "Héroes"
+  template:
+    main: "heroes/heroes"
+    right: "heroes/sidebar"
+-
+  ruta:  "extranjeros"
+  title: "view"
+  template:
+    main: "heroes/heroes"
+    right: "heroes/sidebar"
+-
+  ruta:  "estados"
+  title: "Estados de Combate"
+  template:
+    main: "reglamento/combate/estados"
+    right: "reglamento/derecha/combate"
+    right2: "reglamento/derecha/dados"
+-
+  ruta:  "posiciones"
+  title: "Posiciones de Combate"
+  template:
+    main: "reglamento/combate/posiciones"
+    right: "reglamento/derecha/combate"
+    right2: "reglamento/derecha/dados"
+-
+  ruta:  "resistencias"
+  template:
+    main: "reglamento/combate/resistencias"
+    right: "reglamento/derecha/combate"
+    right2: "reglamento/derecha/dados"
+-
+  ruta:  "torre"
+  title: "Torre de Magia"
+  template:
+    left: "torre/left/elementales"
+    left2: "torre/left/sagradas"
+    main: "torre/main"
+    right: "torre/right/tipos"
+-
+  ruta:  "magisters"
+  template:
+    left: "torre/left/enseñanzas"
+    main: "torre/magisters"
+    right: "torre/right/ancestrales"
+-
+  ruta:  "criaturas"
+  template:
+    main: "reglamento/criaturas"
+-
+  ruta:  "criatura"
+  title: "view"
+  template:
+    left: "reglamento/izquierda/bestiario"
+    main: "reglamento/criature"
+-
+  ruta:  "test"
+  template:
+    left: "personaje/razas/left/links"
+    main: "test/test"
+    right: "personaje/razas/right/stats"
+-
+  ruta:  "escuelas"
+  template:
+    main: "magia/escuelas"

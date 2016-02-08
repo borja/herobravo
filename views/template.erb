@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<% title ||= route.capitalize %>
+		<% title ||= params[:view].capitalize %>
 		<% title = params[:param].capitalize if title == 'view' %>
 		<% if (params[:view] == 'historia' || params[:view] == 'hero') %>
 			<% title = hero(params[:param].to_i).name %>
@@ -17,28 +17,28 @@
 				<div id="content">
 					<div class="container">
 						<div class="row">
-							<% if template[:left] %>
+							<% if template['left'] %>
 								<div class="3u">
-									<section><%= load_partial(template[:left]) %></section>
-									<% if template[:left2] %>
-										<section><%= load_partial(template[:left2]) %></section>
+									<section><%= load_partial(template['left']) %></section>
+									<% if template['left2'] %>
+										<section><%= load_partial(template['left2']) %></section>
 									<% end %>
 								</div>
 							<% end %>
 							<div class='<%= get_center(template) %>'>
-								<section><%= load_partial(template[:main]) %></section>
+								<section><%= load_partial(template['main']) %></section>
 							</div>							
-							<% if template[:right] %>
+							<% if template['right'] %>
 								<div class="3u">
-									<section><%= load_partial(template[:right]) %></section>
-									<% if template[:right2] %>
-										<section><%= load_partial(template[:right2]) %></section>
+									<section><%= load_partial(template['right']) %></section>
+									<% if template['right2'] %>
+										<section><%= load_partial(template['right2']) %></section>
 									<% end %>
 								</div>
 							<% end %>
 						</div>
-						<% if template[:row2] %>
-							<%= load_partial(template[:row2]) %>
+						<% if template['row2'] %>
+							<%= load_partial(template['row2']) %>
 						<% end %>
 					</div>
 				</div>
