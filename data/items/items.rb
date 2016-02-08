@@ -22,3 +22,88 @@ def calcular_coste(p)
   coste *= factor_reputacion
   coste.round
 end
+
+# Armas
+def armas
+  YAML::load_file(File.join(__dir__, 'armas.yml'))
+end
+
+def arma(id)
+  armas[id]
+end
+
+def categorías
+  armas.map { |a| a['categoria'] }.uniq
+end
+
+# Armaduras
+def armaduras
+  YAML::load_file(File.join(__dir__, 'armaduras.yml'))
+end
+
+def armadura(id)
+  armaduras[id]
+end
+
+# Miscelaneas
+def miscelaneas
+  YAML::load_file(File.join(__dir__, 'miscelaneas.yml'))
+end
+
+def miscelanea(id)
+  miscelaneas[id]
+end
+
+# Protecciones
+def proteccions
+  YAML::load_file(File.join(__dir__, 'protecciones.yml'))
+end
+
+def proteccion(id)
+  proteccions[id]
+end
+
+# Abalorios
+def abalorios
+  YAML::load_file(File.join(__dir__, 'abalorios.yml'))
+end
+
+def abalorio(id)
+  abalorios[id]
+end
+
+# Piezas
+def piezas
+  YAML::load_file(File.join(__dir__, 'utiles/piezas.yml'))
+end
+
+def pieza(id)
+  piezas[id]
+end
+
+# Pociones
+def pociones
+  YAML::load_file(File.join(__dir__, 'utiles/pociones.yml'))
+end
+
+def pocion(id)
+  pociones[id]
+end
+
+# Pergaminos
+def pergaminos
+  YAML::load_file(File.join(__dir__, 'utiles/pergaminos.yml'))
+end
+
+def pergamino(id)
+  pergaminos[id]
+end
+
+# Materiales
+def materiales
+  YAML::load_file(File.join(__dir__, 'utiles/materiales.yml'))
+end
+
+def material(id)
+  materiales[id]
+end
