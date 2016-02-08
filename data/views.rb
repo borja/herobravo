@@ -3,431 +3,441 @@
 def views
   [
     {
-      :route    => "hero",
-      :title    => "view",
-      :template => {
-        :left  => 'ficha/izquierda/izquierda',
-        :main  => 'ficha/centro/main',
-        :right => 'ficha/derecha/derecha',
-        :row2  => 'ficha/ficha'
+      route: 'hero',
+      title: 'view',
+      template: {
+        left: 'ficha/izquierda/izquierda',
+        main: 'ficha/centro/main',
+        right: 'ficha/derecha/derecha',
+        row2: 'ficha/ficha'
       }
     },
     {
-      :route    => "dado",
-      :title    => "Combate",
-      :template => {
-        :main   => 'reglamento/dado',
-        :right  => 'reglamento/derecha/combate'
+      route: 'dado',
+      title: 'Combate',
+      template: {
+        main: 'reglamento/dado',
+        right: 'reglamento/derecha/combate'
       }
     },
     {
-      :route    => "historias",
-      :title    => "Leyendas",
-      :template => {
-        :left   => 'personaje/razas/left/links',
-        :main   => 'lore/centro',
-        :right  => 'lore/derecha',
+      route: 'historias',
+      title: 'Leyendas',
+      template: {
+        left: 'personaje/razas/left/links',
+        main: 'lore/centro',
+        right: 'lore/derecha'
       }
     },
     {
-      :route    => "historia",
-      :title    => "view",
-      :template => {
-        :left   => 'ficha/izquierda/izquierda',
-        :main   => 'historias/historias',
-        :right  => 'ficha/derecha/derecha',
+      route: 'historia',
+      title: 'view',
+      template: {
+        left: 'ficha/izquierda/izquierda',
+        main: 'historias/historias',
+        right: 'ficha/derecha/derecha'
       }
     },
     {
-      :route    => "pnj",
-      :title    => "view",
-      :template => {
-        :main   => 'lore/pnjs/:param',
-        :right  => 'lore/derecha',
+      route: 'pnj',
+      title: 'view',
+      template: {
+        main: 'lore/pnjs/:param',
+        right: 'lore/derecha'
       }
     },
     {
-      :route    => "mapa",
-      :template => {
-        :left   => 'mapa/ciudades',
-        :left2  => 'mapa/monturas',
-        :main   => 'mapa/mapa',
+      route: 'mapa',
+      template: {
+        left: 'mapa/ciudades',
+        left2: 'mapa/monturas',
+        main: 'mapa/mapa'
       }
     },
     {
-      :route    => "city",
-      :title    => 'view',
-      :template => { :main => 'ciudad/ciudad' }
+      route: 'city',
+      title: 'view',
+      template: { main: 'ciudad/ciudad' }
     },
     {
-      :route    => "familiares",
-      :template => { 
-        :main  => 'personaje/familiares',
-        :right => 'heroes/sidebar'
+      route: 'familiares',
+      template: {
+        main: 'personaje/familiares',
+        right: 'heroes/sidebar'
       }
     },
     {
-      :route    => "habilidades",
-      :template => { :main => 'personaje/habilidades'}
+      route: 'habilidades',
+      template: { main: 'personaje/habilidades' }
     },
     {
-      :route    => "tarot",
-      :title    => "Tarot Maligno",
-      :template => { 
-        :left  => 'items/tarot/left',
-        :main  => 'items/tarot/tarot',
-        :right => 'reglamento/derecha/combate'}
+      route: 'tarot',
+      title: 'Tarot Maligno',
+      template: {
+        left: 'items/tarot/left',
+        main: 'items/tarot/tarot',
+        right: 'reglamento/derecha/combate' }
     },
     {
-      :route    => "espadaroja",
-      :title    => "Espada Roja",
-      :template => { 
-        :left  => 'items/espadaroja/left',
-        :main  => 'items/espadaroja/adivinanza',
-        :right => 'reglamento/derecha/combate'}
+      route: 'espadaroja',
+      title: 'Espada Roja',
+      template: {
+        left: 'items/espadaroja/left',
+        main: 'items/espadaroja/adivinanza',
+        right: 'reglamento/derecha/combate' }
     },
     {
-      :route    => "habilidad",
-      :title    => "view",
-      :template => { 
-        :left  => 'personaje/left/logo',
-        :left2 => 'personaje/left/personajes',
-        :main  => 'personaje/disciplinas'
+      route: 'habilidad',
+      title: 'view',
+      template: {
+        left: 'personaje/left/logo',
+        left2: 'personaje/left/personajes',
+        main: 'personaje/disciplinas'
       }
     },
     {
-      :route    => "caminos",
-      :template => { 
-        :main  => 'personaje/caminos',
-        :right => 'heroes/sidebar'
+      route: 'caminos',
+      template: {
+        main: 'personaje/caminos',
+        right: 'heroes/sidebar'
       }
     },
     {
-      :route    => "materiales",
-      :template => { 
-        :left => 'objetos/right/content2',
-        :main => 'items/materiales'
-      }
-    }, 
-    {
-      :route    => "calculador",
-      :template => { 
-        :left  => 'objetos/left/content2',
-        :main  => 'objetos/calculador',
-        :right => 'objetos/left/content1',
-      }
-    }, 
-    {
-      :route    => "monturas",
-      :template => { 
-        :left   => 'mapa/ciudades',
-        :main  => 'ficha/monturas'
-      }
-    },   
-    {
-      :route    => "joyas",
-      :template => { 
-        :left   => 'objetos/left/content2',
-        :main   => 'items/joyas'
+      route: 'materiales',
+      template: {
+        left: 'objetos/right/content2',
+        main: 'items/materiales'
       }
     },
     {
-      :route    => "runas",
-      :template => { 
-        :left   => 'objetos/left/content2',
-        :main   => 'items/runas/runas'
+      route: 'calculador',
+      template: {
+        left: 'objetos/left/content2',
+        main: 'objetos/calculador',
+        right: 'objetos/left/content1'
       }
     },
     {
-      :route    => "gemas",
-      :template => { :main   => 'items/gemas/gemas' }
-    },
-    {
-      :route    => "tiers",
-      :template => { 
-        :left => 'objetos/left/content2',
-        :main => 'items/tiers'
+      route: 'monturas',
+      template: {
+        left: 'mapa/ciudades',
+        main: 'ficha/monturas'
       }
     },
     {
-      :route    => "profesiones",
-      :template => { 
-        :main  => 'personaje/profesiones',
-        :right => 'reglamento/derecha/personajes'
+      route: 'joyas',
+      template: {
+        left: 'objetos/left/content2',
+        main: 'items/joyas'
       }
     },
     {
-      :route    => "profesion",
-      :title    => "view",
-      :template => { :main => 'ciudad/profesiones'}
-    },
-    {
-      :route    => "razas",
-      :template => {
-        :left   => 'personaje/razas/left/links',
-        :main   => "personaje/razas/center/main",
-        :right  => "personaje/razas/right/stats",
+      route: 'runas',
+      template: {
+        left: 'objetos/left/content2',
+        main: 'items/runas/runas'
       }
     },
     {
-      :route    => "raza",
-      :title    => 'view',
-      :template => {
-        :left   => 'personaje/razas/left/links',
-        :main   => 'personaje/razas/center/:param',
-        :right  => 'personaje/razas/right/:param',
+      route: 'gemas',
+      template: { main: 'items/gemas/gemas' }
+    },
+    {
+      route: 'tiers',
+      template: {
+        left: 'objetos/left/content2',
+        main: 'items/tiers'
       }
     },
     {
-      :route    => "manuales",
-      :title    => "Reglamento",
-      :template => {
-        :left   => 'reglamento/izquierda/bestiario',
-        :main   => 'reglamento/principal',
-        :right  => 'reglamento/derecha/combate',
-        :right2 => 'reglamento/derecha/personajes'
+      route: 'profesiones',
+      template: {
+        main: 'personaje/profesiones',
+        right: 'reglamento/derecha/personajes'
       }
     },
     {
-      :route    => "objetos",
-      :template => {
-        :left   => 'objetos/left/content1',
-        :left2  => 'objetos/left/content2',
-        :main   => 'objetos/main',
-        :right  => 'objetos/right/content1',
-        :right2 => 'objetos/right/content2'
+      route: 'profesion',
+      title: 'view',
+      template: {
+        main: 'ciudad/profesiones',
+        right: 'reglamento/derecha/personajes',
+        right2: 'reglamento/derecha/personajes'
       }
     },
     {
-      :route    => "tesoro",
-      :template => {
-        :main   => 'reglamento/tesoro',
-        :right  => 'reglamento/derecha/combate' }
-    },
-    {
-      :route    => "armaduras",
-      :template => { 
-        :left   => 'objetos/left/content1',
-        :left2  => 'objetos/left/content2',
-        :main   => 'items/armaduras'
+      route: 'razas',
+      template: {
+        left: 'personaje/razas/left/links',
+        main: 'personaje/razas/center/main',
+        right: 'personaje/razas/right/stats'
       }
     },
     {
-      :route    => "armas",
-      :template => { 
-        :left  => 'objetos/left/content1',
-        :left2 => 'objetos/left/content2',
-        :main  => 'items/armas'
+      route: 'raza',
+      title: 'view',
+      template: {
+        left: 'personaje/razas/left/links',
+        main: 'personaje/razas/center/:param',
+        right: 'personaje/razas/right/:param'
       }
     },
     {
-      :route    => "protecciones",
-      :template => { 
-        :left  => 'objetos/left/content1',
-        :left2 => 'objetos/left/content2',
-        :main => 'items/protecciones' 
+      route: 'manuales',
+      title: 'Reglamento',
+      template: {
+        left: 'reglamento/izquierda/bestiario',
+        main: 'reglamento/principal',
+        right: 'reglamento/derecha/combate',
+        right2: 'reglamento/derecha/personajes'
       }
     },
     {
-      :route    => "miscelaneas",
-      :template => {
-        :left => 'objetos/left/content2',
-        :main => 'items/miscelaneas' 
+      route: 'objetos',
+      template: {
+        left: 'objetos/left/content1',
+        left2: 'objetos/left/content2',
+        main: 'objetos/main',
+        right: 'objetos/right/content1',
+        right2: 'objetos/right/content2'
       }
     },
     {
-      :route    => "piezas",
-      :template => { 
-        :left => 'objetos/right/content2',
-        :main => 'items/piezas' 
+      route: 'tesoro',
+      template: {
+        main: 'reglamento/tesoro',
+        right: 'reglamento/derecha/combate' }
+    },
+    {
+      route: 'armaduras',
+      template: {
+        left: 'objetos/left/content1',
+        left2: 'objetos/left/content2',
+        main: 'items/armaduras'
       }
     },
     {
-      :route    => "pociones",
-      :template => { 
-        :left => 'objetos/right/content2',
-        :main => 'items/pociones' 
+      route: 'armas',
+      template: {
+        left: 'objetos/left/content1',
+        left2: 'objetos/left/content2',
+        main: 'items/armas'
       }
     },
     {
-      :route    => "abalorios",
-      :template => { 
-        :left => 'objetos/right/content2',
-        :main => 'items/abalorios' 
+      route: 'protecciones',
+      template: {
+        left: 'objetos/left/content1',
+        left2: 'objetos/left/content2',
+        main: 'items/protecciones'
       }
     },
     {
-      :route    => "maestrodearmas",
-      :title    => "Maestro de Armas",
-      :template => { 
-        :main => 'ciudad/maestrodearmas',
-        :right => 'reglamento/derecha/personajes'
+      route: 'miscelaneas',
+      template: {
+        left: 'objetos/left/content2',
+        main: 'items/miscelaneas'
       }
     },
     {
-      :route    => "notaria",
-      :title    => "Notaría",
-      :template => { :main => 'ciudad/notaria' }
-    },
-    {
-      :route    => "palacio",
-      :template => { :main => 'ciudad/palacio' }
-    },
-    {
-      :route    => "templo",
-      :template => { :main => 'ciudad/templo' }
-    },
-    {
-      :route    => "spells",
-      :title    => "Hechizos",
-      :template => { 
-        :left  => 'ficha/izquierda/izquierda',
-        :main  => 'magia/spells',         
+      route: 'piezas',
+      template: {
+        left: 'objetos/right/content2',
+        main: 'items/piezas'
       }
     },
     {
-      :route    => "hechizos",
-      :template => { 
-        :left  => 'torre/left/elementales',
-        :left2 => 'torre/left/especializaciones',
-        :main  => 'magia/hechizos' 
+      route: 'pociones',
+      template: {
+        left: 'objetos/right/content2',
+        main: 'items/pociones'
       }
     },
     {
-      :route    => "sombras",
-      :template => { 
-        :left  => 'torre/left/elementales',
-        :left2 => 'torre/left/sagradas',
-        :main => 'magia/sombras' 
+      route: 'abalorios',
+      template: {
+        left: 'objetos/right/content2',
+        main: 'items/abalorios'
       }
     },
     {
-      :route    => "plegarias",
-      :template => {
-        :left  => 'torre/left/sagradas',
-        :left2 => 'torre/left/elementales',
-        :main => 'magia/plegarias' 
+      route: 'maestrodearmas',
+      title: 'Maestro de Armas',
+      template: {
+        main: 'ciudad/maestrodearmas',
+        right: 'reglamento/derecha/personajes'
       }
     },
     {
-      :route    => "elficas",
-      :title    => "Magias élficas",
-      :template => {
-        :left  => 'torre/left/elementales',
-        :left2 => 'torre/left/sagradas',
-        :main => 'magia/elficas' 
+      route: 'notaria',
+      title: "Notaría",
+      template: { main: 'ciudad/notaria' }
+    },
+    {
+      route: 'palacio',
+      template: { main: 'ciudad/palacio' }
+    },
+    {
+      route: 'templo',
+      template: { main: 'ciudad/templo' }
+    },
+    {
+      route: 'spells',
+      title: 'Hechizos',
+      template: {
+        left: 'ficha/izquierda/izquierda',
+        main: 'magia/spells'
       }
     },
     {
-      :route    => "sangre",
-      :title    => "Magia de sangre",
-      :template => { 
-        :left  => 'torre/left/elementales',
-        :left2 => 'torre/left/sagradas',
-        :main => 'magia/sangre' 
+      route: 'hechizos',
+      template: {
+        left: 'torre/left/elementales',
+        left2: 'torre/left/especializaciones',
+        main: 'magia/hechizos'
       }
     },
     {
-      :route    => "biblioteca",
-      :template => { :main => 'magia/biblioteca' }
-    },
-    {
-      :route    => "jugadores",
-      :template => { 
-        :main  => 'personaje/jugadores',
-        :right => 'heroes/sidebar'
-       }
-    },
-    {
-      :route    => "heroes",
-      :title    => "Héroes",
-      :template => { 
-        :main  => 'heroes/heroes',
-        :right => 'heroes/sidebar'
-       }
-    },
-    {
-      :route    => "extranjeros",
-      :title    => "view",
-      :template => { 
-        :main  => 'heroes/heroes',
-        :right => 'heroes/sidebar'
-       }
-    },
-    {
-      :route    => "estados",
-      :title    => "Estados de Combate",
-      :template => { 
-        :main  => 'reglamento/combate/estados',
-        :right => 'reglamento/derecha/combate',
-        :right2 => 'reglamento/derecha/dados'
-      }
-    },    
-    {
-      :route    => "posiciones",
-      :title    => "Posiciones de Combate",
-      :template => { 
-        :main   => 'reglamento/combate/posiciones', 
-        :right  => 'reglamento/derecha/combate',
-        :right2 => 'reglamento/derecha/dados'
-      }
-    },    
-    {
-      :route    => "resistencias",
-      :template => { 
-        :main  => 'reglamento/combate/resistencias',
-        :right => 'reglamento/derecha/combate',
-        :right2 => 'reglamento/derecha/dados'
+      route: 'sombras',
+      template: {
+        left: 'torre/left/elementales',
+        left2: 'torre/left/sagradas',
+        main: 'magia/sombras'
       }
     },
     {
-      :route    => "torre",
-      :title    => "Torre de Magia",
-      :template => {
-        :left  => 'torre/left/elementales',
-        :left2 => 'torre/left/sagradas',
-        :main  => 'torre/main',
-        :right => 'torre/right/tipos',
+      route: 'plegarias',
+      template: {
+        left: 'torre/left/sagradas',
+        left2: 'torre/left/elementales',
+        main: 'magia/plegarias'
       }
     },
     {
-      :route    => "magisters",
-      :template => {
-        :left   => 'torre/left/enseñanzas',
-        :main   => 'torre/magisters',
-        :right  => 'torre/right/ancestrales',
+      route: 'elficas',
+      title: "Magias élficas",
+      template: {
+        left: 'torre/left/elementales',
+        left2: 'torre/left/sagradas',
+        main: 'magia/elficas'
       }
     },
     {
-      :route    => "criaturas",
-      :template => { :main  => 'reglamento/criaturas' }
-    },
-    {
-      :route    => "criatura",
-      :title    => 'view',
-      :template => { 
-        :left   => 'reglamento/izquierda/bestiario',
-        :main   => 'reglamento/criature' 
+      route: 'sangre',
+      title: 'Magia de sangre',
+      template: {
+        left: 'torre/left/elementales',
+        left2: 'torre/left/sagradas',
+        main: 'magia/sangre'
       }
     },
     {
-      :route    => "test",
-      :template => { 
-        :left   => 'personaje/razas/left/links',
-        :main   => 'test/test',
-        :right  => "personaje/razas/right/stats",
+      route: 'biblioteca',
+      template: { main: 'magia/biblioteca' }
+    },
+    {
+      route: 'jugadores',
+      template: {
+        main: 'personaje/jugadores',
+        right: 'heroes/sidebar'
       }
     },
     {
-      :route    => "escuelas",
-      :template => { :main => 'magia/escuelas' }      
+      route: 'heroes',
+      title: "Héroes",
+      template: {
+        main: 'heroes/heroes',
+        right: 'heroes/sidebar'
+      }
     },
+    {
+      route: 'extranjeros',
+      title: 'view',
+      template: {
+        main: 'heroes/heroes',
+        right: 'heroes/sidebar'
+      }
+    },
+    {
+      route: 'estados',
+      title: 'Estados de Combate',
+      template: {
+        main: 'reglamento/combate/estados',
+        right: 'reglamento/derecha/combate',
+        right2: 'reglamento/derecha/dados'
+      }
+    },
+    {
+      route: 'posiciones',
+      title: 'Posiciones de Combate',
+      template: {
+        main: 'reglamento/combate/posiciones',
+        right: 'reglamento/derecha/combate',
+        right2: 'reglamento/derecha/dados'
+      }
+    },
+    {
+      route: 'resistencias',
+      template: {
+        main: 'reglamento/combate/resistencias',
+        right: 'reglamento/derecha/combate',
+        right2: 'reglamento/derecha/dados'
+      }
+    },
+    {
+      route: 'torre',
+      title: 'Torre de Magia',
+      template: {
+        left: 'torre/left/elementales',
+        left2: 'torre/left/sagradas',
+        main: 'torre/main',
+        right: 'torre/right/tipos'
+      }
+    },
+    {
+      route: 'magisters',
+      template: {
+        left: 'torre/left/enseñanzas',
+        main: 'torre/magisters',
+        right: 'torre/right/ancestrales'
+      }
+    },
+    {
+      route: 'criaturas',
+      template: { main: 'reglamento/criaturas' }
+    },
+    {
+      route: 'criatura',
+      title: 'view',
+      template: {
+        left: 'reglamento/izquierda/bestiario',
+        main: 'reglamento/criature'
+      }
+    },
+    {
+      route: 'test',
+      template: {
+        left: 'personaje/razas/left/links',
+        main: 'test/test',
+        right: 'personaje/razas/right/stats'
+      }
+    },
+    {
+      route: 'escuelas',
+      template: { main: 'magia/escuelas' }
+    }
   ]
 end
 
-def view    route ; views.find{ |v| v[:route] == route }  end
-def preview route ; erb :template, :locals => view(route) end
-def load_partial position
-  partial = position.gsub(':param', (params[:param].to_s)  ) 
+def view(route)
+  views.find { |v| v[:route] == route }
+end
+
+def preview(route)
+  erb :template, locals: view(route)
+end
+
+def load_partial(position)
+  partial = position.gsub(':param', params[:param].to_s)
   erb :"#{partial}"
 end

@@ -1,0 +1,117 @@
+-
+      id:           0 
+      nivel:        2 
+      name:         "Conjurar en letargo" 
+      description:  "Permite lanzar hechizos de tipo conjuro durante la fase trepidante  antes del combate." 
+      type:         "pasiva" 
+-
+      id:           1 
+      nivel:        2 
+      name:         "Biblioteca" 
+      description:  "+1 hechizo elemental (del nivel permitido) por cada nivel que subas." 
+      type:         "pasiva" 
+-
+      id:           2 
+      nivel:        2 
+      name:         "Levitar" 
+      description:  "Permite levitar por encima de una casilla por cada punto invertido." 
+      type:         "activa" 
+      coste:        "1PM" 
+-
+      id:           3 
+      nivel:        2 
+      name:         "Tutor" 
+      description:  "Permite hacer un hechizo aleatorio del nivel máximo de hechizos +1 que puede ejecutar normalmente." 
+      type:         "activa" 
+      coste:        "1 hechizo" 
+-
+      id:           4 
+      nivel:        3 
+      name:         "Sadismo arcano" 
+      description:  "Al matar con magia  gana 1 PM." 
+      type:         "reactiva" 
+-
+      id:           5 
+      nivel:        3 
+      name:         "Secreto rístico" 
+      description:  "Puedes hechizar gratuitamente cuando tu foco mate." 
+      type:         "declarativa" 
+      foco:         "un aliado" 
+      requisitos:   [1,3] 
+-
+      id:           6 
+      nivel:        3 
+      name:         "Insuflar maná" 
+      description:  "El conjurador le puede ceder X PM a un aliado." 
+      type:         "activa" 
+      coste:        "X PM" 
+      requisitos:   [3] 
+-
+      id:           7 
+      nivel:        3 
+      name:         "Explosión arcana" 
+      description:  "Un hechizo psiónico inflinge X puntos de daño defendibles  divididos equitativamente entre todas las miniaturas adyacentes al conjurador." 
+      type:         "activa" 
+      coste:        "X PM" 
+-
+      id:           8 
+      nivel:        4 
+      name:         "Teleportarse" 
+      description:  "El conjurador se desplaza tantas casillas como su mente  sin atravesar muros." 
+      type:         "Única" 
+      requisitos:   [2] 
+-
+      id:           9 
+      nivel:        4 
+      name:         "Conjuro deseado" 
+      description:  "+1 conjuro a elegir de nivel 1" 
+      type:         "activa" 
+      coste:        "3 PM" 
+      requisitos:   [3] 
+-
+      id:           10 
+      nivel:        4 
+      name:         "Meditar" 
+      description:  "Si hay enemigos a la vista  el conjurador puede realizar un hechizo para ganar 1d6 de mente + 2." 
+      type:         "reactiva" 
+      requisitos:   [6] 
+-
+      id:           11 
+      nivel:        5 
+      name:         "Mentor" 
+      description:  "Cuando se usa una magia  ya sea en un aliado o él mismo  el conjurador puede recuperarla con (7 - rango)+" 
+      type:         "reactiva" 
+      requisitos:   [3,9] 
+      rangos:       4 
+-
+      id:           12 
+      nivel:        5 
+      name:         "Falla" 
+      description:  "Al fallar una magia  recuperas 1 Teleportarse" 
+      type:         "reactiva" 
+      requisitos:   [8] 
+-
+      id:           13 
+      nivel:        5 
+      name:         "Perseverancia" 
+      description:  "Es equivalente a Gloria del Héroe" 
+      type:         "activa" 
+      coste:        "Todos los PM" 
+      requisitos:   [6,7]   
+-
+      id:           14 
+      nivel:        6 
+      name:         "Simetría arcana" 
+      description:  "+1 potencia al siguiente hechizo de tipo conjuro." 
+      type:         "activa" 
+      coste:        "Movimeinto" 
+      rangos:       4 
+      requisitos:   [0]   
+-
+      id:           14 
+      nivel:        7 
+      name:         "Conjuro magistral" 
+      description:  "+1 maestría al siguiente hechizo de tipo conjuro." 
+      type:         "única" 
+      rangos:       3 
+      requisitos:   [0]   

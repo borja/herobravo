@@ -1,0 +1,80 @@
+-
+  id:           0 
+  name:         "represalias" 
+  description:  "Devuelve como ataque el exceso de defensa" 
+  type:         "reactiva" 
+  nivel:        2 
+-
+  id:           1 
+  name:         "cargar" 
+  description:  "Invirtiendo 3 de movimiento como mínimo  en línea recta  suma +1 potencia/movimiento invertido en el ataque" 
+  type:         "declarativa" 
+  nivel:        2 
+-
+  id:           2 
+  name:         "competencia con escudo" 
+  description:  "+1 potencia defensiva del escudo" 
+  type:         "pasiva" 
+  nivel:        3 
+-
+  id:           3 
+  name:         "senda de la pradera" 
+  description:  "Permite realizar la secuencia: ataque-movimiento-ataque (sin realizar giros en el movimiento)" 
+  type:         "pasiva" 
+  nivel:        3 
+-
+  id:           4 
+  name:         "golpe al corazón" 
+  description:  "El hoplita golpea con la lanza obteniendo en ese ataque +1 fuerza y +1 potencia" 
+  type:         "única" 
+  nivel:        3 
+-
+  id:           5 
+  name:         "empalar" 
+  description:  "El daño excesivo realizado por la lanza a un enemigo  lo atraviesa y lo causa en la siguiente casilla frontal" 
+  type:         "pasiva" 
+  nivel:        4 
+  requisitos:   [4] 
+-
+  id:           6 
+  name:         "empujar" 
+  description:  "+1 empujar" 
+  type:         "pasiva" 
+  rangos:       2 
+  nivel:        3 
+-
+  id:           7 
+  name:         "arrojar escudo" 
+  description:  "El escudo se puede lanzar a un enemigo como un arma. Es recuperable" 
+  type:         "pasiva" 
+  nivel:        4 
+  requisitos:   [2] 
+-
+  id:           8 
+  name:         "experto en asta" 
+  description:  "+1 potencia en el ataque al usar lanzas" 
+  type:         "pasiva" 
+  nivel:        4 
+  rangos:       3 
+-
+  id:           9 
+  name:         "pálpito de la tundra" 
+  description:  "Al matar usando Golpe al corazón  el hoplita recupera un Cargar" 
+  type:         "reactiva" 
+  nivel:        5 
+  requisitos:   [1,4] 
+-
+  id:           10 
+  name:         "baluarte" 
+  description:  "Este turno todos los dados de defensa son azules" 
+  type:         "declarativa" 
+  coste:        "movimiento" 
+  requisitos:   [2] 
+  nivel:        5 
+-
+  id:           11 
+  name:         "baño de sangre" 
+  description:  "Al matar con una espada  el hoplita recupera Golpe al corazón" 
+  type:         "reactiva" 
+  requisitos:   [4] 
+  nivel:        7 

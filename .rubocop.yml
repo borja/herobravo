@@ -1,2 +1,3 @@
-Style/BracesAroundHashParameters:
-  EnforcedStyle: context_dependent
+ AlignHash:
+   Enabled: true
+   EnforcedColonStyle: table

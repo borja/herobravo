@@ -6,29 +6,11 @@ pjs = %w(
   matador falangista ingeniero maestrodearma
 )
 
-# YAML database requestor
-def nigromantes
-  YAML::load_file(File.join(__dir__, 'skills/nigromante.yml'))
-end
-
-def paladíns
-  YAML::load_file(File.join(__dir__, 'skills/paladín.yml'))
-end
-
-def matadors
-  YAML::load_file(File.join(__dir__, 'skills/matador.yml'))
-end
-
-def ingenieros
-  YAML::load_file(File.join(__dir__, 'skills/ingeniero.yml'))
-end
-
-def brujos
-  YAML::load_file(File.join(__dir__, 'skills/brujo.yml'))
-end
-
 # Generic clase creator
 pjs.each do |pj|
+  define_method(pj+'s') do
+   YAML::load_file(File.join(__dir__, "skills/#{pj}.yml"))
+  end
   define_method(pj) do |id|
     send(pj + 's')[id].merge(char: pj)
   end
