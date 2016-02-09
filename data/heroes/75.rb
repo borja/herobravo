@@ -1,21 +1,21 @@
 # encoding: UTF-8
 def h75
   {
-    id: 75,
-    name: 'Zalin',
+    id:        75,
+    name:      'Zalin',
     personaje: 'matador',
-    jugador: 'Borja',
-    ciudad: 'Oszthgard',
-    nivel: 1,
-    cuerpo: 7,
-    mente: 3,
-    mov: 6,
-    armadura: Armadura.new(id: 2),
-    armas: [
+    jugador:   'Borja',
+    ciudad:    'Oszthgard',
+    nivel:     1,
+    cuerpo:    7,
+    mente:     3,
+    mov:       6,
+    armadura:  Armadura.new(id: 2),
+    armas:     [
       Arma.new(id: 7),
       Arma.new(id: 11)
     ],
-    tesoro: {
+    tesoro:    {
       gemas: [1, 17, 29]
     }
   }
