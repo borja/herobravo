@@ -1,28 +1,2 @@
-inherit_from:
-  - .rubocop_todo.yml
-
-AllCops:
-  Include:
-    - Rakefile
-    - config.ru
-  Exclude:
-    - db/**/*
-
-Metrics/MethodLength:
-  Max: 5
-
 Style/AlignHash:
-  EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
-
-Style/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
-
-Style/Documentation:
-  Enabled: false
-
-Style/GuardClause:
-  Enabled: false

@@ -1,23 +1,23 @@
 # encoding: UTF-8
 def h5
   {
-    id:         5,
-    name:       'Yunnow (junior)',
-    personaje:  'conjurador',
-    jugador:    'Daniel Cabañas',
-    status:     'activo',
-    historia:   1,
-    nivel:      15,
-    repu:       6,
-    cuerpo:     5,
-    mente:      20,
-    mov:        8,
-    pet:        Pet.new(id: 6, name: 'Verruguitas'),
-    armas:      [
+    id:          5,
+    name:        'Yunnow (junior)',
+    personaje:   'conjurador',
+    jugador:     'Daniel Cabañas',
+    status:      'activo',
+    historia:    1,
+    nivel:       15,
+    repu:        6,
+    cuerpo:      5,
+    mente:       20,
+    mov:         8,
+    pet:         Pet.new(id: 6, name: 'Verruguitas'),
+    armas:       [
       Arma.new(id: 21, ranuras: 3),
       Arma.new(id: 20, enchants: [40])
     ],
-    armadura: Armadura.new(id: 1, ranuras: 4, enchants: [41]),
+    armadura:    Armadura.new(id: 1, ranuras: 4, enchants: [41]),
     proteccions: [
       Proteccion.new(id: 3, gemas: [13]),
       Proteccion.new(id: 11),
@@ -39,11 +39,11 @@ def h5
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67,
       68, 69, 70, 71
     ],
-    tesoro: {
+    tesoro:      {
       gemas: [0, 4, 5, 5, 11, 21, 29],
       joyas: [10, 11]
     },
-    pergaminos: [
+    pergaminos:  [
       Pergamino.new(id: 1, spells: [94]),
       Pergamino.new(id: 1, spells: [9])
     ]
