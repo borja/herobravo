@@ -16,8 +16,8 @@ def h0
     armas:        [Arma.new({ id: 8, enchants: [59], ranuras: 1 })],
     armadura:     Armadura.new({ id: 1 }),
     miscelaneas:  [
-      Miscelanea.new({ id: 2,  enchants: [30, 31], ranuras: 1 }),
-      Miscelanea.new({ id: 16, enchants: [60] })
+      Miscelanea.new(id: 2,  enchants: [30, 31], ranuras: 1),
+      Miscelanea.new(id: 16, enchants: [60])
     ],
     proteccions:  [Proteccion.new({ id: 8 })],
     pergaminos:   [Pergamino.new({ id: 1, spells: [11] })],

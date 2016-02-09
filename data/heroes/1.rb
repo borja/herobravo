@@ -1,6 +1,6 @@
 # encoding: UTF-8
 def h1
-  { 
+  {
     id:            1,
     name:          'Lord Fuckencio',
     progenitores:  ['El Emperador', 33],
@@ -8,8 +8,8 @@ def h1
       nombre:       'Mickaella',
       raza:         'elfa-oscura',
       tipo:         'pnj',
-      descripcion:  
-        'Originalmente un duque drow, 
+      descripcion:
+        'Originalmente un duque drow,
         cambiado de sexo tras ser seducido y redimido por Lord Fuckencio.'
     },
     personaje:    'asesino',
