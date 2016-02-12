@@ -118,7 +118,7 @@ class Hero < Hash
   def anillos       ; (self.miscelaneas || []).select { |m| m.fits == "anillo"  } end
   def amuletos      ; (self.miscelaneas || []).select { |m| m.fits == "amuleto" } end 
   def img_path      ; "'../images/personajes/#{self.genderize}.png'" end
-  def big_path      ; "'../../images/portraits/#{ self.name  }.png'" end
+  def big_path      ; "'../../images/portraits/#{self.name}.png'" end
   def reputacion    ; self.repu || 0 end
   def movimiento    ; self.mov       end
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
@@ -127,11 +127,11 @@ class Hero < Hash
   def cacharros     ; self.piezas.map     {|num|     Pieza.new(:id => num)} if self.piezas     end
   def brebajes      ; self.pociones.map   {|num|    Pocion.new(:id => num)} if self.pociones   end
   def componentes   ; self.materiales.map {|num|  Material.new(:id => num)} if self.materiales end
+  def transportes   ; self.mounts.map     {|num|   Montura.new(montura(num))} if self.mounts   end 
   def habilidades   ; self.skills.map     {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
   def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
   def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
   def shadow_magic  ; self.shadows.map  {|num| sombra(num)}  if self.shadows  end 
-  def transportes   ; self.mounts.map   {|num| montura(num)} if self.mounts   end 
   def sin_recursos  ; self.tesoro.nil? end
   def empadronado   ; self.ciudad || "Jadessvärd" end
   def estado        ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end

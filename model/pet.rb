@@ -11,23 +11,23 @@ class Pet < Hash
   end
 
   def personajes
-    pet(id)[:personajes]
+    pet(id)['personajes']
   end
 
   def lacra
-    pet(id)[:lacra]
+    pet(id)['lacra']
   end
 
   def bono
-    pet(id)[:bono]
+    pet(id)['bono']
   end
 
   def sex
-    pet(id)[:sex]
+    pet(id)['sex']
   end
 
   def bicho
-    pet(id)[:name]
+    pet(id)['name']
   end # > "pitufo", "rata"
 
   def img_path
@@ -53,4 +53,12 @@ class Pet < Hash
     end
     total
   end
+end
+
+def pet(id)
+  pets[id]
+end
+
+def pets
+  YAML::load_file(File.join(__dir__, '../data/pets.yml'))
 end

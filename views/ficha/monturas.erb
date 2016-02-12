@@ -14,16 +14,17 @@
 		</thead>
 		<tbody>
 			<% monturas.each do |montura| %>
+				<% m = Montura.new(montura) %>
 				<tr>
 					<td><%= erb :'display/display', :locals => {
-						:title       => montura.name,
-						:path        => montura.img_path,
-						:description => montura.bono } %>
+						:title       => m.name,
+						:path        => m.img_path,
+						:description => m.bono } %>
 					</td>
-					<td><%= montura.name %></td>
-					<td><%= montura.recorrido.capitalize %></td>
-					<td><%= montura.distancia %></td>
-					<td><%= montura.precio %></td>
+					<td><%= m.name %></td>
+					<td><%= m.recorrido.capitalize %></td>
+					<td><%= m.distancia %></td>
+					<td><%= m.precio %></td>
 				</tr>
 			<% end %>
 		</tbody>

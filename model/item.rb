@@ -54,7 +54,7 @@ class Item < Hash
   
   def is_tier?
     combo = false
-    mix = {:gemas => self.gemas, :runas => self.runas, :joyas => self.joyas }
+    mix = {gemas: self.gemas, runas: self.runas, joyas: self.joyas }
     tiers.each do |t|
       if t[:mix] == mix
         combo = tier(t[:id]) 
@@ -63,7 +63,7 @@ class Item < Hash
     return combo 
   end  
   
-  def tier_color ; self.is_tier? ? self.is_tier?[:color] : "black" end
+  def tier_color ; self.is_tier? ? self.is_tier?[:color] : 'black' end
 end
 
 class Proteccion < Item

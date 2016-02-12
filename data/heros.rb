@@ -1,7 +1,6 @@
 ﻿# encoding: UTF-8
 
 def total_heros ; Dir["data/heroes/*"].length end
-total_heros.times { |i| require "./data/heroes/#{i}" }
 def heros ; [*0..(total_heros - 1)].map { |i| Hero.new(send("h#{i}")) } end
 def hero id ; heros[id] end
 
