@@ -15,3 +15,11 @@ class Montura < Hash
     "'../../images/monturas/#{name}.png'" 
   end
 end
+
+def montura(id)
+  monturas[id]
+end
+
+def monturas
+  YAML::load_file(File.join(__dir__, "../data/monturas.yml"))
+end

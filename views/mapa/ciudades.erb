@@ -7,9 +7,9 @@
 <ul class="link-list">
 	<% cities.each do |c| %>
 		<li>
-			<a href='/city/<%= c[:name] %>'><%= c[:name] %></a>(<%= c[:master] %>) 
-			<% unless c[:name] == 'Jadessvärd' %>
-				: <a href='/extranjeros/<%= c[:name] %>'>ver héroes</a>
+			<a href='/city/<%= c['name'] %>'><%= c['name'] %></a>(<%= c['master'] %>) 
+			<% unless c['name'] == 'Jadessvärd' %>
+				: <a href='/extranjeros/<%= c['name'] %>'>ver héroes</a>
 			<% end %>
 		</li>
 	<% end %>

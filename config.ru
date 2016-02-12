@@ -6,7 +6,8 @@ require 'yaml'
 # Fake Data Base
 require_all './data'
 
-require './model/model'
+# DB Class Conversor
+require_all './model'
 
 Bundler.require
 require './app.rb'

@@ -3,4 +3,14 @@
   nombre:     "lobo"
   cuerpo:     2
   mente:      2
+  ataque:     4
+  defensa:    2
   movimiento: 10
+-
+  id:         1
+  nombre:     "oso"
+  cuerpo:     4
+  mente:      2
+  ataque:     "2+2"
+  defensa:    4
+  movimiento: 6
