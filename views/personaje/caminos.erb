@@ -9,17 +9,13 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% caminos.keys.each_with_index do |camino,i| %>
+		<% caminos.each do |c| %>
 			<tr>
-				<td><img src='images/caminos/<%=camino%>.png' alt='<%= camino %>', id='icon' /></td>
-				<td><%= camino %></td>
-				<td><%= 0 %></td>
-				<% camino(camino).each do |paso| %>
-					<td><%= erb :'display/camino', :locals => { 
-							  :camino => camino,
-							  :paso   => paso
-							} %>
-					</td>
+				<td><img src='images/caminos/<%= c.first %>.png' alt='<%= c.first %>', id='icon' /></td>
+				<td><%= c.first %></td>
+				<td><%= 'Hero: not implemented' %></td>
+				<% c.last.each do |paso| %>
+					<td><%= erb :'display/camino', :locals => { camino: c, paso: paso} %></td>
 				<% end %>
 			</tr>
 		<% end %>

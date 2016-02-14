@@ -19,7 +19,7 @@
 				<th>Historia</th>
 			<% end %>
 			<% if h.camino %>
-				<th>Camino</th>
+				<th><a href='/caminos'>Camino</a></th>
 			<% end %>
 		</tr>
 	</thead>
@@ -44,9 +44,9 @@
 			<% end %>
 			<% if m = h.transportes %>
 				<td><%= erb :'display/display', :locals => { 
-						:title       => m.first.name, 
-						:path        => m.first.img_path,
-						:description => m.first.bono } %>
+						title:       m.first.name, 
+						path:        m.first.img_path,
+						description: m.first.bono } %>
 				</td>
 			<% end %>
 			<% if h.historia %>
@@ -59,9 +59,8 @@
 			<% if h.camino %>
 				<td>
 					<%= erb :'display/camino', :locals => { 
-						:camino => h.camino,
-						:paso   => h.camino
-					} %>
+						camino: camino(h.camino.first), 
+						paso:   camino(h.camino.first) } %>
 				</td>
 			<% end %>
 		</tr>
