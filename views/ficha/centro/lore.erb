@@ -51,16 +51,16 @@
 			<% end %>
 			<% if h.historia %>
 				<td>
-					<a href=<%= "/historia/#{h.id }" %>>
+					<a href=<%= "/historia/#{h.id}" %>>
 						<img src="../images/ficha/historia.png" alt="historia" /, id='icon'>
 					</a>
 				</td>
 			<% end %>
 			<% if h.camino %>
-				<td>
-					<%= erb :'display/camino', :locals => { 
-						camino: camino(h.camino.first), 
-						paso:   camino(h.camino.first) } %>
+				<td><%= erb :'display/display', :locals => { 
+						:title       => 'Camino: ' + h.camino.first, 
+						:path        =>  "../images/caminos/#{h.camino.first.gsub(' ','%20')}.png",
+						:description => camino(h.camino.first).last[ h.camino.last - 1] } %>
 				</td>
 			<% end %>
 		</tr>
