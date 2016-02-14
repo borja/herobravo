@@ -9,13 +9,14 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% caminos.each do |c| %>
+		<% caminos.each do |cam| %>
+			<% c = Camino.new(cam) %>
 			<tr>
-				<td><img src='images/caminos/<%= c.first %>.png' alt='<%= c.first %>', id='icon' /></td>
+				<td><img src=<%= c.img_path %>.png alt='<%= c.name %>', id='icon' /></td>
 				<td><%= c.first %></td>
-				<td><%= 'Hero: not implemented' %></td>
+				<td><%= erb :'display/bazarcaminos', locals: { bazar: c.conocidos, item_id: c.name } %></td>
 				<% c.last.each do |paso| %>
-					<td><%= erb :'display/camino', :locals => { camino: c, paso: paso} %></td>
+					<td><%= erb :'display/camino', locals: { camino: c, paso: paso} %></td>
 				<% end %>
 			</tr>
 		<% end %>
