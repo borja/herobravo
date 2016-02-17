@@ -60,3 +60,38 @@ class Elemental < Magia
     elementos[self.id / 6 % 4]
   end
 end
+
+# All fin ID methods
+def elfica   id ;   elficas[id] end
+def plegaria id ; plegarias[id] end
+def sangre   id ;   sangres[id] end
+def sombra   id ;   sombras[id] end
+def spell    id ;    spells[id] end
+
+def escuelas # TODO: Complete this.
+ { 'aire'    => '' ,
+   'fuego'   => '' ,
+   'agua'    => '' ,
+   'tierra'  => '' ,
+   'sombras' => '' ,
+   'tenebro' => '' ,
+   'sangre'  => '' ,
+   'luz'     => '' 
+ }
+end
+
+def elficas
+  YAML::load_file(File.join(__dir__, '../data/magia/elficas.yml')).map { |e| Elfica.new(e) }
+end
+
+def plegarias
+  YAML::load_file(File.join(__dir__, '../data/magia/plegarias.yml')).map { |p| Plegaria.new(p) }
+end
+
+def sangres
+  YAML::load_file(File.join(__dir__, '../data/magia/sangre.yml')).map { |s| Sangre.new(s) }
+end
+
+def sombras
+  YAML::load_file(File.join(__dir__, '../data/magia/sombras.yml')).map { |s| Sombra.new(s) }
+end

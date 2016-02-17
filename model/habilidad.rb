@@ -35,7 +35,7 @@ pjs = %w(
   caminante brujo vengador hoplita beastslord bersérker
   hechicero invocador conjurador paladín clérigo sacerdote
   derviche arquero druida ladrón asesino nigromante
-  matador falangista ingeniero maestrodearma
+  matador falangista ingeniero
 )
 
 # Generic clase creator
@@ -47,3 +47,5 @@ pjs.each do |pj|
     send(pj + 's')[id].merge(char: pj)
   end
 end
+
+def maestrodearma id ; maestrodearmas[id] end
