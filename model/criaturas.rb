@@ -10,7 +10,7 @@ end
 # Define criatures using YML
 criaturas.each do |criature|
   define_method(criature) do
-   YAML::load_file(File.join(__dir__, "#{criature}.yml"))
+   YAML::load_file(File.join(__dir__, "../data/criaturas/#{criature}.yml"))
   end
 end
 
