@@ -532,6 +532,17 @@ def enchants
       name:         'Oscura',
       descripcion:  '+1 magia de sombras al inicio del reto',
       tipo:         'sombras'
+    },
+    { id:           101,
+      name:         'Negra',
+      descripcion:  'Puede extender su tamaño a voluntad, volviéndose daga, espada o mandoble. (3/4/5)<br/>
+                     Tiene voluntad propia y añade un dado del mal a la tirada. (+1/+3 de Fuerza)',
+      tipo:         'sombras'
+    },
+    { id:           102,
+      name:         'alquímico',
+      descripcion:  '+3 vs peste',
+      tipo:         'alquímico'
     }
   ]
 end
