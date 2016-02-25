@@ -219,3 +219,11 @@
   ranuras:     4
   diagonal:    false
   precio:      500
+-
+  id:          27
+  name:        "Hoja"
+  categoria:   "filo"
+  ataque:      4
+  ranuras:     4
+  diagonal:    false
+  precio:      1500
