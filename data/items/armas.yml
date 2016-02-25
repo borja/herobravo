@@ -221,7 +221,7 @@
   precio:      500
 -
   id:          27
-  name:        "Hoja"
+  name:        "hoja"
   categoria:   "filo"
   ataque:      4
   ranuras:     4
