@@ -2,7 +2,7 @@
 def h28
   {
     id:          28,
-    name:        'Namhayd',
+    name:        'Rhemvorn',
     personaje:   'conjurador',
     jugador:     'Alpa',
     nivel:       6,
