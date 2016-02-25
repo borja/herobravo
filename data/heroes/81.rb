@@ -20,6 +20,7 @@ def h81
     armadura:     Armadura.new(id: 2),
     miscelaneas:  [
       Miscelanea.new(id: 21, enchants: [29])
-    ]
+    ],
+    pet:          Pet.new(id: 19, name: 'Ñamo')
   }
 end
