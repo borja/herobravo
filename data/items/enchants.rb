@@ -543,6 +543,11 @@ def enchants
       name:         'alquímico',
       descripcion:  '+3 vs peste',
       tipo:         'alquímico'
+    },
+    { id:           103,
+      name:         'espiritual',
+      descripcion:  '+1 PM',
+      tipo:         'espiritual'
     }
   ]
 end
