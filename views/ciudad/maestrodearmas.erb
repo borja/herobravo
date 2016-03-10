@@ -7,12 +7,12 @@
 	<tbody>
 		<% maestrodearmas.each do |m| %>
 			<tr>
-				<td><% img_path = "'../images/skills/maestrodearmas/#{m[:name]}.png'" %>
-					<img src=<%=img_path%> alt=<%=m[:name]%>, id='icon' />
+				<td><% img_path = "'../images/skills/maestrodearmas/#{m['name']}.png'" %>
+					<img src=<%=img_path%> alt=<%=m['name']%>, id='icon' />
 				</td>
-				<td><%= m[:name] %></td>
-				<td><%= m[:descripcion] %></td>
-				<td><%= m[:coste] %></td>
+				<td><%= m['name'] %></td>
+				<td><%= m['descripcion'] %></td>
+				<td><%= m['coste'] %></td>
 			</tr>
 		<% end %>
 	</tbody>

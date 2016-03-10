@@ -48,4 +48,8 @@ pjs.each do |pj|
   end
 end
 
+def maestrodearmas
+  YAML::load_file(File.join(__dir__, '../data/maestrodearma.yml'))
+end
+  
 def maestrodearma id ; maestrodearmas[id] end
