@@ -4,17 +4,17 @@
   descripcion: "Los enemigos suman un punto al multiplicador de proximidad del personaje cuando se desplacen a su alrededor."
   coste:       "300"
 - 
-  id:          4
+  id:          1
   name:        "Dominio de la lanza"
   descripcion: "Permite llevar lanzas en una mano"
   coste:       "100"
 - 
-  id:          4
+  id:          2
   name:        "Muro de lanzas"
   descripcion: "Permite atacar en +1 casilla de distancia y atacar a los enemigos a través de sus compañeros sin ocasionarles daño alguno."
   coste:       "250"
 - 
-  id:          4
+  id:          3
   name:        "Anticiparse"
   descripcion: "Al usar armas de asta permite golpear como interrupción a las miniaturas que invadan el alcance frontal. (nunca diagonales)"
   coste:       "250"
