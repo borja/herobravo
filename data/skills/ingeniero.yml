@@ -116,3 +116,10 @@
   description: "3 de movimiento: El siguiente disparo de artillería será con +1 potencia. El bonificador desaparece si el ingeniero se mueve."
   type:        "activa"
   nivel:       7
+-
+  id:          15
+  name:        "Armatoste"
+  description: "Es considerada una montura. Movimiento: la mitad de la mente del ingeniero. El ingeniero está en posición elevada y puede usar su movimiento como acción de artillería, o como lanzallamas (requiere éter)"
+  type:        "definitiva"
+  requisitos:  [0,1,3,6,9]
+  nivel:       10
