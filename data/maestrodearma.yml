@@ -53,3 +53,8 @@
   name:        "Pértiga"
   descripcion: "+1 saltar fosos al estar equipado con un bastón."
   coste:       "250"
+- 
+  id:          11
+  name:        "Dominio del bastón"
+  descripcion: "Permite llevar 1 bastón en la mano principal."
+  coste:       "100"  
