@@ -425,7 +425,7 @@
   name: "perla negra"
   fits:
     cabeza:  "Trepidante: los no-muertos que no superen una tirada de miedo lucharán a tu servicio. +1 causar miedo."
-    cuello:  "Otorga el legendario navío <La perla negra>. El objetivo causa miedo +1. +20 al oro del tesoro, por nivel del tesoro."
+    cuello:  "Otorga el legendario navío: La perla negra. El objetivo causa miedo +1. +20 al oro del tesoro, por nivel del tesoro."
     pecho:   "Obtienes un punto de alma al matar. N cargas: +N de resistencia a Tenebro o +N puntos de Mente."
     espalda: "3/reto: Al recibir un ataque por la espalda puedes mover tu miniatura como respuesta a la espalda de tu agresor. Esto podría interrumpir su ataque. +2 protección. +1 vs Tenebro."
     anillo:  "+1 habilidad única de tu personaje al iniciar el reto. Si un hechizo o efecto mágico reduce tus PC por debajo de 0, comenzarás tu turno como esqueleto (misma armadura y ataque de arma principal). El efecto se puede revertir con una misa."
@@ -445,7 +445,7 @@
   name: "rosa de cristal"
   fits:
     cabeza:    "+2 esquivar."
-    cuello:    "+1 a la habilidad <Dos Armas>"
+    cuello:    "+1 a la habilidad: Dos Armas"
     pecho:     "+2 vs Psiónica. 3PC: El corazón del portador abandona su pecho en forma de esfera de relámpagos. Si fuera destruído, obtiene +1 vs Psiónica hasta el final del reto y perdería 2 PM."
     espalda: "-1 al consumo de movimiento todas las habilidades activas y efectos que consuman movimiento. (Mínimo 1)"
     anillo:    "-1 a la dimensión del arma de la mano que la empuña. Si blandes sin empuñarla, congela y es disruptora.)"
@@ -486,7 +486,7 @@
   fits:
     cuello:    "Al morir por un efecto de fuego resucitas con todo tu cuerpo y mente. Tus aliados y tú podéis conjurar fuego contra ti mismo para provocar este efecto."
     cabeza:    "Iluminas la sala (-1 sigilo de los enemigos). +1 potencia de hechizos de fuego. +1 fuerza al atacar enemigos a melé."
-    pecho:     "Al obtener <monstruo errante> y durante la fase trepidante, al fallar una tirada de búsqueda lanzará Espiritismo ígneo."
+    pecho:     "Al obtener monstruo-errante y durante la fase trepidante, al fallar una tirada de búsqueda lanzará Espiritismo ígneo."
     espalda: "Al ser objetivo de un hechizo de fuego por un lanzador ubicado detrás de tu miniatura, puedes lanzar un Fuego de Ira con maestría igual a tus heridas y potencia igual a tus dados de defensa."
     anillo:    "+2 maestría a hechizos de fuego. Al dañar con fuego a un enemigo obtienes +3 vs Calor hasta tu siguiente turno."
     arma:      "+2 dados de fuego. +1 de fuerza. Los dados nulos de fuego generan cargas fénix. 2 cargas fénix: +1 fuerza. 3 cargas fénix: +5 vs Calor. 4 cargas fénix: brtarán alas de fuego hasta el final del reto: volará, +3 movimiento, +2 vs Escarcha."
