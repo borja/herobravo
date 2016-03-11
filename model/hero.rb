@@ -164,7 +164,7 @@ class Hero < Hash
             ["gemas","joyas","runas"].each do |engarce|
               if eng = item.send(engarce)
                 eng.each do |id|
-                  texto = send(engarce[0..-2], id).fits[item.fits.to_sym] # takes description
+                  texto = send(engarce[0..-2], id).fits[item.fits] # takes description
                   if m = (regex =~ texto) # if positive (TODO: tune up this)
                     #puts "#{elemento}, #{item.name},#{engarce} #{texto}"
                     bono  = texto[m.to_i-2].to_i # add the bonificator

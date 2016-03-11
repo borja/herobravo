@@ -175,9 +175,13 @@ class Material < Util
 end
 
 def gema(id)
-  gemas[id]
+  gemas.find { |g| g.id = id }
 end
 
 def gema_ranuras
   gemas.map { |r| r.fits.keys }.flatten.uniq
+end
+
+def gemas
+  YAML::load_file(File.join(__dir__, '../data/items/engarces/gemas.yml')).map {|g| Gema.new(g)}
 end
