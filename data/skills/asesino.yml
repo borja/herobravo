@@ -46,7 +46,7 @@
   nivel:        3
   rangos:       4
   requisitos:   [2]
-  name:         "dagas voladoras"
+  name:         "Dagas voladoras"
   type:         "Pasiva"
   description:  
     "Requiere mecanismo de muñeca o dominio de puñales. El asesino es capaz de realizar ataques extra con dagas. 
