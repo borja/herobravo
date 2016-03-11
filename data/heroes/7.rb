@@ -2,10 +2,11 @@
 def h7
   {
     id:          7,
-    name:        'Thor',
+    name:        'Loki',
     personaje:   'ingeniero',
     jugador:     'Aitor',
     status:      'activo',
+    progenitores: [82,'Emma'],
     nivel:       10,
     repu:        3,
     cuerpo:      10,
