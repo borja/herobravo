@@ -9,7 +9,7 @@ def h1
       raza:        'elfa-oscura',
       tipo:        'pnj',
       descripcion:
-                   'Originalmente un duque drow,
+        'Originalmente un duque drow,
         cambiado de sexo tras ser seducido y redimido por Lord Fuckencio.'
     },
     personaje:    'asesino',
@@ -18,14 +18,14 @@ def h1
     camino:       ['El Heredero', 3],
     titulo:       'Príncipe Bastardo',
     repu:         11,
-    nivel:        22,
+    nivel:        23,
     cuerpo:       11,
     mente:        11,
     mov:          18,
     armas:        [
       Arma.new(id: 6, joyas: [10, 10]),
       Arma.new(id: 3, gemas: [32])],
-    armadura:     Armadura.new(id: 2, gemas: [36, 29, 37], enchants: [33]),
+    armadura:     Armadura.new(id: 6, gemas: [36, 29, 37]),
     proteccions:  [
       Proteccion.new(id: 12, gemas: [30], joyas: [3]),
       Proteccion.new(id: 1,  gemas: [26, 27, 26], enchants: [20, 78]),
@@ -41,11 +41,11 @@ def h1
       Miscelanea.new(id: 8),
       Miscelanea.new(id: 3,  ranuras:  1),
       Miscelanea.new(id: 2,  gemas:    [27], enchants: [6]),
-      Miscelanea.new(id: 11, enchants: [35, 42]),
+      Miscelanea.new(id: 11, enchants: [35, 42], ranuras: 1),
       Miscelanea.new(id: 6,  enchants: [37])
     ],
     abalorios:    [Abalorio.new(id: 4)],
-    profesion:    Profesion.new(id: 0, aprendiz: [0, 1, 2, 3]),
+    profesion:    Profesion.new(id: 0, aprendiz: [0, 1, 2, 3, 4]),
     pet:          Pet.new(id: 17, name: 'Scumbag'),
     mounts:       [2],
     materiales:   [1, 1],
