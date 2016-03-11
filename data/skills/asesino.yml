@@ -63,8 +63,8 @@
 	<li>Rango II: añade un dado especial negro a tus ataques.</li>"
 -
   id:           7
-  rangos:       2
   nivel:        4
+  rangos:       2
   requisitos:   [4]
   name:         "Honor entre ladrones"
   type:         "Pasiva"
@@ -82,31 +82,46 @@
 	Las dagas no pueden retroceder sus movimientos y siempre salen del frente del asesino."
 -
   id:           9
+  nivel:        5
+  rangos:       2
+  requisitos:   [0]
   name:         "Paso de sombras"
   type:         "Activa"
-  description:  "añade +1 rango de sigilo al asesino. Rango I: coste 2PM. Rango II: coste 1PM."
+  coste:        "3PM - 1PM/rango"
+  description:  "añade +1 rango de sigilo al asesino."
 -
   id:           10
+  nivel:        6
+  requisitos:   [3]
   name:         "Golpe a la carótida"
   type:         "Única"
-  description:  "Requiere dagas. No utilizable en ciertos enemigos. El asesino ignora la armadura física del objetivo."
+  description:  "Requiere dagas. No utilizable en ciertos enemigos. El objetivo debe defenderse con defensa verdadera."
 -
   id:           11
+  nivel:        6
+  requisitos:   [0]
   name:         "Subterfugio"
   type:         "Reactiva"
   description:  "Otorga al asesino +1 rango de sigilo al matar cuerpo a cuerpo. No funciona con todos los enemigos."
 -
   id:           12
+  nivel:        6
+  requisitos:   [0,3]
   name:         "Siempre al acecho"
   type:         "Reactiva"
   description:  "Otorga +1 rango de sigilo al atravesar una puerta."
 -
   id:           13
+  nivel:        7
+  requisitos:   [9]
   name:         "Paso en falso"
   type:         "Activa"
-  description:  "Permite al asesino desplazarse casillas extra tras haber realizado la acción de MOV. Coste 4MOV."
+  coste:        "4 Movimiento/casilla"
+  description:  "Permite al asesino desplazarse casillas extra tras haber realizado la acción de MOV."
 -
   id:           14
+  nivel:        7
+  requisitos:   [2,9]
   name:         "Sombras gemelas"
   type:         "Declarativa"
   description:  
@@ -114,18 +129,25 @@
     La sombra del asesino puede actuar como el propio asesino salvo en desplazamientos y ataques básicos."
 -
   id:           15
+  nivel:        7
+  rangos:       4
+  requisitos:   [10]
   name:         "Intimidar"
-  type:         "Activa"
+  type:         "Reactiva"
   description:  
-    "Tras matar cuerpo a cuerpo el asesino puede intimidar a los enemigos infligiéndoles miedo. 
+    "Tras matar cuerpo a cuerpo el asesino puede intimidar a los enemigos causándoles ()+1/rango) miedo. 
 	Alcance: S/P y Visión en campo abierto."
 -
-  id:           16
-  name:         "Estocada limpia"
-  type:         "Activa"
-  description:  "Tras matar cuerpo a cuerpo el asesino puede tirar un d6 y esa será la cantidad de movimiento extra de la que dispondrá."
 -
+  id:           16
+  nivel:        8
+  requisitos:   [0]
+  name:         "TBD"
+  type:         "Activa"
+  description:  "El MB no ha hecho los deberes :)"
+-	
   id:           17
+  nivel:        8
   name:         "Puñal de sombras"
   requisitos:   [0,2]
   type:         "Reactiva"
@@ -154,6 +176,6 @@
   name:         "Culto a Elmut"
   type:         "Definitiva"
   description:  
-    "Tras sesgar tu dcimotercera vida, estarás bendecido por Elmut:<br/>
+    "Tras sesgar tu decimotercera vida, estarás bendecido por Elmut:<br/>
 	 Cobrarás todas las piezas que mates en conjunto, y podrás después de matar, bien recuperar 1 hechizo,<br/>
 	 bien disponer de una acción de hechizar adicional. (Una única vez por turno)"
