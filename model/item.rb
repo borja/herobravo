@@ -173,3 +173,11 @@ class Material < Util
     return usado
   end
 end
+
+def gema(id)
+  gemas[id]
+end
+
+def gema_ranuras
+  gemas.map { |r| r.fits.keys }.flatten.uniq
+end
