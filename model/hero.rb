@@ -124,9 +124,9 @@ class Hero < Hash
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
   def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
   def defensa       ; self.armadura.defensa end
-  def cacharros     ; self.piezas.map     {|num|     Pieza.new(:id => num)} if self.piezas     end
-  def brebajes      ; self.pociones.map   {|num|    Pocion.new(:id => num)} if self.pociones   end
-  def componentes   ; self.materiales.map {|num|  Material.new(:id => num)} if self.materiales end
+  def cacharros     ; self.piezas.map     {|num|     Pieza.new(id: num)} if self.piezas     end
+  def brebajes      ; self.pociones.map   {|num|    Pocion.new(id: num)} if self.pociones   end
+  def componentes   ; self.materiales.map {|num|  Material.new(id: num)} if self.materiales end
   def transportes   ; self.mounts.map     {|num|   Montura.new(montura(num))} if self.mounts   end 
   def habilidades   ; self.skills.map     {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
   def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
