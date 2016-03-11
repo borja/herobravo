@@ -138,14 +138,13 @@
     "Tras matar cuerpo a cuerpo el asesino puede intimidar a los enemigos causándoles ()+1/rango) miedo. 
 	Alcance: S/P y Visión en campo abierto."
 -
--
   id:           16
   nivel:        8
   requisitos:   [0]
   name:         "TBD"
   type:         "Activa"
   description:  "El MB no ha hecho los deberes :)"
--	
+-
   id:           17
   nivel:        8
   name:         "Puñal de sombras"
