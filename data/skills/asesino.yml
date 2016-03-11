@@ -68,9 +68,9 @@
   requisitos:   [4]
   name:         "Honor entre ladrones"
   type:         "Pasiva"
-  description:  
-  	"El asesino y sus aliados cercanos duplican sus bonificaciones de daño por la espalda. Alcance: Sala/Pasillo. 
-	<li>Rango II: +1 potencia adicionalmente al atacar por la espalda.</li>"
+  description:
+    "El asesino y sus aliados cercanos duplican sus bonificaciones de daño por la espalda. Alcance: Sala ó Pasillo. 
+    <li>Rango II: +1 potencia adicionalmente al atacar por la espalda.</li>"
 -
   id:           8
   nivel:        5
