@@ -140,10 +140,10 @@
 -
   id:           16
   nivel:        8
-  requisitos:   [0]
-  name:         "TBD"
-  type:         "Activa"
-  description:  "El MB no ha hecho los deberes :)"
+  requisitos:   [6]
+  name:         "Toxina de Elmut"
+  type:         "Pasiva"
+  description:  "Todos tus aliados pueden lanzar magias a los objetivos que hayas envenenado como si estuvieran cuerpo a cuerpo."
 -
   id:           17
   nivel:        8
