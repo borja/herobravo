@@ -127,18 +127,33 @@
 -
   id:           17
   name:         "Puñal de sombras"
+  requisitos:   [0,2]
   type:         "Reactiva"
   description:  "Requiere daga. El asesino recupera 1 puñalada trapera tras matar en sigilo."
 -
   id:           18
-  name:         "Viaje umbral"
-  type:         "Reactiva"
-  description:  "1 vez por turno el asesino puede aparecer detrás de su sombra gemela. Coste: acción de MOV."
--
-  id:           19
+  nivel:        9
+  requisitos:   [5]
   name:         "Acribillar"
   type:         "Activa"
   description:  
     "Esta habilidad no se puede utilizar si ya se ha lanzado alguna daga voladora. 
 	 Permite al asesino lanzar 3 dagas en conjunto. Si se emplea esta habilidad,
 	 no se podrán lanzar más dagas el resto del turno."
+-
+  id:           19
+  nivel:        10
+  requisitos:   [14]
+  name:         "Viaje umbral"
+  type:         "Definitiva"
+  description:  "1 vez por turno el asesino puede aparecer detrás de su sombra gemela. Coste: acción de MOV."
+-
+  id:           20
+  nivel:        10
+  requisitos:   [7]
+  name:         "Culto a Elmut"
+  type:         "Definitiva"
+  description:  
+    "Tras sesgar tu décimo tercera vida, estarás bendecido por Elmut:<br/
+	 Cobrarás todas las piezas que mates en conjunto, y podrás después de matar, bien recuperar 1 hechizo,<br/>
+	 bien disponer de una acción de hechizar adicional. (Una única vez por turno)"
