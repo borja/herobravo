@@ -175,7 +175,7 @@ class Material < Util
 end
 
 def gema(id)
-  gemas.find { |g| g.id = id }
+  gemas.find { |g| g.id == id }
 end
 
 def gema_ranuras
