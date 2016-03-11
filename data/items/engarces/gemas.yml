@@ -22,7 +22,7 @@
     cabeza: "Ilumina"
     cuello: "Si eres objetivo de un hechizo de Aire acumulas 1 carga. 3 cargas: Lanzas un genio (obligatoriamente en fase trepidante)"
     pecho:    "+1 vs hechizos de Aire."
-    anillo: "1/reto: Sustituye la comida de un tesoro por: carpa dorada (+2 PM, +2PC, recupera 1 hechizo, elimina 1 maldición)"
+    anillo: "1/reto: Sustituye la comida de un tesoro por: carpa dorada (Elegir: +2 PM, +2PC, recupera 1 hechizo, elimina 1 maldición)"
     pies:     "1/reto: Si has encontrado ¡Oro! en la búsqueda de tesoros, dispones de tu fase de movimiento"
 -
   id: 3
@@ -41,7 +41,7 @@
     cabeza: "1/reto: Puedes desvelar todas las trampas de tu sala o pasillo."
     cuello: ""
     pecho:    "Los ataques por uno de los flancos, se consideran frontales."
-    anillo: "1/reto: Puedes añadir +4 a una tirada de búsqueda (puertas, emboscados, trampas)"
+    anillo: "1/reto: Puedes añadir +4 tras una tirada de búsqueda (puertas, emboscados, trampas)"
     pies:     "1/reto: +90º de giro en cualquier momento."
 -
   id: 5
@@ -117,7 +117,7 @@
   name: "hessonita"
   fits:
     pecho:     "+1 vs Rayo"
-    anillo:    "1/reto: Recupera 1PM a un aliado y otro a ti mismo. +1PM"
+    anillo:    "1/reto: Recupera 1PM a un aliado (no puedes ser tú). +1PM"
     hombros: "+1 galardón al resistir vs Escarcha. Activa, 3G: +5 vs Escarcha hasta final del turno."
     pies:        "-1 al empuje vs constructos"
 -
@@ -133,7 +133,7 @@
   name: "obsidiana"
   fits:
     pecho:     "+1 vs Tenebro"
-    anillo:    "1/reto: +1 sigilo hasta el final del turno."
+    anillo:    "1/reto: +2 sigilo hasta el final del turno."
     hombros: "+1 galardón al resistir vs Tenebro. Activa, 3G: +5 vs Tenebro hasta final del turno."
     pies:        "-1 al empuje vs no-muertos"
 ## Gemas Valiosas (nivel 3)
@@ -211,7 +211,7 @@
     cabeza:    "1/reto: Puedes aplicar robo de vida a un ataque, una vez haya sido tirado (antes de la defensa)."
     cuello:    "+1 magia de sangre de nivel 1 a elegir al inicio del reto."
     pecho:     "+1 carga al sufrir una herida cuerpo a cuerpo. 3 cargas: +1 fuerza en tu siguiente ataque. 4 cargas: +2 de fuerza en tu siguiente ataque."
-    anillo:    "1/reto: Sana a un aliado en envenenado, que recuperará hasta 2PC"
+    anillo:    "1/reto: Sana a un aliado envenenado, que recuperará hasta 2PC"
     hombros: "+1 galardón al causar críticos de sangrado. Activa, 3G: Eres bendecido con vampirismo"
     muñecas: "+1 opresión al ser envenenado por trampas. Activa, 3o.: Si estás envenenado replicas el efecto en un enemigo a melé."
     pies:        "+1 movimiento bajo los ejectos de cualquier maldición."
@@ -356,10 +356,10 @@
   fits:
     cabeza: "+1 vs Miedo. +1 infundir miedo."
     cuello: "+1 infundir miedo. Si un enemigo huye a causa del miedo que infundes, ejecuta sobre él: Caricia de Nagash. Si muere, invoca un esqueleto a tu servicio."
-    pecho:    "Los dados de defensa que aporte la armadura tienen éxito con escudo negro, y se consideran con +1 potencia. +1 vs Miedo"
-    anillo: "1/reto: Encierras a un no-muerto en el anillo, o invocas a uno encerrado previamente. (Se resiste con Tenebro, nivel 2)"
-    arma:     "Los dados de ataque que aporte el arma tienen éxito con escudo negro, y se consideran con +1 potencia y +1 fuerza."
-    pies:     "+1 casilla de avance por cada escudo negro durante la defensa."
+    pecho:  "Los dados de defensa que aporte la armadura tienen éxito con escudo negro, y se consideran con +1 potencia. +1 vs Miedo"
+    anillo: "1/reto: Encierras a un no-muerto en el anillo, o invocas a uno encerrado previamente. (Se resiste con Tenebro, nivel 2). +1 penetración mágica vs Tenebro."
+    arma:   "Los dados de ataque que aporte el arma tienen éxito con escudo negro, y se consideran con +1 potencia y +1 fuerza."
+    pies:   "+1 casilla de avance por cada escudo negro durante la defensa."
 -
   id: 33
   name: "piedra lunar"
@@ -374,9 +374,9 @@
   fits:
     cabeza: "+2 vs Psiónica. +1 dado blanco a tu ataque principal, cuya potencia es el número de esbirros que controles y cuya fuerza el número de enemigos en S/P."
     cuello: "+1 maestría a los hechizos de tierra"
-    pecho:    "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste"
-    anillo: "+1 potencia a las magias de tierra que realices y que realicen sobre ti. 1/reto: obtienes <pasar a través de la tierra>"
-    pies:     "Renuncar a tu movimiento: +1 objetivo visible pierde la minus-mitad de su movimiento. (maldición psiónica)"
+    pecho:  "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste"
+    anillo: "+1 potencia a las magias de tierra que realices y que realicen sobre ti. 1/reto: obtienes 'pasar a través de la roca'"
+    pies:   "Renuncar a tu movimiento: +1 objetivo visible pierde la minus-mitad de su movimiento. (maldición psiónica)"
 -
   id: 35
   name: "glicerita"
@@ -409,16 +409,16 @@
   fits:
     cabeza: "+1 PM al matar con hechizos. +1 PC al matar con armas. Si excedes tu puntuación de mente/cuerpo por esta sanación, pierdes 1d6 puntos de mente/cuerpo."
     cuello: "1/reto: durante la fase trepidante elige una casilla libre: Creas sobre ella un pozo de oscuridad. (Los aliados deben saltar) Cada miniatura que muera en la sala otorga una carga. En cualquier momento puedes disolver el pozo y recuperar X hechizos de nivel Y, siendo X+Y las cargas acumuladas."
-    anillo: "+1 fuerza por cada +1/ónice escudo negro al lanzar dados negros de combate."
-    pies:     "+1 sigilo al sprintar"
+    anillo: "+1 fuerza por cada escudo negro al lanzar dados negros de combate en magias o ataques."
+    pies:   "+1 sigilo al sprintar"
 -
   id: 39
   name: "sigmarita"
   fits:
     cabeza: "+1 ataque extra a todos los ángeles invocados. +1 de sanación a todas las plegarias. +1PC al lanzar una plegaria en chakra."
     cuello: "1/reto: Resucitas a un aliado muerto, que volverá a la vida con un único punto de cuerpo y de mente. (Conservando sus hechizos y habilidades tal y como los tuviera)"
-    anillo: "2 cargas: Puedes realizar +1 acción de plegaria tras una plegaria zen/summum. Cuando obtengas un cometa de dos colas, recupera 1 carga."
-    pies:     "Sprintar: Lanzas una plegaria de nivel +1 (no consume contador)"
+    anillo: "2 cargas: Puedes realizar +1 acción de plegaria tras una plegaria chakra/summum. Cuando obtengas un cometa en el dado de sigmar, recupera 1 carga."
+    pies:   "Sprintar: Lanzas una plegaria de nivel +1 (no consume contador)"
 ## Gemas Legendarias
 -
   id: 40
