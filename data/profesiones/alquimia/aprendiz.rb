@@ -26,6 +26,13 @@ def alquimia_aprendizajes
       efecto: "Crea una poción que disipa los efectos de un veneno instantáneamente.",
       crear:  100,
       venta:  50
+    },
+    {
+      id:     4,
+      name:   "Elixir de sangre de demonio",
+      coste:  300,
+      efecto: "Crea una poción curativa, con 2 viales de sangre de demonio.",
+      venta:  50
     }
   ]
 end
