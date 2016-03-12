@@ -12,10 +12,11 @@
   nivel:        2
 -
   id:           2
-  name:         "Contrato"
-  description:  "1 punto de contrato: Golpea con tu arma principal al atacante del contratista como acción instantánea. (Interrumpe)"
-  type:         "activa"
   nivel:        2
+  requisitos:   [1]
+  name:         "Contrato"
+  type:         "activa"
+  description:  "1 punto de contrato: Golpea con tu arma principal al atacante del contratista como acción instantánea. (Interrumpe)"
 -
   id:           3
   name:         "Escabullirse"
@@ -30,11 +31,12 @@
   nivel:        2
 -
   id:           5
-  name:         "Asalto"
-  description:  "+1 potencia a 1/rango dados, al atacar en sigilo"
-  type:         "pasiva"
-  rangos:       3
   nivel:        3
+  rangos:       3
+  requisitos:   [3]
+  name:         "Asalto"
+  type:         "pasiva"
+  description:  "+1 potencia a 1/rango dados, al atacar en sigilo"
 -
   id:           6
   name:         "Rompechapas"
@@ -47,3 +49,10 @@
   description:  "Los pasillos con puertas secretas son saqueables por tesoros."
   type:         "pasiva"
   nivel:        3
+-
+  id:           8
+  nivel:        4
+  rangos:       3
+  name:         "Camuflaje"
+  type:         "pasiva"
+  description:  "Las acciones de turno completo otorgan +1/rango sigilo"
