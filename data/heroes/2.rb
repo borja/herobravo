@@ -22,7 +22,7 @@ def h2
     ],
     armas:        [
       Arma.new(id: 9,  gemas: [25, 17, 26], enchants: [18, 1, 2, 3, 4, 17]),
-      Arma.new(id: 23, joyas: [14, 18, 15], enchants: [23, 24])
+      Arma.new(id: 7, gemas: [25, 17, 26], enchants: [105])
     ],
     armadura:     Armadura.new(id: 6, gemas: [34, 32, 34]),
     proteccions:  [
@@ -31,7 +31,7 @@ def h2
         id: 15, gemas: [21], enchants: [20, 34, 49, 50, 51, 52], ranuras: 4),
       Proteccion.new(id: 3,  enchants:  [8]),
       Proteccion.new(id: 11, joyas:     [12], gemas: [48]),
-      Proteccion.new(id: 5,  enchants:  [5]),
+      Proteccion.new(id: 5,  enchants:  [5], gemas: [25, 51]),
       Proteccion.new(id: 14),
       Proteccion.new(id: 10, ranuras: 1),
       Proteccion.new(id: 8)
@@ -57,7 +57,7 @@ def h2
       Pergamino.new(id: 1, spells: [59])
     ],
     tesoro:       {
-      gemas: [14, 51, 24, 25, 25, 17, 35, 16, 16, 27, 18, 39, 30],
+      gemas: [14, 24, 25, 25, 17, 35, 16, 16, 27, 18, 39, 30],
       runas: [7, 9],
       joyas: [9]
     },

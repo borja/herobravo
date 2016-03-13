@@ -553,6 +553,11 @@ def enchants
       name:         'de Bodas',
       descripcion:  '+1 Reputación',
       tipo:         'social'
+    },
+    { id:           105,
+      name:         'Pavés',
+      descripcion:  '+2 Potencia defensiva',
+      tipo:         'social'
     }
   ]
 end
