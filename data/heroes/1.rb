@@ -21,7 +21,7 @@ def h1
     nivel:        23,
     cuerpo:       11,
     mente:        11,
-    mov:          18,
+    mov:          19,
     armas:        [
       Arma.new(id: 6, joyas: [10, 10]),
       Arma.new(id: 3, gemas: [32])],
