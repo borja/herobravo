@@ -39,7 +39,7 @@ def h3
     profesion:    Profesion.new(id: 3, aprendiz: [0, 1, 5]),
     tesoro:       {
       runas: [3],
-      gemas: [6, 10, 18, 21, 25, 27, 31, 52]
+      gemas: [6, 10, 18, 21, 25, 27, 31, 40, 52]
     }
   }
 end
