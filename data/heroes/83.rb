@@ -11,6 +11,7 @@ def h83
     mente:      3,
     mov:        7,
     skills:     [0, 2],
+    pociones:   [1, 4],
     armas:      [Arma.new(id: 13),
                  Arma.new(id: 3)],
     armadura:   Armadura.new(id: 3),
