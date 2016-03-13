@@ -29,6 +29,7 @@ def h3
       Miscelanea.new(id: 4, enchants: [71]),
       Miscelanea.new(id: 17, enchants: [64])
     ],
+    abalorios:    [Abalorio.new(id: 7)],
     pet:          Pet.new(id: 20, name: 'Jazzy'),
     profesion:    Profesion.new(id: 3, aprendiz: [0, 5]),
     tesoro:       {
