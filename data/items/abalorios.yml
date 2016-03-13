@@ -35,3 +35,14 @@
   efecto: "+10 oro/tesoro(x nivel de tesoro). +1 gema/runa en la tirada +2 rentas"
   size:   4
   precio: 1000
+-
+  id:     7
+  name:   "La Divina comedia"
+  efecto: 
+    "Recompensa del concurso de Literatura.<br/><br/>
+     Un poderoso grimorio, con las siguientes 3 habilidades:<br/>
+     1/reto: +1 potencia vs Demonios</br>
+     1/reto: +1 Fuerza vs Demonios<br/>
+     1/reto: Invoca un desangrador de Khorne"
+  size:   4
+  precio: 500
