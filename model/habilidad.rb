@@ -53,3 +53,17 @@ def maestrodearmas
 end
   
 def maestrodearma id ; maestrodearmas[id] end
+
+def fama(personaje)
+  lugar_fama = case personaje
+    when 'matador'    then 'El Menhir de los matadores'
+    when 'falangista' then 'Los salones pretorianos'
+    when 'druida'     then 'El círculo de druidas'
+    when 'asesino'    then 'La Manos Negras de Elmut'
+    when 'conjurador' then 'El cónclave'
+    when 'hechicero'  then 'El Arcanorium'
+    when 'vengador'   then 'El Palacio de las afrentas'
+    else 'Salón de la fama'
+  end
+  lugar_fama 
+end

@@ -270,6 +270,12 @@
     main: "heroes/heroes"
     right: "heroes/sidebar"
 -
+  ruta:  "fama"
+  title: "Héroes"
+  template:
+    main: "heroes/famosos"
+    right: "heroes/sidebar"
+-
   ruta:  "extranjeros"
   title: "view"
   template:
