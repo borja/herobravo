@@ -26,6 +26,9 @@ def h71
       Proteccion.new(id: 13),
       Proteccion.new(id: 14)
 
-    ]
+    ],
+    tesoro: {
+      gemas: [39]
+    },
   }
 end
