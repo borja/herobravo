@@ -548,6 +548,11 @@ def enchants
       name:         'espiritual',
       descripcion:  '+1 PM',
       tipo:         'espiritual'
+    },
+    { id:           104,
+      name:         'de Bodas',
+      descripcion:  '+1 Reputación',
+      tipo:         'social'
     }
   ]
 end
