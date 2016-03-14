@@ -9,5 +9,5 @@ gem 'require_all'
 
 group :test do
   gem 'rack-test'
-  gem 'rake', '~> 10.5.0'
+  gem 'rake', '~> 11.1.1'
 end
