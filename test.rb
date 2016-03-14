@@ -15,12 +15,13 @@ def app
 end
 
 describe '.hero' do
+  
   it 'should say true' do
-    assert hero(2).id == 2
-  end
-  it 'should say true' do
-    heros.each do |h|
+    heros.each_with_index do |h,i|
       File.exist?(h.big_path)
+      hero(i).id == i
+      hero(i).personaje != nil
     end
   end
+
 end
