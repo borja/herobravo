@@ -57,4 +57,9 @@
   id:          11
   name:        "Dominio del bastón"
   descripcion: "Permite llevar 1 bastón en la mano principal."
-  coste:       "100"  
+  coste:       "100"
+- 
+  id:          12
+  name:        "Dominio del arco"
+  descripcion: "Permite añadir un disparo de arco en conjunto con otros ataques."
+  coste:       "250"
