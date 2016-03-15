@@ -5,6 +5,7 @@ def h14
     name:        'Lindele',
     personaje:   'derviche',
     jugador:     'Cristina',
+    status:      'activo',
     gender:      'female',
     pareja:      { char: 15, tipo: 'pj' },
     historia:    1,

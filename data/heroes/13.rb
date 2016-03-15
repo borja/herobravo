@@ -5,6 +5,7 @@ def h13
     name:        'Cromi',
     personaje:   'falangista',
     jugador:     'Carlos',
+    status:      'activo',
     nivel:       7,
     cuerpo:      13,
     mente:       3,
