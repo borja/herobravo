@@ -6,16 +6,30 @@ def h13
     personaje:   'falangista',
     jugador:     'Carlos',
     status:      'activo',
-    nivel:       7,
+    nivel:       8,
+    repu:        1,
     cuerpo:      13,
     mente:       3,
-    mov:         7,
-    armas:       [Arma.new(id: 7),
-                  Arma.new(id: 7)],
-    armadura:    Armadura.new(id: 3),
-    proteccions: [Proteccion.new(id: 2),
-                  Proteccion.new(id: 8)],
-    miscelaneas: [Miscelanea.new(id: 2),
-                  Miscelanea.new(id: 6)]
+    mov:         8,
+    profesion:   Profesion.new(id: 3, aprendiz: [0]),
+    pet:         Pet.new(id: 24, name: 'Nemesio', torpe: true),
+    armas:       [
+      Arma.new(id: 28, gemas: [30]),
+      Arma.new(id: 7, gemas: [32])
+    ],
+    armadura:    Armadura.new(id: 3, gemas: [25, 28], enchants: [107]),
+    proteccions: [
+      Proteccion.new(id: 17),
+      Proteccion.new(id: 8, ranuras: 2)
+    ],
+    miscelaneas: [
+      Miscelanea.new(id: 2, enchants: [106, 20])
+    ],
+    skills:      [0, 1, 2, 3, 5, 6, 8, 9, 10, 11],
+    pociones:    [3, 12],
+    mounts:      [1],
+    tesoro:      {
+      gemas: [1, 29],
+    },
   }
 end
