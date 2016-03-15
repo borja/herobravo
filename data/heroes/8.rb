@@ -2,12 +2,11 @@
 def h8
   {
     id:          8,
-    name:        'Godric',
+    name:        'Hodric',
     personaje:   'falangista',
     jugador:     'Daniel de Haro',
     status:      'activo',
-    historia:    1,
-    premio:      1,
+    progenitores: [84,'Emma'],
     nivel:       10,
     cuerpo:      13,
     mente:       5,
