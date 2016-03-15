@@ -5,7 +5,6 @@ def h68
     name:      'Liam',
     personaje: 'hechicero',
     jugador:   'Erika',
-    status:    'activo',
     nivel:     1,
     cuerpo:    4,
     mente:     6,
