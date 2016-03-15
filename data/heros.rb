@@ -9,14 +9,6 @@ def clases     ; heros.map{ |p| p.clase     }.uniq end
 def jugadores  ; heros.map{ |p| p.jugador   }.uniq end
 def narrados n ; heros.select{ |p| p.historia if p.historia == n }.sort_by { |p| p.premio ? p.premio : 3 } end 
 
-def clase_bárbaro  ; ["señor de las bestias","bersérker","hoplita"] end
-def clase_enano    ; ["falangista","matador","ingeniero"]           end
-def clase_mago     ; ["invocador", "conjurador", "hechicero"]       end
-def clase_elfo     ; ["derviche", "druida", "arquero"]              end
-def clase_ladrón   ; ["nigromante", "asesino", "ladrón"]            end
-def clase_clérigo  ; ["clérigo", "paladín", "sacerdote"]            end
-def clase_tiefling ; ["vengador", "caminante", "brujo"]             end
-
 def razas
   { "enano"    => { cuerpo: 7, mente: 3, movimiento: 6 },
     "elfo"     => { cuerpo: 6, mente: 4, movimiento: 8 },
@@ -33,4 +25,14 @@ def nomalize_pj(pj)
     when 'cl%C3%A9rigo'   then 'clérigo'
     else pj
   end
+end
+
+def honor(jugador)
+  honor = (jugador == 'Borja' ? 100 : 0)
+  heros.each do |h|
+    if h.jugador == jugador then
+      honor += h.nivel
+    end
+  end
+  honor
 end
