@@ -4,20 +4,20 @@
 class Hero < Hash
   attr_accessor :id,         
     :name, :personaje, :jugador, :status, :muerto, :gender,
-    :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,       
-    :pet, :mounts, :descendencia, :pareja, :progenitores,        
-    :hechizos, :shadows, :blood, :skills,   
-    :armas, :armadura, :proteccions, :miscelaneas, :abalorios,          
-    :profesion, :ciudad, :titulo, :camino,
+    :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,
+    :pet, :mounts, :descendencia, :pareja, :progenitores,
+    :hechizos, :shadows, :blood, :skills,
+    :armas, :armadura, :proteccions, :miscelaneas, :abalorios,
+    :profesion, :ciudad, :titulo, :camino, :hijos,
     :piezas, :pociones, :pergaminos, :materiales,
-    :oro, :tesoro            
+    :oro, :tesoro
 
   def initialize(args)
     args.each do |k, v|
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
     end
   end
-  
+
   # Custom meta-methods created by each item:
   (fields[1]+fields[2]+fields[3]).each do |f|
     define_method(f) do
@@ -35,7 +35,7 @@ class Hero < Hash
       else                 return 5
     end
   end
-    
+
   def mente_base
     case self.clase
       when 'mago'     then return 6
@@ -54,17 +54,17 @@ class Hero < Hash
       else                 return 7
     end
   end
-  
+
   def clase
     case
-      when    clase_enano.include?(self.personaje) then return 'enano'
-      when     clase_elfo.include?(self.personaje) then return 'elfo'
-      when clase_tiefling.include?(self.personaje) then return 'tiefling'
-      when     clase_mago.include?(self.personaje) then return 'mago'
-      when  clase_bárbaro.include?(self.personaje) then return 'bárbaro'
-      when  clase_clérigo.include?(self.personaje) then return 'clérigo'
-      when   clase_ladrón.include?(self.personaje) then return 'ladrón'
-      else return "unknown"
+    when              %w(falangista matador ingeniero).include?(personaje) then 'enano'
+    when                   %w(derviche druida arquero).include?(personaje) then 'elfo'
+    when                  %w(vengador caminante brujo).include?(personaje) then 'tiefling'
+    when            %w(invocador conjurador hechicero).include?(personaje) then 'mago'
+    when %w(señor\ de\ las\ bestias bersérker hoplita).include?(personaje) then 'bárbaro'
+    when                 %w(clérigo paladín sacerdote).include?(personaje) then 'clérigo'
+    when                 %w(nigromante asesino ladrón).include?(personaje) then 'ladrón'
+    else "unknown"
     end
   end
   
@@ -91,11 +91,11 @@ class Hero < Hash
   
   def lista_status view
     case view
-    when "licenciados"  then "retirado"   
-    when "heroes"       then "activo"     
-    when "ausentes"     then "ausente"    
-    when "reservistas"  then "reserva"    
-    when "extranjeros"  then "extranjero" 
+    when "licenciados"  then "retirado"
+    when "heroes"       then "activo"
+    when "ausentes"     then "ausente"
+    when "reservistas"  then "reserva"
+    when "extranjeros"  then "extranjero"
     end
   end
   
@@ -106,21 +106,16 @@ class Hero < Hash
     elementos << "sangre"  if self.blood
     return elementos
   end
-  
-  def human?        ; ['clérigo', 'ladrón', 'bárbaro', 'mago'].include?(self.clase) end  
-  def raza          ; self.human? ? 'humano' : self.clase end
-  def female?       ; self.sex == 'female' end
-  def male?         ; self.sex == 'male' end
-  def muggle?       ; self.magias.nil? || self.magias.empty? end
-  def desprotegido? ; self.protecciones.nil? end
-  def pobre?        ; self.miscelaneas.nil? end
-  def desprovisto?  ; self.pergaminos.nil? && self.pociones.nil? && self.piezas.nil?     end
-  def anillos       ; (self.miscelaneas || []).select { |m| m.fits == "anillo"  } end
-  def amuletos      ; (self.miscelaneas || []).select { |m| m.fits == "amuleto" } end 
+
   def img_path      ; "'../images/personajes/#{self.genderize}.png'" end
   def big_path      ; "'../../images/portraits/#{self.name}.png'" end
   def reputacion    ; self.repu || 0 end
-  def movimiento    ; self.mov       end
+  def movimiento    ; self.mov end
+  def raza          ; %w(clérigo ladrón bárbaro mago).include?(self.clase) ? 'humano' : self.clase end
+  def female?       ; self.sex == 'female' end
+  def male?         ; self.sex == 'male' end
+  def anillos       ; (self.miscelaneas || []).select { |m| m.fits == "anillo"  } end
+  def amuletos      ; (self.miscelaneas || []).select { |m| m.fits == "amuleto" } end 
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
   def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
   def defensa       ; self.armadura.defensa end
@@ -200,14 +195,14 @@ class Hero < Hash
     if self.progenitores
       mama = self.progenitores[1]
       case mama
-        when Fixnum then return {:type => "pj",  :char => hero(mama)}
-        when String then return {:type => "pnj", :char => mama}
+        when Fixnum then return {type: "pj",  char: hero(mama)}
+        when String then return {type: "pnj", char: mama}
         else return "Fallo de madre => #{mama.class}"
       end
     else return nil end
   end
   
-  def descendientes # I kill you with my spaguetti code, TODO: Tune up this!
+  def descendientes # I kill you with my spaguetti code, TODO: Tune up this!      
     padres = heros.map{ |h| h.progenitores}
     hijos  = padres.each_index.select{|i| padres[i].include?(self.id) unless padres[i].nil?  }
     hijos.empty? ? nil : hijos
