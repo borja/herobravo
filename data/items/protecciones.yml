@@ -135,3 +135,11 @@
   ranuras:   2
   fits:      'manos'
   precio:	 600
+-
+  id:        17
+  name:      'yelmo'
+  categoria: 'metal'
+  defensa:   2
+  ranuras:   1
+  fits:      'cabeza'
+  precio:	 250

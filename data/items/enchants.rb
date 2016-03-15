@@ -558,6 +558,19 @@ def enchants
       name:         'Pavés',
       descripcion:  '+2 Potencia defensiva',
       tipo:         'social'
+    },
+    { id:           106,
+      name:         'de Gloin',
+      descripcion:  '5 cargas. +1 Carga al matar a un piel-verde.<br/>
+                     - Velocidad de vértigo (1): +8 movimiento<br/>
+                     - Frenesí de Gloin (2): +4 dados de combate a tu siguiente ataque sin armas.<br/>
+                     - Cabezazo de Alistor (1): 2 dados de daño a un objetivo cuerpo a cuerpo.',
+      tipo:         'enano'
+    },
+    { id:           107,
+      name:         'de la familia Cromi',
+      descripcion:  'Al recibir daño, el portador es bendecido con Piel de Piedra',
+      tipo:         'enano'
     }
   ]
 end

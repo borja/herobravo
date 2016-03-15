@@ -1,15 +1,16 @@
 -
   id:           0 
-  name:         "empujar" 
-  description:  "Los enemigos suman un punto al multiplicador de proximidad del falangista cuando se desplacen a su alrededor." 
-  type:         "pasiva" 
   nivel:        2 
+  rangos:       2
+  name:         "empujar"
+  type:         "Pasiva"
+  description:  "Los enemigos suman +1 punto al multiplicador de proximidad del falangista cuando se desplacen a su alrededor." 
 -
-  id:           1 
-  name:         "doble escudo" 
+  id:           1
+  nivel:        2
+  name:         "doble escudo"
+  type:         "Pasiva"
   description:  "permite llevar dos escudos a la vez. Se puede atacar y defender con ellos." 
-  type:         "Pasiva" 
-  nivel:        2 
 -
   id:           2 
   name:         "tortuga" 
@@ -53,7 +54,7 @@
   id:           8 
   name:         "zona de combate" 
   description:  "permite golpear a cualquier enemigo en 180º con escudos." 
-  type:         "pasiva" 
+  type:         "Pasiva" 
   nivel:        4 
 -
   id:           9 
@@ -65,7 +66,7 @@
 -
   id:           10 
   name:         "bandeja" 
-  description:  "Porta sobre 1/rango escudo a un aliado  otorgándole su defensa" 
+  description:  "Porta sobre 1/rango escudo a un aliado  otorgándole su defensa, pero moverás la minus-mitad." 
   rangos:       3 
   type:         "activa" 
   nivel:        6 
@@ -74,7 +75,7 @@
   id:           11 
   name:         "rompedientes" 
   description:  "+1 fuerza al atacar con escudos" 
-  type:         "pasiva" 
+  type:         "Pasiva" 
   nivel:        7 
 -
   id:           12 

@@ -227,3 +227,11 @@
   ranuras:     4
   diagonal:    false
   precio:      1500
+-
+  id:          28
+  name:        "escudo con pinchos"
+  categoria:   "escudo"
+  ataque:      1
+  ranuras:     2
+  diagonal:    false
+  precio:      125
