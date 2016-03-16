@@ -62,3 +62,14 @@ end
 def pets
   YAML::load_file(File.join(__dir__, '../data/pets.yml'))
 end
+
+def porcentaje_heroes_con_familiar
+  h_familiares = heros.select { |h| h.pet }
+  ((h_familiares.count / heros.count.to_f) * 100.0).round(2)
+end
+
+def porcentaje_familiares_torpes
+  h_familiares = heros.select { |h| h.pet }
+  familiares_torpes = h_familiares.count {|h| h.pet.torpe }
+  ((familiares_torpes.to_f / h_familiares.count) * 100.0).round(2)
+end

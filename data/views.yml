@@ -47,7 +47,8 @@
   ruta:  "familiares"
   template:
     main: "personaje/familiares"
-    right: "heroes/sidebar"
+    right:  "personaje/pets"
+    right2: "heroes/sidebar"
 -
   ruta:  "habilidades"
   template:
