@@ -140,3 +140,9 @@
   max:  1
   fits: 'amuleto'
   precio: 200
+-
+  id:   23
+  name: 'rosario'
+  max:  6
+  fits: 'amuleto'
+  precio: 300
