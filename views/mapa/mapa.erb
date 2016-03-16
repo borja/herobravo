@@ -10,8 +10,8 @@
     <li id="nota3"><p>Altdorf, capital del Imperio</p></li>
     <li id="nota4"><p>El Desierto prohibido</p></li>	
 	<% cities.each do |c| %>
-		<a href='/city/<%= c[:name] %>'>
-			<li style='<%= c[:style] %>'><p><%= c[:name] %></p></li>
+		<a href='/city/<%= c['name'] %>'>
+			<li style='<%= c['style'] %>'><p><%= c['name'] %></p></li>
 		</a>
 	<% end %>
   </ul>
