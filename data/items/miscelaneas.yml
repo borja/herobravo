@@ -134,3 +134,9 @@
   max:  0
   fits: 'amuleto'
   precio: 500
+-
+  id:   22
+  name: 'araña'
+  max:  1
+  fits: 'amuleto'
+  precio: 200
