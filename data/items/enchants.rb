@@ -571,6 +571,17 @@ def enchants
       name:         'de la familia Cromi',
       descripcion:  'Al recibir daño, el portador es bendecido con Piel de Piedra',
       tipo:         'enano'
+    },
+    { id:           108,
+      name:         'de muchas cuentas',
+      descripcion:  'Durante el reto puedes usar cualquiera de estos 6 efectos:<br/>
+                     - 1: Resucitar a un aliado.<br/>
+                     - 2: Gloria del Héroe<br/>
+                     - 3: 2d6 oros x10 xN (nivel del reto)<br/>
+                     - 4: 1d6 PC a todo el grupo<br/>
+                     - 5: Todos tus aliados y tú podréis recuperar hasta tener mente 2.<br/>
+                     - 6: Tendrás un turno extra.',
+      tipo:         'legendario'
     }
   ]
 end
