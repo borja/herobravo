@@ -271,3 +271,11 @@ concurso de literatura, ribetes de esquina para ganadores
 .ribbon-golden:after {
   right: 0;
 }
+
+/*
+Generador de mazmorras aleatorio
+*/
+
+.mazmorra {
+	width: 90%;
+}
