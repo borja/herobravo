@@ -336,3 +336,8 @@
   ruta:  "escuelas"
   template:
     main: "magia/escuelas"
+-
+  ruta:  "mazmorra"
+  template:
+    right: "reglamento/derecha/combate"
+    main:  "reglamento/mazmorra"
