@@ -46,8 +46,9 @@
 -
   id:           7
   nivel:        3
+  rangos:       3
   name:         "Bendecir Arma"
-  description:  "+1 dado sagrado a tu arma."
+  description:  "+1 dado sagrado a tu arma, de fuerza igual al rango."
   type:         "activa"
   coste:        "1PM"
 -
@@ -59,9 +60,10 @@
 -
   id:           9
   nivel:        4
+  rangos:       3
   name:         "El Martillo de Sigmar"
-  description:  "+1 fuerza al bendecir tu arma."
   type:         "pasiva"
+  description:  "+1 fuerza al bendecir tu arma."
   requisitos:   [7]
 -
   id:           10
@@ -71,3 +73,27 @@
   type:         "activa"
   coste:        "1 Plegaria"
   requisitos:   [3]
+-
+  id:           11
+  nivel:        5
+  name:         "Fuente de luz"
+  type:         "única"
+  description:  
+    "Hasta tu siguiente turno, no se podrán ejecutar hechizos de sombras en la sala,
+     los enemigos en sigilo serán revelados, y los no-muertos que te ataquen reciben un daño directo sagrado."
+  requisitos:   [0,6,8]
+-
+  id:           12
+  nivel:        5
+  requisitos:   [7]
+  name:         "Castigo sagrado"
+  type:         "activa"
+  coste:        "1 Plegaria"
+  description:  "Tu siguiente ataque de combate podrás hacerlo a distancia si tu arma está bendita."
+-
+  id:           13
+  nivel:        5
+  requisitos:   [4]
+  name:         "Escudriñar almas"
+  type:         "pasiva"
+  description:  "Mientras estés bajo los efectos de una bendición, obtienes +2 para detectar enemigos emboscados."
