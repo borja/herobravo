@@ -14,7 +14,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% heros.sort_by { |h| h.reputacion }.reverse.each do |hero| %>
+		<% heros.sort_by { |h| [h.reputacion,h.nivel] }.reverse.each do |hero| %>
 			<% if hero.personaje.gsub("señor de las bestias","beastslord") == params[:param] %>
 				<tr>
 					<td><%= erb :'display/portrait', :locals => { :h => hero } %></td>
