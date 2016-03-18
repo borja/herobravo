@@ -16,17 +16,18 @@ class Magia < Hash
   
   def img_path ; "'../../images/spells/#{ self.name }.png'"  end
   
-  def color
-    case self.elemento
-  	   when "fuego"    then return 'background-color:#FF6633'
-  	   when "aire"     then return 'background-color:#CCFFFF'
-  	   when "tierra"   then return 'background-color:#CC9966'
-  	   when "agua"     then return 'background-color:#44CCFF'
-  	   when "sombra"   then return 'background-color:#CC9999'
-  	   when "elfico"   then return 'background-color:#99FFCC' 
-       when "sangre"   then return 'background-color:#CC4545'
-       when "plegaria" then return 'background-color:#FAEE96'
+  def color # Returns color code
+    color = case self.elemento
+  	   when 'fuego'    then 'FF6633'
+  	   when 'aire'     then 'CCFFFF'
+  	   when 'tierra'   then 'CC9966'
+  	   when 'agua'     then '44CCFF'
+  	   when 'sombra'   then 'CC9999'
+  	   when 'elfico'   then '99FFCC' 
+       when 'sangre'   then 'CC4545'
+       when 'plegaria' then 'FAEE96'
     end
+    "background-color:##{color}"
   end
 end
 
@@ -39,34 +40,26 @@ class Plegaria < Magia
 end
 
 class Elfica < Magia
-  def nivel    ; 1          end    
-  def elemento ; "elfico"   end
+  def nivel    ; 1        end    
+  def elemento ; 'elfico' end
 end
 
 class Sombra < Magia
-  def nivel    ; ( (self.id / 6) + 1 ).to_i  end    
+  def nivel    ; ( (id / 6) + 1 ).to_i  end    
   def elemento ; "sombra"   end
 end
 
 class Sangre < Magia
-  def nivel    ; ( (self.id / 6) + 1 ).to_i  end    
-  def elemento ; "sangre"   end
+  def nivel    ; ( (id / 6) + 1 ).to_i  end    
+  def elemento ; 'sangre' end
 end
 
 class Elemental < Magia
-  def nivel    ; (self.id / 24).to_i + 1 end
+  def nivel    ; (id / 24).to_i + 1 end
   def elemento # elements are allways positioned this way in DB.
-    elementos = ["fuego", "aire", "tierra", "agua"]
-    elementos[self.id / 6 % 4]
+    %w(fuego aire tierra agua)[id / 6 % 4]
   end
 end
-
-# All fin ID methods
-def elfica   id ;   elficas[id] end
-def plegaria id ; plegarias[id] end
-def sangre   id ;   sangres[id] end
-def sombra   id ;   sombras[id] end
-def spell    id ;    spells[id] end
 
 def escuelas # TODO: Complete this.
  { 'aire'    => '' ,
@@ -79,6 +72,14 @@ def escuelas # TODO: Complete this.
    'luz'     => '' 
  }
 end
+
+# TODO: tune up this!
+# All fin ID methods
+def elfica   id ;   elficas[id] end
+def plegaria id ; plegarias[id] end
+def sangre   id ;   sangres[id] end
+def sombra   id ;   sombras[id] end
+def spell    id ;    spells[id] end
 
 def elficas
   YAML::load_file(File.join(__dir__, '../data/magia/elficas.yml')).map { |e| Elfica.new(e) }
@@ -94,4 +95,8 @@ end
 
 def sombras
   YAML::load_file(File.join(__dir__, '../data/magia/sombras.yml')).map { |s| Sombra.new(s) }
+end
+
+def spells
+  YAML::load_file(File.join(__dir__, '../data/magia/spells.yml')).map { |s| Elemental.new(s) }
 end
