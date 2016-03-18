@@ -1,20 +1,57 @@
 -
   id:          0
-  name:        "levantar muertos"
-  description: "Invoca a un esquelo para que luche bajo tu mando."
-  type:        "activa"
+  nivel:       2
+  rangos:      4
+  name:        "Levantar muertos"
+  type:        "Activa"
   coste:       "2PM"
-  nivel:       2
+  description: "Invoca 1/rango esquelo/s para que luchen bajo tu mando. (Requiere un cadáver visible)"
 -
-  id: 1
-  name:        "explotar cadáver"
-  description: "Explota un cadáver reciente en la sala o pasillo, causando 1DC psiónicos a su alrededor."
-  type:        "reactiva"
-  coste:       "1PM"
+  id:          1
   nivel:       2
+  rangos:      3
+  name:        "Explotar cadáver"
+  type:        "Activa"
+  coste:       "1PM x rango"
+  description:
+    "Explota un cadáver (peste + aullador) reciente visible, 
+	 causando 1 dado verde + 1/rango dado de combate (daños por psiónica) a su alrededor.
+	 Estos cadáveres no podrán ser usados para levantarlos, ni pueden estar sometidos a hechizos."
 -
-  id: 2
+  id:          2
+  nivel:       2
+  rangos:      3
   name:        "Cenizas fúnebres"
+  type:        "Pasiva"
   description: "Añade 2 hechizos adicionales de sombras al iniciar el reto."
-  type:        "pasiva"
+-
+  id:          3
   nivel:       2
+  rangos:      3
+  name:        "Sangre impura"
+  type:        "Pasiva"
+  description: "Añade 2 hechizos adicionales de sangre al iniciar el reto."
+-
+  id:          4
+  nivel:       3
+  requisitos:  [0,2]
+  name:        "Taumaturgia"
+  type:        "Reactiva"
+  description: "Recupera 1PM al matar con no-muertos a tu servicio. (Esta habilidad no permite Maho)"
+-
+  id:          5
+  nivel:       3
+  requisitos:  [0,3]
+  name:        "Maho"
+  type:        "Reactiva"
+  description: "Recupera 1PC al matar con no-muertos a tu servicio. (Esta habilidad no permite Taumaturgia)"
+-
+  id:          6
+  nivel:       3
+  requisitos:  [1]
+  name:        "Mortis"
+  type:        "Única"
+  description: 
+    "Explota todos los cadáveres de la sala, incluyendo tus propios no-muertos.
+     Multiplica la fuerza de daño en las casillas afectadas por varias explosiones.
+	 Los no-muertos enemigos son inmunes a este poder."
