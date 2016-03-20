@@ -8,12 +8,12 @@
 	<tbody>
 		<% joyas.each do |j| %>
 			<tr>
-				<td><%= erb :'display/joya',  :locals => { :joya  => j } %></td>
-				<td><%= "Joya " + j.name %></td>
-				<td><%= erb :'display/bazar', :locals => { 
-					:bazar   => j.disponibles, 
-					:engarce => "joyas", 
-					:item_id => j.id } %>
+				<td><%= erb :'display/joya', locals: { joya: j } %></td>
+				<td><%= 'Joya ' + j.name %></td>
+				<td><%= erb :'display/bazar', locals: { 
+					bazar:   j.disponibles, 
+					engarce: 'joyas', 
+					item_id: j.id } %>
 				</td>						
 			</tr>
 		<% end %>

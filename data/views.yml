@@ -104,7 +104,7 @@
   ruta:  "runas"
   template:
     left: "objetos/left/content2"
-    main: "items/runas/runas"
+    main: "items/runas"
 -
   ruta:  "gemas"
   template:
