@@ -8,12 +8,12 @@
 	<tbody>
 		<% runas.each do |r| %>
 			<tr>
-				<td><%= erb :'display/runa',  :locals => { :runa  => r } %></td>
+				<td><%= erb :'display/runa', locals: { runa: r } %></td>
 				<td><%= r.name.upcase %></td>
-				<td><%= erb :'display/bazar', :locals => { 
-					:bazar   => r.disponibles, 
-					:engarce => "runas", 
-					:item_id => r.id } %>
+				<td><%= erb :'display/bazar', locals: { 
+					bazar:   r.disponibles, 
+					engarce: 'runas', 
+					item_id: r.id } %>
 				</td>						
 			</tr>
 		<% end %>

@@ -174,19 +174,18 @@ class Material < Util
   end
 end
 
-def gema(id)
-  gemas.find { |g| g.id == id }
-end
+# Tesoros
+def gema id ; gemas.find { |g| g.id == id } end
+def joya id ; joyas.find { |j| j.id == id } end
+def runa id ; runas.find { |r| r.id == id } end
 
-def gema_ranuras
-  gemas.map { |r| r.fits.keys }.flatten.uniq
-end
+def gemas ; YAML::load_file(File.join(__dir__, '../data/items/engarces/gemas.yml')).map {|g| Gema.new(g)} end
+def joyas ; YAML::load_file(File.join(__dir__, '../data/items/engarces/joyas.yml')).map {|g| Joya.new(g)} end
+def runas ; YAML::load_file(File.join(__dir__, '../data/items/engarces/runas.yml')).map {|g| Runa.new(g)} end
 
-def gemas
-  YAML::load_file(File.join(__dir__, '../data/items/engarces/gemas.yml')).map {|g| Gema.new(g)}
-end
-
-# encoding: UTF-8
+def gema_ranuras ; gemas.map { |g| g.fits.keys }.flatten.uniq end
+def runa_ranuras ; runas.map { |r| r.fits.keys }.flatten.uniq end
+def joya_ranuras ; joyas.map { |j| j.fits.keys }.flatten.uniq end
 
 def calcular_coste(p)
   p "Recibo : #{p}"
