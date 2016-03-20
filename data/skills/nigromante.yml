@@ -54,4 +54,50 @@
   description: 
     "Explota todos los cadáveres de la sala, incluyendo tus propios no-muertos.
      Multiplica la fuerza de daño en las casillas afectadas por varias explosiones.
-	 Los no-muertos enemigos son inmunes a este poder."
+     Los no-muertos enemigos son inmunes a este poder."
+-
+  id:          7
+  nivel:       4
+  rangos:      4
+  requisitos:  [0]
+  name:        "Disciplina tétrica"
+  type:        "Pasiva"
+  description: "Los no-muertos a tu servicio permiten pasar a los aliados que tú decidas. +1/rango a su movimiento."
+-
+  id:          8
+  nivel:       4
+  rangos:      2
+  requisitos:  [0]
+  name:        "Vigor tremens"
+  type:        "Pasiva"
+  description: "+1 potencia defensiva de tus no-muertos."
+-
+  id:          9
+  nivel:       4
+  requisitos:  [4]
+  name:        "Mortaja de sombras"
+  type:        "Única"
+  description: "Instinto: Si mueres en este turno, resucitarás momificado (-2 movimiento) con 1PC y 1PM."
+-
+  id:          10
+  nivel:       4
+  requisitos:  [5]
+  name:        "Sudario de sangre"
+  type:        "Activa"
+  coste:       "1PC"
+  description: "Instinto: El próximo daño que fueras a recibir, lo recibe un esbirro en tu lugar."
+-
+  id:          11
+  nivel:       5
+  rangos:      2
+  requisitos:  [9,10]
+  name:        "Momificar"
+  type:        "Pasiva"
+  description: "Al levantar muertos, puedes levantar 1 momia en lugar de un esqueleto (Máximo 1/rango momias)"
+-
+  id:          12
+  nivel:       5
+  requisitos:  [0,1]
+  name:        "Ansia"
+  type:        "Pasiva"
+  description: "+1 Fuerza a tus esbirros. Este bonificador se aplica al explotar cadáveres."
