@@ -33,6 +33,7 @@ def h7
     pergaminos:  [
       Pergamino.new(id: 2, spells: [8, 10]),
       Pergamino.new(id: 1, spells: [32])],
+    master:      [0],
     skills:      [
       0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 17
     ],
