@@ -1,12 +1,7 @@
 class Camino < Array
   
-  def name
-    self.first
-  end
-  
-  def pasos
-    self.last
-  end
+  def name  ; self.first end
+  def pasos ; self.last  end
   
   def conocidos
     total = []

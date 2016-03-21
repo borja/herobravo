@@ -3,7 +3,11 @@
 		<tr>
 			<th>Icono</th>
 			<% send(params[:param]).first.keys.each do |att| %>
-				<th><%= att.capitalize %></th>
+				<% unless att == 'id' %>
+					<th>
+						<%= att.capitalize %>
+					</th>
+				<% end %>
 			<% end %>
 		</tr>	
 	</thead>
@@ -15,8 +19,16 @@
 					<img src=<%=img_path%> alt='icono', id='icon2' />
 				</td>
 				<% c.keys.each do |att| %>
-					<% if att != :id %>
-						<td><%= c[att] %></td>
+					<% unless att == 'id' %>
+						<% if att == 'hechizos'%>
+							<td>
+								<% c[att].each do |h| %>
+									<%= erb :'display/spell', locals: {spell: spell(h) } %>
+								<% end %>
+							</td>
+						<% else %>
+							<td><%= c[att] %></td>
+						<% end %>
 					<% end %>
 				<% end %>
 			</tr>
