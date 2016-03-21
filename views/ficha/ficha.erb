@@ -2,7 +2,7 @@
 <div class="row">
 	<% 3.times do |i| %>
 		<div class="4u">
-			<%= erb :"ficha/inventario/columna#{i+1}", :locals => { :heroe => h } %>	
+			<%= erb :"ficha/inventario/columna#{i+1}", locals: { heroe: h } %>	
 		</div>
 	<% end %>
 </div>
@@ -24,6 +24,13 @@
 <% end %>				
 <div class="row">
 	<div class="12u">
-		<%= erb :'ficha/habilidades', :locals => { :heroe => h } %>	
+		<%= erb :'ficha/habilidades', locals: { heroe: h } %>	
 	</div>
 </div>
+<%if h.master %>
+	<div class="row">
+		<div class="12u">
+			<%= erb :'ficha/master', locals: { heroe: h } %>	
+		</div>
+	</div>
+<% end %>

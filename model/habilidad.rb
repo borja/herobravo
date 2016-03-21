@@ -27,7 +27,7 @@ class Hab < Hash
   
   def type     ; "base" end
   def nivel    ; 1 end
-  def img_path ; "/images/skills/base/#{self.name}.png" end
+  def img_path ; "/images/skills/base/#{name}.png" end
     
 end
 
@@ -52,7 +52,9 @@ def maestrodearmas
   YAML::load_file(File.join(__dir__, '../data/maestrodearma.yml'))
 end
   
-def maestrodearma id ; maestrodearmas[id] end
+def maestrodearma id 
+  maestrodearmas.find { |m| m['id'] == id }.merge('char' => 'maestrodearmas')
+end
 
 def fama(personaje)
   lugar_fama = case personaje
