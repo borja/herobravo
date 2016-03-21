@@ -60,11 +60,19 @@ def fama(personaje)
   lugar_fama = case personaje
     when 'matador'    then 'El Menhir de los matadores'
     when 'falangista' then 'Los salones pretorianos'
-    when 'druida'     then 'El círculo de druidas'
+    when 'ingeniero'  then 'Academia de Ingeniería'
+    when 'druida'     then 'El círculo de Gaia'
+    when 'arquero'    then 'La arboleda'
+    when 'derviche'   then 'El Árbol de marfil'
     when 'asesino'    then 'La Manos Negras de Elmut'
-    when 'conjurador' then 'El cónclave'
+    when 'ladrón'     then 'La Cofradía'
+    when 'nigromante' then 'La Cripta Prohibida'
+    when 'conjurador' then 'El Cónclave'
     when 'hechicero'  then 'El Arcanorium'
+    when 'invocador'  then 'La Grieta'
     when 'vengador'   then 'El Palacio de las afrentas'
+    when 'brujo'      then 'La sexcentésima sexagésima sexta sala'
+    when 'caminante'  then 'La antesala sombría'
     else 'Salón de la fama'
   end
   lugar_fama 
