@@ -1,0 +1,20 @@
+<section>
+	<table id='tresp'>
+		<thead>
+			<tr>
+				<th colspan='2'>Habilidad</th>
+				<th>Descripción</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% if heroe.master %>
+				<% heroe.masters.each do |hab| %>
+					<tr><td><%= erb :'display/skill', :locals => {:skill => hab} %></td>
+						<td><%= hab.name %></td>
+						<td><%= hab.description %></td>
+					</tr>
+				<% end %>
+			<% end %>
+		</tbody>
+	</table>
+</section>

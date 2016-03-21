@@ -6,7 +6,7 @@ class Hero < Hash
     :name, :personaje, :jugador, :status, :muerto, :gender,
     :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,
     :pet, :mounts, :descendencia, :pareja, :progenitores,
-    :hechizos, :shadows, :blood, :skills,
+    :hechizos, :shadows, :blood, :skills, :master,
     :armas, :armadura, :proteccions, :miscelaneas, :abalorios,
     :profesion, :ciudad, :titulo, :camino, :hijos,
     :piezas, :pociones, :pergaminos, :materiales,
@@ -122,7 +122,8 @@ class Hero < Hash
   def cacharros     ; self.piezas.map     {|num|     Pieza.new(id: num)} if self.piezas     end
   def brebajes      ; self.pociones.map   {|num|    Pocion.new(id: num)} if self.pociones   end
   def componentes   ; self.materiales.map {|num|  Material.new(id: num)} if self.materiales end
-  def transportes   ; self.mounts.map     {|num|   Montura.new(montura(num))} if self.mounts   end 
+  def transportes   ; self.mounts.map     {|num|   Montura.new(montura(num))} if self.mounts   end
+  def masters       ; self.master.map     {|num| Habilidad.new(maestrodearma(num)) } if self.master end 
   def habilidades   ; self.skills.map     {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
   def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
   def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
