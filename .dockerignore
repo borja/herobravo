@@ -1,0 +1,6 @@
+.git/
+.gitignore
+.travis.yml
+README.md
+.rubocop*
+.Gemfile.lock
