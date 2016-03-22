@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 # Source code repository from github
 # Redundant WORKDIR
-COPY * /usr/src/app/
+COPY . /usr/src/app/
 
 # Intall requested gems
 RUN bundle install
