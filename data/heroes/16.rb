@@ -13,11 +13,13 @@ def h16
     mov:         7,
     hechizos:    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 29, 33],
     skills:      [0, 1, 2, 5],
+    mounts:      [1],
     armas:       [
       Arma.new(id: 3, enchants: [54]),
       Arma.new(id: 4, enchants: [13, 14, 15])
     ],
     armadura:    Armadura.new(id: 1, gemas: [4, 4, 4]),
+    pet:         Pet.new({ id: 8, name: 'Bill', torpe: true }),
     proteccions: [
       Proteccion.new(id: 1, enchants: [55]),
       Proteccion.new(id: 3, ranuras: 2),
