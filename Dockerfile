@@ -13,4 +13,7 @@ RUN bundle install
 
 # Sinatra server launching port
 EXPOSE 9292
-CMD RACK_ENV=production bundle exec ruby -S rackup -w config.ru
+
+# This docker file will be for production env.
+ENV RACK_ENV=production
+CMD bundle exec ruby -S rackup -w config.ru
