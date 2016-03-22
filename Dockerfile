@@ -13,4 +13,4 @@ RUN bundle install
 
 # Sinatra server launching port
 EXPOSE 9292
-CMD bundle exec ruby -S rackup -w config.ru
+CMD RACK_ENV=production bundle exec ruby -S rackup -w config.ru
