@@ -6,14 +6,14 @@ def h71
     personaje:   "clérigo",
     jugador:     'Alberto',
     status:      'reserva',
-    nivel:       1,
-    cuerpo:      5,
-    mente:       5,
+    nivel:       4,
+    cuerpo:      8,
+    mente:       4,
     mov:         8,
     repu:        1,
     armas:       [
-      Arma.new(id: 13),
-      Arma.new(id: 7)
+      Arma.new(id: 27, ranuras: 2, enchants: [109]),
+      Arma.new(id: 7, enchants: [110])
     ],
     armadura:    Armadura.new(id: 3),
     proteccions: [
@@ -30,5 +30,7 @@ def h71
     tesoro: {
       gemas: [39]
     },
+    pociones:    [4],
+    master:      [13]
   }
 end

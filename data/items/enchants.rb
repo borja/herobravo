@@ -582,6 +582,22 @@ def enchants
                      - 5: Todos tus aliados y tú podréis recuperar hasta tener mente 2.<br/>
                      - 6: Tendrás un turno extra.',
       tipo:         'legendario'
+    },
+    { id:           109,
+      name:         'del espíritu',
+      descripcion:  'La legendaria espada que mató a Zelmar:<br/>
+                     - Ataca con 3 dados amarillos + Dado de sigmar.<br/>
+                     - Águila: aturde<br/>
+                     - Cometa: Se repiten y se suman los dados<br/>
+                     - Martillo: Daño sagrado<br/>
+                     - Martillo *: Daño sagrado directo<br/>
+                     - +1 dado vs no-muertos y demonios',
+      tipo:         'legendario'
+    },
+    { id:           110,
+      name:         'de espinas',
+      descripcion:  'Dado verde. El escudo ofrece +1 represalias. Recupera 1PC por cada daño inflingido con represalias.',
+      tipo:         'tierra'
     }
   ]
 end
