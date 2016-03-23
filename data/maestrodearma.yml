@@ -76,3 +76,9 @@
   description: "Permite añadir un disparo de arco en conjunto con otros ataques."
   coste:       "250"
   type:        "Pasiva"
+- 
+  id:          13
+  name:        "Refugiarse en el escudo"
+  description: "-1 daño recibido de conjuros."
+  coste:       "450"
+  type:        "Pasiva"
