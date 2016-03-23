@@ -5,7 +5,13 @@
 	<div class="popup_information">
 		<center>
 			<h2 style="padding: 5px 5px 5px 5px; color:white;"><%= spell.name %></h2>
-			<p><%= spell.elemento %> de <%= spell.tipo %> de nivel <%= spell.nivel %><br/></p>
+			<p>
+				<% if spell.elemento == 'plegaria' %>
+					<%= spell.elemento %> de <%= spell.tipo %>
+				<% else %>
+					<%= spell.tipo %> de <%= spell.elemento %>
+				<% end %>  de nivel <%= spell.nivel %><br/>
+			</p>
 			<img src=<%= spell.img_path %> alt=<%= spell.name %>, id='icon3' />	<br/>
 			<p><%= spell.efecto %></p>
 			<table>
