@@ -14,10 +14,10 @@ class Magia < Hash
     end
   end
   
-  def img_path ; "'../../images/spells/#{ self.name }.png'"  end
+  def img_path ; "'../../images/spells/#{ name }.png'"  end
   
   def color # Returns color code
-    color = case self.elemento
+    color = case elemento
   	   when 'fuego'    then 'FF6633'
   	   when 'aire'     then 'CCFFFF'
   	   when 'tierra'   then 'CC9966'
@@ -32,10 +32,10 @@ class Magia < Hash
 end
 
 class Plegaria < Magia
-  def nivel    ; ( (self.id / 8) + 1 ).to_i end
+  def nivel    ; ( (id / 8) + 1 ).to_i end
   def elemento ; "plegaria" end
   def img_path 
-    "'../../images/magia/plegarias#{self.nivel}/#{ self.name }.png'"
+    "'../../images/magia/plegarias#{nivel}/#{name}.png'"
   end
 end
 
@@ -45,12 +45,15 @@ class Elfica < Magia
 end
 
 class Sombra < Magia
-  def nivel    ; ( (id / 6) + 1 ).to_i  end    
-  def elemento ; "sombra"   end
+  def nivel    ; ( (id / 6) + 1 ).to_i  end
+  def elemento ; "sombra" end
+  def img_path 
+    "'../../images/magia/sombras#{nivel}/#{name}.png'"
+  end
 end
 
 class Sangre < Magia
-  def nivel    ; ( (id / 6) + 1 ).to_i  end    
+  def nivel    ; ( (id / 6) + 1 ).to_i  end
   def elemento ; 'sangre' end
 end
 
