@@ -5,7 +5,7 @@
 				<header>
 					<h2><center><%= escuela %></center></h2>
 				</header>
-				<a href=<%= "/#{escuela.gsub('Luz','plegarias')}/1" %> class='city-image'>
+				<a href=<%= "/#{escuela.gsub('Luz','plegarias').downcase}/1" %> class='city-image'>
 					<% img_path = "'../images/magia/schools/#{escuela}.png'" %>
 					<img src=<%=img_path%> alt='<%= escuela %>'/>
 				</a>
