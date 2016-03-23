@@ -29,14 +29,17 @@
 				</tr>
 			</table><br/>
 		</center>
-		<% if spell.class == Plegaria %>
-			<ul><li>Chakra : <%= spell.chakra %></li>
+		<ul>
+			<% if spell.elemento == 'plegaria' %>
+				<li>Chakra : <%= spell.chakra %></li>
 				<li>Summun : <%= spell.summun %></li>
-			</ul>
-		<% end %>
-		<% if spell.diablura %>
-			<ul><li>Diablura : <%= spell.diablura %></li>
-			</ul>
-		<% end %>
+			<% end %>
+			<% if spell.diablura %>
+				<li>Diablura : <%= spell.diablura %></li>
+			<% end %>
+			<% if spell.ardid %>
+				<li>Ardid : <%= spell.ardid %></li>
+			<% end %>
+		</ul>
 	</div>
 </div>
