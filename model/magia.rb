@@ -34,8 +34,7 @@ end
 class Plegaria < Magia
   def nivel    ; ( (id / 8) + 1 ).to_i end
   def elemento ; "plegaria" end
-  def img_path 
-    "'../../images/magia/plegarias#{nivel}/#{name}.png'"
+  def img_path ; "'../../images/magia/plegarias#{nivel}/#{name}.png'"
   end
 end
 
@@ -47,8 +46,7 @@ end
 class Sombra < Magia
   def nivel    ; ( (id / 6) + 1 ).to_i  end
   def elemento ; "sombra" end
-  def img_path 
-    "'../../images/magia/sombras#{nivel}/#{name}.png'"
+  def img_path ; "'../../images/magia/sombras#{nivel}/#{name}.png'"
   end
 end
 
@@ -59,21 +57,8 @@ end
 
 class Elemental < Magia
   def nivel    ; (id / 24).to_i + 1 end
-  def elemento # elements are allways positioned this way in DB.
-    %w(fuego aire tierra agua)[id / 6 % 4]
-  end
-end
-
-def escuelas # TODO: Complete this.
- { 'aire'    => '' ,
-   'fuego'   => '' ,
-   'agua'    => '' ,
-   'tierra'  => '' ,
-   'sombras' => '' ,
-   'tenebro' => '' ,
-   'sangre'  => '' ,
-   'luz'     => '' 
- }
+  def elemento ; %w(fuego aire tierra agua)[id / 6 % 4] end
+  # elements are allways positioned this way in DB.
 end
 
 # TODO: tune up this!
