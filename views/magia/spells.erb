@@ -18,7 +18,7 @@
 						<tr style=<%= m.color %>>	
 							<td><%= m.nivel %></td>	
 							<td><%= m.elemento.capitalize %></td>
-							<td><%= erb :'display/spell', :locals => {:spell => m} %></td>		
+							<td><%= erb :'display/spell', locals: {spell: m} %></td>		
 							<td><%= m.name.capitalize %></td>
 							<td><%= m.efecto %></td>
 						</tr>

@@ -40,9 +40,3 @@ def resistencias
     }
   ]
 end
-
-def leyes
-  [{ nombre: 'hechizos', method: 'spell'  },
-   { nombre: 'shadows',  method: 'sombra' },
-   { nombre: 'blood',    method: 'sangre' }]
-end
