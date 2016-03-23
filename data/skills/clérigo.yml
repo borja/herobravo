@@ -55,7 +55,7 @@
   id:           8
   nivel:        4
   name:         "Rezar con el corazón"
-  description:  "Tira 1d20 en lugar de 1d10 al ejecutar una plgaria. (11-18 plegarias de nivel 2)"
+  description:  "Tira 1d20 en lugar de 1d10 al ejecutar una plegaria. (11-18 plegarias de nivel 2)"
   type:         "pasiva"
 -
   id:           9

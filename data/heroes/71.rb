@@ -11,6 +11,7 @@ def h71
     mente:       4,
     mov:         8,
     repu:        1,
+    profesion:   Profesion.new(id: 6, aprendiz: [0]),
     armas:       [
       Arma.new(id: 27, ranuras: 2, enchants: [109]),
       Arma.new(id: 7, enchants: [110])
@@ -25,8 +26,8 @@ def h71
       Proteccion.new(id: 10),
       Proteccion.new(id: 13),
       Proteccion.new(id: 14)
-
     ],
+    skills:     [1, 2, 3, 4, 6, 8],
     tesoro: {
       gemas: [39]
     },
