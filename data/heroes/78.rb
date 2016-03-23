@@ -5,6 +5,7 @@ def h78
     name:      "Guspwent",
     personaje: "falangista",
     jugador:   "Raúl",
+    pareja:    { char: 89, tipo: 'pj' },
     nivel:     1,
     cuerpo:    7,
     mente:     3,
