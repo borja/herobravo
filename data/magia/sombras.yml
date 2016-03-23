@@ -85,7 +85,7 @@
   id:       9
   alcance:  0
   duracion: "D"
-  name:     "Vigor Siniestro"
+  name:     "Vigor siniestro"
   tipo:     "Aura"
   efecto:   "Añade 1 dado negro a tu ataque, de potencia igual a las magias de sombras disponibles."
   diablura: "Añade un dado especial negro."
