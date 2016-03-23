@@ -11,9 +11,9 @@ class Magia < Hash
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
     end
   end
-  
-  def img_path ; "'../../images/spells/#{ name }.png'"  end
-  
+
+  def img_path ; "'../../images/magia/#{elemento}s#{nivel}/#{name}.png'" end
+
   def color # Returns color code
     color = case elemento
   	   when 'fuego'    then 'FF6633'
@@ -32,31 +32,26 @@ end
 class Plegaria < Magia
   def nivel    ; ( (id / 8) + 1 ).to_i end
   def elemento ; "plegaria" end
-  def img_path ; "'../../images/magia/plegarias#{nivel}/#{name}.png'" end
 end
 
 class Elfica < Magia
   def nivel    ; 1        end    
   def elemento ; 'elfico' end
-  def img_path ; "'../../images/magia/elficas/#{name}.png'" end
 end
 
 class Sombra < Magia
   def nivel    ; ( (id / 6) + 1 ).to_i  end
   def elemento ; "sombra" end
-  def img_path ; "'../../images/magia/sombras#{nivel}/#{name}.png'" end
 end
 
 class Sangre < Magia
   def nivel    ; ( (id / 6) + 1 ).to_i  end
   def elemento ; 'sangre' end
-  def img_path ; "'../../images/magia/sangres#{nivel}/#{name}.png'" end
 end
 
 class Elemental < Magia
   def nivel    ; (id / 24).to_i + 1 end
   def elemento ; %w(fuego aire tierra agua)[id / 6 % 4] end
-  # elements are allways positioned this way in DB.
 end
 
 # TODO: tune up this!
