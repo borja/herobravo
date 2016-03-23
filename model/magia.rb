@@ -2,12 +2,10 @@
 # encoding: UTF-8
 
 class Magia < Hash
-  attr_accessor :id, :name, :efecto, :potencia,  # Basic Stats
-    :diablura,                                   # Only in lvl 1
-    :duracion, :alcance, :tipo,                  # Spell descriptors
-    :summun, :chakra,                            # Only in plegarias
-    :maestría, :ardid                            # New implementations
-  
+  attr_accessor :id, :name, :efecto, :potencia,
+    :diablura, :duracion, :alcance, :tipo, :maestría, :ardid,
+    :summun, :chakra # Only in plegarias
+
   def initialize args
     args.each do |k,v|
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
@@ -34,25 +32,25 @@ end
 class Plegaria < Magia
   def nivel    ; ( (id / 8) + 1 ).to_i end
   def elemento ; "plegaria" end
-  def img_path ; "'../../images/magia/plegarias#{nivel}/#{name}.png'"
-  end
+  def img_path ; "'../../images/magia/plegarias#{nivel}/#{name}.png'" end
 end
 
 class Elfica < Magia
   def nivel    ; 1        end    
   def elemento ; 'elfico' end
+  def img_path ; "'../../images/magia/elficas/#{name}.png'" end
 end
 
 class Sombra < Magia
   def nivel    ; ( (id / 6) + 1 ).to_i  end
   def elemento ; "sombra" end
-  def img_path ; "'../../images/magia/sombras#{nivel}/#{name}.png'"
-  end
+  def img_path ; "'../../images/magia/sombras#{nivel}/#{name}.png'" end
 end
 
 class Sangre < Magia
   def nivel    ; ( (id / 6) + 1 ).to_i  end
   def elemento ; 'sangre' end
+  def img_path ; "'../../images/magia/sangres#{nivel}/#{name}.png'" end
 end
 
 class Elemental < Magia
