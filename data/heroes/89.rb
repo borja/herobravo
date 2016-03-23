@@ -11,7 +11,7 @@ def h89
     cuerpo:      6,
     mente:       4,
     mov:         8,
-    hechizos:    [6, 7, 8],
+    hechizos:    [12, 13, 14],
     armadura:    Armadura.new(id: 2),
     armas:       [Arma.new(id: 5)]
   }
