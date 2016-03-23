@@ -76,7 +76,7 @@ def plegarias
 end
 
 def sangres
-  YAML::load_file(File.join(__dir__, '../data/magia/sangre.yml')).map { |s| Sangre.new(s) }
+  YAML::load_file(File.join(__dir__, '../data/magia/sangres.yml')).map { |s| Sangre.new(s) }
 end
 
 def sombras
