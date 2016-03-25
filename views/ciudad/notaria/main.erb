@@ -1,0 +1,44 @@
+<header>
+	<h2>El consejo de notables</h2>
+</header>
+<h3>Servicios</h3>
+<p>
+	En el consejo de notables se pueden realizar muchas gestiones, tales como casamientos,
+	adopciones de huérfanos del orfelinato, divorcios, herencias o incluso promociones en la jerarquía,
+	del ejército regular de la ciudad. En la mayoría de estos casos, 
+	es conveniente disponer de un pergamino notarial.
+</p>
+<h3>Lista de parejas</h3>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th colspan='3'>Cónyugues</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% heros.select{ |h| h.pareja }.each do |hero| %>
+			<tr>
+				<td>
+					<a href=<%= "/hero/#{hero.id}" %>>
+						<%= erb :'display/portrait', locals: { h: hero } %>
+					</a>
+				</td>
+				<td><%= hero.name %> (<%= hero.jugador %>)</td>
+				<% if hero.pareja[:tipo] == 'pj'%>
+					<td>
+						<a href=<%= "/hero/#{hero.pareja[:char]}" %>>
+							<%= erb :'display/portrait', locals: { h: hero(hero.pareja[:char]) } %>
+						</a>
+					</td>
+				<% else %>
+					<td>
+						<%= erb :'display/display', locals: { 
+						  title:       hero.pareja[:nombre], 
+						  path:        "'../images/personajes/#{hero.pareja[:raza]}.png'" ,
+						  description: hero.pareja[:descripcion] } %>
+					</td>
+				<% end %>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

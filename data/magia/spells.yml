@@ -262,7 +262,7 @@
   tipo:     "Conjuro"
   efecto:
             "En 1 casilla ataque igneo de dados =mente del conjurador/2. Las casillas contiguas reciben 2.
-			 Elemental sacrificada= +1 casilla de fuego."
+             Elemental sacrificada= +1 casilla de fuego."
   potencia: "+1 potencia del atauqe
 # Aire nivel 2"
 -
@@ -348,8 +348,10 @@
   id:       42
   name:     "contrarrestar"
   tipo:     "Interrupción"
-  efecto:   "El hechizo objetivo es anulado. Con un dado si se obtiene una tirada igual o menor a la mente del adversario se descarta la carta. Si no se recupera."
+  efecto:   "El hechizo objetivo es anulado. Con un dado, si se obtiene una tirada igual o menor a la mente del adversario se descarta la carta. Si no, se recupera."
   potencia: "-1 a la tirada posterior."
+  diablura: "Si el hechizo es descartado, róbaselo hasta final de turno."
+  ardid:    "Si el hechizo es descartado, redirígeselo al objetivo."
 -
   id:       43
   name:     "nube venenosa"
@@ -412,6 +414,7 @@
   tipo:     "Invocación"
   efecto:   "Ataca con 5 dados de fuego y puede golpear a 2 enemigos/turno repartiendo su ataque. El invocador puede ofrecerle su sangre para que obtenga 1 dado más de ataque."
   potencia: "+1 enemigo/turno +1 dado de ataque"
+  diablura: "El ifrit tiene: Odio"
 -
   id:       53
   name:     "valor desmesurado"

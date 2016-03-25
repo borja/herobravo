@@ -208,7 +208,8 @@
   ruta:  "notaria"
   title: "Notaría"
   template:
-    main: "ciudad/notaria"
+    main:  "ciudad/notaria/main"
+    right: "ciudad/notaria/notaria"
 -
   ruta:  "palacio"
   template:

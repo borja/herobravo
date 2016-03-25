@@ -6,7 +6,7 @@ def h59
     personaje: 'druida',
     jugador:   'Javier Galindo',
     status:    'activo',
-    pareja:    { nombre: 'Gabrielle', raza: 'elfo-female', tipo: 'pnj' },
+    pareja:    { nombre: 'Gabrielle', raza: 'elfilla', tipo: 'pnj' },
     nivel:     4,
     cuerpo:    7,
     mente:     7,
