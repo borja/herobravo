@@ -12,7 +12,7 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<th colspan='3'>Cónyugues</th>
+			<th colspan='4'>Cónyugues</th>
 		</tr>	
 	</thead>
 	<tbody>
@@ -26,11 +26,16 @@
 				<td><%= hero.name %> (<%= hero.jugador %>)</td>
 				<% if hero.pareja[:tipo] == 'pj'%>
 					<td>
+						<%= hero(hero.pareja[:char]).name %>
+						(<%= hero(hero.pareja[:char]).jugador %>)
+					</td>
+					<td>
 						<a href=<%= "/hero/#{hero.pareja[:char]}" %>>
 							<%= erb :'display/portrait', locals: { h: hero(hero.pareja[:char]) } %>
 						</a>
 					</td>
 				<% else %>
+					<td><%= hero.pareja[:nombre] %> (PnJ)</td>
 					<td>
 						<%= erb :'display/display', locals: { 
 						  title:       hero.pareja[:nombre], 
