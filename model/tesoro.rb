@@ -21,7 +21,7 @@ class Engarce < Hash
   def bonificador item
     case
     when item.fits == "arma"         then return fits[item.categoria] || fits['arma']     || "Armas sin implementar"
-    when item.fits == "armadura"     then return fits[item.categoria] || fits['armadura'] || "Armaduras sin implementar"
+    when item.fits == "armadura"     then return fits[item.categoria] || fits['pecho']    || "Armaduras sin implementar"
     when fits[item.fits]             then return fits[item.fits]
     when item.class == Proteccion    then return fits['armadura'] || "Sin bonificador"
     else return "Sin efecto"
