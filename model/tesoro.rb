@@ -20,10 +20,10 @@ class Engarce < Hash
 
   def bonificador item
     case
-    when item.fits == "arma"         then return self.fits[item.categoria.to_sym] || self.fits[:arma] || "TBD"
-    when item.fits == "armadura"     then return self.fits[item.categoria.to_sym] || self.fits[:armadura] || "TBD"
-    when self.fits[item.fits.to_sym] then return self.fits[item.fits.to_sym]
-    when item.class == Proteccion    then return self.fits[:armadura] || "Sin bonificador"
+    when item.fits == "arma"         then return fits[item.categoria] || fits['arma']     || "Armas sin implementar"
+    when item.fits == "armadura"     then return fits[item.categoria] || fits['armadura'] || "Armaduras sin implementar"
+    when fits[item.fits]             then return fits[item.fits]
+    when item.class == Proteccion    then return fits['armadura'] || "Sin bonificador"
     else return "Sin efecto"
     end
   end

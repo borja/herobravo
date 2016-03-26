@@ -11,14 +11,28 @@
 				<%= item.name %>
 			<% end %>	
 			<br>
-			<img src=<%= item.img_path %> alt=<%= item.name %>, id='icon3' />
+			<center><img src=<%= item.img_path %> alt=<%= item.name %>, id='icon3' /></center>
 		</h3>
+		<% if item.item == "arma" %>
+			<li>Ataque: <%= item.ataque %></li>
+			<% if item.diagonal %>
+				<li><i>Permite atacar en diagonal</i></li>
+			<% end %>
+			<% if item.enchanted? %>
+				<li><i>Arma encantada</i></li>
+			<% else %>
+				<li><i>Arma mundana</i></li>
+			<% end %>
+		<% end %>
 			<li>Valor: <%= item.precio_venta %></li>
 		<% if item.item == "proteccion" %>
 			<li>Protección: <i>+<%= item.defensa %> potencia.</i></li>
 			<li>Categoría: <i><%= item.categoria %></i></li>
 		<% end %>
-		<%= erb :'display/item/engarces', :locals => {:item => item } unless item.mundano? %>
+		<% if item.item == "miscelanea" %>
+			<li>Objeto de tipo: <i><%= item.fits %></i></li>
+		<% end %>
+		<%= erb :'display/item/engarces', locals: {item: item } unless item.mundano? %>
 		<% if item.enchants %>	
 			<br>
 			<h4>Propiedades mágicas</h4>

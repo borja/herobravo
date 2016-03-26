@@ -38,12 +38,12 @@
 					</td>
 					<td>
 						<% if p = hero.profesion %>
-							<%= erb :'ficha/profesion', :locals => { :prof => p } %>
+							<%= erb :'ficha/profesion', locals: { prof: p } %>
 						<% end %>
 					</td>
 					<td><table>
 							<tr><% hero.armas.each do |a| %>
-								<td><%= erb :'display/arma', :locals => { :a => a} %></td>
+								<td><%= erb :'display/item', locals: {item: a} %></td>
 							<% end %></tr>
 						</table>
 					</td>

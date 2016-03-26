@@ -44,7 +44,7 @@
 					</td>
 					<td><table>
 							<tr><% hero.armas.each do |a| %>
-								<td><%= erb :'display/arma', :locals => { :a => a} %></td>
+								<td><%= erb :'display/item', locals: {item: a} %></td>
 							<% end %></tr>
 						</table>
 					</td>

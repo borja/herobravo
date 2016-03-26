@@ -1,20 +1,19 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<th>Icono</th>
-			<th>Nombre</th>
+			<th colspan=2>Bisutería</th>
 			<th>Pieza</th>
 			<th>Ranuras</th>
 			<th>Precio</th>
 		</tr>	
 	</thead>
 	<tbody>
-		<% miscelaneas.each do |misc| %>
+		<% miscelaneas.sort_by {|m| m['fits']}.each do |misc| %>
 		<% m = Miscelanea.new(misc)%>
 			<tr>
-				<td><img src=<%= m.img_path %> alt=<%= m.name %>, id='icon' /></td>
+				<td><%= erb :'display/item', locals: { item: m } %></td>
 				<td><%= m.name %></td>
-				<td><%= m.fits.capitalize %></td>
+				<td><%= m.fits %></td>
 				<td><%= m.max %></td>
 				<td><%= m.precio %></td>
 			</tr>
