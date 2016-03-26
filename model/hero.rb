@@ -2,7 +2,7 @@
 # encoding: UTF-8
 
 class Hero < Hash
-  attr_accessor :id,         
+  attr_accessor :id,
     :name, :personaje, :jugador, :status, :muerto, :gender,
     :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,
     :pet, :mounts, :descendencia, :pareja, :progenitores,
@@ -19,7 +19,7 @@ class Hero < Hash
   end
 
   # Custom meta-methods created by each item:
-  (fields[1]+fields[2]+fields[3]).each do |f|
+  (fields[0]+fields[1]+fields[2]).each do |f|
     define_method(f) do
   		((self.proteccions || []) + (self.miscelaneas || [])).detect { |item| item.fits == f }
     end

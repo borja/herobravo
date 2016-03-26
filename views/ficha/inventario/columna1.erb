@@ -5,10 +5,10 @@
 		<thead>
 			<tr><th colspan=2>Protecciones</th></tr>
 			<tr><td width='80%'>Armadura</td>
-				<td><%= erb :'display/armadura', :locals => { :a => hero(params[:param].to_i).armadura } %></td>
+				<td><%= erb :'display/armadura', locals: { a: hero(params[:param].to_i).armadura } %></td>
 			</tr>
-			<% fields[1].each do |field| %>
-				<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
+			<% fields[0].each do |field| %>
+				<%= erb :'ficha/inventario/field', locals: {fits: field } %>
 			<% end %>
 		</thead>
 	</table>

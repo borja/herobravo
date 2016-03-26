@@ -1,13 +1,10 @@
 # encoding: UTF-8
-def engarces
-  %w(gemas joyas runas)
-end
-
 def fields
-  { 1 => %w(cabeza hombros muñecas cintura entrepierna),
-    2 => %w(espalda pechera manos hebilla pies tatuajes),
-    3 => %w(cuello argolla pendientes cadena broche tobillos)
-  }
+  [
+    %w(cabeza hombros muñecas cintura entrepierna),
+    %w(espalda pechera manos hebilla pies tatuajes),
+    %w(cuello argolla pendientes cadena broche tobillos)
+  ]
 end
 
 def resistencias
