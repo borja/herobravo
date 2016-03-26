@@ -1,21 +1,21 @@
 <table id='tresp'>
 	<thead>
 		<tr><th colspan='2'>Protección</th>
-			<% ["Categoría", "Defensa", "Precio", "Ranuras Permitidas"].each do |stat| %>
+			<% %w(Categoría Defensa Precio Ranuras).each do |stat| %>
 				<th><%= stat %></th>
 			<% end %>
 		</tr>	
 	</thead>
 	<tbody>
-		<% proteccions.sort_by {|p| p[:categoria]}.each do |prot| %>
-		<% p = Proteccion.new(prot) %>
+		<% proteccions.sort_by {|p| p['categoria']}.each do |prot| %>
+		<% p = Proteccion.new(prot.tap{ |i| i.delete('ranuras') } ) %>
 			<tr>
-				<td><img src=<%= p.img_path %> alt='<%= p.name %>', id='icon' /></td>
+				<td><%= erb :'display/item', locals: { item: p } %></td>
 				<td><%= p.name.capitalize %></td>
 				<td><%= p.categoria.capitalize %></td>
 				<td><%= p.defensa %></td>
 				<td><%= p.precio %></td>
-				<td><%= p.ranuras %></td>
+				<td><%= proteccions[p.id]['ranuras'] %></td>
 			</tr>
 		<% end %>
 	</tbody>

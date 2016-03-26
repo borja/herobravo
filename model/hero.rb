@@ -185,8 +185,8 @@ class Hero < Hash
     if self.progenitores
       papa = self.progenitores.first
       case papa
-        when Fixnum then return {:type => "pj",  :char => hero(papa)}
-        when String then return {:type => "pnj", :char => papa}
+        when Fixnum then return {type: "pj",  char: hero(papa)}
+        when String then return {type: "pnj", char: papa}
         else return "Fallo de padre => #{papa.class}"
       end
     else return nil end
@@ -203,24 +203,24 @@ class Hero < Hash
     else return nil end
   end
   
-  def descendientes # I kill you with my spaguetti code, TODO: Tune up this!      
+  def descendientes # I kill you with my spaguetti code, TODO: Tune up this!
     padres = heros.map{ |h| h.progenitores}
     hijos  = padres.each_index.select{|i| padres[i].include?(self.id) unless padres[i].nil?  }
     hijos.empty? ? nil : hijos
   end
       
   def genderize
-    if self.gender == "female" 
-      case self.clase
+    if gender == "female" 
+      case clase
         when "elfo"     then return "elfa"
         when "mago"     then return "maga"
         when "bárbaro"  then return "bárbara"
         when "clérigo"  then return "clériga"
         when "ladrón"   then return "ladrona"
-        when "tiefling" then return "tiefling-female"
-        else return self.clase
+        when 'tiefling' then return 'tiefling-female'
+        else return clase
       end
-    else return self.clase
+    else return clase
     end
   end
 end

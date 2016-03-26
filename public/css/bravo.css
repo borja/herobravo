@@ -26,14 +26,6 @@ Displaying Info as original
 	weight: 204px;
 	height: 321px;
 }
-#tier {
-	border: 0px solid #ffffff;
-    width: 100%;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
- 	vertical-align: middle;
-}
 
 div.information_popup_container {
 	/* Position Information */
@@ -54,7 +46,7 @@ div.information_popup_container > div.popup_information {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	background-color: #222;
-	padding: .1em 1em 1em 1em;
+	padding: 1em 2em 1em 2em;
 	text-align: left;
 	/* Position Information */
 	/* Appearance Information */

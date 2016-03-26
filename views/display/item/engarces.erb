@@ -1,18 +1,20 @@
-<table id='tier', style="background-color:<%= item.tier_color %>;">
-	<tbody>
-		<tr><td>
+<% bg =  item.is_tier? ? item.is_tier?[:color] : '#525252' %>
+<table id='tier'>
+	<tr>
+		<th style="background-color: <%= bg %>;">
 			<% if item.is_tier? %>
 				<h3>Tier de <%= item.is_tier?[:name] %></h3>
-				<p style="color: white">Efecto: <i><%= item.is_tier?[:bono] %></i></p>
+				<p>Efecto: <i><%= item.is_tier?[:bono] %></i></p>
 			<% else %>
 				<h3>Engarces</h3>
 			<% end %>
-				<%= erb :'display/item/gemas', :locals => {:item => item} if item.gemas %>
-				<%= erb :'display/item/joyas', :locals => {:item => item} if item.joyas %>
-				<%= erb :'display/item/runas', :locals => {:item => item} if item.runas %>
-				<% item.ranuras_libres.times do %>
-					<%= erb :'display/ranura' %>
-				<% end %>
-		</td></tr>
-	</tbody>
-</table>	
+			<%= erb :'display/item/gemas', locals: {item: item} if item.gemas %>
+			<%= erb :'display/item/joyas', locals: {item: item} if item.joyas %>
+			<%= erb :'display/item/runas', locals: {item: item} if item.runas %>
+			<br/>
+			<% item.ranuras_libres.times do %>
+				<%= erb :'display/ranura' %>
+			<% end %>
+		</th>
+	</tr>
+</table>
