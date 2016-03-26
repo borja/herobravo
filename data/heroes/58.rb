@@ -20,8 +20,10 @@ def h58
                    Proteccion.new(id: 4)],
     miscelaneas:  [Miscelanea.new(id: 1,    enchants: [11]),
                    Miscelanea.new(id: 2, enchants: [6])],
-    skills:       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-    tesoro:       { gemas: [6, 6, 11, 14, 27, 30],
-                    joyas: [2] }
+    skills:       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    tesoro:       {
+      gemas: [6, 6, 11, 14, 27, 30],
+      joyas: [2]
+    }
   }
 end

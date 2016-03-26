@@ -57,7 +57,7 @@ def maestrodearma id
 end
 
 def fama(personaje)
-  lugar_fama = case personaje
+  case personaje
     when 'matador'    then 'El Menhir de los matadores'
     when 'falangista' then 'Los salones pretorianos'
     when 'ingeniero'  then 'Academia de Ingeniería'
@@ -73,7 +73,7 @@ def fama(personaje)
     when 'vengador'   then 'El Palacio de las afrentas'
     when 'brujo'      then 'La sexcentésima sexagésima sexta sala'
     when 'caminante'  then 'La antesala sombría'
+    when 'clérigo'    then 'El altar de Sigmar'
     else 'Salón de la fama'
   end
-  lugar_fama 
 end
