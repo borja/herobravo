@@ -1,5 +1,13 @@
-<img 
-	src="../../images/treasures/socket.png", 
-	alt='ranura-hueca', 
-	id='icon'
-/>
+<% if c = locals[:casillero] %>
+	<img 
+		src="../images/items/casillero/<%= c %>.png", 
+		alt="<%= c %>", 
+		id='icon'
+	/>
+<% else %>
+	<img 
+		src="../../images/treasures/socket.png", 
+		alt='ranura-hueca', 
+		id='icon'
+	/>
+<% end %>
