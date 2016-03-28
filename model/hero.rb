@@ -26,7 +26,7 @@ class Hero < Hash
   end
   
   def cuerpo_base
-    case self.clase
+    case clase
       when 'mago'     then return 4
       when 'elfo'     then return 6
       when 'tiefling' then return 4
@@ -37,7 +37,7 @@ class Hero < Hash
   end
 
   def mente_base
-    case self.clase
+    case clase
       when 'mago'     then return 6
       when 'elfo'     then return 4
       when 'tiefling' then return 4
@@ -48,7 +48,7 @@ class Hero < Hash
   end
   
   def movimiento_base
-    case self.clase
+    case clase
       when 'elfo'     then return 8
       when 'enano'    then return 6
       else                 return 7
@@ -109,11 +109,11 @@ class Hero < Hash
 
   def img_path      ; "'../images/personajes/#{self.genderize}.png'" end
   def big_path      ; "'../../images/portraits/#{self.name}.png'" end
-  def reputacion    ; self.repu || 0 end
-  def movimiento    ; self.mov end
+  def reputacion    ; repu || 0 end
+  def movimiento    ; mov end
   def raza          ; %w(clérigo ladrón bárbaro mago).include?(self.clase) ? 'humano' : self.clase end
-  def female?       ; self.sex == 'female' end
-  def male?         ; self.sex == 'male' end
+  def female?       ; sex == 'female' end
+  def male?         ; sex == 'male' end
   def anillos       ; (self.miscelaneas || []).select { |m| m.fits == "anillo"  } end
   def amuletos      ; (self.miscelaneas || []).select { |m| m.fits == "amuleto" } end 
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
@@ -223,4 +223,5 @@ class Hero < Hash
     else return clase
     end
   end
+  
 end
