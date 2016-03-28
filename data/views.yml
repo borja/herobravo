@@ -225,6 +225,12 @@
     left: "ficha/izquierda/izquierda"
     main: "magia/spells"
 -
+  ruta:  "ensalada"
+  title: "Contadores"
+  template:
+    left: "ficha/izquierda/izquierda"
+    main: "ficha/ensalada"
+-
   ruta:  "hechizos"
   template:
     left: "torre/left/elementales"
