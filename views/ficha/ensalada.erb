@@ -1,0 +1,45 @@
+<% hero = hero(params[:param].to_i) %>
+<header>
+	<h2>Contadores de <%= hero.name %></h2>
+</header>
+<% if hero.habilidades %>
+	<h3>Contadores de habilidades</h3>
+	<table id='tresp'>
+		<thead>
+			<th>Contadores</th>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+		</thead>
+		<tbody>
+			<% hero.habilidades.select { |h| h.type == 'única' }.each do |hab|%>	
+				<tr>	
+					<td><%= hero.habilidades.count { |ha| ha.type == 'única'} %></td>
+					
+					<td><%= hab.name %></td>
+					<td><%= hab.description %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+<% else %>
+	<p><%= hero.name %> no necesita ningún contador de habilidades.</p>
+<% end %>
+
+<h3>Contadores de objetos</h3>
+<table id='tresp'>
+	<thead>
+		<th>Contadores</th>
+		<th>Nombre</th>
+		<th>Descripción</th>
+	</thead>
+	<tbody>
+		<% hero.habilidades.select { |h| h.type == 'única' }.each do |hab|%>	
+			<tr>	
+				<td><%= hab.count { |ha| ha.type == 'única'} %></td>
+				<td><%= hab.name %></td>
+				<td><%= hab.description %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

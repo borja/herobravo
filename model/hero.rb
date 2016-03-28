@@ -91,11 +91,11 @@ class Hero < Hash
   
   def lista_status view
     case view
-    when "licenciados"  then "retirado"
-    when "heroes"       then "activo"
-    when "ausentes"     then "ausente"
-    when "reservistas"  then "reserva"
-    when "extranjeros"  then "extranjero"
+    when 'licenciados'  then 'retirado'
+    when 'heroes'       then 'activo'
+    when 'ausentes'     then 'ausente'
+    when 'reservistas'  then 'reserva'
+    when 'extranjeros'  then 'extranjero'
     end
   end
   
