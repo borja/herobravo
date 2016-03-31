@@ -254,7 +254,14 @@
 -
   id:           34
   name:         "Sabiduría espiritual"
-  description:  "Los espíritus invocados disponen de habilidades especiales: Araña (Incubar/Tela de araña y gran veneno); Oso (Desplazar/Aullar y Empujar); Búho (vista nocturna / Ojos de búho 5+ y huevo de oro); Lobo (Cargar/ Mordisco y manada); Elemental de agua (Fuente / Riada y escudo de agua); Dragón (mantenimiento de 3PV-turno / Estallido de saprolines)."
+  description:
+                "Los espíritus invocados disponen de habilidades especiales: 
+                 Araña (Incubar/Tela de araña y gran veneno)<br/>
+                 Oso (Desplazar/Aullar y Empujar)<br/>
+                 Búho (vista nocturna / Ojos de búho 5+ y huevo de oro)<br/>
+                 Lobo (Cargar/ Mordisco y manada)<br/>
+                 Elemental de agua (Fuente / Riada y escudo de agua)<br/>
+                 Dragón (mantenimiento de 3PV-turno / Estallido de saprolines)."
   type:         "pasiva"
   nivel:        12
   rangos:       2
