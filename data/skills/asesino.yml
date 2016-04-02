@@ -6,10 +6,10 @@
   type:         "Reactiva"
   description:
     "Si no hay objetivos visibles el asesino entra en sigilo. Ciertos objetivos son inmunes al sigilo. 
-	El efecto de esta habilidad cesará cuando el asesino realice una acción distinta a movimiento. 
-	<li>Rango I: los enemigos no empujan al asesino.</li>
-	<li>Rango II: Los enemigos dejan de ver al asesino pero su movimiento será la minus-mitad.</li> 
-	<li>Rango III: No hay penalización al movimiento y permite atravesar unidades.</li>"
+     El efecto de esta habilidad cesará cuando el asesino realice una acción distinta a movimiento. 
+     <li>Rango I: los enemigos no empujan al asesino.</li>
+     <li>Rango II: Los enemigos dejan de ver al asesino pero su movimiento será la minus-mitad.</li> 
+     <li>Rango III: No hay penalización al movimiento y permite atravesar unidades.</li>"
 -
   id:           1
   nivel:        2
@@ -20,7 +20,7 @@
   id:           2
   nivel:        2
   name:         "Puñalada trapera"
-  type:         "Única"
+  type:         "única"
   description:  
     "Requiere daga. Si tras haber declarado un ataque contra un aliado el enemigo se desplaza por la zona de combate del asesino, 
 	éste podrá realizar un ataque. Se puede emplear más de 1 puñalada trapera por turno."
@@ -159,8 +159,8 @@
   type:         "Activa"
   description:  
     "Esta habilidad no se puede utilizar si ya se ha lanzado alguna daga voladora. 
-	 Permite al asesino lanzar 3 dagas en conjunto. Si se emplea esta habilidad,
-	 no se podrán lanzar más dagas el resto del turno."
+     Permite al asesino lanzar 3 dagas en conjunto. Si se emplea esta habilidad,
+     no se podrán lanzar más dagas el resto del turno."
 -
   id:           19
   nivel:        10
@@ -176,5 +176,5 @@
   type:         "Definitiva"
   description:  
     "Tras sesgar tu decimotercera vida, estarás bendecido por Elmut:<br/>
-	 Cobrarás todas las piezas que mates en conjunto, y podrás después de matar, bien recuperar 1 hechizo,<br/>
-	 bien disponer de una acción de hechizar adicional. (Una única vez por turno)"
+     Cobrarás todas las piezas que mates en conjunto, y podrás después de matar, bien recuperar 1 hechizo,<br/>
+     bien disponer de una acción de hechizar adicional. (Una única vez por turno)"
