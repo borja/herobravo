@@ -17,7 +17,7 @@ def h3
     skills:       [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11],
     hechizos:     [0, 1, 2],
     shadows:      [0, 1, 2, 5],
-    materiales:   [0],
+    materiales:   [0, 0],
     pociones:     [3],
     armas:        [Arma.new(id: 24, enchants: [72, 73, 74], ranuras: 2)],
     armadura:     Armadura.new(id: 3),
@@ -39,7 +39,7 @@ def h3
     profesion:    Profesion.new(id: 3, aprendiz: [0, 1, 5]),
     tesoro:       {
       runas: [3],
-      gemas: [6, 10, 18, 21, 25, 27, 31, 40, 52]
+      gemas: [6, 10, 18, 21, 25, 27, 27, 28, 31, 40, 52]
     }
   }
 end
