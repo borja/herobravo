@@ -58,8 +58,7 @@ def h2
     ],
     tesoro:       {
       gemas: [14, 24, 25, 25, 17, 35, 16, 16, 27, 18, 30],
-      runas: [7, 9],
-      joyas: [9]
+      runas: [7, 9]
     },
     abalorios:    [
       Abalorio.new(id: 1),
