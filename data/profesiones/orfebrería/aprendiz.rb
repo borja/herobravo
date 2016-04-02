@@ -36,6 +36,12 @@ def orfebrería_aprendizajes
       name:   'Aguja de plata',
       coste:  300,
       efecto: 'Permite a otro jugador engastar gratuitamente gemas en la ropa que haya creado como taxidermista.'
+    },
+    {
+      id:     6,
+      name:   'Zarcillos',
+      coste:  300,
+      efecto: 'Permite fabricar pendientes. Los materiales cuestan 300g. Venderlo: 200g'
     }
   ]
 end
