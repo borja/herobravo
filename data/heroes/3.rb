@@ -26,7 +26,7 @@ def h3
       Proteccion.new(id: 3),
       Proteccion.new(id: 4),      
       Proteccion.new(id: 5, enchants: [22]),
-      Proteccion.new(id: 8)
+      Proteccion.new(id: 8, runas: [2])
     ],
     miscelaneas:  [
       Miscelanea.new(id: 2,  enchants: [21], ranuras: 2),
