@@ -19,7 +19,9 @@ def h13
     ],
     armadura:    Armadura.new(id: 3, gemas: [25, 28], enchants: [107]),
     proteccions: [
-      Proteccion.new(id: 17),
+      Proteccion.new(id: 17, ranuras: 1),
+      Proteccion.new(id: 4,  ranuras: 1),
+      Proteccion.new(id: 5,  gemas: [29]),
       Proteccion.new(id: 8, ranuras: 2)
     ],
     miscelaneas: [
@@ -29,7 +31,7 @@ def h13
     pociones:    [3, 12],
     mounts:      [1],
     tesoro:      {
-      gemas: [1, 29],
+      gemas: [0,1,27],
     },
   }
 end
