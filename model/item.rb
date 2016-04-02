@@ -5,7 +5,7 @@ class Item < Hash
   attr_accessor :id, :enchants, :max, :precio,
                 :runas, :joyas, :ranuras, :gemas,
                 :legendario, :unico, :artefacto, :size
-                  
+
   def initialize args
     args.each do |k,v|
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
@@ -142,6 +142,7 @@ end
 
 class Material < Util
   def name ; material(self.id)['name']  end
+  def description ; material(id)['description']  end
   def disponibles # returns from heros.materiales, the list of (maybe repeated) ids of the heros with self.id material available
     total = []
     heros.each do |h|
