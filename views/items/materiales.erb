@@ -8,25 +8,30 @@
 		<% materiales.each do |m| %>
 		<% mat = Material.new(m) %>
 			<tr>
-				<td><img src=<%= mat.img_path %> alt=<%= mat.name %>, id='icon' /></td>
+				<td><%= erb :'display/display', locals: {
+						title:       mat.name, 
+						path:        mat.img_path,
+						description: mat.description} %>
+				</td>
 				<td><%= mat.name %></td>
-				<td><%= erb :'display/bazar', :locals => { 
-						:bazar   => mat.disponibles, 
-						:item_id => mat.id, 
-						:engarce => "materiales" } %></td>
+				<td><%= erb :'display/bazar', locals: {
+						bazar:   mat.disponibles, 
+						item_id: mat.id, 
+						engarce: "materiales" } %>
+				</td>
 				<td>
 					<table>
 						<tbody>
-							<tr>	
-							  <% mat.usado_en.each do |uso| %>
-							    <td>
-							      <%= erb :'display/display', :locals => { 
-							        :title       => p = profesion(uso[:prof])[:name], 
-							        :path        => "'../../images/profesiones/#{p}.png'",
-							        :description => profesion(uso[:prof])[uso[:grado].to_sym][uso[:receta]][:name] } %>
-						        </td>
-						      <% end %>
-					        </tr>
+							<tr>
+								<% mat.usado_en.each do |uso| %>
+									<td>
+										<%= erb :'display/display', locals: {
+											title:       p = profesion(uso[:prof])[:name], 
+											path:        "'../../images/profesiones/#{p}.png'",
+											description: profesion(uso[:prof])[uso[:grado].to_sym][uso[:receta]][:name] } %>
+									</td>
+								<% end %>
+							</tr>
 						</tbody>
 					</table>
 				</td>
