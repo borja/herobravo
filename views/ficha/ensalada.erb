@@ -12,10 +12,10 @@
 			<th>Descripción</th>
 		</thead>
 		<tbody>
-			<% hero.habilidades.select { |h| h.type == 'única' }.each do |hab|%>	
+			<% habs_unicas = hero.habilidades.select { |h| h.type == 'única' } %>
+			<% habs_unicas.uniq.each do |hab|%>	
 				<tr>	
 					<td><%= hero.habilidades.count { |ha| ha.type == 'única'} %></td>
-					
 					<td><%= hab.name %></td>
 					<td><%= hab.description %></td>
 				</tr>
@@ -30,16 +30,16 @@
 <table id='tresp'>
 	<thead>
 		<th>Contadores</th>
+		<th>Item</th>
 		<th>Nombre</th>
 		<th>Descripción</th>
 	</thead>
 	<tbody>
-		<% hero.habilidades.select { |h| h.type == 'única' }.each do |hab|%>	
-			<tr>	
-				<td><%= hab.count { |ha| ha.type == 'única'} %></td>
-				<td><%= hab.name %></td>
-				<td><%= hab.description %></td>
+			<tr>
+				<td>#</td>
+				<td>X</td>
+				<td>Sin implementar</td>
+				<td>Sin implementar</td>
 			</tr>
-		<% end %>
 	</tbody>
 </table>
