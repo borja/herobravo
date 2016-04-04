@@ -60,10 +60,10 @@ def h2
       runas: [7, 9]
     },
     abalorios:    [
-      Abalorio.new(id: 1),
-      Abalorio.new(id: 2),
-      Abalorio.new(id: 5),
-      Abalorio.new(id: 6)
+      { id: 1 },
+      { id: 2 },
+      { id: 5 },
+      { id: 6 }
     ]
   }
 end

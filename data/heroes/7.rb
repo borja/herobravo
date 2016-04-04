@@ -3,6 +3,7 @@ def h7
   {
     id:          7,
     name:        'Loki',
+    titulo:       'Capitán',
     personaje:   'ingeniero',
     jugador:     'Aitor',
     status:      'activo',
@@ -36,7 +37,7 @@ def h7
       { id: 1, ranuras: 2, enchants: [25] },
       { id: 1, gemas: [29], enchants: [104] }
     ],
-    abalorios:   [Abalorio.new(id: 3)],
+    abalorios:   [{ id: 3 }],
     tesoro:      {
       gemas: [1, 3, 8, 11, 16, 25, 29],
       runas: [3, 6, 8]
