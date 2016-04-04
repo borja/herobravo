@@ -13,8 +13,8 @@ def h24
       { id: 2 },
       { id: 7 }
     ],
-    armadura:    { id: 2 },
-    proteccions: [Proteccion.new(id: 2)],
-    tesoro:      { gemas: [21] }
+    armadura:     { id: 2 },
+    protecciones: [{ id: 2 }],
+    tesoro:       { gemas: [21] }
   }
 end

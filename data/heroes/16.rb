@@ -19,11 +19,11 @@ def h16
       { id: 3, enchants: [54] },
       { id: 4, enchants: [13, 14, 15] }
     ],
-    armadura:    { id: 1, gemas: [4, 4, 4] },
-    proteccions: [
-      Proteccion.new(id: 1, enchants: [55]),
-      Proteccion.new(id: 3, ranuras: 2),
-      Proteccion.new(id: 8, gemas: [26])
+    armadura:     { id: 1, gemas: [4, 4, 4] },
+    protecciones: [
+      { id: 1, enchants: [55] },
+      { id: 3, ranuras: 2 },
+      { id: 8, gemas: [26] }
     ],
     miscelaneas: [
       { id: 1, gemas: [28], enchants: [56] },

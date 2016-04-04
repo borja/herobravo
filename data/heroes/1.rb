@@ -28,14 +28,14 @@ def h1
       { id: 3, gemas: [32] }
     ],
     armadura:     { id: 6, gemas: [36, 29, 37] },
-    proteccions:  [
-      Proteccion.new(id: 12, gemas: [30], joyas: [3]),
-      Proteccion.new(id: 1,  gemas: [26, 27, 26], enchants: [20, 78]),
-      Proteccion.new(id: 5,  enchants: [5]),
-      Proteccion.new(id: 3,  gemas: [17, 17]),
-      Proteccion.new(id: 11, gemas: [25, 16, 48]),
-      Proteccion.new(id: 9,  ranuras: 2),
-      Proteccion.new(id: 8,  gemas: [24], joyas: [1, 1])
+    protecciones: [
+      { id: 12, gemas: [30], joyas: [3] },
+      { id: 1,  gemas: [26, 27, 26], enchants: [20, 78] },
+      { id: 5,  enchants: [5] },
+      { id: 3,  gemas: [17, 17] },
+      { id: 11, gemas: [25, 16, 48] },
+      { id: 9,  ranuras: 2 },
+      { id: 8,  gemas: [24], joyas: [1, 1] }
     ],
     miscelaneas:  [
       { id: 1,  enchants: [20] },

@@ -14,6 +14,6 @@ def h35
       { id: 7 }
     ],
     armadura:    { id: 2 },
-    proteccions: [Proteccion.new(id: 5, enchants: [5])]
+    protecciones: [{ id: 5, enchants: [5] }]
   }
 end

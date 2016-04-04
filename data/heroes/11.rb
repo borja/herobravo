@@ -21,9 +21,9 @@ def h11
       { id: 2, gemas: [11, 11, 11, 53] },
       { id: 5 }
     ],
-    proteccions: [
-      Proteccion.new(id: 2, gemas: [28]),
-      Proteccion.new(id: 3, enchants: [8], ranuras: 2)
+    protecciones: [
+      { id: 2, gemas: [28] },
+      { id: 3, enchants: [8], ranuras: 2 }
     ],
     miscelaneas: [
       { id: 1, enchants: [29] },

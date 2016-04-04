@@ -17,10 +17,10 @@ def h53
       { id: 14 },
       { id: 25 }
     ],
-    proteccions: [
-      Proteccion.new(id: 1, enchants: [84]),
-      Proteccion.new(id: 2),
-      Proteccion.new(id: 4)
+    protecciones: [
+      { id: 1, enchants: [84] },
+      { id: 2 },
+      { id: 4 }
     ]
   }
 end

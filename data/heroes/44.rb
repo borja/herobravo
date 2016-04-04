@@ -20,14 +20,14 @@ def h44
       { id: 14, gemas: [4, 22] },
       { id: 25, enchants: [81] }
     ],
-    proteccions:  [
-      Proteccion.new(id: 1, gemas: [23, 23]),
-      Proteccion.new(id: 2,  joyas: [19]),
-      Proteccion.new(id: 5,  gemas: [26, 11], enchants: [7]),
-      Proteccion.new(id: 8, enchants: [79]),
-      Proteccion.new(id: 3, gemas: [26, 28], enchants: [8]),
-      Proteccion.new(id: 10),
-      Proteccion.new(id: 11)
+    protecciones: [
+      { id: 1, gemas: [23, 23] },
+      { id: 2, joyas: [19] },
+      { id: 3, gemas: [26, 28], enchants: [8] },
+      { id: 5, gemas: [26, 11], enchants: [7] },
+      { id: 8, enchants: [79] },
+      { id: 10 },
+      { id: 11 }
     ],
     miscelaneas:  [
       { id: 1 },

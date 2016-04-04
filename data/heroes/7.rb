@@ -16,21 +16,21 @@ def h7
          dónde yerno y suegro, derrotan al draco verde heroicamente.<br/>
          Bietka, la Condesa de Zelmuria, forja el anillo de oro para el casamiento.'
     },
-    nivel:       10,
-    repu:        5,
-    cuerpo:      10,
-    mente:       6,
-    mov:         8,
-    familiar:    { id: 18, name: 'Menta', torpe: true },
-    armas:       [{ id: 12, enchants: [58] }],
-    armadura:    { id: 3, ranuras: 1 },
-    proteccions: [
-      Proteccion.new(id: 1, ranuras: 1),
-      Proteccion.new(id: 2, ranuras: 1),
-      Proteccion.new(id: 3, ranuras: 1),
-      Proteccion.new(id: 4, ranuras: 1),
-      Proteccion.new(id: 5, ranuras: 1, enchants: [7]),
-      Proteccion.new(id: 8, ranuras: 1, enchants: [87])
+    nivel:        10,
+    repu:         5,
+    cuerpo:       10,
+    mente:        6,
+    mov:          8,
+    familiar:     { id: 18, name: 'Menta', torpe: true },
+    armas:        [{ id: 12, enchants: [58] }],
+    armadura:     { id: 3, ranuras: 1 },
+    protecciones: [
+      { id: 1, ranuras: 1 },
+      { id: 2, ranuras: 1 },
+      { id: 3, ranuras: 1 },
+      { id: 4, ranuras: 1 },
+      { id: 5, ranuras: 1, enchants: [7] },
+      { id: 8, ranuras: 1, enchants: [87] }
     ],
     miscelaneas: [
       { id: 1, ranuras: 2, enchants: [25] },

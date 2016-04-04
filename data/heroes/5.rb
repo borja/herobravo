@@ -18,13 +18,13 @@ def h5
       { id: 20, enchants: [40] }
     ],
     armadura:    { id: 1, ranuras: 4, enchants: [41] },
-    proteccions: [
-      Proteccion.new(id: 3, gemas: [13]),
-      Proteccion.new(id: 11),
-      Proteccion.new(id: 1),
-      Proteccion.new(id: 8, runas: [2]),
-      Proteccion.new(id: 6, ranuras: 1, enchants: [20, 47, 83]),
-      Proteccion.new(id: 10, ranuras: 1)
+    protecciones:[
+      { id: 3, gemas: [13] },
+      { id: 11 },
+      { id: 1 },
+      { id: 8, runas: [2] },
+      { id: 6, ranuras: 1, enchants: [20, 47, 83] },
+      { id: 10, ranuras: 1 }
     ],
     miscelaneas: [
       { id: 1, enchants: [8], runas: [7] },

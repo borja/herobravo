@@ -16,11 +16,11 @@ def h58
       { id: 17, gemas: [40] }
     ],
     armadura:     { id: 3 },
-    proteccions:  [
-      Proteccion.new(id: 1,    ranuras: 2),
-      Proteccion.new(id: 2),
-      Proteccion.new(id: 3, enchants: [8]),
-      Proteccion.new(id: 4)
+    protecciones: [
+      { id: 1, ranuras: 2 },
+      { id: 2 },
+      { id: 3, enchants: [8] },
+      { id: 4 }
     ],
     miscelaneas:  [
       { id: 1, enchants: [11] },

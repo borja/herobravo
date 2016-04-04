@@ -16,22 +16,22 @@ def h71
       { id: 27, ranuras: 2, enchants: [109] },
       { id: 7, enchants: [110] }
     ],
-    armadura:    { id: 3 },
-    proteccions: [
-      Proteccion.new(id: 0),
-      Proteccion.new(id: 3, enchants: [8]),
-      Proteccion.new(id: 4),
-      Proteccion.new(id: 5),
-      Proteccion.new(id: 8, enchants: [48]),
-      Proteccion.new(id: 10),
-      Proteccion.new(id: 13),
-      Proteccion.new(id: 14)
+    armadura:     { id: 3 },
+    protecciones: [
+      { id: 0 },
+      { id: 3, enchants: [8] },
+      { id: 4 },
+      { id: 5 },
+      { id: 8, enchants: [48] },
+      { id: 10 },
+      { id: 13 },
+      { id: 14 }
     ],
-    skills:     [1, 2, 3, 4, 6, 8],
+    skills:   [1, 2, 3, 4, 6, 8],
+    pociones: [4],
+    master:   [13],
     tesoro: {
       gemas: [39]
-    },
-    pociones:    [4],
-    master:      [13]
+    }
   }
 end

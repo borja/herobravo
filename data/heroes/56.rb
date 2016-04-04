@@ -1,21 +1,20 @@
 # encoding: UTF-8
 def h56
   {
-    id:          56,
-    name:        'Kant Borriquero',
-    personaje:   'hoplita',
-    jugador:     'Borja',
-    ciudad:      'Zindor',
-    nivel:       2,
-    cuerpo:      8,
-    mente:       3,
-    mov:         8,
-    skills:      [0, 1],
-    master:      [4], 
-    familiar:    { id: 16, name: 'Zurraspa', torpe: true },
-    armadura:    { id: 2 },
-    armas:       [{ id: 24 }],
-    proteccions: [
-      Proteccion.new(id: 2)]
+    id:           56,
+    name:         'Kant Borriquero',
+    personaje:    'hoplita',
+    jugador:      'Borja',
+    ciudad:       'Zindor',
+    nivel:        2,
+    cuerpo:       8,
+    mente:        3,
+    mov:          8,
+    skills:       [0, 1],
+    master:       [4], 
+    familiar:     { id: 16, name: 'Zurraspa', torpe: true },
+    armadura:     { id: 2 },
+    armas:        [{ id: 24 }],
+    protecciones: [{ id: 2 }]
   }
 end

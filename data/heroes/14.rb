@@ -20,9 +20,11 @@ def h14
       { id: 2, enchants: [16] },
       { id: 1, enchants: [75] }
     ],
-    proteccions: [Proteccion.new(id: 2, gemas: [4]),
-                  Proteccion.new(id: 5, enchants: [8]),
-                  Proteccion.new(id: 14)],
+    protecciones: [
+      { id: 2, gemas: [4] },
+      { id: 5, enchants: [8] },
+      { id: 14 }
+    ],
     miscelaneas: [{ id: 11 }],
     skills:      [0, 1, 2, 4, 5, 6, 8],
     profesion:   Profesion.new(id: 2, aprendiz: [0, 1]),

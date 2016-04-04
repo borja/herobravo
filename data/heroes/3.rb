@@ -22,12 +22,12 @@ def h3
     pociones:     [3],
     armas:        [{ id: 24, enchants: [72, 73, 74], gemas: [40], joyas: [9] }],
     armadura:     { id: 3 },
-    proteccions:  [
-      Proteccion.new(id: 1, enchants: [20], ranuras: 2),
-      Proteccion.new(id: 3),
-      Proteccion.new(id: 4),      
-      Proteccion.new(id: 5, enchants: [22]),
-      Proteccion.new(id: 8, runas: [2])
+    protecciones: [
+      { id: 1, enchants: [20], ranuras: 2 },
+      { id: 3 },
+      { id: 4 },
+      { id: 5, enchants: [22] },
+      { id: 8, runas: [2] }
     ],
     miscelaneas:  [
       { id: 2,  enchants: [21], ranuras: 2 },

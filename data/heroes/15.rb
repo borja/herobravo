@@ -21,7 +21,7 @@ def h15
       { id: 3 },
       { id: 4, enchants: [76] }
     ],
-    proteccions: [Proteccion.new(id: 11)],
+    protecciones: [{ id: 11 }],
     miscelaneas: [
       { id: 2, enchants: [31] },
       { id: 1, enchants: [37] }

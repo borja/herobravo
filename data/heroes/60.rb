@@ -15,10 +15,10 @@ def h60
     skills:       [0, 1, 2, 3],
     profesion:    Profesion.new(id: 3, aprendiz: [0, 1]),
     armadura:     { id: 2 },
-    proteccions:  [
-      Proteccion.new(id: 1, enchants: [84]),
-      Proteccion.new(id: 4),
-      Proteccion.new(id: 8)
+    protecciones: [
+      { id: 1, enchants: [84] },
+      { id: 4 },
+      { id: 8 }
     ],
     armas:        [
       { id: 1 },
