@@ -11,8 +11,8 @@ def h10
     cuerpo:      8,
     mente:       3,
     mov:         8,
+    armadura:    { id: 2 },
     armas:       [Arma.new(id: 10, ranuras: 1)],
-    armadura:    Armadura.new(id: 2),
     proteccions: [Proteccion.new(id: 1)],
     skills:      [1, 4, 7],
     tesoro:      {

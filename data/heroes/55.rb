@@ -11,7 +11,7 @@ def h55
     cuerpo:    5,
     mente:     5,
     mov:       7,
-    armadura:  Armadura.new(id: 2),
+    armadura:  { id: 2 },
     armas:     [
       Arma.new(id: 1),
       Arma.new(id: 3, ranuras: 1)

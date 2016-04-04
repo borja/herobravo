@@ -16,7 +16,7 @@ def h11
     skills:      [0, 1, 2, 3, 4, 5, 6, 7],
     pociones:    [7],
     profesion:   Profesion.new(id: 3, aprendiz: [0]),
-    armadura:    Armadura.new(id: 2),
+    armadura:    { id: 2 },
     armas:       [
       Arma.new(id: 2, gemas: [11, 11, 11, 53]),
       Arma.new(id: 5)

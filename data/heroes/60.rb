@@ -14,7 +14,7 @@ def h60
     repu:         1,
     skills:       [0, 1, 2, 3],
     profesion:    Profesion.new(id: 3, aprendiz: [0, 1]),
-    armadura:     Armadura.new({ id: 2 }),
+    armadura:     { id: 2 },
     proteccions:  [
       Proteccion.new(id: 1, enchants: [84]),
       Proteccion.new(id: 4),

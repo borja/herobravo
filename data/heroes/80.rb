@@ -15,7 +15,7 @@ def h80
     hechizos:     [0, 1, 2, 6, 7, 12, 13, 14, 18, 19, 20],
     pociones:     [3],
     armas:        [Arma.new(id: 8)],
-    armadura:     Armadura.new(id: 1),
+    armadura:     { id: 1 },
     miscelaneas:  [
       Miscelanea.new(id: 21, enchants: [103])
     ],

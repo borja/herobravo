@@ -15,7 +15,7 @@ def h46
     mente:     4,
     mov:       8,
     armas:     [Arma.new(id: 1)],
-    armadura:  Armadura.new(id: 2),
+    armadura:  { id: 2 },
     hechizos:  [18, 19, 20]
   }
 end

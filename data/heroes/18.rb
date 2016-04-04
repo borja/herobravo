@@ -9,8 +9,8 @@ def h18
     cuerpo:      8,
     mente:       3,
     mov:         7,
+    armadura:    { id: 3 },
     armas:       [Arma.new(id: 12)],
-    armadura:    Armadura.new(id: 3),
     proteccions: [
       Proteccion.new(id: 2),
       Proteccion.new(id: 1),

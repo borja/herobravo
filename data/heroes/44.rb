@@ -15,7 +15,7 @@ def h44
     mente:        10,
     mov:          16,
     hechizos:     [6, 7, 8],
-    armadura:     Armadura.new(id: 2),
+    armadura:     { id: 2 },
     armas:        [
       Arma.new(id: 14, gemas: [4, 22]),
       Arma.new({ id: 25, enchants: [81] })

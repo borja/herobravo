@@ -12,7 +12,7 @@ def h77
     cuerpo:    6,
     mente:     4,
     mov:       7,
-    armadura:  Armadura.new(id: 2),
+    armadura:  { id: 2 },
     armas:     [
       Arma.new(id: 7),
       Arma.new(id: 26)

@@ -13,7 +13,7 @@ def h58
     mov:          10,
     armas:        [Arma.new(id: 12, enchants: [12]),
                    Arma.new(id: 17, gemas: [40])],
-    armadura:     Armadura.new(id: 3),
+    armadura:     { id: 3 },
     proteccions:  [Proteccion.new(id: 1,    ranuras: 2),
                    Proteccion.new(id: 2),
                    Proteccion.new(id: 3, enchants: [8]),

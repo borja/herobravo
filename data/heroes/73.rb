@@ -9,7 +9,7 @@ def h73
     cuerpo:    8,
     mente:     2,
     mov:       7,
-    armadura:  Armadura.new(id: 1),
+    armadura:  { id: 1 },
     armas:     [
       Arma.new(id: 3)
     ]

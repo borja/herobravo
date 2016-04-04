@@ -11,7 +11,7 @@ def h24
     mov:         7,
     armas:       [Arma.new(id: 2),
                   Arma.new(id: 7)],
-    armadura:    Armadura.new(id: 2),
+    armadura:    { id: 2 },
     proteccions: [Proteccion.new(id: 2)],
     tesoro:      { gemas: [21] }
   }

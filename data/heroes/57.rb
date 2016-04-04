@@ -13,7 +13,7 @@ def h57
     mov:       7,
     repu:      1,
     skills:    [0],
-    armadura:  Armadura.new(id: 2),
+    armadura:  { id: 2 },
     armas:     [Arma.new(id: 2),
                 Arma.new(id: 7)],
     pociones:  [1]

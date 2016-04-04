@@ -24,7 +24,7 @@ def h2
       Arma.new(id: 9,  gemas: [25, 17, 26], enchants: [18, 1, 2, 3, 4, 17]),
       Arma.new(id: 7, gemas: [25, 17, 26], enchants: [105])
     ],
-    armadura:     Armadura.new(id: 6, gemas: [34, 32, 34]),
+    armadura:     { id: 6, gemas: [34, 32, 34] },
     proteccions:  [
       Proteccion.new(id: 1, runas:     [2], gemas: [49], enchants: [7]),
       Proteccion.new(

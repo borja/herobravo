@@ -17,7 +17,7 @@ def h5
       Arma.new(id: 21, ranuras: 3),
       Arma.new(id: 20, enchants: [40])
     ],
-    armadura:    Armadura.new(id: 1, ranuras: 4, enchants: [41]),
+    armadura:    { id: 1, ranuras: 4, enchants: [41] },
     proteccions: [
       Proteccion.new(id: 3, gemas: [13]),
       Proteccion.new(id: 11),

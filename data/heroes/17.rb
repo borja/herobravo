@@ -12,7 +12,7 @@ def h17
     mente:     3,
     mov:       6,
     armas:     [Arma.new(id: 0)],
-    armadura:  Armadura.new(id: 0),
+    armadura:  { id: 0 },
     skills:    [1, 2, 3, 4, 5, 6]
   }
 end

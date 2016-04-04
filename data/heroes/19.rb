@@ -13,8 +13,8 @@ def h19
     mente:     5,
     mov:       7,
     hechizos:  [1, 2, 3, 13, 14, 15],
+    armadura:  { id: 0 },
     armas:     [Arma.new(id: 0)],
-    armadura:  Armadura.new(id: 0),
     skills:    [1, 2, 3]
   }
 end

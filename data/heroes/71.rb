@@ -16,7 +16,7 @@ def h71
       Arma.new(id: 27, ranuras: 2, enchants: [109]),
       Arma.new(id: 7, enchants: [110])
     ],
-    armadura:    Armadura.new(id: 3),
+    armadura:    { id: 3 },
     proteccions: [
       Proteccion.new(id: 0),
       Proteccion.new(id: 3, enchants: [8]),

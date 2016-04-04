@@ -9,8 +9,10 @@ def h26
     cuerpo:    7,
     mente:     3,
     mov:       6,
-    armas:     [Arma.new(id: 11),
-                Arma.new(id: 7)],
-    armadura:  Armadura.new(id: 2)
+    armadura:  { id: 2 },
+    armas:     [
+      Arma.new(id: 11),
+      Arma.new(id: 7)
+    ],
   }
 end

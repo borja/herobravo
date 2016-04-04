@@ -118,7 +118,8 @@ class Hero < Hash
   def amuletos      ; (self.miscelaneas || []).select { |m| m.fits == "amuleto" } end 
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
   def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
-  def defensa       ; self.armadura.defensa end
+  def defensa       ; armour.defensa end
+  def armour        ; Armadura.new(armadura) if armadura end 
   def pet           ; Pet.new(familiar) if familiar end
   def cacharros     ; self.piezas.map     {|num|     Pieza.new(id: num)} if self.piezas     end
   def brebajes      ; self.pociones.map   {|num|    Pocion.new(id: num)} if self.pociones   end
@@ -139,7 +140,7 @@ class Hero < Hash
     regex = /vs #{Regexp.quote(elemento)}/  # looks for "+N vs #{elemento}"
     reg2x = /vs todas las resistencias/
     
-    %w(proteccions miscelaneas armadura).each do |i|
+    %w(proteccions miscelaneas armour).each do |i|
       if self.send(i) # ask for item-type
         self.send(i).each do |item|
           if item.enchanted?

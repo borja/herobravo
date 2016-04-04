@@ -23,7 +23,7 @@ def h7
     mov:         8,
     familiar:    { id: 18, name: 'Menta', torpe: true },
     armas:       [Arma.new(id: 12, enchants: [58])],
-    armadura:    Armadura.new(id: 3, ranuras: 1),
+    armadura:    { id: 3, ranuras: 1 },
     proteccions: [
       Proteccion.new(id: 1, ranuras: 1),
       Proteccion.new(id: 2, ranuras: 1),
