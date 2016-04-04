@@ -7,7 +7,7 @@ def hero id ; heros[id] end
 def personajes ; heros.map{ |p| p.personaje }.uniq end
 def clases     ; heros.map{ |p| p.clase     }.uniq end
 def jugadores  ; heros.map{ |p| p.jugador   }.uniq end
-def narrados n ; heros.select{ |p| p.historia if p.historia ;; n }.sort_by { |p| p.premio ? p.premio : 3 } end
+def narrados n ; heros.select{ |p| p.historia if p.historia == n }.sort_by { |p| p.premio ? p.premio : 3 } end
 
 def razas
   { "enano"    => { cuerpo: 7, mente: 3, movimiento: 6 },
