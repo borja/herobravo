@@ -12,7 +12,7 @@ def h53
     mente:       4,
     mov:         9,
     skills:      [1, 2],
-    armadura:    Armadura.new(id: 2),
+    armadura:    { id: 2 },
     armas:       [
       Arma.new(id: 14),
       Arma.new(id: 25)

@@ -10,7 +10,7 @@ def h61
     cuerpo:      5,
     mente:       5,
     mov:         7,
-    armadura:    Armadura.new({ id: 2 }),
+    armadura:    { id: 2 },
     armas:       [Arma.new(id: 13)],
     proteccions: [Proteccion.new(id: 1)],
     skills:      [1, 2]

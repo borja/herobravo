@@ -16,11 +16,11 @@ def h15
     mov:         7,
     hechizos:    [0, 1, 2, 6, 7, 8, 14, 18, 19, 20, 33, 34, 42],
     skills:      [0, 1, 2, 5, 6, 7, 8, 10],
+    armadura:    { id: 1, gemas: [1], enchants: [1] },
     armas:       [
       Arma.new(id: 3),
       Arma.new(id: 4, enchants: [76])
     ],
-    armadura:    Armadura.new(id: 1, gemas: [1], enchants: [1]),
     proteccions: [Proteccion.new(id: 11)],
     miscelaneas: [
       Miscelanea.new(id: 2, enchants: [31]),

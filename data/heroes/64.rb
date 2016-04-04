@@ -11,7 +11,7 @@ def h64
     mente:       7,
     mov:         7,
     skills:      [0, 1],
-    armadura:    Armadura.new(id: 1, ranuras: 1),
+    armadura:    { id: 1, ranuras: 1 },
     armas:       [
       Arma.new(id: 3),
       Arma.new(id: 4, enchants: [51, 51])

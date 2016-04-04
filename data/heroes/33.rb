@@ -14,7 +14,7 @@ def h33
     mente:        11,
     mov:          18,
     armas:        [Arma.new(id: 0)],
-    armadura:     Armadura.new(id: 0),
+    armadura:     { id: 0 },
     hechizos:     [14],
     skills:       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19]
   }

@@ -11,7 +11,7 @@ def h35
     mov:         6,
     armas:       [Arma.new(id: 11),
                   Arma.new(id: 7)],
-    armadura:    Armadura.new(id: 2),
+    armadura:    { id: 2 },
     proteccions: [Proteccion.new(id: 5, enchants: [5])]
   }
 end

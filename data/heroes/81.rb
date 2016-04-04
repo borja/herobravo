@@ -18,7 +18,7 @@ def h81
       Arma.new(id: 25),
       Arma.new(id: 14)
     ],
-    armadura:     Armadura.new(id: 2),
+    armadura:     { id: 2 },
     miscelaneas:  [
       Miscelanea.new(id: 21, enchants: [29])
     ]

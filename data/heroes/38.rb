@@ -11,7 +11,7 @@ def h38
     cuerpo:    8,
     mente:     3,
     mov:       7,
-    armadura:  Armadura.new(id: 2),
+    armadura:  { id: 2 },
     armas:     [Arma.new(id: 10, gemas: [37])],
     skills:    [0, 1, 14]
   }

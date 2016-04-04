@@ -14,7 +14,7 @@ def h83
     pociones:   [1, 4],
     armas:      [Arma.new(id: 13),
                  Arma.new(id: 3)],
-    armadura:   Armadura.new(id: 3),
+    armadura:   { id: 3 },
     pergaminos: [Pergamino.new(id: 3),
                  Pergamino.new(id: 1, spells: [8]),
                  Pergamino.new(id: 1, spells: [8])]

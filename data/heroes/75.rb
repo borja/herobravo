@@ -10,7 +10,7 @@ def h75
     cuerpo:    7,
     mente:     3,
     mov:       6,
-    armadura:  Armadura.new(id: 2),
+    armadura:  { id: 2 },
     armas:     [
       Arma.new(id: 7),
       Arma.new(id: 11)

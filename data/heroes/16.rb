@@ -19,7 +19,7 @@ def h16
       Arma.new(id: 3, enchants: [54]),
       Arma.new(id: 4, enchants: [13, 14, 15])
     ],
-    armadura:    Armadura.new(id: 1, gemas: [4, 4, 4]),
+    armadura:    { id: 1, gemas: [4, 4, 4] },
     proteccions: [
       Proteccion.new(id: 1, enchants: [55]),
       Proteccion.new(id: 3, ranuras: 2),

@@ -11,7 +11,7 @@ def h85
     mente:      3,
     mov:        6,
     skills:     [3, 4],
-    armadura:   Armadura.new(id: 2),
+    armadura:   { id: 2 },
     armas:      [
       Arma.new(id: 7),
       Arma.new(id: 11)

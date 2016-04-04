@@ -13,7 +13,7 @@ def h30
     mov:       7,
     hechizos:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     armas:     [Arma.new(id: 0)],
-    armadura:  Armadura.new(id: 0),
+    armadura:  { id: 0 },
     status:    'retirado',
     muerto:    true
   }

@@ -12,12 +12,12 @@ def h13
     mente:       3,
     mov:         8,
     profesion:   Profesion.new(id: 3, aprendiz: [0]),
-    familiar:    {id: 24, name: 'Nemesio', torpe: true},
+    familiar:    { id: 24, name: 'Nemesio', torpe: true},
+    armadura:    { id: 3, gemas: [25, 28], enchants: [107] },
     armas:       [
       Arma.new(id: 28, gemas: [30]),
       Arma.new(id: 7, gemas: [32])
     ],
-    armadura:    Armadura.new(id: 3, gemas: [25, 28], enchants: [107]),
     proteccions: [
       Proteccion.new(id: 17, ranuras: 1),
       Proteccion.new(id: 4,  ranuras: 1),

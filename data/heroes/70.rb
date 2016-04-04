@@ -20,7 +20,7 @@ def h70
     hechizos:     [0, 1, 2],
     shadows:      [0, 1, 2, 5],
     armas:        [Arma.new(id: 0)],
-    armadura:     Armadura.new(id: 0),
+    armadura:     { id: 0 },
     profesion:    Profesion.new(id: 3, aprendiz: [0])
   }
 end

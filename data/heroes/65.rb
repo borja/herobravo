@@ -11,7 +11,7 @@ def h65
     mente:       3,
     mov:         6,
     skills:      [1, 2],
-    armadura:    Armadura.new(id: 5, enchants: [91, 55, 69, 11]),
+    armadura:    { id: 5, enchants: [91, 55, 69, 11] },
     armas:       [
       Arma.new(id: 7),
       Arma.new(id: 7)

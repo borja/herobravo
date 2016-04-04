@@ -12,7 +12,7 @@ def h89
     mente:       4,
     mov:         8,
     hechizos:    [12, 13, 14],
-    armadura:    Armadura.new(id: 2),
+    armadura:    { id: 2 },
     armas:       [Arma.new(id: 5)]
   }
 end

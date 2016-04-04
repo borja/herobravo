@@ -12,7 +12,7 @@ def h86
     mente:     2,
     mov:       7,
     familiar:  { id: 17, name: 'Chip' },
-    armadura:  Armadura.new(id: 2),
+    armadura:  { id: 2 },
     armas:     [
       Arma.new(id: 7),
       Arma.new(id: 2)

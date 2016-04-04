@@ -21,7 +21,7 @@ def h50
       Arma.new(id: 11),
       Arma.new(id: 7)
     ],
-    armadura:    Armadura.new(id: 3, enchants: [85, 86]),
+    armadura:    { id: 3, enchants: [85, 86] },
     proteccions: [
       Proteccion.new(id: 1, enchants: [84]),
       Proteccion.new(id: 2, enchants: [37])

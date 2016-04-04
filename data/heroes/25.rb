@@ -11,7 +11,7 @@ def h25
     mente:       3,
     mov:         6,
     armas:       [Arma.new(id: 12)],
-    armadura:    Armadura.new(id: 2),
+    armadura:    { id: 2 },
     proteccions: [Proteccion.new(id: 2)]
   }
 end

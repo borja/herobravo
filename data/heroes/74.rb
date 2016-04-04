@@ -11,7 +11,7 @@ def h74
     cuerpo:    4,
     mente:     6,
     mov:       7,
-    armadura:  Armadura.new(id: 1),
+    armadura:  { id: 1 },
     armas:     [
       Arma.new(id: 2)
     ]

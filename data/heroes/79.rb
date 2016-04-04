@@ -23,7 +23,7 @@ def h79
       Proteccion.new(id: 4, enchants: [7]),
       Proteccion.new(id: 2, enchants: [102])
     ],
-    armadura:     Armadura.new(id: 2),
+    armadura:     { id: 2 },
     profesion:    Profesion.new(id: 3, aprendiz: [0])
   }
 end
