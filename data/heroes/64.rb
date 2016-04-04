@@ -16,7 +16,6 @@ def h64
       { id: 3 },
       { id: 4, enchants: [51, 51] }
     ],
-    proteccions: [
-      Proteccion.new(id: 1, ranuras: 1)]
+    protecciones: [{ id: 1, ranuras: 1 }]
   }
 end

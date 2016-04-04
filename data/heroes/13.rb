@@ -18,11 +18,11 @@ def h13
       { id: 28, gemas: [30] },
       { id: 7,  gemas: [32] }
     ],
-    proteccions: [
-      Proteccion.new(id: 17, ranuras: 1),
-      Proteccion.new(id: 4,  ranuras: 1),
-      Proteccion.new(id: 5,  gemas: [29]),
-      Proteccion.new(id: 8, ranuras: 2)
+    protecciones: [
+      { id: 17, ranuras: 1 },
+      { id: 4,  ranuras: 1 },
+      { id: 5,  gemas: [29] },
+      { id: 8, ranuras: 2 }
     ],
     miscelaneas: [
       Miscelanea.new(id: 2, enchants: [106, 20])

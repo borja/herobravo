@@ -16,8 +16,6 @@ def h65
       { id: 7 },
       { id: 7 }
     ],
-    proteccions: [
-      Proteccion.new(id: 3, enchants: [92, 93, 94])
-    ]
+    protecciones: [{ id: 3, enchants: [92, 93, 94] }]
   }
 end

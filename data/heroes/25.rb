@@ -1,17 +1,17 @@
 # encoding: UTF-8
 def h25
   {
-    id:          25,
-    name:        'Grimm',
-    personaje:   'matador',
-    jugador:     'Tot',
-    nivel:       1,
-    repu:        1,
-    cuerpo:      7,
-    mente:       3,
-    mov:         6,
-    armas:       [{ id: 12 }],
-    armadura:    { id: 2 },
-    proteccions: [Proteccion.new(id: 2)]
+    id:           25,
+    name:         'Grimm',
+    personaje:    'matador',
+    jugador:      'Tot',
+    nivel:        1,
+    repu:         1,
+    cuerpo:       7,
+    mente:        3,
+    mov:          6,
+    armas:        [{ id: 12 }],
+    armadura:     { id: 2 },
+    protecciones: [{ id: 2 }]
   }
 end

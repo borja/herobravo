@@ -7,7 +7,7 @@ class Hero < Hash
     :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,
     :familiar, :mounts, :descendencia, :pareja, :progenitores,
     :hechizos, :shadows, :blood, :skills, :master,
-    :armas, :armadura, :proteccions, :miscelaneas, :abalorios,
+    :armas, :armadura, :protecciones, :miscelaneas, :abalorios,
     :profesion, :ciudad, :titulo, :camino, :hijos,
     :piezas, :pociones, :pergaminos, :materiales,
     :oro, :tesoro
@@ -121,14 +121,15 @@ class Hero < Hash
   def defensa       ; armour.defensa end
   def armour        ; Armadura.new(armadura) if armadura end
   def pet           ; Pet.new(familiar) if familiar end
-  def weapons       ; self.armas.map       {|w|        Arma.new(w)}       if self.armas              end
-  def baratijas     ; self.miscelaneas.map {|m|  Miscelanea.new(m)}       if self.miscelaneas        end
-  def cacharros     ; self.piezas.map      {|num|     Pieza.new(id: num)} if self.piezas             end
-  def brebajes      ; self.pociones.map    {|num|    Pocion.new(id: num)} if self.pociones           end
-  def componentes   ; self.materiales.map  {|num|  Material.new(id: num)} if self.materiales         end
-  def transportes   ; self.mounts.map      {|num|   Montura.new(montura(num))} if self.mounts        end
-  def masters       ; self.master.map      {|num| Habilidad.new(maestrodearma(num)) } if self.master end 
-  def habilidades   ; self.skills.map      {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
+  def weapons       ; self.armas.map        {|w|        Arma.new(w)}       if self.armas             end
+  def baratijas     ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
+  def proteccions   ; self.protecciones.map {|m|  Proteccion.new(m)}       if self.protecciones      end
+  def cacharros     ; self.piezas.map       {|num|     Pieza.new(id: num)} if self.piezas            end
+  def brebajes      ; self.pociones.map     {|num|    Pocion.new(id: num)} if self.pociones          end
+  def componentes   ; self.materiales.map   {|num|  Material.new(id: num)} if self.materiales        end
+  def transportes   ; self.mounts.map       {|num|   Montura.new(montura(num))} if self.mounts       end
+  def masters       ; self.master.map       {|num| Habilidad.new(maestrodearma(num))} if self.master end 
+  def habilidades   ; self.skills.map       {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
   def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
   def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
   def shadow_magic  ; self.shadows.map  {|num| sombra(num)}  if self.shadows  end 

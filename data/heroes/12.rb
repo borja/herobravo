@@ -15,9 +15,9 @@ def h12
       { id: 15 },
       { id: 7 }
     ],
-    proteccions: [
-      Proteccion.new(id: 2, gemas: [26, 27]),
-      Proteccion.new(id: 3, runas: [0, 1])
+    protecciones: [
+      { id: 2, gemas: [26, 27] },
+      { id: 3, runas: [0, 1] }
     ],
     miscelaneas: [
       { id: 1, gemas: [25] },

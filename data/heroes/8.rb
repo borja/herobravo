@@ -20,10 +20,10 @@ def h8
       { id: 7, runas: [9] },
       { id: 7 }
     ],
-    proteccions: [
-      Proteccion.new(id: 13),
-      Proteccion.new(id: 3, enchants: [0]),
-      Proteccion.new(id: 16, enchants: [98, 99], ranuras: 2)
+    protecciones: [
+      { id: 13 },
+      { id: 3, enchants: [0] },
+      { id: 16, enchants: [98, 99], ranuras: 2 }
     ],
     miscelaneas: [
       { id: 1, enchants: [10] },

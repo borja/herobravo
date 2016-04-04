@@ -16,8 +16,6 @@ def h78
       { id: 7 },
       { id: 11 }
     ],
-    proteccions:  [
-      Proteccion.new(id: 2)
-    ]
+    protecciones: [{ id: 2 }]
   }
 end

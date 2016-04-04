@@ -25,16 +25,15 @@ def h2
       { id: 7, gemas: [25, 17, 26], enchants: [105] }
     ],
     armadura:     { id: 6, gemas: [34, 32, 34] },
-    proteccions:  [
-      Proteccion.new(id: 1, runas:     [2], gemas: [49], enchants: [7]),
-      Proteccion.new(
-        id: 15, gemas: [21], enchants: [20, 34, 49, 50, 51, 52], ranuras: 4),
-      Proteccion.new(id: 3,  enchants:  [8]),
-      Proteccion.new(id: 11, joyas:     [12], gemas: [48]),
-      Proteccion.new(id: 5,  enchants:  [5], gemas: [25, 51]),
-      Proteccion.new(id: 14),
-      Proteccion.new(id: 10, ranuras: 1),
-      Proteccion.new(id: 8)
+    protecciones: [
+      { id: 1, runas:     [2], gemas: [49], enchants: [7] },
+      { id: 15, gemas: [21], enchants: [20, 34, 49, 50, 51, 52], ranuras: 4 },
+      { id: 3,  enchants:  [8] },
+      { id: 11, joyas:     [12], gemas: [48] },
+      { id: 5,  enchants:  [5], gemas: [25, 51] },
+      { id: 14 },
+      { id: 10, ranuras: 1 },
+      { id: 8 }
     ],
     miscelaneas:  [
       { id: 1,  gemas:   [25], enchants: [9] },
