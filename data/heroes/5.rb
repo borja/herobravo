@@ -14,8 +14,8 @@ def h5
     mente:       20,
     mov:         8,
     armas:       [
-      Arma.new(id: 21, ranuras: 3),
-      Arma.new(id: 20, enchants: [40])
+      { id: 21, ranuras: 3 },
+      { id: 20, enchants: [40] }
     ],
     armadura:    { id: 1, ranuras: 4, enchants: [41] },
     proteccions: [

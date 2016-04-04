@@ -14,8 +14,8 @@ def h68
     familiar:  { id: 8, name: 'Hostias', torpe: true},
     armadura:  { id: 1 },
     armas:     [
-      Arma.new(id: 3),
-      Arma.new(id: 4, enchants: [95])
+      { id: 3 },
+      { id: 4, enchants: [95] }
     ]
   }
 end

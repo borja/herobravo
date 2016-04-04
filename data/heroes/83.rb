@@ -12,11 +12,14 @@ def h83
     mov:        7,
     skills:     [0, 2],
     pociones:   [1, 4],
-    armas:      [Arma.new(id: 13),
-                 Arma.new(id: 3)],
     armadura:   { id: 3 },
-    pergaminos: [Pergamino.new(id: 3),
-                 Pergamino.new(id: 1, spells: [8]),
-                 Pergamino.new(id: 1, spells: [8])]
+    armas:      [
+      { id: 13 },
+      { id: 3 }
+    ],
+    pergaminos: [
+      Pergamino.new(id: 3),
+      Pergamino.new(id: 1, spells: [8]),
+      Pergamino.new(id: 1, spells: [8])]
   }
 end

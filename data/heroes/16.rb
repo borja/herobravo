@@ -16,8 +16,8 @@ def h16
     skills:      [0, 1, 2, 5],
     mounts:      [1],
     armas:       [
-      Arma.new(id: 3, enchants: [54]),
-      Arma.new(id: 4, enchants: [13, 14, 15])
+      { id: 3, enchants: [54] },
+      { id: 4, enchants: [13, 14, 15] }
     ],
     armadura:    { id: 1, gemas: [4, 4, 4] },
     proteccions: [

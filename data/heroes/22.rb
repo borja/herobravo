@@ -9,7 +9,7 @@ def h22
     cuerpo:    7,
     mente:     3,
     mov:       6,
-    armas:     [Arma.new(id: 11)],
+    armas:     [ {id: 11 }],
     armadura:  { id: 2 }
   }
 end

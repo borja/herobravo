@@ -16,8 +16,10 @@ def h14
     mov:         17,
     hechizos:    [6, 7, 8],
     armadura:    { id: 2 },
-    armas:       [Arma.new({ id: 2, enchants: [16] }),
-                  Arma.new({ id: 1, enchants: [75] })],
+    armas:       [
+      { id: 2, enchants: [16] },
+      { id: 1, enchants: [75] }
+    ],
     proteccions: [Proteccion.new(id: 2, gemas: [4]),
                   Proteccion.new(id: 5, enchants: [8]),
                   Proteccion.new(id: 14)],

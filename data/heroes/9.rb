@@ -15,8 +15,8 @@ def h9
     armadura:  { id: 1 },
     familiar:  { id: 8, name: 'Arquímedes', torpe: true },
     armas:     [
-      Arma.new(id: 3),
-      Arma.new(id: 20, ranuras: 2, enchants: [13])
+      { id: 3 },
+      { id: 20, ranuras: 2, enchants: [13] }
     ]
   }
 end

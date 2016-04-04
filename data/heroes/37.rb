@@ -11,8 +11,10 @@ def h37
     cuerpo:     8,
     mente:      3,
     mov:        8,
-    armas:      [Arma.new(id: 11),
-                 Arma.new(id: 7)],
+    armas:      [
+      { id: 11 },
+      { id: 7 }
+    ],
     armadura:   { id: 2 },
     pergaminos: [Pergamino.new(id: 3),
                  Pergamino.new(id: 1, spells: [8]),

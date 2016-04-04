@@ -18,8 +18,8 @@ def h11
     profesion:   Profesion.new(id: 3, aprendiz: [0]),
     armadura:    { id: 2 },
     armas:       [
-      Arma.new(id: 2, gemas: [11, 11, 11, 53]),
-      Arma.new(id: 5)
+      { id: 2, gemas: [11, 11, 11, 53] },
+      { id: 5 }
     ],
     proteccions: [
       Proteccion.new(id: 2, gemas: [28]),

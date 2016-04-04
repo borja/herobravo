@@ -13,7 +13,9 @@ def h0
     cuerpo:       5,
     mente:        10,
     mov:          7,
-    armas:        [Arma.new({ id: 8, enchants: [59], ranuras: 1 })],
+    armas:        [
+      { id: 8, enchants: [59], ranuras: 1 }
+    ],
     armadura:     { id: 1 },
     miscelaneas:  [
       Miscelanea.new(id: 2,  enchants: [30, 31], ranuras: 1),

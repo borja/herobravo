@@ -11,7 +11,7 @@ def h34
     cuerpo:    10,
     mente:     9,
     mov:       9,
-    armas:     [Arma.new(id: 18, ranuras: 2, enchants: [19])],
+    armas:     [{ id: 18, ranuras: 2, enchants: [19] }],
     armadura:  { id: 4, gemas: [24, 24] },
     skills:    [0, 1, 2, 5, 6, 8, 9, 12, 14, 15, 16]
   }

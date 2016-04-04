@@ -16,9 +16,7 @@ def h76
     mov:         7,
     profesion:   Profesion.new(id: 1, aprendiz: [0]),
     armadura:    { id: 1 },
-    armas:       [
-      Arma.new(id: 0)
-    ],
+    armas:       [{ id: 0 }],
     miscelaneas: [
       Miscelanea.new(id: 21, enchants: [100, 56])
     ]

@@ -11,8 +11,8 @@ def h88
     mov:         6,
     armadura:    { id: 2 },
     armas:       [
-      Arma.new(id: 11),
-      Arma.new(id: 7)
+      { id: 11 },
+      { id: 7 }
     ]
   }
 end

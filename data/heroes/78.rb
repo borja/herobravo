@@ -13,8 +13,8 @@ def h78
     mov:       6,
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 7),
-      Arma.new(id: 11)
+      { id: 7 },
+      { id: 11 }
     ],
     proteccions:  [
       Proteccion.new(id: 2)

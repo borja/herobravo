@@ -4,7 +4,7 @@
 		<tr><th colspan=2>Armas</th></tr>
 		<tr><td width='80%'>Mano principal</td>
 			<td>
-				<% if a = h.armas[0] %>
+				<% if a = h.weapons.first %>
 					<%= erb :'display/item', locals: { item: a }  %>
 				<% else %>
 					<%= erb :'display/ranura', locals: { casillero: 'arma'} %>
@@ -13,7 +13,7 @@
 		</tr>
 		<tr><td width='80%'>Mano secundaria</td>
 			<td>
-				<% if a = h.armas[1] %>
+				<% if a = h.weapons[1] %>
 					<%= erb :'display/item', locals: { item: a}  %>
 				<% else %>
 					<%= erb :'display/ranura', locals: { casillero: 'escudo'} %>

@@ -13,8 +13,8 @@ def h64
     skills:      [0, 1],
     armadura:    { id: 1, ranuras: 1 },
     armas:       [
-      Arma.new(id: 3),
-      Arma.new(id: 4, enchants: [51, 51])
+      { id: 3 },
+      { id: 4, enchants: [51, 51] }
     ],
     proteccions: [
       Proteccion.new(id: 1, ranuras: 1)]

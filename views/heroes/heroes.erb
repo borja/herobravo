@@ -30,10 +30,10 @@
 						</a></i>
 					</td>
 					<td><%= hero.nivel %></td>
-					<td><% if p = hero.pet %><%= erb :'display/display', :locals => { 
-							:title       => p.nombre , 
-							:path        => p.img_path,
-							:description => p.descripcion } %>
+					<td><% if p = hero.pet %><%= erb :'display/display', locals: { 
+							title:       p.nombre , 
+							path:        p.img_path,
+							description: p.descripcion } %>
 						<% end %>						
 					</td>
 					<td>
@@ -42,8 +42,8 @@
 						<% end %>
 					</td>
 					<td><table>
-							<tr><% hero.armas.each do |a| %>
-								<td><%= erb :'display/item', locals: {item: a} %></td>
+							<tr><% hero.weapons.each do |weapon| %>
+								<td><%= erb :'display/item', locals: {item: weapon } %></td>
 							<% end %></tr>
 						</table>
 					</td>

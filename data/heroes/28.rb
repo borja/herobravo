@@ -14,8 +14,9 @@ def h28
     skills:      [1, 5, 3, 4, 5, 6, 7],
     armadura:    { id: 1, ranuras: 3, enchants: [0, 1] },
     armas:       [
-      Arma.new(id: 3),
-      Arma.new(id: 4, enchants: [88])],
+      { id: 3 },
+      { id: 4, enchants: [88] }
+    ],
     proteccions: [Proteccion.new(id: 8, joyas: [20, 9])],
     miscelaneas: [Miscelanea.new(id: 1)],
     profesion:   Profesion.new(id: 0, aprendiz: [0]),

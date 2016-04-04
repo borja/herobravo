@@ -10,7 +10,7 @@ def h43
     cuerpo:      4,
     mente:       6,
     mov:         7,
-    armas:       [Arma.new(id: 8)],
+    armas:       [{ id: 8 }],
     armadura:    { id: 1 },
     miscelaneas: [Miscelanea.new(id: 2)],
     hechizos:    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]

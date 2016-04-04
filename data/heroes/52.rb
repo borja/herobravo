@@ -12,8 +12,8 @@ def h52
     skills:    [0, 1, 2, 3],
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 14),
-      Arma.new(id: 25)
+      { id: 14 },
+      { id: 25 }
     ]
   }
 end

@@ -24,8 +24,9 @@ def h1
     mente:        11,
     mov:          19,
     armas:        [
-      Arma.new(id: 6, joyas: [10, 10]),
-      Arma.new(id: 3, gemas: [32])],
+      { id: 6, joyas: [10, 10] },
+      { id: 3, gemas: [32] }
+    ],
     armadura:     { id: 6, gemas: [36, 29, 37] },
     proteccions:  [
       Proteccion.new(id: 12, gemas: [30], joyas: [3]),

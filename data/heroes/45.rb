@@ -11,7 +11,7 @@ def h45
     cuerpo:      4,
     mente:       6,
     mov:         7,
-    armas:       [Arma.new(id: 3)],
+    armas:       [{ id: 3 }],
     armadura:    { id: 1, gemas: [4] },
     proteccions: [Proteccion.new(id: 4, ranuras: 1)],
     miscelaneas: [Miscelanea.new(id: 2, ranuras: 1, enchants: [77])],

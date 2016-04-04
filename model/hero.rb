@@ -116,11 +116,12 @@ class Hero < Hash
   def male?         ; sex == 'male' end
   def anillos       ; (self.miscelaneas || []).select { |m| m.fits == "anillo"  } end
   def amuletos      ; (self.miscelaneas || []).select { |m| m.fits == "amuleto" } end 
-  def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
-  def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
+  def ataque        ; weapons.first.categoria != 'distancia' ? weapons.first.ataque : 0 end
+  def rango         ; weapons.first.categoria == 'distancia' ? weapons.first.ataque : 0 end
   def defensa       ; armour.defensa end
-  def armour        ; Armadura.new(armadura) if armadura end 
+  def armour        ; Armadura.new(armadura) if armadura end
   def pet           ; Pet.new(familiar) if familiar end
+  def weapons       ; self.armas.map      {|w|        Arma.new(w)}       if self.armas end
   def cacharros     ; self.piezas.map     {|num|     Pieza.new(id: num)} if self.piezas     end
   def brebajes      ; self.pociones.map   {|num|    Pocion.new(id: num)} if self.pociones   end
   def componentes   ; self.materiales.map {|num|  Material.new(id: num)} if self.materiales end

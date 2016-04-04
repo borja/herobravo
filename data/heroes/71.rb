@@ -13,8 +13,8 @@ def h71
     repu:        1,
     profesion:   Profesion.new(id: 6, aprendiz: [0]),
     armas:       [
-      Arma.new(id: 27, ranuras: 2, enchants: [109]),
-      Arma.new(id: 7, enchants: [110])
+      { id: 27, ranuras: 2, enchants: [109] },
+      { id: 7, enchants: [110] }
     ],
     armadura:    { id: 3 },
     proteccions: [

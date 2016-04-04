@@ -12,8 +12,10 @@ def h36
     mente:       4,
     mov:         12,
     hechizos:    [7, 8, 9],
-    armas:       [Arma.new(id: 5, gemas: [17]),
-                  Arma.new(id: 1, gemas: [18])],
+    armas:       [
+      { id: 5, gemas: [17] },
+      { id: 1, gemas: [18] }
+      ],
     armadura:    { id: 2 },
     miscelaneas: [Miscelanea.new(id: 6, ranuras: 2),
                   Miscelanea.new(id: 2, enchants: [9])],

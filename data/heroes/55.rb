@@ -13,8 +13,8 @@ def h55
     mov:       7,
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 1),
-      Arma.new(id: 3, ranuras: 1)
+      { id: 1 },
+      { id: 3, ranuras: 1 }
     ]
   }
 end

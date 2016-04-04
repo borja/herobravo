@@ -15,8 +15,8 @@ def h13
     familiar:    { id: 24, name: 'Nemesio', torpe: true},
     armadura:    { id: 3, gemas: [25, 28], enchants: [107] },
     armas:       [
-      Arma.new(id: 28, gemas: [30]),
-      Arma.new(id: 7, gemas: [32])
+      { id: 28, gemas: [30] },
+      { id: 7,  gemas: [32] }
     ],
     proteccions: [
       Proteccion.new(id: 17, ranuras: 1),

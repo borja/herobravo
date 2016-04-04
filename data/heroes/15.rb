@@ -18,8 +18,8 @@ def h15
     skills:      [0, 1, 2, 5, 6, 7, 8, 10],
     armadura:    { id: 1, gemas: [1], enchants: [1] },
     armas:       [
-      Arma.new(id: 3),
-      Arma.new(id: 4, enchants: [76])
+      { id: 3 },
+      { id: 4, enchants: [76] }
     ],
     proteccions: [Proteccion.new(id: 11)],
     miscelaneas: [

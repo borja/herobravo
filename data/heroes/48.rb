@@ -17,8 +17,9 @@ def h48
     profesion:   Profesion.new(id: 3, aprendiz: [0, 1]),
     armadura:    { id: 2 },
     armas:       [
-      Arma.new(id: 5),
-      Arma.new(id: 7)],
+      { id: 5 },
+      { id: 7 }
+    ],
     proteccions: [
       Proteccion.new(id: 1, enchants: [84]),
       Proteccion.new(id: 4),

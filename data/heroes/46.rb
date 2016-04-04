@@ -14,7 +14,7 @@ def h46
     cuerpo:    6,
     mente:     4,
     mov:       8,
-    armas:     [Arma.new(id: 1)],
+    armas:     [{ id: 1 }],
     armadura:  { id: 2 },
     hechizos:  [18, 19, 20]
   }
