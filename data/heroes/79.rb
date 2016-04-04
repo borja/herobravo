@@ -16,8 +16,8 @@ def h79
     hechizos:     [12, 13, 14, 18, 19, 20],
     pociones:     [3],
     armas:        [
-      Arma.new(id: 7),
-      Arma.new(id: 27, enchants: [101])
+      { id: 7 },
+      { id: 27, enchants: [101] }
     ],
     proteccions:  [
       Proteccion.new(id: 4, enchants: [7]),

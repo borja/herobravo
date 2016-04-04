@@ -13,8 +13,8 @@ def h62
     skills:    [1, 2],
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 11),
-      Arma.new(id: 3)
+      { id: 11 },
+      { id: 3 }
     ]
   }
 end

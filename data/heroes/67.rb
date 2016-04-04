@@ -12,6 +12,6 @@ def h67
     mov:       7,
     skills:    [2, 3],
     armadura:  { id: 2 },
-    armas:     [ Arma.new(id: 10, enchants: [16]) ]
+    armas:     [{ id: 10, enchants: [16] }]
   }
 end

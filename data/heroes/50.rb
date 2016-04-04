@@ -18,8 +18,8 @@ def h50
     profesion:   Profesion.new(id: 6, aprendiz: [0]),
     piezas:      [3],
     armas:       [
-      Arma.new(id: 11),
-      Arma.new(id: 7)
+      { id: 11 },
+      { id: 7 }
     ],
     armadura:    { id: 3, enchants: [85, 86] },
     proteccions: [

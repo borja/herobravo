@@ -13,8 +13,8 @@ def h65
     skills:      [1, 2],
     armadura:    { id: 5, enchants: [91, 55, 69, 11] },
     armas:       [
-      Arma.new(id: 7),
-      Arma.new(id: 7)
+      { id: 7 },
+      { id: 7 }
     ],
     proteccions: [
       Proteccion.new(id: 3, enchants: [92, 93, 94])

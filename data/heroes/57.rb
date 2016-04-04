@@ -14,8 +14,10 @@ def h57
     repu:      1,
     skills:    [0],
     armadura:  { id: 2 },
-    armas:     [Arma.new(id: 2),
-                Arma.new(id: 7)],
+    armas:     [
+      { id: 2 },
+      { id: 7 }
+    ],
     pociones:  [1]
   }
 end

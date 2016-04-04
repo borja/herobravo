@@ -14,7 +14,7 @@ def h56
     master:      [4], 
     familiar:    { id: 16, name: 'Zurraspa', torpe: true },
     armadura:    { id: 2 },
-    armas:       [Arma.new(id: 24)],
+    armas:       [{ id: 24 }],
     proteccions: [
       Proteccion.new(id: 2)]
   }

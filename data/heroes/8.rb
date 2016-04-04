@@ -17,8 +17,8 @@ def h8
     familiar:    { id: 18, name: 'pendeja', torpe: true },
     armadura:    { id: 7 },
     armas:       [
-      Arma.new(id: 7, runas: [9]),
-      Arma.new(id: 7)
+      { id: 7, runas: [9] },
+      { id: 7 }
     ],
     proteccions: [
       Proteccion.new(id: 13),

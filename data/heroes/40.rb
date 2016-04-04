@@ -12,7 +12,7 @@ def h40
     mov:        9,
     hechizos:   [18, 19, 20],
     skills:     [0, 2],
-    armas:      [Arma.new(id: 5, runas: [5])],
+    armas:      [{ id: 5, runas: [5] }],
     armadura:   { id: 6, enchants: [18, 19, 27], ranuras: 1 },
     pergaminos: [Pergamino.new(id: 1, spells: [20])]
   }

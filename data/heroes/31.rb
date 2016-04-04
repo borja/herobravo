@@ -11,7 +11,7 @@ def h31
     mov:       8,
     hechizos:  [0, 1, 2],
     shadows:   [0, 1, 2],
-    armas:     [Arma.new(id: 2)],
+    armas:     [{ id: 2 }],
     armadura:  { id: 1 },
     skills:    [0, 1],
     gender:    'female',

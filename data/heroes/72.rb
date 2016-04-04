@@ -13,8 +13,6 @@ def h72
     mov:       7,
     repu:      1,
     armadura:  { id: 0 },
-    armas:     [
-      Arma.new(id: 0)
-    ]
+    armas:     [{ id: 0 }]
   }
 end

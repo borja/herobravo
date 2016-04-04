@@ -13,8 +13,8 @@ def h66
     skills:    [0],
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 1),
-      Arma.new(id: 7)
+      { id: 1 },
+      { id: 7 }
     ]
   }
 end

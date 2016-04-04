@@ -10,9 +10,7 @@ def h69
     mente:       2,
     mov:         8,
     armadura:    { id: 2 },
-    armas:       [
-      Arma.new(id: 2)
-    ],
+    armas:       [{ id: 2 }],
     proteccions: [
       Proteccion.new(id: 2, enchants: [8], ranuras: 1)
     ]

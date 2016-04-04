@@ -14,8 +14,8 @@ def h77
     mov:       7,
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 7),
-      Arma.new(id: 26)
+      { id: 7 },
+      { id: 26 }
     ]
   }
 end

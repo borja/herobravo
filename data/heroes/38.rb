@@ -12,7 +12,7 @@ def h38
     mente:     3,
     mov:       7,
     armadura:  { id: 2 },
-    armas:     [Arma.new(id: 10, gemas: [37])],
+    armas:     [{ id: 10, gemas: [37] }],
     skills:    [0, 1, 14]
   }
 end

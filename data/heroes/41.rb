@@ -11,7 +11,7 @@ def h41
     cuerpo:      9,
     mente:       6,
     mov:         9,
-    armas:       [Arma.new(id: 22, enchants: [46])],
+    armas:       [{ id: 22, enchants: [46] }],
     armadura:    { id: 2 },
     proteccions: [Proteccion.new(id: 5, enchants: [5]),
                   Proteccion.new(id: 3, enchants: [8]),

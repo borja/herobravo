@@ -12,8 +12,8 @@ def h51
     mov:       8,
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 14),
-      Arma.new(id: 25)
+      { id: 14 },
+      { id: 25 }
     ]
   }
 end

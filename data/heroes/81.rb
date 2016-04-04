@@ -15,8 +15,8 @@ def h81
     skills:       [1, 2, 3, 6],
     hechizos:     [6, 7, 8],
     armas:        [
-      Arma.new(id: 25),
-      Arma.new(id: 14)
+      { id: 25 },
+      { id: 14 }
     ],
     armadura:     { id: 2 },
     miscelaneas:  [

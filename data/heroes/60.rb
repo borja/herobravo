@@ -21,8 +21,9 @@ def h60
       Proteccion.new(id: 8)
     ],
     armas:        [
-      Arma.new(id: 1),
-      Arma.new(id: 7)],
+      { id: 1 },
+      { id: 7 }
+    ],
     pociones:     [1],
     tesoro:       {
       gemas: [28, 32],

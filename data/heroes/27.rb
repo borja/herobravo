@@ -11,8 +11,8 @@ def h27
     mov:         7,
     hechizos:    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     armas:       [
-      Arma.new(id: 4),
-      Arma.new(id: 3)
+      { id: 4 },
+      { id: 3 }
     ],
     armadura:    { id: 1 },
     miscelaneas: [Miscelanea.new(id: 1)]

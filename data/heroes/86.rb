@@ -14,8 +14,8 @@ def h86
     familiar:  { id: 17, name: 'Chip' },
     armadura:  { id: 2 },
     armas:     [
-      Arma.new(id: 7),
-      Arma.new(id: 2)
+      { id: 7 },
+      { id: 2 }
     ]
   }
 end

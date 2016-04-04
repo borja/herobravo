@@ -21,8 +21,8 @@ def h2
       1, 2, 3, 6, 7, 8, 12, 16, 17, 18, 19, 20
     ],
     armas:        [
-      Arma.new(id: 9,  gemas: [25, 17, 26], enchants: [18, 1, 2, 3, 4, 17]),
-      Arma.new(id: 7, gemas: [25, 17, 26], enchants: [105])
+      { id: 9, gemas: [25, 17, 26], enchants: [18, 1, 2, 3, 4, 17] },
+      { id: 7, gemas: [25, 17, 26], enchants: [105] }
     ],
     armadura:     { id: 6, gemas: [34, 32, 34] },
     proteccions:  [

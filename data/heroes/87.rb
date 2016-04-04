@@ -13,7 +13,7 @@ def h87
     mov:         7,
     familiar:    { id: 17, name: 'Alvin', torpe: true },
     armadura:    { id: 2 },
-    armas:       [Arma.new(id: 2, gemas: [19] )],
+    armas:       [{ id: 2, gemas: [19] }],
     proteccions: [Proteccion.new(id: 1, enchants: [84])],
     miscelaneas:  [
       Miscelanea.new(id: 23, ranuras: 6, enchants: [108]),

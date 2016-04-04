@@ -12,8 +12,8 @@ def h12
     mov:         6,
     armadura:    { id: 5, joyas: [2], runas: [1] },
     armas:       [
-      Arma.new(id: 15),
-      Arma.new(id: 7)
+      { id: 15 },
+      { id: 7 }
     ],
     proteccions: [
       Proteccion.new(id: 2, gemas: [26, 27]),
