@@ -7,6 +7,7 @@ def h3
     jugador:      'Iris',
     progenitores: [70, 'Prio'],
     titulo:       'Condesa de Zelmuria',
+    familiar:     {id: 20, name: 'Jazzy'},
     gender:       'female',
     status:       'reserva',
     nivel:        8,
@@ -35,7 +36,6 @@ def h3
       Miscelanea.new(id: 1,  enchants: [104], gemas: [29])
     ],
     abalorios:    [Abalorio.new(id: 7)],
-    pet:          Pet.new(id: 20, name: 'Jazzy'),
     profesion:    Profesion.new(id: 3, aprendiz: [0, 1, 5]),
     tesoro:       {
       runas: [3],

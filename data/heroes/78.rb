@@ -6,11 +6,11 @@ def h78
     personaje: "falangista",
     jugador:   "Raúl",
     pareja:    { char: 89, tipo: 'pj' },
+    familiar:  { id: 17, name: 'Climber'},
     nivel:     1,
     cuerpo:    7,
     mente:     3,
     mov:       6,
-    pet:       Pet.new(id: 17, name: 'Climber'),
     armadura:  Armadura.new(id: 2),
     armas:     [
       Arma.new(id: 7),

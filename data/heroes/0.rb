@@ -7,12 +7,12 @@ def h0
     personaje:    'hechicero',
     camino:       ['El Oscuro', 2],
     ciudad:       'Xanandra',
+    familiar:     { id: 8, name: 'Peróculo', torpe: true },
     repu:         1,
     nivel:        6,
     cuerpo:       5,
     mente:        10,
     mov:          7,
-    pet:          Pet.new({ id: 8, name: 'Peróculo', torpe: true }),
     armas:        [Arma.new({ id: 8, enchants: [59], ranuras: 1 })],
     armadura:     Armadura.new({ id: 1 }),
     miscelaneas:  [

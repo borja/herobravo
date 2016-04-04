@@ -7,6 +7,7 @@ def h20
     jugador:   'Javier Galindo',
     status:    'retirado',
     muerto:    true,
+    familiar:  { id: 8, name: 'owlovicius', torpe: true },
     historia:  2,
     premio:    1,
     nivel:     3,
@@ -16,7 +17,6 @@ def h20
     hechizos:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     armas:     [Arma.new(id: 0)],
     armadura:  Armadura.new(id: 0),
-    skills:    [0, 1, 2, 3],
-    pet:       Pet.new(id: 8, name: 'owlovicius', torpe: true)
+    skills:    [0, 1, 2, 3]
   }
 end

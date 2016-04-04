@@ -11,7 +11,7 @@ def h82
     cuerpo:      10,
     mente:       6,
     mov:         8,
-    pet:         Pet.new(id: 18, name: 'Menta', torpe: true),
+    familiar:    { id: 18, name: 'Menta', torpe: true },
     armas:       [Arma.new(id: 0)],
     armadura:    Armadura.new(id: 0),
     skills:      [

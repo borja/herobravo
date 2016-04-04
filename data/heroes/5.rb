@@ -6,13 +6,13 @@ def h5
     personaje:   'conjurador',
     jugador:     'Daniel Cabañas',
     status:      'activo',
+    familiar:    { id: 6, name: 'Verruguitas' },
     historia:    1,
     nivel:       15,
     repu:        6,
     cuerpo:      5,
     mente:       20,
     mov:         8,
-    pet:         Pet.new(id: 6, name: 'Verruguitas'),
     armas:       [
       Arma.new(id: 21, ranuras: 3),
       Arma.new(id: 20, enchants: [40])

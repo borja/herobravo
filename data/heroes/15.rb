@@ -7,6 +7,7 @@ def h15
     jugador:     'Luis',
     status:      'activo',
     pareja:      { char: 14, tipo: 'pj' },
+    familiar:    { id: 2, name: 'Naussyca'},
     repu:        1,
     historia:    1,
     nivel:       7,
@@ -28,7 +29,6 @@ def h15
     gemas:       [55],
     piezas:      [8],
     pociones:    [1, 3, 3],
-    profesion:   Profesion.new(id: 1, aprendiz: [0, 3]),
-    pet:         Pet.new(id: 2, name: 'Naussyca')
+    profesion:   Profesion.new(id: 1, aprendiz: [0, 3])
   }
 end

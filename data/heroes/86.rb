@@ -11,7 +11,7 @@ def h86
     cuerpo:    8,
     mente:     2,
     mov:       7,
-    pet:       Pet.new(id: 17, name: 'Chip'),
+    familiar:  { id: 17, name: 'Chip' },
     armadura:  Armadura.new(id: 2),
     armas:     [
       Arma.new(id: 7),

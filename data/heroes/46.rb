@@ -6,6 +6,7 @@ def h46
     personaje: 'derviche',
     jugador:   "Daniel Cabañas",
     status:    'retirado',
+    familiar:  { id: 15, name: 'Fabulosa', torpe: true },
     historia:  2,
     premio:    2,
     muerto:    true,
@@ -15,7 +16,6 @@ def h46
     mov:       8,
     armas:     [Arma.new(id: 1)],
     armadura:  Armadura.new(id: 2),
-    pet:       Pet.new(id: 15, name: 'Fabulosa', torpe: true),
     hechizos:  [18, 19, 20]
   }
 end

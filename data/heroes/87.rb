@@ -11,7 +11,7 @@ def h87
     cuerpo:      8,
     mente:       3,
     mov:         7,
-    pet:         Pet.new(id: 17, name: 'Alvin', torpe: true),
+    familiar:    { id: 17, name: 'Alvin', torpe: true },
     armadura:    Armadura.new(id: 2),
     armas:       [Arma.new(id: 2, gemas: [19] )],
     proteccions: [Proteccion.new(id: 1, enchants: [84])],
