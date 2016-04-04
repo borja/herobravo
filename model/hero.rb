@@ -123,7 +123,8 @@ class Hero < Hash
   def pet           ; Pet.new(familiar) if familiar end
   def weapons       ; self.armas.map        {|w|        Arma.new(w)}       if self.armas             end
   def baratijas     ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
-  def proteccions   ; self.protecciones.map {|m|  Proteccion.new(m)}       if self.protecciones      end
+  def proteccions   ; self.protecciones.map {|p|  Proteccion.new(p)}       if self.protecciones      end
+  def trinkets      ; self.abalorios.map    {|a|    Abalorio.new(a)}       if self.abalorios         end
   def cacharros     ; self.piezas.map       {|num|     Pieza.new(id: num)} if self.piezas            end
   def brebajes      ; self.pociones.map     {|num|    Pocion.new(id: num)} if self.pociones          end
   def componentes   ; self.materiales.map   {|num|  Material.new(id: num)} if self.materiales        end
@@ -136,8 +137,8 @@ class Hero < Hash
   def sin_recursos  ; self.tesoro.nil? end
   def empadronado   ; self.ciudad || "Jadessvärd" end
   def estado        ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
-  def capacidad     ; @heroe.nivel/3 + 3 end #inventario
-  
+  def capacidad     ; nivel/3 + 3 end #inventario
+
   def resistencia(elemento) # I'm sorry for this...
     total = 0 # Initialize default returns 0
     regex = /vs #{Regexp.quote(elemento)}/  # looks for "+N vs #{elemento}"

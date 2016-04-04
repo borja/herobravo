@@ -46,7 +46,7 @@ def h1
       { id: 11, enchants: [35, 42], ranuras: 1 },
       { id: 6,  enchants: [37] }
     ],
-    abalorios:    [Abalorio.new(id: 4)],
+    abalorios:    [{ id: 4 }],
     profesion:    Profesion.new(id: 0, aprendiz: [0, 1, 2, 3, 4]),
     mounts:       [2],
     materiales:   [1, 1],
