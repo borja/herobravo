@@ -30,12 +30,12 @@ def h44
       Proteccion.new(id: 11)
     ],
     miscelaneas:  [
-      Miscelanea.new(id: 1),
-      Miscelanea.new(id: 1, gemas: [13], enchants: [80]),
-      Miscelanea.new(id: 2,  gemas: [29]),
-      Miscelanea.new(id: 3,  enchants: [28]),
-      Miscelanea.new(id: 4),
-      Miscelanea.new(id: 19, enchants: [82])
+      { id: 1 },
+      { id: 1, gemas: [13], enchants: [80] },
+      { id: 2,  gemas: [29] },
+      { id: 3,  enchants: [28] },
+      { id: 4 },
+      { id: 19, enchants: [82] }
     ],
     skills:       [1, 2, 3, 4, 5, 6, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
     tesoro:       {

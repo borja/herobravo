@@ -20,8 +20,8 @@ def h12
       Proteccion.new(id: 3, runas: [0, 1])
     ],
     miscelaneas: [
-      Miscelanea.new(id: 1, gemas: [25]),
-      Miscelanea.new(id: 2, gemas: [20], enchants: [70, 71])
+      { id: 1, gemas: [25] },
+      { id: 2, gemas: [20], enchants: [70, 71] }
     ],
     skills:      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     profesion:   Profesion.new(id: 3, aprendiz: [0]),

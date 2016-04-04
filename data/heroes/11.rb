@@ -26,9 +26,9 @@ def h11
       Proteccion.new(id: 3, enchants: [8], ranuras: 2)
     ],
     miscelaneas: [
-      Miscelanea.new(id: 1, enchants: [29]),
-      Miscelanea.new(id: 2, enchants: [70, 71], gemas: [42]),
-      Miscelanea.new(id: 3, enchants: [28])
+      { id: 1, enchants: [29] },
+      { id: 2, enchants: [70, 71], gemas: [42] },
+      { id: 3, enchants: [28] }
     ],
     tesoro:      {
       gemas: [2, 2]

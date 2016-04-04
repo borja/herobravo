@@ -23,8 +23,8 @@ def h15
     ],
     proteccions: [Proteccion.new(id: 11)],
     miscelaneas: [
-      Miscelanea.new(id: 2, enchants: [31]),
-      Miscelanea.new(id: 1, enchants: [37])
+      { id: 2, enchants: [31] },
+      { id: 1, enchants: [37] }
     ],
     gemas:       [55],
     piezas:      [8],

@@ -17,7 +17,7 @@ def h18
       Proteccion.new(id: 14),
       Proteccion.new(id: 8, ranuras: 4)
     ],
-    miscelaneas: [Miscelanea.new(id: 10)],
+    miscelaneas: [{ id: 10 }],
     skills:      [0, 1, 2]
   }
 end

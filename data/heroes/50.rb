@@ -26,9 +26,7 @@ def h50
       Proteccion.new(id: 1, enchants: [84]),
       Proteccion.new(id: 2, enchants: [37])
     ],
-    miscelaneas: [
-      Miscelanea.new(id: 6, ranuras: 1, enchants: [97, 52])
-    ],
+    miscelaneas: [{ id: 6, ranuras: 1, enchants: [97, 52] }],
     tesoro:      {
       runas: [3]
     }

@@ -18,8 +18,8 @@ def h39
     armas:       [{ id: 13, enchants: [61, 62, 63] }],
     armadura:    { id: 1, gemas: [13], joyas: [6] },
     miscelaneas: [
-      Miscelanea.new(id: 3, enchants: [44, 53], ranuras: 1, gemas: [18]),
-      Miscelanea.new(id: 2, enchants: [68, 69])
+      { id: 3, enchants: [44, 53], ranuras: 1, gemas: [18] },
+      { id: 2, enchants: [68, 69] }
     ],
     skills:      [1, 2, 3, 4, 5, 6, 8, 9, 10],
     hechizos:    [

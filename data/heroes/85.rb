@@ -17,7 +17,7 @@ def h85
       { id: 11 }
     ],
     miscelaneas:[
-      Miscelanea.new(id: 22, enchants: [10])
+      { id: 22, enchants: [10] }
     ],
     pergaminos: [
       Pergamino.new(id: 3),

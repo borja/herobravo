@@ -38,13 +38,13 @@ def h1
       Proteccion.new(id: 8,  gemas: [24], joyas: [1, 1])
     ],
     miscelaneas:  [
-      Miscelanea.new(id: 1,  enchants: [20]),
-      Miscelanea.new(id: 13, enchants: [36]),
-      Miscelanea.new(id: 8),
-      Miscelanea.new(id: 3,  ranuras:  1),
-      Miscelanea.new(id: 2,  gemas:    [27], enchants: [6]),
-      Miscelanea.new(id: 11, enchants: [35, 42], ranuras: 1),
-      Miscelanea.new(id: 6,  enchants: [37])
+      { id: 1,  enchants: [20] },
+      { id: 13, enchants: [36] },
+      { id: 8 },
+      { id: 3,  ranuras:  1 },
+      { id: 2,  gemas:    [27], enchants: [6] },
+      { id: 11, enchants: [35, 42], ranuras: 1 },
+      { id: 6,  enchants: [37] }
     ],
     abalorios:    [Abalorio.new(id: 4)],
     profesion:    Profesion.new(id: 0, aprendiz: [0, 1, 2, 3, 4]),

@@ -16,12 +16,16 @@ def h58
       { id: 17, gemas: [40] }
     ],
     armadura:     { id: 3 },
-    proteccions:  [Proteccion.new(id: 1,    ranuras: 2),
-                   Proteccion.new(id: 2),
-                   Proteccion.new(id: 3, enchants: [8]),
-                   Proteccion.new(id: 4)],
-    miscelaneas:  [Miscelanea.new(id: 1,    enchants: [11]),
-                   Miscelanea.new(id: 2, enchants: [6])],
+    proteccions:  [
+      Proteccion.new(id: 1,    ranuras: 2),
+      Proteccion.new(id: 2),
+      Proteccion.new(id: 3, enchants: [8]),
+      Proteccion.new(id: 4)
+    ],
+    miscelaneas:  [
+      { id: 1, enchants: [11] },
+      { id: 2, enchants: [6] }
+    ],
     skills:       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     tesoro:       {
       gemas: [6, 6, 11, 14, 27, 30],

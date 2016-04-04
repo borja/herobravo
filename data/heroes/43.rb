@@ -12,7 +12,7 @@ def h43
     mov:         7,
     armas:       [{ id: 8 }],
     armadura:    { id: 1 },
-    miscelaneas: [Miscelanea.new(id: 2)],
+    miscelaneas: [{ id: 2 }],
     hechizos:    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   }
 end

@@ -14,8 +14,10 @@ def h21
     armadura:    { id: 1 },
     proteccions: [Proteccion.new(id: 1),
                   Proteccion.new(id: 8)],
-    miscelaneas: [Miscelanea.new(id: 2),
-                  Miscelanea.new(id: 5)],
+    miscelaneas: [
+      { id: 2 },
+      { id: 5 }
+    ],
     tesoro:      { runas: [4] }
   }
 end

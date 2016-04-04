@@ -26,10 +26,10 @@ def h16
       Proteccion.new(id: 8, gemas: [26])
     ],
     miscelaneas: [
-      Miscelanea.new(id: 1, gemas: [28], enchants: [56]),
-      Miscelanea.new(id: 1, gemas: [25]),
-      Miscelanea.new(id: 2, ranuras: 1),
-      Miscelanea.new(id: 6, enchants: [57])
+      { id: 1, gemas: [28], enchants: [56] },
+      { id: 1, gemas: [25] },
+      { id: 2, ranuras: 1 },
+      { id: 6, enchants: [57] }
     ]
   }
 end

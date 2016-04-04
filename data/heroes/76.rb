@@ -18,7 +18,7 @@ def h76
     armadura:    { id: 1 },
     armas:       [{ id: 0 }],
     miscelaneas: [
-      Miscelanea.new(id: 21, enchants: [100, 56])
+      { id: 21, enchants: [100, 56] }
     ]
   }
 end
