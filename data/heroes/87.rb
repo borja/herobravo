@@ -16,8 +16,8 @@ def h87
     armas:       [{ id: 2, gemas: [19] }],
     proteccions: [Proteccion.new(id: 1, enchants: [84])],
     miscelaneas:  [
-      Miscelanea.new(id: 23, ranuras: 6, enchants: [108]),
-      Miscelanea.new(id: 2, enchants: [92])
+      { id: 23, ranuras: 6, enchants: [108] },
+      { id: 2, enchants: [92] }
     ]
   }
 end

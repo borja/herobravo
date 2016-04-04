@@ -15,6 +15,6 @@ def h27
       { id: 3 }
     ],
     armadura:    { id: 1 },
-    miscelaneas: [Miscelanea.new(id: 1)]
+    miscelaneas: [{id: 1}]
   }
 end

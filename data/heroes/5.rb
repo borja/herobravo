@@ -27,8 +27,8 @@ def h5
       Proteccion.new(id: 10, ranuras: 1)
     ],
     miscelaneas: [
-      Miscelanea.new(id: 1, enchants: [8], runas: [7]),
-      Miscelanea.new(id: 6, enchants: [6])
+      { id: 1, enchants: [8], runas: [7] },
+      { id: 6, enchants: [6] }
     ],
     skills:      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
     profesion:   Profesion.new(id: 1, aprendiz: [0, 2]),

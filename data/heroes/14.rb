@@ -23,7 +23,7 @@ def h14
     proteccions: [Proteccion.new(id: 2, gemas: [4]),
                   Proteccion.new(id: 5, enchants: [8]),
                   Proteccion.new(id: 14)],
-    miscelaneas: [Miscelanea.new(id: 11)],
+    miscelaneas: [{ id: 11 }],
     skills:      [0, 1, 2, 4, 5, 6, 8],
     profesion:   Profesion.new(id: 2, aprendiz: [0, 1]),
     pociones:    [0],

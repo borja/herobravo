@@ -21,7 +21,7 @@ class Hero < Hash
   # Custom meta-methods created by each item:
   (fields[0]+fields[1]+fields[2]).each do |f|
     define_method(f) do
-  		((self.proteccions || []) + (self.miscelaneas || [])).detect { |item| item.fits == f }
+  		((self.proteccions || []) + (baratijas || [])).detect { |item| item.fits == f }
     end
   end
   
@@ -114,20 +114,21 @@ class Hero < Hash
   def raza          ; %w(clérigo ladrón bárbaro mago).include?(self.clase) ? 'humano' : self.clase end
   def female?       ; sex == 'female' end
   def male?         ; sex == 'male' end
-  def anillos       ; (self.miscelaneas || []).select { |m| m.fits == "anillo"  } end
-  def amuletos      ; (self.miscelaneas || []).select { |m| m.fits == "amuleto" } end 
+  def anillos       ; (baratijas || []).select { |m| m.fits == "anillo"  } end
+  def amuletos      ; (baratijas || []).select { |m| m.fits == "amuleto" } end 
   def ataque        ; weapons.first.categoria != 'distancia' ? weapons.first.ataque : 0 end
   def rango         ; weapons.first.categoria == 'distancia' ? weapons.first.ataque : 0 end
   def defensa       ; armour.defensa end
   def armour        ; Armadura.new(armadura) if armadura end
   def pet           ; Pet.new(familiar) if familiar end
-  def weapons       ; self.armas.map      {|w|        Arma.new(w)}       if self.armas end
-  def cacharros     ; self.piezas.map     {|num|     Pieza.new(id: num)} if self.piezas     end
-  def brebajes      ; self.pociones.map   {|num|    Pocion.new(id: num)} if self.pociones   end
-  def componentes   ; self.materiales.map {|num|  Material.new(id: num)} if self.materiales end
-  def transportes   ; self.mounts.map     {|num|   Montura.new(montura(num))} if self.mounts   end
-  def masters       ; self.master.map     {|num| Habilidad.new(maestrodearma(num)) } if self.master end 
-  def habilidades   ; self.skills.map     {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
+  def weapons       ; self.armas.map       {|w|        Arma.new(w)}       if self.armas              end
+  def baratijas     ; self.miscelaneas.map {|m|  Miscelanea.new(m)}       if self.miscelaneas        end
+  def cacharros     ; self.piezas.map      {|num|     Pieza.new(id: num)} if self.piezas             end
+  def brebajes      ; self.pociones.map    {|num|    Pocion.new(id: num)} if self.pociones           end
+  def componentes   ; self.materiales.map  {|num|  Material.new(id: num)} if self.materiales         end
+  def transportes   ; self.mounts.map      {|num|   Montura.new(montura(num))} if self.mounts        end
+  def masters       ; self.master.map      {|num| Habilidad.new(maestrodearma(num)) } if self.master end 
+  def habilidades   ; self.skills.map      {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
   def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
   def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
   def shadow_magic  ; self.shadows.map  {|num| sombra(num)}  if self.shadows  end 
@@ -141,7 +142,7 @@ class Hero < Hash
     regex = /vs #{Regexp.quote(elemento)}/  # looks for "+N vs #{elemento}"
     reg2x = /vs todas las resistencias/
     
-    %w(proteccions miscelaneas armour).each do |i|
+    %w(proteccions baratijas armour).each do |i|
       if self.send(i) # ask for item-type
         self.send(i).each do |item|
           if item.enchanted?

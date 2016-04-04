@@ -14,7 +14,7 @@ def h45
     armas:       [{ id: 3 }],
     armadura:    { id: 1, gemas: [4] },
     proteccions: [Proteccion.new(id: 4, ranuras: 1)],
-    miscelaneas: [Miscelanea.new(id: 2, ranuras: 1, enchants: [77])],
+    miscelaneas: [{ id: 2, ranuras: 1, enchants: [77] }],
     hechizos:    [0, 1, 2, 12, 13, 14, 18, 19, 20]
   }
 end

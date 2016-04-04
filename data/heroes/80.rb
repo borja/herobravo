@@ -17,7 +17,7 @@ def h80
     armas:        [{ id: 8 }],
     armadura:     { id: 1 },
     miscelaneas:  [
-      Miscelanea.new(id: 21, enchants: [103])
+      { id: 21, enchants: [103] }
     ],
     profesion:    Profesion.new(id: 6, aprendiz: [0])
   }

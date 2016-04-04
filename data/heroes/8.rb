@@ -26,8 +26,8 @@ def h8
       Proteccion.new(id: 16, enchants: [98, 99], ranuras: 2)
     ],
     miscelaneas: [
-      Miscelanea.new(id: 1, enchants: [10]),
-      Miscelanea.new(id: 10, enchants: [0])
+      { id: 1, enchants: [10] },
+      { id: 10, enchants: [0] }
     ],
     pergaminos:  [Pergamino.new(id: 2, spells: [14])],
     skills:      [

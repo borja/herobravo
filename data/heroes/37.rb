@@ -16,8 +16,9 @@ def h37
       { id: 7 }
     ],
     armadura:   { id: 2 },
-    pergaminos: [Pergamino.new(id: 3),
-                 Pergamino.new(id: 1, spells: [8]),
-                 Pergamino.new(id: 1, spells: [8])]
+    pergaminos: [
+      Pergamino.new(id: 3),
+      Pergamino.new(id: 1, spells: [8]),
+      Pergamino.new(id: 1, spells: [8])]
   }
 end

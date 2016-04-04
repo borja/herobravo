@@ -33,8 +33,8 @@ def h7
       Proteccion.new(id: 8, ranuras: 1, enchants: [87])
     ],
     miscelaneas: [
-      Miscelanea.new(id: 1, ranuras: 2, enchants: [25]),
-      Miscelanea.new(id: 1, gemas: [29], enchants: [104])
+      { id: 1, ranuras: 2, enchants: [25] },
+      { id: 1, gemas: [29], enchants: [104] }
     ],
     abalorios:   [Abalorio.new(id: 3)],
     tesoro:      {

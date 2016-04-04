@@ -37,12 +37,12 @@ def h2
       Proteccion.new(id: 8)
     ],
     miscelaneas:  [
-      Miscelanea.new(id: 1,  gemas:   [25], enchants: [9]),
-      Miscelanea.new(id: 9,  ranuras: 3,    enchants: [39]),
-      Miscelanea.new(id: 7,                 enchants: [32]),
-      Miscelanea.new(id: 11, ranuras: 1),
-      Miscelanea.new(id: 20, ranuras: 1,    enchants: [89, 29]),
-      Miscelanea.new(id: 18,                enchants: [66, 65, 67])
+      { id: 1,  gemas:   [25], enchants: [9] },
+      { id: 9,  ranuras: 3,    enchants: [39] },
+      { id: 7,                 enchants: [32] },
+      { id: 11, ranuras: 1 },
+      { id: 20, ranuras: 1,    enchants: [89, 29] },
+      { id: 18,                enchants: [66, 65, 67] }
     ],
     skills:       [
       0, 1, 2, 3, 4, 4, 5, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18,

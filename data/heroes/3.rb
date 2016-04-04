@@ -30,10 +30,10 @@ def h3
       Proteccion.new(id: 8, runas: [2])
     ],
     miscelaneas:  [
-      Miscelanea.new(id: 2,  enchants: [21], ranuras: 2),
-      Miscelanea.new(id: 4,  enchants: [71]),
-      Miscelanea.new(id: 17, enchants: [64]),
-      Miscelanea.new(id: 1,  enchants: [104], gemas: [29])
+      { id: 2,  enchants: [21], ranuras: 2 },
+      { id: 4,  enchants: [71] },
+      { id: 17, enchants: [64] },
+      { id: 1,  enchants: [104], gemas: [29] }
     ],
     abalorios:    [Abalorio.new(id: 7)],
     profesion:    Profesion.new(id: 3, aprendiz: [0, 1, 5]),
