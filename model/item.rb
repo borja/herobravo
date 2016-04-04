@@ -137,7 +137,7 @@ class Pergamino < Util
   def name     ; pergamino(id)['name']     end
   def precio   ; pergamino(id)['precio']   end 
   def max      ; pergamino(id)['hechizos'] end # Máximo número permitido  
-  def hechizos ; self.spells.map { |s| Elemental.new({:id => s}).name } end
+  def hechizos ; self.spells.map { |s| Elemental.new({id: s}).name } end
 end
 
 class Material < Util

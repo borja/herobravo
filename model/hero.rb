@@ -138,7 +138,7 @@ class Hero < Hash
     regex = /vs #{Regexp.quote(elemento)}/  # looks for "+N vs #{elemento}"
     reg2x = /vs todas las resistencias/
     
-    ["proteccions","miscelaneas","armadura"].each do |i|
+    %w(proteccions miscelaneas armadura).each do |i|
       if self.send(i) # ask for item-type
         self.send(i).each do |item|
           if item.enchanted?
@@ -157,7 +157,7 @@ class Hero < Hash
             end
           end
           if item.engarzado?
-            ["gemas","joyas","runas"].each do |engarce|
+            %W(gemas joyas runas).each do |engarce|
               if eng = item.send(engarce)
                 eng.each do |id|
                   texto = send(engarce[0..-2], id).fits[item.fits] # takes description
