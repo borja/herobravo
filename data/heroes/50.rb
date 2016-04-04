@@ -14,7 +14,7 @@ def h50
     oro:         58,
     skills:      [2, 3, 4, 5, 8, 9],
     mounts:      [3],
-    pet:         Pet.new(id: 2, name: "Aserrín Aserrán"),
+    familiar:    { id: 2, name: "Aserrín Aserrán"},
     profesion:   Profesion.new(id: 6, aprendiz: [0]),
     piezas:      [3],
     armas:       [

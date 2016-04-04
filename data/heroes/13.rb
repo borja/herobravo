@@ -12,7 +12,7 @@ def h13
     mente:       3,
     mov:         8,
     profesion:   Profesion.new(id: 3, aprendiz: [0]),
-    pet:         Pet.new(id: 24, name: 'Nemesio', torpe: true),
+    familiar:    {id: 24, name: 'Nemesio', torpe: true},
     armas:       [
       Arma.new(id: 28, gemas: [30]),
       Arma.new(id: 7, gemas: [32])

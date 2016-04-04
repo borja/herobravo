@@ -8,6 +8,7 @@ def h49
     jugador:      'Javier Galindo',
     status:       'retirado',
     muerto:       true,
+    familiar:     { id: 20, name: 'terry' },
     historia:     1,
     nivel:        2,
     cuerpo:       6,
@@ -17,7 +18,6 @@ def h49
     shadows:      [0, 1, 2],
     armas:        [Arma.new(id: 3)],
     armadura:     Armadura.new(id: 1),
-    skills:       [0, 1],
-    pet:          Pet.new(id: 20, name: 'terry')
+    skills:       [0, 1]
   }
 end

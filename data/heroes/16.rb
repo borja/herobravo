@@ -6,6 +6,7 @@ def h16
     personaje:   'hechicero',
     jugador:     'Chorni',
     gender:      'female',
+    familiar:    { id: 8, name: 'Bill', torpe: true },
     historia:    2,
     nivel:       5,
     cuerpo:      4,
@@ -19,7 +20,6 @@ def h16
       Arma.new(id: 4, enchants: [13, 14, 15])
     ],
     armadura:    Armadura.new(id: 1, gemas: [4, 4, 4]),
-    pet:         Pet.new({ id: 8, name: 'Bill', torpe: true }),
     proteccions: [
       Proteccion.new(id: 1, enchants: [55]),
       Proteccion.new(id: 3, ranuras: 2),

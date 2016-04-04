@@ -6,6 +6,7 @@ def h81
     personaje:    'arquero',
     jugador:      'Alpa',
     status:       'reserva',
+    familiar:     { id: 19, name: 'Ñamo' },
     nivel:        3,
     repu:         0,
     cuerpo:       8,
@@ -20,7 +21,6 @@ def h81
     armadura:     Armadura.new(id: 2),
     miscelaneas:  [
       Miscelanea.new(id: 21, enchants: [29])
-    ],
-    pet:          Pet.new(id: 19, name: 'Ñamo')
+    ]
   }
 end

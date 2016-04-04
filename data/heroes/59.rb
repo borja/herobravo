@@ -7,6 +7,7 @@ def h59
     jugador:   'Javier Galindo',
     status:    'activo',
     pareja:    { nombre: 'Gabrielle', raza: 'elfilla', tipo: 'pnj' },
+    familiar:  { id: 15, name: 'Viviana' },
     nivel:     4,
     cuerpo:    7,
     mente:     7,
@@ -16,7 +17,6 @@ def h59
     armas:     [Arma.new(id: 1),
                 Arma.new(id: 4, enchants: [96])],
     armadura:  Armadura.new(id: 3),
-    skills:    [0, 2],
-    pet:       Pet.new({ id: 15, name: 'Viviana' })
+    skills:    [0, 2]
   }
 end

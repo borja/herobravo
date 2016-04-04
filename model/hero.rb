@@ -5,7 +5,7 @@ class Hero < Hash
   attr_accessor :id,
     :name, :personaje, :jugador, :status, :muerto, :gender,
     :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,
-    :pet, :mounts, :descendencia, :pareja, :progenitores,
+    :familiar, :mounts, :descendencia, :pareja, :progenitores,
     :hechizos, :shadows, :blood, :skills, :master,
     :armas, :armadura, :proteccions, :miscelaneas, :abalorios,
     :profesion, :ciudad, :titulo, :camino, :hijos,
@@ -119,6 +119,7 @@ class Hero < Hash
   def ataque        ; self.armas.first.categoria != 'distancia' ? self.armas.first.ataque : 0 end
   def rango         ; self.armas.first.categoria == 'distancia' ? self.armas.first.ataque : 0 end
   def defensa       ; self.armadura.defensa end
+  def pet           ; Pet.new(familiar) if familiar end
   def cacharros     ; self.piezas.map     {|num|     Pieza.new(id: num)} if self.piezas     end
   def brebajes      ; self.pociones.map   {|num|    Pocion.new(id: num)} if self.pociones   end
   def componentes   ; self.materiales.map {|num|  Material.new(id: num)} if self.materiales end

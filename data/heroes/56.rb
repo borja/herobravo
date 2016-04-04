@@ -12,7 +12,7 @@ def h56
     mov:         8,
     skills:      [0, 1],
     master:      [4], 
-    pet:         Pet.new(id: 16, name: 'Zurraspa', torpe: true),
+    familiar:    { id: 16, name: 'Zurraspa', torpe: true },
     armadura:    Armadura.new(id: 2),
     armas:       [Arma.new(id: 24)],
     proteccions: [

@@ -6,7 +6,7 @@ def h60
     jugador:      'Iris',
     status:       'reserva',
     progenitores: [48, "Amílcar"],
-    pet:          Pet.new(id: 17, name: 'Chop'),
+    familiar:     { id: 17, name: 'Chop' },
     nivel:        3,
     cuerpo:       9,
     mente:        3,
