@@ -11,15 +11,19 @@
 			</tr>
 		</thead>
 		<tbody>
-			<% narrados(i+1).each do |n| %>
+			<% narrados(i+1).each do |hero| %>
 			<tr>
-				<td><%= n.jugador %></td>
-				<td><%= erb :'display/portrait', :locals => { :h => n } %></td>
+				<td><%= hero.jugador %></td>
+				<td><%= erb :'display/portrait', locals: { h: hero } %></td>
 				<td class='wrapper'>
-					<a href='/historia/<%= n.id %>'><%= n.name %></a>
-				    <% if n.premio %>
-						<% color = n.premio == 1 ? "golden" : "silvered" %>
-						<div class="ribbon-wrapper-<%= color %>"><div class="ribbon-<%= color %>"><%= n.premio %>º</div>
+					<a href='/historia/<%= hero.id %>'><%= hero.name %></a>
+				    <% if hero.premio %>
+						<% color = hero.premio == 1 ? 'golden' : 'silvered' %>
+						<div class="ribbon-wrapper-<%= color %>">
+							<div class="ribbon-<%= color %>">
+								<%= hero.premio %>º
+							</div>
+						</div>
 					<% end %>
 				</td>
 			</tr>
