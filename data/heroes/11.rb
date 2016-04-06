@@ -6,6 +6,7 @@ def h11
     personaje:   'derviche',
     jugador:     'Nora',
     gender:      'female',
+    profesion:   { id: 3, aprendiz: [0] },
     historia:    1,
     nivel:       8,
     repu:        2,
@@ -15,7 +16,6 @@ def h11
     hechizos:    [6, 7, 8],
     skills:      [0, 1, 2, 3, 4, 5, 6, 7],
     pociones:    [7],
-    profesion:   Profesion.new(id: 3, aprendiz: [0]),
     armadura:    { id: 2 },
     armas:       [
       { id: 2, gemas: [11, 11, 11, 53] },

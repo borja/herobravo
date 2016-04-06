@@ -15,7 +15,7 @@ def h50
     skills:      [2, 3, 4, 5, 8, 9],
     mounts:      [3],
     familiar:    { id: 2, name: "Aserrín Aserrán"},
-    profesion:   Profesion.new(id: 6, aprendiz: [0]),
+    profesion:   { id: 6, aprendiz: [0] },
     piezas:      [3],
     armas:       [
       { id: 11 },

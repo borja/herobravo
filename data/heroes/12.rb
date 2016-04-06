@@ -10,6 +10,7 @@ def h12
     cuerpo:      13,
     mente:       4,
     mov:         6,
+    profesion:   { id: 3, aprendiz: [0] },
     armadura:    { id: 5, joyas: [2], runas: [1] },
     armas:       [
       { id: 15 },
@@ -24,7 +25,6 @@ def h12
       { id: 2, gemas: [20], enchants: [70, 71] }
     ],
     skills:      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    profesion:   Profesion.new(id: 3, aprendiz: [0]),
     tesoro:      {
       runas: [4, 4, 4],
       gemas: [25, 51, 36]

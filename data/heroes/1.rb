@@ -17,7 +17,8 @@ def h1
     status:       'activo',
     camino:       ['El Heredero', 3],
     titulo:       'Príncipe Bastardo',
-    familiar:     {id: 17, name: 'Scumbag'},
+    familiar:     { id: 17, name: 'Scumbag' },
+    profesion:    { id: 0, aprendiz: [0, 1, 2, 3, 4] },
     repu:         11,
     nivel:        23,
     cuerpo:       11,
@@ -30,24 +31,23 @@ def h1
     armadura:     { id: 6, gemas: [36, 29, 37] },
     protecciones: [
       { id: 12, gemas: [30], joyas: [3] },
+      { id: 8,  gemas: [24], joyas: [1, 1] },
       { id: 1,  gemas: [26, 27, 26], enchants: [20, 78] },
-      { id: 5,  enchants: [5] },
       { id: 3,  gemas: [17, 17] },
       { id: 11, gemas: [25, 16, 48] },
       { id: 9,  ranuras: 2 },
-      { id: 8,  gemas: [24], joyas: [1, 1] }
+      { id: 5,  enchants: [5] }
     ],
     miscelaneas:  [
-      { id: 1,  enchants: [20] },
-      { id: 13, enchants: [36] },
       { id: 8 },
       { id: 3,  ranuras:  1 },
-      { id: 2,  gemas:    [27], enchants: [6] },
-      { id: 11, enchants: [35, 42], ranuras: 1 },
-      { id: 6,  enchants: [37] }
+      { id: 1,  enchants: [20] },
+      { id: 13, enchants: [36] },
+      { id: 6,  enchants: [37] },
+      { id: 2,  enchants: [6], gemas:    [27] },
+      { id: 11, enchants: [35, 42], ranuras: 1 }
     ],
     abalorios:    [{ id: 4 }],
-    profesion:    Profesion.new(id: 0, aprendiz: [0, 1, 2, 3, 4]),
     mounts:       [2],
     materiales:   [1, 1],
     master:       [0],

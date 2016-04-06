@@ -37,8 +37,8 @@
 						<% end %>						
 					</td>
 					<td>
-						<% if p = hero.profesion %>
-							<%= erb :'ficha/profesion', locals: { prof: p } %>
+						<% if hero.profesion %>
+							<%= erb :'ficha/profesion', locals: { prof: hero.gremio } %>
 						<% end %>
 					</td>
 					<td><table>

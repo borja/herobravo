@@ -7,7 +7,8 @@ def h3
     jugador:      'Iris',
     progenitores: [70, 'Prio'],
     titulo:       'Condesa de Zelmuria',
-    familiar:     {id: 20, name: 'Jazzy'},
+    familiar:     { id: 20, name: 'Jazzy'},
+    profesion:    { id: 3, aprendiz: [0, 1, 5] },
     gender:       'female',
     status:       'reserva',
     nivel:        8,
@@ -36,7 +37,6 @@ def h3
       { id: 1,  enchants: [104], gemas: [29] }
     ],
     abalorios:    [{ id: 7 }],
-    profesion:    Profesion.new(id: 3, aprendiz: [0, 1, 5]),
     tesoro:       {
       runas: [3],
       gemas: [6, 10, 18, 21, 25, 27, 27, 28, 31, 40, 52]

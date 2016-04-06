@@ -13,7 +13,7 @@ def h60
     mov:          8,
     repu:         1,
     skills:       [0, 1, 2, 3],
-    profesion:    Profesion.new(id: 3, aprendiz: [0, 1]),
+    profesion:    { id: 3, aprendiz: [0, 1] },
     armadura:     { id: 2 },
     protecciones: [
       { id: 1, enchants: [84] },

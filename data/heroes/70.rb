@@ -10,6 +10,7 @@ def h70
     gender:       'female',
     status:       'retirado',
     muerto:       true,
+    profesion:    { id: 3, aprendiz: [0] },
     historia:     1,
     nivel:        7,
     repu:         2,
@@ -20,7 +21,6 @@ def h70
     hechizos:     [0, 1, 2],
     shadows:      [0, 1, 2, 5],
     armas:        [{ id: 0 }],
-    armadura:     { id: 0 },
-    profesion:    Profesion.new(id: 3, aprendiz: [0])
+    armadura:     { id: 0 }
   }
 end

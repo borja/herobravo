@@ -23,6 +23,7 @@ def h7
     mente:        6,
     mov:          8,
     familiar:     { id: 18, name: 'Menta', torpe: true },
+    profesion:    { id: 2, aprendiz: [0, 1] },
     armas:        [{ id: 12, enchants: [58] }],
     armadura:     { id: 3, ranuras: 1 },
     protecciones: [
@@ -49,7 +50,6 @@ def h7
     skills:      [
       0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 17
     ],
-    profesion:   Profesion.new(id: 2, aprendiz: [0, 1]),
     pociones:    [10],
     materiales:  [0, 2, 2, 2, 2, 2 ,2],
     piezas:      [4, 4]
