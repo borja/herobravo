@@ -11,7 +11,7 @@ def h62
     mente:     3,
     mov:       7,
     skills:    [1, 2],
-    armadura:  { id: 2 },
+    armadura:  2,
     armas:     [
       { id: 11 },
       { id: 3 }

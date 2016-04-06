@@ -15,7 +15,7 @@ def h8
     piezas:      [3],
     profesion:   { id: 3, aprendiz: [0, 1, 3] },
     familiar:    { id: 18, name: 'pendeja', torpe: true },
-    armadura:    { id: 7 },
+    armadura:    7,
     armas:       [
       { id: 7, runas: [9] },
       { id: 7 }

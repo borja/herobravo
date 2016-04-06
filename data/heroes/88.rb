@@ -9,7 +9,7 @@ def h88
     cuerpo:      7,
     mente:       3,
     mov:         6,
-    armadura:    { id: 2 },
+    armadura:    2,
     armas:       [
       { id: 11 },
       { id: 7 }

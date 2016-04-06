@@ -9,11 +9,11 @@ def h24
     cuerpo:      9,
     mente:       2,
     mov:         7,
+    armadura:    2,
     armas:       [
       { id: 2 },
       { id: 7 }
     ],
-    armadura:     { id: 2 },
     protecciones: [{ id: 2 }],
     tesoro:       { gemas: [21] }
   }

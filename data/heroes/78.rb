@@ -11,7 +11,7 @@ def h78
     cuerpo:    7,
     mente:     3,
     mov:       6,
-    armadura:  { id: 2 },
+    armadura:  2,
     armas:     [
       { id: 7 },
       { id: 11 }

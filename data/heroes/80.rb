@@ -15,8 +15,8 @@ def h80
     skills:       [1, 3, 4, 5],
     hechizos:     [0, 1, 2, 6, 7, 12, 13, 14, 18, 19, 20],
     pociones:     [3],
+    armadura:     1,
     armas:        [{ id: 8 }],
-    armadura:     { id: 1 },
     miscelaneas:  [
       { id: 21, enchants: [103] }
     ]

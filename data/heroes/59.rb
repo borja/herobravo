@@ -14,11 +14,11 @@ def h59
     mov:       8,
     repu:      2,
     hechizos:  [0, 1, 2, 6, 7, 8, 12, 13, 14, 18, 19, 20],
+    armadura:  3,
     armas:     [
       { id: 1 },
       { id: 4, enchants: [96] }
     ],
-    armadura:  { id: 3 },
     skills:    [0, 2]
   }
 end

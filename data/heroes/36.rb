@@ -13,7 +13,7 @@ def h36
     mov:         12,
     hechizos:    [7, 8, 9],
     skills:      [0, 1, 2, 3, 4],
-    armadura:    { id: 2 },
+    armadura:    2,
     armas:       [
       { id: 5, gemas: [17] },
       { id: 1, gemas: [18] }

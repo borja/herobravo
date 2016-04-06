@@ -12,7 +12,6 @@ def h72
     mente:     4,
     mov:       7,
     repu:      1,
-    armadura:  { id: 0 },
     armas:     [{ id: 0 }]
   }
 end

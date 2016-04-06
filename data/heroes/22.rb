@@ -10,6 +10,6 @@ def h22
     mente:     3,
     mov:       6,
     armas:     [ {id: 11 }],
-    armadura:  { id: 2 }
+    armadura:  2
   }
 end

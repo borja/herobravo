@@ -10,7 +10,7 @@ def h42
     mente:        4,
     mov:          7,
     armas:        [{ id: 2 }],
-    armadura:     { id: 2 },
+    armadura:     2,
     protecciones: [{ id: 0 }]
   }
 end

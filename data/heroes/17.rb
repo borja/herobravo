@@ -12,7 +12,6 @@ def h17
     mente:     3,
     mov:       6,
     armas:     [{ id: 0 }],
-    armadura:  { id: 0 },
     skills:    [1, 2, 3, 4, 5, 6]
   }
 end

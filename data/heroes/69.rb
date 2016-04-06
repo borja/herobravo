@@ -9,7 +9,7 @@ def h69
     cuerpo:       8,
     mente:        2,
     mov:          8,
-    armadura:     { id: 2 },
+    armadura:     2,
     armas:        [{ id: 2 }],
     protecciones: [{ id: 2, enchants: [8], ranuras: 1 }]
   }

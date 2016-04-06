@@ -15,7 +15,7 @@ def h48
     mente:        3,
     mov:          8,
     profesion:    { id: 3, aprendiz: [0, 1] },
-    armadura:     { id: 2 },
+    armadura:     2,
     armas:        [
       { id: 5 },
       { id: 7 }

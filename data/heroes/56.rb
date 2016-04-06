@@ -13,7 +13,7 @@ def h56
     skills:       [0, 1],
     master:       [4], 
     familiar:     { id: 16, name: 'Zurraspa', torpe: true },
-    armadura:     { id: 2 },
+    armadura:     2,
     armas:        [{ id: 24 }],
     protecciones: [{ id: 2 }]
   }

@@ -11,7 +11,7 @@ def h85
     mente:      3,
     mov:        6,
     skills:     [3, 4],
-    armadura:   { id: 2 },
+    armadura:   2,
     armas:      [
       { id: 7 },
       { id: 11 }

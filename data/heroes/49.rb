@@ -16,8 +16,8 @@ def h49
     mov:          7,
     hechizos:     [0, 1, 2],
     shadows:      [0, 1, 2],
-    armas:        [{ id: 3 }],
-    armadura:     { id: 1 },
-    skills:       [0, 1]
+    skills:       [0, 1],
+    armadura:     1,
+    armas:        [{ id: 3 }]
   }
 end

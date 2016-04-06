@@ -11,7 +11,7 @@ def h37
     mente:      3,
     mov:        8,
     familiar:   { id: 16, name: 'bigotitos', torpe: true },
-    armadura:   { id: 2 },
+    armadura:   2,
     armas:      [
       { id: 11 },
       { id: 7 }

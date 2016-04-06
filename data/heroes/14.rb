@@ -16,7 +16,7 @@ def h14
     mente:       6,
     mov:         17,
     hechizos:    [6, 7, 8],
-    armadura:    { id: 2 },
+    armadura:    2,
     armas:       [
       { id: 2, enchants: [16] },
       { id: 1, enchants: [75] }

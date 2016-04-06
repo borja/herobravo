@@ -6,17 +6,17 @@ def h71
     personaje:   "clérigo",
     jugador:     'Alberto',
     status:      'reserva',
+    profesion:   { id: 6, aprendiz: [0] },
     nivel:       4,
     cuerpo:      8,
     mente:       4,
     mov:         8,
     repu:        1,
-    profesion:   { id: 6, aprendiz: [0] },
+    armadura:    3,
     armas:       [
       { id: 27, ranuras: 2, enchants: [109] },
       { id: 7, enchants: [110] }
     ],
-    armadura:     { id: 3 },
     protecciones: [
       { id: 0 },
       { id: 3, enchants: [8] },

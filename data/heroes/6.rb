@@ -12,7 +12,6 @@ def h6
     mente:     3,
     mov:       10,
     armas:     [{ id: 0 }],
-    armadura:  { id: 0 },
     skills:    [
       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
     ]

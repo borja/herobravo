@@ -12,7 +12,7 @@ def h54
     mente:     6,
     mov:       7,
     skills:    [0, 1],
-    armadura:  { id: 1 },
+    armadura:  1,
     armas:     [{ id: 8 }],
     hechizos:  [0, 1, 2, 6, 7, 8, 12, 13, 14, 18, 19, 20]
   }

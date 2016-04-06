@@ -12,7 +12,7 @@ def h68
     hechizos:  [1, 6, 7, 8, 12, 13, 14, 18, 19, 20],
     shadows:   [0, 2],
     familiar:  { id: 8, name: 'Hostias', torpe: true},
-    armadura:  { id: 1 },
+    armadura:  1,
     armas:     [
       { id: 3 },
       { id: 4, enchants: [95] }
