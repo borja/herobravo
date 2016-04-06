@@ -12,6 +12,7 @@ def h28
     hechizos:    [0, 1, 2, 6, 7, 8, 12, 13, 14, 31, 32, 34],
     shadows:     [0, 1, 2],
     skills:      [1, 5, 3, 4, 5, 6, 7],
+    profesion:   { id: 0, aprendiz: [0] },
     armadura:    { id: 1, ranuras: 3, enchants: [0, 1] },
     armas:       [
       { id: 3 },
@@ -19,7 +20,6 @@ def h28
     ],
     protecciones: [{ id: 8, joyas: [20, 9] }],
     miscelaneas:  [{ id: 1 }],
-    profesion:    Profesion.new(id: 0, aprendiz: [0]),
     tesoro:       { gemas: [2, 5, 31] },
     pergaminos:   [
       Pergamino.new(id: 1, spells: [57]),

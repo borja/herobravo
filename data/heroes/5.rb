@@ -7,6 +7,7 @@ def h5
     jugador:     'Daniel Cabañas',
     status:      'activo',
     familiar:    { id: 6, name: 'Verruguitas' },
+    profesion:   { id: 1, aprendiz: [0, 2] },
     historia:    1,
     nivel:       15,
     repu:        6,
@@ -31,7 +32,6 @@ def h5
       { id: 6, enchants: [6] }
     ],
     skills:      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-    profesion:   Profesion.new(id: 1, aprendiz: [0, 2]),
     piezas:      [3, 8],
     hechizos:    [
       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 24, 25, 26, 27, 28, 29, 30, 31,

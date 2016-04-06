@@ -14,7 +14,7 @@ def h76
     cuerpo:      7,
     mente:       4,
     mov:         7,
-    profesion:   Profesion.new(id: 1, aprendiz: [0]),
+    profesion:   { id: 1, aprendiz: [0] },
     armadura:    { id: 1 },
     armas:       [{ id: 0 }],
     miscelaneas: [

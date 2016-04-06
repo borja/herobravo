@@ -11,7 +11,7 @@ def h13
     cuerpo:      13,
     mente:       3,
     mov:         8,
-    profesion:   Profesion.new(id: 3, aprendiz: [0]),
+    profesion:   { id: 3, aprendiz: [0] },
     familiar:    { id: 24, name: 'Nemesio', torpe: true},
     armadura:    { id: 3, gemas: [25, 28], enchants: [107] },
     armas:       [
@@ -25,7 +25,7 @@ def h13
       { id: 8, ranuras: 2 }
     ],
     miscelaneas: [
-      Miscelanea.new(id: 2, enchants: [106, 20])
+      { id: 2, enchants: [106, 20] }
     ],
     skills:      [0, 1, 2, 3, 5, 6, 8, 9, 10, 11],
     pociones:    [3, 12],

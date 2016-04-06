@@ -13,7 +13,7 @@ def h8
     mov:         10,
     mounts:      [1],
     piezas:      [3],
-    profesion:   Profesion.new(id: 3, aprendiz: [0, 1, 3]),
+    profesion:   { id: 3, aprendiz: [0, 1, 3] },
     familiar:    { id: 18, name: 'pendeja', torpe: true },
     armadura:    { id: 7 },
     armas:       [

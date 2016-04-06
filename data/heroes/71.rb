@@ -11,7 +11,7 @@ def h71
     mente:       4,
     mov:         8,
     repu:        1,
-    profesion:   Profesion.new(id: 6, aprendiz: [0]),
+    profesion:   { id: 6, aprendiz: [0] },
     armas:       [
       { id: 27, ranuras: 2, enchants: [109] },
       { id: 7, enchants: [110] }

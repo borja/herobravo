@@ -6,6 +6,7 @@ def h80
     personaje:    'conjurador',
     jugador:      'Luis',
     status:       'reserva',
+    profesion:    { id: 6, aprendiz: [0] },
     nivel:        3,
     repu:         0,
     cuerpo:       6,
@@ -18,7 +19,6 @@ def h80
     armadura:     { id: 1 },
     miscelaneas:  [
       { id: 21, enchants: [103] }
-    ],
-    profesion:    Profesion.new(id: 6, aprendiz: [0])
+    ]
   }
 end

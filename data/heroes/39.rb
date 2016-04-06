@@ -14,7 +14,7 @@ def h39
     cuerpo:      4,
     mente:       13,
     mov:         8,
-    profesion:   Profesion.new(id: 4, aprendiz: [0, 1]),
+    profesion:   { id: 4, aprendiz: [0, 1] },
     armas:       [{ id: 13, enchants: [61, 62, 63] }],
     armadura:    { id: 1, gemas: [13], joyas: [6] },
     miscelaneas: [

@@ -9,6 +9,7 @@ def h2
     progenitores: [47, 33],
     camino:       ['El Justiciero', 1],
     familiar:     {id: 11, name: 'Basidio'},
+    profesion:    { id: 5, aprendiz: [0, 3, 4, 5] },
     pareja:       { nombre: 'Lauranna', raza: 'dead', tipo: 'pnj' },
     repu:         9,
     nivel:        19,
@@ -47,7 +48,6 @@ def h2
       0, 1, 2, 3, 4, 4, 5, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18,
       19, 20, 22, 25, 26, 27, 28, 29, 30, 32, 33, 34, 35, 36, 37
     ],
-    profesion:    Profesion.new(id: 5, aprendiz: [0, 3, 4, 5]),
     piezas:       [3, 6, 4],
     pociones:     [0, 4, 6, 7, 7, 11],
     pergaminos:   [

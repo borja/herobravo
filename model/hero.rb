@@ -107,37 +107,38 @@ class Hero < Hash
     return elementos
   end
 
-  def img_path      ; "'../images/personajes/#{self.genderize}.png'" end
-  def big_path      ; "'../../images/portraits/#{self.name}.png'" end
-  def reputacion    ; repu || 0 end
-  def movimiento    ; mov end
-  def raza          ; %w(clérigo ladrón bárbaro mago).include?(self.clase) ? 'humano' : self.clase end
-  def female?       ; sex == 'female' end
-  def male?         ; sex == 'male' end
-  def anillos       ; (baratijas || []).select { |m| m.fits == "anillo"  } end
-  def amuletos      ; (baratijas || []).select { |m| m.fits == "amuleto" } end 
-  def ataque        ; weapons.first.categoria != 'distancia' ? weapons.first.ataque : 0 end
-  def rango         ; weapons.first.categoria == 'distancia' ? weapons.first.ataque : 0 end
-  def defensa       ; armour.defensa end
-  def armour        ; Armadura.new(armadura) if armadura end
-  def pet           ; Pet.new(familiar) if familiar end
-  def weapons       ; self.armas.map        {|w|        Arma.new(w)}       if self.armas             end
-  def baratijas     ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
-  def proteccions   ; self.protecciones.map {|p|  Proteccion.new(p)}       if self.protecciones      end
-  def trinkets      ; self.abalorios.map    {|a|    Abalorio.new(a)}       if self.abalorios         end
-  def cacharros     ; self.piezas.map       {|num|     Pieza.new(id: num)} if self.piezas            end
-  def brebajes      ; self.pociones.map     {|num|    Pocion.new(id: num)} if self.pociones          end
-  def componentes   ; self.materiales.map   {|num|  Material.new(id: num)} if self.materiales        end
-  def transportes   ; self.mounts.map       {|num|   Montura.new(montura(num))} if self.mounts       end
-  def masters       ; self.master.map       {|num| Habilidad.new(maestrodearma(num))} if self.master end 
-  def habilidades   ; self.skills.map       {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
-  def magias        ; self.hechizos.map {|num|  spell(num)}  if self.hechizos end
-  def blood_magic   ; self.blood.map    {|num| sangre(num)}  if self.blood    end
-  def shadow_magic  ; self.shadows.map  {|num| sombra(num)}  if self.shadows  end 
-  def sin_recursos  ; self.tesoro.nil? end
-  def empadronado   ; self.ciudad || "Jadessvärd" end
-  def estado        ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
-  def capacidad     ; nivel/3 + 3 end #inventario
+  def img_path    ; "'../images/personajes/#{self.genderize}.png'" end
+  def big_path    ; "'../../images/portraits/#{self.name}.png'" end
+  def reputacion  ; repu || 0 end
+  def movimiento  ; mov end
+  def raza        ; %w(clérigo ladrón bárbaro mago).include?(self.clase) ? 'humano' : self.clase end
+  def female?     ; sex == 'female' end
+  def male?       ; sex == 'male' end
+  def anillos     ; (baratijas || []).select { |m| m.fits == "anillo"  } end
+  def amuletos    ; (baratijas || []).select { |m| m.fits == "amuleto" } end 
+  def ataque      ; weapons.first.categoria != 'distancia' ? weapons.first.ataque : 0 end
+  def rango       ; weapons.first.categoria == 'distancia' ? weapons.first.ataque : 0 end
+  def defensa     ; armour.defensa end
+  def armour      ; Armadura.new(armadura) if armadura end
+  def gremio      ; Profesion.new(profesion) end
+  def pet         ; Pet.new(familiar) if familiar end
+  def weapons     ; self.armas.map        {|w|        Arma.new(w)}       if self.armas             end
+  def baratijas   ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
+  def proteccions ; self.protecciones.map {|p|  Proteccion.new(p)}       if self.protecciones      end
+  def trinkets    ; self.abalorios.map    {|a|    Abalorio.new(a)}       if self.abalorios         end
+  def cacharros   ; self.piezas.map       {|num|     Pieza.new(id: num)} if self.piezas            end
+  def brebajes    ; self.pociones.map     {|num|    Pocion.new(id: num)} if self.pociones          end
+  def componentes ; self.materiales.map   {|num|  Material.new(id: num)} if self.materiales        end
+  def transportes ; self.mounts.map       {|num|   Montura.new(montura(num))} if self.mounts       end
+  def masters     ; self.master.map       {|num| Habilidad.new(maestrodearma(num))} if self.master end 
+  def habilidades ; self.skills.map       {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
+  def magias       ; self.hechizos.map {|num|  spell(num)} if self.hechizos end
+  def blood_magic  ; self.blood.map    {|num| sangre(num)} if self.blood    end
+  def shadow_magic ; self.shadows.map  {|num| sombra(num)} if self.shadows  end 
+  def sin_recursos ; self.tesoro.nil? end
+  def empadronado  ; self.ciudad || "Jadessvärd" end
+  def estado       ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
+  def capacidad    ; nivel/3 + 3 end #inventario
 
   def resistencia(elemento) # I'm sorry for this...
     total = 0 # Initialize default returns 0

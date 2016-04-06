@@ -14,7 +14,7 @@ def h48
     cuerpo:       9,
     mente:        3,
     mov:          8,
-    profesion:    Profesion.new(id: 3, aprendiz: [0, 1]),
+    profesion:    { id: 3, aprendiz: [0, 1] },
     armadura:     { id: 2 },
     armas:        [
       { id: 5 },

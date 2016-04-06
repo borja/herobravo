@@ -1,21 +1,24 @@
 -
       id:           0
-      name:         "Venganza"
-      description:  "Al recibir 1 herida el tiefling recibe 1 punto de sombra (PS) y tiene Agravio contra el atacante."
-      type:         "Reactiva"
-      requisitos:   [2]
       nivel:        2
+      name:         "Venganza"
+      type:         "Reactiva"
+      description:  "Al recibir 1 herida el tiefling recibe 1 punto de sombra (PS) y tiene Agravio contra el atacante."
+      requisitos:   [2]
 -
       id:           1
-      name:         "Secuestrar sombra"
-      description:  "A cambio de 1 PS el tiefling se convierte en la sombra de su enemigo permitiendo un ataque a distancia. Si consigue matar al enemigo da miedo +1 a los enemigos circundantes si le declaran como objetivo de ataque."
-      type:         "Activa"
       nivel:        2
+      name:         "Secuestrar sombra"
+      type:         "Activa"
+      description:  
+                    "A cambio de 1 PS el tiefling se convierte en la sombra de su enemigo,
+                     permitiendo un ataque a distancia. Si consigue matar al enemigo,
+                     da miedo +1 a los enemigos circundantes si le declaran como objetivo de ataque."
 -
       id:           2
       name:         "Agravio"
-      description:  "Gana 1 PS al matar a un enemigo que ha hecho una herida al tiefling con anterioridad."
       type:         "Pasiva"
+      description:  "Gana 1 PS al matar a un enemigo que ha hecho una herida al tiefling con anterioridad."
       nivel:        2
 -
       id:           3
@@ -25,49 +28,86 @@
       nivel:        3  
 -
       id:           4
-      name:         "Juramento sombrío"
-      description:  "Un aliado hace un pacto con el tiefling recibiendo Agravio cada vez que un enemigo le haga daño al aliado."
-      type:         "Pasiva"
       nivel:        3
+      requisitos:   [2]
+      name:         "Juramento sombrío"
+      type:         "Pasiva"
+      description:  "Un aliado hace un pacto con el tiefling recibiendo Agravio cada vez que un enemigo le haga daño al aliado."
 -
       id:           5
-      name:         "Ataque sombrío"
-      description:  "A cambio de 1 PS al atacar los dados de combate son dados negros."
-      type:         "Activa"
       nivel:        3
+      requisitos:   [2]
+      name:         "Ataque sombrío"
+      type:         "Activa"
+      coste:        "1 punto de sombra"
+      description:  "Al atacar, los dados de combate son dados negros."
 -
       id:           6
-      name:         "Odio"
-      description:  "A cambio de 1 PC el tiefling tiene agravio contra el objetivo que él desee."
-      type:         "Activa"
       nivel:        4
+      requisitos:   [2]
+      name:         "Odio"
+      type:         "Activa"
+      coste:        "1 PC"
+      description:  "Tienes Agravio contra el objetivo que él desee."
 -
       id:           7
       name:         "Tenebroso destino"
-      description:  "Cuando el teifling mata a un enemigo que esté bajo un efecto de miedo gana 1 Punto de Tenebro (PT)."
+      description:  "Cuando el tiefling mata a un enemigo que esté bajo un efecto de miedo gana 1 Punto de Tenebro (PT)."
       type:         "Pasiva"
       nivel:        4
 -
       id:           8
+      requisitos:   [7]
       name:         "Escudo de tinieblas"
-      description:  "Tras haber declarado el Malvado Brujo un ataque en conjunto al tiefling a cambio de 1 PT no se realiza el ataque en conjunto. Todos los ataques realizados al tiefling se defienden por separado."
+      description:  
+                    "Tras haber declarado el Malvado Brujo un ataque en conjunto al tiefling,
+                     no se realizará el ataque en conjunto. 
+                     Todos los ataques realizados al tiefling se defenderán por separado."
       type:         "Activa"
+      coste:        "1 Punto Tenebro"
       nivel:        5
 -
       id:           9
-      name:         "Venganza desatada"
-      description:  "Cada vez que un enemigo sufra miedo a causa del vengador éste podrá lanzar sin coste un hechizo de fuego de sus hechizos disponibles."
-      type:         "Reactiva"
       nivel:        5
+      requisitos:   [3]
+      name:         "Venganza desatada"
+      type:         "Reactiva"
+      description:
+                    "Cada vez que un enemigo sufra miedo a causa del vengador,
+                     éste podrá lanzar sin coste un hechizo de fuego de sus hechizos disponibles."
 -
       id:           10
-      name:         "Gloria del héroe"
-      description:  "Ignora cualquier daño que le fuera a ser realizado al héroe. El efecto cesa al finalizar el turno del Malvado Brujo. Debe utilizarse ANTES de la tirada de ataque."
-      type:         "Activa"
       nivel:        6
+      requisitos:   [2]
+      name:         "Paranoia"
+      type:         "Pasiva"
+      description:  "+1 potencia de ataque por cada enemigo con Agravio en S/P"
 -
       id:           11
-      name:         "Venganza impía"
-      description:  "Cada vez que un enemigo supere una tirada de miedo causada por el Vengador éste podrá lanzar sin coste un hechizo de sombras de sus hechizos disponibles"
-      type:         "Reactiva"
       nivel:        6
+      requisitos:   [3]
+      name:         "Venganza impía"
+      type:         "Reactiva"
+      description:  
+                    "Cada vez que un enemigo supere una tirada de miedo causada por el Vengador,
+                     éste podrá lanzar sin coste un hechizo de sombras de sus hechizos disponibles"
+-
+      id:           12
+      nivel:        7
+      name:         "Saciar ofensas"
+      type:         "Única"
+      description:  "+1 Fuerza a tu siguiente ataque por cada punto de cuerpo perdido."
+-
+      id:           13
+      nivel:        7
+      requisitos:   [2,7]
+      name:         "Consumación"
+      type:         "Reactiva"
+      description:  "+1 PT al sufrir daños por un enemigo con Agravio."
+-
+      id:           14
+      nivel:        8
+      requisitos:   [12, 2]
+      name:         "Catarsis"
+      type:         "Reactiva"
+      description:  "Recupera saciar ofensas al defender con éxito un ataque de un enemigo con Agravio"

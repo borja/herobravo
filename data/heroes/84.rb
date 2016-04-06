@@ -12,7 +12,7 @@ def h84
     cuerpo:      13,
     mente:       5,
     mov:         10,
-    profesion:   Profesion.new(id: 3, aprendiz: [0, 1, 3]),
+    profesion:   { id: 3, aprendiz: [0, 1, 3] },
     familiar:    { id: 18, name: 'Pendeja', torpe: true },
     armadura:    { id: 0 },
     armas:       [{ id: 0 }],
