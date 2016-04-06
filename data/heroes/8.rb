@@ -29,7 +29,9 @@ def h8
       { id: 1, enchants: [10] },
       { id: 10, enchants: [0] }
     ],
-    pergaminos:  [Pergamino.new(id: 2, spells: [14])],
+    pergaminos:  [
+      { id: 2, spells: [14] }
+    ],
     skills:      [
       0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14
     ],

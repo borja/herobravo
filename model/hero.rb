@@ -107,8 +107,8 @@ class Hero < Hash
     return elementos
   end
 
-  def img_path    ; "'../images/personajes/#{self.genderize}.png'" end
-  def big_path    ; "'../../images/portraits/#{self.name}.png'" end
+  def img_path    ; "'../images/personajes/#{genderize}.png'" end
+  def big_path    ; "'../../images/portraits/#{name}.png'" end
   def reputacion  ; repu || 0 end
   def movimiento  ; mov end
   def raza        ; %w(clérigo ladrón bárbaro mago).include?(self.clase) ? 'humano' : self.clase end
@@ -126,6 +126,7 @@ class Hero < Hash
   def baratijas   ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
   def proteccions ; self.protecciones.map {|p|  Proteccion.new(p)}       if self.protecciones      end
   def trinkets    ; self.abalorios.map    {|a|    Abalorio.new(a)}       if self.abalorios         end
+  def pergs       ; self.pergaminos.map   {|p|   Pergamino.new(p)}       if self.pergaminos        end
   def cacharros   ; self.piezas.map       {|num|     Pieza.new(id: num)} if self.piezas            end
   def brebajes    ; self.pociones.map     {|num|    Pocion.new(id: num)} if self.pociones          end
   def componentes ; self.materiales.map   {|num|  Material.new(id: num)} if self.materiales        end
@@ -137,7 +138,7 @@ class Hero < Hash
   def shadow_magic ; self.shadows.map  {|num| sombra(num)} if self.shadows  end 
   def sin_recursos ; self.tesoro.nil? end
   def empadronado  ; self.ciudad || "Jadessvärd" end
-  def estado       ; self.empadronado == "Jadessvärd" ? (self.status || "ausente") : "extranjero"  end
+  def estado       ; empadronado == "Jadessvärd" ? (status || "ausente") : "extranjero"  end
   def capacidad    ; nivel/3 + 3 end #inventario
 
   def resistencia(elemento) # I'm sorry for this...

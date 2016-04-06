@@ -30,7 +30,7 @@ def h14
     skills:      [0, 1, 2, 4, 5, 6, 8],
     pociones:    [0],
     piezas:      [0, 4],
-    pergaminos:  [Pergamino.new(id: 1, spells: [11])],
+    pergaminos:  [{ id: 1, spells: [11] }],
     tesoro:      { gemas: [12] }
   }
 end
