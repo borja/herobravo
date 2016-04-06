@@ -11,7 +11,7 @@ def h25
     mente:        3,
     mov:          6,
     armas:        [{ id: 12 }],
-    armadura:     { id: 2 },
+    armadura:     2,
     protecciones: [{ id: 2 }]
   }
 end

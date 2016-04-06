@@ -20,7 +20,6 @@ def h70
     skills:       [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11],
     hechizos:     [0, 1, 2],
     shadows:      [0, 1, 2, 5],
-    armas:        [{ id: 0 }],
-    armadura:     { id: 0 }
+    armas:        [{ id: 0 }]
   }
 end

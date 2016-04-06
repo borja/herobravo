@@ -16,7 +16,7 @@ def h11
     hechizos:    [6, 7, 8],
     skills:      [0, 1, 2, 3, 4, 5, 6, 7],
     pociones:    [7],
-    armadura:    { id: 2 },
+    armadura:    2,
     armas:       [
       { id: 2, gemas: [11, 11, 11, 53] },
       { id: 5 }

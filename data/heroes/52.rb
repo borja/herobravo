@@ -10,7 +10,7 @@ def h52
     mente:     5,
     mov:       10,
     skills:    [0, 1, 2, 3],
-    armadura:  { id: 2 },
+    armadura:  2,
     armas:     [
       { id: 14 },
       { id: 25 }

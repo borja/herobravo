@@ -12,7 +12,7 @@ def h53
     mente:       4,
     mov:         9,
     skills:      [1, 2],
-    armadura:    { id: 2 },
+    armadura:    2,
     armas:       [
       { id: 14 },
       { id: 25 }

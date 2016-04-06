@@ -11,7 +11,7 @@ def h21
     mov:          7,
     hechizos:     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     armas:        [{ id: 3 }],
-    armadura:     { id: 1 },
+    armadura:     1,
     proteccioness: [
       { id: 1 },
       { id: 8 }

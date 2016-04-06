@@ -14,11 +14,11 @@ def h5
     cuerpo:      5,
     mente:       20,
     mov:         8,
+    armadura:    { id: 1, ranuras: 4, enchants: [41] },
     armas:       [
       { id: 21, ranuras: 3 },
       { id: 20, enchants: [40] }
     ],
-    armadura:    { id: 1, ranuras: 4, enchants: [41] },
     protecciones:[
       { id: 3, gemas: [13] },
       { id: 11 },

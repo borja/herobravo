@@ -11,11 +11,11 @@ def h58
     cuerpo:       12,
     mente:        3,
     mov:          10,
+    armadura:     3,
     armas:        [
       { id: 12, enchants: [12] },
       { id: 17, gemas: [40] }
     ],
-    armadura:     { id: 3 },
     protecciones: [
       { id: 1, ranuras: 2 },
       { id: 2 },

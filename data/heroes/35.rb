@@ -9,11 +9,11 @@ def h35
     cuerpo:      7,
     mente:       3,
     mov:         6,
+    armadura:    2,
     armas:       [
       { id: 11 },
       { id: 7 }
     ],
-    armadura:    { id: 2 },
     protecciones: [{ id: 5, enchants: [5] }]
   }
 end

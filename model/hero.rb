@@ -25,6 +25,15 @@ class Hero < Hash
     end
   end
   
+  # Default-ed meta-methods
+  def armour
+    case armadura.class.to_s
+      when 'Fixnum' then Armadura.new(id: armadura)
+      when 'Hash'   then Armadura.new(armadura)
+      else Armadura.new(id: 0)
+    end
+  end
+  
   def cuerpo_base
     case clase
       when 'mago'     then return 4
@@ -119,9 +128,8 @@ class Hero < Hash
   def ataque      ; weapons.first.categoria != 'distancia' ? weapons.first.ataque : 0 end
   def rango       ; weapons.first.categoria == 'distancia' ? weapons.first.ataque : 0 end
   def defensa     ; armour.defensa end
-  def armour      ; Armadura.new(armadura) if armadura end
-  def gremio      ; Profesion.new(profesion) end
-  def pet         ; Pet.new(familiar) if familiar end
+  def gremio      ; Profesion.new(profesion) if profesion end
+  def pet         ;        Pet.new(familiar) if familiar  end
   def weapons     ; self.armas.map        {|w|        Arma.new(w)}       if self.armas             end
   def baratijas   ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
   def proteccions ; self.protecciones.map {|p|  Proteccion.new(p)}       if self.protecciones      end

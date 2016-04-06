@@ -11,7 +11,7 @@ def h41
     cuerpo:       9,
     mente:        6,
     mov:          9,
-    armadura:     { id: 2 },
+    armadura:     2,
     armas:        [{ id: 22, enchants: [46] }],
     miscelaneas:  [{ id: 12, enchants: [43, 44, 45] }],
     protecciones: [

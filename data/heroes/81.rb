@@ -14,11 +14,11 @@ def h81
     mov:          9,
     skills:       [1, 2, 3, 6],
     hechizos:     [6, 7, 8],
+    armadura:     2,
     armas:        [
       { id: 25 },
       { id: 14 }
     ],
-    armadura:     { id: 2 },
     miscelaneas:  [
       { id: 21, enchants: [29] }
     ]

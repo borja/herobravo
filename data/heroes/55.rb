@@ -11,7 +11,7 @@ def h55
     cuerpo:    5,
     mente:     5,
     mov:       7,
-    armadura:  { id: 2 },
+    armadura:  2,
     armas:     [
       { id: 1 },
       { id: 3, ranuras: 1 }

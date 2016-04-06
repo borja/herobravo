@@ -13,7 +13,6 @@ def h19
     mente:     5,
     mov:       7,
     hechizos:  [1, 2, 3, 13, 14, 15],
-    armadura:  { id: 0 },
     armas:     [{ id: 0 }],
     skills:    [1, 2, 3]
   }

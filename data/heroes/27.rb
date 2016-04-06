@@ -10,11 +10,11 @@ def h27
     mente:       6,
     mov:         7,
     hechizos:    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    armadura:    2,
     armas:       [
       { id: 4 },
       { id: 3 }
     ],
-    armadura:    { id: 1 },
     miscelaneas: [{id: 1}]
   }
 end

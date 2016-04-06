@@ -12,7 +12,7 @@ def h31
     hechizos:  [0, 1, 2],
     shadows:   [0, 1, 2],
     armas:     [{ id: 2 }],
-    armadura:  { id: 1 },
+    armadura:  1,
     skills:    [0, 1],
     gender:    'female',
     status:    'reserva'

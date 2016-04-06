@@ -22,7 +22,7 @@ def h3
     materiales:   [0, 0],
     pociones:     [3],
     armas:        [{ id: 24, enchants: [72, 73, 74], gemas: [40], joyas: [9] }],
-    armadura:     { id: 3 },
+    armadura:     3,
     protecciones: [
       { id: 1, enchants: [20], ranuras: 2 },
       { id: 3 },

@@ -11,7 +11,7 @@ def h74
     cuerpo:    4,
     mente:     6,
     mov:       7,
-    armadura:  { id: 1 },
+    armadura:  1,
     armas:     [{ id: 2 }]
   }
 end

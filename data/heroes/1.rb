@@ -24,11 +24,11 @@ def h1
     cuerpo:       11,
     mente:        11,
     mov:          19,
+    armadura:     { id: 6, gemas: [36, 29, 37] },
     armas:        [
       { id: 6, joyas: [10, 10] },
       { id: 3, gemas: [32] }
     ],
-    armadura:     { id: 6, gemas: [36, 29, 37] },
     protecciones: [
       { id: 12, gemas: [30], joyas: [3] },
       { id: 8,  gemas: [24], joyas: [1, 1] },

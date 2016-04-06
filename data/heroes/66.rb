@@ -11,7 +11,7 @@ def h66
     mente:     4,
     mov:       8,
     skills:    [0],
-    armadura:  { id: 2 },
+    armadura:  2,
     armas:     [
       { id: 1 },
       { id: 7 }

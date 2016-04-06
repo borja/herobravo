@@ -12,7 +12,7 @@ def h83
     mov:        7,
     skills:     [0, 2],
     pociones:   [1, 4],
-    armadura:   { id: 3 },
+    armadura:   3,
     armas:      [
       { id: 13 },
       { id: 3 }

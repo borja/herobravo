@@ -7,6 +7,7 @@ def h79
     jugador:      'Carlos',
     gender:       'female',
     status:       'reserva',
+    profesion:    { id: 3, aprendiz: [0] },
     nivel:        2,
     repu:         0,
     cuerpo:       6,
@@ -15,6 +16,7 @@ def h79
     skills:       [0, 2],
     hechizos:     [12, 13, 14, 18, 19, 20],
     pociones:     [3],
+    armadura:     2,
     armas:        [
       { id: 7 },
       { id: 27, enchants: [101] }
@@ -22,8 +24,6 @@ def h79
     protecciones: [
       { id: 4, enchants: [7] },
       { id: 2, enchants: [102] }
-    ],
-    profesion:    { id: 3, aprendiz: [0] },
-    armadura:     { id: 2 }
+    ]
   }
 end

@@ -15,7 +15,7 @@ def h44
     mente:        10,
     mov:          16,
     hechizos:     [6, 7, 8],
-    armadura:     { id: 2 },
+    armadura:     2,
     armas:        [
       { id: 14, gemas: [4, 22] },
       { id: 25, enchants: [81] }

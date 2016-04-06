@@ -9,7 +9,7 @@ def h18
     cuerpo:       8,
     mente:        3,
     mov:          7,
-    armadura:     { id: 3 },
+    armadura:     3,
     armas:        [{ id: 12 }],
     protecciones: [
       { id: 2 },

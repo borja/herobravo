@@ -11,7 +11,7 @@ def h67
     mente:     2,
     mov:       7,
     skills:    [2, 3],
-    armadura:  { id: 2 },
+    armadura:  2,
     armas:     [{ id: 10, enchants: [16] }]
   }
 end

@@ -13,7 +13,7 @@ def h0
     cuerpo:       5,
     mente:        10,
     mov:          7,
-    armadura:     { id: 1 },
+    armadura:     1,
     armas:        [{ id: 8, enchants: [59], ranuras: 1 }],
     miscelaneas:  [
       { id: 2,  enchants: [30, 31], ranuras: 1 },

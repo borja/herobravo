@@ -10,7 +10,7 @@ def h51
     cuerpo:    6,
     mente:     4,
     mov:       8,
-    armadura:  { id: 2 },
+    armadura:  2,
     armas:     [
       { id: 14 },
       { id: 25 }
