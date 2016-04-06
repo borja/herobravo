@@ -44,8 +44,8 @@ def h5
       joyas: [10, 11]
     },
     pergaminos:  [
-      Pergamino.new(id: 1, spells: [94]),
-      Pergamino.new(id: 1, spells: [9])
+      { id: 1, spells: [94] },
+      { id: 1, spells: [9]  }
     ]
   }
 end

@@ -20,7 +20,9 @@ def h0
       { id: 16, enchants: [60] }
     ],
     protecciones: [{ id: 8 }],
-    pergaminos:   [Pergamino.new({ id: 1, spells: [11] })],
+    pergaminos:   [
+      { id: 1, spells: [11] }
+    ],
     skills:       [0, 1, 2, 3, 4, 5, 6],
     hechizos:     [0, 1, 2, 6, 7, 8, 12, 13, 14, 18, 19, 20, 29, 39],
     descendencia: true

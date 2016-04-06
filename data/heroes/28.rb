@@ -22,8 +22,8 @@ def h28
     miscelaneas:  [{ id: 1 }],
     tesoro:       { gemas: [2, 5, 31] },
     pergaminos:   [
-      Pergamino.new(id: 1, spells: [57]),
-      Pergamino.new(id: 1, spells: [59])
+      { id: 1, spells: [57] },
+      { id: 1, spells: [59] }
     ],
     pociones:    [9]
   }

@@ -18,8 +18,9 @@ def h83
       { id: 3 }
     ],
     pergaminos: [
-      Pergamino.new(id: 3),
-      Pergamino.new(id: 1, spells: [8]),
-      Pergamino.new(id: 1, spells: [8])]
+      { id: 3 },
+      { id: 1, spells: [8] },
+      { id: 1, spells: [8] }
+    ]
   }
 end

@@ -21,11 +21,11 @@ def h2
     hechizos:     [
       1, 2, 3, 6, 7, 8, 12, 16, 17, 18, 19, 20
     ],
+    armadura:     { id: 6, gemas: [34, 32, 34] },
     armas:        [
       { id: 9, gemas: [25, 17, 26], enchants: [18, 1, 2, 3, 4, 17] },
       { id: 7, gemas: [25, 17, 26], enchants: [105] }
     ],
-    armadura:     { id: 6, gemas: [34, 32, 34] },
     protecciones: [
       { id: 1, runas:     [2], gemas: [49], enchants: [7] },
       { id: 15, gemas: [21], enchants: [20, 34, 49, 50, 51, 52], ranuras: 4 },
@@ -51,9 +51,9 @@ def h2
     piezas:       [3, 6, 4],
     pociones:     [0, 4, 6, 7, 7, 11],
     pergaminos:   [
-      Pergamino.new(id: 1, spells: [66]),
-      Pergamino.new(id: 1, spells: [95]),
-      Pergamino.new(id: 1, spells: [59])
+      { id: 1, spells: [66] },
+      { id: 1, spells: [95] },
+      { id: 1, spells: [59] }
     ],
     tesoro:       {
       gemas: [14, 24, 25, 25, 17, 35, 16, 16, 27, 18, 30],

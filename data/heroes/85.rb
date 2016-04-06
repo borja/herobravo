@@ -20,9 +20,9 @@ def h85
       { id: 22, enchants: [10] }
     ],
     pergaminos: [
-      Pergamino.new(id: 3),
-      Pergamino.new(id: 1, spells: [8]),
-      Pergamino.new(id: 1, spells: [8])
+      { id: 3 },
+      { id: 1, spells: [8] },
+      { id: 1, spells: [8] }
     ]
   }
 end
