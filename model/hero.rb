@@ -120,7 +120,7 @@ class Hero < Hash
   def big_path    ; "'../../images/portraits/#{name}.png'" end
   def reputacion  ; repu || 0 end
   def movimiento  ; mov end
-  def raza        ; %w(clérigo ladrón bárbaro mago).include?(self.clase) ? 'humano' : self.clase end
+  def raza        ; %w(clérigo ladrón bárbaro mago).include?(clase) ? 'humano' : clase end
   def female?     ; sex == 'female' end
   def male?       ; sex == 'male' end
   def anillos     ; (baratijas || []).select { |m| m.fits == "anillo"  } end
@@ -140,7 +140,7 @@ class Hero < Hash
   def componentes ; self.materiales.map   {|num|  Material.new(id: num)} if self.materiales        end
   def transportes ; self.mounts.map       {|num|   Montura.new(montura(num))} if self.mounts       end
   def masters     ; self.master.map       {|num| Habilidad.new(maestrodearma(num))} if self.master end 
-  def habilidades ; self.skills.map       {|num| Habilidad.new(send(self.personaje.gsub('señor de las bestias','beastslord'),num)) } if self.skills end
+  def habilidades ; self.skills.map       {|num| Habilidad.new(send(personaje.gsub('señor de las bestias','beastslord'),num)) } if skills end
   def magias       ; self.hechizos.map {|num|  spell(num)} if self.hechizos end
   def blood_magic  ; self.blood.map    {|num| sangre(num)} if self.blood    end
   def shadow_magic ; self.shadows.map  {|num| sombra(num)} if self.shadows  end 
@@ -198,22 +198,22 @@ class Hero < Hash
   end
   
   def padre
-    if self.progenitores
-      papa = self.progenitores.first
+    if progenitores
+      papa = progenitores.first
       case papa
-        when Fixnum then return {type: "pj",  char: hero(papa)}
-        when String then return {type: "pnj", char: papa}
+        when Fixnum then return {'type' => "pj",  'char' => hero(papa)}
+        when String then return {'type' => "pnj", 'char' => papa}
         else return "Fallo de padre => #{papa.class}"
       end
     else return nil end
   end
   
   def madre
-    if self.progenitores
-      mama = self.progenitores[1]
+    if progenitores
+      mama = progenitores[1]
       case mama
-        when Fixnum then return {type: "pj",  char: hero(mama)}
-        when String then return {type: "pnj", char: mama}
+        when Fixnum then return {'type' => "pj",  'char' => hero(mama)}
+        when String then return {'type' => "pnj", 'char' => mama}
         else return "Fallo de madre => #{mama.class}"
       end
     else return nil end

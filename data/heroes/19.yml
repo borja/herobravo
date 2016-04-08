@@ -1,0 +1,15 @@
+id:        19
+name:      "Lenny Blanc"
+personaje: "vengador"
+jugador:   "Daniel Cabañas"
+status:    "retirado"
+muerto:    true
+nivel:     3
+repu:      -1
+cuerpo:    7
+mente:     5
+mov:       7
+armas:
+  - { id: 0 }
+hechizos:  [1, 2, 3, 13, 14, 15]
+skills:    [1, 2, 3]
