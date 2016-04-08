@@ -36,14 +36,14 @@
 				<td><%= erb :'ficha/progenitores' %></td>
 			<% end %>
 			<% if p = h.pet %>
-				<td><%= erb :'display/display', :locals => { 
-						:title       => p.nombre, 
-						:path        => p.img_path,
-						:description => p.descripcion } %>
+				<td><%= erb :'display/display', locals: { 
+						title:       p.nombre, 
+						path:        p.img_path,
+						description: p.descripcion } %>
 				</td>
 			<% end %>
 			<% if m = h.transportes %>
-				<td><%= erb :'display/display', :locals => { 
+				<td><%= erb :'display/display', locals: { 
 						title:       m.first.name, 
 						path:        m.first.img_path,
 						description: m.first.bono } %>
@@ -57,10 +57,10 @@
 				</td>
 			<% end %>
 			<% if h.camino %>
-				<td><%= erb :'display/display', :locals => { 
-						:title       => 'Camino: ' + h.camino.first, 
-						:path        =>  "../images/caminos/#{h.camino.first.gsub(' ','%20')}.png",
-						:description => camino(h.camino.first).last[ h.camino.last - 1] } %>
+				<td><%= erb :'display/display', locals: { 
+						title:       'Camino: ' + h.camino.first, 
+						path:        "../images/caminos/#{h.camino.first.gsub(' ','%20')}.png",
+						description: camino(h.camino.first).last[ h.camino.last - 1] } %>
 				</td>
 			<% end %>
 		</tr>

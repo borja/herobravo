@@ -1,0 +1,13 @@
+id:        42
+name:      "Klaussius"
+personaje: "paladín"
+jugador:   "Klaussius"
+nivel:     1
+cuerpo:    6
+mente:     4
+mov:       7
+armadura:  2
+armas:
+  - { id: 2 }
+protecciones:
+  - { id: 0 }

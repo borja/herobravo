@@ -1,0 +1,14 @@
+id:        66
+name:      "Jammarcus"
+personaje: "druida"
+jugador:   "Gon"
+ciudad:    "Kellen"
+nivel:     1
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:
+  - { id: 1 }
+  - { id: 7 }
+skills:    [0]

@@ -4,6 +4,13 @@ def total_heros ; Dir['./data/heroes/*'].length end
 def heros ; [*0..(total_heros - 1)].map { |i| Hero.new(send("h#{i}")) } end
 def hero id ; heros[id] end
 
+total_heros.times do |i|
+  define_method("h#{i}") do
+    p "procesando héroe: #{i}"
+    YAML::load_file(File.join(__dir__, "../data/heroes/#{i}.yml"))
+  end
+end
+
 def personajes ; heros.map{ |p| p.personaje }.uniq end
 def clases     ; heros.map{ |p| p.clase     }.uniq end
 def jugadores  ; heros.map{ |p| p.jugador   }.uniq end

@@ -24,23 +24,23 @@
 					</a>
 				</td>
 				<td><%= hero.name %> (<%= hero.jugador %>)</td>
-				<% if hero.pareja[:tipo] == 'pj'%>
+				<% if hero.pareja['tipo'] == 'pj'%>
 					<td>
-						<%= hero(hero.pareja[:char]).name %>
-						(<%= hero(hero.pareja[:char]).jugador %>)
+						<%= hero(hero.pareja['char']).name %>
+						(<%= hero(hero.pareja['char']).jugador %>)
 					</td>
 					<td>
-						<a href=<%= "/hero/#{hero.pareja[:char]}" %>>
-							<%= erb :'display/portrait', locals: { h: hero(hero.pareja[:char]) } %>
+						<a href=<%= "/hero/#{hero.pareja['char']}" %>>
+							<%= erb :'display/portrait', locals: { h: hero(hero.pareja['char']) } %>
 						</a>
 					</td>
 				<% else %>
-					<td><%= hero.pareja[:nombre] %> (PnJ)</td>
+					<td><%= hero.pareja['nombre'] %> (PnJ)</td>
 					<td>
 						<%= erb :'display/display', locals: { 
-						  title:       hero.pareja[:nombre], 
-						  path:        "'../images/personajes/#{hero.pareja[:raza]}.png'" ,
-						  description: hero.pareja[:descripcion] } %>
+						  title:       hero.pareja['nombre'], 
+						  path:        "'../images/personajes/#{hero.pareja['raza']}.png'" ,
+						  description: hero.pareja['descripcion'] } %>
 					</td>
 				<% end %>
 			</tr>
