@@ -1,10 +1,9 @@
-id:        49
 name:      "Damadius Umbradrack"
 personaje: "brujo"
 jugador:   "Javier Galindo"
 status:    "retirado"
 muerto:    true
-familiar:  { id: 20, name: "terry" }
+familiar:  { id: 20, name: "Terry" }
 progenitores:
   - 39
   - "Azakel"

@@ -1,4 +1,3 @@
-id:        38
 name:      "Pumba"
 personaje: "bersérker"
 jugador:   "Alberto"
@@ -10,4 +9,4 @@ mente:     3
 mov:       7
 armadura:  2
 armas:     { id: 10, gemas: [37] }
-skills: [0, 1, 14]
+skills:    [0, 1, 14]

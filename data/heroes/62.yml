@@ -1,4 +1,3 @@
-id:        62
 name:      "Barothrinn"
 personaje: "matador"
 jugador:   "Edu"
@@ -9,4 +8,4 @@ mente:     3
 mov:       7
 armadura:  2
 armas:     [11, 3]
-skills: [1, 2]
+skills:    [1, 2]

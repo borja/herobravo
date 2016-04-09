@@ -1,8 +1,7 @@
-id:            47
-name:          "Elros Amarie"
-personaje:     "druida"
-jugador:       "Iris"
-status:        "retirado"
+name:      "Elros Amarie"
+personaje: "druida"
+jugador:   "Iris"
+status:    "retirado"
 progenitores:
   - 29
   - "Conde Ragnar"
