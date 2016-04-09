@@ -12,6 +12,7 @@ nivel:     8
 cuerpo:    8
 mente:     6
 mov:       17
+oro:       60
 armadura:  2
 armas:
   - { id: 2, enchants: [16] }

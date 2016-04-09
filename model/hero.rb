@@ -165,6 +165,16 @@ class Hero < Hash
   def estado       ; empadronado == "Jadessvärd" ? (status || "ausente") : "extranjero"  end
   def capacidad    ; nivel/3 + 3 end #inventario
 
+  def patrimonio
+    patrimonio = 0
+    patrimonio += oro
+  end
+  
+  def rentas
+    rentas = 0
+    rentas +=1 if profesion
+  end
+
   def resistencia(elemento) # I'm sorry for this...
     total = 0 # Initialize default returns 0
     regex = /vs #{Regexp.quote(elemento)}/  # looks for "+N vs #{elemento}"

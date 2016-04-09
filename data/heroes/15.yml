@@ -12,6 +12,7 @@ nivel:     7
 cuerpo:    6
 mente:     10
 mov:       7
+oro:       73
 armadura:  { id: 1, gemas: [1], enchants: [1] }
 armas:
   - 3

@@ -18,6 +18,7 @@ repu:   5
 cuerpo: 10
 mente:  6
 mov:    8
+oro:    35
 familiar:  { id: 18, name: "Menta", torpe: true }
 profesion: { id: 2, aprendiz: [0, 1] }
 armadura:  { id: 3, ranuras: 1 }

@@ -213,7 +213,8 @@
 -
   ruta:  "palacio"
   template:
-    main: "ciudad/palacio"
+    main:  "ciudad/palacio/main"
+    right: "ciudad/palacio/palacio"
 -
   ruta:  "templo"
   template:

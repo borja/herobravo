@@ -6,6 +6,7 @@ nivel:     1
 cuerpo:    4
 mente:     6
 mov:       7
+oro:       22
 familiar:  { id: 5, name: "Vladimir", torpe: true }
 pareja:    { nombre: "Leandra", raza: "maga", tipo: "pnj" }
 armadura:  { id: 1, gemas: [4] }

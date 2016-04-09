@@ -11,6 +11,7 @@ repu:        6
 cuerpo:      5
 mente:       20
 mov:         8
+oro:         151
 armadura:    { id: 1, ranuras: 4, enchants: [41] }
 armas:
   - { id: 21, ranuras: 3 }
