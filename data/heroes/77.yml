@@ -8,8 +8,6 @@ cuerpo:    6
 mente:     4
 mov:       7
 armadura:  2
-armas:
-  - { id: 7 }
-  - { id: 26 }
-hechizos: [0, 1, 2]
-shadows:  [0, 1, 2]
+armas:     [7, 26]
+hechizos:  [0, 1, 2]
+shadows:   [0, 1, 2]

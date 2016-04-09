@@ -34,6 +34,22 @@ class Hero < Hash
     end
   end
   
+  def get_weapon(weapon) # Analyze data structure
+    case weapon.class.to_s
+      when 'Hash'   then Arma.new(weapon)     # Ad-hoc item
+      when 'Fixnum' then Arma.new(id: weapon) # Item mundano
+      else Arma.new(id: 0)                    # Nil items
+    end
+  end
+  
+  def weapons    
+    if armas.class.to_s == 'Array'
+      armas.map {|w| get_weapon(w) }
+    else # Single weapon // nil item.
+      [get_weapon(armas)]
+    end
+  end
+  
   def cuerpo_base
     case clase
       when 'mago'     then return 4
@@ -130,7 +146,6 @@ class Hero < Hash
   def defensa     ; armour.defensa end
   def gremio      ; Profesion.new(profesion) if profesion end
   def pet         ;        Pet.new(familiar) if familiar  end
-  def weapons     ; self.armas.map        {|w|        Arma.new(w)}       if self.armas             end
   def baratijas   ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
   def proteccions ; self.protecciones.map {|p|  Proteccion.new(p)}       if self.protecciones      end
   def trinkets    ; self.abalorios.map    {|a|    Abalorio.new(a)}       if self.abalorios         end
@@ -140,6 +155,7 @@ class Hero < Hash
   def componentes ; self.materiales.map   {|num|  Material.new(id: num)} if self.materiales        end
   def transportes ; self.mounts.map       {|num|   Montura.new(montura(num))} if self.mounts       end
   def masters     ; self.master.map       {|num| Habilidad.new(maestrodearma(num))} if self.master end 
+  # TODO: Señor de las bestias bug:
   def habilidades ; self.skills.map       {|num| Habilidad.new(send(personaje.gsub('señor de las bestias','beastslord'),num)) } if skills end
   def magias       ; self.hechizos.map {|num|  spell(num)} if self.hechizos end
   def blood_magic  ; self.blood.map    {|num| sangre(num)} if self.blood    end

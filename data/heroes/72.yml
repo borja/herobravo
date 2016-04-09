@@ -9,5 +9,3 @@ cuerpo:    6
 mente:     4
 mov:       7
 repu:      1
-armas:
-  - { id: 0 }

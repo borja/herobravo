@@ -12,6 +12,5 @@ cuerpo:    6
 mente:     4
 mov:       8
 armadura:  2
-armas:
-  - { id: 1 }
+armas:     1
 hechizos: [18, 19, 20]

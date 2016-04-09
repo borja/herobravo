@@ -7,8 +7,7 @@ cuerpo:    8
 mente:     3
 mov:       7
 armadura:  3
-armas:
-  - { id: 12 }
+armas:     12
 protecciones:
   - { id: 2 }
   - { id: 1 }

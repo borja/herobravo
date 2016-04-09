@@ -12,5 +12,5 @@ skills:    [0, 1, 2, 3]
 armadura:  1
 familiar:  { id: 8, name: "Arquímedes", torpe: true }
 armas:
-  - { id: 3 }
+  - 3
   - { id: 20, ranuras: 2, enchants: [13] }

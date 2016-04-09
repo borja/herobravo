@@ -9,8 +9,7 @@ mov:       7
 familiar:  { id: 5, name: "Vladimir", torpe: true }
 pareja:    { nombre: "Leandra", raza: "maga", tipo: "pnj" }
 armadura:  { id: 1, gemas: [4] }
-armas:
-  - { id: 3 }
+armas:     3
 protecciones:
   - { id: 4, ranuras: 1 }
 miscelaneas:

@@ -6,7 +6,6 @@ def hero id ; heros[id] end
 
 total_heros.times do |i|
   define_method("h#{i}") do
-    p "procesando héroe: #{i}"
     YAML::load_file(File.join(__dir__, "../data/heroes/#{i}.yml"))
   end
 end

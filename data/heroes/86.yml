@@ -10,6 +10,4 @@ mente:     2
 mov:       7
 familiar:  { id: 17, name: "Chip" }
 armadura:  2
-armas:
-  - { id: 7 }
-  - { id: 2 }
+armas:     [7, 2]

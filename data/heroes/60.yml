@@ -14,13 +14,11 @@ mente:     3
 mov:       8
 repu:      1
 armadura:  2
+armas:     [1, 7]
 protecciones:
   - { id: 1, enchants: [84] }
   - { id: 4 }
   - { id: 8 }
-armas:
-  - { id: 1 }
-  - { id: 7 }
 skills:   [0, 1, 2, 3]
 pociones: [1]
 tesoro:

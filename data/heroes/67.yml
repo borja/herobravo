@@ -8,6 +8,5 @@ cuerpo:    9
 mente:     2
 mov:       7
 armadura:  2
-armas:
-  - { id: 10, enchants: [16] }
-skills: [2, 3]
+armas:     { id: 10, enchants: [16] }
+skills:    [2, 3]

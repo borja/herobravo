@@ -13,8 +13,7 @@ mente:     13
 mov:       8
 profesion: { id: 4, aprendiz: [0, 1] }
 armadura:  { id: 1, gemas: [13], joyas: [6] }
-armas:
-  - { id: 13, enchants: [61, 62, 63] }
+armas:     { id: 13, enchants: [61, 62, 63] }
 miscelaneas:
   - { id: 3, enchants: [44, 53], ranuras: 1, gemas: [18] }
   - { id: 2, enchants: [68, 69] }

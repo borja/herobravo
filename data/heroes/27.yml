@@ -7,9 +7,7 @@ cuerpo:    4
 mente:     6
 mov:       7
 armadura:  2
-armas:
-  - { id: 4 }
-  - { id: 3 }
+hechizos:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+armas:     [4, 4]
 miscelaneas:
   - {id: 1}
-hechizos:    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]

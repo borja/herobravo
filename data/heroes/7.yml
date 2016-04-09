@@ -21,8 +21,7 @@ mov:    8
 familiar:  { id: 18, name: "Menta", torpe: true }
 profesion: { id: 2, aprendiz: [0, 1] }
 armadura:  { id: 3, ranuras: 1 }
-armas:
-  - { id: 12, enchants: [58] }
+armas:     { id: 12, enchants: [58] }
 protecciones:
   - { id: 1, ranuras: 1 }
   - { id: 2, ranuras: 1 }
