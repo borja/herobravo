@@ -1,0 +1,37 @@
+<header>
+	<h2>El palacio del Emperador</h2>
+</header>
+<h3>Servicios</h3>
+<p>
+	En el palacio, el administrador de fincas y patrimonios gestiona el registro de cada héroe,
+	así como las rentas asignadas. El valor de rentas corresponde con el número de dados de 6
+	que el jugador tirará al final de cada reto terminado satisfactoriamente.
+</p>
+<h3>Registro patrimonial</h3>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th colspan=2>Héroe</th>
+			<th>Cargo</th>
+			<th>Oro</th>
+			<th>Rentas</th>
+			<th>Patrimonio</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% heros.select{ |h| h.oro }.sort_by{|h| h.oro}.reverse.each do |hero| %>
+			<tr>
+				<td>
+					<a href=<%= "/hero/#{hero.id}" %>>
+						<%= erb :'display/portrait', locals: { h: hero } %>
+					</a>
+				</td>
+				<td><%= hero.name %> (<%= hero.jugador %>)</td>
+				<td><%= hero.titulo %></td>
+				<td><%= hero.oro %></td>
+				<td><%= hero.rentas %>
+				<td><%= hero.patrimonio %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -10,6 +10,7 @@ repu:      0
 cuerpo:    6
 mente:     5
 mov:       8
+oro:       37
 armadura:  2
 armas:
   - 7

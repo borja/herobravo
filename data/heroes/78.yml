@@ -8,6 +8,7 @@ nivel:     1
 cuerpo:    7
 mente:     3
 mov:       6
+oro:       30
 armadura:  2
 armas:     [7, 11]
 protecciones:
