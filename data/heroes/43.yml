@@ -2,7 +2,6 @@ name:      "Ylaidyl"
 personaje: "hechicero"
 jugador:   "Eva"
 gender:    "female"
-nivel:     1
 cuerpo:    4
 mente:     6
 mov:       7

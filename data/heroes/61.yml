@@ -3,7 +3,6 @@ personaje: "paladín"
 jugador:   "Iris"
 gender:    "female"
 status:    "reserva"
-nivel:     1
 cuerpo:    5
 mente:     5
 mov:       7

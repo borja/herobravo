@@ -3,7 +3,6 @@ personaje: "arquero"
 gender:    "female"
 jugador:   "Rocío"
 pareja:    { char: 78, tipo: "pj" }
-nivel:     1
 cuerpo:    6
 mente:     4
 mov:       8

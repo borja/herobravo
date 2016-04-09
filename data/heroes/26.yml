@@ -1,7 +1,6 @@
 name:      "Veitt"
 personaje: "matador"
 jugador:   "Juanan"
-nivel:     1
 cuerpo:    7
 mente:     3
 mov:       6

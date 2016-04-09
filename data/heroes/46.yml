@@ -6,7 +6,6 @@ familiar:  { id: 15, name: "Fabulosa", torpe: true }
 historia:  2
 premio:    2
 muerto:    true
-nivel:     1
 cuerpo:    6
 mente:     4
 mov:       8

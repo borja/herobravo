@@ -3,7 +3,6 @@ personaje: "bersérker"
 jugador:   "Javier Galindo"
 status:    "retirado"
 muerto:    true
-nivel:     1
 cuerpo:    8
 mente:     3
 mov:       7
