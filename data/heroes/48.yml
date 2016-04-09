@@ -12,9 +12,7 @@ cuerpo:    9
 mente:     3
 mov:       8
 armadura:  2
-armas:
-  - { id: 5 }
-  - { id: 7 }
+armas:     [5, 7]
 protecciones:
   - { id: 1, enchants: [84] }
   - { id: 4 }

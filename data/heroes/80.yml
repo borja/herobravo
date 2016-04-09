@@ -10,8 +10,7 @@ cuerpo:    6
 mente:     8
 mov:       7
 armadura:  1
-armas:
-  - { id: 8 }
+armas:     8
 miscelaneas:
   - { id: 21, enchants: [103] }
 skills:   [1, 3, 4, 5]

@@ -10,5 +10,5 @@ mente:     5
 mov:       7
 armadura:  2
 armas:
-  - { id: 1 }
+  - 1
   - { id: 3, ranuras: 1 }

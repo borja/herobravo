@@ -16,7 +16,7 @@ pociones:  [7]
 armadura:  2
 armas:
   - { id: 2, gemas: [11, 11, 11, 53] }
-  - { id: 5 }
+  - 5
 protecciones:
   - { id: 2, gemas: [28] }
   - { id: 3, enchants: [8], ranuras: 2 }

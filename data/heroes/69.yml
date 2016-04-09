@@ -7,7 +7,6 @@ cuerpo:    8
 mente:     2
 mov:       8
 armadura:  2
-armas:
-  - { id: 2 }
+armas:     2
 protecciones:
   - { id: 2, enchants: [8], ranuras: 1 }

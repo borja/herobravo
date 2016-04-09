@@ -12,9 +12,7 @@ oro:       58
 familiar:  { id: 2, name: "Aserrín Aserrán"}
 profesion: { id: 6, aprendiz: [0] }
 armadura:  { id: 3, enchants: [85, 86] }
-armas:
-  - { id: 11 }
-  - { id: 7 }
+armas:     [11, 7]
 protecciones:
   - { id: 1, enchants: [84] }
   - { id: 2, enchants: [37] }

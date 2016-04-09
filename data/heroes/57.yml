@@ -10,7 +10,5 @@ mente:     4
 mov:       7
 repu:      1
 armadura:  2
-armas:
-  - { id: 2 }
-  - { id: 7 }
+armas:     [2, 7]
 pociones: [1]

@@ -9,7 +9,7 @@ mov:       7
 profesion: { id: 0, aprendiz: [0] }
 armadura:  { id: 1, ranuras: 3, enchants: [0, 1] }
 armas:
-  - { id: 3 }
+  - 3
   - { id: 4, enchants: [88] }
 protecciones:
   - { id: 8, joyas: [20, 9] }
