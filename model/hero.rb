@@ -2,15 +2,14 @@
 # encoding: UTF-8
 
 class Hero < Hash
-  attr_accessor :id,
-    :name, :personaje, :jugador, :status, :muerto, :gender,
+  attr_accessor :id, :name,
+    :personaje, :jugador, :status, :muerto, :gender,
     :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,
     :familiar, :mounts, :descendencia, :pareja, :progenitores,
     :hechizos, :shadows, :blood, :skills, :master,
     :armas, :armadura, :protecciones, :miscelaneas, :abalorios,
     :profesion, :ciudad, :titulo, :camino, :hijos,
-    :piezas, :pociones, :pergaminos, :materiales,
-    :oro, :tesoro
+    :piezas, :pociones, :pergaminos, :materiales, :oro, :tesoro
 
   def initialize(args)
     args.each do |k, v|
