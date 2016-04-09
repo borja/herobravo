@@ -1,7 +1,6 @@
 name:      'Drako'
 personaje: 'hechicero'
 jugador:   'Javier'
-nivel:     1
 cuerpo:    4
 mente:     6
 mov:       7

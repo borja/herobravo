@@ -2,9 +2,9 @@
 # encoding: UTF-8
 
 class Hero < Hash
-  attr_accessor :id, :name,
+  attr_accessor :id, :name, :nivel,
     :personaje, :jugador, :status, :muerto, :gender,
-    :repu, :nivel, :cuerpo, :mente, :mov, :historia, :premio,
+    :repu, :cuerpo, :mente, :mov, :historia, :premio,
     :familiar, :mounts, :descendencia, :pareja, :progenitores,
     :hechizos, :shadows, :blood, :skills, :master,
     :armas, :armadura, :protecciones, :miscelaneas, :abalorios,

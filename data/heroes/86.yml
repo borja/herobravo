@@ -3,7 +3,6 @@ personaje: "hoplita"
 jugador:   "Daniel de Haro"
 status:    "retirado"
 muerto:    true
-nivel:     1
 cuerpo:    8
 mente:     2
 mov:       7

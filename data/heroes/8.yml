@@ -9,7 +9,7 @@ nivel:     10
 cuerpo:    13
 mente:     5
 mov:       10
-armadura:   7
+armadura:  7
 armas:
   - { id: 7, runas: [9] }
   - 7

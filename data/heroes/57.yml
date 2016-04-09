@@ -3,7 +3,6 @@ personaje: "caminante"
 jugador:   "Aitor"
 status:    "reserva"
 historia:  2
-nivel:     1
 cuerpo:    6
 mente:     4
 mov:       7

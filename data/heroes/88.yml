@@ -1,7 +1,6 @@
 name:      "Mom"
 personaje: "falangista"
 jugador:   "Carlos Esteban"
-nivel:     1
 cuerpo:    7
 mente:     3
 mov:       6

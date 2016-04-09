@@ -2,7 +2,6 @@ name:      'Zalin'
 personaje: 'matador'
 jugador:   'Borja'
 ciudad:    'Oszthgard'
-nivel:     1
 cuerpo:    7
 mente:     3
 mov:       6
