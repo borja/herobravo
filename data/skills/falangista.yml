@@ -1,100 +1,103 @@
 -
-  id:           0 
-  nivel:        2 
+  id:           0
+  nivel:        2
   rangos:       2
   name:         "empujar"
   type:         "Pasiva"
-  description:  "Los enemigos suman +1 punto al multiplicador de proximidad del falangista cuando se desplacen a su alrededor." 
+  description:  "Los enemigos suman +1 punto al multiplicador de proximidad del falangista cuando se desplacen a su alrededor."
 -
   id:           1
   nivel:        2
   name:         "doble escudo"
   type:         "Pasiva"
-  description:  "permite llevar dos escudos a la vez. Se puede atacar y defender con ellos." 
+  description:  "permite llevar dos escudos a la vez. Se puede atacar y defender con ellos."
 -
-  id:           2 
-  name:         "tortuga" 
-  description:  "+1 potencia en la defensa por cada aliado que este a su lado cuerpo a cuerpo. (Expcepto las 3 casillas de la espalda)." 
-  type:         "Pasiva" 
-  nivel:        2 
+  id:           2
+  nivel:        2
+  name:         "tortuga"
+  type:         "Pasiva"
+  description:  "+1 potencia en la defensa por cada aliado que este a su lado cuerpo a cuerpo. (Expcepto las 3 casillas de la espalda)."
 -
-  id:           3 
-  name:         "represalias" 
-  description:  "El atacante recibe el exceso de defensa como ataque defendible." 
-  type:         "Pasiva" 
-  nivel:        2 
+  id:           3
+  nivel:        2
+  name:         "represalias"
+  type:         "Pasiva"
+  description:  "El atacante recibe el exceso de defensa como ataque defendible."
 -
-  id:           4 
-  name:         "¡A salvo!" 
-  description:  "Otorga tu defensa a un aliado adyacente." 
-  type:         "Activa" 
-  coste:        "Su próximo movimiento"  
-  nivel:        3 
+  id:           4
+  nivel:        3
+  name:         "¡A salvo!"
+  type:         "Activa"
+  coste:        "Su próximo movimiento" 
+  description:  "Otorga tu defensa a un aliado adyacente."
 -
-  id:           5 
-  name:         "honorable" 
-  description:  "+1 punto de honor (PH) al recibir una herida" 
-  type:         "Reactiva" 
-  nivel:        3 
+  id:           5
+  name:         "honorable"
+  type:         "Reactiva"
+  nivel:        3
+  description:  "+1 punto de honor (PH) al recibir una herida"
 -
-  id:           6 
-  name:         "bastión" 
-  description:  "+1 potencia en un dado de defensa durante 1/rango turnos." 
-  type:         "Activa" 
-  coste:        "1 PH" 
-  rangos:       3 
-  nivel:        3 
+  id:           6
+  nivel:        4
+  rangos:       3
+  name:         "bastión"
+  type:         "Activa"
+  coste:        "1 PH"
+  description:  "+1 potencia en un dado de defensa durante 1/rango turnos."
 -
-  id:           7 
-  name:         "Aguantar posición" 
-  description:  "Si el falangista renuncia a su movimiento voluntariamente (o por cualquier otro motivo voluntario)  no podrá ser desplazado por habilidades o efectos" 
-  type:         "Reactiva" 
-  nivel:        4 
+  id:           7
+  nivel:        4
+  name:         "Aguantar posición"
+  type:         "Reactiva"
+  description:  "Si el falangista renuncia a su movimiento voluntariamente (o por cualquier otro motivo voluntario)  no podrá ser desplazado por habilidades o efectos"
 -
-  id:           8 
-  name:         "zona de combate" 
-  description:  "permite golpear a cualquier enemigo en 180º con escudos." 
-  type:         "Pasiva" 
-  nivel:        4 
+  id:           8
+  nivel:        4
+  name:         "zona de combate"
+  type:         "Pasiva"
+  description:  "permite golpear a cualquier enemigo en 180º con escudos."
 -
-  id:           9 
-  name:         "provocar" 
-  description:  "Incita a un enemigo/rango en concreto a atacarle. (psicología)" 
-  type:         "activa" 
-  nivel:        5 
-  rangos:       2 
+  id:           9
+  nivel:        5
+  rangos:       2
+  name:         "provocar"
+  type:         "activa"
+  description:  "Incita a un enemigo/rango en concreto a atacarle. (psicología)"
 -
-  id:           10 
-  name:         "bandeja" 
-  description:  "Porta sobre 1/rango escudo a un aliado  otorgándole su defensa, pero moverás la minus-mitad." 
-  rangos:       3 
-  type:         "activa" 
-  nivel:        6 
+  id:           10
+  nivel:        6
+  rangos:       3
+  name:         "bandeja"
+  type:         "activa"
   coste:        "1 acción"
+  description:  "Porta sobre 1/rango escudo a un aliado  otorgándole su defensa, pero moverás la minus-mitad."
 -
-  id:           11 
-  name:         "rompedientes" 
-  description:  "+1 fuerza al atacar con escudos" 
-  type:         "Pasiva" 
-  nivel:        7 
+  id:           11
+  nivel:        7
+  requisitos:   [1]
+  name:         "rompedientes"
+  type:         "Pasiva"
+  description:  "+1 fuerza al atacar con escudos"
 -
-  id:           12 
-  name:         "sangramos todos" 
-  description:  "Redirige 1/rango daño inflingido a cada aliado durante el turno del Malvado Brujo. Se declara durante la fase trepidante" 
-  type:         "Activa" 
-  coste:        "1PH" 
-  rangos:       2 
-  nivel:        7 
+  id:           12
+  requisitos:   [5]
+  name:         "sangramos todos"
+  type:         "Activa"
+  coste:        "1PH"
+  rangos:       2
+  nivel:        7
+  description:  "Redirige 1/rango daño inflingido a cada aliado durante el turno del Malvado Brujo. Se declara durante la fase trepidante"
 -
-  id:           13 
-  name:         "Defensor templado" 
-  description:  "+1PM/rango al defender con éxito" 
-  type:         "Reactiva" 
-  rangos:       2 
-  nivel:        8 
+  id:           13
+  nivel:        8
+  rangos:       2
+  name:         "Defensor templado"
+  type:         "Reactiva"
+  description:  "+1PM/rango al defender con éxito"
 -
-  id:           14 
-  name:         "Escudo de espalda" 
-  description:  "Permite llevar un tercer escudo. (Los ataques por la espalda se consideran flanco)" 
-  type:         "Pasiva" 
-  nivel:        10 
+  id:           14
+  nivel:        10
+  requisitos:   [1]
+  name:         "Escudo de espalda"
+  type:         "Pasiva"
+  description:  "Permite llevar un tercer escudo. (Los ataques por la espalda se consideran flanco)"

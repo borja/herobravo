@@ -17,7 +17,7 @@
 		<% heros.sort_by { |h| [h.reputacion,h.nivel] }.reverse.each do |hero| %>
 			<% if hero.personaje.gsub("señor de las bestias","beastslord") == params[:param] %>
 				<tr>
-					<td><%= erb :'display/portrait', :locals => { :h => hero } %></td>
+					<td><%= erb :'display/portrait', locals: { h: hero } %></td>
 					<td><a href='/hero/<%= hero.id %>'><%= hero.name %></a><br>
 						<% if ciudad?(hero.jugador).empty? %>
 							<i><%= hero.jugador %></i>
@@ -31,24 +31,20 @@
 						</a></i>
 					</td>
 					<td><%= hero.nivel %></td>
-					<td><% if p = hero.pet %><%= erb :'display/display', :locals => { 
-							:title       => p.nombre , 
-							:path        => p.img_path,
-							:description => p.descripcion } %>
+					<td><% if p = hero.pet %><%= erb :'display/display', locals: { 
+							title:       p.nombre , 
+							path:        p.img_path,
+							description: p.descripcion } %>
 						<% end %>						
 					</td>
-					<td>
-						<% if p = hero.profesion %>
-							<%= erb :'ficha/profesion', :locals => { :prof => p } %>
-						<% end %>
-					</td>
+					<td><%= erb :'ficha/profesion', locals: { prof: hero.gremio } if hero.profesion %></td>
 					<td><table>
-							<tr><% hero.armas.each do |a| %>
-								<td><%= erb :'display/item', locals: {item: a} %></td>
+							<tr><% hero.weapons.each do |weapon| %>
+								<td><%= erb :'display/item', locals: {item: weapon } %></td>
 							<% end %></tr>
 						</table>
 					</td>
-					<td><%= erb :'display/armadura', :locals => { :a => hero.armadura } %></td>
+					<td><%= erb :'display/armadura', locals: { a: hero.armour } %></td>
 					<td style="background-image:url(../images/ficha/star.png); 
 						background-repeat: no-repeat; background-position:center;">
 						<%= hero.reputacion %>
