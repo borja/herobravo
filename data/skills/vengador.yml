@@ -48,7 +48,7 @@
       name:         "Odio"
       type:         "Activa"
       coste:        "1 PC"
-      description:  "Tienes Agravio contra el objetivo que él desee."
+      description:  "Tienes Agravio contra un objetivo."
 -
       id:           7
       name:         "Tenebroso destino"
