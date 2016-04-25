@@ -32,14 +32,14 @@ end
 class Gema < Engarce
 
   def calidad
-    gema_calidades[self.id/8]
+    gema_calidades[id/8]
   end
 
   def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
     total = []
     heros.each do |h|
       if t = h.tesoro
-        if gemas = t[:gemas]
+        if gemas = t["gemas"]
           gemas.each do |gem|
             if gem == self.id
               total << h.id
@@ -59,7 +59,7 @@ class Runa < Engarce
     total = []
     heros.each do |h|
       if t = h.tesoro
-        if rs = t[:runas]
+        if rs = t["runas"]
           rs.each do |runa|
             if runa == self.id
               total << h.id
@@ -79,7 +79,7 @@ class Joya < Engarce
     total = []
     heros.each do |h|
       if t = h.tesoro
-        if js = t[:joyas]
+        if js = t["joyas"]
           js.each do |joya|
             if joya == self.id
               total << h.id
