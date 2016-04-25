@@ -177,11 +177,11 @@ end
 
 # Item diccionaries
 %w(armas armaduras miscelaneas proteccions abalorios).each do |item|
-  define_method(item.to_sym) { |i| load_yaml("items/#{item}") }
+  define_method(item.to_sym) { load_yaml("items/#{item}") }
 end
 
 %w(piezas pociones pergaminos materiales).each do |util|
-  define_method(util.to_sym) { |i| load_yaml("items/utiles#{util}") }
+  define_method(util) { load_yaml("items/utiles/#{util}") }
 end
 
 def categorías # Armas

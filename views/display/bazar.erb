@@ -20,7 +20,7 @@
 							<% if engarce == 'materiales' %>
 								<%= hero(h).materiales.count(item_id) %>
 							<% else %>
-								<%= hero(h).tesoro[engarce.to_sym].count(item_id) %>
+								<%= hero(h).tesoro[engarce].count(item_id) %>
 							<% end %>
 						</th>
 					</tr>
