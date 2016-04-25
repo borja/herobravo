@@ -41,17 +41,15 @@ pjs = %w(
 # Generic clase creator
 pjs.each do |pj|
   define_method(pj+'s') do
-   YAML::load_file(File.join(__dir__, "../data/skills/#{pj}.yml"))
+    load_yaml("skills/#{pj}")
   end
   define_method(pj) do |id|
     send(pj + 's')[id].merge(char: pj)
   end
 end
 
-def maestrodearmas
-  YAML::load_file(File.join(__dir__, '../data/maestrodearma.yml'))
-end
-  
+# Maestro de Armas
+def maestrodearmas ; load_yaml('maestrodearma') end
 def maestrodearma id 
   maestrodearmas.find { |m| m['id'] == id }.merge('char' => 'maestrodearmas')
 end

@@ -55,14 +55,11 @@ class Pet < Hash
   end
 end
 
-def pet(id)
-  pets[id]
-end
+# DB Loader
+def pets ; load_yaml('pets') end
+def pet id ; pets[id] end
 
-def pets
-  YAML::load_file(File.join(__dir__, '../data/pets.yml'))
-end
-
+# % Statistics
 def porcentaje_heroes_con_familiar
   h_familiares = heros.select { |h| h.pet }
   ((h_familiares.count / heros.count.to_f) * 100.0).round(2)

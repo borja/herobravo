@@ -6,7 +6,7 @@ def hero id ; heros[id] end
 
 total_heros.times do |i|
   define_method("h#{i}") do
-    h = YAML::load_file(File.join(__dir__, "../data/heroes/#{i}.yml"))
+    h = load_yaml("/heroes/#{i}")
     h.merge!('nivel' => 1) unless h['nivel']
     h.merge!('id' => i)
   end

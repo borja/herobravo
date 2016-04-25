@@ -16,10 +16,6 @@ class Montura < Hash
   end
 end
 
-def montura(id)
-  monturas[id]
-end
-
-def monturas
-  YAML::load_file(File.join(__dir__, "../data/monturas.yml"))
-end
+# DB Loader
+def monturas ; load_yaml('monturas') end
+def montura id ; monturas[id] end
