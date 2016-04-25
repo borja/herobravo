@@ -7,6 +7,4 @@ def fields
   ]
 end
 
-def resistencias
-  YAML::load_file(File.join(__dir__, "../data/resistencias.yml"))
-end
+def resistencias ; load_yaml('resistencias') end

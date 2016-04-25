@@ -15,15 +15,15 @@ class Engarce < Hash
   end
 
   def img_path
-    "'../../images/treasures/#{self.item}s/#{self.name}.png'"
+    "'../../images/treasures/#{item}s/#{name}.png'"
   end
 
   def bonificador item
     case
-    when item.fits == "arma"         then return fits[item.categoria] || fits['arma']     || "Armas sin implementar"
-    when item.fits == "armadura"     then return fits[item.categoria] || fits['pecho']    || "Armaduras sin implementar"
-    when fits[item.fits]             then return fits[item.fits]
-    when item.class == Proteccion    then return fits['armadura'] || "Sin bonificador"
+    when item.fits == "arma"      then return fits[item.categoria] || fits['arma']  || "Armas sin implementar"
+    when item.fits == "armadura"  then return fits[item.categoria] || fits['pecho'] || "Armaduras sin implementar"
+    when fits[item.fits]          then return fits[item.fits]
+    when item.class == Proteccion then return fits['armadura'] || "Sin bonificador"
     else return "Sin efecto"
     end
   end
