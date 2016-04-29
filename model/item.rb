@@ -176,7 +176,7 @@ class Material < Util
 end
 
 # Item diccionaries
-%w(armas armaduras miscelaneas proteccions abalorios).each do |item|
+%w(armas armaduras miscelaneas proteccions abalorios enchants).each do |item|
   define_method(item.to_sym) { load_yaml("items/#{item}") }
 end
 
@@ -201,6 +201,7 @@ def miscelanea id ; miscelaneas[id] end
 def proteccion id ; proteccions[id] end
 def armadura   id ;   armaduras[id] end
 def abalorio   id ;   abalorios[id] end
+def enchant    id ;    enchants[id] end
 def pieza      id ;      piezas[id] end
 def pocion     id ;    pociones[id] end
 def pergamino  id ;  pergaminos[id] end
