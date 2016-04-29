@@ -6,7 +6,7 @@
 		<h3>
 			<% if item.enchanted? %>
 				<%= item.name.capitalize %>
-				<%= enchant(item.enchants.first)[:name] %>
+				<%= enchant(item.enchants.first)['name'] %>
 			<% else %>
 				<%= item.name %>
 			<% end %>	
@@ -37,8 +37,8 @@
 			<br>
 			<h4>Propiedades mágicas</h4>
 			<% item.enchants.each do |e| %>
-				<li><b><%= enchant(e)[:name].capitalize %></b>:
-				 	<i><%= enchant(e)[:descripcion] %></i>
+				<li><b><%= enchant(e)['name'].capitalize %></b>:
+				 	<i><%= enchant(e)['descripcion'] %></i>
 			<% end %>
 		<% end %>
 		<% if item.item == "abalorio" %>

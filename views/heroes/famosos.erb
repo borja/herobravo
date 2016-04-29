@@ -22,7 +22,7 @@
 						<% if ciudad?(hero.jugador).empty? %>
 							<i><%= hero.jugador %></i>
 						<% else %>
-							<a href='/city/<%= ciudad?(hero.jugador).first[:name] %>'><i><%= hero.jugador %></i></a>
+							<a href='/city/<%= ciudad?(hero.jugador).first['name'] %>'><i><%= hero.jugador %></i></a>
 						<% end %>
 					</td>
 					<td><%= hero.genderize.capitalize%><br>
