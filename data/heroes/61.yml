@@ -1,13 +1,16 @@
 name:      "Abigail"
-personaje: "paladín"
+personaje: "clérigo"
 jugador:   "Iris"
 gender:    "female"
 status:    "reserva"
-cuerpo:    5
+nivel:     2
+cuerpo:    6
 mente:     5
 mov:       7
 armadura:  2
-armas:     13
+armas:
+  - { id: 13 }
+  - { id: 7 }
 protecciones:
   - { id: 1 }
-skills: [1, 2]
+skills: [1, 3]
