@@ -578,7 +578,7 @@
   name:         "de espinas"
   descripcion:  "Dado verde. El escudo ofrece +1 represalias. Recupera 1PC por cada daño inflingido con represalias."
   tipo:         "tierra"
-  -
+-
   id:           111
   name:         "de Sigmar"
   descripcion:  "1 carga: + 1 PC"
