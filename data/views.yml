@@ -106,6 +106,12 @@
     left: "objetos/left/content2"
     main: "items/runas"
 -
+  ruta:  "runa"
+  template:
+    left:  "objetos/left/runas"
+    main:  "items/runas"
+    right: "objetos/left/runas"
+-
   ruta:  "gemas"
   template:
     main: "items/gemas/gemas"
