@@ -8,7 +8,11 @@
 	<tbody>
 		<% runas.each do |r| %>
 			<tr>
-				<td><%= erb :'display/runa', locals: { runa: r } %></td>
+				<td>
+					<a target="_blank" href="/runa/<%= r.id %>">
+						<%= erb :'display/runa', locals: { runa: r } %>
+					</a>
+				</td>
 				<td><%= r.name.upcase %></td>
 				<td><%= erb :'display/bazar', locals: { 
 					bazar:   r.disponibles, 
