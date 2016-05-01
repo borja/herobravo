@@ -103,14 +103,15 @@
 -
   ruta:  "runas"
   template:
-    left: "objetos/left/content2"
-    main: "items/runas"
+    left:  "objetos/left/content2"
+    main:  "items/runas"
+    right: "objetos/left/runas"
 -
   ruta:  "runa"
   template:
     left:  "objetos/left/runas"
     main:  "items/runas"
-    right: "objetos/left/runas"
+    right: "items/runas/runa"
 -
   ruta:  "gemas"
   template:
