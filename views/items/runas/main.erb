@@ -21,25 +21,21 @@
 <h3>Disponibilidad</h3>
 <% unless r.disponibles.empty? %>
 	<table id='table-2'>
-		<thead>
+		<tr>
+			<th colspan=2>Héroe</th>
+			<th>Jugador</th>
+			<th>Disponibles</th>
+		</tr>
+		<% r.disponibles.uniq.each do |h| %>
 			<tr>
-				<th colspan='2'>Héroe</th>
-				<th>Jugador</th>
-				<th>Disponibles</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<% r.disponibles.map{ |d| hero(d) }.each do |h| %>
-				<tr>
-					<td><a href='/hero/<%= h.id %>'>
-							<%= erb :'display/portrait', locals: { h: h } %></a>
-					</td>
-					<td><%= h.name %></td>
-					<td><%= h.jugador %></td>
-					<td><%= r.disponibles.count %></td>
-				</tr>
-			<% end %>
-		</tbody>
+				<td><a href='/hero/<%= h %>'>
+						<%= erb :'display/portrait', locals: { h: hero(h) } %></a>
+				</td>
+				<td><%= hero(h).name %></td>
+				<td><%= hero(h).jugador %></td>
+				<td><%= hero(h).tesoro['runas'].count(r.id) %></td>
+			</tr>
+		<% end %>
 	</table>
 <% else %>
 	Ningún héroe posee esta runa.
