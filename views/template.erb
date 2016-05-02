@@ -6,6 +6,9 @@
 		<% if (params[:view] == 'historia' || params[:view] == 'hero') %>
 			<% title = hero(params[:param].to_i).name %>
 		<% end %>
+		<% if params[:view] == 'runa' %>
+			<% title = runa(params['param'].to_i).name.upcase %>
+		<% end %>
 		<% title.gsub!('Beastslord','Señor de las Bestias')%>
 		<%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %>
 	</head>
