@@ -17,6 +17,10 @@ class Engarce < Hash
   def img_path
     "'../../images/treasures/#{item}s/#{name}.png'"
   end
+  
+  def big_img
+    "'../../images/items/#{item}s/#{name}.png'"
+  end
 
   def bonificador item
     case

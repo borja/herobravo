@@ -61,7 +61,8 @@
     hacha:    "Regresa al ser arrojada y su daño es congeladora"
     cabeza:   "El daño por frío puede reducir mente en su lugar."
     anillo:   "Los hechizos tipo bola no colisionan en aliados"
-    daga:      "Al dañar por la espalda la víctima entra en locura."
+    muñecas:  "Puedes usar dados de congelación al atacar desarmado"
+    daga:     "Al dañar por la espalda la víctima entra en locura."
 - 
   id:   8
   name: "phyth"

@@ -108,10 +108,11 @@
     right: "objetos/left/runas"
 -
   ruta:  "runa"
+  title: "view"
   template:
-    left:  "objetos/left/runas"
-    main:  "items/runas"
     right: "items/runas/runa"
+    main:  "items/runas/main"
+    left:  "objetos/left/runas"
 -
   ruta:  "gemas"
   template:
