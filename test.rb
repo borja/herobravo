@@ -1,9 +1,11 @@
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
 ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'rack/test'
 require_relative 'app.rb'
 require 'require_all'
-require 'codeclimate-test-reporter'
 
 # Fake Data Base
 require_all './data'
@@ -27,5 +29,3 @@ describe '.hero' do
   end
 
 end
-
-CodeClimate::TestReporter.start
