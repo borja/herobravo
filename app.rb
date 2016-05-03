@@ -1,6 +1,5 @@
 require 'sinatra/base'
 # Main sinatra App, using param routing. 
-# TODO: change 'param' var name.
 class App < Sinatra::Base
   get('/') { erb :index }
   error    { erb :error }
