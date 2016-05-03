@@ -18,17 +18,7 @@ class App < Sinatra::Base
     end
   end
 
-  post '/calculador/' do # This should me tuned up.
-    engarces = params[:engarces] || [1]
-    objeto   = params[:objeto]   || 0
-    repu     = params[:repu]     || 0
-    ranuras  = params[:ranuras]  || 0
-    erb :template, locals: view('calculador').merge
-    {
-      'engarces' => engarces,
-      'objeto'   => objeto,
-      'repu'     => repu,
-      'ranuras'  => ranuras
-    }
+  post '/calculador' do # This should me tuned up.
+    preview('calculador')
   end
 end
