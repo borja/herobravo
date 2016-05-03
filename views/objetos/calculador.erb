@@ -1,5 +1,5 @@
 <header><h2>Calculador de engarces</h2></header>
-<form action="/calculador/" method="POST">
+<form action="/calculador" method="POST">
 	<table id='tresp'>
 		<thead>
 			<th>Característica</th>
@@ -14,11 +14,11 @@
 				<td>Propiedades mágicas</td>
 				<td>
 					<select name="objeto">
-    				  <option value="0">0</option>
-					  <option value="1">1</option>
-					  <option value="2">2</option>
-					  <option value="3">3</option>
-					  <option value="4">4</option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
 					</select>
 				</td>
 			</tr>
@@ -26,12 +26,12 @@
 				<td>Ranuras vacías</td>
 				<td>
 					<select name="ranuras">
-  					  <option value="0">0</option>
-					  <option value="1">1</option>
-					  <option value="2">2</option>
-					  <option value="3">3</option>
-					  <option value="4">4</option>
-					  <option value="5">5</option>
+  					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
 					</select>
 				</td>
 			</tr>
@@ -41,7 +41,7 @@
 			</tr>
 		</tbody>
 	</table><br/>
-    <input type="submit">
+	<input type="submit">
 </form>
 <br/>
 <% if params[:engarces] %>
