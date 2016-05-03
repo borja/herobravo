@@ -7,6 +7,7 @@ require 'require_all'
 # Fake Data Base
 require_all './data'
 require_all './model'
+require_all './lib'
 
 include Rack::Test::Methods
 
