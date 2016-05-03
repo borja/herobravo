@@ -10,4 +10,5 @@ gem 'require_all'
 group :test do
   gem 'rack-test'
   gem 'rake', '~> 11.1.2'
+  gem 'codeclimate-test-reporter'
 end
