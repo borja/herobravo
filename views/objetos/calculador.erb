@@ -1,46 +1,26 @@
 <header><h2>Calculador de engarces</h2></header>
 <form action="/calculador" method="POST">
-	<table id='tresp'>
-		<thead>
-			<th>Característica</th>
-			<th>Valor</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Calibre de gemas</td>
-				<td><input type="text" name="engarces"></td>
-			</tr>
-			<tr>
-				<td>Propiedades mágicas</td>
-				<td>
-					<select name="objeto">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Ranuras vacías</td>
-				<td>
-					<select name="ranuras">
-  					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Reputación</td>
-				<td><input type="text" name="repu"></td>
-			</tr>
-		</tbody>
-	</table><br/>
+	<h3>Calibre de gemas</h3>
+	<input type="text" name="engarces">
+	<h3>Propiedades mágicas</h3>
+	<select name="objeto">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+	</select>
+	<h3>Ranuras vacías</h3>
+	<select name="ranuras">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+	<h3>Reputación</h3>
+	<input type="text" name="repu">
 	<input type="submit">
 </form>
 <br/>

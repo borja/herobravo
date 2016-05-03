@@ -18,7 +18,5 @@ class App < Sinatra::Base
     end
   end
 
-  post '/calculador' do # This should me tuned up.
-    preview('calculador')
-  end
+  post('/calculador') { preview('calculador') }
 end
