@@ -3,7 +3,7 @@
 # Clase para gestionar las profesiones y sus grados.
 # TODO: necesita refactor segun la nueva forma de organizar los datos
 class Profesion < Hash
-  attr_accessor :id, :aprendiz, :artesano, :maestro
+  attr_accessor :id, :name, :aprendiz, :artesano, :maestro
 
   def initialize(args)
     args.each do |k, v|
@@ -14,8 +14,6 @@ class Profesion < Hash
   def img_path
     "'../../images/profesiones/#{name}.png'"
   end
-
-  def name ; profesion(id)[:name] end
 
   # TODO:  Refactor this
   def aprendizajes ; profesion(id)[:aprendiz]  end
