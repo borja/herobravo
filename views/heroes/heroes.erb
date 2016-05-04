@@ -6,7 +6,7 @@
 			<th><a href=/familiares>Familiar</a></th>
 			<th><a href=/profesiones>Profesión</a></th>
 			<th><a href=/armas>Armas</a></th>
-			<th><a href=/armaduras>Armadura</a></th>		
+			<th><a href=/armaduras>Armadura</a></th>
 			<th>Reputación</th>
 		</tr>
 	</thead>
@@ -16,7 +16,7 @@
 			<% alter_hero = params[:param] ? (hero.empadronado == params[:param]) : false %>
 			<% if main_hero || alter_hero %>
 				<tr>
-					<td><%= erb :'display/portrait', :locals => { :h => hero } %></td>
+					<td><%= erb :'display/portrait', locals: { h: hero } %></td>
 					<td><a href='/hero/<%= hero.id %>'><%= hero.name %></a><br>
 						<% if ciudad?(hero.jugador).empty? %>
 							<i><%= hero.jugador %></i>
@@ -34,7 +34,7 @@
 							title:       p.nombre , 
 							path:        p.img_path,
 							description: p.descripcion } %>
-						<% end %>						
+						<% end %>
 					</td>
 					<td>
 						<% if hero.profesion %>

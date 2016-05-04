@@ -6,7 +6,7 @@
 			<tr><th colspan=2>Atuendos</th></tr>
 			<tr>
 				<% fields[1].each do |field| %>
-					<%= erb :'ficha/inventario/field', :locals => {:fits => field } %>
+					<%= erb :'ficha/inventario/field', locals: { fits: field } %>
 				<% end %>
 			</tr>
 		</thead>

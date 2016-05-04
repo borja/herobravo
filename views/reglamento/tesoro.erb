@@ -16,11 +16,11 @@
 			<td width="15%"><h1><%= total.to_s %><% img_path  = "../images/tesoro/#{sigmar}.png"%>
 				<img style="vertical-align:middle" src=<%=img_path%> alt=<%= sigmar %>, id='icon2' /></h1>
 			<td><%= resultado %></td>
-			<td><%= erb :"reglamento/tesoro/#{total}", :locals => { 
-				  :dado1     => dado1 , 
-				  :dado2     => dado2, 
-				  :sigmar    => sigmar, 
-				  :resultado => resultado 
+			<td><%= erb :"reglamento/tesoro/#{total}", locals: { 
+					dado1:     dado1 , 
+					dado2:     dado2, 
+					sigmar:    sigmar, 
+					resultado: resultado 
 				} %>
 			</td>
 		</tr>

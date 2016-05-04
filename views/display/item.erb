@@ -32,7 +32,7 @@
 		<% if item.item == "miscelanea" %>
 			<li>Objeto de tipo: <i><%= item.fits %></i></li>
 		<% end %>
-		<%= erb :'display/item/engarces', locals: {item: item } unless item.mundano? %>
+		<%= erb :'display/item/engarces', locals: { item: item } unless item.mundano? %>
 		<% if item.enchants %>	
 			<br>
 			<h4>Propiedades mágicas</h4>

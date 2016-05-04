@@ -11,7 +11,9 @@
 				</a>
 				<ul class="link-list" style='text-align:center'>
 					<% 4.times do |nivel| %>
-						<li><a href='<%= "/#{escuela.gsub('Luz','plegarias').downcase}/#{nivel+1}" %>'>Nivel <%= nivel+1 %></a></li>
+						<li><a href='<%= "/#{escuela.gsub('Luz','plegarias').downcase}/#{nivel+1}" %>'>
+							Nivel <%= nivel+1 %>
+						</a></li>
 					<% end %>
 				</ul>
 			</section>

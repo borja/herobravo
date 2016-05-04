@@ -4,8 +4,8 @@
 		<%= erb :'display/portrait', locals: { h: hero(h.pareja['char']) } %>
 	</a>
 <% else %>
-	<%= erb :'display/display', locals: { 
-	  title:       h.pareja['nombre'], 
+	<%= erb :'display/display', locals: {
+	  title:       h.pareja['nombre'],
 	  path:        "'../images/personajes/#{h.pareja['raza']}.png'" ,
 	  description: h.pareja['descripcion'] } %>
 <% end %>

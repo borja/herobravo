@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<%= erb :head, :locals => {:title => "HeroSheet"} %>
+		<%= erb :head, locals: { title: "HeroSheet"} %>
 	</head>
 	<body>
 		<div id="header-wrapper">
-			<%= erb :header, :locals => { :title => "HeroSheet" } %>
+			<%= erb :header, locals: { title: "HeroSheet" } %>
 			<%= erb :'index/banner' %>
 		</div>
 		<%= erb :'index/features' %>

@@ -8,7 +8,7 @@
 			<tr>
 				<% if h.materiales %>
 					<% h.componentes.each do |m| %>
-						<td><%= erb :"display/item", :locals => {:item => m} %></td>
+						<td><%= erb :"display/item", locals: { item: m } %></td>
 					<% end %>
 				<% else %>
 					<td>Sin materiales</td>

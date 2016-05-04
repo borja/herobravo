@@ -12,7 +12,7 @@
 						<%= erb :'display/display', locals: { 
 							title:       h.padre['char'], 
 							path:        h.img_path,
-							description: "" } %>
+							description: '' } %>
 					<% end %>
 				<% end %>
 			</td>
@@ -23,10 +23,10 @@
 							<%= erb :'display/portrait', locals: { h: h.madre['char'] } %>
 						</a>
 					<% else %>
-						<%= erb :'display/display', locals: { 
-							title:       h.madre['char'], 
+						<%= erb :'display/display', locals: {
+							title:       h.madre['char'],
 							path:        h.img_path,
-							description: "" } %>
+							description: '' } %>
 					<% end %>
 				<% end %>
 			</td>

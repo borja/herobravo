@@ -16,8 +16,7 @@
 								<% t[:mix].keys.each do |familia| %>
 									<% if t[:mix][familia.to_sym] %>
 										<% t[:mix][familia.to_sym].each do |id| %>
-											<td><%= erb :'display/gema',  
-													:locals => { :gema  => send(familia)[id] } %>
+											<td><%= erb :'display/gema', locals: { gema: send(familia)[id] } %>
 											</td>
 										<% end %>
 									<% end %>

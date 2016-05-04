@@ -1,6 +1,6 @@
 <header>
 	<h2><% if params[:view] == 'hechizos' %>
-			Hechizos elementales de nivel <%= params[:param].to_i || 1 %>				
+			Hechizos elementales de nivel <%= params[:param].to_i || 1 %>
 		<% else %>
 			Hechizos de <%= params[:view] %> de nivel <%= params[:param].to_i || 1 %>
 		<% end %>
