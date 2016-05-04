@@ -9,87 +9,75 @@ class Engarce < Hash
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
     end
   end
-  
-  def item 
-    self.class.to_s.downcase 
+
+  def item
+    self.class.to_s.downcase
   end
 
   def img_path
     "'../../images/treasures/#{item}s/#{name}.png'"
   end
-  
+
   def big_img
     "'../../images/items/#{item}s/#{name}.png'"
   end
 
-  def bonificador item
+  def bonificador(item)
     case
-    when item.fits == "arma"      then return fits[item.categoria] || fits['arma']  || "Armas sin implementar"
-    when item.fits == "armadura"  then return fits[item.categoria] || fits['pecho'] || "Armaduras sin implementar"
+    when item.fits == 'arma'      then return fits[item.categoria] || fits['arma']  || 'Armas sin implementar'
+    when item.fits == 'armadura'  then return fits[item.categoria] || fits['pecho'] || 'Armaduras sin implementar'
     when fits[item.fits]          then return fits[item.fits]
-    when item.class == Proteccion then return fits['armadura'] || "Sin bonificador"
-    else return "Sin efecto"
+    when item.class == Proteccion then return fits['armadura'] || 'Sin bonificador'
+    else return 'Sin efecto'
     end
   end
 end
 
+# Tipo de engarce basico
 class Gema < Engarce
-
   def calidad
-    gema_calidades[id/8]
+    gema_calidades[id / 8]
   end
 
-  def disponibles # returns from heros.tesoro, the list of (maybe repeated) ids of the heros with self.id gem available
+  # returns from heros.tesoro, the list of (maybe repeated)
+  # ids of the heros with self.id gem available
+  def disponibles
     total = []
     heros.each do |h|
-      if t = h.tesoro
-        if gemas = t["gemas"]
-          gemas.each do |gem|
-            if gem == self.id
-              total << h.id
-            end
-          end
-        end
+      next unless h.tesoro
+      next unless h.tesoro['gemas']
+      h.tesoro['gemas'].each do |gema|
+        (total << h.id) if gema == id
       end
     end
     total
   end
 end
 
+# Tipo de engarce de inscripcion
 class Runa < Engarce
-  # returns from heros.tesoro, the list of (maybe repeated) ids
-  #of the heros with self.id gem available
   def disponibles
     total = []
     heros.each do |h|
-      if t = h.tesoro
-        if rs = t["runas"]
-          rs.each do |runa|
-            if runa == self.id
-              total << h.id
-            end
-          end
-        end
+      next unless h.tesoro
+      next unless h.tesoro['runas']
+      h.tesoro['runas'].each do |runa|
+        (total << h.id) if runa == id
       end
     end
     total
   end
 end
 
+# Tipo de engarce de orfebreria
 class Joya < Engarce
-  # returns from heros.tesoro, the list of (maybe repeated) ids
-  # of the heros with self.id gem available.
   def disponibles
     total = []
     heros.each do |h|
-      if t = h.tesoro
-        if js = t["joyas"]
-          js.each do |joya|
-            if joya == self.id
-              total << h.id
-            end
-          end
-        end
+      next unless h.tesoro
+      next unless h.tesoro['joyas']
+      h.tesoro['joyas'].each do |joya|
+        (total << h.id) if joya == id
       end
     end
     total

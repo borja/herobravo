@@ -35,38 +35,42 @@ class Pet < Hash
   end
 
   def nombre
-    "#{name.capitalize}, #{sex ? 'la' : 'el'} #{bicho.capitalize} #{'torpe' if torpe}"
+    articulo = sex ? 'la' : 'el'
+    "#{name.capitalize}, #{articulo} #{bicho.capitalize} #{'torpe' if torpe}"
   end
 
   def descripcion
-    "<b>Bonificador</b>: <i>#{bono}</i>#{"<br><b>Penalizador: </b><i>#{lacra}</i>" if torpe}"
+    toprpeza = "<br><b>Penalizador: </b><i>#{lacra}</i>" if torpe
+    "<b>Bonificador</b>: <i>#{bono}</i>#{toprpeza}"
   end
 
   def conocidos
     total = []
     heros.each do |h|
-      if h.pet
-        if h.pet.id == id
-          total << h.id
-        end
-      end
+      next unless h.pet
+      (total << h.id) if h.pet.id == id
     end
     total
   end
 end
 
 # DB Loader
-def pets ; load_yaml('pets') end
-def pet id ; pets[id] end
+def pets
+  load_yaml('pets')
+end
+
+def pet(id)
+  pets[id]
+end
 
 # % Statistics
 def porcentaje_heroes_con_familiar
-  h_familiares = heros.select { |h| h.pet }
+  h_familiares = heros.select(&:pet)
   ((h_familiares.count / heros.count.to_f) * 100.0).round(2)
 end
 
 def porcentaje_familiares_torpes
-  h_familiares = heros.select { |h| h.pet }
-  familiares_torpes = h_familiares.count {|h| h.pet.torpe }
+  h_familiares = heros.select(&:pet)
+  familiares_torpes = h_familiares.count { |h| h.pet.torpe }
   ((familiares_torpes.to_f / h_familiares.count) * 100.0).round(2)
 end
