@@ -6,7 +6,7 @@
 	<tbody>
 		<% elficas.each do |e| %>
 			<tr style=<%= e.color %>>				
-				<td><%= erb :'display/spell', :locals => {:spell => e} %></td>
+				<td><%= erb :'display/spell', locals: { spell: e } %></td>
 				<td><%= e.name.capitalize %></td>
 				<td><%= e.efecto %></td>
 			</tr>

@@ -8,7 +8,7 @@
 			<tr>
 				<% if h.trinkets %>
 					<% h.trinkets.each do |abalorio| %>
-						<td><%= erb :"display/item", locals: {item: abalorio} %></td>
+						<td><%= erb :"display/item", locals: { item: abalorio } %></td>
 					<% end %>
 				<% else %>
 					<td>Sin abalorios</td>
