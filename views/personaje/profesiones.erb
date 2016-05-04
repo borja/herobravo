@@ -18,16 +18,15 @@
 <p>
 	<table id='tresp'>
 		<thead>
-			<tr><% profes.each do |p| %>
-					<th><%= p.capitalize %></th>
+			<tr><% profesions.each do |p| %>
+					<th><%= p.name %></th>
 				<% end %>
 			</tr>	
 		</thead>
 		<tbody>
-			<tr><% profes.each do |p| %>
-					<td><a href=<%="/profesion/#{p}"%>>
-							<% img_path = "'../images/profesiones/#{p}.png'" %>
-							<img src=<%=img_path%> alt=<%= p %>, id='icon2' />
+			<tr><% profesions.each do |p| %>
+					<td><a href=<%="/profesion/#{p.name}"%>>
+							<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon2' />
 						</a>
 					</td>
 				<% end %>

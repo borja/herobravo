@@ -1,0 +1,28 @@
+-
+  name:   "Aprendiz de orfebre"
+  coste:  100
+  efecto: "Evita pagar por molestar al orfebre."
+-
+  name:   "Anillo de oro"
+  coste:  200
+  efecto: "Los materiales cuestan 300g. Venderlo: 150g"
+-
+  name:   "Colgante de plata"
+  coste:  350
+  efecto: "Materiales: 200g. Venderlo: 150g. Nota: No puede ser utilizado por tieflings."
+-
+  name:   "Engarces I"
+  coste:  300
+  efecto: "Añade 1 ranura gratuitamente a un objeto mundano."
+-
+  name:   "Cabuchón I"
+  coste:  350
+  efecto: "N+: Engasta gratuitamente una gema en una ranura. (N es el nivel de la gema)."
+-
+  name:   "Aguja de plata"
+  coste:  300
+  efecto: "Permite a otro jugador engastar gratuitamente gemas en la ropa que haya creado como taxidermista."
+-
+  name:   "Zarcillos"
+  coste:  300
+  efecto: "Permite fabricar pendientes. Los materiales cuestan 300g. Venderlo: 200g"

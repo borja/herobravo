@@ -130,6 +130,7 @@ class Hero < Hash
     elementos << "sangre"  if self.blood
     return elementos
   end
+  
 
   def img_path    ; "'../images/personajes/#{genderize}.png'" end
   def big_path    ; "'../../images/portraits/#{name}.png'" end
@@ -138,13 +139,13 @@ class Hero < Hash
   def raza        ; %w(clérigo ladrón bárbaro mago).include?(clase) ? 'humano' : clase end
   def female?     ; sex == 'female' end
   def male?       ; sex == 'male' end
-  def anillos     ; (baratijas || []).select { |m| m.fits == "anillo"  } end
-  def amuletos    ; (baratijas || []).select { |m| m.fits == "amuleto" } end 
+  def anillos     ; (baratijas || []).select { |m| m.fits == 'anillo'  } end
+  def amuletos    ; (baratijas || []).select { |m| m.fits == 'amuleto' } end 
   def ataque      ; weapons.first.categoria != 'distancia' ? weapons.first.ataque : 0 end
   def rango       ; weapons.first.categoria == 'distancia' ? weapons.first.ataque : 0 end
   def defensa     ; armour.defensa end
-  def gremio      ; Profesion.new(profesion) if profesion end
   def pet         ;        Pet.new(familiar) if familiar  end
+  def gremio      ; Profesion.new(profesion.merge({ name: (profesions.find {|p| p.id == profesion['id'] } ).name }) ) end
   def baratijas   ; self.miscelaneas.map  {|m|  Miscelanea.new(m)}       if self.miscelaneas       end
   def proteccions ; self.protecciones.map {|p|  Proteccion.new(p)}       if self.protecciones      end
   def trinkets    ; self.abalorios.map    {|a|    Abalorio.new(a)}       if self.abalorios         end
@@ -160,8 +161,8 @@ class Hero < Hash
   def blood_magic  ; self.blood.map    {|num| sangre(num)} if self.blood    end
   def shadow_magic ; self.shadows.map  {|num| sombra(num)} if self.shadows  end 
   def sin_recursos ; self.tesoro.nil? end
-  def empadronado  ; self.ciudad || "Jadessvärd" end
-  def estado       ; empadronado == "Jadessvärd" ? (status || "ausente") : "extranjero"  end
+  def empadronado  ; self.ciudad || 'Jadessvärd' end
+  def estado       ; empadronado == 'Jadessvärd' ? (status || 'ausente') : 'extranjero'  end
   def capacidad    ; nivel/3 + 3 end #inventario
 
   def patrimonio
