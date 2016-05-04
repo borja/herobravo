@@ -19,4 +19,5 @@ class App < Sinatra::Base
   end
 
   post('/calculador') { preview('calculador') }
+  post('/buscar')     { preview('heroes') }
 end
