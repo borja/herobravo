@@ -9,7 +9,7 @@
 				<th>Descendientes</th>
 			<% end %>
 			<th>Raza</th>
-			<% if h.gremio %>
+			<% if h.profesion %>
 				<th>Profesión</th>
 			<% end %>
 		</tr>
@@ -25,7 +25,7 @@
 				<td><%= erb :'ficha/descendientes' %></td>
 			<% end %>
 			<td><a href='/raza/<%= h.raza %>s'><%= h.raza.capitalize %></a></td>
-			<% if h.gremio %>
+			<% if h.profesion %>
 				<td><%= erb :'ficha/profesion', locals: { prof: h.gremio } %></td>
 			<% end %>
 		</tr>
