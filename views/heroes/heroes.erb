@@ -15,48 +15,18 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% heros.sort_by { |h| [h.nivel,h.reputacion] }.reverse.each do |hero| %>
-			<% main_hero  = ((hero.estado || "ausente") == hero.lista_status(request.path_info.gsub('/',''))) %>
-			<% alter_hero = params[:param] ? (hero.empadronado == params[:param]) : false %>
-			<% encontrado = hero.name.downcase.include?(params[:nombre].to_s.downcase) %>
-			<% if main_hero || alter_hero || encontrado %>
-				<tr>
-					<td><%= erb :'display/portrait', locals: { h: hero } %></td>
-					<td><a href='/hero/<%= hero.id %>'><%= hero.name %></a><br>
-						<% if ciudad?(hero.jugador).empty? %>
-							<i><%= hero.jugador %></i>
-						<% else %>
-							<a href='/city/<%= ciudad?(hero.jugador).first["name"] %>'><i><%= hero.jugador %></i></a>
-						<% end %>
-					</td>
-					<td><%= hero.genderize.capitalize%><br>
-						<i><a href="/habilidad/<%= hero.personaje.gsub("señor de las bestias","beastslord") %>">
-							<%= hero.personaje.capitalize %>
-						</a></i>
-					</td>
-					<td><%= hero.nivel %></td>
-					<td><% if p = hero.pet %><%= erb :'display/display', locals: { 
-							title:       p.nombre , 
-							path:        p.img_path,
-							description: p.descripcion } %>
-						<% end %>
-					</td>
-					<td>
-						<%= erb :'ficha/profesion', locals: { prof: hero.gremio } if hero.profesion %>
-					</td>
-					<td><table>
-							<tr><% hero.weapons.each do |weapon| %>
-								<td><%= erb :'display/item', locals: {item: weapon } %></td>
-							<% end %></tr>
-						</table>
-					</td>
-					<td><%= erb :'display/armadura', locals: { a: hero.armour } %></td>
-					<td style="background-image:url(../images/ficha/star.png); 
-						background-repeat: no-repeat; background-position:center;">
-						<%= hero.reputacion %>
-					</td>
-				</tr>
+		<% if params[:nombre].to_s.empty? %>
+			<% if params[:param] %>
+				<% filtered_heros = heros.select {|h| h.empadronado == params[:param] } %>
+			<% else %>
+				<% filtered_heros = heros.select {|h| (h.estado || "ausente") == h.lista_status(request.path_info.gsub('/','')) } %>
 			<% end %>
+		<% else %>
+			<% filtered_heros = heros.select {|h| h.name.downcase.include?(params[:nombre].to_s.downcase) } %>
+		<% end %>
+
+		<% filtered_heros.sort_by { |h| [h.nivel,h.reputacion] }.reverse.each do |hero| %>
+			<%= erb :'heroes/hero', locals: { hero: hero } %>
 		<% end %>
 	</tbody>
 </table>
