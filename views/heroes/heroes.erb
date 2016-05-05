@@ -20,6 +20,7 @@
 		</tr>
 	</thead>
 	<tbody>
+		<%= params %>
 		<% if (params[:nombre].to_s.empty? && params[:criteria].to_s.empty?) %>
 			<% if params[:param] %>
 				<% filtered_heros = heros.select {|h| h.empadronado == params[:param] } %>
@@ -31,7 +32,7 @@
 			<% case params[:criteria].to_s 
 				   when 'heroe' %>  <% filtered_heros = heros.select {|h|    h.name.downcase.include?(palabra) } %>
 				<% when 'jugador' %><% filtered_heros = heros.select {|h| h.jugador.downcase.include?(palabra) } %>
-				<% when 'mascota' %><% filtered_heros = heros.reject {|h|  h.pet.nil? }.select{|h| h.pet.name.include?(palabra)} %>
+				<% when 'mascota' %><% filtered_heros = (heros.reject {|h| h.pet.nil? }).select {|h| h.pet.name.downcase.include?(palabra)} %>
 			<% end %>
 		<% end %>
 
