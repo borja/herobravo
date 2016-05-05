@@ -1,6 +1,10 @@
 <form action="/buscar" method="POST">
 	<input type="text" name="nombre">
-	<input type="submit" value="buscar héroe">
+	Héroes:
+	<input type="radio" name="criteria" value="heroe" checked="checked" />
+	Jugadores:
+	<input type="radio" name="criteria" value="jugador" />
+	<input type="submit" value="buscar">
 </form>
 <table id='tresp'>
 	<thead>
@@ -15,14 +19,18 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% if params[:nombre].to_s.empty? %>
+		<% if (params[:nombre].to_s.empty? && params[:criteria].to_s.empty?) %>
 			<% if params[:param] %>
 				<% filtered_heros = heros.select {|h| h.empadronado == params[:param] } %>
 			<% else %>
-				<% filtered_heros = heros.select {|h| (h.estado || "ausente") == h.lista_status(request.path_info.gsub('/','')) } %>
+				<% filtered_heros = heros.select {|h| (h.estado || 'ausente' ) == h.lista_status(request.path_info.gsub('/','')) } %>
 			<% end %>
 		<% else %>
-			<% filtered_heros = heros.select {|h| h.name.downcase.include?(params[:nombre].to_s.downcase) } %>
+			<% if params[:criteria].to_s == 'heroe' %>
+				<% filtered_heros = heros.select {|h| h.name.downcase.include?(params[:nombre].to_s.downcase) } %>
+			<% else %>
+				<% filtered_heros = heros.select {|h| h.jugador.downcase.include?(params[:nombre].to_s.downcase) } %>
+			<% end %>
 		<% end %>
 
 		<% filtered_heros.sort_by { |h| [h.nivel,h.reputacion] }.reverse.each do |hero| %>
