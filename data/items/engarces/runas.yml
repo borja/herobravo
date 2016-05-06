@@ -15,6 +15,12 @@
     armadura: "+1 dado de ataque si el enemigo defiende con más."
     anillo:   "1/reto: Ignora una trampa foso/roca caída."
     hacha:    "+1 dado morado de ataque (calavera única: potencia +1)"
+    colgante: "+1 potencia a los hechizos que usen la voz, y habilidades de tipo grito."
+    manos:    "Los golpes sin armas son aullantes"
+    cintura:  "1/reto: Eres inmune a los efectos de silencio"
+    espalda:  "Al matar frontalmente, puedes cambiar un punto de opresión por un galardón."
+    escudo:   "+1 infundir miedo a miniaturas más grandes que tú."
+    abalorio: "Al ser heredado tras morir en combate: +2 reputación (se puede acumular)"
 -
   id:   2
   name: "feth"
@@ -27,9 +33,13 @@
   name: "syr"
   fits:
     arma:     "+1 dado de potencia 2"
+    espada:   "+1 dado eléctrico"
+    escudo:   "1/reto: Redirige un conjuro de tipo rayo que recibas, a su lanzador."
     colgante: "+1 resistencia mágica general"
     anillo:   "Inmune al hechizo tempestad"
     bastón:   "+1 magia aleatoria de aire nivel 2"
+    abalorio: "1/reto: +1 maestría a una magia de aire"
+    armadura: "-1 daño sufrido por hechizos de aire"
 -
   id:   4
   name: "bek"
@@ -38,6 +48,8 @@
     espada:   "Evenena 2 escudos negros: dormir"
     hacha:    "Eléctrica 2 escudos negros: obtienes ráfaga."
     daga:     "+2 de potencia en los ataques por la espalda"
+    espalda:  "+1 PC al ser atacado por la espalda, por enemigos en sigilo"
+    pies:     "Empujas a los enemigos en sigilo, aunque no les puedas ver"
 -
   id:   5
   name: "yom"
@@ -91,5 +103,5 @@
   name: "gar"
   fits:
     anillo:   "Duplica el oro de las tiradas de tesoro"
-    botas:    "+ 1 movimiento"
+    pies:     "+ 1 movimiento"
     colgante: "Correr: Suma 1d6 extra al movimiento."
