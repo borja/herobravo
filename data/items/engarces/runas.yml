@@ -25,7 +25,7 @@
   id:   2
   name: "feth"
   fits:
-    armadura: "+2 vs calor (3 calaveras al defender: Niebla)"
+    espalda:  "+2 vs calor (3 calaveras al defender: Niebla)"
     arma:     "Maldición: -2 a la resistencia mágica del objetivo"
     muñecas:  "+1 dado negro de defensa escudo blanco: indemne"
 -
@@ -58,14 +58,22 @@
     arma:     "Eléctrica"
     espalda:  "Se tiran dados morados al saltar fosos."
     anillo:   "El fuego de Ira contra no-muertos dobla el daño"
-- 
+    botas:    "+1 movimiento"
+    abalorio: "+1 movimiento durante la fase trepidante"
+    escudo:   "1/reto: Si un golpe cuerpo a cuerpo fuera a matarte, reduce tu cuerpo a 0PC en su lugar."
+    manos:    "1/reto: Puedes repetir una tirada de ataque, con +2 a la fuerza."
+    bolsillo: "4 carga de destino: recuperas 1PC. (+1 carga al atravesar una puerta)"
+-
   id:   6
   name: "sinq"
   fits:
     espada:   "Resistencia +3 vs magia tenebro."
     hacha:    "+ 2 potencia vs Fimires y Momias."
     anillo:   "Al matar un no-muerto con un hechizo recupera 1PM"
-    colgante: "Al matar un orco con un hechizo recupera 1PC"
+    colgante: "Al matar un piel verde con un hechizo recupera 1PC"
+    escudo:   "+1 punto de de habilidad única al sufrir más heridas que el cuerpo restante"
+    manos:    "+1 PM al matar un demonio"
+    muñecas:  "+1 opresión al recibir ataques en conjunto. Activa, 3o.: +1 fuerza a tu siguiente golpe. Pasiva (5o.): +1 vs magia"
 - 
   id:   7
   name: "rwon"
