@@ -14,7 +14,7 @@ mente:        12
 mov:          12
 armadura:     { id: 6, gemas: [34, 32, 34] }
 armas:
-  - { id: 9,  gemas: [25, 17, 26], enchants: [18, 1, 2, 3, 4, 17] }
+  - { id: 9,  gemas: [24, 32, 35], enchants: [18, 1, 2, 3, 4, 17] }
   - { id: 7,  gemas: [25, 17, 26], enchants: [105] }
 protecciones:
   - { id: 0 }
@@ -29,7 +29,7 @@ protecciones:
   
 miscelaneas:
   - { id:  1, gemas: [25], enchants: [9] }
-  - { id:  9, ranuras: 3, enchants: [39] }
+  - { id:  9, gemas: [25, 26, 28], enchants: [39] }
   - { id:  7, enchants: [32] }
   - { id: 11, ranuras: 1 }
   - { id: 20, ranuras: 1, enchants: [89, 29] }
@@ -44,7 +44,7 @@ abalorios:
   - { id: 5 }
   - { id: 6 }
 tesoro:
-  gemas: [14, 24, 25, 17, 35, 16, 16, 27, 18, 32]
+  gemas: [14, 25, 17, 17, 16, 16, 27, 18]
   runas: [7, 9]
 mounts:     [1]
 piezas:     [3, 6, 4]
