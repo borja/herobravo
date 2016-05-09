@@ -1,6 +1,5 @@
 Herosheet Dashboard
 ===================
-
 [![Testing CI Status](https://travis-ci.org/borja/herobravo.svg?branch=master)](https://travis-ci.org/borja/herobravo)
 [![Dependency Status](https://gemnasium.com/Borja/herobravo.svg)](https://gemnasium.com/Borja/herobravo)
 [![Deployment Status](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)
@@ -8,11 +7,10 @@ Herosheet Dashboard
 
 Running this application locally
 ----------------------------------
-
 To run this application locally, run:
 
-		bundle install
-		bundle exec ruby -S rackup -w config.ru
+	bundle install
+	bundle exec ruby -S rackup -w config.ru
 
 License
 -------
