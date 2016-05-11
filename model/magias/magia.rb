@@ -15,16 +15,9 @@ class Magia < Hash
   end
 
   def color # Returns color code
-    c = case elemento
-        when 'fuego'    then 'FF6633'
-        when 'aire'     then 'CCFFFF'
-        when 'tierra'   then 'CC9966'
-        when 'agua'     then '44CCFF'
-        when 'sombra'   then 'CC9999'
-        when 'elfico'   then '99FFCC'
-        when 'sangre'   then 'CC4545'
-        when 'plegaria' then 'FAEE96'
-        end
-    "background-color:##{c}"
+    colors = %w(FF6633 CCFFFF CC9966 44CCFF CC9999 99FFCC CC4545 FAEE96)
+    elems  = %w(fuego  aire   tierra agua   sombra elfico sangre plegaria)
+    c = colors[elems.find_index(elemento)]
+    'background-color:#' + c
   end
 end
