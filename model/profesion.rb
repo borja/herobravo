@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-# encoding: UTF-8
 # Clase para gestionar las profesiones y sus grados.
 # TODO: necesita refactor segun la nueva forma de organizar los datos
 class Profesion < Hash
