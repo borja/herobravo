@@ -1,6 +1,7 @@
 # encoding: UTF-8
 def criaturas # plural
-  %w(bestias pielverdes nomuertos dragones elementales caóticos guardianes humanoides)
+  %w(bestias pielverdes nomuertos dragones
+     elementales caóticos guardianes humanoides)
 end
 
 def criaturae # singular
