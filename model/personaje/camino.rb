@@ -10,13 +10,10 @@ class Camino < Array
 
   # Es posible que este method sea muy pesado
   def conocidos
-    total = []
-    heros.each do |h|
-      if h.camino
-        total << h.id if h.camino.first == name
-      end
+    n = heros.select {|h| h.camino}.map do |h| # Filtra los heroes sin camino
+      h.id if h.camino.first == name           # Asocia el camino con el ID
     end
-    total
+    n.compact # descarta los valores nil
   end
 
   def img_path
