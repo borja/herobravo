@@ -1,5 +1,4 @@
-#!/usr/bin/ruby
-# encoding: UTF-8
+# Main app class
 
 class Hero < Hash
   attr_accessor :id, :name, :nivel,
