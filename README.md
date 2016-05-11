@@ -4,6 +4,7 @@ Herosheet Dashboard
 [![Dependency Status](https://gemnasium.com/Borja/herobravo.svg)](https://gemnasium.com/Borja/herobravo)
 [![Deployment Status](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)
 [![Code Climate](https://codeclimate.com/github/borja/herobravo/badges/gpa.svg)](https://codeclimate.com/github/borja/herobravo)
+[![Test Coverage](https://codeclimate.com/github/borja/herobravo/badges/coverage.svg)](https://codeclimate.com/github/borja/herobravo/coverage)
 Running this application locally
 ----------------------------------
 To run this application locally, run:
