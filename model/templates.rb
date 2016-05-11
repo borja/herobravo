@@ -1,5 +1,4 @@
-#!/usr/bin/ruby
-# encoding: UTF-8
+# Template management
 
 def get_center(template)
   col = case
