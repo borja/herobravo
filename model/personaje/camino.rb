@@ -10,8 +10,8 @@ class Camino < Array
 
   # Es posible que este method sea muy pesado
   def conocidos
-    n = heros.select {|h| h.camino}.map do |h| # Filtra los heroes sin camino
-      h.id if h.camino.first == name           # Asocia el camino con el ID
+    n = heros.select(&:camino).map do |h| # Filtra los heroes sin camino
+      h.id if h.camino.first == name      # Asocia el camino con el ID
     end
     n.compact # descarta los valores nil
   end
