@@ -1,6 +1,3 @@
-#!/usr/bin/ruby
-# encoding: UTF-8
-
 # Define la montura de un heroe. Le permite entrar sin problemas al dungeon.
 class Montura < Hash
   attr_accessor :id, :name, :recorrido, :distancia, :bono, :precio
@@ -12,10 +9,15 @@ class Montura < Hash
   end
 
   def img_path
-    "'../../images/monturas/#{name}.png'" 
+    "'../../images/monturas/#{name}.png'"
   end
 end
 
 # DB Loader
-def monturas ; load_yaml('personaje/monturas') end
-def montura id ; monturas[id] end
+def monturas
+  load_yaml('personaje/monturas')
+end
+
+def montura(id)
+  monturas[id]
+end
