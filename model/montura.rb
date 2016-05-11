@@ -17,5 +17,5 @@ class Montura < Hash
 end
 
 # DB Loader
-def monturas ; load_yaml('monturas') end
+def monturas ; load_yaml('personaje/monturas') end
 def montura id ; monturas[id] end

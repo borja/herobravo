@@ -1,4 +1,8 @@
 -
+  ruta:  "error"
+  template:
+    main: "error"
+-
   ruta:  "hero"
   title: "view"
   template:

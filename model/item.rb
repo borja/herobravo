@@ -207,6 +207,11 @@ def pocion     id ;    pociones[id] end
 def pergamino  id ;  pergaminos[id] end
 def material   id ;  materiales[id] end
 
+# Libro malvado del Tarot
+def tarot
+  load_yaml('items/tarot')
+end
+
 # Tesoros, TODO: comunes como tesoros
 def gema id ; gemas.find { |g| g.id == id } end
 def joya id ; joyas.find { |j| j.id == id } end

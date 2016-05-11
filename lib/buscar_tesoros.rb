@@ -10,14 +10,16 @@ def dado_tesoro
 end
 
 def tesoro(sigmar, dado1, dado2)
-  valores = %w(pifia vacia maldición trampa monstruo oro perg pot comida alijo cofre)
+  valores = %w(pifia vacia maldición trampa monstruo oro
+               perg pot comida alijo cofre)
   send(valores[dado1 + dado2 - 2], sigmar, dado1, dado2)
 end
 
-# Resultados según sigmar
+# Resultados dependiendo de Sigmar
 def pifia(sigmar, _dado1, _dado2) # 2
   if sigmar == 'eagle'
-    'Tropiezas y pierdes 1PC. A pesar de tu torpeza, te levantas disimuladamente...'
+    'Tropiezas y pierdes 1PC. A pesar de tu torpeza,
+     te levantas disimuladamente...'
   else
     "Tropiezas y pierdes 1PC forma patética."
   end
@@ -34,11 +36,22 @@ end
 def maldición(sigmar, dado1, dado2) # 4
   doble = dado1 == dado2
   case sigmar
-  when 'eagle'  then "Maldición: #{doble ? 'Legañas: Tu siguiente tirada de ataque causará daños a la miniatura más cercana' : 'Hirsutismo: -1 Reputación salvo enanos'} "
-  when 'plus'   then "Maldición: #{doble ? 'Indispuesto: Tu siguiente hechizo o tirada de defensa fallará' : 'Alopecia: -1 Reputación si eres enano o mujer.'} "
-  when 'blank'  then "Maldición: #{doble ? 'Patán: Tu siguiente tirada de tesoros tirará un dado menos' : 'Yuyu: En un momento dado, el MB puede hacer repetir 1d6.'} "
-  when 'hammer' then "Maldición: #{doble ? 'Masoquismo: Golpéate sin armas con cada 1 que saques hasta el final del reto' : 'Alopecia: -1 Reputación si eres enano o mujer.'} "
-  when 'comet'  then "Maldición: #{doble ? 'Mirado por un tuerto: El oro que obtengas en adelante, es falso.' : 'Infortunio: El MB podrá hacer repetir una tirada cualquiera.'} "
+  when 'eagle'  then
+    "Maldición: #{doble ? 'Legañas: Tu siguiente tirada de ataque causará daños      a la miniatura más cercana' : 'Hirsutismo: -1 Reputación salvo enanos'} "
+  when 'plus'   then
+    "Maldición: #{doble ? 'Indispuesto: Tu siguiente hechizo o tirada de
+     defensa fallará' : 'Alopecia: -1 Reputación si eres enano o mujer.'} "
+  when 'blank'  then
+    "Maldición: #{doble ? 'Patán: Tu siguiente tirada de tesoros tirará un dado
+     menos' : 'Yuyu: En un momento dado, el MB puede hacer repetir 1d6.'} "
+  when 'hammer' then
+    "Maldición: #{doble ? 'Masoquismo: Golpéate sin armas con cada 1 que saques
+    hasta el final del reto' : 'Alopecia: -1 Reputación si eres enano o
+    mujer.'} "
+  when 'comet'  then
+    "Maldición: #{doble ? 'Mirado por un tuerto: El oro que obtengas en
+     adelante, es falso.' : 'Infortunio: El MB podrá hacer repetir una tirada
+     cualquiera.'} "
   end
 end
 
