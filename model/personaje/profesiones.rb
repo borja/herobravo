@@ -6,7 +6,7 @@ end
 
 def profes
   %w(alquimia inscripción taxidermia táctica
-  encantamiento orfebrería carpintería )
+     encantamiento orfebrería carpintería )
 end
 
 def profesions
