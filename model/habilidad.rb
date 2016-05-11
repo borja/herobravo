@@ -49,7 +49,7 @@ pjs.each do |pj|
 end
 
 # Maestro de Armas
-def maestrodearmas ; load_yaml('maestrodearma') end
+def maestrodearmas ; load_yaml('skills/maestrodearma') end
 def maestrodearma id 
   maestrodearmas.find { |m| m['id'] == id }.merge('char' => 'maestrodearmas')
 end

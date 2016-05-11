@@ -56,7 +56,7 @@ end
 
 # DB Loader
 def pets
-  load_yaml('pets')
+  load_yaml('personaje/pets')
 end
 
 def pet(id)
