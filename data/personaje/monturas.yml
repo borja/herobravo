@@ -1,0 +1,35 @@
+-
+  id:        0
+  name:      "caballo"
+  distancia: "3"
+  bono:      "bono"
+  precio:    500
+  recorrido: "tierra"
+-
+  id:        1
+  name:      "caballo de guerra"
+  distancia: "4"
+  bono:      "reputación +1"
+  precio:    750
+  recorrido: "tierra"
+-
+  id:        2
+  name:      "barco"
+  distancia: "6"
+  bono:      "Permite surcar los mares."
+  precio:    2500
+  recorrido: "mar"
+-
+  id:        3
+  name:      "alfombra voladora"
+  distancia: "4"
+  bono:      "Permite al portador transportar a su amad@ por el aire."
+  precio:    4500
+  recorrido: "aire"
+-
+  id:        4
+  name:      "dragón"
+  distancia: "6"
+  bono:      "Permite al portador transportar a un compañero (-2 movimiento)."
+  precio:    10000
+  recorrido: "aire"
