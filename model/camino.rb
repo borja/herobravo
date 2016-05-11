@@ -22,7 +22,7 @@ class Camino < Array
 end
 
 # YAML DB Loader
-def caminos ; load_yaml('caminos') end
+def caminos ; load_yaml('personaje/caminos') end
 
 def camino(nombre)
   caminos.find {|c| c.first == nombre}

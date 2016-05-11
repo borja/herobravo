@@ -6,5 +6,3 @@ def fields
     %w(cuello argolla pendientes cadena broche tobillos)
   ]
 end
-
-def resistencias ; load_yaml('resistencias') end
