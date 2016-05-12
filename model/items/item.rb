@@ -60,7 +60,7 @@ class Item < Hash
     "'../images/#{item}s/#{carpeta}.png'"
   end
 
-  def is_tier?
+  def tier?
     combo = false
     mix = { gemas: gemas, runas: runas, joyas: joyas }
     tiers.each do |t|
@@ -70,6 +70,6 @@ class Item < Hash
   end
 
   def tier_color
-    is_tier? ? is_tier?[:color] : 'black'
+    tier? ? tier?[:color] : 'black'
   end
 end

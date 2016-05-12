@@ -6,7 +6,7 @@
 	</thead>
 	<tbody>
 		<% materiales.each do |m| %>
-		<% mat = Material.new(m) %>
+			<% mat = Material.new(m) %>
 			<tr>
 				<td><%= erb :'display/display', locals: {
 						title:       mat.name, 
