@@ -16,7 +16,7 @@
 			<tr>
 				<% clases.each do |clase| %>
 					<td>
-						<% h = send("clase_#{clase}")[i] %>
+						<% h = h_clases[clase.to_sym][i] %>
 						<a href="/habilidad/<%= h.gsub('señor de las bestias', 'beastslord') %>">
 						<%= h %><br>
 						<img src="/images/clases/<%= h %>.png" alt=<%= h %> /, id='icon4'></a>
