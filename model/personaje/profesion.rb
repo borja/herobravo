@@ -1,5 +1,5 @@
 # Clase para gestionar las profesiones y sus grados.
-# TODO: necesita refactor segun la nueva forma de organizar los datos
+# TODO necesita refactor segun la nueva forma de organizar los datos
 class Profesion < Hash
   attr_accessor :id, :name, :aprendiz, :artesano, :maestro
 
