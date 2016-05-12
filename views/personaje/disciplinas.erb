@@ -13,16 +13,15 @@
 			<tr><td width='9%'><h2><%= c.nivel %></h2></td>
 				<td><%= erb :'display/skill', locals: { skill: c} %></td>
 				<td><%= c.name %></td>
-				<td>
-					<% if c.requisitos %>
-					<table>
-						<tr>
-							<% c.requisitos.each do |r| %>
-								<% req = Habilidad.new(send(char,r)) %>
-								<td><%= erb :'display/skill', locals: { skill: req } %></td>
-							<% end %>
-						</tr>
-					</table>
+				<td><% if c.requisitos %>
+						<table>
+							<tr>
+								<% c.requisitos.each do |r| %>
+									<% req = Habilidad.new(send(char,r)) %>
+									<td><%= erb :'display/skill', locals: { skill: req } %></td>
+								<% end %>
+							</tr>
+						</table>
 					<% else %>
 						-
 					<% end %>
