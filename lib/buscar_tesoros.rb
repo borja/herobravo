@@ -22,8 +22,11 @@ def tesoro(sigmar, dado1, dado2)
 end
 
 # Resultados dependiendo de Sigmar
+# --------------------------------
+
 def pifia(sigmar, _dado1, _dado2) # 2
-  if sigmar == 'eagle'
+  # Returns a string with the pifia type
+  if sigmar == 'eagle' # This is the epic result
     'Tropiezas y pierdes 1PC. A pesar de tu torpeza,
      te levantas disimuladamente...'
   else
@@ -32,7 +35,7 @@ def pifia(sigmar, _dado1, _dado2) # 2
 end
 
 def vacia(sigmar, _dado1, _dado2) # 3
-  if sigmar == 'hammer'
+  if sigmar == 'hammer' # You can keep searching.
     "La sala está vacía pero aún se pueden buscar tesoros"
   else
     "La sala está vacía y no se podrá rebuscar más."
@@ -40,7 +43,7 @@ def vacia(sigmar, _dado1, _dado2) # 3
 end
 
 def maldición(sigmar, dado1, dado2) # 4
-  doble = dado1 == dado2
+  doble = dado1 == dado2 # special condition
   case sigmar
   when 'eagle'  then
     "Maldición: #{doble ? 'Legañas: Tu siguiente tirada de ataque causará daños      a la miniatura más cercana' : 'Hirsutismo: -1 Reputación salvo enanos'} "
@@ -79,14 +82,10 @@ def monstruo(sigmar, _dado1, _dado2) # 6
   end
 end
 
-def oro(sigmar, _dado1, _dado2)
-  case sigmar
-  when 'eagle'  then '50 piezas de oro.'
-  when 'plus'   then '35 piezas de oro.'
-  when 'blank'  then '10 piezas de oro.'
-  when 'hammer' then '25 piezas de oro.'
-  when 'comet'  then '60 piezas de oro.'
-  end
+def oro(sigmar, _dado1, _dado2) # 7
+  s = %w(eagle plus blank hammer comet)
+  r = %w(50    35   10    25     60)
+  r[s.index(sigmar)] + ' piezas de oro' # Gold coins
 end
 
 def perg(sigmar, _dado1, _dado2) # 8
