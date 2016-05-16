@@ -94,23 +94,15 @@ def perg(sigmar, _dado1, _dado2) # 8
 end
 
 def pot(sigmar, _dado1, _dado2) # 9
-  case sigmar
-  when 'eagle'  then 'pocion de curacion'
-  when 'plus'   then 'pocion de resistencia'
-  when 'blank'  then 'pocion de fuerza'
-  when 'hammer' then 'pocion de velocidad'
-  when 'comet'  then 'pocion de heroes'
-  end
+  s = %w(eagle    plus        blank  hammer    comet)
+  r = %w(curación resistencia fuerza velocidad héroes)
+  "poción de #{r[s.index(sigmar)]}"
 end
 
 def comida(sigmar, _dado1, _dado2) # 10
-  case sigmar
-  when 'eagle'  then 'comida : asado'
-  when 'plus'   then 'comida : manzanas'
-  when 'blank'  then 'comida : podrida'
-  when 'hammer' then 'comida : agua'
-  when 'comet'  then 'comida : sidra'
-  end
+  s = %w(eagle plus     blank   hammer comet)
+  r = %w(asado manzanas podrida agua   sidra)
+  "comida: #{r[s.index(sigmar)]}"
 end
 
 def alijo(sigmar, _dado1, _dado2) # 11
