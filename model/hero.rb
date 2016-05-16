@@ -222,7 +222,6 @@ class Hero < Hash
     master.map       { |num| Habilidad.new(maestrodearma(num)) } if master
   end
 
-  # TODO: Señor de las bestias bug:
   def habilidades
     skills.map       { |num| Habilidad.new(send(personaje.gsub('señor de las bestias', 'beastslord'), num)) } if skills
   end
