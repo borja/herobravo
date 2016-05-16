@@ -20,11 +20,4 @@ class Armadura < Item
   def fits
     'armadura'
   end
-
-  # TODO: Hay que cambiar este method, hibrido con view.
-  def description
-    "<li>Categoría: #{categoria}</li>
-		 <li>Defensa:   #{defensa}</li>
-		 <li>Precio:    #{precio}</li>"
-  end
 end
