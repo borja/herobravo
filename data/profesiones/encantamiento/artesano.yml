@@ -9,6 +9,9 @@
           "Requiere una varita mágica: Redirige una maldición a la varita mágica, 
            anulando el poder de la varita hasta final del reto."
 -
-  name:   "XXX"
-  coste:  450
-  efecto: "Crear nueva, por loot de misión."
+  name:   "Aceite retributivo"
+  coste:  325
+  efecto: 
+          "Requiere arcanóleo. Se aplica en un objeto de tipo arma.
+           Si el objetivo pierde el efecto de una bendición, el lanzador recupera el hechizo,
+           y se pierde el arcanóleo."
