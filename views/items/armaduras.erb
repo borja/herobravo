@@ -2,11 +2,11 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<th>Armadura</th>
-			<th>Categoría<th>
+			<th colspan=2>Armadura</th>
+			<th>Categoría</th>
 			<th>Defensa</th>
 			<th>Precio</th>
-		</tr>	
+		</tr>
 	</thead>
 	<tbody>
 		<% armaduras.map{ |arm| Armadura.new(arm) }.each do |a| %>
