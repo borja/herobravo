@@ -42,9 +42,9 @@ div.information_popup_container > div.popup_information {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:   14px;
 	color: #CBCBCB;
-	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
+	border-radius: 6px;
 	background-color: #222;
 	padding: 1em 2em 1em 2em;
 	text-align: left;
@@ -66,9 +66,9 @@ table {
   margin-left:auto; 
   margin-right:auto;
   border: 1px solid #e3e3e3;
-  border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
+  border-radius: 6px;
   vertical-align: middle;
 }
 /* Zebra striping */
@@ -177,7 +177,7 @@ concurso de literatura, ribetes de esquina para ganadores
   font: bold 12px Sans-Serif;
   color: #333;
   text-align: center;
-  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
   -webkit-transform: rotate(35deg);
   -moz-transform:    rotate(35deg);
   -ms-transform:     rotate(35deg);
@@ -193,9 +193,9 @@ concurso de literatura, ribetes de esquina para ganadores
   background-image:    -moz-linear-gradient(top, silver, #CACACA); 
   background-image:     -ms-linear-gradient(top, silver, #CACACA); 
   background-image:      -o-linear-gradient(top, silver, #CACACA); 
-  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0 0 3px rgba(0,0,0,0.3);
+  box-shadow:         0 0 3px rgba(0,0,0,0.3);
 }
 
 .ribbon-silvered:before, .ribbon-silvered:after {
@@ -227,7 +227,7 @@ concurso de literatura, ribetes de esquina para ganadores
   font: bold 12px Sans-Serif;
   color: #333;
   text-align: center;
-  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
   -webkit-transform: rotate(35deg);
   -moz-transform:    rotate(35deg);
   -ms-transform:     rotate(35deg);
@@ -243,9 +243,9 @@ concurso de literatura, ribetes de esquina para ganadores
   background-image:    -moz-linear-gradient(top, gold, #ACAC45); 
   background-image:     -ms-linear-gradient(top, gold, #ACAC45); 
   background-image:      -o-linear-gradient(top, gold, #ACAC45); 
-  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0 0 3px rgba(0,0,0,0.3);
+  box-shadow:         0 0 3px rgba(0,0,0,0.3);
 }
 
 .ribbon-golden:before, .ribbon-golden:after {
