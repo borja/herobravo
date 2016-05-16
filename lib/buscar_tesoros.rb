@@ -1,17 +1,23 @@
 # encoding: UTF-8
 
-# Tirada de dados
+# Tirada de dados, Sigmar
 def dado_sigmar
+  # Returns a random dice-face string
   %w(hammer comet plus blank eagle eagle)[rand(6)]
 end
 
+# Tirada de dados, 2d6 del tesoro, individual
 def dado_tesoro
+  # Returns a value from 1 to 6 (normal dice)
   rand(6) + 1
 end
 
+# Main method 2d6 + Sigmar dice
 def tesoro(sigmar, dado1, dado2)
+  # 12 values (2d6) ordered
   valores = %w(pifia vacia maldición trampa monstruo oro
                perg pot comida alijo cofre)
+  # Requests (send) a method, named equals to the values. 
   send(valores[dado1 + dado2 - 2], sigmar, dado1, dado2)
 end
 
