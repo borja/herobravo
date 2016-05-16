@@ -2,22 +2,22 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<% armaduras[1..-1].each do |item| %>
-				<th width='12%'><%= item['name'].gsub("armadura","").gsub("de","") %></th>
-			<% end %>
+			<th>Armadura</th>
+			<th>Categoría<th>
+			<th>Defensa</th>
+			<th>Precio</th>
 		</tr>	
 	</thead>
 	<tbody>
-		<tr>
-			<% armaduras[1..-1].each do |item| %>
-			<% a = Armadura.new(item) %>
-				<td><%= erb :'display/display', :locals => {
-					:title       => a.name,
-					:path        => a.img_path,
-					:description => a.description} %>
-				</td>
-			<% end %>
-		</tr>	
+		<% armaduras.map{ |arm| Armadura.new(arm) }.each do |a| %>
+			<tr>
+				<td><%= erb :'display/armadura', locals: { a: a } %></td>
+				<td><%= a.name %></td>
+				<td><%= a.categoria %></td>
+				<td><%= a.defensa %></td>
+				<td><%= a.precio %></td>
+			</tr>	
+		<% end %>
 	</tbody>
 </table>
 <br/>
