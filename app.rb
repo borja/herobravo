@@ -6,17 +6,13 @@ class App < Sinatra::Base
   error    { erb :error }
 
   get '/:view/:param' do |view, param| # Templates with double-routing
-    case view
-    when 'aire', 'agua', 'fuego', 'tierra' then preview('hechizos')
-    else preview(view) # Try same view as URL (with params)
-    end
+    hechizo = %w(aire agua fuego tierra).include?(view)
+    hechizo ? preview('hechizos') : preview(view)
   end
 
   get '/:view' do |view| # Templates with simple root-viewer
-    case view
-    when 'reservistas', 'ausentes', 'licenciados' then preview('heroes')
-    else preview(view) # Try same view as URL
-    end
+    campeones = %w(reservistas ausentes licenciados).include?(view)
+    campeones ? preview('heroes') : preview(view)
   end
 
   # POST Routing views
