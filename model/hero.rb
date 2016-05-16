@@ -71,11 +71,9 @@ class Hero < Hash
   end
 
   def movimiento_base
-    case clase
-    when 'elfo'     then return 8
-    when 'enano'    then return 6
-    else                 return 7
-    end
+    mb = 7
+    mb += 1 if clase == 'elfo'
+    mb -= 1 if clase == 'enano'
   end
 
   def clase
