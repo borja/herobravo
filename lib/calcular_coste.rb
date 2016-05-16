@@ -1,4 +1,5 @@
-def calcular_coste(p)
+# Calcula el coste de un objeto
+def calcular_coste(p) # p = objeto a calcular
   # Inicializamos
   coste = 0
   eng = p[:engarces].split(',').sort.reverse
@@ -10,5 +11,5 @@ def calcular_coste(p)
   end
   # Reputacion
   coste *= 0.9**p[:repu].to_i # Factor de Repu
-  coste.round
+  coste.round # Redondea el coste sin decimales
 end
