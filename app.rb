@@ -1,6 +1,7 @@
 require 'sinatra/base'
 # Main sinatra App, using param routing.
 class App < Sinatra::Base
+  # GET Routing views
   get('/') { erb :index }
   error    { erb :error }
 
@@ -18,6 +19,7 @@ class App < Sinatra::Base
     end
   end
 
+  # POST Routing views
   post('/calculador') { preview('calculador') }
   post('/buscar')     { preview('heroes') }
 end
