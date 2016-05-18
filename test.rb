@@ -19,13 +19,15 @@ def app
 end
 
 describe '.hero' do
-  
   it 'should say true' do
-    heros.each_with_index do |h,i|
+    heros.each_with_index do |h, i|
+      !hero(i).personaje.nil?
+      !hero(i).jugador.nil?
       File.exist?(h.big_path)
-      hero(i).id == i
-      hero(i).personaje != nil
+      hero(i).id.should        be == i
+      hero(i).mente.should     be >= 4
+      hero(i).cuerpo.should    be >= 4
+      hero(i).repo.should      be >= 0
     end
   end
-
 end
