@@ -23,6 +23,10 @@ def runas
   load_yaml('items/engarces/runas').map { |g| Runa.new(g) }
 end
 
+def tiers
+  load_yaml('items/engarces/tiers')
+end
+
 # Libro malvado del Tarot
 def tarot
   load_yaml('items/tarot')

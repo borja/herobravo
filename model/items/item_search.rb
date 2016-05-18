@@ -5,11 +5,11 @@ def arma(id)
 end
 
 def miscelanea(id)
-  miscelaneas.find { |m| m.id == id }
+  miscelaneas[id]
 end
 
 def proteccion(id)
-  proteccions.find { |p| p.id == id }
+  proteccions[id]
 end
 
 def armadura(id)
@@ -17,7 +17,7 @@ def armadura(id)
 end
 
 def abalorio(id)
-  abalorios.find { |a| a.id == id }
+  abalorios[id]
 end
 
 def enchant(id)
@@ -25,11 +25,11 @@ def enchant(id)
 end
 
 def pieza(id)
-  piezas.find { |p| p.id == id }
+  piezas[id]
 end
 
 def pocion(id)
-  pociones.find { |p| p.id == id }
+  pociones[id]
 end
 
 def pergamino(id)
@@ -51,6 +51,10 @@ end
 
 def runa(id)
   runas.find { |r| r.id == id }
+end
+
+def tier(id)
+  tiers[id]
 end
 
 def gema_ranuras

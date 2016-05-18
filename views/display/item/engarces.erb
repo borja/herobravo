@@ -1,10 +1,10 @@
-<% bg =  item.tier? ? item.tier?[:color] : '#525252' %>
+<% bg =  item.tier? ? item.tier?['color'] : '#525252' %>
 <table id='tier'>
 	<tr>
 		<th style="background-color: <%= bg %>;">
 			<% if item.tier? %>
-				<h3>Tier de <%= item.tier?[:name] %></h3>
-				<p>Efecto: <i><%= item.tier?[:bono] %></i></p>
+				<h3>Tier de <%= item.tier?['name'] %></h3>
+				<p>Efecto: <i><%= item.tier?['bono'] %></i></p>
 			<% else %>
 				<h3>Engarces</h3>
 			<% end %>
