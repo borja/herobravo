@@ -1,14 +1,11 @@
 .fichalista {
     width: 85%;
     height: 500px;
-
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
     margin: auto;
-	
 	border : 12px ;
 	border-left : none;
 	border-right : none;
