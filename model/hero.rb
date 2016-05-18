@@ -73,8 +73,8 @@ class Hero < Hash
     when %w(vengador caminante brujo).include?(personaje) then 'tiefling'
     when %w(invocador conjurador hechicero).include?(personaje) then 'mago'
     when %w(señor\ de\ las\ bestias bersérker hoplita).include?(personaje) then 'bárbaro'
-    when                 %w(clérigo paladín sacerdote).include?(personaje) then 'clérigo'
-    when                 %w(nigromante asesino ladrón).include?(personaje) then 'ladrón'
+    when %w(clérigo paladín sacerdote).include?(personaje) then 'clérigo'
+    when %w(nigromante asesino ladrón).include?(personaje) then 'ladrón'
     else 'unknown'
     end
   end
