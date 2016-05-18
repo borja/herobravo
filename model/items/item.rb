@@ -62,14 +62,14 @@ class Item < Hash
 
   def tier?
     combo = false
-    mix = { gemas: gemas, runas: runas, joyas: joyas }
+    mix = { "gemas" => gemas, "runas" => runas, "joyas" => joyas }
     tiers.each do |t|
-      combo = tier(t[:id]) if t[:mix] == mix
+      combo = t if t['mix'] == mix
     end
     combo
   end
 
   def tier_color
-    tier? ? tier?[:color] : 'black'
+    tier? ? tier?['color'] : 'black'
   end
 end
