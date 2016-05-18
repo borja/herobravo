@@ -4,6 +4,7 @@ Herosheet Dashboard
 [![Dependency Status](https://gemnasium.com/Borja/herobravo.svg)](https://gemnasium.com/Borja/herobravo)
 [![Deployment Status](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)](http://heroku-badge.herokuapp.com/?app=herosheet&style=flat)
 [![Code Climate](https://codeclimate.com/github/borja/herobravo/badges/gpa.svg)](https://codeclimate.com/github/borja/herobravo)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f2559f1e733d4a4c854fdcc84804c047)](https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Grade)
 [![Test Coverage](https://codeclimate.com/github/borja/herobravo/badges/coverage.svg)](https://codeclimate.com/github/borja/herobravo/coverage)
 [![Inline docs](http://inch-ci.org/github/borja/herobravo.svg)](http://inch-ci.org/github/borja/herobravo)
 
