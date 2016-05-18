@@ -49,25 +49,15 @@ class Hero < Hash
   end
 
   def cuerpo_base
-    case clase
-    when 'mago'     then return 4
-    when 'elfo'     then return 6
-    when 'tiefling' then return 4
-    when 'enano'    then return 7
-    when 'bárbaro'  then return 8
-    else                 return 5
-    end
+    chars   = %w(mago elfo tiefling enano bárbaro)
+    cuerpos = [4, 6, 6, 7, 8]
+    chars.include?(clase) ? cuerpos[chars.index(clase)] : 5
   end
-
+  
   def mente_base
-    case clase
-    when 'mago'     then return 6
-    when 'elfo'     then return 4
-    when 'tiefling' then return 4
-    when 'enano'    then return 3
-    when 'bárbaro'  then return 2
-    else                 return 5
-    end
+    chars  = %w(mago elfo tiefling enano bárbaro)
+    mentes = [6, 4, 4, 3, 2]
+    chars.include?(clase) ? mentes[chars.index(clase)] : 5
   end
 
   def movimiento_base
