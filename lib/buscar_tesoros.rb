@@ -17,7 +17,7 @@ def tesoro(sigmar, dado1, dado2)
   # 12 values (2d6) ordered
   valores = %w(pifia vacia maldición trampa monstruo oro
                perg pot comida alijo cofre)
-  # Requests (send) a method, named equals to the values. 
+  # Requests (send) a method, named equals to the values.
   send(valores[dado1 + dado2 - 2], sigmar, dado1, dado2)
 end
 
