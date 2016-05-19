@@ -276,9 +276,16 @@
     left2: "torre/left/sagradas"
     main: "magia/sangre"
 -
+  ruta:  "archivo"
+  template:
+    left:  "ciudad/biblioteca/archivo/left"
+    main:  "ciudad/biblioteca/archivo/main"
+    right: "ciudad/biblioteca/biblioteca"
+-
   ruta:  "biblioteca"
   template:
-    main: "magia/biblioteca"
+    left:  "ciudad/biblioteca/biblioteca"
+    main:  "ciudad/biblioteca/main"
 -
   ruta:  "jugadores"
   template:
