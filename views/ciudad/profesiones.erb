@@ -1,5 +1,3 @@
-<% profesion = profesions.find { |p| p.name == params[:param] } %>
-
 <% grados.each do |grado| %>
 	<h3>Recetas de <%= grado.capitalize %></h3>
 	<table id='tresp'>
@@ -12,6 +10,7 @@
 			</tr>	
 		</thead>
 		<tbody>
+			<% profesion = profesions.find { |p| p.name == params[:param] } %>
 			<% profesion.send(grado.to_sym).each_with_index do |tecnica, i| %>
 				<tr><td><%= i %></td>
 					<td><%= tecnica['name']   %></td>
