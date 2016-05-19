@@ -7,6 +7,7 @@ class Material < Util
   def description
     material(id)['description']
   end
+
   # returns from heros.materiales, the list of (maybe repeated)
   # ids of the heros with self.id material available
   def disponibles
@@ -20,17 +21,14 @@ class Material < Util
     total
   end
 
-  # TODO: Tune up this method. Takes too long to load.
   def usado_en
     usado = []
     profesions.each do |prof|
-      grados.each do |grado|
-        prof[grado].each do |receta|
-          p 'receta: '
-          p receta
-          next unless receta[:matts]
-          if receta[:matts].include?(id)
-            usado << { prof: prof[:id], grado: grado, receta: receta[:id] }
+      %w(aprendiz artesano maestro).each do |grado|
+        prof.send(grado).each do |receta|
+          next unless receta['matts']
+          if receta['matts'].include?(id)
+            usado << { prof: id, grado: grado, receta: receta }
           end
         end
       end

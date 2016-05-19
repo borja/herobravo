@@ -26,9 +26,9 @@
 								<% mat.usado_en.each do |uso| %>
 									<td>
 										<%= erb :'display/display', locals: {
-											title:       p = profesion(uso[:prof])[:name], 
-											path:        "'../../images/profesiones/#{p}.png'",
-											description: profesion(uso[:prof])[uso[:grado].to_sym][uso[:receta]][:name] } %>
+											title:       uso[:receta]['name'],
+											path:        "'../../images/profesiones/#{profes[uso[:prof]]}.png'",
+											description: uso[:receta]['efecto'] } %>
 									</td>
 								<% end %>
 							</tr>

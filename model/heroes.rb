@@ -38,7 +38,8 @@ def narrados(n)
 end
 
 def razas
-  { 'enano'    => { cuerpo: 7, mente: 3, movimiento: 6 },
+  {
+    'enano'    => { cuerpo: 7, mente: 3, movimiento: 6 },
     'elfo'     => { cuerpo: 6, mente: 4, movimiento: 8 },
     'humano'   => { cuerpo: 5, mente: 5, movimiento: 7 },
     'tiefling' => { cuerpo: 6, mente: 4, movimiento: 7 }

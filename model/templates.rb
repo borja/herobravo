@@ -1,12 +1,10 @@
 # Template management
 
-def get_center(template)
-  col = case
-        when template['right'].nil? && template['left'].nil? then 12
-        when template['right'].nil? || template['left'].nil? then 9
-        else 6
-        end
-  "#{col}u important(collapse)"
+def get_center(template) # Responsive main method (12 units)
+  col = 12 # Main div, for all the width
+  col -= 3 if !template['right'].nil? # has right div
+  col -= 3 if !template['left'].nil?  # has left div
+  "#{col}u important(collapse)"       # return total units
 end
 
 # DB Loader
