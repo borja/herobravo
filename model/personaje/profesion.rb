@@ -13,16 +13,15 @@ class Profesion < Hash
     "'../../images/profesiones/#{name}.png'"
   end
 
-  #  TODO:  Refactor this
   def aprendizajes
-    profesion(id)[:aprendiz]
+    profesion(id)['aprendiz']
   end
 
   def artesanias
-    profesion(id)[:artesano]
+    profesion(id)['artesano']
   end
 
   def maestrias
-    profesion(id)[:maestro]
+    profesion(id)['maestro']
   end
 end
