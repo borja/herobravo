@@ -9,6 +9,7 @@ require 'minitest/autorun'
 require 'rack/test'
 require_relative 'app.rb'
 require 'require_all'
+require 'rspec'
 
 # Fake Data Base
 require_all './data'
