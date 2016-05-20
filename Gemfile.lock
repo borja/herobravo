@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    codacy-coverage (1.0.0)
+      simplecov (>= 0.10.0)
     codeclimate-test-reporter (0.5.0)
       simplecov (>= 0.7.1, < 1.0.0)
     docile (1.1.5)
@@ -28,6 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  codacy-coverage
   codeclimate-test-reporter
   minitest (~> 5.9.0)
   rack (~> 1.6.4)
@@ -41,4 +44,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.1
+   1.12.4

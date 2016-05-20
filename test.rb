@@ -1,6 +1,9 @@
 require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
 
+require 'codacy-coverage'
+Codacy::Reporter.start
+
 ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'rack/test'
