@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:circleci/minitest-ci.git
+  revision: 393bdce1a48b1b4b2b7b2dc988ac8f32959ebf17
+  specs:
+    minitest-ci (3.0.4.pre)
+      minitest (~> 5.0, >= 5.0.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +54,7 @@ DEPENDENCIES
   codacy-coverage
   codeclimate-test-reporter
   minitest (~> 5.9.0)
+  minitest-ci!
   rack (~> 1.6.4)
   rack-test
   rake (~> 11.1.2)
