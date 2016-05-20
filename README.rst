@@ -1,14 +1,14 @@
 Herosheet Dashboard
 ===================
-+----------+-----------------+---------------------+
-| Build    | |Build Status|  | |Deployment Status| |
-+----------+-----------------+---------------------+
-| Grades   | |Code Climate|  | |Codacy Badge|      |
-+----------+-----------------+---------------------+
-| Coverage | |Test Coverage| | |Codacy Coverage|   |
-+----------+-----------------+---------------------+
-| Docs     | |Inline docs|   | |Documentation|     |
-+----------+-----------------+---------------------+
++----------+-----------------+---------------------+---------------------+
+| Build    | |Build Status|  | |Deployment Status| | |Dependency Status| |
++----------+-----------------+---------------------+---------------------+
+| Grades   | |Code Climate|  | |Codacy Badge|      |                     |
++----------+-----------------+---------------------+---------------------+
+| Coverage | |Test Coverage| | |Codacy Coverage|   |                     |
++----------+-----------------+---------------------+---------------------+
+| Docs     | |Inline docs|   | |Documentation|     |                     |
++----------+-----------------+---------------------+---------------------+
 
 .. |Build Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
