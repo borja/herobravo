@@ -3,7 +3,7 @@ Herosheet Dashboard
 +----------+-----------------+---------------------+---------------------+
 | Build    | |Build Status|  | |Deployment Status| | |Dependency Status| |
 +----------+-----------------+---------------------+---------------------+
-| Grades   | |Code Climate|  | |Codacy Badge|      |                     |
+| Grades   | |Code Climate|  | |Codacy Badge|      | |CircleCi|          |
 +----------+-----------------+---------------------+---------------------+
 | Coverage | |Test Coverage| | |Codacy Coverage|   |                     |
 +----------+-----------------+---------------------+---------------------+
@@ -28,6 +28,8 @@ Herosheet Dashboard
    :target: http://inch-ci.org/github/borja/herobravo
 .. |Documentation| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
    :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
+.. |CircleCi| image:: https://circleci.com/gh/borja/herobravo.svg?style=svg
+   :target: https://circleci.com/gh/borja/herobravo
 
 
 Running this application locally
