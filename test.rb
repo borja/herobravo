@@ -28,10 +28,10 @@ describe '.hero' do
       !hero(i).personaje.nil?
       !hero(i).jugador.nil?
       File.exist?(h.big_path)
-      hero(i).id.should        be == i
-      hero(i).mente.should     be >= 4
-      hero(i).cuerpo.should    be >= 4
-      hero(i).repo.should      be >= 0
+      hero(i).id == i
+      hero(i).mente >= 4
+      hero(i).cuerpo >= 4
+      hero(i).repo.should 0
     end
   end
 end
