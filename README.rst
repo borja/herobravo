@@ -3,7 +3,7 @@ Herosheet Dashboard
 * Build: |Build Status| |Dependency Status| |Deployment Status|
 * Grades: |Code Climate| |Codacy Badge|
 * Coverage: |Test Coverage| |Codacy Coverage|
-* Docs: |Inline docs| |Documentation Status|
+* Docs: |Inline docs| |Documentation|
 
 .. |Build Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
@@ -21,9 +21,10 @@ Herosheet Dashboard
    :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Coverage
 .. |Inline docs| image:: http://inch-ci.org/github/borja/herobravo.svg
    :target: http://inch-ci.org/github/borja/herobravo
-.. |Documentation Status| https://readthedocs.org/projects/herobravo/badge/?version=latest
+.. |Documentation| https://readthedocs.org/projects/herobravo/badge/?version=latest
    :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
-   
+
+
 Running this application locally
 ----------------------------------
 To run this application locally, run:
