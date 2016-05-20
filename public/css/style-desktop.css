@@ -26,7 +26,7 @@
 	{
 		background: #3B4346 url('images/bg01.jpg');
 		border-bottom: solid 1px #272d30;
-		box-shadow: inset 0px -1px 0px 0px #51575a;
+		box-shadow: inset 0 -1px 0 0 #51575a;
 		text-shadow: -1px -1px 1px rgba(0,0,0,0.75);
 	}
 
@@ -105,7 +105,7 @@
 	#banner
 	{
 		border-top: solid 1px #222628;
-		box-shadow: inset 0px 1px 0px 0px #3e484a;
+		box-shadow: inset 0 1px 0 0 #3e484a;
 		padding: 35px 0 35px 0;
 		color: #fff;
 	}
@@ -190,7 +190,7 @@
 	#footer
 	{
 		color: #546b76;
-		text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+		text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
 	}
 	
 		#footer h2
@@ -210,7 +210,7 @@
 	#copyright
 	{
 		border-top: solid 1px #b5bec3;
-		box-shadow: inset 0px 1px 0px 0px #e0e4e7;
+		box-shadow: inset 0 1px 0 0 #e0e4e7;
 		text-align: center;
 		padding: 45px 0 80px 0;
 		color: #8d9ca3;
