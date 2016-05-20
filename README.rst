@@ -21,7 +21,7 @@ Herosheet Dashboard
    :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Coverage
 .. |Inline docs| image:: http://inch-ci.org/github/borja/herobravo.svg
    :target: http://inch-ci.org/github/borja/herobravo
-.. |Documentation| https://readthedocs.org/projects/herobravo/badge/?version=latest
+.. |Documentation| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
    :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
 
 
