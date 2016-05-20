@@ -1,5 +1,14 @@
 Herosheet Dashboard
 ===================
++----------+----------------+---------------------+
+| Build    | |Build Status| | |Deployment Status| |
++----------+----------------+---------------------+
+| Coverage | Cells may  | - Cells   |
++----------+ span rows. | - contain |
+| Docs     |            | - blocks. |
++----------+------------+-----------+
+
+
 * Build: |Build Status| |Dependency Status| |Deployment Status|
 * Grades: |Code Climate| |Codacy Badge|
 * Coverage: |Test Coverage| |Codacy Coverage|
