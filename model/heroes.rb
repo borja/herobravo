@@ -64,9 +64,9 @@ def nomalize_pj(pj)
 end
 
 def honor(jugador)
-  honor = (jugador == 'Borja' ? 100 : 0)
+  honor = (jugador == 'Borja' ? 100 : 0) # MB is allways OP
   heros.each do |h|
-    honor += h.nivel if h.jugador
+    honor += h.nivel if h.jugador == jugador
   end
   honor
 end
