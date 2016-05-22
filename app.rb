@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
   # GET Routing views
   get('/') { erb :index }
-  error    { erb :error }
+  error    { preview('error') }
 
   get '/:view/:param' do |view, param| # Templates with double-routing
     hechizo = %w(aire agua fuego tierra).include?(view)
