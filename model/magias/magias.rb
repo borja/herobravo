@@ -1,10 +1,10 @@
 # YAML DB Loader
 def elficas
-  load_yaml('magia/elficas').map   { |s| Elfica.new(s) }
+  load_yaml('magia/elficas').map   { |s|    Elfica.new(s) }
 end
 
 def plegarias
-  load_yaml('magia/plegarias').map { |s| Plegaria.new(s) }
+  load_yaml('magia/plegarias').map { |s|  Plegaria.new(s) }
 end
 
 def sangres

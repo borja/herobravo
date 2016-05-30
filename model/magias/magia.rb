@@ -14,10 +14,9 @@ class Magia < Hash
     "'../../images/magia/#{elemento}s#{nivel}/#{name}.png'"
   end
 
-  def color # Returns color code
+  def color # Returns color code by position in colors array
     colors = %w(FF6633 CCFFFF CC9966 44CCFF CC9999 99FFCC CC4545 FAEE96)
     elems  = %w(fuego  aire   tierra agua   sombra elfico sangre plegaria)
-    c = colors[elems.find_index(elemento)]
-    'background-color:#' + c
+    'background-color:#' + colors[elems.find_index(elemento)]
   end
 end

@@ -3058,6 +3058,28 @@
         0,
         null
       ],
+      "/Users/bmartinf/Repositories/misc/herobravo/model/reto.rb": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/bmartinf/Repositories/misc/herobravo/model/retos.rb": [
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null
+      ],
       "/Users/bmartinf/Repositories/misc/herobravo/model/templates.rb": [
         null,
         null,
@@ -3279,6 +3301,6 @@
         null
       ]
     },
-    "timestamp": 1463761051
+    "timestamp": 1464011426
   }
 }

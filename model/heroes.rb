@@ -5,19 +5,17 @@ def total_heros
 end
 
 def heros
-  [*0..(total_heros - 1)].map { |i| Hero.new(send("h#{i}")) }
+  [*0..(total_heros - 1)].map do |i| 
+    h = load_yaml("/heroes/#{i}")
+    h['nivel'] = 1 unless h['nivel']
+    h['ciudad'] = 'Jadessvärd' unless h['ciudad']
+    h.merge!('id' => i)
+    Hero.new(h)
+  end
 end
 
 def hero(id)
   heros[id]
-end
-
-total_heros.times do |i|
-  define_method("h#{i}") do
-    h = load_yaml("/heroes/#{i}")
-    h['nivel'] = 1 unless h['nivel']
-    h.merge!('id' => i)
-  end
 end
 
 def personajes
@@ -61,14 +59,6 @@ end
 def nomalize_pj(pj)
   normalization = { '%C3%A9' => 'é', '%C3%AD' => 'í', '%C3%B3' => 'ó' }
   pj.gsub(/%C3%A9|%C3%AD|%C3%B3/) { |match| normalization[match] }
-end
-
-def honor(jugador)
-  honor = (jugador == 'Borja' ? 100 : 0) # MB is allways OP
-  heros.each do |h|
-    honor += h.nivel if h.jugador == jugador
-  end
-  honor
 end
 
 def leyes

@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 # Dictionary for the character test (14 questions)
 def preguntas
   load_yaml('personaje/test')

@@ -12,7 +12,7 @@ class Hero < Hash
 
   def initialize(args)
     args.each do |k, v|
-      instance_variable_set("@#{k}".to_sym, v) unless v.nil?
+      instance_variable_set("@#{k}", v) unless v.nil?
     end
   end
 

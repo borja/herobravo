@@ -26,6 +26,7 @@ describe '.hero' do
   it 'should say true' do
     heros.each_with_index do |h, i|
       !hero(i).personaje.nil?
+      !hero(i).nivel.nil?
       !hero(i).jugador.nil?
       File.exist?(h.big_path)
       hero(i).id == i
