@@ -29,4 +29,18 @@ class Engarce < Hash
     else return 'Sin efecto'
     end
   end
+  
+  # returns from heros.tesoro, the list of (maybe repeated)
+  # ids of the heros with self.id gem/runa/joya available
+  def disponibles
+    total = []
+    heros.each do |h|
+      next unless h.tesoro
+      next unless h.tesoro[item + 's']
+      h.tesoro[item + 's'].each do |e|
+        (total << h.id) if e == id
+      end
+    end
+    total
+  end
 end
