@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rack', '~> 1.6.4'
 gem 'sinatra', '~> 1.4.7'
-gem 'tilt', '~> 2.0.4'
+gem 'tilt', '~> 2.0.5'
 gem 'minitest', '~> 5.9.0'
 gem 'require_all'
 
