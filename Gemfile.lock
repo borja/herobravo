@@ -14,7 +14,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rake (11.1.2)
+    rake (11.2.2)
     require_all (1.3.3)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
@@ -49,7 +49,7 @@ DEPENDENCIES
   minitest (~> 5.9.0)
   rack (~> 1.6.4)
   rack-test
-  rake (~> 11.1.2)
+  rake (~> 11.2.2)
   require_all
   rspec
   sinatra (~> 1.4.7)
