@@ -24,6 +24,11 @@ end
 # Resultados dependiendo de Sigmar
 # --------------------------------
 
+# posibles 5 valores del dado sigmar
+def caras_sigmar
+  %w(eagle plus blank hammer comet) # El sexto es eagle x2
+end
+
 def pifia(sigmar, _dado1, _dado2) # 2
   # Returns a string with the pifia type
   if sigmar == 'eagle' # This is the epic result
@@ -65,67 +70,55 @@ def maldición(sigmar, dado1, dado2) # 4
 end
 
 def trampa(sigmar, _dado1, _dado2) # 5
-  case sigmar
-  when 'eagle'  then 'trampa de flecha'
-  when 'plus'   then 'trampa de foso'
-  when 'blank'  then 'trampa de veneno'
-  when 'hammer' then 'trampa de roca'
-  when 'comet'  then 'trampa de hacha'
-  end
+  r = %w(flecha foso veneno roca hacha)
+  'trampa de ' + r[caras_sigmar.index(sigmar)]
 end
 
 def monstruo(sigmar, _dado1, _dado2) # 6
-  case sigmar
-  when 'eagle'  then 'monstruo errante lento'
-  when 'plus'   then 'monstruo errante rápido'
-  else 'monstruo errante'
-  end
+  r = %w(lento rápido normal normal normal)
+  'monstruo errante ' + r[caras_sigmar.index(sigmar)]
 end
 
 def oro(sigmar, _dado1, _dado2) # 7
-  s = %w(eagle plus blank hammer comet)
-  r = %w(50    35   10    25     60)
-  r[s.index(sigmar)] + ' piezas de oro' # Gold coins
+  r = %w(50 35 10 25 60)
+  r[caras_sigmar.index(sigmar)] + ' piezas de oro' # Gold coins
 end
 
 def perg(sigmar, _dado1, _dado2) # 8
-  case sigmar
-  when 'eagle'  then 'pergamino: doble'
-  when 'plus'   then 'pergamino: documentos'
-  when 'blank'  then 'pergamino: blanco'
-  when 'hammer' then 'pergamino: básico'
-  when 'comet'  then 'pergamino: arcano'
-  end
+  r = %w(doble documentos blanco básico arcano)
+  'pergamino:' + r[caras_sigmar.index(sigmar)]
 end
 
 def pot(sigmar, _dado1, _dado2) # 9
-  s = %w(eagle    plus        blank  hammer    comet)
   r = %w(curación resistencia fuerza velocidad héroes)
-  "poción de #{r[s.index(sigmar)]}"
+  'poción de ' + r[caras_sigmar.index(sigmar)]
 end
 
 def comida(sigmar, _dado1, _dado2) # 10
-  s = %w(eagle plus     blank   hammer comet)
   r = %w(asado manzanas podrida agua   sidra)
-  "comida: #{r[s.index(sigmar)]}"
+  'comida: ' + r[caras_sigmar.index(sigmar)]
 end
 
 def alijo(sigmar, _dado1, _dado2) # 11
-  case sigmar
-  when 'eagle'  then 'gema: ' + gema(rand(1..47)).name
-  when 'plus'   then 'runa: ' + runa(rand(1..11)).name
-  when 'blank'  then 'gema: estropeada'
-  when 'hammer' then 'gema: ' + gema(rand(1..47)).name
-  when 'comet'  then 'joya: ' + joya(rand(1..11)).name
-  end
+  r = %w(gema runa gema gema joya)
+  c = [gema_random, runa_random, 'estropeada', gema_random, joya_random]
+  r[caras_sigmar.index(sigmar)] + ': ' + c[caras_sigmar.index(sigmar)]
 end
 
 def cofre(sigmar, _dado1, _dado2) # 12
-  case sigmar
-  when 'eagle'  then gema(rand(0..47)).name + ' + ' + gema(rand(1..47)).name
-  when 'plus'   then joya(rand(0..11)).name + ' + ' + joya(rand(1..11)).name
-  when 'blank'  then runa(rand(0..11)).name + ' + ' + runa(rand(1..11)).name
-  when 'hammer' then 'objeto'
-  when 'comet'  then 'artefacto'
-  end
+  r = %w(gema joya runa objeto artefacto)
+  c = [gema_random, joya_random, runa_random, 'mágico', 'de reto']
+  r[caras_sigmar.index(sigmar)] + ': ' + c[caras_sigmar.index(sigmar)]
+end
+
+def gema_random
+  gema(rand(1..47)).name
+end
+
+def joya_random
+  joya(rand(1..11)).name
+end
+
+def runa_random
+  runa(rand(1..11)).name
 end
