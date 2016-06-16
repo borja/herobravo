@@ -1,5 +1,4 @@
 # Main app class
-
 class Hero < Hash
   attr_accessor :id, :name, :nivel,
                 :personaje, :jugador, :status, :muerto, :gender,
@@ -14,6 +13,50 @@ class Hero < Hash
     args.each do |k, v|
       instance_variable_set("@#{k}", v) unless v.nil?
     end
+  end
+
+  # TODO: Conflictive method
+  def resistencia(elemento) # I'm sorry for this...
+    total = 0 # Initialize default returns 0
+    regex = /vs #{Regexp.quote(elemento)}/ # looks for "+N vs #{elemento}"
+    reg2x = /vs todas las resistencias/
+
+    %w(proteccions baratijas armour).each do |i|
+      next unless send(i) # ask for item-type
+      send(i).each do |item|
+        if item.enchanted?
+          item.enchants.each do |e|
+            texto =  enchant(e)[:descripcion] # takes description
+            if m = (regex =~ texto) # if positive (TODO: tune up this)
+              bono = texto[m.to_i - 2].to_i # add the bonificator
+              # puts "#{elemento}, #{item.name},magia: #{texto}"
+              total += bono
+            end
+            next unless m = (reg2x =~ texto) # if positive (TODO: tune up this)
+            bono = texto[m.to_i - 2].to_i # add the bonificator
+            # puts "+1 todas las resistencias"
+            total += bono
+          end
+        end
+        next unless item.engarzado?
+        %w(gemas joyas runas).each do |engarce|
+          next unless eng = item.send(engarce)
+          eng.each do |id|
+            texto = send(engarce[0..-2], id).fits[item.fits] # takes description
+            if m = (regex =~ texto) # if positive (TODO: tune up this)
+              # puts "#{elemento}, #{item.name},#{engarce} #{texto}"
+              bono = texto[m.to_i - 2].to_i # add the bonificator
+              total += bono
+            end
+            next unless m = (reg2x =~ texto) # if positive (TODO: tune up this)
+            bono = texto[m.to_i - 2].to_i # add the bonificator
+            # puts "+1 todas las resistencias"
+            total += bono
+          end
+        end
+      end
+    end
+    total
   end
 
   # Custom meta-methods created by each item:
@@ -53,7 +96,7 @@ class Hero < Hash
     cuerpos = [4, 6, 6, 7, 8]
     chars.include?(clase) ? cuerpos[chars.index(clase)] : 5
   end
-  
+
   def mente_base
     chars  = %w(mago elfo tiefling enano bárbaro)
     mentes = [6, 4, 4, 3, 2]
@@ -63,41 +106,15 @@ class Hero < Hash
   def movimiento_base
     mb = 7
     mb += 1 if clase == 'elfo'
-    mb -= 1 if clase == 'enano'
+    mb - 1 if clase == 'enano'
   end
 
   def clase
-    case
-    when %w(falangista matador ingeniero).include?(personaje) then 'enano'
-    when %w(derviche druida arquero).include?(personaje) then 'elfo'
-    when %w(vengador caminante brujo).include?(personaje) then 'tiefling'
-    when %w(invocador conjurador hechicero).include?(personaje) then 'mago'
-    when %w(señor\ de\ las\ bestias bersérker hoplita).include?(personaje) then 'bárbaro'
-    when %w(clérigo paladín sacerdote).include?(personaje) then 'clérigo'
-    when %w(nigromante asesino ladrón).include?(personaje) then 'ladrón'
-    else 'unknown'
-    end
+    clases.select { |_c, ps| ps.include?(personaje) }.keys.first
   end
 
   def hab_base
-    case clase
-    when 'mago' then [
-      Hab.new(name: 'Hechizar', description: 'Permite coger 3 sets de magia elemental al inicio del reto.')]
-    when 'elfo' then [
-      Hab.new(name: 'Hechizar', description: 'Permite coger 1 set de magia elemental al inicio del reto.'),
-      Hab.new(name: 'Salto liviano', description: '+1 Saltar fosos')]
-    when 'tiefling' then [
-      Hab.new(name: 'Hechizar', description: 'Permite coger 3 hechizos entre las magias de fuego o sombras, al inicio del reto.'),
-      Hab.new(name: 'Pacto demoníaco', description: '1PM: +1 dado azul de defensa hasta final del turno.')]
-    when 'enano'    then [
-      Hab.new(name: 'Desactivar trampas', description: '+1 desactivar trampas')]
-    when 'bárbaro'  then [
-      Hab.new(name: 'Furia', description: "1PM: +1 dado de ataque hasta final del turno. Además eres inmune a psicología.")]
-    when 'ladrón'   then [
-      Hab.new(name: 'Robar', description: "La tirada de tesoros se efectúa de forma independiente al grupo.")]
-    when 'clérigo'  then [
-      Hab.new(name: 'Rezar', description: '+6 plegarias sagradas al iniciar el Reto.')]
-    end
+    habilidad_base(clase)
   end
 
   def lista_status(view)
@@ -171,15 +188,16 @@ class Hero < Hash
   end
 
   def gremio
-    Profesion.new(profesion.merge(name: (profesions.find { |p| p.id == profesion['id'] }).name))
+    prof = profesions.find { |p| p.id == profesion['id'] }
+    Profesion.new(profesion.merge(name: prof.name))
   end
 
   def baratijas
-    miscelaneas.map  { |m|  Miscelanea.new(m) }       if miscelaneas
+    miscelaneas.map  { |m|  Miscelanea.new(m) } if miscelaneas
   end
 
   def proteccions
-    protecciones.map { |p|  Proteccion.new(p) }       if protecciones
+    protecciones.map { |p|  Proteccion.new(p) } if protecciones
   end
 
   def trinkets
@@ -211,7 +229,12 @@ class Hero < Hash
   end
 
   def habilidades
-    skills.map       { |num| Habilidad.new(send(personaje.gsub('señor de las bestias', 'beastslord'), num)) } if skills
+    if skills
+      skills.map do |num|
+        p = personaje.gsub('señor de las bestias', 'beastslord')
+        Habilidad.new(send(p, num))
+      end
+    end
   end
 
   def magias
@@ -244,96 +267,52 @@ class Hero < Hash
   end
 
   def patrimonio
-    patrimonio = 0
-    patrimonio += oro
+    oro
   end
 
+  # TODO: Calculate profesion level and add rentas as param.
   def rentas
-    rentas = 0
-    rentas += 1 if profesion
-  end
-
-  def resistencia(elemento) # I'm sorry for this...
-    total = 0 # Initialize default returns 0
-    regex = /vs #{Regexp.quote(elemento)}/ # looks for "+N vs #{elemento}"
-    reg2x = /vs todas las resistencias/
-
-    %w(proteccions baratijas armour).each do |i|
-      next unless send(i) # ask for item-type
-      send(i).each do |item|
-        if item.enchanted?
-          item.enchants.each do |e|
-            texto =  enchant(e)[:descripcion] # takes description
-            if m = (regex =~ texto) # if positive (TODO: tune up this)
-              bono = texto[m.to_i - 2].to_i # add the bonificator
-              # puts "#{elemento}, #{item.name},magia: #{texto}"
-              total += bono
-            end
-            next unless m = (reg2x =~ texto) # if positive (TODO: tune up this)
-            bono = texto[m.to_i - 2].to_i # add the bonificator
-            # puts "+1 todas las resistencias"
-            total += bono
-          end
-        end
-        next unless item.engarzado?
-        %w(gemas joyas runas).each do |engarce|
-          next unless eng = item.send(engarce)
-          eng.each do |id|
-            texto = send(engarce[0..-2], id).fits[item.fits] # takes description
-            if m = (regex =~ texto) # if positive (TODO: tune up this)
-              # puts "#{elemento}, #{item.name},#{engarce} #{texto}"
-              bono = texto[m.to_i - 2].to_i # add the bonificator
-              total += bono
-            end
-            next unless m = (reg2x =~ texto) # if positive (TODO: tune up this)
-            bono = texto[m.to_i - 2].to_i # add the bonificator
-            # puts "+1 todas las resistencias"
-            total += bono
-          end
-        end
-      end
-    end
-    total
+    profesion ? 1 : 0
   end
 
   def padre
-    if progenitores
-      papa = progenitores.first
-      case papa
-      when Fixnum then return { 'type' => 'pj',  'char' => hero(papa) }
-      when String then return { 'type' => 'pnj', 'char' => papa }
-      else return "Fallo de padre => #{papa.class}"
-      end
-    else return nil end
+    return nil unless progenitores
+    papa = progenitores.first # Allways in the same position
+    case papa
+    when Fixnum then return { 'type' => 'pj',  'char' => hero(papa) }
+    when String then return { 'type' => 'pnj', 'char' => papa }
+    else return "Fallo de padre => #{papa.class}"
+    end
   end
 
   def madre
-    if progenitores
-      mama = progenitores[1]
-      case mama
-      when Fixnum then return { 'type' => 'pj',  'char' => hero(mama) }
-      when String then return { 'type' => 'pnj', 'char' => mama }
-      else return "Fallo de madre => #{mama.class}"
-      end
-    else return nil end
+    return nil unless progenitores
+    return nil unless progenitores.count == 2
+    mama = progenitores.last # Allways in the same position
+    # Check class type, for polyform.
+    case mama
+    when Fixnum then return { 'type' => 'pj',  'char' => hero(mama) }
+    when String then return { 'type' => 'pnj', 'char' => mama }
+    else return "Fallo de madre => #{mama.class}"
+    end
   end
 
-  def descendientes # I kill you with my spaguetti code, TODO: Tune up this!
-    padres = heros.map(&:progenitores)
-    hijos  = padres.each_index.select { |i| padres[i].include?(id) unless padres[i].nil? }
+  def descendientes
+    padres = heros.map(&:progenitores) # nil values means no children
+    # gets IDs of heroes which parents == self.ID
+    hijos = padres.each_index.select do |i|
+      padres[i].include?(id) unless padres[i].nil?
+    end
+    # Avoid empty arrays.
     hijos.empty? ? nil : hijos
   end
 
   def genderize
-    return clase unless gender == 'female'
-      case clase
-      when 'elfo'     then return 'elfa'
-      when 'mago'     then return 'maga'
-      when "bárbaro"  then return "bárbara"
-      when "clérigo"  then return "clériga"
-      when "ladrón"   then return 'ladrona'
-      when 'tiefling' then return 'tiefling-female'
-      else return clase
-      end
+    # Word dictionary male vs female
+    # TODO: some words are missing
+    male   = %w(elfo mago bárbaro clérigo ladrón  tiefling paladín  sacerdote)
+    female = %w(elfa maga bárbara clériga ladrona tieflina paladina sacerdotisa)
+    # Returns char class, regarding the gender (only for females)
+    gender == 'female' ? female[male.index(clase)] : clase
   end
 end

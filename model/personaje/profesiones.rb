@@ -24,6 +24,6 @@ def profesions
   profesions
 end
 
-def profesion(id) # TODO : This is not working
+def profesion(id) # TODO : This is not working
   profesions[id]
 end
