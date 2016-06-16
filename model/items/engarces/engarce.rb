@@ -21,15 +21,19 @@ class Engarce < Hash
   end
 
   def bonificador(item)
-    case
-    when item.fits == 'arma'      then return fits[item.categoria] || fits['arma']  || 'Armas sin implementar'
-    when item.fits == 'armadura'  then return fits[item.categoria] || fits['pecho'] || 'Armaduras sin implementar'
-    when fits[item.fits]          then return fits[item.fits]
-    when item.class == Proteccion then return fits['armadura'] || 'Sin bonificador'
-    else return 'Sin efecto'
+    if item.fits == 'arma'
+      fits[item.categoria] || fits['arma'] || 'Armas sin implementar'
+    elsif item.fits == 'armadura'
+      fits[item.categoria] || fits['pecho'] || 'Armaduras sin implementar'
+    elsif fits[item.fits]
+      fits[item.fits]
+    elsif item.class == Proteccion
+      fits['armadura'] || 'Sin bonificador'
+    else
+      'Sin efecto'
     end
   end
-  
+
   # returns from heros.tesoro, the list of (maybe repeated)
   # ids of the heros with self.id gem/runa/joya available
   def disponibles

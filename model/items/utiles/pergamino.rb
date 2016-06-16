@@ -9,8 +9,7 @@ class Pergamino < Util
     pergamino(id)['precio']
   end
 
-  # Máximo número permitido
-  def max
+  def max # Max num. permitido
     pergamino(id)['hechizos']
   end
 

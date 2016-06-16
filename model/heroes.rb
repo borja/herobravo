@@ -5,11 +5,11 @@ def total_heros
 end
 
 def heros
-  [*0..(total_heros - 1)].map do |i| 
+  [*0..(total_heros - 1)].map do |i|
     h = load_yaml("/heroes/#{i}")
     h['nivel'] = 1 unless h['nivel']
     h['ciudad'] = 'Jadessvärd' unless h['ciudad']
-    h.merge!('id' => i)
+    h['id'] = i
     Hero.new(h)
   end
 end

@@ -5,6 +5,5 @@ def gema_calidades
    'Piedras Preciosas',
    'Piedras de Poder',
    'Gemas Legendarias',
-   'Gemas Insólitas'
-  ]
+   'Gemas Insólitas']
 end

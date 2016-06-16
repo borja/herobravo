@@ -1,4 +1,4 @@
-# Objetos extraños como llaves, setas o mapas.
+# Objetos raros como llaves, setas o mapas.
 class Pieza < Util
   def name
     pieza(id)['name']
