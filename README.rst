@@ -18,7 +18,7 @@ QA Dashboard
 +--------------+-----------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
-   :target: https://hub.docker.com/r/borjamartin/herobravo/
+   :target: https://travis-ci.org/borja/herobravo
 .. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
    :target: https://gemnasium.com/Borja/herobravo
 .. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
