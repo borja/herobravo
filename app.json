@@ -1,0 +1,7 @@
+{
+  "name": "Herosheet Project",
+  "description": "Ruby on Sinatra app for HeroQuest charsheets",
+  "image": "heroku/ruby",
+  "repository": "https://github.com/borja/herobravo",
+  "keywords": ["ruby", "sinatra" ]
+}
