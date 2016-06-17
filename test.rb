@@ -1,8 +1,13 @@
+# CI Engines requirements:
+
 require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
 
 require 'codacy-coverage'
 Codacy::Reporter.start
+
+require 'coveralls'
+Coveralls.wear!
 
 ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
