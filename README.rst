@@ -28,7 +28,7 @@ Herosheet Dashboard
    :target: http://inch-ci.org/github/borja/herobravo
 .. |Documentation| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
    :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
-.. |CircleCi| image:: https://circleci.com/gh/borja/herobravo.svg?style=svg
+.. |CircleCi| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
    :target: https://circleci.com/gh/borja/herobravo
 
 
