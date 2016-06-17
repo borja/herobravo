@@ -19,7 +19,7 @@ QA Dashboard
    :target: https://travis-ci.org/borja/herobravo
 .. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
    :target: https://gemnasium.com/Borja/herobravo
-.. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat
+.. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&svg=1
    :target: http://herosheet.herokuapp.com/
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herobravo
