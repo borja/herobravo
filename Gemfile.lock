@@ -45,7 +45,7 @@ PLATFORMS
 
 DEPENDENCIES
   codacy-coverage
-  codeclimate-test-reporter
+  codeclimate-test-reporter (~> 0.5.2)
   minitest (~> 5.9.0)
   rack (~> 1.6.4)
   rack-test
