@@ -11,6 +11,6 @@ group :test do
   gem 'rack-test'
   gem 'rspec'
   gem 'rake', '~> 11.2.2'
-  gem 'codeclimate-test-reporter'
+  gem 'codeclimate-test-reporter', '~> 0.5.2'
   gem 'codacy-coverage', require: false
 end
