@@ -41,8 +41,10 @@ Running this application locally
 ----------------------------------
 To run this application locally, run:
 
-	bundle install
-	bundle exec ruby -S rackup -w config.ru
+.. code:: console
+
+    bundle install
+    bundle exec ruby -S rackup -w config.ru
 
 License
 -------
