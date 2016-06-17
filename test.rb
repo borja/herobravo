@@ -32,7 +32,7 @@ describe '.hero' do
       hero(i).id == i
       hero(i).mente >= 4
       hero(i).cuerpo >= 4
-      hero(i).repo.should 0
+      hero(i).reputacion >= 0
     end
   end
 end
