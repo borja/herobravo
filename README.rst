@@ -14,7 +14,7 @@ QA Dashboard
 +--------------+-----------------+-------------------+
 | **Docs**     | |Inline docs|   | |Documentation|   |
 +--------------+-----------------+-------------------+
-| **DRY**      | |Heroku Deploy| | |DockerHub|       |
+| **DIY**      | |Heroku Deploy| | |DockerHub|       |
 +--------------+-----------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
