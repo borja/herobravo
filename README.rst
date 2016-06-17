@@ -46,6 +46,14 @@ To run this application locally, run:
     bundle install
     bundle exec ruby -S rackup -w config.ru
 
+Deploy this application on Heroku
+---------------------------------
+|Heroku Deploy|
+
+.. |Heroku Deploy| image:: https://www.herokucdn.com/deploy/button.svg
+   :target: https://heroku.com/deploy
+
+
 License
 -------
 This code is dedicated to the public domain to the maximum extent
