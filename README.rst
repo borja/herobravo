@@ -41,6 +41,10 @@ QA Dashboard
    :target: https://hub.docker.com/r/borjamartin/herobravo/
 .. |Heroku Deploy| image:: https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg
    :target: https://heroku.com/deploy
+.. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
+   :target: https://coveralls.io/github/borja/herobravo?branch=master 
+
+PoC: |Coveralls|
 
 Running this application locally
 ----------------------------------
