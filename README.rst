@@ -3,20 +3,22 @@ Herosheet Project
 
 QA Dashboard
 ------------
-+----------+-----------------+-------------------+
-| Deploy   | |Heroku Status| | |Gemnasium|       |
-+----------+-----------------+-------------------+
-| Build    | |Travis Status| | |CircleCi Status| |
-+----------+-----------------+-------------------+
-| Grades   | |Code Climate|  | |Codacy Badge|    |
-+----------+-----------------+-------------------+
-| Coverage | |Test Coverage| | |Codacy Coverage| |
-+----------+-----------------+-------------------+
-| Docs     | |Inline docs|   | |Documentation|   |
-+----------+-----------------+-------------------+
++--------------+-----------------+-------------------+
+| **Deploy**   | |Heroku Status| | |Gemnasium|       |
++--------------+-----------------+-------------------+
+| **Build**    | |Travis Status| | |CircleCi Status| |
++--------------+-----------------+-------------------+
+| **Grades**   | |Code Climate|  | |Codacy Badge|    |
++--------------+-----------------+-------------------+
+| **Coverage** | |Test Coverage| | |Codacy Coverage| |
++--------------+-----------------+-------------------+
+| **Docs**     | |Inline docs|   | |Documentation|   |
++--------------+-----------------+-------------------+
+| **DRY**      | |Heroku Deploy| | |DockerHub|       |
++--------------+-----------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
-   :target: https://travis-ci.org/borja/herobravo
+   :target: https://hub.docker.com/r/borjamartin/herobravo/
 .. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
    :target: https://gemnasium.com/Borja/herobravo
 .. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
@@ -35,7 +37,10 @@ QA Dashboard
    :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
    :target: https://circleci.com/gh/borja/herobravo
-
+.. |DockerHub| image:: https://img.shields.io/badge/%E2%86%91_DockerHub-borjamartin/herobravo-blue.svg
+   :target: https://hub.docker.com/r/borjamartin/herobravo/
+.. |Heroku Deploy| image:: https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg
+   :target: https://heroku.com/deploy
 
 Running this application locally
 ----------------------------------
@@ -45,14 +50,6 @@ To run this application locally, run:
 
     bundle install
     bundle exec ruby -S rackup -w config.ru
-
-Deploy this application on Heroku
----------------------------------
-|Heroku Deploy|
-
-.. |Heroku Deploy| image:: https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg
-   :target: https://heroku.com/deploy
-
 
 License
 -------
