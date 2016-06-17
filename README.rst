@@ -50,7 +50,7 @@ Deploy this application on Heroku
 ---------------------------------
 |Heroku Deploy|
 
-.. |Heroku Deploy| image:: https://www.herokucdn.com/deploy/button.svg
+.. |Heroku Deploy| image:: https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg
    :target: https://heroku.com/deploy
 
 
