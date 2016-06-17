@@ -1,20 +1,25 @@
-Herosheet Dashboard
+Herosheet Project
 ===================
-+----------+-----------------+---------------------+---------------------+
-| Build    | |Build Status|  | |Deployment Status| | |Dependency Status| |
-+----------+-----------------+---------------------+---------------------+
-| Grades   | |Code Climate|  | |Codacy Badge|      | |CircleCi|          |
-+----------+-----------------+---------------------+---------------------+
-| Coverage | |Test Coverage| | |Codacy Coverage|   |                     |
-+----------+-----------------+---------------------+---------------------+
-| Docs     | |Inline docs|   | |Documentation|     |                     |
-+----------+-----------------+---------------------+---------------------+
 
-.. |Build Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
+QA Dashboard
+------------
++----------+-----------------+-------------------+
+| Deploy   | |Heroku Status| | |Gemnasium|       |
++----------+-----------------+-------------------+
+| Build    | |Travis Status| | |CircleCi Status| |
++----------+-----------------+-------------------+
+| Grades   | |Code Climate|  | |Codacy Badge|    |
++----------+-----------------+-------------------+
+| Coverage | |Test Coverage| | |Codacy Coverage| |
++----------+-----------------+-------------------+
+| Docs     | |Inline docs|   | |Documentation|   |
++----------+-----------------+-------------------+
+
+.. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
-.. |Dependency Status| image:: https://gemnasium.com/Borja/herobravo.svg
+.. |Dependencies| image:: https://gemnasium.com/Borja/herobravo.svg
    :target: https://gemnasium.com/Borja/herobravo
-.. |Deployment Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat
+.. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat
    :target: http://herosheet.herokuapp.com/
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herobravo
@@ -28,7 +33,7 @@ Herosheet Dashboard
    :target: http://inch-ci.org/github/borja/herobravo
 .. |Documentation| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
    :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
-.. |CircleCi| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
+.. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
    :target: https://circleci.com/gh/borja/herobravo
 
 
