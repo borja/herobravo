@@ -3,19 +3,19 @@ Herosheet Project
 
 QA Dashboard
 ------------
-+--------------+-----------------+-------------------+
-| **Deploy**   | |Heroku Status| | |Gemnasium|       |
-+--------------+-----------------+-------------------+
-| **Build**    | |Travis Status| | |CircleCi Status| |
-+--------------+-----------------+-------------------+
-| **Grades**   | |Code Climate|  | |Codacy Badge|    |
-+--------------+-----------------+-------------------+
-| **Coverage** | |Test Coverage| | |Codacy Coverage| |
-+--------------+-----------------+-------------------+
-| **Docs**     | |Inline docs|   | |Documentation|   |
-+--------------+-----------------+-------------------+
-| **DIY**      | |Heroku Deploy| | |DockerHub|       |
-+--------------+-----------------+-------------------+
++--------------+-----------------+-------------------+-------------+
+| **Deploy**   | |Heroku Status| | |Gemnasium|       |             |
++--------------+-----------------+-------------------+-------------+
+| **Build**    | |Travis Status| | |CircleCi Status| | |Appveyor|  |
++--------------+-----------------+-------------------+-------------+
+| **Grades**   | |Code Climate|  | |Codacy Badge|    |             |
++--------------+-----------------+-------------------+-------------+
+| **Coverage** | |Test Coverage| | |Codacy Coverage| | |Coveralls| |
++--------------+-----------------+-------------------+-------------+
+| **Docs**     | |Inline docs|   | |Documentation|   |             |
++--------------+-----------------+-------------------+-------------+
+| **DIY**      | |Heroku Deploy| | |DockerHub|       |             |
++--------------+-----------------+-------------------+-------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
@@ -42,9 +42,9 @@ QA Dashboard
 .. |Heroku Deploy| image:: https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg
    :target: https://heroku.com/deploy
 .. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
-   :target: https://coveralls.io/github/borja/herobravo?branch=master 
-
-PoC: |Coveralls|
+   :target: https://coveralls.io/github/borja/herobravo?branch=master
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
+   :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
 
 Running this application locally
 ----------------------------------
