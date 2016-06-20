@@ -29,5 +29,5 @@ def fama(personaje)
 end
 
 def habilidad_base(personaje)
-  load_yaml('skills/base')[personaje].map{ |hb| Hab.new(hb)}
+  load_yaml('skills/base')[personaje].map { |hb| Hab.new(hb) }
 end
