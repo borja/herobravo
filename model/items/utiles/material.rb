@@ -27,9 +27,8 @@ class Material < Util
       %w(aprendiz artesano maestro).each do |grado|
         prof.send(grado).each do |receta|
           next unless receta['matts']
-          if receta['matts'].include?(id)
-            usado << { prof: id, grado: grado, receta: receta }
-          end
+          next unless receta['matts'].include?(id)
+          usado << { prof: id, grado: grado, receta: receta }
         end
       end
     end
