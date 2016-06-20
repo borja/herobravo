@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 # encoding: UTF-8
 
+# Clase principal de cualquier item
 class Item < Hash
   attr_accessor :id, :enchants, :max, :precio,
                 :runas, :joyas, :ranuras, :gemas,
@@ -62,7 +63,7 @@ class Item < Hash
 
   def tier?
     combo = false
-    mix = { "gemas" => gemas, "runas" => runas, "joyas" => joyas }
+    mix = { 'gemas' => gemas, 'runas' => runas, 'joyas' => joyas }
     tiers.each do |t|
       combo = t if t['mix'] == mix
     end

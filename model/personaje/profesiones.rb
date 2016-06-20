@@ -9,17 +9,20 @@ def profes
      encantamiento orfebrería carpintería )
 end
 
+def load_recetas(id, prof)
+  {
+    id:       id,
+    name:     prof,
+    aprendiz: load_yaml("profesiones/#{prof}/aprendiz"),
+    artesano: load_yaml("profesiones/#{prof}/artesano"),
+    maestro:  load_yaml("profesiones/#{prof}/maestro")
+  }
+end
+
 def profesions
   profesions = []
-  profes.each_with_index do |p, i|
-    recetas = {
-      id:       i,
-      name:     p,
-      aprendiz: load_yaml("profesiones/#{p}/aprendiz"),
-      artesano: load_yaml("profesiones/#{p}/artesano"),
-      maestro:  load_yaml("profesiones/#{p}/maestro")
-    }
-    profesions << Profesion.new(recetas)
+  profes.each_with_index do |prof, i|
+    profesions << Profesion.new(load_recetas(i, prof))
   end
   profesions
 end
