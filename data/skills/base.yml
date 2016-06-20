@@ -1,0 +1,34 @@
+mago:
+  -
+    name:        "Hechizar"
+    description: "Permite coger 3 sets de magia elemental al inicio del reto."
+elfo: 
+  -
+    name:        "Hechizar"
+    description: "Permite coger 1 set de magia elemental al inicio del reto."
+  -
+    name:        "Salto liviano"
+    description: "+1 Saltar fosos"
+tiefling: 
+  -
+    name:        "Hechizar"
+    description: "Permite coger 3 hechizos entre las magias de fuego o sombras al inicio del reto."
+  -
+    name:        "Pacto demoníaco"
+    description: "1PM: +1 dado azul de defensa hasta final del turno."
+enano:
+  -
+    name:        "Desactivar trampas"
+    description: "+1 desactivar trampas"
+bárbaro:  
+  -
+    name:        "Furia"
+    description: "1PM: +1 dado de ataque hasta final del turno. Además eres inmune a psicología."
+ladrón:   
+  -
+    name:        "Robar"
+    description: "La tirada de tesoros se efectúa de forma independiente al grupo."
+clérigo:  
+  -
+    name:        "Rezar"
+    description: "+6 plegarias sagradas al iniciar el Reto."
