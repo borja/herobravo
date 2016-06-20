@@ -1,6 +1,7 @@
 # appveyor.yml
 install:
   - set PATH=C:\Ruby231\bin;%PATH%
+  - gem install bundler
   - bundle install
 
 build: off
