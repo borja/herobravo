@@ -111,14 +111,17 @@ def cofre(sigmar, _dado1, _dado2) # 12
   r[caras_sigmar.index(sigmar)] + ': ' + c[caras_sigmar.index(sigmar)]
 end
 
+# Genera una gema al azar
 def gema_random
   gema(rand(1..47)).name
 end
 
+# Genera una joya al azar
 def joya_random
   joya(rand(1..11)).name
 end
 
+# Genera una runa al azar
 def runa_random
   runa(rand(1..11)).name
 end
