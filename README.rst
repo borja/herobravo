@@ -6,7 +6,7 @@ QA Dashboard
 +--------------+-----------------+-------------------+----------------------+
 | **Deploy**   | |Heroku Status| | |Gemnasium|       |                      |
 +--------------+-----------------+-------------------+----------------------+
-| **Build**    | |Travis Status| | |CircleCi Status| | |Appveyor|           |
+| **Build**    | |Travis Status| | |CircleCi Status| | |Appveyor| |Snap CI| |
 +--------------+-----------------+-------------------+----------------------+
 | **Grades**   | |Code Climate|  | |Codacy Badge|    |                      |
 +--------------+-----------------+-------------------+----------------------+
@@ -19,6 +19,8 @@ QA Dashboard
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
+.. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
+   :target: https://snap-ci.com/borja/herobravo/branch/master
 .. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
    :target: https://gemnasium.com/Borja/herobravo
 .. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
