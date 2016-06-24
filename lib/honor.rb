@@ -1,16 +1,10 @@
 # Honor calculator, based on char lvl owned by player.
 def honor(jugador)
-  honor = 0 # Initialize by 0
-
-  heros.each do |h|
-    # Increase honor for each player lvl
+  heros.inject(0) do |honor, h|
     honor += h.nivel if h.jugador == jugador
-    # ONLY for MB players
-    unless ciudad?(jugador).empty?
-      # Increase honor for each MB player lvl/3
-      honor += (h.nivel / 3).to_i if h.ciudad == ciudad?(jugador).first['name']
-    end
+    next h unless ciudad?(jugador).empty? # ONLY for MB players
+    # Increase honor only for each MB player lvl/3
+    next h unless h.ciudad == ciudad?(jugador).first['name']
+    honor + (h.nivel / 3).to_i
   end
-
-  honor
 end

@@ -3,19 +3,19 @@ Herosheet Project
 
 QA Dashboard
 ------------
-+--------------+-----------------+-------------------+-------------+
-| **Deploy**   | |Heroku Status| | |Gemnasium|       |             |
-+--------------+-----------------+-------------------+-------------+
-| **Build**    | |Travis Status| | |CircleCi Status| | |Appveyor|  |
-+--------------+-----------------+-------------------+-------------+
-| **Grades**   | |Code Climate|  | |Codacy Badge|    |             |
-+--------------+-----------------+-------------------+-------------+
-| **Coverage** | |Test Coverage| | |Codacy Coverage| | |Coveralls| |
-+--------------+-----------------+-------------------+-------------+
-| **Docs**     | |Inline docs|   | |Documentation|   |             |
-+--------------+-----------------+-------------------+-------------+
-| **DIY**      | |Heroku Deploy| | |DockerHub|       |             |
-+--------------+-----------------+-------------------+-------------+
++--------------+-----------------+-------------------+----------------------+
+| **Deploy**   | |Heroku Status| | |Gemnasium|       |                      |
++--------------+-----------------+-------------------+----------------------+
+| **Build**    | |Travis Status| | |CircleCi Status| | |Appveyor|           |
++--------------+-----------------+-------------------+----------------------+
+| **Grades**   | |Code Climate|  | |Codacy Badge|    |                      |
++--------------+-----------------+-------------------+----------------------+
+| **Coverage** | |Test Coverage| | |Codacy Coverage| | |Coveralls|          |
++--------------+-----------------+-------------------+----------------------+
+| **Docs**     | |Inline docs|   | |Documentation|   | |CII Best Practices| |
++--------------+-----------------+-------------------+----------------------+
+| **DIY**      | |Heroku Deploy| | |DockerHub|       |                      |
++--------------+-----------------+-------------------+----------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
@@ -35,6 +35,8 @@ QA Dashboard
    :target: http://inch-ci.org/github/borja/herobravo
 .. |Documentation| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
    :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
+.. |CII Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/224/badge
+   :target: https://bestpractices.coreinfrastructure.org/projects/224
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
    :target: https://circleci.com/gh/borja/herobravo
 .. |DockerHub| image:: https://img.shields.io/badge/%E2%86%91_DockerHub-borjamartin/herobravo-blue.svg
