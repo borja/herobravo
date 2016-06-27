@@ -12,12 +12,12 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% razas.each do |r| %>
+		<% razas.each do |raza| %>
 			<tr>
-				<td><%= r.first %></td>					
-				<td><%= r.last[:cuerpo] %></td>
-				<td><%= r.last[:mente] %></td>
-				<td><%= r.last[:movimiento] %></td>
+				<td><%= raza.first %></td>					
+				<td><%= raza.last['cuerpo'] %></td>
+				<td><%= raza.last['mente'] %></td>
+				<td><%= raza.last['movimiento'] %></td>
 			</tr>
 		<% end %> 
 	</tbody>

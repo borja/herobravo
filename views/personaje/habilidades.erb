@@ -1,23 +1,23 @@
 <table id='tresp'>
 	<thead>
 		<tr>
-			<% clases.each do |pj| %>
+			<% clases.keys.each do |pj| %>
 				<th><%= pj.capitalize %></th>
 			<% end %>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<% clases.each do |clase| %>
+			<% clases.keys.each do |clase| %>
 				<td><img src=../images/personajes/<%= clase %>.png alt="<%= clase %>" /, id='icon2'></td>
 			<% end %>
 		</tr>
 		<% 3.times do |i| %>
 			<tr>
-				<% clases.each do |clase| %>
+				<% clases.values.each do |clase| %>
 					<td>
-						<% h = h_clases[clase.to_sym][i] %>
-						<a href="/habilidad/<%= h.gsub('señor de las bestias', 'beastslord') %>">
+						<% h = clase[i] %>
+						<a href="/habilidad/<%= h %>">
 						<%= h %><br>
 						<img src="/images/clases/<%= h %>.png" alt=<%= h %> /, id='icon4'></a>
 					</td>
