@@ -21,6 +21,11 @@ def tesoro(sigmar, dado1, dado2)
   send(valores[dado1 + dado2 - 2], sigmar, dado1, dado2)
 end
 
+# DB in YAML format
+def buscar_tesoros
+  load_yaml('buscar_tesoros')
+end
+
 # Resultados dependiendo de Sigmar
 # --------------------------------
 
