@@ -2,6 +2,7 @@ name:      "Anníbal Killarney"
 personaje: "hoplita"
 jugador:   "Iris"
 muerto:    true
+status:    "retirado"
 progenitores:
   - 48
   - "Amílcar"

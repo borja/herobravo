@@ -2,6 +2,7 @@ name:      "Caladrius"
 personaje: "druida"
 jugador:   "Javier Galindo"
 muerto:    true
+status:    "retirado"
 pareja:    { nombre: "Gabrielle", raza: "elfilla", tipo: "pnj" }
 familiar:  { id: 15, name: "Viviana" }
 nivel:     4
