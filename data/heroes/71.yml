@@ -2,6 +2,7 @@ name:      "Vindecar"
 personaje: "clérigo"
 jugador:   "Alberto"
 muerto:    true
+status:    "retirado"
 profesion: { id: 6, aprendiz: [0] }
 nivel:     4
 cuerpo:    8
