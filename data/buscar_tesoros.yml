@@ -1,4 +1,8 @@
 pifia:
+  eagle:
+           "Tropiezas y pierdes 1PC. A pesar de tu torpeza,
+            te levantas disimuladamente..."
+  default: "Tropiezas y pierdes 1PC forma patética."
 vacia:
 maldición:
 trampa:
