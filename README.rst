@@ -47,6 +47,19 @@ QA Dashboard
    :target: https://heroku.com/deploy
 .. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
    :target: https://coveralls.io/github/borja/herobravo?branch=master
+
+Non support building platforms
+------------------------------
++--------------+------------+-------+
+| Platform     | Badge      | Issue |
++==============+============+=======+ 
+| **Drone**    | |Drone|    | TBD   |
++--------------+------------+-------+
+| **Appveyor** | |Appveyor| | TBD   |
++--------------+------------+-------+
+
+.. |Drone| image:: https://drone.io/github.com/borja/herobravo/status.png
+   :target: https://drone.io/github.com/borja/herobravo/latest
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
 
