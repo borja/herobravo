@@ -91,24 +91,6 @@ class Hero < Hash
     end
   end
 
-  def cuerpo_base
-    chars   = %w(mago elfo tiefling enano bárbaro)
-    cuerpos = [4, 6, 6, 7, 8]
-    chars.include?(clase) ? cuerpos[chars.index(clase)] : 5
-  end
-
-  def mente_base
-    chars  = %w(mago elfo tiefling enano bárbaro)
-    mentes = [6, 4, 4, 3, 2]
-    chars.include?(clase) ? mentes[chars.index(clase)] : 5
-  end
-
-  def movimiento_base
-    mb = 7
-    mb += 1 if clase == 'elfo'
-    mb - 1 if clase == 'enano'
-  end
-
   def clase
     clases.select { |_c, ps| ps.include?(personaje) }.keys.first
   end
