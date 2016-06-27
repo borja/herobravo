@@ -15,6 +15,7 @@ require 'rack/test'
 require_relative 'app.rb'
 require 'require_all'
 require 'rspec'
+require 'yaml-lint'
 
 # Fake Data Base
 require_all './data'
