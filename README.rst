@@ -57,11 +57,15 @@ Non support building platforms
 +----------+------------+-----------------------------+
 | Appveyor | |Appveyor| | TBD                         |
 +----------+------------+-----------------------------+
+| CodeShip | |CodeShip| | Work on progress            |
++----------+------------+-----------------------------+
 
 .. |Drone| image:: https://drone.io/github.com/borja/herobravo/status.png
    :target: https://drone.io/github.com/borja/herobravo/latest
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
+.. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
+   :target: https://codeship.com/projects/160114
 
 Running this application locally
 ----------------------------------
