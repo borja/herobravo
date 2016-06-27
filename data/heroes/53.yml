@@ -1,7 +1,8 @@
 name:      "Garnier"
 personaje: "arquero"
 jugador:   "Daniel de Haro"
-status:    "reserva"
+muerto:    true
+status:    "retirado"
 historia:  2
 nivel:     2
 cuerpo:    6
