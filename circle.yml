@@ -1,6 +1,5 @@
 test:
   override:
-    - bundle install
     - bundle show yaml-lint
-    - yaml-lint data/
+    - $(bundle show yaml-lint)/bin/yaml-lint data/
     - bundle exec rspec test.rb
