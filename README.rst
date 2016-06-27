@@ -50,13 +50,13 @@ QA Dashboard
 
 Non support building platforms
 ------------------------------
-+--------------+------------+-------+
-| Platform     | Badge      | Issue |
-+==============+============+=======+ 
-| **Drone**    | |Drone|    | TBD   |
-+--------------+------------+-------+
-| **Appveyor** | |Appveyor| | TBD   |
-+--------------+------------+-------+
++----------+------------+-----------------------------+
+| Platform | Badge      | Issue                       |
++==========+============+=============================+ 
+| Drone    | |Drone|    | *Ruby >v.2.0 not supported* |
++----------+------------+-----------------------------+
+| Appveyor | |Appveyor| | TBD                         |
++----------+------------+-----------------------------+
 
 .. |Drone| image:: https://drone.io/github.com/borja/herobravo/status.png
    :target: https://drone.io/github.com/borja/herobravo/latest
