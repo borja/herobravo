@@ -5,7 +5,6 @@ Definition
 This project was created as an amateur idea, a group of friends willing to gather information
 from their HeroQuest games on an non-official non-profit web.
 
-
 QA Dashboard
 ============
 Deployment Status
@@ -74,8 +73,12 @@ Non-supported building platforms
 
 DIY & Manual Configuration
 ==========================
-* **PasS**: |Heroku Deploy|
-* **Docker Registry** |DockerHub|
++---------------------+-----------------+-------------------------------+
+| **PasS**:           | |Heroku Deploy| | *1 click to deploy*           |
++---------------------+-----------------+-------------------------------+
+| **Docker Registry** | DockerHub|      |                               |
++---------------------+-----------------+-------------------------------+
+
 .. |DockerHub| image:: https://img.shields.io/badge/%E2%86%91_DockerHub-borjamartin/herobravo-blue.svg
    :target: https://hub.docker.com/r/borjamartin/herobravo/
 .. |Heroku Deploy| image:: https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg
@@ -86,6 +89,7 @@ Running this application locally
 To run this application locally, run:
 
 .. code:: console
+
     bundle install
     bundle exec ruby -S rackup -w config.ru
 
