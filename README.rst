@@ -32,13 +32,19 @@ Deployment Status
 
 Quality Grades
 --------------
-+--------------+----------------+-------------------+-------------+------------+
-| Stat         | Code Climate   | Codacy            | Coveralls   |  CodeCov   |
-+==============+================+===================+=============+============+
-| **Grade**    | |Code Climate| | |Codacy Badge|    |             |            |
-+--------------+----------------+-------------------+-------------+------------+
-| **Coverage** | |CC Coverage|  | |Codacy Coverage| | |Coveralls| |  |CodeCov| |
-+--------------+----------------+-------------------+-------------+------------+
++--------------+----------------+-------------------+
+| Platform     | Grade          | Coverage          |
++==============+================+===================+
+| Code Climate | |Code Climate| | |CC Coverage|     |
++--------------+----------------+-------------------+
+| Codacy       | |Codacy Badge| | |Codacy Coverage| |
++--------------+----------------+-------------------+
+| Coveralls    |                | |Coveralls|       |
++--------------+----------------+-------------------+
+| CodeCov      |                | |CodeCov|         |
++--------------+----------------+-------------------+
+| Scrutinizer  | |Scrutinizer|  | |ScrutCov|        |
++--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herobravo
@@ -52,6 +58,10 @@ Quality Grades
    :target: https://coveralls.io/github/borja/herobravo?branch=master
 .. |CodeCov| image:: https://codecov.io/gh/borja/herobravo/branch/master/graph/badge.svg
   :target: https://codecov.io/gh/borja/herobravo
+.. |Scrutinizer| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/quality-score.png?b=master
+  :target: https://scrutinizer-ci.com/g/borja/herobravo/
+.. |ScrutCov| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/coverage.png?b=master
+  :target: https://scrutinizer-ci.com/g/borja/herobravo/
 
 Documentation
 -------------
