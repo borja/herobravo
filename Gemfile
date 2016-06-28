@@ -16,4 +16,5 @@ group :test do
   gem 'codacy-coverage', require: false
   gem 'coveralls', require: false
   gem 'codecov', require: false
+  gem 'scrutinizer-ocular', require: false
 end
