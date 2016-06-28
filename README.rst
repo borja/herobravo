@@ -15,46 +15,60 @@ Deployment Status
 | **Build**    | |Travis Status| | |CircleCi Status| | |Snap CI| |CodeShip| |
 +--------------+-----------------+-------------------+----------------------+
 
-Quality
--------
-+--------------+-----------------+-------------------+----------------------+
-| **Grades**   | |Code Climate|  | |Codacy Badge|    |                      |
-+--------------+-----------------+-------------------+----------------------+
-| **Coverage** | |Test Coverage| | |Codacy Coverage| | |Coveralls|          |
-+--------------+-----------------+-------------------+----------------------+
-| **Docs**     | |Inline docs|   | |Documentation|   | |CII Best Practices| |
-+--------------+-----------------+-------------------+----------------------+
-
-.. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
-   :target: https://travis-ci.org/borja/herobravo
-.. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
-   :target: https://snap-ci.com/borja/herobravo/branch/master
 .. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
    :target: https://gemnasium.com/Borja/herobravo
 .. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
    :target: http://herosheet.herokuapp.com/
-.. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
-   :target: https://codeclimate.com/github/borja/herobravo
-.. |Codacy Badge| image:: https://api.codacy.com/project/badge/Grade/f2559f1e733d4a4c854fdcc84804c047
-   :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Grade
-.. |Test Coverage| image:: https://codeclimate.com/github/borja/herobravo/badges/coverage.svg
-   :target: https://codeclimate.com/github/borja/herobravo/coverage
-.. |Codacy Coverage| image:: https://api.codacy.com/project/badge/Coverage/f2559f1e733d4a4c854fdcc84804c047
-   :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Coverage
-.. |Inline docs| image:: http://inch-ci.org/github/borja/herobravo.svg
-   :target: http://inch-ci.org/github/borja/herobravo
-.. |Documentation| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
-   :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
-.. |CII Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/224/badge
-   :target: https://bestpractices.coreinfrastructure.org/projects/224
-.. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
-   :target: https://circleci.com/gh/borja/herobravo
-.. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
-   :target: https://coveralls.io/github/borja/herobravo?branch=master
+.. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
+   :target: https://travis-ci.org/borja/herobravo
+.. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
+   :target: https://snap-ci.com/borja/herobravo/branch/master
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
    :target: https://semaphoreci.com/borja/herobravo
 .. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
    :target: https://codeship.com/projects/160114
+.. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
+   :target: https://circleci.com/gh/borja/herobravo
+
+Quality Grades
+--------------
++--------------+----------------+-------------------+-------------+
+| Stat         | Code Climate   | Codacy            | Coveralls   |
++==============+================+=================================+
+| **Grade**    | |Code Climate| | |Codacy Badge|    |             |
++--------------+----------------+-------------------+-------------+
+| **Coverage** | |CC Coverage|  | |Codacy Coverage| | |Coveralls| |
++--------------+----------------+-------------------+-------------+
+
+.. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
+   :target: https://codeclimate.com/github/borja/herobravo
+.. |Codacy Badge| image:: https://api.codacy.com/project/badge/Grade/f2559f1e733d4a4c854fdcc84804c047
+   :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Grade
+.. |CC Coverage| image:: https://codeclimate.com/github/borja/herobravo/badges/coverage.svg
+   :target: https://codeclimate.com/github/borja/herobravo/coverage
+.. |Codacy Coverage| image:: https://api.codacy.com/project/badge/Coverage/f2559f1e733d4a4c854fdcc84804c047
+   :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Coverage
+.. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
+   :target: https://coveralls.io/github/borja/herobravo?branch=master
+
+Documentation
+-------------
++------------------------+------------------+-----------------------------------------------------+
+| Platform               | Badge            | Description                                         |
++========================+==================+=====================================================+
+| **Inline Docs**        | |Inline docs|    | *Evaluation of the project's documentation (chunk)* |
++------------------------+------------------+-----------------------------------------------------+
+| **Read the Docs**      | |readthedocs|    | *Sphinx HTML documentation*                         |
++------------------------+------------------+-----------------------------------------------------+
+| **CII Best Practices** | |Best Practices| | *FLOSS Best practices of this project*              |
++------------------------+------------------+-----------------------------------------------------+
+
+.. |Inline docs| image:: http://inch-ci.org/github/borja/herobravo.svg
+   :target: http://inch-ci.org/github/borja/herobravo
+.. |readthedocs| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
+   :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
+.. |Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/224/badge
+   :target: https://bestpractices.coreinfrastructure.org/projects/224
 
 Non-supported building platforms
 --------------------------------
