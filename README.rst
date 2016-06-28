@@ -4,7 +4,7 @@ Herosheet Project
 QA Dashboard
 ------------
 +--------------+-----------------+-------------------+----------------------+
-| **Deploy**   | |Heroku Status| | |Gemnasium|       |                      |
+| **Deploy**   | |Heroku Status| | |Gemnasium|       ||Semaphore|           |
 +--------------+-----------------+-------------------+----------------------+
 | **Build**    | |Travis Status| | |CircleCi Status| | |Snap CI|            |
 +--------------+-----------------+-------------------+----------------------+
@@ -47,6 +47,10 @@ QA Dashboard
    :target: https://heroku.com/deploy
 .. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
    :target: https://coveralls.io/github/borja/herobravo?branch=master
+.. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
+   :target: https://semaphoreci.com/borja/herobravo
+.. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
+   :target: https://codeship.com/projects/160114
 
 Non support building platforms
 ------------------------------
@@ -57,15 +61,11 @@ Non support building platforms
 +----------+------------+-----------------------------+
 | Appveyor | |Appveyor| | TBD                         |
 +----------+------------+-----------------------------+
-| CodeShip | |CodeShip| | Work on progress            |
-+----------+------------+-----------------------------+
 
 .. |Drone| image:: https://drone.io/github.com/borja/herobravo/status.png
    :target: https://drone.io/github.com/borja/herobravo/latest
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
-.. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
-   :target: https://codeship.com/projects/160114
 
 Running this application locally
 ----------------------------------
