@@ -15,6 +15,9 @@ SimpleCov.start
 require 'codecov'
 SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
+require 'scrutinizer/ocular'
+Scrutinizer::Ocular.watch!
+
 ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'rack/test'
