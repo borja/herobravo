@@ -76,8 +76,11 @@ DIY & Manual Configuration
 +---------------------+-----------------+-------------------------------+
 | **PasS**:           | |Heroku Deploy| | *1 click to deploy*           |
 +---------------------+-----------------+-------------------------------+
-| **Docker Registry** | DockerHub|      |                               |
+| **Docker Registry** | |DockerHub|     | *Docker image repository*     |
 +---------------------+-----------------+-------------------------------+
+
+Just click the heroku button to start a new website.
+(your-app-name.herokuapp.com) Enjoy!
 
 .. |DockerHub| image:: https://img.shields.io/badge/%E2%86%91_DockerHub-borjamartin/herobravo-blue.svg
    :target: https://hub.docker.com/r/borjamartin/herobravo/
