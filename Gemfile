@@ -15,4 +15,5 @@ group :test do
   gem 'codeclimate-test-reporter', '~> 0.5.2'
   gem 'codacy-coverage', require: false
   gem 'coveralls', require: false
+  gem 'codecov', require: false
 end
