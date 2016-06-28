@@ -32,13 +32,13 @@ Deployment Status
 
 Quality Grades
 --------------
-+--------------+----------------+-------------------+-------------+
-| Stat         | Code Climate   | Codacy            | Coveralls   |
-+==============+================+===================+=============+
-| **Grade**    | |Code Climate| | |Codacy Badge|    |             |
-+--------------+----------------+-------------------+-------------+
-| **Coverage** | |CC Coverage|  | |Codacy Coverage| | |Coveralls| |
-+--------------+----------------+-------------------+-------------+
++--------------+----------------+-------------------+-------------+------------+
+| Stat         | Code Climate   | Codacy            | Coveralls   |  CodeCov   |
++==============+================+===================+=============+============+
+| **Grade**    | |Code Climate| | |Codacy Badge|    |             |            |
++--------------+----------------+-------------------+-------------+------------+
+| **Coverage** | |CC Coverage|  | |Codacy Coverage| | |Coveralls| |  |CodeCov| |
++--------------+----------------+-------------------+-------------+------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herobravo
@@ -50,6 +50,8 @@ Quality Grades
    :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Coverage
 .. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
    :target: https://coveralls.io/github/borja/herobravo?branch=master
+.. |CodeCov| image:: https://codecov.io/gh/borja/herobravo/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/borja/herobravo
 
 Documentation
 -------------
