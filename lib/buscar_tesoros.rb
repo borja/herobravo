@@ -21,35 +21,27 @@ def tesoro(sigmar, dado1, dado2)
   send(valores[dado1 + dado2 - 2], sigmar, dado1, dado2)
 end
 
-# DB in YAML format
-def buscar_tesoros
-  load_yaml('buscar_tesoros')
+# posibles 5 valores del dado sigmar
+def caras_sigmar
+  # El sexto es eagle x2
+  %w(eagle plus blank hammer comet)
 end
 
 # Resultados dependiendo de Sigmar
 # --------------------------------
 
-# posibles 5 valores del dado sigmar
-def caras_sigmar
-  %w(eagle plus blank hammer comet) # El sexto es eagle x2
+def buscar_tesoros (tipo, sigmar, *doble) # DB in YAML format
+  bt  = load_yaml('buscar_tesoros')[tipo]
+  sig = doble ? sigmar + '2' : sigmar
+  bt[sig] || bt['default']
 end
 
 def pifia(sigmar, _dado1, _dado2) # 2
-  # Returns a string with the pifia type
-  if sigmar == 'eagle' # This is the epic result
-    'Tropiezas y pierdes 1PC. A pesar de tu torpeza,
-     te levantas disimuladamente...'
-  else
-    "Tropiezas y pierdes 1PC forma patética."
-  end
+  buscar_tesoros('pifia', sigmar)
 end
 
 def vacia(sigmar, _dado1, _dado2) # 3
-  if sigmar == 'hammer' # You can keep searching.
-    "La sala está vacía pero aún se pueden buscar tesoros"
-  else
-    "La sala está vacía y no se podrá rebuscar más."
-  end
+  buscar_tesoros('vacía', sigmar)
 end
 
 def maldición(sigmar, dado1, dado2) # 4
@@ -75,33 +67,27 @@ def maldición(sigmar, dado1, dado2) # 4
 end
 
 def trampa(sigmar, _dado1, _dado2) # 5
-  r = %w(flecha foso veneno roca hacha)
-  'trampa de ' + r[caras_sigmar.index(sigmar)]
+  buscar_tesoros('trampa', sigmar)
 end
 
 def monstruo(sigmar, _dado1, _dado2) # 6
-  r = %w(lento rápido normal normal normal)
-  'monstruo errante ' + r[caras_sigmar.index(sigmar)]
+  buscar_tesoros('monstruo', sigmar)
 end
 
 def oro(sigmar, _dado1, _dado2) # 7
-  r = %w(50 35 10 25 60)
-  r[caras_sigmar.index(sigmar)] + ' piezas de oro' # Gold coins
+  buscar_tesoros('oro', sigmar)
 end
 
 def perg(sigmar, _dado1, _dado2) # 8
-  r = %w(doble documentos blanco básico arcano)
-  'pergamino:' + r[caras_sigmar.index(sigmar)]
+  buscar_tesoros('pergamino', sigmar)
 end
 
 def pot(sigmar, _dado1, _dado2) # 9
-  r = %w(curación resistencia fuerza velocidad héroes)
-  'poción de ' + r[caras_sigmar.index(sigmar)]
+  buscar_tesoros('poción', sigmar)
 end
 
 def comida(sigmar, _dado1, _dado2) # 10
-  r = %w(asado manzanas podrida agua   sidra)
-  'comida: ' + r[caras_sigmar.index(sigmar)]
+  buscar_tesoros('comida', sigmar)
 end
 
 def alijo(sigmar, _dado1, _dado2) # 11
@@ -118,15 +104,15 @@ end
 
 # Genera una gema al azar
 def gema_random
-  gema(rand(1..47)).name
+  gemas.sample.name
 end
 
 # Genera una joya al azar
 def joya_random
-  joya(rand(1..11)).name
+  joyas.sample.name
 end
 
 # Genera una runa al azar
 def runa_random
-  runa(rand(1..11)).name
+  runas.sample.name
 end

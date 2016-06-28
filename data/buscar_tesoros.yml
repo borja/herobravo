@@ -4,12 +4,52 @@ pifia:
             te levantas disimuladamente..."
   default: "Tropiezas y pierdes 1PC forma patética."
 vacia:
+  hammer:  "La sala está vacía pero aún se pueden buscar tesoros"
+  default: "La sala está vacía y no se podrá rebuscar más."
 maldición:
+  eagle:   "Maldición: Legañas: Tu siguiente tirada de ataque causará daños a la miniatura más cercana"
+  eagle2:  "Maldición: Hirsutismo: -1 Reputación. No afecta a los enanos"
+  plus:
+  plus2:
+  blank:
+  blank2:
+  hammer:
+  hammer2:
+  comet:
+  comet2:
 trampa:
+  eagle:   "Trampa de flecha"
+  plus:    "Trampa de foso"
+  blank:   "Trampa de veneno"
+  hammer:  "Trampa de roca"
+  comet:   "Trampa de hacha"
 monstruo:
+  eagle:   "Monstruo errante lento"
+  plus:    "Monstruo errante rápido"
+  default: "Monstruo errante"
 oro:
+  eagle:   "50 piezas de oro"
+  plus:    "35 piezas de oro"
+  blank:   "10 piezas de oro"
+  hammer:  "25 piezas de oro"
+  comet:   "60 piezas de oro"
 pergamino:
+  eagle:   "pergamino: doble"
+  plus:    "pergamino: documentos"
+  blank:   "pergamino: blanco"
+  hammer:  "pergamino: básico"
+  comet:   "pergamino: arcano"
 poción:
+  eagle:   "poción: curación"
+  plus:    "poción: resistencia"
+  blank:   "poción: fuerza"
+  hammer:  "poción: velocidad"
+  comet:   "poción: héroes"
 comida:
+  eagle:   "comida: asado"
+  plus:    "comida: manzanas"
+  blank:   "comida: podrida"
+  hammer:  "comida: agua"
+  comet:   "comida: sidra"
 alijo:
 cofre:
