@@ -1,0 +1,14 @@
+build:
+    environment:
+        ruby: '2.3.1'
+    tests:
+        override:
+            -
+                command: bundle exec rspec test.rb
+                environment:
+                    'SCRUTINIZER_CC_FILE': 'my-coverage'
+                coverage:
+                    file: 'my-coverage'
+                    format: 'rb-cc'
+checks:
+    ruby: true
