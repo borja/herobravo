@@ -235,3 +235,11 @@
   ranuras:     2
   diagonal:    false
   precio:      125
+-
+  id:          29
+  name:        "urgosh"
+  categoria:   "filo"
+  ataque:      3
+  ranuras:     3
+  diagonal:    false
+  precio:      375
