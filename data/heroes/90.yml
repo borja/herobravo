@@ -2,6 +2,7 @@ name:      "Estella"
 personaje: "derviche"
 gender:    "female"
 jugador:   "Javier Galindo"
+status:    "activo"
 familiar:  { id: 15, name: "Viviana"}
 progenitores: 
   - "Gabrielle"
