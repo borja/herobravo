@@ -3,9 +3,18 @@ personaje: "arquero"
 gender:    "female"
 jugador:   "Rocío"
 pareja:    { char: 78, tipo: "pj" }
+nivel:     2
 cuerpo:    6
 mente:     4
-mov:       8
+mov:       9
+oro:       51
 armadura:  2
-armas:     5
+armas:     [14,25]
+miscelaneas:
+  - { id:  1, enchants: [111] }
+  - { id:  1}
+pergaminos:
+  - { id: 1, spells: [66] }
+  - { id: 1, spells: [95] }
 hechizos:  [12, 13, 14]
+skills:    [1, 2] 
