@@ -3,11 +3,18 @@ personaje: "falangista"
 jugador:   "Raúl"
 pareja:    { char: 89, tipo: "pj" }
 familiar:  { id: 17, name: "Climber"}
-cuerpo:    7
-mente:     3
+profesion: { id: 3, aprendiz: [0,2] }
+nivel:     2
+cuerpo:    8
+mente:     4
 mov:       6
-oro:       30
+oro:       12
 armadura:  2
-armas:     [7, 11]
+skills:    [2, 3]
+pociones:  [1, 13]
+armas:     [29, 7]
+miscelaneas:
+  - { id:  2, enchants: [111] }
+  - { id:  23, enchants: [108] }
 protecciones:
   - { id: 2 }

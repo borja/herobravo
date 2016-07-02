@@ -63,3 +63,8 @@
   name:   'héroes'
   efecto: '+1 ataque extra'
   precio: 75
+-
+  id:     13
+  name:   'bomba de veneno'
+  efecto: 'Crea durante 1 turno un área de veneno 2x2'
+  precio: 100
