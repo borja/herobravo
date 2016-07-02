@@ -1,5 +1,6 @@
 # encoding: UTF-8
 def criaturas # plural
+  # TODO: This must list /data/criaturas/* instead of hardcode
   %w(bestias pielverdes nomuertos dragones
      elementales caóticos guardianes humanoides)
 end

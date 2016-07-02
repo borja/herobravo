@@ -31,7 +31,7 @@ class Item < Hash
 
   def ranuras_libres
     total = 0
-    total += ranuras if ranuras
+    total += ranuras    if ranuras
     total -= gemas.size if gemas
     total -= runas.size if runas
     total -= joyas.size if joyas
@@ -41,8 +41,8 @@ class Item < Hash
   def precio_venta
     pvp = precio
     pvp += (enchants.count * 100) if enchants
-    pvp += (runas.count * 100) if runas
-    pvp += (joyas.count * 100) if joyas
+    pvp += (runas.count * 100)    if runas
+    pvp += (joyas.count * 100)    if joyas
     if gemas
       gemas.each do |g|
         pvp += [10, 25, 50, 100, 250, 500, 50][g / 8]
