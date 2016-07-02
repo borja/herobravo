@@ -1,0 +1,15 @@
+name:      "Estella"
+personaje: "derviche"
+gender:    "female"
+jugador:   "Javier Galindo"
+familiar:  { id: 15, name: "Viviana"}
+progenitores: 
+  - "Gabrielle"
+  - 59
+nivel:     3
+cuerpo:    6
+mente:     4
+mov:       10
+armadura:  2
+skills:    [0, 1, 3, 4]
+armas:     [1, 7]
