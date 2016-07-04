@@ -1,0 +1,38 @@
+-
+  id:           0
+  nivel:        2
+  rangos:       2
+  name:         "Golpe Feroz"
+  type:         "única"
+  description:  "+1/rango de potencia a tu siguiente ataque"
+-
+  id:           1
+  nivel:        2
+  rangos:       3
+  name:         "Corazón de león"
+  type:         "reactiva"
+  description:  "-1/rango daño sufrido por golpes físicos si has matado en tu turno."
+-
+  id:           2
+  nivel:        2
+  name:         "Honor de la victoria"
+  type:         "reactiva"
+  description:  "+1 PM al salir indemne de todos los ataques (debe haber al menos 1) en el turno del MB."
+-
+  id:           3
+  nivel:        2
+  name:         "Devastador"
+  type:         "pasiva"
+  description:  "Cuando el ataque se produce antes que el movimiento, los golpes son aullantes"
+-
+  id:           4
+  nivel:        3
+  name:         "Soberanía"
+  type:         "activa"
+  description:  "+1 Fuerza al golpear con armas a 2 manos"
+-
+  id:           5
+  nivel:        3
+  name:         "Ferocidad"
+  type:         "reactiva"
+  description:  "Recupera golpe feroz al matar en combate frontal cuerpo a cuerpo"
