@@ -20,15 +20,22 @@ enano:
   -
     name:        "Desactivar trampas"
     description: "+1 desactivar trampas"
-bárbaro:  
+bárbaro:
   -
     name:        "Furia"
     description: "1PM: +1 dado de ataque hasta final del turno. Además eres inmune a psicología."
-ladrón:   
+ladrón:
   -
     name:        "Robar"
     description: "La tirada de tesoros se efectúa de forma independiente al grupo."
-clérigo:  
+clérigo:
   -
     name:        "Rezar"
     description: "+6 plegarias sagradas al iniciar el Reto."
+rakshasa:
+  -
+    name:        "Rugido"
+    description: "-2 movimeinto: Causa +1 miedo en la fase trepidante."
+  -
+    name:        "Destino"
+    description: "Permite coger 3 hechizos entre las magias de viento y plegarias, al inicio del reto."
