@@ -1,4 +1,4 @@
--              
+-
   id:          0
   nivel:       2
   rangos:      3
@@ -6,40 +6,40 @@
   type:        "activa"
   coste:       "6 movimiento - 1/rango"
   description: "+1 dado de Ataque hasta final del turno."
--              
+-
   id:          1
   nivel:       2
   rangos:      4
   name:        "esquiva"
   type:        "declarativa"
   description: "+1 Defensa vs un enemigo declarado hasta tu siguiente turno."
--              
+-
   id:          2
   nivel:       2
   rangos:      3
   name:        "dos armas"
   type:        "pasiva"
   description: "Permite llevar un arma en la mano torpe de tamaño igual o inferior al rango"
--              
+-
   id:          3
   nivel:       2
   rangos:      3
   name:        "baile de combate"
   type:        "pasiva"
   description: "Permite atacar desde diferentes ángulos según el rango (diagonal, flancos, y diagonales traseras)"
--              
+-
   id:          4
   nivel:       3
   name:        "agilidad felina"
   type:        "pasiva"
   description: "Los enemigos no empujan al derviche en casillas colindantes a paredes"
--              
+-
   id:          5
   nivel:       3
   name:        "acrobacias"
   type:        "única"
   description: "Puedes pasar a través de un enemigo aún sin su consentimiento"
--              
+-
   id:          6
   nivel:       3
   rangos:      3
@@ -47,14 +47,14 @@
   description: "Permite dar 1 paso extra"
   type:        "activa"
   coste:       "3 movimiento"
--              
+-
   id:          7
   nivel:       4
   requisitos:  [3]
   name:        "danza de la muerte"
   type:        "única"
   description: "Ataque con tu arma principal a todas las miniaturas de tu alrededor"
--              
+-
   id:          8
   nivel:       4
   rangos:      2
@@ -62,35 +62,35 @@
   name:        "Hoja relampagueante"
   type:        "pasiva"
   description: "+1 de potencia/rango al atacar a múltiples enemigos en el mismo ángulo."
--              
+-
   id:          9
   nivel:       5
   requisitos:  [0,2]
   name:        "Crepúsculo"
   type:        "única"
   description: "Puedes renunciar a un ataque con un arma para sumar sus dados de ataque a la fuerza de tu siguiente ataque este turno."
--              
+-
   id:          10
   nivel:       5
   requisitos:  [0,2]
   name:        "Amanecer"
   type:        "única"
   description: "Puedes renunciar a un ataque con un arma para sumar su potencia y fuerza a tu siguiente ataque este turno."
--              
+-
   id:          11
   nivel:       6
   requisitos:  [7, 8]
   name:        "Danza relampagueante"
   type:        "reactiva"
   description: "Recuperas danza de la muerte al matar usando hoja relampagueante."
--              
+-
   id:          12
   nivel:       6
   name:        "Golpe de muñeca"
   type:        "activa"
   coste:       "-1 potencia hasta final de turno"
   description: "+1 fuerza en tu siguiente ataque"
--              
+-
   id:          13
   nivel:       7
   name:        "Filo súbito"
