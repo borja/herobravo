@@ -12,5 +12,11 @@ armas:
   - { id: 13 }
   - { id: 7 }
 protecciones:
-  - { id: 1 }
-skills: [1,2,3,6]
+  - { id: 13 }
+  - { id: 3 }
+  - { id: 4 }
+  - { id: 8 }
+  - { id: 10 }
+skills: [1, 2, 3, 6]
+master: [8]
+shadows:[0, 1, 2, 3, 4, 5]
