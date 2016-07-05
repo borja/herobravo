@@ -13,9 +13,9 @@
   type:         "única"
   description:  "Tu próximo ataque se considera en posición elevada"
 -
-  id:           1
+  id:           2
   nivel:        2
-  rangos:       3
+  rangos:       4
   name:         "Esquiva"
-  type:         "reactiva"
-  description:  "-1/rango daño sufrido por golpes físicos si has matado en tu turno."
+  type:         "declarativa"
+  description:  "+1 Defensa vs un enemigo declarado hasta tu siguiente turno."
