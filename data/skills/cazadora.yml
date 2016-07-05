@@ -1,0 +1,21 @@
+-
+  id:           0
+  nivel:        2
+  rangos:       3
+  name:         "Despliegue en manada"
+  type:         "pasiva"
+  description:  "Al pasar por la espalda de 1/rango aliados, obtiene +1 sigilo"
+-
+  id:           1
+  nivel:        2
+  rangos:       3
+  name:         "Salto Feroz"
+  type:         "única"
+  description:  "Tu próximo ataque se considera en posición elevada"
+-
+  id:           1
+  nivel:        2
+  rangos:       3
+  name:         "Esquiva"
+  type:         "reactiva"
+  description:  "-1/rango daño sufrido por golpes físicos si has matado en tu turno."
