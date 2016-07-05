@@ -11,6 +11,8 @@ armadura:  2
 armas:
   - { id: 13 }
   - { id: 7 }
+miscelaneas:
+  - { id: 6, enchants: [111] }
 protecciones:
   - { id: 13 }
   - { id: 3 }
@@ -20,3 +22,4 @@ protecciones:
 skills: [1, 2, 3, 6]
 master: [8]
 shadows:[0, 1, 2, 3, 4, 5]
+joyas: [8]
