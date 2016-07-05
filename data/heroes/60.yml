@@ -21,11 +21,9 @@ protecciones:
   - { id: 3 }
   - { id: 4 }
   - { id: 8 }
-miscelaneas:
-  - { id: 6, enchants: [111] }
 skills:   [0, 1, 2, 3]
 pociones: [1]
 tesoro:
   gemas: [28]
   runas: [9]
-  joyas: [8]
+
