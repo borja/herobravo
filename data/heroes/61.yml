@@ -3,8 +3,8 @@ personaje: "clérigo"
 jugador:   "Iris"
 gender:    "female"
 status:    "reserva"
-nivel:     2
-cuerpo:    6
+nivel:     3
+cuerpo:    7
 mente:     5
 mov:       7
 armadura:  2
@@ -13,4 +13,4 @@ armas:
   - { id: 7 }
 protecciones:
   - { id: 1 }
-skills: [1, 3]
+skills: [1,2,3,6]
