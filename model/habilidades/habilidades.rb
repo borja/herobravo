@@ -3,6 +3,7 @@ pjs = %w(
   hechicero invocador conjurador paladín clérigo sacerdote
   derviche arquero druida ladrón asesino nigromante
   matador falangista ingeniero
+  invicto cazadora chamán
 )
 
 # Generic clase creator
