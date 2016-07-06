@@ -251,3 +251,11 @@
   ranuras:     3
   diagonal:    false
   precio:      375
+-
+  id:          31
+  name:        "khopesh"
+  categoria:   "filo"
+  ataque:      2
+  ranuras:     2
+  diagonal:    false
+  precio:      250
