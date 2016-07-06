@@ -3,14 +3,16 @@ personaje: "clérigo"
 jugador:   "Iris"
 gender:    "female"
 status:    "reserva"
-nivel:     2
-cuerpo:    6
+nivel:     3
+cuerpo:    7
 mente:     5
 mov:       7
 armadura:  2
 armas:
   - { id: 13 }
   - { id: 7 }
+miscelaneas:
+  - { id: 6, enchants: [111] }
 protecciones:
   - { id: 3 }
   - { id: 4 }
@@ -19,8 +21,8 @@ protecciones:
   - { id: 13 }
 miscelaneas:
   - { id: 6,  enchants: [111] }
-skills: [1, 3]
-master: [8]
-pociones:  [1]
+skills:  [1, 2, 3, 6]
+master:  [8]
+shadows: [0, 1, 2, 3, 4, 5]
 tesoro:
   joyas: [8]
