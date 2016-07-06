@@ -583,3 +583,8 @@
   name:         "de Sigmar"
   descripcion:  "1 carga: + 1 PC"
   tipo:         "bendito"
+
+  id:           112
+  name:         "de sombras endiabladas"
+  descripcion:  "Al matar un no-muerto, tu próxima magia de sombras se ejecuta con diablura"
+  tipo:         "sombras"
