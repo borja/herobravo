@@ -90,7 +90,7 @@
 -
   id:          11
   name:        "hacha"
-  categoria:   "filo"
+  categoria:   "acometida"
   ataque:      2
   ranuras:     4
   diagonal:    false
@@ -98,7 +98,7 @@
 -
   id:          12
   name:        "hacha a dos manos"
-  categoria:   "filo"
+  categoria:   "acometida"
   ataque:      4
   ranuras:     4
   diagonal:    false
@@ -238,7 +238,15 @@
 -
   id:          29
   name:        "urgosh"
-  categoria:   "filo"
+  categoria:   "acometida"
+  ataque:      3
+  ranuras:     3
+  diagonal:    false
+  precio:      375
+-
+  id:          30
+  name:        "flabelo"
+  categoria:   "acometida"
   ataque:      3
   ranuras:     3
   diagonal:    false
