@@ -29,6 +29,6 @@ def narrados(n)
 end
 
 def nomalize_pj(pj)
-  normalization = { '%C3%A9' => 'é', '%C3%AD' => 'í', '%C3%B3' => 'ó' }
-  pj.gsub(/%C3%A9|%C3%AD|%C3%B3/) { |match| normalization[match] }
+  normalization = { '%C3%A1' => 'á', '%C3%A9' => 'é', '%C3%AD' => 'í', '%C3%B3' => 'ó' }
+  pj.gsub(/%C3%A1|%C3%A9|%C3%AD|%C3%B3/) { |match| normalization[match] }
 end
