@@ -1,0 +1,12 @@
+-
+  id:           0
+  nivel:        2
+  name:         "Magia de arena"
+  type:         "pasiva"
+  description:  "Añade el set de arena a tu biblioteca de hechizos"
+-
+  id:           1
+  nivel:        2
+  name:         "Espíritu generoso"
+  type:         "pasiva"
+  description:  "Siempre que ejecutes una bendición, recibes su efecto también sobre ti."
