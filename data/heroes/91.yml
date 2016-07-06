@@ -1,0 +1,10 @@
+name:      "Raggg"
+personaje: "invicto"
+jugador:   "Aitor"
+status:    "reserva"
+nivel:     1
+cuerpo:    7
+mente:     3
+mov:       7
+armadura:  0
+armas:     [3]
