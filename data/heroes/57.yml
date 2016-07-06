@@ -1,12 +1,19 @@
 name:      "Elhlebeyo"
-personaje: "caminante"
+personaje: "brujo"
 jugador:   "Aitor"
 status:    "reserva"
 historia:  2
-cuerpo:    6
+nivel:     2
+cuerpo:    7
 mente:     4
 mov:       7
 repu:      1
 armadura:  2
 armas:     [2, 7]
 pociones: [1]
+hechizos: [0, 1, 2]
+shadows:  [0, 1, 2]
+blood:    [0, 1, 2]
+skills:   [0, 3]
+miscelaneas:
+  - { id:  24, enchants: [103, 112] }
