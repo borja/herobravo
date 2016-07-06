@@ -19,6 +19,7 @@ hechizos:     [0, 1, 2]
 shadows:      [0, 1, 2, 5]
 materiales:   [0, 0]
 pociones:     [3]
+master:       [2]
 armadura:     3
 armas:        { id: 24, enchants: [72, 73, 74], gemas: [40], joyas: [9] }
 protecciones:
@@ -37,4 +38,3 @@ abalorios:
 tesoro:
   runas: [3]
   gemas: [6, 8, 10, 18, 21, 25, 27, 27, 28, 28, 31, 40, 52]
-master:  [2]
