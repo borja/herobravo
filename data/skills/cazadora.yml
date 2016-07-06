@@ -19,3 +19,10 @@
   name:         "Esquiva"
   type:         "declarativa"
   description:  "+1 Defensa vs un enemigo declarado hasta tu siguiente turno."
+-
+  id:           3
+  nivel:        3
+  rangos:       2
+  name:         "Al acecho"
+  type:         "pasiva"
+  description:  "+1/rango potencia a los ataques no-frontales estando en sigilo"
