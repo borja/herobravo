@@ -10,3 +10,53 @@
   name:         "Espíritu generoso"
   type:         "pasiva"
   description:  "Siempre que ejecutes una bendición, recibes su efecto también sobre ti."
+-
+  id:           2
+  nivel:        2
+  name:         "Forma astral"
+  type:         "activa"
+  coste:        "1PM"
+  description:  
+                "Siempre que no haya enemigos visibles y hasta que ataque,<br/>
+                 el chamán podrá volverse un espíritu.<br/>
+                 (+2 movimiento, +1 potencia en hechizos no-ofensivos, puede atravesar miniaturas)"
+-
+  id:           3
+  nivel:        2
+  name:         "Glifo de ordalía"
+  type:         "declarativa"
+  description:  "Bendices a un aliado con un glifo. Cada vez que éste mate cuerpo frontalmente, recuperas 1PM"
+-
+  id:           4
+  nivel:        3
+  name:         "Ordalía dhármica"
+  type:         "activa"
+  coste:        "2PM"
+  description:  "Durante su próximo turno, si tu ordalía se cumple, recuperas 1 hechizo."
+-
+  id:           5
+  nivel:        3
+  name:         "Ley del águila"
+  type:         "activa"
+  coste:        "1PM"
+  description:  "Hasta tu próximo turno (incluido), los hechizos de aire en la sala, cuestan 1PM en lugar del hechizo."
+-
+  id:           6
+  nivel:        3
+  name:         "Ley del chacal"
+  type:         "activa"
+  coste:        "1PC"
+  description:  "Hasta tu próximo turno (incluido), los hechizos de arena en la sala, cuestan 2PC en lugar del hechizo."
+-
+  id:           7
+  nivel:        3
+  requisitos:   [2]
+  name:         "Ver los espíritus"
+  type:         "pasiva"
+  description:  "Durante la forma astral, el chamán verá las unidades en sigilo."
+-
+  id:           8
+  nivel:        4
+  name:         "Filo espiritual"
+  type:         "pasiva"
+  description:  "El arma del chamán podrá atacar con la potencia igual al número de escuelas de magia entre sus hechizos."
