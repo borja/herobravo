@@ -25,7 +25,7 @@
   nivel:        2
   name:         "Glifo de ordalía"
   type:         "declarativa"
-  description:  "Bendices a un aliado con un glifo. Cada vez que éste mate cuerpo frontalmente, recuperas 1PM"
+  description:  "Bendices a un aliado con un glifo. Cada vez que éste mate a melé, frontalmente, recuperas 1PM"
 -
   id:           4
   nivel:        3
