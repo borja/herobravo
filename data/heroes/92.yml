@@ -1,0 +1,9 @@
+name:      "Sirkhan"
+personaje: "chamán"
+jugador:   "Daniel de Haro"
+status:    "reserva"
+cuerpo:    7
+mente:     3
+mov:       7
+armadura:  0
+armas:     [31]
