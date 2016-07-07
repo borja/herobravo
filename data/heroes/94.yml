@@ -1,0 +1,9 @@
+name:      "Garuda"
+personaje: "invicto"
+jugador:   "Luis"
+status:    "reserva"
+cuerpo:    7
+mente:     3
+mov:       7
+armadura:  0
+armas:     [30]
