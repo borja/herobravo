@@ -1,0 +1,14 @@
+name:      "Xavier Umbradrack"
+personaje: "invocador"
+jugador:   "Javier Galindo"
+status:    "retirado"
+muerto:    true
+familiar:  { id: 8, name: "owlovicius", torpe: true }
+historia:  2
+premio:    1
+nivel:     3
+cuerpo:    5
+mente:     7
+mov:       7
+hechizos:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+skills:    [0, 1, 2, 3]

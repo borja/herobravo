@@ -58,3 +58,8 @@
   name:   'teletransporte'
   efecto: '1d6+2 casillas'
   precio: 300
+-
+  id:     12
+  name:   'héroes'
+  efecto: '+1 ataque extra'
+  precio: 75

@@ -1,0 +1,10 @@
+name:      "Jammarcus"
+personaje: "druida"
+jugador:   "Gon"
+ciudad:    "Kellen"
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:     [1, 7]
+skills:    [0]

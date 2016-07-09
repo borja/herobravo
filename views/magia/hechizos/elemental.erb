@@ -3,7 +3,7 @@
 		<% if (params[:view] == s.elemento) || params[:view] == 'hechizos' %>
 			<% magic = spell(s.id) %>
 			<tr style=<%= magic.color %>>				
-				<td><img src=<%= magic.img_path%> alt=<%=magic.name%>, id='icon' /></td>
+				<td><%= erb :'display/spell', locals: { spell: magic } %></td>
 				<% if params[:view] == 'hechizos' %>
 					<td><%= magic.elemento.capitalize %></td>
 				<% end %>

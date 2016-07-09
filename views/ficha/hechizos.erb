@@ -10,10 +10,10 @@
 				<table id='table-2'>
 					<tbody>
 						<tr><% h.elementos.each do |e| %>	
-								<td><%= erb :'display/display', :locals => { 
-									:title       => e, 
-									:path        => "'../images/elements/#{e}.png'",
-									:description => "" } %>
+								<td><%= erb :'display/display', locals: {
+									title:       e,
+									path:        "'../images/elements/#{e}.png'",
+									description: '' } %>
 								</td>
 							<% end %>
 						</tr>

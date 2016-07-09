@@ -1,0 +1,11 @@
+name:      "Ahalya"
+personaje: "arquero"
+gender:    "female"
+jugador:   "Rocío"
+pareja:    { char: 78, tipo: "pj" }
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:     5
+hechizos:  [12, 13, 14]

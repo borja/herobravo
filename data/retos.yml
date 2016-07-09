@@ -1,0 +1,14 @@
+-
+  id:     0
+  name:   "La Guerra de la Montaña I"
+  pjs:    [1, 2, 5, 7, 8]
+  pnjs:   ["Luria Battleaxe", "Cejohierro", "Borin"]
+  evil:   "Daikinon, el Esclavista"
+  lugar:  "La Montaña Svärd"
+  type:   "Fortaleza"
+  reward: "Sin otorgar"
+  target: "Limpiar la ofensa"
+  desc:
+          "La guerra se ha iniciado. Los Enanos del clan Battleaxe, liderados por Luria,
+           han tomado la montaña Svärd en nombre de la legión de Obsidiana duergar.
+           El Emperador, Ultrajado, envía a su príncipe Fuckencio, para limpiar la ofensa" 

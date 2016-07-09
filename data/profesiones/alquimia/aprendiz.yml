@@ -1,0 +1,23 @@
+-
+  name:   "Aprendiz de alquimista"
+  coste:  100
+  efecto: "Permite utilizar la mesa del alquimista"
+-
+  name:   "Mezclar jugos"
+  coste:  100
+  efecto: "Permite mezclar 2 pociones iguales y obtener 1 poción del mismo nivel a elección."
+-
+  name:   "Destilería"
+  coste:  100
+  efecto: "Permite mezclar 2 pociones iguales y obtener 1 poción de un nivel superior a elección."
+-
+  name:   "Poción antídoto"
+  coste:  200
+  efecto: "Crea una poción que disipa los efectos de un veneno instantáneamente."
+  crear:  100
+  venta:  50
+-
+  name:   "Elixir de sangre de demonio"
+  coste:  300
+  efecto: "Crea una poción curativa con 2 viales de sangre de demonio."
+  venta:  50

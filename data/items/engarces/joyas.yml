@@ -1,0 +1,162 @@
+-
+  id:   0
+  name: "del toro"
+  fits:
+    bastón:   "+2 dados azules de ataque (potencia 2)"
+    daga:     "+1 efectos de sangrado"
+    arma:     "+1 ataque"
+    anillo:   "+1 punto de cuerpo"
+    colgante: "+1 movimiento (correr: +1 saltar fosos)"
+    escudo:   "Puede usar el escudo de base vs ataques conjuntos"
+-
+  id:   1
+  name: "del caos"
+  fits: 
+    daga:     "Al arrojar y matarse arroja sola automáticamente"
+    arma:     "+1 ataque (excepto demonios y caóticos)"
+    colgante: "+1 hechizo tenebro aleatorio"
+    armadura: "+1 vs tenebro"
+-
+  id:   2
+  name: "multicolor"
+  fits:
+    hacha:    "Hacha doble (4 calaveras): magia elemental aleatoria potencia:nivel"
+    metal:    "(4 calaveras): magia elemental aleatoria potencia:nivel"
+    anillo:   "Pergaminos elementales +1 efecto."
+-
+  id:   3
+  name: "simbionte"
+  fits:
+    hacha:    "(solo enano) +1 punto de cuerpo al matar"
+    cabeza:   "+2 puntos de cuerpo"
+    espada:   "+1 furia al recibir daños el turno anterior."
+    lanza:    "+ 1 punto de mente al matar."
+-
+  id:   4
+  name: "de la fortuna"
+  fits:
+    anillo:   "Los monstruos errantes pueden repetirse 1 vez"
+    colgante: "Las trampas de tesoro pueden repetirse 1 vez"
+    cabeza:   "Duplica el oro del tesoro"
+    armadura: "Triplica el oro del tesoro"
+-
+  id:   5
+  name: "amorfa"
+  fits:
+    bastón:   "+ 3 resistencia al rayo"
+    daga:     "Desangradora y potencia +1"
+    arma:     "-1 ataque: Los ataques fallidos recuperan 1 hechizo."
+    armadura: "-1 defensa: Las defensas fallidas recuperan 1 hechizo."
+-
+  id:   6
+  name: "antimagia"
+  fits:
+    todos:    "+1 resistencia vs magia"
+    cabeza:   "4+ resistencia vs magia"
+    arma:     "El objetivo queda silenciado si es dañado"
+    colgante: "1/reto: Puede repetir una tirada de defensa mágica"
+    hombros:  
+      "+1 galardón al matar en conjunto.<br/>
+       Activa3G: Todos odian a la víctima.<br/>
+       Pasiva (5G): En conjuntotodos cobran la pieza."
+-
+  id:   7
+  name: "del artesano"
+  fits:
+    hacha:    "+2 ranuras engarzables"
+    cabeza:   "(salvo enano): +2 Desactivar trampas"
+    anillo:   "+2 ranuras engarzables"
+    colgante: "+1 ranura engarzableque añadiría el efecto en anillo"
+-
+  id:   8
+  name: "aullante"
+  fits:
+    arma:     "El enemigo retrocede 1 casilla por daño sufrido"
+    escudo:   "El enemigo no puede conjuntar ataques > su potencia"
+    colgante: "(solo bárbaro) +1 duración de todos los gritos"
+-
+  id:   9
+  name: "de la perfeccion"
+  fits:
+    escudo:   "+2 dados azules de defensa"
+    daga:     "+ 2 potencia"
+    arma:     "+2 dados de ataque"
+    anillo:   "El personaje puede llevar +1 anillo"
+    hombros:  
+      "+1 galardón al obtener un galardón.<br/>
+       Pasiva (5G): Puedes acumular 6 galardones
+       y apilar dos efectos activos simultáneamente."
+    muñecas:  
+      "+1 opresión al obtener opresión.<br/>
+       Pasiva (5G): Puedes acumular 6 p. de opresión
+       y apilar dos efectos activos simultáneamente."
+-
+  id:   10
+  name: "de la sangre"
+  fits:
+    espada:   "Triplica el daño (máximo 3 dados de ataque)"
+    hacha:    "Desangran + 1 potencia"
+    lanza:    "+2 potencia y desangran"
+    colgante: "(solo ladrón) ataques/espalda y hechizos desangran"
+-
+  id:   11
+  name: "de sigmar"
+  fits:
+    maza:     "(solo clérigo) + 2 ataque"
+    anillo:   "(solo clérigo)+1 plegaria por reto"
+    escudo:   "(solo clérigo) +2 defensa"
+    colgante: "1/reto: El siguiente hechizo es súmmum y chakra"
+-
+  id:   12
+  name: "cerebro congelado"
+  fits:
+    cintura:  "1/reto: puede ejecutar el hechizo Reposición Mental"
+-
+  id:   13
+  name: "demonio en tarro"
+  fits:
+    abalorio: "Hay un demonio encerrado en esta vasija."
+-
+  id:   14
+  name: "del verano"
+  fits:
+    bastón:   "permite usar 3 magias del verano. Si se usa 1 se desactivan las demássalvo que sea gratuita)"
+-
+  id:   15
+  name: "del invierno"
+  fits:
+    bastón:
+      "Permite usar 3 magias del invierno. Si se usa 1
+       se desactivan las demássalvo que sea gratuita)"
+-
+  id:   16
+  name: "del otoño"
+  fits:
+    bastón:
+      "Permite usar 3 magias del otoño. Si se usa 1
+       se desactivan las demássalvo que sea gratuita)"
+-
+  id:   17
+  name: "de la primavera"
+  fits:
+    bastón:
+      "Permite usar 3 magias de la primavera. Si se usa 1
+       se desactivan las demássalvo que sea gratuita)"
+-
+  id:   18
+  name: "atrapasueños élfico"
+  fits:
+    bastón:   "Permite armonizar el báculo de las estaciones."
+-
+  id:   19
+  name: "talismán guardabosques"
+  fits:
+    cabeza:   "+1PM al defender con éxito"
+-
+  id:   20
+  name: "del Trueno"
+  fits:
+    muñecas:
+      "+1 opresión al no dañar con un hechizo de aire.<br/>
+       Activa3o.: Lanzas un genio durante la fase de instintos.<br/>
+       Pasiva (5o.): +1 para recuperar el hechizo: genio"

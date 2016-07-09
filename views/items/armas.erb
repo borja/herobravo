@@ -11,14 +11,14 @@
 	</thead>
 	<tbody>
 		<% armas.each do |item| %>
-			<% a = Arma.new(item) %>
+			<% a = Arma.new(item.tap{ |i| i.delete('ranuras') } ) %>
 			<tr>
-				<td><%= erb :'display/arma', :locals => { :a => a} %></td>
+				<td><%= erb :'display/item', locals: { item: a } %></td>
 				<td><%= a.name %></td>
 				<td><%= a.categoria %></td>
 				<td><%= a.ataque %></td>
 				<td><%= a.diagonal %></td>
-				<td><%= a.ranuras %></td>
+				<td><%= armas[a.id]['ranuras'] %></td>
 				<td><%= a.precio %></td>
 			</tr>
 		<% end %>

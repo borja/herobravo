@@ -1,0 +1,11 @@
+name:      "Benigno"
+personaje: "derviche"
+jugador:   "Lori"
+ciudad:    "Kellen"
+nivel:     2
+cuerpo:    6
+mente:     4
+mov:       9
+armadura:  { id: 2, enchants: [90, 7] }
+armas:     [1, 3]
+skills:    [0, 2]

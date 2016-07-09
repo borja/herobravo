@@ -1,0 +1,32 @@
+name:      "Lindele"
+personaje: "derviche"
+jugador:   "Cristina"
+status:    "activo"
+gender:    "female"
+pareja:    { char: 15, tipo: "pj" }
+familiar:  { id: 19, name: "Limoncito" }
+profesion: { id: 2, aprendiz: [0, 1] }
+historia:  1
+nivel:     8
+cuerpo:    8
+mente:     6
+mov:       17
+oro:       60
+armadura:  2
+armas:
+  - { id: 2, enchants: [16] }
+  - { id: 1, enchants: [75] }
+protecciones:
+  - { id: 2, gemas: [4] }
+  - { id: 5, enchants: [8] }
+  - { id: 14 }
+miscelaneas:
+  - { id: 11 }
+pergaminos:
+  - { id: 1, spells: [11] }
+skills:   [0, 1, 2, 4, 5, 6]
+hechizos: [6, 7, 8]
+pociones: [0]
+piezas:   [0, 4]
+tesoro:
+  gemas: [12]

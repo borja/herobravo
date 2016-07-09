@@ -1,0 +1,11 @@
+name:      "Bananur"
+personaje: "señor de las bestias"
+jugador:   "Jorge"
+ciudad:    "Kellen"
+nivel:     2
+cuerpo:    9
+mente:     2
+mov:       7
+armadura:  2
+armas:     { id: 10, enchants: [16] }
+skills:    [2, 3]

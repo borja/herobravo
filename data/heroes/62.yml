@@ -1,0 +1,11 @@
+name:      "Barothrinn"
+personaje: "matador"
+jugador:   "Edu"
+ciudad:    "Kellen"
+nivel:     2
+cuerpo:    7
+mente:     3
+mov:       7
+armadura:  2
+armas:     [11, 3]
+skills:    [1, 2]

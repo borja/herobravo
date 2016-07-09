@@ -1,14 +1,11 @@
 .fichalista {
     width: 85%;
     height: 500px;
-
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
     margin: auto;
-	
 	border : 12px ;
 	border-left : none;
 	border-right : none;
@@ -61,7 +58,6 @@
 
 #combat {
 	padding: 2px;
-	weight: 100px;
 	height: 100px;
 	border: solid 10px transparent;
 }
@@ -133,12 +129,24 @@
     width: 96%;
     margin-left:auto; 
     margin-right:auto;
+	margin-bottom:auto;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+#tablaengarces tr {
+	background-color: transparent;
 }
 #tablaengarces td {
 	line-height: 20px;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	border: 1px solid transparent;
+	background-color:  ;
+}
+#tablaengarces th {
+	line-height: 20px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
 }
 #tablaengarces #engarce {
 	width: 10%;

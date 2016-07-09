@@ -5,7 +5,7 @@
 			<% hero.descendientes.each do |d| %>
 				<td>
 					<a href=<%= "/hero/#{d}" %> >
-						<%= erb :'display/portrait', :locals => { :h => hero(d) } %>
+						<%= erb :'display/portrait', locals: { h: hero(d) } %>
 					</a>
 				</td>
 			<% end %>

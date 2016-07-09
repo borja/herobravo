@@ -6,7 +6,7 @@
 			<td widtd='80%'>Amuleto Izquierdo</td>
 				<td>
 					<% if a = h.amuletos.first %>
-						<%= erb :'display/item', :locals => {:item => a } %></td>
+						<%= erb :'display/item', locals: { item: a } %></td>
 					<% else %>
 						<%= erb :'display/ranura' %>
 					<% end %>
@@ -17,7 +17,7 @@
 			<td widtd='80%'>Amuleto Derecho</td>
 				<td>
 					<% if a = h.amuletos[1] %>
-						<%= erb :'display/item', :locals => {:item => a } %></td>
+						<%= erb :'display/item', locals: { item: a } %></td>
 					<% else %>
 						<%= erb :'display/ranura' %>
 					<% end %>

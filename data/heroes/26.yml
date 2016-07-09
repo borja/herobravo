@@ -1,0 +1,8 @@
+name:      "Veitt"
+personaje: "matador"
+jugador:   "Juanan"
+cuerpo:    7
+mente:     3
+mov:       6
+armadura:  2
+armas:     [11, 7]

@@ -1,0 +1,22 @@
+name:      "Mauriel"
+personaje: "druida"
+jugador:   "Carlos"
+gender:    "female"
+status:    "reserva"
+profesion: { id: 3, aprendiz: [0] }
+nivel:     2
+repu:      0
+cuerpo:    6
+mente:     5
+mov:       8
+oro:       37
+armadura:  2
+armas:
+  - 7
+  - { id: 27, enchants: [101] }
+protecciones:
+  - { id: 4, enchants: [7] }
+  - { id: 2, enchants: [102] }
+skills:   [0, 2]
+hechizos: [12, 13, 14, 18, 19, 20]
+pociones: [3]

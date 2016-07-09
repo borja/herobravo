@@ -1,0 +1,13 @@
+name:      "Liam"
+personaje: "hechicero"
+jugador:   "Erika"
+familiar:  { id: 8, name: "Hostias", torpe: true}
+cuerpo:    4
+mente:     6
+mov:       7
+armadura:  1
+armas:
+  - 3
+  - { id: 4, enchants: [95] }
+hechizos:  [1, 6, 7, 8, 12, 13, 14, 18, 19, 20]
+shadows:   [0, 2]

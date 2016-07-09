@@ -1,0 +1,15 @@
+name:      "Kant Borriquero"
+personaje: "hoplita"
+jugador:   "Borja"
+ciudad:    "Zindor"
+familiar:  { id: 16, name: "Zurraspa", torpe: true }
+nivel:     2
+cuerpo:    8
+mente:     3
+mov:       8
+armadura:  2
+armas:     24
+protecciones:
+  - { id: 2 }
+skills: [0, 1]
+master: [4]

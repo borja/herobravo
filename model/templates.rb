@@ -1,19 +1,17 @@
-#!/usr/bin/ruby
-# encoding: UTF-8
-
-def get_center(template)
-  col = case
-        when template['right'].nil? && template['left'].nil? then 12
-        when template['right'].nil? || template['left'].nil? then 9
-        else 6
-        end
-  "#{col}u important(collapse)"
+# Template management
+def get_center(template) # Responsive main method (12 units)
+  col = 12 # Main div, for all the width
+  col -= 3 unless template['right'].nil? # has right div
+  col -= 3 unless template['left'].nil?  # has left div
+  "#{col}u important(collapse)" # return total units
 end
 
+# DB Loader
 def views
-  YAML::load_file(File.join('data/views.yml'))
+  load_yaml('views')
 end
 
+# Helpers
 def view(ruta)
   views.find { |v| v['ruta'] == ruta }
 end

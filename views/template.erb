@@ -1,13 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<% title ||= params[:view].capitalize %>
+		<% vista = params[:view] ||= 'Herosheet' %>
+		<% title ||= vista.capitalize %>
 		<% title = params[:param].capitalize if title == 'view' %>
-		<% if (params[:view] == 'historia' || params[:view] == 'hero') %>
+		<% if (vista == 'historia' || vista == 'hero') %>
 			<% title = hero(params[:param].to_i).name %>
 		<% end %>
+		<% if vista == 'runa' %>
+			<% title = runa(params['param'].to_i).name.upcase %>
+		<% end %>
 		<% title.gsub!('Beastslord','Señor de las Bestias')%>
-		<%= erb :head, :locals => {:title => "HeroSheet: #{title}"} %>
+		<%= erb :head, locals: {title: "HeroSheet: #{title}"} %>
 	</head>
 	<body class="subpage">
 		<div id="header-wrapper">

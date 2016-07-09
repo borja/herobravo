@@ -1,136 +1,148 @@
 -
   id:     0
-  name:   'hebilla'
+  name:   "hebilla"
   max:    1
-  fits:   'hebilla'
+  fits:   "hebilla"
   precio: 250
 -
   id:   1
-  name: 'anillo'
+  name: "anillo"
   max:  2
-  fits: 'anillo'
+  fits: "anillo"
   precio: 300
 -
   id:   2
-  name: 'collar'
+  name: "collar"
   max:  1
-  fits: 'cuello'
+  fits: "cuello"
   precio: 350
 -
   id:   3
-  name: 'pendiente'
+  name: "pendiente"
   max:  2
-  fits: 'pendientes'
+  fits: "pendientes"
   precio: 400
 -
   id:   4
-  name: 'argolla'
+  name: "argolla"
   max:  1
-  fits: 'argolla'
+  fits: "argolla"
   precio: 150
 -
   id:   5
-  name: 'cadena'
+  name: "cadena"
   max:  2
-  fits: 'cadena'
+  fits: "cadena"
   precio: 450
 -
   id:   6
-  name: 'talismán'
+  name: "talismán"
   max:  3
-  fits: 'amuleto'
+  fits: "amuleto"
   precio: 50
 -
   id:   7
-  name: 'camafeo'
+  name: "camafeo"
   max:  1
-  fits: 'amuleto'
+  fits: "amuleto"
   precio: 250
 -
   id:   8
-  name: 'dado magiorco'
+  name: "dado magiorco"
   max:  1
-  fits: 'amuleto'
+  fits: "amuleto"
   artefacto: true
   precio: 500
 -
   id:   9
-  name: 'gargantilla'
+  name: "gargantilla"
   max:  1
-  fits: 'cuello'
+  fits: "cuello"
   precio: 450
 -
   id:   10
-  name: 'gorjal'
+  name: "gorjal"
   max:  1
-  fits: 'cuello'
+  fits: "cuello"
   precio: 450
 -
   id:   11
-  name: 'anillo de los deseos'
+  name: "anillo de los deseos"
   max:  1
-  fits: 'anillo'
+  fits: "anillo"
   legendario: true
   precio: 1000
 -
   id:   12
-  name: 'saco garrapato'
+  name: "saco garrapato"
   max:  1
-  fits: 'amuleto'
+  fits: "amuleto"
   artefacto: true
   precio: 650
 -
   id:   13
-  name: 'talismán de melar'
+  name: "talismán de melar"
   max:  1
-  fits: 'amuleto'
+  fits: "amuleto"
   legendario: true
   precio: 1000
 -
   id:   14
-  name: 'tobilleras'
+  name: "tobilleras"
   max:  1
-  fits: 'tobillos'
+  fits: "tobillos"
   precio: 350
 -
   id:   15
-  name: 'tatuajes'
+  name: "tatuajes"
   max:  0
-  fits: 'tatuajes'
+  fits: "tatuajes"
   precio: 100
 -
   id:   16
-  name: 'silbato'
+  name: "silbato"
   max:  2
-  fits: 'amuleto'
+  fits: "amuleto"
   precio: 150
 -
   id:   17
-  name: 'pluma'
+  name: "pluma"
   max:  0
-  fits: 'amuleto'
+  fits: "amuleto"
   precio: 50
 -
   id:   18
-  name: 'engranaje'
+  name: "engranaje"
   max:  1
-  fits: 'amuleto'
+  fits: "amuleto"
   precio: 125
 -
   id:   19
-  name: 'carcaj'
+  name: "carcaj"
   max:  1
-  fits: 'amuleto'
+  fits: "amuleto"
   precio: 200
 -
   id:   20
-  name: 'broche'
+  name: "broche"
   max:  1
-  fits: 'broche'
+  fits: "broche"
   precio: 450
 -
   id:   21
-  name: 'Gema'
+  name: "Gema"
   max:  0
-  fits: 'amuleto'
+  fits: "amuleto"
   precio: 500
+-
+  id:   22
+  name: "araña"
+  max:  1
+  fits: "amuleto"
+  precio: 200
+-
+  id:   23
+  name: "rosario"
+  max:  6
+  fits: "amuleto"
+  precio: 300

@@ -23,10 +23,10 @@
 				<%= h.repu || 0 %></td>
 			<% if h.descendientes %>
 				<td><%= erb :'ficha/descendientes' %></td>
-			<% end %>	
+			<% end %>
 			<td><a href='/raza/<%= h.raza %>s'><%= h.raza.capitalize %></a></td>
 			<% if h.profesion %>
-				<td><%= erb :'ficha/profesion', :locals => { :prof => h.profesion } %></td>
+				<td><%= erb :'ficha/profesion', locals: { prof: h.gremio } %></td>
 			<% end %>
 		</tr>
 	</tbody>

@@ -2,19 +2,19 @@
 	<h2>Mapa del Viejo Mundo</h2>
 </header>
 <div class="mapa_imagen">
-  <link rel="stylesheet" href="css/map.css" />
-  <img src="/images/mapa.png" id='mapamundi'>
-  <ul class="notas">
-   	<li id="nota1"><p>El Gran Lago</p></li>
-	<li id="nota2"><p>La temible costa de los piratas</p></li>
-    <li id="nota3"><p>Altdorf, capital del Imperio</p></li>
-    <li id="nota4"><p>El Desierto prohibido</p></li>	
-	<% cities.each do |c| %>
-		<a href='/city/<%= c[:name] %>'>
-			<li style='<%= c[:style] %>'><p><%= c[:name] %></p></li>
+	<link rel="stylesheet" href="css/map.css" />
+	<img src="/images/mapa.png" class='mapamundi'>
+	<ul class="notas">
+		<li class="nota1"><p>El Gran Lago</p></li>
+		<li class="nota2"><p>La temible costa de los piratas</p></li>
+		<li class="nota3"><p>Altdorf, capital del Imperio</p></li>
+		<li class="nota4"><p>El Desierto prohibido</p></li>	
+		<% cities.each do |c| %>
+		<a href='/city/<%= c['name'] %>'>
+			<li style='<%= c['style'] %>'><p><%= c['name'] %></p></li>
 		</a>
-	<% end %>
-  </ul>
+		<% end %>
+	</ul>
 </div>
 <h3>Geografía</h3>
 <p>

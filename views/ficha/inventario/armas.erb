@@ -3,14 +3,20 @@
 	<thead>
 		<tr><th colspan=2>Armas</th></tr>
 		<tr><td width='80%'>Mano principal</td>
-			<td><%= erb :'display/arma', :locals => { :a => h.armas.first} %></td>
+			<td>
+				<% if a = h.weapons.first %>
+					<%= erb :'display/item', locals: { item: a }  %>
+				<% else %>
+					<%= erb :'display/ranura', locals: { casillero: 'arma'} %>
+				<% end %>
+			</td>
 		</tr>
 		<tr><td width='80%'>Mano secundaria</td>
 			<td>
-				<% if a = h.armas[1] %>
-					<%= erb :'display/arma', :locals => { :a => a } %>
+				<% if a = h.weapons[1] %>
+					<%= erb :'display/item', locals: { item: a}  %>
 				<% else %>
-					<%= erb :'display/ranura' %>
+					<%= erb :'display/ranura', locals: { casillero: 'escudo' } %>
 				<% end %>
 			</td>
 		</tr>

@@ -1,0 +1,10 @@
+name:      "Tu Verag"
+personaje: "matador"
+jugador:   "Judith"
+nivel:     9
+cuerpo:    13
+mente:     5
+mov:       10
+armadura:  2
+armas:     [14, 25]
+skills: [0, 1, 2, 3]

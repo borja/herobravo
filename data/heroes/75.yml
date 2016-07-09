@@ -1,0 +1,11 @@
+name:      'Zalin'
+personaje: 'matador'
+jugador:   'Borja'
+ciudad:    'Oszthgard'
+cuerpo:    7
+mente:     3
+mov:       6
+armadura:  2
+armas:     [7, 11]
+tesoro:
+  gemas: [1, 17, 29]

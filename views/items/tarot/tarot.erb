@@ -1,9 +1,11 @@
-<% ordinal  = rand(4) %>
-<% tirada   = tarot ordinal %>
-<% arcano   = tirada.keys.first %>
+<% mapa = rand(4)  %>
+<% tirada = tarot[rand(22)] %>
+<% arcano = tirada.keys.first %>
 <% cardinal = tirada.values.first %>
-<% posicion  = ["del Norte", "del Sur", "Occidental", "Oriental"][ordinal] %>
+
 <header>
-	<h2><%= arcano %> <%= posicion %></h2>
+	<h2><%= arcano %>
+		<%= ["del Norte", "del Sur", "Occidental", "Oriental"][mapa] %>
+	</h2>
 </header>
-<h3><%= cardinal %></h3>
+<h3><%= tirada[arcano][mapa] %></h3>

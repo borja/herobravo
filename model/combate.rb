@@ -1,11 +1,20 @@
-# encoding: UTF-8
+# YAML DB Loader
 def estados
-  YAML::load_file(File.join(__dir__, '../data/combate/estados.yml'))
+  load_yaml('combate/estados')
 end
 
 def posiciones
-  YAML::load_file(File.join(__dir__, '../data/combate/posiciones.yml'))
+  load_yaml('combate/posiciones')
 end
 
-def estado   id ;    estados[id] end
-def posicion id ; posiciones[id] end
+def resistencias
+  load_yaml('combate/resistencias')
+end
+
+def estado(id)
+  estados[id]
+end
+
+def posicion(id)
+  posiciones[id]
+end

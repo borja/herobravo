@@ -1,5 +1,5 @@
 <div class="row">
-	<% ["ayuntamiento","magia","artesanos","cuarteles"].each do |plaza| %>
+	<% %w(ayuntamiento magia artesanos cuarteles).each do |plaza| %>
 		<div class="3u"><%= erb :"ciudad/plazas/#{plaza}" %></div>
 	<% end %>
 </div>

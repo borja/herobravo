@@ -1,0 +1,12 @@
+name:      "Häxa Yaga"
+personaje: "nigromante"
+jugador:   "Iris"
+gender:    "female"
+ciudad:    "Zindor"
+cuerpo:    5
+mente:     5
+mov:       7
+armadura:  2
+armas:
+  - 1
+  - { id: 3, ranuras: 1 }

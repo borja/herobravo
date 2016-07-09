@@ -1,12 +1,12 @@
 <table id='tresp'>
 	<thead>
-		<th colspan='2'>Plegaria</th>	
-		<th>Efecto</th>			
+		<th colspan='2'>Plegaria</th>
+		<th>Efecto</th>
 	</thead>
 	<tbody>
 		<% plegarias.each do |p|%>
 			<tr style=<%= p.color %>>
-				<td><%= erb :'display/spell', :locals => {:spell => p} %></td>
+				<td><%= erb :'display/spell', locals: { spell: p } %></td>
 				<td><%= p.name.capitalize %></td>
 				<td><%= p.efecto %></td>
 			</tr>

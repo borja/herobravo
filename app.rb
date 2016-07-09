@@ -1,35 +1,21 @@
 require 'sinatra/base'
-# Main sinatra App, using param routing. 
-# TODO: change 'param' var name.
+# Main sinatra App, using param routing.
 class App < Sinatra::Base
+  # GET Routing views
   get('/') { erb :index }
-  error    { erb :error }
+  error    { preview('error') }
 
   get '/:view/:param' do |view, param| # Templates with double-routing
-    case view
-    when 'aire', 'agua', 'fuego', 'tierra' then preview('hechizos')
-    else preview(view) # Try same view as URL (with params)
-    end
+    hechizo = %w(aire agua fuego tierra).include?(view)
+    hechizo ? preview('hechizos') : preview(view)
   end
 
   get '/:view' do |view| # Templates with simple root-viewer
-    case view
-    when 'reservistas', 'ausentes', 'licenciados' then preview('heroes')
-    else preview(view) # Try same view as URL
-    end
+    campeones = %w(reservistas ausentes licenciados).include?(view)
+    campeones ? preview('heroes') : preview(view)
   end
 
-  post '/calculador/' do # This should me tuned up.
-    engarces = params[:engarces] || [1]
-    objeto   = params[:objeto]   || 0
-    repu     = params[:repu]     || 0
-    ranuras  = params[:ranuras]  || 0
-    erb :template, locals: view('calculador').merge
-    {
-      'engarces' => engarces,
-      'objeto'   => objeto,
-      'repu'     => repu,
-      'ranuras'  => ranuras
-    }
-  end
+  # POST Routing views
+  post('/calculador') { preview('calculador') }
+  post('/buscar')     { preview('heroes') }
 end

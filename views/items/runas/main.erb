@@ -1,0 +1,42 @@
+<% r = runa(params[:param].to_i) %>
+<header><h2>Descripción</h2></header>
+<p><%= erb :"items/runas/descripciones/#{ r.name }" %></p>
+
+<h3>Propiedades mágicas</h3>
+<table id='table-2'>
+	<thead>
+		<th>Posición</th>
+		<th>Bonificación</th>
+	</thead>
+	<tbody>
+		<% r.fits.keys.each_with_index do |posicion, i| %>
+			<tr>
+				<td><%= posicion %></td>
+				<td><%= r.fits.values[i] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table><br/>
+
+<h3>Disponibilidad</h3>
+<% unless r.disponibles.empty? %>
+	<table id='table-2'>
+		<tr>
+			<th colspan=2>Héroe</th>
+			<th>Jugador</th>
+			<th>Disponibles</th>
+		</tr>
+		<% r.disponibles.uniq.each do |h| %>
+			<tr>
+				<td><a href='/hero/<%= h %>'>
+						<%= erb :'display/portrait', locals: { h: hero(h) } %></a>
+				</td>
+				<td><%= hero(h).name %></td>
+				<td><%= hero(h).jugador %></td>
+				<td><%= hero(h).tesoro['runas'].count(r.id) %></td>
+			</tr>
+		<% end %>
+	</table>
+<% else %>
+	Ningún héroe posee esta runa.
+<% end %>

@@ -1,3 +1,13 @@
 language: ruby
 rvm:
-  - 2.3.0
+  - 2.3.1
+addons:
+  code_climate:
+    repo_token: 21daec0460198a2112bd481550dfc6f9a9d37da9f21e357ebcdf0cb77c4d4635
+git:
+  depth: 3
+# whitelist
+branches:
+  only:
+    - master
+    - develop

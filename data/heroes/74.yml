@@ -1,0 +1,10 @@
+name:      "Silvara"
+personaje: "hechicero"
+jugador:   "Nora"
+gender:    "female"
+status:    "reserva"
+cuerpo:    4
+mente:     6
+mov:       7
+armadura:  1
+armas:     2
