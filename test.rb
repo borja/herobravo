@@ -1,8 +1,26 @@
+# CI Engines requirements:
+
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
+require 'codacy-coverage'
+Codacy::Reporter.start
+
+require 'coveralls'
+Coveralls.wear!
+
 ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'rack/test'
 require_relative 'app.rb'
-require './model/model'
+require 'require_all'
+require 'rspec'
+require 'yaml-lint'
+
+# Fake Data Base
+require_all './data'
+require_all './model'
+require_all './lib'
 
 include Rack::Test::Methods
 
@@ -12,11 +30,15 @@ end
 
 describe '.hero' do
   it 'should say true' do
-    assert hero(2).id == 2
-  end
-  it 'should say true' do
-    heros.each do |h|
+    heros.each_with_index do |h, i|
+      !hero(i).personaje.nil?
+      !hero(i).nivel.nil?
+      !hero(i).jugador.nil?
       File.exist?(h.big_path)
+      hero(i).id == i
+      hero(i).mente >= 4
+      hero(i).cuerpo >= 4
+      hero(i).reputacion >= 0
     end
   end
 end

@@ -1,80 +1,93 @@
 -
   id:           0
-  name:         "furia"
-  description:  "1 PM: +1 dado de ataque"
-  type:         "activa"
+  nivel:        2
+  name:         "Camino sangriento"
+  type:         "Reactiva"
+  description:  "Recupera 1PM al matar cuerpo a cuerpo de un único golpe."
 -
   id:           1
-  name:         "esquiva"
-  description:  "+1 Defensa vs un enemigo declarado. Tiene que declararse en el turno del jugador pudiendo cambiar de enemigo cada turno."
-  type:         "declarativa"
   nivel:        2
+  rangos:       6
+  name:         "Esquiva"
+  type:         "Declarativa"
+  description:  "+1 Defensa vs un enemigo. Tiene que declararse en el turno del jugador pudiendo cambiar de enemigo cada turno."
 -
   id:           2
-  name:         "barrido"
-  description:  "Hace un ataque a todo su alrededor"
-  type:         "Única"
   nivel:        2
+  name:         "Barrido"
+  type:         "Única"
+  description:  "Hace un ataque a todo su alrededor. Requiere armas a dos manos"
 -
   id:           3
-  name:         "hendedura"
-  description:  "-2 ataque/enemigo"
-  type:         "Activa"
   nivel:        2
+  rangos:       3
+  name:         "Dos armas"
+  type:         "Pasiva"
+  description:  "Permite llevar un arma en la mano torpe de tamaño igual o inferior al rango"
 -
   id:           4
-  name:         "dos armas"
-  description:  "Permite llevar un arma pequeña en la mano torpe."
-  rangos:       3
-  type:         "Pasiva"
-  nivel:        3
+  nivel:        2
+  name:         "Grito de batalla"
+  description:  "+1 Potencia al primer éxito del ataque de todos los aliados en S/P"
+  type:         "Única"
 -
   id:           5
-  name:         "arma mayor"
-  description:  "Permite llevar grandes armas"
+  nivel:        3
+  rangos:       2
+  requisitos:   [2]
+  name:         "Zona de guerra"
   type:         "Pasiva"
+  description:  "Permite atacar de frente y en diagonal. En rango dos: lateralmente."
 -
   id:           6
-  name:         "brazo del heroe"
-  description:  "Permite llevar a una mano armas que son a dos manos"
-  type:         "Pasiva"
+  nivel:        3
+  rangos:       2
+  name:         "Hendedura"
+  type:         "Activa"
+  coste:        "(-3 +1/rango ataque) por cada enemigo"
+  description:  "El exceso de ataque dañará (defendible) a los enemigos en un arco."
 -
   id:           7
-  name:         "grito de batalla"
-  description:  "+1 Potencia"
-  type:         "Activa"
+  nivel:        4
+  requisitos:   [0]
+  name:         "Grito de sangre"
+  type:         "Única"
+  description:  "Todos los aliados en S/P: +1 PC al matar un enemigo hasta final de turno."
 -
   id:           8
-  name:         "zona de guerra"
-  description:  "Permite atacar de frente en diagonal y lateral"
+  nivel:        4
+  rangos:       2
+  requisitos:   [0]
+  name:         "Gloria berserker"
   type:         "Pasiva"
+  description:  "+1/rango potencia de ataque si es superado en número"
 -
   id:           9
-  name:         "grito de sangre"
-  description:  "+1 PC al matar"
-  type:         "reactiva"
+  nivel:        5
+  requisitos:   [4]
+  name:         "Himno de honor"
+  type:         "Reactiva"
+  description:  "Recupera 1 grito (cualquiera) al matar de manera frontal"
 -
   id:           10
-  name:         "gloria berserker"
-  description:  "+1 ataque si es superado en número"
-  type:         "Pasiva"
+  nivel:        5
+  rangos:       8
+  name:         "Enemigo predilecto"
+  type:         "Reactiva"
+  description:  "El heroe gana +1PM al matar a su enemigo predilecto. Su enemigo predilecto nunca le empujará."
 -
   id:           11
-  name:         "himno de honor"
-  description:  "+1 grito al matar de manera frontal"
-  type:         "reactiva"
+  nivel:        6
+  rangos:       2
+  requisitos:   [3]
+  name:         "Brazo del heroe"
+  type:         "Pasiva"
+  description:  "Permite llevar en 1/rango mano, armas a dos manos"
 -
   id:           12
-  name:         "enemigo predilecto"
-  description:  "al tener un enemigo predilecto el heroe gana +1PM al matarlos y los monstruos no le empujan"
-  type:         "Pasiva"
--
-  id:           13
-  name:         "camino furioso"
-  description:  "al matar gana +1 ataque"
-  type:         "Pasiva"
--
-  id:           14
-  name:         "camino sangriento"
-  description:  "al matar gana +1PM"
-  type:         "Pasiva"
+  nivel:        6
+  rangos:       4
+  requisitos:   [0,8]
+  name:         "Camino furioso"
+  description:  "al matar  en furia, gana +1 fuerza de ataque en sus próximos R (rango) éxitos de ataque. (Acumulable)"
+  type:         "Reactiva"

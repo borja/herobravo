@@ -1,0 +1,10 @@
+name:      "Grunt Mascafilos"
+personaje: "falangista"
+jugador:   "Alberto"
+status:    "retirado"
+muerto:    true
+nivel:     4
+cuerpo:    9
+mente:     3
+mov:       6
+skills: [1, 2, 3, 4, 5, 6]

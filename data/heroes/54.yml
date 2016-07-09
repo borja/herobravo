@@ -1,0 +1,12 @@
+name:      "Ana Cardo"
+personaje: "conjurador"
+jugador:   "Irene"
+ciudad:    "Zindor"
+gender:    "female"
+cuerpo:    4
+mente:     6
+mov:       7
+armadura:  1
+armas:     8
+skills:   [0, 1]
+hechizos: [0, 1, 2, 6, 7, 8, 12, 13, 14, 18, 19, 20]

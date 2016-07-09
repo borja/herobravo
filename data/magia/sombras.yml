@@ -1,36 +1,112 @@
 - 
   id:       0
-  name:     'flechas de la noche'
-  efecto:   '3 dados de ataque de sombras que se pueden repartir entre objetivos visibles'
+  alcance:  "V"
+  duracion: 1
+  name:     "Flechas de la noche"
+  tipo:     "Evocación"
+  efecto:   "3 dados de ataque de sombras que se pueden repartir entre objetivos visibles"
   diablura: "Cada punto de daño causado recupera 1 PM"
-  potencia: '+1 dado de ataque de sombras'
+  potencia: "+1 dado de ataque de sombras"
 - 
   id:       1
-  name:     'manto de oscuridad'
-  efecto:   'Nadie puede atacar en la sala.'
-  diablura: '+1 potencia a los hechizos de sombras en la sala.'
-  potencia: '+1 objetivo es inmune a este efecto.'
+  alcance:  "V"
+  duracion: 1
+  name:     "Manto de oscuridad"
+  tipo:     "Evocación"
+  efecto:   "Nadie puede atacar en la sala."
+  diablura: "+1 potencia a los hechizos de sombras en la sala."
+  potencia: "+1 objetivo es inmune a este efecto."
 - 
   id:       2
-  name:     'cadena de tinieblas'
+  alcance:  "V"
+  duracion: 1
+  name:     "Cadena de tinieblas"
+  tipo:     "Maldición"
   efecto:   "Aturde al objetivo. Además el objetivo pierde la plusmitad de su movimiento."
   diablura: "Si el objetivo es un demonio/no-muerto lo controlará en su lugar mientras dure el efecto."
-  potencia: '-1 movimiento del objetivo'
+  potencia: "-1 movimiento del objetivo"
 - 
   id:       3
-  name:     'pesadillas'
-  efecto:   'El lanzador da miedo 5+.'
-  diablura: 'Los no-muertos se ven afectados.'
-  potencia: '+1 al miedo generado'
+  alcance:  0
+  duracion: 1
+  name:     "Pesadillas"
+  tipo:     "Aura"
+  efecto:   "El lanzador da miedo 5+."
+  diablura: "Los no-muertos se ven afectados."
+  potencia: "+1 al miedo generado"
 - 
   id:       4
-  name:     'juego de sombras'
-  efecto:   'El lanzador sustituye a la sombra de un objetivo.'
-  diablura: 'Puedes realizar ataques espectrales sin cesar el efecto.'
-  potencia: '+1 ataque antes de cesar el efecto.'
+  alcance:  "V"
+  duracion: "A"
+  name:     "Juego de sombras"
+  tipo:     "Superchería"
+  efecto:   "El lanzador sustituye a la sombra de un objetivo."
+  diablura: "Puedes realizar ataques espectrales sin cesar el efecto."
+  potencia: "+1 ataque antes de cesar el efecto."
 - 
   id:       5
-  name:     'caricia de Nagash'
-  efecto:   'El objetivo recibe un ataque (no defendible de un dado con su propia fuerza.'
-  diablura: 'Utiliza dados negros para el ataque.'
-  potencia: '+1 fuerza'
+  alcance:  1
+  duracion: 0
+  name:     "Caricia de Nagash"
+  tipo:     "Evocación"
+  efecto:   "El objetivo recibe un ataque (no defendible de un dado con su propia fuerza."
+  diablura: "Utiliza dados negros para el ataque."
+  potencia: "+1 fuerza"
+- 
+  id:       6
+  alcance:  "V"
+  duracion: 0
+  name:     "Bola de Oscuridad"
+  tipo:     "Evocación"
+  efecto:   "Causa 3 dados negros de daño directo."
+  diablura: "Al matar puedes lanzar: manto de oscuridad sobre la sala."
+  potencia: "+1 dado negro"
+- 
+  id:       7
+  alcance:  "V"
+  duracion: "E"
+  name:     "Depravación"
+  tipo:     "Maldición"
+  efecto:   "Puedes Atacar con un dado negro de daño directo al objetivo cada vez que mates a un enemigo."
+  diablura: "Si el objetivo es el único enemigo visible, todos los ataques contra él, son con Odio."
+  potencia: "+1 objetivo."
+- 
+  id:       8
+  alcance:  1
+  duracion: 3
+  name:     "Ente oscuro"
+  tipo:     "Invocación"
+  efecto:   
+            "Invoca un espectro sombrío. (Ataque: 3 dados negros (daño mental),
+             Defensa verdadera: 2 dados azules, PC: 3). atraviesa unidades, movimiento 6"
+  diablura: "El Ente oscuro puede lanzar tus hechizos de sombras y miedo +2"
+  potencia: "+1 duración"
+- 
+  id:       9
+  alcance:  0
+  duracion: "D"
+  name:     "Vigor siniestro"
+  tipo:     "Aura"
+  efecto:   "Añade 1 dado negro a tu ataque, de potencia igual a las magias de sombras disponibles."
+  diablura: "Añade un dado especial negro."
+  potencia: "+1 dado"
+- 
+  id:       10
+  alcance:  1
+  duracion: "∞"
+  name:     "Glifo púrpura"
+  tipo:     "Superchería"
+  efecto:   
+            "Colocas un glifo en una casilla (con pared) de la sala. Todos los enemigos que no resistan vs Tenebro,
+             serán provocados por el símbolo, y tendrán que atacarlo."
+  diablura: "Puedes usarlo como Maldición (se resiste vs Tenebro)"
+  potencia: "+1 penetración mágica"
+- 
+  id:       11
+  alcance:  "∞"
+  duracion: 0
+  name:     "Plano umbral"
+  tipo:     "Superchería"
+  efecto:   "Puedes teletransportarte a una casilla vacía de cualquier punto del mapa, excepto la sala incial."
+  diablura: "Puede estar ocupada, en cuyo caso puedes realizar un ataque. Si muere, podrás ocupar la casilla."
+  potencia: "+1 duración"

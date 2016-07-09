@@ -1,0 +1,12 @@
+name:      "Elhlebeyo"
+personaje: "caminante"
+jugador:   "Aitor"
+status:    "reserva"
+historia:  2
+cuerpo:    6
+mente:     4
+mov:       7
+repu:      1
+armadura:  2
+armas:     [2, 7]
+pociones: [1]

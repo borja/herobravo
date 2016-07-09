@@ -1,0 +1,27 @@
+<header>
+	<h2>Archivo del Cronista</h2>
+</header>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>Reto</th>
+			<th>Héroes</th>
+			<th>Descripción</th>
+			<th>Recompensa</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% retos.each do |r| %>
+			<tr>
+				<td><%= r.name %></td>
+				<td>
+					<% r.pjs.each do |h| %>
+						<%= erb :'display/portrait', locals: { h: hero(h) } %>
+					<% end %>
+				</td>
+				<td><%= r.desc %></td>
+				<td><%= r.reward %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -1,0 +1,29 @@
+name:      "Anníbal Killarney"
+personaje: "hoplita"
+jugador:   "Iris"
+muerto:    true
+status:    "retirado"
+progenitores:
+  - 48
+  - "Amílcar"
+familiar:  { id: 17, name: "Chop" }
+profesion: { id: 3, aprendiz: [0, 1] }
+nivel:     3
+cuerpo:    9
+mente:     3
+mov:       8
+repu:      1
+armadura:  3
+armas:     [15, 7]
+protecciones:
+  - { id: 1, enchants: [84] }
+  - { id: 2 }
+  - { id: 3 }
+  - { id: 4 }
+  - { id: 8 }
+skills:   [0, 1, 2, 3]
+pociones: [1]
+tesoro:
+  gemas: [28]
+  runas: [9]
+

@@ -6,9 +6,9 @@
 		</theader>
 		<tbody>
 			<tr>
-				<% if h.abalorios %>
-					<% h.abalorios.each do |a| %>
-						<td><%= erb :"display/item", :locals => {:item => a} %></td>
+				<% if h.trinkets %>
+					<% h.trinkets.each do |abalorio| %>
+						<td><%= erb :"display/item", locals: { item: abalorio } %></td>
 					<% end %>
 				<% else %>
 					<td>Sin abalorios</td>

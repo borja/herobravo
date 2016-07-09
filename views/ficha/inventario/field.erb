@@ -3,9 +3,9 @@
 	<td width='80%'><%= fits.capitalize %></td>
 	<td>
 		<% if h.send(fits) %>
-			<%= erb :'display/item', :locals => {:item => h.send(fits)} %>
+			<%= erb :'display/item', locals: { item: h.send(fits)} %>
 		<% else %>
-			<%= erb :'display/ranura' %>
+			<%= erb :'display/ranura', locals: { casillero: fits} %>
 		<% end %>
 	</td>
 </tr>

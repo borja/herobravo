@@ -1,0 +1,16 @@
+name:      "Arawn"
+personaje: "bersérker"
+jugador:   "Javier Galindo"
+status:    "retirado"
+muerto:    true
+cuerpo:    8
+mente:     3
+mov:       7
+familiar:  { id: 17, name: "Alvin", torpe: true }
+armadura:  2
+armas:     { id: 2, gemas: [19] }
+protecciones:
+  - { id: 1, enchants: [84] }
+miscelaneas:
+  - { id: 23, ranuras: 6, enchants: [108] }
+  - { id: 2, enchants: [92] }

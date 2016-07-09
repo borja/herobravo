@@ -1,0 +1,9 @@
+name:      "Swagger"
+personaje: "arquero"
+jugador:   "Hugo"
+status:    "reservista"
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:     [14, 25]

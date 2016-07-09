@@ -1,0 +1,14 @@
+name:      "Gracia Favule"
+personaje: "derviche"
+jugador:   "Daniel Cabañas"
+status:    "retirado"
+familiar:  { id: 15, name: "Fabulosa", torpe: true }
+historia:  2
+premio:    2
+muerto:    true
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:     1
+hechizos: [18, 19, 20]

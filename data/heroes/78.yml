@@ -1,0 +1,13 @@
+name:      "Guspwent"
+personaje: "falangista"
+jugador:   "Raúl"
+pareja:    { char: 89, tipo: "pj" }
+familiar:  { id: 17, name: "Climber"}
+cuerpo:    7
+mente:     3
+mov:       6
+oro:       30
+armadura:  2
+armas:     [7, 11]
+protecciones:
+  - { id: 2 }

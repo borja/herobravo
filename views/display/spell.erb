@@ -5,7 +5,13 @@
 	<div class="popup_information">
 		<center>
 			<h2 style="padding: 5px 5px 5px 5px; color:white;"><%= spell.name %></h2>
-			<p><%= spell.elemento %> de <%= spell.tipo %> de nivel <%= spell.nivel %><br/></p>
+			<p>
+				<% if spell.elemento == 'plegaria' %>
+					<%= spell.elemento %> de <%= spell.tipo %>
+				<% else %>
+					<%= spell.tipo %> de <%= spell.elemento %>
+				<% end %>  de nivel <%= spell.nivel %><br/>
+			</p>
 			<img src=<%= spell.img_path %> alt=<%= spell.name %>, id='icon3' />	<br/>
 			<p><%= spell.efecto %></p>
 			<table>
@@ -23,14 +29,17 @@
 				</tr>
 			</table><br/>
 		</center>
-		<% if spell.class == Plegaria %>
-			<ul><li>Chakra : <%= spell.chakra %></li>
+		<ul>
+			<% if spell.elemento == 'plegaria' %>
+				<li>Chakra : <%= spell.chakra %></li>
 				<li>Summun : <%= spell.summun %></li>
-			</ul>
-		<% end %>
-		<% if spell.diablura %>
-			<ul><li>Diablura : <%= spell.diablura %></li>
-			</ul>
-		<% end %>
+			<% end %>
+			<% if spell.diablura %>
+				<li>Diablura : <%= spell.diablura %></li>
+			<% end %>
+			<% if spell.ardid %>
+				<li>Ardid : <%= spell.ardid %></li>
+			<% end %>
+		</ul>
 	</div>
 </div>

@@ -1,5 +1,6 @@
+<% soy = quiensoy(params[:param][1..-1]) %>
 <header>
-	<h2>Tu héroe preferente es...</h2>
+	<h2>Tu héroe preferente es: <%= soy.first.first %></h2>
 </header>
 <table id='tresp'>
 	<thead>
@@ -9,7 +10,7 @@
 		</tr>
 	<thead>
 	<tbody>
-		<% quiensoy(params[:param][1..-1]).each do |k,v| %>
+		<% soy.each do |k,v| %>
 			<tr>
 				<td>
 					<% img_path = "'../images/personajes/#{k}.png'"  %>
@@ -21,4 +22,3 @@
 		<% end %>
 	</tbody>
 </table>
-<%#= "Tu código es: #{quiensoy(params[:param])}" %>

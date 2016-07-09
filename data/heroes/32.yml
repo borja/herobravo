@@ -1,0 +1,11 @@
+name:      "Trag al"
+personaje: "señor de las bestias"
+jugador:   "Alberto"
+status:    "retirado"
+titulo:    "Señor del Norte"
+historia:  1
+nivel:     10
+cuerpo:    15
+mente:     7
+mov:       9
+skills:    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

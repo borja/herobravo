@@ -1,0 +1,10 @@
+name:      "Klaussius"
+personaje: "paladín"
+jugador:   "Klaussius"
+cuerpo:    6
+mente:     4
+mov:       7
+armadura:  2
+armas:     2
+protecciones:
+  - { id: 0 }

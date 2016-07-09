@@ -8,14 +8,14 @@
 		</thead>
 		<tbody>
 			<% heroe.hab_base.each do |hab| %>
-				<tr><td><%= erb :'display/skillbase', :locals => {:skill => hab} %></td>
+				<tr><td><%= erb :'display/skillbase', locals: { skill: hab} %></td>
 					<td><%= hab.name %></td>
 					<td><%= hab.description %></td>
 				</tr>			
 			<% end %>
 			<% if heroe.skills %>
 				<% heroe.habilidades.each do |hab| %>
-					<tr><td><%= erb :'display/skill', :locals => {:skill => hab} %></td>
+					<tr><td><%= erb :'display/skill', locals: { skill: hab} %></td>
 						<td><%= hab.name %></td>
 						<td><%= hab.description %></td>
 					</tr>

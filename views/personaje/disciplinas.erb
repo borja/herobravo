@@ -9,24 +9,23 @@
 	</thead>
 	<tbody>
 		<% send(char+"s").count.times do |i| %>
-			<% c = Habilidad.new(send(char,i)) %>		
+			<% c = Habilidad.new(send(char,i)) %>
 			<tr><td width='9%'><h2><%= c.nivel %></h2></td>
-				<td><%= erb :'display/skill', :locals => {:skill => c} %></td>
+				<td><%= erb :'display/skill', locals: { skill: c} %></td>
 				<td><%= c.name %></td>
-				<td>
-					<% if c.requisitos %>
-					<table>
-						<tr>
-					  		<% c.requisitos.each do |r| %>
-					  			<% req = Habilidad.new(send(char,r)) %>
-					  			<td><%= erb :'display/skill', :locals => {:skill => req} %></td>
-					  		<% end %>
-						</tr>
-					</table>
+				<td><% if c.requisitos %>
+						<table>
+							<tr>
+								<% c.requisitos.each do |r| %>
+									<% req = Habilidad.new(send(char,r)) %>
+									<td><%= erb :'display/skill', locals: { skill: req } %></td>
+								<% end %>
+							</tr>
+						</table>
 					<% else %>
 						-
 					<% end %>
-				</td>	
+				</td>
 				<td><i><%= c.description %></i></td>
 			</tr>
 		<% end %>

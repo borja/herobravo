@@ -1,0 +1,56 @@
+name:         "Eruan Amarie"
+personaje:    "druida"
+jugador:      "Iris"
+status:       "activo"
+progenitores: [47, 33]
+camino:       ["El Justiciero", 1]
+familiar:     { id: 11, name: "Basidio" }
+pareja:       { nombre: "Lauranna", raza: "dead", tipo: "pnj" }
+profesion:    { id: 5, aprendiz: [0, 3, 4, 5] }
+repu:         9
+nivel:        19
+cuerpo:       15
+mente:        12
+mov:          12
+armadura:     { id: 6, gemas: [34, 32, 34] }
+armas:
+  - { id: 9,  gemas: [24, 32, 35], enchants: [18, 1, 2, 3, 4, 17] }
+  - { id: 7,  gemas: [25, 17, 26], enchants: [105] }
+protecciones:
+  - { id: 0 }
+  - { id: 1, runas: [2], gemas: [49], enchants: [7] }
+  - { id: 3, enchants: [8] }
+  - { id: 5, gemas: [25, 51], enchants: [5] }
+  - { id: 8 }
+  - { id: 11, joyas: [12], gemas: [48] }
+  - { id: 10, gemas: [25] }
+  - { id: 14 }
+  - { id: 15, gemas: [21], enchants: [20, 34, 49, 50, 51, 52], ranuras: 4 }
+  
+miscelaneas:
+  - { id:  1, gemas: [25], enchants: [9] }
+  - { id:  9, gemas: [25, 26, 28], enchants: [39] }
+  - { id:  7, enchants: [32] }
+  - { id: 11, ranuras: 1 }
+  - { id: 20, ranuras: 1, enchants: [89, 29] }
+  - { id: 18, enchants: [66, 65, 67] }
+pergaminos:
+  - { id: 1, spells: [66] }
+  - { id: 1, spells: [95] }
+  - { id: 1, spells: [59] }
+abalorios:
+  - { id: 1 }
+  - { id: 2 }
+  - { id: 5 }
+  - { id: 6 }
+tesoro:
+  gemas: [14, 25, 17, 17, 16, 16, 27, 18]
+  runas: [7, 9]
+mounts:     [1]
+piezas:     [3, 6, 4]
+pociones:   [0, 4, 6, 7, 7, 11]
+materiales: [3]
+hechizos:   [1, 2, 3, 6, 7, 8, 12, 16, 17, 18, 19, 20]
+skills:     [0, 1, 2, 3, 4, 5, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+             19, 20, 22, 25, 26, 27, 28, 29, 30, 32, 33, 34, 35, 36, 37]
+master:     [0]

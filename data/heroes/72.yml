@@ -1,0 +1,9 @@
+name:      "Kalel"
+personaje: "caminante"
+jugador:   "Daniel Cabañas"
+status:    "retirado"
+muerto:    true
+cuerpo:    6
+mente:     4
+mov:       7
+repu:      1

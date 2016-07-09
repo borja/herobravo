@@ -1,4 +1,8 @@
 -
+  ruta:  "error"
+  template:
+    main: "error"
+-
   ruta:  "hero"
   title: "view"
   template:
@@ -47,7 +51,8 @@
   ruta:  "familiares"
   template:
     main: "personaje/familiares"
-    right: "heroes/sidebar"
+    right:  "personaje/pets"
+    right2: "heroes/sidebar"
 -
   ruta:  "habilidades"
   template:
@@ -102,8 +107,16 @@
 -
   ruta:  "runas"
   template:
-    left: "objetos/left/content2"
-    main: "items/runas/runas"
+    left:  "objetos/left/content2"
+    main:  "items/runas"
+    right: "objetos/left/runas"
+-
+  ruta:  "runa"
+  title: "view"
+  template:
+    right: "items/runas/runa"
+    main:  "items/runas/main"
+    left:  "objetos/left/runas"
 -
   ruta:  "gemas"
   template:
@@ -207,11 +220,13 @@
   ruta:  "notaria"
   title: "Notaría"
   template:
-    main: "ciudad/notaria"
+    main:  "ciudad/notaria/main"
+    right: "ciudad/notaria/notaria"
 -
   ruta:  "palacio"
   template:
-    main: "ciudad/palacio"
+    main:  "ciudad/palacio/main"
+    right: "ciudad/palacio/palacio"
 -
   ruta:  "templo"
   template:
@@ -222,6 +237,12 @@
   template:
     left: "ficha/izquierda/izquierda"
     main: "magia/spells"
+-
+  ruta:  "ensalada"
+  title: "Contadores"
+  template:
+    left: "ficha/izquierda/izquierda"
+    main: "ficha/ensalada"
 -
   ruta:  "hechizos"
   template:
@@ -255,9 +276,16 @@
     left2: "torre/left/sagradas"
     main: "magia/sangre"
 -
+  ruta:  "archivo"
+  template:
+    left:  "ciudad/biblioteca/archivo/left"
+    main:  "ciudad/biblioteca/archivo/main"
+    right: "ciudad/biblioteca/biblioteca"
+-
   ruta:  "biblioteca"
   template:
-    main: "magia/biblioteca"
+    left:  "ciudad/biblioteca/biblioteca"
+    main:  "ciudad/biblioteca/main"
 -
   ruta:  "jugadores"
   template:
@@ -268,6 +296,12 @@
   title: "Héroes"
   template:
     main: "heroes/heroes"
+    right: "heroes/sidebar"
+-
+  ruta:  "fama"
+  title: "Héroes"
+  template:
+    main: "heroes/famosos"
     right: "heroes/sidebar"
 -
   ruta:  "extranjeros"
@@ -329,3 +363,8 @@
   ruta:  "escuelas"
   template:
     main: "magia/escuelas"
+-
+  ruta:  "mazmorra"
+  template:
+    right: "reglamento/derecha/combate"
+    main:  "reglamento/mazmorra"

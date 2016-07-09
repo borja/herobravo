@@ -1,0 +1,13 @@
+name:      "Aradurn"
+personaje: "falangista"
+jugador:   "Iñaki"
+ciudad:    "Kellen"
+nivel:     2
+cuerpo:    8
+mente:     3
+mov:       6
+armadura:  { id: 5, enchants: [91, 55, 69, 11] }
+armas:     [7, 7]
+protecciones:
+  - { id: 3, enchants: [92, 93, 94] }
+skills:      [1, 2]

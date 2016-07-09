@@ -1,6 +1,7 @@
 # encoding: UTF-8
 def criaturas # plural
-  %w(bestias pielverdes nomuertos dragones elementales caóticos guardianes humanoides)
+  %w(bestias pielverdes nomuertos dragones
+     elementales caóticos guardianes humanoides)
 end
 
 def criaturae # singular
@@ -10,7 +11,7 @@ end
 # Define criatures using YML
 criaturas.each do |criature|
   define_method(criature) do
-   YAML::load_file(File.join(__dir__, "../data/criaturas/#{criature}.yml"))
+    load_yaml("criaturas/#{criature}")
   end
 end
 

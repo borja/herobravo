@@ -1,0 +1,17 @@
+name:      "Paul Baloff"
+personaje: "bersérker"
+jugador:   "Adrián"
+nivel:     2
+cuerpo:    8
+mente:     3
+mov:       7
+armadura:  3
+armas:     12
+protecciones:
+  - { id: 2 }
+  - { id: 1 }
+  - { id: 14 }
+  - { id: 8, ranuras: 4 }
+miscelaneas:
+  - { id: 10 }
+skills: [0, 1, 2]

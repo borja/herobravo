@@ -13,11 +13,10 @@
 					<table id='tresp'>
 						<tbody>
 							<tr>
-								<% t[:mix].keys.each do |familia| %>
-									<% if t[:mix][familia.to_sym] %>
-										<% t[:mix][familia.to_sym].each do |id| %>
-											<td><%= erb :'display/gema',  
-													:locals => { :gema  => send(familia)[id] } %>
+								<% t['mix'].keys.each do |familia| %>
+									<% if t['mix'][familia] %>
+										<% t['mix'][familia].each do |id| %>
+											<td><%= erb :'display/gema', locals: { gema: send(familia)[id] } %>
 											</td>
 										<% end %>
 									<% end %>
@@ -26,8 +25,8 @@
 						</tbody>
 					</table>
 				</td>
-				<td><%= t[:name].capitalize %></td>
-				<td><%= t[:bono].capitalize %></td>
+				<td><%= t['name'].capitalize %></td>
+				<td><%= t['bono'].capitalize %></td>
 			</tr>
 		<% end %>
 	</tbody>

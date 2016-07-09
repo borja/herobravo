@@ -1,0 +1,13 @@
+name:      "Eznowbol"
+personaje: "vengador"
+jugador:   "Daniel Cabañas"
+status:    "reserva"
+cuerpo:    6
+mente:     4
+mov:       7
+armadura:  2
+muerto:    true
+status:    "retirado"
+armas:     [7, 26]
+hechizos:  [0, 1, 2]
+shadows:   [0, 1, 2]

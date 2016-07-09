@@ -4,29 +4,29 @@
 		<tr>
 			<td>
 				<% if h.padre %>
-					<% if h.padre[:type] == 'pj' %>
-						<a href=<%= "/hero/#{h.padre[:char].id}" %>>
-							<%= erb :'display/portrait', :locals => { :h => h.padre[:char] } %>
+					<% if h.padre['type'] == 'pj' %>
+						<a href=<%= "/hero/#{h.padre['char'].id}" %>>
+							<%= erb :'display/portrait', locals: { h: h.padre['char'] } %>
 						</a>
 					<% else %>
-						<%= erb :'display/display', :locals => { 
-						  :title       => h.padre[:char], 
-						  :path        => h.img_path,
-						  :description => "" } %>
+						<%= erb :'display/display', locals: { 
+							title:       h.padre['char'], 
+							path:        h.img_path,
+							description: '' } %>
 					<% end %>
 				<% end %>
 			</td>
 			<td>
 				<% if h.madre %>
-					<% if h.madre[:type] == 'pj' %>
-						<a href=<%= "/hero/#{h.madre[:char].id}" %> >
-							<%= erb :'display/portrait', :locals => { :h => h.madre[:char] } %>
+					<% if h.madre['type'] == 'pj' %>
+						<a href=<%= "/hero/#{h.madre['char'].id}" %> >
+							<%= erb :'display/portrait', locals: { h: h.madre['char'] } %>
 						</a>
 					<% else %>
-						<%= erb :'display/display', :locals => { 
-						  :title       => h.madre[:char], 
-						  :path        => h.img_path,
-						  :description => "" } %>
+						<%= erb :'display/display', locals: {
+							title:       h.madre['char'],
+							path:        h.img_path,
+							description: '' } %>
 					<% end %>
 				<% end %>
 			</td>

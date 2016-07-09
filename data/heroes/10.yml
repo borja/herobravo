@@ -1,0 +1,17 @@
+name:      "El Kolo"
+personaje: "bersérker"
+jugador:   "Daniel Cabañas"
+status:    "retirado"
+muerto:    true
+nivel:     2
+cuerpo:    8
+mente:     3
+mov:       8
+armadura:  2
+armas:     { id: 10, ranuras: 1 }
+protecciones:
+  - { id: 1 }
+skills: [1, 4, 7]
+tesoro:
+  joyas: [2]
+  runas: [2]

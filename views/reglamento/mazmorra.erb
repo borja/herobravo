@@ -1,0 +1,17 @@
+<header>
+	<h2>Generador aleatorio de Sala</h2>
+</header>
+<h3>Habitación de mazmorra de tamaño <%= params[:param] %></h3>
+<% row = params[:param].split('x').first.to_i %>
+<% col = params[:param].split('x').last.to_i %>
+<table class='mazmorra'>
+	<tbody>
+		<% row.times do %>
+			<tr>
+				<% col.times do %>
+					<td>X</td>
+				<% end %>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

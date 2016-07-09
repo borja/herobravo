@@ -1,0 +1,14 @@
+name:      "Eleazar"
+personaje: "caminante"
+jugador:   "Celia"
+gender:    "female"
+status:    "reserva"
+nivel:     2
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  1
+armas:     2
+hechizos:  [0, 1, 2]
+shadows:   [0, 1, 2]
+skills:    [0, 1]

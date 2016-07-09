@@ -1,161 +1,170 @@
 -
   id:       0
-  name:     "Imposición de manos"
-  tipo:     "sanación"
   duracion: 0
   potencia: 4
   alcance:  0
+  name:     "Imposición de manos"
+  tipo:     "Sanación"
   efecto:   "+4 PC a un aliado ó +2 PC a uno mismo."
-  summun:   "realiza ambas sanaciones."
-  chakra:   "puede restaurar PM en lugar de PC."
+  summun:   "Realiza ambas sanaciones."
+  chakra:   "Puede restaurar PM en lugar de PC."
 -
   id:       1
-  name:     "Luz solar"
-  tipo:     "conjuro"
   duracion: 0
   potencia: 4
   alcance:  3
+  name:     "Luz solar"
+  tipo:     "Conjuro"
   efecto:   "Un cono de luz solar daña a los enemigos."
   summun:   "Los éxitos imperiales no pueden ser defendidos por no-muertos/demonios."
   chakra:   "Los aliados pueden girarse como acción gratuita."
 -
   id:       2
-  name:     "Círculo de protección"
-  tipo:     "evocación"
-  duracion: "a"
+  duracion: "A"
   potencia: 2
   alcance:  1
+  name:     "Círculo de protección"
+  tipo:     "Evocación"
   efecto:   "Las casillas contiguas causan 2 daños mentales defendibles a los enemigos. el lanzador no podrá moverse."
-  summun:   "el lanzador podrá moverse y hechizar durante la duración del efecto."
-  chakra:   "el hechizo pasa a ser un aura en lugar de un área y la duración <M>."
+  summun:   "El lanzador podrá moverse y hechizar durante la duración del efecto."
+  chakra:   "El hechizo pasa a ser un aura en lugar de un área y la duración <M>."
 -
   id:       3
-  name:     "Bendición de los justos"
-  tipo:     "bendición"
   duracion: "D"
   potencia: 1
   alcance:  "V"
+  name:     "Bendición de los justos"
+  tipo:     "Bendición"
   efecto:   "+1 defensa y ataque a todos los aliados"
   summun:   "El dado añadido es sagrado. +2 vs Tenebro"
   chakra:   "Hechizar durante la bendición restaura 1PM."
 -
   id:       4
-  name:     "Ángel guardián"
-  tipo:     "invocación"
   duracion: 1
   potencia: 3
   alcance:  "V"
+  name:     "Ángel guardián"
+  tipo:     "Invocación"
   efecto:   "Un ángel ataca con 3 dados a un enemigo frontalmente. Tú recibes: +3 defensa y recuperas 1PC."
   summun:   "Si el ángel mata recupéralo."
   chakra:   "Se puede escoger como objetivo a un aliado."
 -
   id:       5
-  name:     "Espadas en guadañas"
-  tipo:     "maldición"
   duracion: "D"
   potencia: 4
   alcance:  0
+  name:     "Espadas en guadañas"
+  tipo:     "maldición"
   efecto:   "El objetivo no podrá atacar ni mover hasta que sea atacado. Podrá defender y empujará de la forma habitual."
   summun:   "El objetivo golpeará a melé (siempre que pueda) cuando tú seas atacado como acción de interrupción."
   chakra:   "Si el objetivo es sanado luchará a tu lado el turno de la sanación."
 -
   id:       6
-  name:     "Lágrimas del mártir"
-  tipo:     "aura"
   duracion: "E"
   potencia: 1
   alcance:  "V"
+  name:     "Lágrimas del mártir"
+  tipo:     "Aura"
   efecto:   "Al recibir daños sanas 1PC a un aliado."
   summun:   "La sanación es a todos los demás aliados."
   chakra:   "La sanación es equivalente a todos los daños recibidos"
 -
   id:       7
-  name:     "Himno celestial"
-  tipo:     "aura"
   duracion: "E"
   potencia: 1
   alcance:  "V"
+  name:     "Himno celestial"
+  tipo:     "Aura"
   efecto:   "Recibes +1 defensa. Cada turno puedes sanar 1PC a un aliado"
   summun:   "+2 vs Tenebro. Recibes +1 de ataque"
   chakra:   "Cualquier aliado que defienda con éxito durante el himno recupera 1PM"
 # Nivel 2
 -
   id:       8
-  name:     "Fons vitae fons mortis"
-  tipo:     "evocación"
   duracion: "E"
   potencia: 2
-  alcance:  19
-  efecto:   "El clérigo extiende las manos emitiendo una energía sagrada. (Reduce su defensa a su armadura) 2 dados de sanación a aliados 2 dados de ataque sagrado a enemigos."
-  summun:   "Summun"
-  chakra:   "Chakra"
+  alcance:  2
+  name:     "Fons vitae, fons mortis"
+  tipo:     "Evocación"
+  efecto:   
+            "El clérigo extiende las manos emitiendo una energía sagrada.
+             (Reduce su defensa a su armadura) 2 dados de sanación a aliados,
+             2 dados de ataque sagrado a enemigos."
+  summun:   "El clérigo restaura 1PM por cada aliado sanado."
+  chakra:   "El clérigo restaura 1PC por cada enemigo dañado."
 -
   id:       9
-  name:     "Cometa solar de Sigmar"
-  tipo:     "evocación"
   duracion: 0
   potencia: 3
   alcance:  "M/3"
+  name:     "Cometa solar de Sigmar"
+  tipo:     "Evocación"
   efecto:   "Un cometa de dos casillas causa 3 dados de ataque amarillos a cada casilla (incluye aliados) de su recorrido."
   summun:   "El cometa retorna al clérigo tras alcanzar su máximo recorrido y vuelve a dañar a las miniaturas."
   chakra:   "Los aliados en el rango de acción son reciben en lugar del daño bendición de los justos y sanan 1 PM."
 -
   id:       10
   name:     "Consagración"
-  tipo:     "evocación"
-  duracion: "E"
-  potencia: 2
-  alcance:  19
-  efecto:   ""
-  summun:   "Summun"
-  chakra:   "Chakra"
+  tipo:     "Evocación"
+  duracion: "PC"
+  potencia: 1
+  alcance:  "V"
+  efecto:   
+            "La sala está consagrada. Quién invierta 1 turno y 1PM en rezar, recuperará 2 PC,
+             1 hechizo 1 plegaria o 1 habilidad de reto a su elección. Rezar impide defender."
+  summun:   "Rezar permite defender y no consume mente."
+  chakra:   "Cada PM invertido se puede usar en sanar al clérigo 1PC"
 -
   id:       11
-  name:     "Dictamen sagrado"
-  tipo:     "evocación"
   duracion: "E"
   potencia: 2
-  alcance:  19
-  efecto:   ""
-  summun:   "Summun"
-  chakra:   "Chakra"
+  alcance:  "V"
+  name:     "Dictamen sagrado"
+  tipo:     "Maldición"
+  efecto:   "1 objetivo reduce X su movimiento, dónde X es la mente del clérigo."
+  summun:   "El objetivo recibe X dados sagrados de ataque defendible."
+  chakra:   "Si el clérigo está bajo los efectos de un aura, el efecto es a todos los objetivos (V)"
 -
   id:       12
-  name:     "Arcángel"
-  tipo:     "evocación"
   duracion: "E"
-  potencia: 2
-  alcance:  19
-  efecto:   ""
-  summun:   "Summun"
-  chakra:   "Chakra"
+  potencia: 4
+  alcance:  0
+  name:     "Arcángel"
+  tipo:     "Invocación"
+  efecto:   "Invocas a un arcángel para luchar a tu lado. (PC= Tus PM, Ataque: 5, Defensa: 4)"
+  summun:   "Cada enemigo derrotado devuelve una plegaria al clérigo."
+  chakra:   "El Arcángel puede lanzar las plegarias del clérigo."
 -
   id:       13
+  duracion: 0
+  potencia: 1
+  alcance:  1
   name:     "Dádiva"
-  tipo:     "evocación"
-  duracion: "E"
-  potencia: 2
-  alcance:  19
-  efecto:   ""
-  summun:   "Summun"
-  chakra:   "Chakra"
+  tipo:     "Bendición"
+  efecto:   "El objetivo recibe: Gloria del Héroe"
+  summun:   "El daño no recibido se torna en sanación de cuerpo."
+  chakra:   "El objetivo restaura 1PM a todos los aliados en (V), o 2PM al clérigo."
 -
   id:       14
+  duracion: "∞"
+  potencia: 1
+  alcance:  0
   name:     "Forma espiritual"
-  tipo:     "evocación"
-  duracion: "E"
-  potencia: 2
-  alcance:  19
-  efecto:   ""
-  summun:   "Summun"
-  chakra:   "Chakra"
+  tipo:     "Superchería"
+  efecto:   
+            "Esta plegaria se puede lanzar inmediatamente después de morir, siempre que se disponga de PM y plegarias.
+             En forma espiritual se puede lanzar plegarias. No podrá recibir daño físico. -1d6 PM/turno."
+  summun:   "Lanzar plegarias, no consume plegarias."
+  chakra:   
+            "Bajo los efectos de himno celestial, consagración y lágrimas del mártir, un ángel/arcángel,
+            se puede sacrifir para resucitar al clérigo."
 -
   id:       15
   name:     "Resucitar"
-  tipo:     "evocación"
-  duracion: "E"
-  potencia: 2
-  alcance:  19
-  efecto:   ""
-  summun:   "Summun"
-  chakra:   "Chakra"
+  tipo:     "Bendición"
+  duracion: 0
+  potencia: 1
+  alcance:  1
+  efecto:   "1d6 plegarias: Resucita al objetivo, con 1PC"
+  summun:   "Se puede lanzar sobre uno mismo."
+  chakra:   "El objetivo resucita con todos sus PC"

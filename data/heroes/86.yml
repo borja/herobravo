@@ -1,0 +1,11 @@
+name:      "Zehon"
+personaje: "hoplita"
+jugador:   "Daniel de Haro"
+status:    "retirado"
+muerto:    true
+cuerpo:    8
+mente:     2
+mov:       7
+familiar:  { id: 17, name: "Chip" }
+armadura:  2
+armas:     [7, 2]

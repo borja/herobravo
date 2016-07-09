@@ -1,17 +1,19 @@
 <div class="row">
-	<% escuelas.keys.each do |escuela| %>
+	<% %w(Aire Fuego Agua Tierra Sombras Tenebro Sangre Luz).each do |escuela| %>
 		<div class="3u">
 			<section>
 				<header>
-					<h2><center><%= escuela.capitalize %></center></h2>
+					<h2><center><%= escuela %></center></h2>
 				</header>
-				<a href=<%= "/#{escuela.gsub('luz','plegarias')}/1" %> class='city-image'>
-					<% img_path = "'../images/schools/#{escuela}.png'" %>
-					<img src=<%=img_path%> alt='Escuela'/>
+				<a href=<%= "/#{escuela.gsub('Luz','plegarias').downcase}/1" %> class='city-image'>
+					<% img_path = "'../images/magia/schools/#{escuela}.png'" %>
+					<img src=<%=img_path%> alt='<%= escuela %>'/>
 				</a>
 				<ul class="link-list" style='text-align:center'>
 					<% 4.times do |nivel| %>
-						<li><a href='<%= "/#{escuela}/#{nivel+1}" %>'>Nivel <%= nivel+1 %></a></li>
+						<li><a href='<%= "/#{escuela.gsub('Luz','plegarias').downcase}/#{nivel+1}" %>'>
+							Nivel <%= nivel+1 %>
+						</a></li>
 					<% end %>
 				</ul>
 			</section>

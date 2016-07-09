@@ -1,6 +1,6 @@
 <header>
 	<h2><% if params[:view] == 'hechizos' %>
-			Hechizos elementales de nivel <%= params[:param].to_i || 1 %>				
+			Hechizos elementales de nivel <%= params[:param].to_i || 1 %>
 		<% else %>
 			Hechizos de <%= params[:view] %> de nivel <%= params[:param].to_i || 1 %>
 		<% end %>
@@ -9,26 +9,19 @@
 <table id='tresp'>
 	<thead>
 		<th>Icono</th>
-		<% unless ["aire","tierra","fuego","agua"].include?(params[:view]) %>
+		<% unless %w(aire tierra fuego agua).include?(params[:view]) %>
 			<th>Elemento</th>
 		<% end %>
 		<th>Nombre</th>
 		<th>Descripción</th>
 		<% if params[:param].to_i == 1 %>
-			<th><%= params[:view] == "luz" ? "Summun" : "Diablura" %></th>
-			<% unless ["sombra","sangre"].include?(params[:view]) %>
-				<th><%= params[:view] == "luz" ? "Chakra" : "Ardid" %></th>
-				<th>Maestría</th>
-			<% end %>
+			<th>Diablura</th>
+			<th>Ardid</th>
 		<% end %>
 		<th>Potencia</th>
+		<% if params[:param].to_i == 1 %>
+			<th>Maestría</th>
+		<% end %>
 	</thead>
-	<tbody>
- 		<% case params[:view]  
- 		     when "sombra" %><%= erb :'magia/hechizos/sombra' %>
- 		  <% when "sangre" %><%= erb :'magia/hechizos/sangre' %>
- 		  <% when "luz"    %><%= erb :'magia/hechizos/plegarias' %>
- 		  <% else %>		 <%= erb :'magia/hechizos/elemental' %>
- 		<% end %>	
-	</tbody>
+	<tbody><%= erb :'magia/hechizos/elemental' %></tbody>
 </table>

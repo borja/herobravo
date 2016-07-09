@@ -3,17 +3,17 @@
 <table id='table-2'>
 	<thead>
 		<tr><% resistencias.each do |r| %>	
-				<th><%= erb :'display/display', :locals => { 
-						:title       => r[:nombre], 
-						:path        => "'../images/elements/#{r[:nombre]}.png'",
-						:description => r[:description]} %>
+				<th><%= erb :'display/display', locals: {
+						title:       r['nombre'], 
+						path:        "'../images/elements/#{r['nombre']}.png'",
+						description: r['description'] } %>
 				</th>
 			<% end %>
 		</tr>
 	</thead>
 	<tbody>
 		<tr><% resistencias.each do |r| %>
-				<td>+<%= h.resistencia(r[:nombre]) %></td>
+				<td>+<%= h.resistencia(r['nombre']) %></td>
 			<% end%>
 		</tr>
 	</tbody>
