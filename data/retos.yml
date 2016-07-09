@@ -12,3 +12,17 @@
           "La guerra se ha iniciado. Los Enanos del clan Battleaxe, liderados por Luria,
            han tomado la montaña Svärd en nombre de la legión de Obsidiana duergar.
            El Emperador, Ultrajado, envía a su príncipe Fuckencio, para limpiar la ofensa" 
+-
+  id:     1
+  name:   "El despertar de los Rakshasa"
+  pjs:    [50, 90, 80, 61, 57]
+  pnjs:   ["Rakshasa"]
+  evil:   "Magisters"
+  lugar:  "La ciudad perdida"
+  type:   "Fortaleza"
+  reward: "Sin otorgar"
+  target: "Despertar a los Rakshasa"
+  desc:
+          "Una nueva ciudad ha aparecido en el desierto prohibido. 
+          ¿Será la tan buscada ciudad perdida de donde proceden los Magisters? 
+          La leyenda de los Rakshasa emerge de nuevo" 
