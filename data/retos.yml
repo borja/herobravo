@@ -15,7 +15,7 @@
 -
   id:     1
   name:   "El despertar de los Rakshasa"
-  pjs:    [50, 90, 80, 61, 57]
+  pjs:    [50, 90, 80, 61, 57, 78, 89]
   pnjs:   ["Rakshasa"]
   evil:   "Magisters"
   lugar:  "La ciudad perdida"
