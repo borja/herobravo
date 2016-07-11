@@ -1,0 +1,9 @@
+name:      "Ashai"
+personaje: "asesino"
+jugador:   "Cristina"
+status:    "reserva"
+cuerpo:    5
+mente:     6
+mov:       7
+armadura:  2
+armas:     [3, 2]
