@@ -15,8 +15,8 @@ class Magia < Hash
   end
 
   def color # Returns color code by position in colors array
-    colors = %w(FF6633 CCFFFF CC9966 44CCFF CC9999 99FFCC CC4545 FAEE96)
-    elems  = %w(fuego  aire   tierra agua   sombra elfico sangre plegaria)
+    colors = %w(FF6633 CCFFFF CC9966 44CCFF CC9999 EED6AF 99FFCC CC4545 FAEE96)
+    elems  = %w(fuego  aire   tierra agua   sombra arena  elfico sangre plegaria)
     'background-color:#' + colors[elems.find_index(elemento)]
   end
 end

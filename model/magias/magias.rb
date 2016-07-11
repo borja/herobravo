@@ -15,6 +15,10 @@ def sombras
   load_yaml('magia/sombras').map   { |s|    Sombra.new(s) }
 end
 
+def arenas
+  load_yaml('magia/arenas').map   { |s|    Arena.new(s) }
+end
+
 def spells
   load_yaml('magia/spells').map    { |s| Elemental.new(s) }
 end

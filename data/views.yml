@@ -256,6 +256,12 @@
     left2: "torre/left/sagradas"
     main: "magia/sombras"
 -
+  ruta:  "arenas"
+  template:
+    left:  "torre/left/sagradas"
+    left2: "torre/left/elementales"
+    main:  "magia/arenas"
+-
   ruta:  "plegarias"
   template:
     left: "torre/left/sagradas"

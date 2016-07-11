@@ -6,7 +6,7 @@
 	<tbody>
 		<% sombras.each do |s|%>
 			<tr style=<%= s.color %>>
-				<td><%= erb :'display/spell', locals: { :spell: s } %></td>
+				<td><%= erb :'display/spell', locals: { spell: s } %></td>
 				<td><%= s.name.capitalize %></td>
 				<td><%= s.efecto %></td>
 			</tr>
