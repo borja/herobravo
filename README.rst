@@ -7,18 +7,25 @@ from their HeroQuest games on an non-official non-profit web.
 
 QA Dashboard
 ============
-Deployment Status
------------------
-+--------------+-----------------+-------------------+----------------------+
-| **Deploy**   | |Heroku Status| | |Gemnasium|       ||Semaphore|           |
-+--------------+-----------------+-------------------+----------------------+
-| **Build**    | |Travis Status| | |CircleCi Status| | |Snap CI| |CodeShip| |
-+--------------+-----------------+-------------------+----------------------+
 
-.. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
-   :target: https://gemnasium.com/Borja/herobravo
-.. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
-   :target: http://herosheet.herokuapp.com/
+Build Status
+------------
++--------------+-------------------+
+| **Platform** | **Badge**         |
++==============+===================+
+| Travis CI    | |Travis Status|   |
++--------------+-------------------+
+| Scrutinizer  | |Scrut Status|    |
++--------------+-------------------+
+| Semaphore    | |Semaphore|       |
++--------------+-------------------+
+| Circle CI    | |CircleCi Status| |
++--------------+-------------------+
+| Snap CI      | |Snap CI|         |
++--------------+-------------------+
+| CodeShip     | |CodeShip|        |
++--------------+-------------------+
+
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
 .. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
@@ -29,6 +36,21 @@ Deployment Status
    :target: https://codeship.com/projects/160114
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
    :target: https://circleci.com/gh/borja/herobravo
+.. |Scrut Status| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/build.png?b=master
+   :target: https://scrutinizer-ci.com/g/borja/herobravo
+
+Deployment Status
+-----------------
++------------------------+-----------------+
+| **Production Website** | |Heroku Status| |
++------------------------+-----------------+
+| **Project model**      | |Gemnasium|     |
++------------------------+-----------------+
+
+.. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
+   :target: https://gemnasium.com/Borja/herobravo
+.. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
+   :target: http://herosheet.herokuapp.com/
 
 Quality Grades
 --------------
