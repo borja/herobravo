@@ -33,6 +33,22 @@
 -
   id:           5
   nivel:        3
+  requisitos:   [0]
   name:         "Ferocidad"
   type:         "reactiva"
   description:  "Recupera golpe feroz al matar en combate frontal cuerpo a cuerpo"
+-
+  id:           6
+  nivel:        3
+  requisitos:   [1]
+  name:         "Rugido de orden"
+  type:         "única"
+  description:  "Todos los aliados de la sala obtienen la bonificación del corazón de león."
+-
+  id:           7
+  nivel:        4
+  name:         "Alpha"
+  type:         "pasiva"
+  description:  
+                "Solo puede haber un alpha en el grupo.<br/>
+                 Cada vez que el invicto ejecute rugido, podrá lanzar una plegaria como acción gratuita."
