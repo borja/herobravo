@@ -29,6 +29,7 @@
 -
   id:           4
   nivel:        3
+  requisitos:   [3]
   name:         "Ordalía dhármica"
   type:         "activa"
   coste:        "2PM"
@@ -43,6 +44,7 @@
 -
   id:           6
   nivel:        3
+  requisitos:   [0]
   name:         "Ley del chacal"
   type:         "activa"
   coste:        "1PC"
