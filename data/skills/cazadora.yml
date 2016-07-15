@@ -9,7 +9,7 @@
   id:           1
   nivel:        2
   rangos:       3
-  name:         "Salto Feroz"
+  name:         "Salto feroz"
   type:         "única"
   description:  "Tu próximo ataque se considera en posición elevada"
 -

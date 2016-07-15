@@ -2,7 +2,7 @@
   id:           0
   nivel:        2
   rangos:       2
-  name:         "Golpe Feroz"
+  name:         "Golpe feroz"
   type:         "única"
   description:  "+1/rango de potencia a tu siguiente ataque"
 -
