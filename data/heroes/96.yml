@@ -1,0 +1,13 @@
+name:      "Aldara"
+personaje: "hechicero"
+jugador:   "Aldara"
+gender:    "female"
+xp:        5
+cuerpo:    4
+mente:     6
+mov:       7
+armadura:  1
+armas:     [3]
+pociones:  [5]
+tesoro:
+  gemas: [38]
