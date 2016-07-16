@@ -26,3 +26,17 @@
           "Una nueva ciudad ha aparecido en el desierto prohibido. 
           ¿Será la tan buscada ciudad perdida de donde proceden los Magisters? 
           La leyenda de los Rakshasa emerge de nuevo" 
+-
+  id:     2
+  name:   "El tomo arcano"
+  pjs:    [96, 97]
+  pnjs:   ["Guardias de la biblioteca"]
+  evil:   "Guerreros del caos"
+  lugar:  "La gran biblioteca"
+  type:   "Fortaleza"
+  reward: "Sin otorgar"
+  target: "Recuperar el tomo arcano"
+  desc:
+          "La magia del caos se ha apoderado de una antigua biblioteca.
+          Los guardias se han convertido y el gran libro ha sido corrompido.
+          La maga Aldara hace su aparición para retornar tan ansiado tomo." 
