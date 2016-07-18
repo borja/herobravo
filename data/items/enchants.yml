@@ -586,5 +586,5 @@
 -
   id:           112
   name:         "de sombras endiabladas"
-  descripcion:  "Al matar un no-muerto, tu próxima magia de sombras se ejecuta con diablura"
+  descripcion:  "Matar un no-muerto: tu próxima magia de sombras se ejecuta con diablura"
   tipo:         "sombras"
