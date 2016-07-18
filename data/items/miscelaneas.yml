@@ -148,7 +148,7 @@
   precio: 300
 -
   id:   24
-  name: "Escarabajo negro"
+  name: "escarabajo negro"
   max:  1
   fits: "amuleto"
   precio: 100
