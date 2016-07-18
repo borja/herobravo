@@ -43,7 +43,7 @@
 -
   id:     3
   name:   "Sangre y hambre"
-  pjs:    [50,61,69]
+  pjs:    [43,50,61,69]
   pnjs:   []
   evil:   "Mercenarios"
   lugar:  "Ruinas del Axcebs"
