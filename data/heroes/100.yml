@@ -1,0 +1,10 @@
+name:      "Marcara"
+personaje: "señor de las bestias"
+jugador:   "Daniel de Haro"
+status:    "retirado"
+muerto:    true
+cuerpo:    8
+mente:     2
+mov:       7
+armadura:  2
+armas:     3
