@@ -40,3 +40,18 @@
           "La magia del caos se ha apoderado de una antigua biblioteca.
           Los guardias se han convertido y el gran libro ha sido corrompido.
           La maga Aldara hace su aparición para retornar tan ansiado tomo." 
+-
+  id:     3
+  name:   "Sangre y hambre"
+  pjs:    [50,61,69]
+  pnjs:   []
+  evil:   "Mercenarios"
+  lugar:  "Ruinas del Axcebs"
+  type:   "Ruinas"
+  reward: "400 piezas de oro"
+  target: "Matar a Garmehx"
+  desc:
+          "A 20 leguas de Jadessvärd, la realidad es terrible.
+           Una banda de mercenarios ha asolado las poblaciones cercanas.
+           Liderados por Garmehx, un ettin vengativo y cobarde,
+           han saqueado las aldeas vecinas. Los héroes deberán matarle y recuperar los alimentos." 
