@@ -2,6 +2,7 @@
 	<select name="criteria">
 	  <option value="heroe">Héroes</option>
 	  <option value="jugador">Jugadores</option>
+	  <option value="raza">Raza</option>
 	  <option value="mascota">Familiar</option>
 	</select>
 	<input type="text" name="nombre">
@@ -28,9 +29,10 @@
 			<% end %>
 		<% else %>
 			<% palabra = params[:nombre].to_s.downcase %>
-			<% case params[:criteria].to_s 
-				   when 'heroe' %>  <% filtered_heros = heros.select {|h|    h.name.downcase.include?(palabra) } %>
+			<% case params[:criteria].to_s
+				   when 'heroe'   %><% filtered_heros = heros.select {|h|    h.name.downcase.include?(palabra) } %>
 				<% when 'jugador' %><% filtered_heros = heros.select {|h| h.jugador.downcase.include?(palabra) } %>
+				<% when 'raza'    %><% filtered_heros = heros.select {|h|    h.raza.downcase.include?(palabra) } %>
 				<% when 'mascota' %><% filtered_heros = (heros.reject {|h| h.pet.nil? }).select {|h| h.pet.name.downcase.include?(palabra)} %>
 			<% end %>
 		<% end %>
