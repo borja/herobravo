@@ -28,7 +28,7 @@ por encima de todos los seres. Ergo, Ignórese.
 								<% if hero.jugador == j %>
 									<td>
 										<a href='/hero/<%= hero.id %>'>
-											<%= erb :'display/portrait', :locals => { :h => hero } %>
+											<%= erb :'display/portrait', locals: { h: hero } %>
 										</a>
 										<%= hero.nivel %>
 									</td>
