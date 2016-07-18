@@ -5,6 +5,7 @@ nivel:       2
 cuerpo:      9
 mente:       2
 mov:         7
+oro:         45
 armadura:    2
 armas:       [2, 7]
 protecciones:
