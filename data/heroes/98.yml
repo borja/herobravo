@@ -1,0 +1,10 @@
+name:      "Bardo"
+personaje: "ingeniero"
+jugador:   "Andrea"
+muerto:    true
+status:    "retirado"
+cuerpo:    7
+mente:     3
+mov:       6
+armadura:  2
+armas:     [11,7]
