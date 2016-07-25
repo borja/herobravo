@@ -82,7 +82,7 @@
   id:        10
   name:      'guantes'
   categoria: 'cuero'
-  defensa:   0
+  defensa:   1
   ranuras:   2
   fits:      'manos'
   precio:	 200
@@ -131,7 +131,7 @@
   id:        16
   name:      'guanteletes'
   categoria: 'metal'
-  defensa:   1
+  defensa:   2
   ranuras:   2
   fits:      'manos'
   precio:	 600
