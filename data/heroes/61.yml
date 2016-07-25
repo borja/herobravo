@@ -9,7 +9,7 @@ mente:     5
 mov:       7
 armadura:  2
 armas:
-  - { id: 26, gemas [31] }
+  - { id: 26, gemas: [31] }
   - { id: 7 }
 miscelaneas:
   - { id: 6, enchants: [111] }
