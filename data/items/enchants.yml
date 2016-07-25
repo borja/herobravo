@@ -588,3 +588,13 @@
   name:         "de sombras endiabladas"
   descripcion:  "Matar un no-muerto: tu próxima magia de sombras se ejecuta con diablura"
   tipo:         "sombras"
+-
+  id:           113
+  name:         "de espinas retorcidas"
+  descripcion:  "Usa 1 dado verde. Un escudo negro, es un éxito de represalias (defendible)"
+  tipo:         "natura"
+-
+  id:           114
+  name:         "de simbiosis"
+  descripcion:  "+2 PC"
+  tipo:         "natura"
