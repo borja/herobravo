@@ -6,7 +6,7 @@ progenitores:
   - "Prio"
 titulo:       "Condesa de Zelmuria"
 familiar:     { id: 20, name: "Jazzy"}
-profesion:    { id: 3, aprendiz: [0, 1, 5] }
+profesion:    { id: 3, aprendiz: [0, 1, 3, 5] }
 gender:       "female"
 status:       "reserva"
 nivel:        8
@@ -21,13 +21,18 @@ materiales:   [0, 0]
 pociones:     [3]
 master:       [2]
 armadura:     3
-armas:        { id: 24, enchants: [72, 73, 74], gemas: [40], joyas: [9] }
+armas:        
+  - { id: 24, enchants: [72, 73, 74], gemas: [40], joyas: [9], runas: [9] }
+  - { id: 7 }
 protecciones:
   - { id: 1, enchants: [20], ranuras: 2 }
   - { id: 3 }
-  - { id: 4 }
+  - { id: 11 }
   - { id: 5, enchants: [22] }
   - { id: 8, runas: [2] }
+  - { id: 14 }
+  - { id: 16 }
+  - { id: 0 }
 miscelaneas:
   - { id: 2,  enchants: [21], ranuras: 2 }
   - { id: 4,  enchants: [71] }
@@ -35,6 +40,7 @@ miscelaneas:
   - { id: 1,  enchants: [104], gemas: [29] }
 abalorios:
   - { id: 7 }
+piezas:  [3]
 tesoro:
   runas: [3]
-  gemas: [6, 8, 10, 18, 21, 25, 27, 27, 28, 28, 31, 40, 52]
+  gemas: [6, 8, 10, 18, 21, 25, 27, 27, 28, 28, 52]
