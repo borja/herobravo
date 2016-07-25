@@ -1,4 +1,5 @@
 <tr>
+	<td><%= index %></td>
 	<td><%= erb :'display/portrait', locals: { h: hero } %></td>
 	<td><a href='/hero/<%= hero.id %>'><%= hero.name %></a><br>
 		<% if ciudad?(hero.jugador).empty? %>

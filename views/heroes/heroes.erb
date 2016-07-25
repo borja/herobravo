@@ -1,16 +1,8 @@
-<form action="/buscar" method="POST">
-	<select name="criteria">
-	  <option value="heroe">Héroes</option>
-	  <option value="jugador">Jugadores</option>
-	  <option value="raza">Raza</option>
-	  <option value="mascota">Familiar</option>
-	</select>
-	<input type="text" name="nombre">
-	<input type="submit" value="buscar">
-</form>
+<%= erb :'heroes/busca_heroes' %>
 <table id='tresp'>
 	<thead>
 		<tr>
+			<th>#</th>
 			<th colspan=3>Héroe</th>
 			<th>Nivel</th>
 			<th><a href=/familiares>Familiar</a></th>
@@ -37,8 +29,8 @@
 			<% end %>
 		<% end %>
 
-		<% filtered_heros.sort_by { |h| [h.nivel,h.reputacion] }.reverse.each do |hero| %>
-			<%= erb :'heroes/hero', locals: { hero: hero } %>
+		<% filtered_heros.sort_by { |h| [h.nivel,h.reputacion] }.reverse.each_with_index do |hero,i| %>
+			<%= erb :'heroes/hero', locals: { hero: hero, index: i } %>
 		<% end %>
 	</tbody>
 </table>

@@ -2,14 +2,21 @@ name:      "Ahalya"
 personaje: "arquero"
 gender:    "female"
 jugador:   "Rocío"
+status:    "activo"
 pareja:    { char: 78, tipo: "pj" }
-nivel:     2
+profesion: { id: 6, aprendiz: [0] }
+nivel:     3
+repu:      1
 cuerpo:    6
 mente:     4
-mov:       9
-oro:       51
+mov:       10
+oro:       308
 armadura:  2
 armas:     [14,25]
+protecciones:
+  - { id: 1, ranuras: 1 }
+  - { id: 2}
+  - { id: 4}
 miscelaneas:
   - { id:  1, enchants: [111] }
   - { id:  1}
@@ -17,4 +24,5 @@ pergaminos:
   - { id: 1, spells: [66] }
   - { id: 1, spells: [95] }
 hechizos:  [12, 13, 14]
-skills:    [1, 2] 
+skills:    [1, 2, 6, 7]
+master:    [12]
