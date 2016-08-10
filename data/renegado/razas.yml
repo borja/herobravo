@@ -1,0 +1,6 @@
+orco:     { cuerpo: 8, mente: 2, movimiento: 8 }
+goblin:   { cuerpo: 7, mente: 6, movimiento: 4 }
+ungor:    { cuerpo: 6, mente: 3, movimiento: 7 }
+nomuerto: { cuerpo: 7, mente: 5, movimiento: 5 }
+skaven:   { cuerpo: 7, mente: 5, movimiento: 5 }
+drow:     { cuerpo: 8, mente: 4, movimiento: 6 }

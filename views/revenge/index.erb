@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%= erb :head, locals: { title: "RevengeQuest"} %>
+	</head>
+	<body>
+		<div id="header-wrapper">
+			<%= erb :header, locals: { title: "RevengeQuest" } %>
+			<%= erb :"revenge/index/banner" %>
+		</div>
+		<%= erb :"revenge/index/features" %>
+		<%= erb :"revenge/index/content"  %>
+		<%= erb :"footer/footer"  %>	
+	</body>
+</html>

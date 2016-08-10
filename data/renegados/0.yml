@@ -1,0 +1,10 @@
+name:      "Paco"
+jugador:   "Dani de Haro"
+raza:      "Orco"
+clase:     "Kaudillo"
+repu:      1
+cuerpo:    9
+mente:     2
+mov:       8
+armadura:  1
+armas:     { id: 8, enchants: [59], ranuras: 1 }

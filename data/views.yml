@@ -304,6 +304,12 @@
     main: "heroes/heroes"
     right: "heroes/sidebar"
 -
+  ruta:  "renegados"
+  title: "Renegados"
+  template:
+    main: "renegados/renegados"
+    right: "renegados/sidebar"
+-
   ruta:  "fama"
   title: "Héroes"
   template:

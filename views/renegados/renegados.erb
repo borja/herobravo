@@ -1,0 +1,20 @@
+<%= erb :'renegados/busca_renegados' %>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th colspan=3>Renegado</th>
+			<th>Nivel</th>
+			<th><a href=/familiares>Familiar</a></th>
+			<th><a href=/profesiones>Profesión</a></th>
+			<th><a href=/armas>Armas</a></th>
+			<th><a href=/armaduras>Armadura</a></th>
+			<th>Reputación</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% renegados.sort_by { |r| [r.nivel,r.reputacion] }.reverse.each_with_index do |renegado,i| %>
+			<%= erb :'renegados/renegado', locals: { renegado: renegado, index: i } %>
+		<% end %>
+	</tbody>
+</table>

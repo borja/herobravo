@@ -1,0 +1,6 @@
+orco:     ["bruto", "cafre", "tirador", "shamán", "kaudillo"]
+goblin:   ["tirador","shamán","asesino","fanático"]
+ungor:    ["bruto","cafre","shamán","druida"]
+nomuerto: ["bruto","vidente","brujo","liche"]
+skaven:   ["cafre","asesino","vidente","portaplaga"]
+drow:     ["asesino","brujo","tirador","corsario"]

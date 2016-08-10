@@ -4,6 +4,9 @@ class App < Sinatra::Base
   # GET Routing views
   get('/') { erb :index }
   error    { preview('error') }
+  
+  # RevengeQuest custom views
+  get('/revenge') { erb :'revenge/index' }
 
   get '/:view/:param' do |view, param| # Templates with double-routing
     hechizo = %w(aire agua fuego tierra).include?(view)
@@ -18,4 +21,5 @@ class App < Sinatra::Base
   # POST Routing views
   post('/calculador') { preview('calculador') }
   post('/buscar')     { preview('heroes') }
+
 end
