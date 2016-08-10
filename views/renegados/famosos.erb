@@ -1,0 +1,56 @@
+<header>
+	<h2 align='center'>	<%= fama(params[:param]) %></h2>
+</header>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th colspan=3>Héroe</th>
+			<th>Nivel</th>
+			<th><a href=/familiares>Familiar</a></th>
+			<th><a href=/profesiones>Profesión</a></th>
+			<th><a href=/armas>Armas</a></th>
+			<th><a href=/armaduras>Armadura</a></th>		
+			<th>Reputación</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% heros.sort_by { |h| [h.reputacion,h.nivel] }.reverse.each do |hero| %>
+			<% if hero.personaje.gsub("señor de las bestias","beastslord") == params[:param] %>
+				<tr>
+					<td><%= erb :'display/portrait', locals: { h: hero } %></td>
+					<td><a href='/hero/<%= hero.id %>'><%= hero.name %></a><br>
+						<% if ciudad?(hero.jugador).empty? %>
+							<i><%= hero.jugador %></i>
+						<% else %>
+							<a href='/city/<%= ciudad?(hero.jugador).first['name'] %>'><i><%= hero.jugador %></i></a>
+						<% end %>
+					</td>
+					<td><%= hero.genderize.capitalize%><br>
+						<i><a href="/habilidad/<%= hero.personaje.gsub("señor de las bestias","beastslord") %>">
+							<%= hero.personaje.capitalize %>
+						</a></i>
+					</td>
+					<td><%= hero.nivel %></td>
+					<td><% if p = hero.pet %><%= erb :'display/display', locals: { 
+							title:       p.nombre , 
+							path:        p.img_path,
+							description: p.descripcion } %>
+						<% end %>						
+					</td>
+					<td><%= erb :'ficha/profesion', locals: { prof: hero.gremio } if hero.profesion %></td>
+					<td><table>
+							<tr><% hero.weapons.each do |weapon| %>
+								<td><%= erb :'display/item', locals: {item: weapon } %></td>
+							<% end %></tr>
+						</table>
+					</td>
+					<td><%= erb :'display/armadura', locals: { a: hero.armour } %></td>
+					<td style="background-image:url(../images/ficha/star.png); 
+						background-repeat: no-repeat; background-position:center;">
+						<%= hero.reputacion %>
+					</td>
+				</tr>
+			<% end %>
+		<% end %>
+	</tbody>
+</table>

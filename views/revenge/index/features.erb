@@ -1,0 +1,15 @@
+<div id="features-wrapper">
+	<div id="features">
+		<div class="container">
+			<div class="row">
+				<% 4.times do |i| %>
+					<div class="3u">
+						<section>
+							<%= erb :"revenge/index/features/feature#{i+1}" %>
+						</section>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

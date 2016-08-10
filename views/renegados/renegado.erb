@@ -1,0 +1,37 @@
+<tr>
+	<td><%= index %></td>
+	<td><%= erb :'display/portrait', locals: { r: renegado } %></td>
+	<td><a href='/renegado/<%= renegado.id %>'><%= renegado.name %></a><br>
+		<% if ciudad?(renegado.jugador).empty? %>
+			<i><%= renegado.jugador %></i>
+		<% else %>
+			<a href='/city/<%= ciudad?(renegado.jugador).first["name"] %>'><i><%= renegado.jugador %></i></a>
+		<% end %>
+	</td>
+	<td><%= renegado.genderize.capitalize%><br>
+		<i><a href="/habilidad/<%= renegado.personaje.gsub("señor de las bestias","beastslord") %>">
+			<%= renegado.personaje.capitalize %>
+		</a></i>
+	</td>
+	<td><%= renegado.nivel %></td>
+	<td><% if p = renegado.pet %><%= erb :'display/display', locals: { 
+			title:       p.nombre , 
+			path:        p.img_path,
+			description: p.descripcion } %>
+		<% end %>
+	</td>
+	<td>
+		<%= erb :'ficha/profesion', locals: { prof: renegado.gremio } if renegado.profesion %>
+	</td>
+	<td><table>
+			<tr><% renegado.weapons.each do |weapon| %>
+				<td><%= erb :'display/item', locals: {item: weapon } %></td>
+			<% end %></tr>
+		</table>
+	</td>
+	<td><%= erb :'display/armadura', locals: { a: renegado.armour } %></td>
+	<td style="background-image:url(../images/ficha/star.png); 
+		background-repeat: no-repeat; background-position:center;">
+		<%= renegado.reputacion %>
+	</td>
+</tr>

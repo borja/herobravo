@@ -1,0 +1,15 @@
+<div id="content-wrapper">
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<% 3.times do |i| %>
+					<div class="4u">
+						<section>
+							<%= erb :"revenge/index/contents/content#{i+1}" %>
+						</section>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

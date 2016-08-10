@@ -1,5 +1,8 @@
-enano:    { cuerpo: 7, mente: 3, movimiento: 6 }
-elfo:     { cuerpo: 6, mente: 4, movimiento: 8 }
-humano:   { cuerpo: 5, mente: 5, movimiento: 7 }
-tiefling: { cuerpo: 6, mente: 4, movimiento: 7 }
-rakshasa: { cuerpo: 7, mente: 3, movimiento: 7 }
+enano:    ["falangista", "matador", "ingeniero"]
+elfo:     ["derviche", "druida", "arquero"]
+tiefling: ["vengador", "caminante", "brujo"]
+mago:     ["invocador", "conjurador", "hechicero"]
+bárbaro:  ["señor de las bestias", "bersérker", "hoplita"]
+clérigo:  ["clérigo", "paladín", "sacerdote"]
+ladrón:   ["nigromante", "asesino", "ladrón"]
+rakshasa: ["invicto", "cazadora", "chamán"]
