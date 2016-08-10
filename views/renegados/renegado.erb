@@ -1,6 +1,6 @@
 <tr>
 	<td><%= index %></td>
-	<td><%= erb :'display/portrait', locals: { r: renegado } %></td>
+	<td><%= erb :'display/portrait', locals: { h: renegado } %></td>
 	<td><a href='/renegado/<%= renegado.id %>'><%= renegado.name %></a><br>
 		<% if ciudad?(renegado.jugador).empty? %>
 			<i><%= renegado.jugador %></i>
@@ -8,9 +8,9 @@
 			<a href='/city/<%= ciudad?(renegado.jugador).first["name"] %>'><i><%= renegado.jugador %></i></a>
 		<% end %>
 	</td>
-	<td><%= renegado.genderize.capitalize%><br>
-		<i><a href="/habilidad/<%= renegado.personaje.gsub("señor de las bestias","beastslord") %>">
-			<%= renegado.personaje.capitalize %>
+	<td><%#renegado.genderize.capitalize %><br>
+		<i><a href="/habilidad/<%#= renegado.personaje.gsub("señor de las bestias","beastslord") %>">
+			<%#renegado.genderize.capitalize %>
 		</a></i>
 	</td>
 	<td><%= renegado.nivel %></td>
