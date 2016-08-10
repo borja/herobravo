@@ -259,3 +259,11 @@
   ranuras:     2
   diagonal:    false
   precio:      250
+-
+  id:          32
+  name:        "mangual"
+  categoria:   "contundentes"
+  ataque:      2
+  ranuras:     3
+  diagonal:    true
+  precio:      200

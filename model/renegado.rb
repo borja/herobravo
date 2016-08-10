@@ -1,7 +1,7 @@
 # Main app class
 class Renegado < Hash
   attr_accessor :id, :name, :nivel,
-                :personaje, :jugador, :status, :muerto, :gender,
+                :clase, :raza, :jugador, :status, :muerto, :gender,
                 :repu, :cuerpo, :mente, :mov, :historia, :premio,
                 :familiar, :mounts, :descendencia, :pareja, :progenitores,
                 :hechizos, :shadows, :blood, :skills, :master,
@@ -91,10 +91,6 @@ class Renegado < Hash
     end
   end
 
-  def clase
-    clases.select { |_c, ps| ps.include?(personaje) }.keys.first
-  end
-
   def hab_base
     habilidad_base(clase)
   end
@@ -118,11 +114,11 @@ class Renegado < Hash
   end
 
   def img_path
-    "'../images/personajes/#{genderize}.png'"
+    "'../images/revenge/personajes/#{genderize}.png'"
   end
 
   def big_path
-    "'../../images/portraits/#{name}.png'"
+    "'../../images/revenge/portraits/#{name}.png'"
   end
 
   def reputacion
@@ -131,10 +127,6 @@ class Renegado < Hash
 
   def movimiento
     mov
-  end
-
-  def raza
-    %w(clérigo ladrón bárbaro mago).include?(clase) ? 'humano' : clase
   end
 
   def female?
@@ -292,9 +284,9 @@ class Renegado < Hash
   def genderize
     # Word dictionary male vs female
     # TODO: some words are missing
-    male   = %w(elfo mago bárbaro clérigo ladrón  rakshasa tiefling paladín  sacerdote)
-    female = %w(elfa maga bárbara clériga ladrona rakshasi tieflina paladina sacerdotisa)
+    male   = %w(nomuerto orco goblin  drow)
+    female = %w(nomuerta orca goblina elfa)
     # Returns char class, regarding the gender (only for females)
-    gender == 'female' ? female[male.index(clase)] : clase
+    gender == 'female' ? female[male.index(clase)] : raza
   end
 end

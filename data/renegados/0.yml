@@ -1,10 +1,12 @@
-name:      "Paco"
+name:      "Dragor"
 jugador:   "Dani de Haro"
-raza:      "Orco"
-clase:     "Kaudillo"
+raza:      "orco"
+clase:     "kaudillo"
 repu:      1
 cuerpo:    9
 mente:     2
 mov:       8
-armadura:  1
-armas:     { id: 8, enchants: [59], ranuras: 1 }
+armadura:  2
+armas:     { id: 32 }
+protecciones:
+  - { id: 1, gemas: [13] }
