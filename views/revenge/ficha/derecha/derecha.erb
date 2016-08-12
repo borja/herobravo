@@ -1,0 +1,8 @@
+<% r = renegado(params[:param].to_i) %>
+<header>
+	<h2><center>El <%= r.clase %> <%= r.raza %></center></h2>
+</header>
+<a href=<%= "/dones/#{r.clase}" %> class="feature-image">
+	<img src='/images/revenge/clases/<%= r.clase %>.png' alt=<%= r.clase %> /, id='box'>
+</a>
+<%= erb :'ficha/hechizos' unless r.elementos.empty? %>

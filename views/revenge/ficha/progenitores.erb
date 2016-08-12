@@ -1,0 +1,35 @@
+<% h = hero(params[:param].to_i) %>
+<table id='table-2'>
+	<tbody>
+		<tr>
+			<td>
+				<% if h.padre %>
+					<% if h.padre['type'] == 'pj' %>
+						<a href=<%= "/hero/#{h.padre['char'].id}" %>>
+							<%= erb :'display/portrait', locals: { h: h.padre['char'] } %>
+						</a>
+					<% else %>
+						<%= erb :'display/display', locals: { 
+							title:       h.padre['char'], 
+							path:        h.img_path,
+							description: '' } %>
+					<% end %>
+				<% end %>
+			</td>
+			<td>
+				<% if h.madre %>
+					<% if h.madre['type'] == 'pj' %>
+						<a href=<%= "/hero/#{h.madre['char'].id}" %> >
+							<%= erb :'display/portrait', locals: { h: h.madre['char'] } %>
+						</a>
+					<% else %>
+						<%= erb :'display/display', locals: {
+							title:       h.madre['char'],
+							path:        h.img_path,
+							description: '' } %>
+					<% end %>
+				<% end %>
+			</td>
+		</tr>
+	</tbody>
+</table>

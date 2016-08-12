@@ -1,0 +1,27 @@
+<% r = renegado(params[:param].to_i) %>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>Jugador</th>
+			<th>Nivel</th>
+			<th>Reputación</th>
+			<th>Raza</th>
+			<% if r.profesion %>
+				<th>Profesión</th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= r.jugador %></td>
+			<td><h2><%= r.nivel %></h2></td>
+			<td style="background-image:url(../images/ficha/star.png); 
+				background-repeat: no-repeat; background-position:center;">
+				<%= r.repu || 0 %></td>
+			<td><a href='/raza/<%= r.raza %>s'><%= r.raza.capitalize %></a></td>
+			<% if r.profesion %>
+				<td><%= erb :'ficha/profesion', locals: { prof: r.gremio } %></td>
+			<% end %>
+		</tr>
+	</tbody>
+</table>

@@ -6,10 +6,18 @@
   ruta:  "hero"
   title: "view"
   template:
-    left: "ficha/izquierda/izquierda"
-    main: "ficha/centro/main"
+    left:  "ficha/izquierda/izquierda"
+    main:  "ficha/centro/main"
     right: "ficha/derecha/derecha"
-    row2: "ficha/ficha"
+    row2:  "ficha/ficha"
+-
+  ruta:  "renegado"
+  title: "view"
+  template:
+    left:  "revenge/ficha/izquierda/izquierda"
+    main:  "revenge/ficha/centro/main"
+    right: "revenge/ficha/derecha/derecha"
+    row2:  "revenge/ficha/ficha"
 -
   ruta:  "dado"
   title: "Combate"

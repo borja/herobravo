@@ -1,0 +1,68 @@
+<% r = renegado(params[:param].to_i) %>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>Ciudad</th>			
+			<% if r.pareja %>
+				<th>Pareja</th>
+			<% end %>
+			<% if r.progenitores %>
+				<th>Progenitores</th>
+			<% end %>
+			<% if r.pet %>
+				<th>Familiar</th>
+			<% end %>
+			<% if r.transportes %>			
+				<th>Montura</th>
+			<% end %>
+			<% if r.historia %>
+				<th>Historia</th>
+			<% end %>
+			<% if r.camino %>
+				<th><a href='/caminos'>Camino</a></th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href='/city/<%= r.empadronado %>'>
+					<%= r.empadronado %>
+				</a>
+			</td>
+			<% if r.pareja %>
+				<td><%= erb :'ficha/pareja' %></td>
+			<% end %>
+			<% if r.progenitores %>
+				<td><%= erb :'ficha/progenitores' %></td>
+			<% end %>
+			<% if p = r.pet %>
+				<td><%= erb :'display/display', locals: { 
+						title:       p.nombre, 
+						path:        p.img_path,
+						description: p.descripcion } %>
+				</td>
+			<% end %>
+			<% if m = r.transportes %>
+				<td><%= erb :'display/display', locals: { 
+						title:       m.first.name, 
+						path:        m.first.img_path,
+						description: m.first.bono } %>
+				</td>
+			<% end %>
+			<% if r.historia %>
+				<td>
+					<a href=<%= "/historia/#{r.id}" %>>
+						<img src="../images/ficha/historia.png" alt="historia" /, id='icon'>
+					</a>
+				</td>
+			<% end %>
+			<% if r.camino %>
+				<td><%= erb :'display/display', locals: { 
+						title:       'Camino: ' + r.camino.first, 
+						path:        "../images/caminos/#{r.camino.first.gsub(' ','%20')}.png",
+						description: camino(r.camino.first).last[ r.camino.last - 1] } %>
+				</td>
+			<% end %>
+		</tr>
+	</tbody>
+</table>

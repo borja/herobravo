@@ -1,0 +1,11 @@
+<% h = hero(params[:param].to_i) %>
+<% if h.pareja['tipo'] == 'pj' %>
+	<a href=<%= "/hero/#{h.pareja['char']}" %>>
+		<%= erb :'display/portrait', locals: { h: hero(h.pareja['char']) } %>
+	</a>
+<% else %>
+	<%= erb :'display/display', locals: {
+	  title:       h.pareja['nombre'],
+	  path:        "'../images/personajes/#{h.pareja['raza']}.png'" ,
+	  description: h.pareja['descripcion'] } %>
+<% end %>
