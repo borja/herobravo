@@ -1,0 +1,23 @@
+<% h = hero(params[:param].to_i) %>
+<table>
+	<thead>
+		<tr>
+			<th width='16%'>Melee</th>
+			<th width='16%'>Rango</th>
+			<th width='16'>Defensa</th>
+			<th width='16%'>Cuerpo</th>
+			<th width='16%'>Mente</th>
+			<th width='16%'>Mov.</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= h.ataque %></td>
+			<td><%= h.rango %></td>
+			<td><%= h.defensa %></td>
+			<td><%= h.cuerpo %></td>
+			<td><%= h.mente  %></td>
+			<td><%= h.movimiento %></td>
+		</tr>
+	</tbody>
+</table>

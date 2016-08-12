@@ -1,0 +1,11 @@
+name:      "Sheweal"
+jugador:   "Eva"
+raza:      "drow"
+clase:     "tirador"
+gender:    "female"
+repu:      1
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:     { id: 18 }

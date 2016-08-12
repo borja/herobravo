@@ -95,16 +95,6 @@ class Renegado < Hash
     habilidad_base(clase)
   end
 
-  def lista_status(view)
-    case view
-    when 'licenciados'  then 'retirado'
-    when 'heroes'       then 'activo'
-    when 'ausentes'     then 'ausente'
-    when 'reservistas'  then 'reserva'
-    when 'extranjeros'  then 'extranjero'
-    end
-  end
-
   def elementos
     elementos = []
     elementos = magias.map(&:elemento).uniq if magias
@@ -205,7 +195,7 @@ class Renegado < Hash
   def habilidades
     if skills
       skills.map do |num|
-        p = personaje.gsub('señor de las bestias', 'beastslord')
+        p = personaje
         Habilidad.new(send(p, num))
       end
     end
@@ -223,16 +213,12 @@ class Renegado < Hash
     shadows.map  { |num| sombra(num) } if shadows
   end
 
-  def sin_recursos
-    tesoro.nil?
-  end
-
   def empadronado
-    ciudad || 'Jadessvärd'
+    ciudad || 'Revenge'
   end
 
   def estado
-    empadronado == 'Jadessvärd' ? (status || 'ausente') : 'extranjero'
+    'renegado'
   end
 
   # inventario
@@ -240,53 +226,15 @@ class Renegado < Hash
     nivel / 3 + 3
   end
 
-  def patrimonio
-    oro
-  end
-
-  # TODO: Calculate profesion level and add rentas as param.
-  def rentas
-    profesion ? 1 : 0
-  end
-
-  def padre
-    return nil unless progenitores
-    papa = progenitores.first # Allways in the same position
-    case papa
-    when Fixnum then return { 'type' => 'pj',  'char' => hero(papa) }
-    when String then return { 'type' => 'pnj', 'char' => papa }
-    else return "Fallo de padre => #{papa.class}"
-    end
-  end
-
-  def madre
-    return nil unless progenitores
-    return nil unless progenitores.count == 2
-    mama = progenitores.last # Allways in the same position
-    # Check class type, for polyform.
-    case mama
-    when Fixnum then return { 'type' => 'pj',  'char' => hero(mama) }
-    when String then return { 'type' => 'pnj', 'char' => mama }
-    else return "Fallo de madre => #{mama.class}"
-    end
-  end
-
-  def descendientes
-    padres = heros.map(&:progenitores) # nil values means no children
-    # gets IDs of heroes which parents == self.ID
-    hijos = padres.each_index.select do |i|
-      padres[i].include?(id) unless padres[i].nil?
-    end
-    # Avoid empty arrays.
-    hijos.empty? ? nil : hijos
-  end
-
   def genderize
     # Word dictionary male vs female
     # TODO: some words are missing
-    male   = %w(nomuerto orco goblin  drow)
-    female = %w(nomuerta orca goblina elfa)
-    # Returns char class, regarding the gender (only for females)
-    gender == 'female' ? female[male.index(clase)] : raza
+    male   = %w(nomuerto orco goblin  drow ungor)
+    female = %w(nomuerta orca goblina elfa sátira)
+    puts name
+    puts 'raza: ' + raza
+    puts 'clase: ' + clase
+    # Returns raza, regarding the gender (only for females)
+    gender == 'female' ? female[male.index(raza)] : raza
   end
 end

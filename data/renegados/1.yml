@@ -1,0 +1,13 @@
+name:      "Chapirí"
+jugador:   "Iris"
+raza:      "ungor"
+clase:     "druida"
+gender:    "female"
+repu:      1
+cuerpo:    7
+mente:     3
+mov:       6
+armadura:  0
+armas:     { id: 15 }
+miscelaneas:
+  - { id: 4 }

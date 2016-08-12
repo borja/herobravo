@@ -20,7 +20,7 @@ def personajes
 end
 
 def jugadores
-  heros.map(&:jugador).uniq
+  (heros + renegados).map(&:jugador).uniq
 end
 
 def narrados(n)

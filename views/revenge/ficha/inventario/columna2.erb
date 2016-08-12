@@ -1,0 +1,14 @@
+<section>
+	<%= erb :'ficha/inventario/anillos' %>
+	<br>
+	<table id='tresp'>
+		<thead>
+			<tr><th colspan=2>Atuendos</th></tr>
+			<tr>
+				<% fields[1].each do |field| %>
+					<%= erb :'ficha/inventario/field', locals: { fits: field } %>
+				<% end %>
+			</tr>
+		</thead>
+	</table>
+</section>

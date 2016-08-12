@@ -1,0 +1,17 @@
+<div class="information_popup_container">
+	<div class="information">
+		<a href="/profesion/<%= prof.name %>">
+			<img src=<%= prof.img_path %> alt=<%= prof.name %>, id='icon' />
+		</a>
+	</div>
+	<div class="popup_information">
+		<h3><%= prof.name.capitalize %>
+			<br><br>
+			<img src=<%= prof.img_path %> alt=<%= prof.name %>, id='icon3' />
+		</h3>
+		<h3>Aprendizajes</h3>
+		<% prof.aprendiz.each do |a| %>
+			<li><%= profesion(prof.id).aprendiz[a]['name'] %></li>
+		<% end %>
+	</div>
+</div>

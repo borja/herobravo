@@ -1,0 +1,28 @@
+<% h = hero(params[:param].to_i) %>
+<table id='table-2'>
+	<thead>
+		<tr><th colspan=2>Anillos</th></tr>
+		<tr>
+			<td widtd='80%'>Anillo Izquierdo</td>
+				<td>
+					<% if a = h.anillos.first %>
+						<%= erb :'display/item', locals: { item: a } %></td>
+					<% else %>
+						<%= erb :'display/ranura' %>
+					<% end %>
+				</td>
+			</td>
+		</tr>
+		<tr>
+			<td widtd='80%'>Anillo Derecho</td>
+				<td>
+					<% if a = h.anillos[1] %>
+						<%= erb :'display/item', locals: { item: a } %></td>
+					<% else %>
+						<%= erb :'display/ranura' %>
+					<% end %>
+				</td>
+			</td>
+		</tr>
+	</thead>
+</table>

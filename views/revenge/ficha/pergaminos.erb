@@ -1,0 +1,19 @@
+<% h = hero(params[:param].to_i) %>
+<section>
+	<table>
+		<theader>
+			<tr><th colspan='<%= h.pergaminos.count if h.pergaminos %>'>Pergaminos</th></tr>
+		</theader>
+		<tbody>
+			<tr>
+				<% if h.pergaminos %>
+					<% h.pergs.each do |perga| %>
+						<td><%= erb :"display/item", locals: { item: perga } %></td>
+					<% end %>
+				<% else %>
+					<td>Sin pergaminos</td>
+				<% end %>
+			</tr>
+		</tbody>
+	</table>
+</section>

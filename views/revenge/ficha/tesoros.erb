@@ -1,0 +1,35 @@
+<% h = hero(params[:param].to_i) %>
+<section>
+	<header>
+		<center><h2>Tesoros</h2></center>
+	</header>
+	<table id='table-2'>
+		<thead>
+			<tr><% %w(gemas joyas runas).each do |engarce| %>
+					<th><%= engarce.capitalize %></th>
+				<% end %>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<% %w(gemas joyas runas).each do |engarce| %>
+					<td>
+						<% if tesoros = h.tesoro[engarce] %>
+							<table id='table-2'>
+								<tbody>
+									<tr>
+										<% tesoros.each do |t| %>
+											<td><%= erb :"display/engarce", locals: { engarce: send(engarce)[t] } %></td>
+										<% end %>
+									</tr>
+								</tbody>
+							</table>
+						<% else %>
+							El héroe no tiene <%= engarce %>.
+						<% end %>
+					</td>
+				<% end %>
+			</tr>
+		</tbody>
+	</table>
+</section>

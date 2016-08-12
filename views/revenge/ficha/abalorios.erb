@@ -1,0 +1,19 @@
+<% h = hero(params[:param].to_i) %>
+<section>
+	<table>
+		<theader>
+			<tr><th colspan='<%= h.abalorios.count if h.abalorios %>'>Abalorios</th></tr>
+		</theader>
+		<tbody>
+			<tr>
+				<% if h.trinkets %>
+					<% h.trinkets.each do |abalorio| %>
+						<td><%= erb :"display/item", locals: { item: abalorio } %></td>
+					<% end %>
+				<% else %>
+					<td>Sin abalorios</td>
+				<% end %>
+			</tr>
+		</tbody>
+	</table>
+</section>

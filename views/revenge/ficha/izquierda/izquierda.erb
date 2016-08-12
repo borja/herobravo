@@ -1,0 +1,12 @@
+<% r = renegado(params[:param].to_i) %>
+<header>
+	<h2><center><%= r.titulo %></center></h2>
+</header>
+<a href=<%= "/hero/#{r.id }" %> class="feature-image">
+	<img src=<%= r.big_path %> alt=<%= r.name %>, id='portrait' />
+</a>
+<% if r.historia %>
+	<center>
+		<a href='<%= "/historia/#{r.id }" %>'>Historia de <%= r.name %></a>
+	</center>
+<% end %>
