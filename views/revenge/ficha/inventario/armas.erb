@@ -1,10 +1,10 @@
-<% h = hero(params[:param].to_i) %>
+<% r = renegados(params[:param].to_i) %>
 <table id='tresp'>
 	<thead>
 		<tr><th colspan=2>Armas</th></tr>
 		<tr><td width='80%'>Mano principal</td>
 			<td>
-				<% if a = h.weapons.first %>
+				<% if a = r.weapons.first %>
 					<%= erb :'display/item', locals: { item: a }  %>
 				<% else %>
 					<%= erb :'display/ranura', locals: { casillero: 'arma'} %>
@@ -13,8 +13,8 @@
 		</tr>
 		<tr><td width='80%'>Mano secundaria</td>
 			<td>
-				<% if a = h.weapons[1] %>
-					<%= erb :'display/item', locals: { item: a}  %>
+				<% if a = r.weapons[1] %>
+					<%= erb :'display/item', locals: { item: a }  %>
 				<% else %>
 					<%= erb :'display/ranura', locals: { casillero: 'escudo' } %>
 				<% end %>

@@ -14,26 +14,24 @@
   respuestas:
      - ["Sangre", { nomuerto: 5 }]
      - ["Grog", { orco: 5 }]
-     - ["Grog", { orco: 5 }]
-     - ["Grog", { orco: 5 }]
+     - ["Mojito de Setas", { orco: 5 }]
+     - ["Vino dulce", { orco: 5 }]
+     - ["Leche agria", { orco: 5 }]
 -
   id: 2
-  pregunta: "¿Con quién te diste tu primer beso con lengua?"
+  pregunta: "¿Qué es lo más verde de ti?"
   respuestas:
-     - ["Con Emma, la posadera, 1 chelín de cobre", { ladrón: 2, enano: 1, bárbaro: 1 }]
-     - ["Aún no he hecho esas marranadas", { clérigo: 3 }]
-     - ["Con mi prima Alba", { elfo: 2, bárbaro: 2, mago: 2 }]
-     - ["Con la diosa de la Luna oscura", { tiefling: 2, mago: 2, ladrón: 1 }]
-     - ["Con mi primo Eregos", { elfo: 3 }]
-     - ["Con las súcubos Cherkya y Zargüexiantrax a la vez", { tiefling: 3, mago: 1 }]
-     - ["Con una montañera de fuerte olor corporal", { enano: 2, bárbaro: 2 }]
-     - ["Con mi actual esposa", { clérigo: 2, elfo: 1 }]
+     - ["Mi pulmón", { ladrón: 2, enano: 1, bárbaro: 1 }]
+     - ["Mi piel", { clérigo: 3 }]
+     - ["La sangre de mis esclavos", { elfo: 2, bárbaro: 2, mago: 2 }]
+     - ["Mi almuerzo", { tiefling: 2, mago: 2, ladrón: 1 }]
+     - ["Soy daltónico", { elfo: 3 }]
 -
   id: 3
   pregunta: "¿A quién prestarías mil piezas de oro?"
   respuestas:
-     - ["A Emma la posadera de grandes pechos", { enano: 2 }]
-     - ["Por ese precio vendería a mi madre", { ladrón: 2, mago: 1 }]
+     - ["A cualquiera con capacidad de devolvérmelo", { enano: 2 }]
+     - ["Al proveedor de zetaz", { ladrón: 2, mago: 1 }]
      - ["Por ese precio se vendía mi madre", { ladrón: 2, tiefling: 2 }]
      - ["A mi príncipe", { enano: 2, clérigo: 2 }]
      - ["A cualquiera de mis camaradas", { bárbaro: 2, elfo: 2 }]
