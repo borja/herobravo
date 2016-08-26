@@ -25,6 +25,13 @@
     main: "reglamento/dado"
     right: "reglamento/derecha/combate"
 -
+  ruta:  "fases"
+  title: "Fases"
+  template:
+    left:  "reglamento/derecha/combate"
+    main:  "reglamento/fases"
+    right: "reglamento/derecha/dados"
+-
   ruta:  "historias"
   title: "Leyendas"
   template:

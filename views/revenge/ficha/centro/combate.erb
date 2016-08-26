@@ -1,4 +1,4 @@
-<% h = hero(params[:param].to_i) %>
+<% r = renegado(params[:param].to_i) %>
 <table>
 	<thead>
 		<tr>
@@ -12,12 +12,12 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td><%= h.ataque %></td>
-			<td><%= h.rango %></td>
-			<td><%= h.defensa %></td>
-			<td><%= h.cuerpo %></td>
-			<td><%= h.mente  %></td>
-			<td><%= h.movimiento %></td>
+			<td><%= r.ataque %></td>
+			<td><%= r.rango %></td>
+			<td><%= r.defensa %></td>
+			<td><%= r.cuerpo %></td>
+			<td><%= r.mente  %></td>
+			<td><%= r.movimiento %></td>
 		</tr>
 	</tbody>
 </table>
