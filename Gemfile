@@ -13,7 +13,7 @@ group :test do
   gem 'rake', '~> 11.2.2'
   gem 'yaml-lint', '~> 0.0.9'
   gem 'codeclimate-test-reporter', '~> 0.6.0'
-  gem 'codacy-coverage', require: false
+  gem 'codacy-coverage', '~> 1.1.0', require: false
   gem 'coveralls', require: false
   gem 'codecov', require: false
   gem 'scrutinizer-ocular', require: false
