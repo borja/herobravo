@@ -3,13 +3,22 @@
 		<div class="12u">
 			<h1><a href="" id="logo"><%= title %></a></h1>	
 			<nav id="nav">
-				<a href="/">Inicio</a>
-				<a href="/heroes">Héroes</a>
+				<% if title == 'HeroSheet' %>
+					<a href="/">Inicio</a>
+					<a href="/heroes">Héroes</a>
+				<% else %>
+					<a href="/revenge">Inicio</a>
+					<a href="/renegados">Renegados</a>
+				<% end %>
 				<a href="/objetos">Objetos</a>
 				<a href="/torre">Hechizos</a>
 				<a href="/manuales">Manuales</a>
 				<a href="/city/Jadessvärd">Ciudad</a>
-				<a href="/habilidades">Habilidades</a>
+				<% if title == 'HeroSheet' %>
+					<a href="/habilidades">Habilidades</a>
+				<% else %>
+					<a href="/dones">Dones</a>
+				<% end %>
 			</nav>
 		</div>
 	</div>
