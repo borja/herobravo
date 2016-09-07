@@ -18,7 +18,7 @@ cuerpo: 10
 mente:  6
 mov:    8
 oro:    35
-familiar:  { id: 18, name: "Menta", torpe: true }
+familiar:  { id: 16, name: "Zote", torpe: true }
 profesion: { id: 2, aprendiz: [0, 1] }
 armadura:  { id: 3, ranuras: 1 }
 armas:     { id: 12, enchants: [58] }
