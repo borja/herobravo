@@ -1,0 +1,8 @@
+enano:    [7, 3, 6, "racial"]
+elfo:     [6, 4, 8, "racial"]
+tiefling: [6, 4, 7, "racial"]
+mago:     [4, 6, 7, "parangón"]
+bárbaro:  [8, 2, 7, "parangón"]
+clérigo:  [5, 5, 7, "humano"]
+ladrón:   [5, 5, 7, "humano"]
+rakshasa: [7, 3, 7, "racial"]
