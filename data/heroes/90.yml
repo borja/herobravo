@@ -4,16 +4,21 @@ gender:    "female"
 jugador:   "Javier Galindo"
 status:    "activo"
 familiar:  { id: 15, name: "Viviana"}
+profesion: { id: 3, aprendiz: [0] }
 progenitores: 
   - "Gabrielle"
   - 59
 nivel:        4
+xp:           3
 repu:         2
 cuerpo:       6
 mente:        4
 mov:          12
+oro:          10
 armadura:     2
 skills:       [0, 1, 3, 4]
+hechizos:     [6, 7, 8]
+pociones:     [1]
 armas:        [1, 7]
 protecciones:
-  - { id: 3 }
+  - { id: 3, enchants: [115] }

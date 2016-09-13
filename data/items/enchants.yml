@@ -598,3 +598,8 @@
   name:         "de simbiosis"
   descripcion:  "+2 PC"
   tipo:         "natura"
+-
+  id:           115
+  name:         "caminadesiertos"
+  descripcion:  "+1 vs Calor, +1 movimiento"
+  tipo:         "desierto"
