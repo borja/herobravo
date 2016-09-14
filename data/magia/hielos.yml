@@ -12,51 +12,56 @@
 - 
   id:       1
   alcance:  0
-  duracion: 0
+  duracion: 1
   name:     "Puente de hielo"
-  tipo:     "Evocación - Toque"
-  efecto:   "Golpea con 3 dados de combate a una miniatura. (Aullante)"
-  diablura: "El golpe de arena puede ser ejecutado en conjunto"
-  potencia: "+1 potencia al ataque"
+  tipo:     "Superchería"
+  efecto:   "1 carga de hielo: Fabricas un puente de hielo (se destruye por fuego) que deshabilita temporalmente un foso."
+  diablura: "Puedes destruir el puente mientras un enemigo lo cruza"
+  ardid:    "2PM: Añade una carga de hielo"
+  potencia: "+1 carga de hielo"
 - 
   id:       2
   alcance:  2
-  duracion: "E"
+  duracion: "∞"
   name:     "Espejo mágico"
   tipo:     "superchería"
-  efecto:   "El objetivo puede pasar por puertas cerradas, no es empujado y puede elegir defensa verdadera al defender."
-  diablura: "El objetivo es inmune a los hechizos dañinos de arena y tierra"
-  potencia: "+1 turno de duración"
+  efecto:   
+            "1 carga de hielo: Mientras no haya enemigos visibles, puedes colocar un espejo de hielo en un muro vertical.
+             En cualquier momento puedes gastar una acción, para que al atravesar cualquier puerta,
+             salgas por el espejo en su lugar. (Cesando el efecto)"
+  diablura: "Podrás ejecutar hechizos desde el espejo, una vez cruzado, cuyo alcance será la puerta."
+  ardid:    "2PM: El efecto no cesa una vez atravesado el espejo."
+  potencia: "+1 1 carga de hielo, para colocar en el mapa. Podrás elegir por cuál cruzar."
 - 
   id:       3
   alcance:  0
-  duracion: 0
+  duracion: "D"
   name:     "Aura de escarcha"
   tipo:     "aura"
-  efecto:
-            "Puedes usar esta magia como instinto. Dispones de un turno adicional.<br/>
-             Si en este turno vuelves a modificar el tiempo, la entropía te lanzará al olvido eterno."
-  diablura: "Al inicio de tu turno puedes regresar del olvido eterno con 5+"
-  potencia: "+1 acción durante tu turno extra."
+  efecto:   "+1 empujar, +1 potencia a las magias de hielo"
+  diablura: "Puedes lanzarlo como bendición"
+  ardid:    "Añade el efecto del ardid a las magias de hielo."
+  potencia: "+1 alcance"
 - 
   id:       4
   alcance:  "V"
-  duracion: "∞"
+  duracion: 1
   name:     "helada"
-  tipo:     "Evocación"
+  tipo:     "Evocación - Sala"
   efecto:
-            "Elige 3 casillas de la sala pudiendo anotarlas en secreto al MB.<br/>
-             Las miniaturas que caigan, quedarán atrapados si no superan una TS de movimiento (2d6).<br/>
-             Al inicio del turno perderán 3 dados de combate de daño mental. Si no disponen, cuerpo."
-  diablura: "Al matar una miniatura en las arenas, recupera un hechizo de arena."
-  potencia: "+1 ataque del efecto"
+            "Hiela el suelo de la sala. Todos los ataques serán aullantes,
+             Todas las miniaturas que se desplacen moverán 1d6 adicional (obligatoriamente),
+             pudiendo colisionar. En el caso de la colisión entre miniaturas y paredes, el daño será por frío."
+  potencia: "+1 sala colindante afectada"
+  diablura: "Cualquier daños por frío en la sala, suma tanta fuerza como tu potencia de frío."
+  ardid:    "Tus aliados pueden renunciar al movimiento adicional"
 - 
   id:       5
-  alcance:  3
+  alcance:  "M"
   duracion: 0
   name:     "Chuzo de frío"
   tipo:     "conjuro"
-  efecto:   "Un gusano de las arenas, emerge del suelo y golpea al objetivo con 3 dados.<br/>
-             Si lo mata, lo engullirá. En ese caso, recupera este hechizo y cualquier botín de la víctima."
-  diablura: "Si recuperas el hechizo puedes volver a lanzarlo inmediatamente."
-  potencia: "+1 dado de ataque"
+  efecto:   "Una esquirla de hielo puro golpea a un objetivo, con 2 dados de hielo."
+  diablura: "Las águilas de los dados, dañan y congelan simultáneamente"
+  potencia: "+1 dado de hielo de ataque"
+  ardid:    "Si este hechizo es recuperado o lanzado por una habilidad, puedes ejecutarlo contra otro enemigo."
