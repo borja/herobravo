@@ -1,0 +1,16 @@
+-
+  name:   "Aprendiz de política"
+  coste:  100
+  efecto: "+1 a la recompensa que debe ofrecerse por cumplir el reto."
+-
+  name:   "Contabilidad eficiente"
+  coste:  50
+  efecto: "Tanto tú como tus aliados tiraréis dados de 10 caras en las rentas por profesión."
+-
+  name:   "Burocracia institucional"
+  coste:  50
+  efecto: "Al tirar rentas, cada 1 obtenido otorga tu reputación en oro, en su lugar."
+-
+  name:   "Abogado defensor"
+  coste:  50
+  efecto: "Puedes sacrificar 1 reputación, para librar de un escarnio a un aliado"
