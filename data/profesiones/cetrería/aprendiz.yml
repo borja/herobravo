@@ -1,0 +1,8 @@
+-
+  name:   "Aprendiz de cetrería"
+  coste:  100
+  efecto: "Permite transportar objetos pequeños entre aliados"
+-
+  name:   "Vuelo de reconocimiento"
+  coste:  300
+  efecto: "1/reto: Mandas a tu rapaz a desvelar una sala adyacente."
