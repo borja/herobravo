@@ -9,15 +9,19 @@ pareja:
   raza:   "maga"
   tipo:   "pnj"
   descripcion:
-    "Silva es casada con Loki tras la batalla de las minas de oro,
+    "Silva (4 corazones) es casada con Loki tras la batalla de las minas de oro,
      dónde yerno y suegro, derrotan al draco verde heroicamente.<br/>
      Bietka, la Condesa de Zelmuria, forja el anillo de oro para el casamiento."
+hijo:
+  nombre: "Frey"
 nivel:  10
-repu:   5
+repu:   6
 cuerpo: 10
 mente:  6
 mov:    8
-oro:    35
+exp:    10
+oro:    376
+rentas: 1
 familiar:  { id: 18, name: "Menta", torpe: true }
 profesion: { id: 2, aprendiz: [0, 1] }
 armadura:  { id: 3, ranuras: 1 }
@@ -40,8 +44,8 @@ pergaminos:
 master:     [0]
 skills:     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 17]
 pociones:   [10]
-materiales: [0, 2, 2, 2, 2, 2 ,2]
+materiales: [0, 0, 0, 2, 2, 2, 2, 2 ,2, 2, 2, 2]
 piezas:     [4, 4]
 tesoro:
-  gemas: [1, 3, 8, 11, 16, 25, 29]
+  gemas: [1, 1, 3, 8, 10, 11, 16, 25, 29]
   runas: [3, 6, 8]
