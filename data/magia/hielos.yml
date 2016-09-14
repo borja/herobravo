@@ -1,6 +1,6 @@
 -
   id:       0
-  name:     "carámbano"
+  name:     "Carámbano"
   tipo:     "Invocación"
   efecto:
             "Una daga de hielo mágico que puede ser empleada como arma de empuñadura.<br/>
@@ -13,7 +13,7 @@
   id:       1
   alcance:  0
   duracion: 0
-  name:     "puente de hielo"
+  name:     "Puente de hielo"
   tipo:     "Evocación - Toque"
   efecto:   "Golpea con 3 dados de combate a una miniatura. (Aullante)"
   diablura: "El golpe de arena puede ser ejecutado en conjunto"
@@ -22,7 +22,7 @@
   id:       2
   alcance:  2
   duracion: "E"
-  name:     "espejo mágico"
+  name:     "Espejo mágico"
   tipo:     "superchería"
   efecto:   "El objetivo puede pasar por puertas cerradas, no es empujado y puede elegir defensa verdadera al defender."
   diablura: "El objetivo es inmune a los hechizos dañinos de arena y tierra"
@@ -31,7 +31,7 @@
   id:       3
   alcance:  0
   duracion: 0
-  name:     "aura de escarcha"
+  name:     "Aura de escarcha"
   tipo:     "aura"
   efecto:
             "Puedes usar esta magia como instinto. Dispones de un turno adicional.<br/>
@@ -54,7 +54,7 @@
   id:       5
   alcance:  3
   duracion: 0
-  name:     "chuzo de frío"
+  name:     "Chuzo de frío"
   tipo:     "conjuro"
   efecto:   "Un gusano de las arenas, emerge del suelo y golpea al objetivo con 3 dados.<br/>
              Si lo mata, lo engullirá. En ese caso, recupera este hechizo y cualquier botín de la víctima."

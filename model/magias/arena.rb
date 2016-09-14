@@ -1,4 +1,4 @@
-# Todos los hechizos de tipo sombra
+# Todos los hechizos de tipo arena
 class Arena < Magia
   def nivel
     1
