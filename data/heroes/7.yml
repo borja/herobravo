@@ -14,6 +14,9 @@ pareja:
      Bietka, la Condesa de Zelmuria, forja el anillo de oro para el casamiento."
 hijo:
   nombre: "Frey"
+camino:
+  - "El Bardo"
+  - 0
 nivel:  10
 repu:   6
 cuerpo: 10
