@@ -277,6 +277,12 @@
     left2: "torre/left/elementales"
     main:  "magia/arenas"
 -
+  ruta:  "hielos"
+  template:
+    left:  "torre/left/sagradas"
+    left2: "torre/left/elementales"
+    main:  "magia/hielos"
+-
   ruta:  "plegarias"
   template:
     left: "torre/left/sagradas"
