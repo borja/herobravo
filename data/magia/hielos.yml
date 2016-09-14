@@ -46,7 +46,7 @@
   id:       4
   alcance:  "V"
   duracion: 1
-  name:     "helada"
+  name:     "Helada"
   tipo:     "Evocación - Sala"
   efecto:
             "Hiela el suelo de la sala. Todos los ataques serán aullantes,
