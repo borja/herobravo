@@ -1,0 +1,27 @@
+-
+  id:          0
+  nivel:       2
+  name:        "Piedad"
+  type:        "reactiva"
+  description: "Al sanar con un hechizo o habilidad, recuperas 1PM"
+-
+  id:          1
+  nivel:       2
+  name:        "Lágrimas desde el Cielo"
+  type:        "activa"
+  coste:       "2PM"
+  description: "Lanza una réplica de un hechizo de agua consumido"
+-
+  id:          2
+  nivel:       2
+  name:        "Escudo empíreo"
+  type:        "activa"
+  coste:       "1 hechizo de agua"
+  description: "Instinto, Elige: +2 dados azules de defensa para ti o +1 dado a un aliado"
+-
+  id:          3
+  nivel:       2
+  rangos:      2
+  name:        "Catalizador de lluvia"
+  type:        "pasiva"
+  description: "Añade un set de magias de agua"
