@@ -1,17 +1,21 @@
 <table id='tresp'>
 	<thead>
-		<tr><% profesions.each do |p| %>
-				<th><%= p.name %></th>
-			<% end %>
-		</tr>	
+		<tr>
+			<th colspan=2>Profesión</th>
+			<th>Hándicap</th>
+			<th>Justificación</th>
+		</tr>
 	</thead>
 	<tbody>
-		<tr><% profesions.each do |p| %>
+		<% profesions.each do |p| %>
+			<tr>
 				<td><a href=<%="/profesion/#{p.name}"%>>
-						<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon2' />
-					</a>
-				</td>
-			<% end %>
-		</tr>
+					<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon2' />
+				</a></td>
+				<td><%= p.name %></td>
+				<td><img src='images/personajes/<%= p.imped %>.png' alt="<%= p.imped %>" id='icon2'></td>
+				<td><%= p.why %></td>
+			</tr>
+		<% end %>
 	</tbody>
 </table>
