@@ -1,4 +1,24 @@
 -
-      name:   "Artesano de cetrería"
-      coste:  500
-      efecto: "Por definir"
+  name:   "Artesano de cetrería"
+  coste:  500
+  efecto: "Puedes añadir un águila imperial como familiar"
+-
+  name:   "Distracción puñetera"
+  coste:  350
+  efecto: "1 acción: Tira 1d6. 3+, permite quitar una acción a un objetivo."
+-
+  name:   "Vuelo en picado"
+  coste:  350
+  efecto: "Añade +1 fuerza al ataque de tu rapaz, por cada 3 casillas de movimiento que no desplace"
+-
+  name:   "Sin capirote"
+  coste:  350
+  efecto: "Añade +1 fuerza al ataque de tu rapaz, por cada 3 casillas de movimiento que no desplace"
+-
+  name:   "Devorador de roedores"
+  coste:  100
+  efecto: "El águila y su dueño causan +1 Miedo a los skavens"
+-
+  name:   "Augurio del águila"
+  coste:  150
+  efecto: "La rapaz podrá volar alrededor de un personaje con la habilidad de política, otorgándole +2 reputación ficticia."

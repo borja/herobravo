@@ -198,3 +198,9 @@
     <p align=left><b>Calavera</b>: Te roba el oro total obtenido<br>
     <b>Escudo blanco</b>: Te duplica el oro<br>
     <b>Escudo negro</b>: Se come tu gema menos valiosa</p>
+-
+  id:         31
+  name:       "águila imperial"
+  personajes: "todos"
+  bono:       "ataque: 1, defensa: 2, movimiento: 10, PC: 2, PM: 1, vuela"
+  lacra:      "No puede participar en mazmorras cubiertas/ con techo, sin consumir 1 mano."

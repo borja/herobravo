@@ -1,0 +1,17 @@
+<table id='tresp'>
+	<thead>
+		<tr><% profesions.each do |p| %>
+				<th><%= p.name %></th>
+			<% end %>
+		</tr>	
+	</thead>
+	<tbody>
+		<tr><% profesions.each do |p| %>
+				<td><a href=<%="/profesion/#{p.name}"%>>
+						<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon2' />
+					</a>
+				</td>
+			<% end %>
+		</tr>
+	</tbody>
+</table>
