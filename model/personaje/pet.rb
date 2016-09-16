@@ -12,6 +12,7 @@ class Pet < Hash
 
   def personajes
     pet(id)['personajes']
+    # TODO: "todos" <- a veces la respuesta es para todos
   end
 
   def lacra

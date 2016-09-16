@@ -1,7 +1,7 @@
 -
   name:   "Aprendiz de inscriptor"
   coste:  100
-  efecto: "Permite consumir hechizos insertándolos en pergaminos."
+  efecto: "Permite consumir hechizos de nivel 1, insertándolos en pergaminos."
 -
   name:   "Cincelar"
   coste:  200

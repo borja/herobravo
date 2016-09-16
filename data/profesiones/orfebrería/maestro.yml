@@ -2,3 +2,10 @@
   name:   "Maestro de orfebrería"
   coste:  1000
   efecto: "TBD"
+-
+  name:   "Esclavas de águila"
+  coste:  450
+  efecto: 
+          "Se trata de dos anillos engarzables, que se tallan para las patas de las aves de cetrería.
+           Para que la magia cause efecto, requiere dos piezas de engarce idénticas.
+           Bonificará una sola vez, con el efecto para anillo, al dueño de la rapaz."

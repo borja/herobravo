@@ -2,3 +2,11 @@
   name:   "Artesano inscriptor"
   coste:  500
   efecto: "Permite consumir hasta dos pergaminos diferentes por turno."
+-
+  name:   "Hierática"
+  coste:  200
+  efecto: "Permite a un inscriptor, escribir hechizos de nivel superior en pergaminos."
+-
+  name:   "Logografía"
+  coste:  100
+  efecto: "Permite duplicar el contenido de un pergamino notarial, para otro personaje."

@@ -1,4 +1,26 @@
 -
   name:   "Maestro de cetrería"
   coste:  1000
-  efecto: "Por definir"
+  efecto: "Puedes añadir un grifo imperial como montura"
+-
+  name:   "Ceder la pluma de alma"
+  coste:  1
+  efecto: 
+          "Cada rapaz tiene una pluma de alma. Una vez alcanzado este grado de maestría,
+           se puede solicitar al ave que nos entregue su más precioso tesoro: su pluma de alma.
+           Dicha pluma es un componente necesario para fabricar plumas encantadas para inscripción."
+-
+  name:   "Símbolo divino"
+  coste:  300
+  efecto: "1/reto: Modifica el dado de Sigmar, para obtener un águila en lugar del resultado obtenido."
+-
+  name:   "Rey de los cielos"
+  coste:  350
+  efecto: "1/reto: Invocas una fina lluvia. Todos los hechizos de agua obtienen +1 potencia."
+-
+  name:   "Susurros de Cangjie"
+  coste:  400
+  efecto: 
+          "Esta habilidad permite al ave, escuchar los susurros del espíritu de Cangjie.
+           Se usa la marca de sus pisadas sobre la arena, para inspirar a los escribas,
+           funcionando como requisito para algunas recetas de inscripción"

@@ -6,3 +6,19 @@
   name:   "Vuelo de reconocimiento"
   coste:  300
   efecto: "1/reto: Mandas a tu rapaz a desvelar una sala adyacente."
+-
+  name:   "Visión lejana"
+  coste:  150
+  efecto: "Permite buscar en cualquier habitación transitables ya desvelada."
+-
+  name:   "Distracción efímera"
+  coste:  350
+  efecto: "1 acción: Tira 1d6. 5+, permite quitar una acción a un objetivo."
+-
+  name:   "Marcar objetivo"
+  coste:  250
+  efecto: "1/reto: +1 potencia a un ataque a distancia/arrojadizas. Se puede usar, aún en estado: cegado."
+-
+  name:   "Vuelo vertiginoso"
+  coste:  100
+  efecto: "Las acciones realizadas con cetrería, pueden ser desplazadas al inicio de la ronda."

@@ -6,3 +6,8 @@
   name:   "Hombreras encantadas"
   coste:  450
   efecto: "2 cueros mágicos, 8 polvos arcanos: Crea unas hombreras de cuero (+2P) que otorgan +2 vs Fuego."
+-
+  name:   "Capirote personalizado"
+  coste:  150
+  matts:  [2]
+  efecto: "A cambio de 1 piel, puedes equipar con un capirote a tu rapaz (cetrería), haciéndola inmune al miedo."

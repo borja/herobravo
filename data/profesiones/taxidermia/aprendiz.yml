@@ -29,5 +29,5 @@
 -
   name:   "Botas"
   coste:  75
-  matts:  [2]
+  matts:  [2, 2]
   efecto: "A cambio de 2 pieles, puedes fabricar unas botas que te aislan del frío. (+1 vs Escarcha)"

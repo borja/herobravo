@@ -15,22 +15,25 @@
 	Por este motivo, obtiene +1 renta por cada grado de profesión que tenga.
 </p>
 
+<p><%= erb :'personaje/profesiones/lista' %></p>
+
+<h3>No todo el mundo puede hacer de todo</h3>
 <p>
+	Cada personaje tiene un impedimento laboral. Consulta la siguiente tabla,
+	para saber cuál es la profesión vetada a cada personaje:
 	<table id='tresp'>
 		<thead>
-			<tr><% profesions.each do |p| %>
-					<th><%= p.name %></th>
-				<% end %>
-			</tr>	
+			<tr>
+				<th>Personaje</th>
+				<th>hándicap</th>
+				<th>Justificación</th>
+			</tr>
 		</thead>
 		<tbody>
-			<tr><% profesions.each do |p| %>
-					<td><a href=<%="/profesion/#{p.name}"%>>
-							<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon2' />
-						</a>
-					</td>
+			<% personajes.each do |p| %>
+					<td><%= p %></td>
 				<% end %>
-			</tr>
-		</tbody>
+			</tr>	
+		</body>
 	</table>
 </p>
