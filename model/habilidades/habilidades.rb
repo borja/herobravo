@@ -4,6 +4,7 @@ pjs = %w(
   derviche arquero druida ladrón asesino nigromante
   matador falangista ingeniero
   invicto cazadora chamán
+  valquiria serafín daeva
 )
 
 # Generic clase creator
