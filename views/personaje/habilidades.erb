@@ -2,7 +2,7 @@
 	<thead>
 		<tr>
 			<% clases.keys.each do |pj| %>
-				<th width='12%'><%= pj.capitalize %></th>
+				<th><%= pj.capitalize %></th>
 			<% end %>
 		</tr>
 	</thead>
@@ -19,7 +19,7 @@
 						<% h = clase[i] %>
 						<a href="/habilidad/<%= h %>">
 						<%= h %><br>
-						<img src="/images/clases/<%= h %>.png" alt=<%= h %> /, id='icon3'></a>
+						<img src="/images/clases/<%= h %>.png" alt=<%= h %> /, id='icon4'></a>
 					</td>
 				<% end %>
 			</tr>	
