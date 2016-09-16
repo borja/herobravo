@@ -25,3 +25,11 @@
   name:        "Catalizador de lluvia"
   type:        "pasiva"
   description: "Añade un set de magias de agua"
+-
+  id:          4
+  nivel:       3
+  name:        "Aunar ruegos"
+  type:        "única"
+  description: 
+               "Cualquier aliado puede pagar 1 acción: Todos recuperarán 1PM,
+                y tú recuperarás 1 plegaria por cada 3 acciones invertidas."
