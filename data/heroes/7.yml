@@ -4,6 +4,7 @@ personaje:   "ingeniero"
 jugador:     "Aitor"
 status:      "activo"
 progenitores: [82,"Emma"]
+camino:       ["El Bardo", 1]
 pareja:
   nombre: "Silva"
   raza:   "maga"
