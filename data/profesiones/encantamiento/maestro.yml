@@ -5,7 +5,7 @@
 -
   name:   "Fénix"
   coste:  1200
-	matts:  [3, 4, 5, 6, 6] # TODO: Tune up this
+  matts:  [3, 4, 5, 6, 6] # TODO: Tune up this
   efecto: 
           "Encanta a una rapaz aliada con la bendición del fénix:
            Si muere por cualquier circunstancia, resucitará recuperando una magia de fuego"
