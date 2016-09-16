@@ -25,3 +25,11 @@
   name:        "Catalizador de tormentas"
   type:        "pasiva"
   description: "Añade un set de magias de aire"
+-
+  id:          4
+  nivel:       3
+  name:        "Segar almas"
+  type:        "única"
+  description: 
+               "Cualquier aliado puede pagar 1 pieza: Recuperas tantos PM como puntos pagados,
+                y un hechizo de aire por cada 3 piezas pagadass."

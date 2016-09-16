@@ -25,3 +25,11 @@
   name:        "Catalizador de odio"
   type:        "pasiva"
   description: "Añade un set de magias de sangre"
+-
+  id:          4
+  nivel:       3
+  name:        "Cosechar pecados"
+  type:        "única"
+  description: 
+               "Cualquier aliado puede pagar 1PM: Recuperas tantos PC como puntos pagados,
+                y un hechizo de sangre por cada 3PM pagados."
