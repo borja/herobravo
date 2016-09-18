@@ -603,3 +603,8 @@
   name:         "caminadesiertos"
   descripcion:  "+1 vs Calor, +1 movimiento"
   tipo:         "desierto"
+-
+  id:           116
+  name:         "del serafín"
+  descripcion:  "+1 Plegaria y +1 magia aleatoria de agua al iniciar el reto"
+  tipo:         "agua"
