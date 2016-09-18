@@ -8,7 +8,7 @@ cuerpo:    7
 mente:     3
 mov:       8
 profesion: { id: 7, aprendiz: [0] }
-armadura:  { id: 1, enchants: [100] }
+armadura:  { id: 1, enchants: [116, 74] }
 armas:     [30]
 skills:    [0, 1]
 pociones:  [1]
