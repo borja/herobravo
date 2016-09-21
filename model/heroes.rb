@@ -15,10 +15,6 @@ def hero(id)
   heros[id]
 end
 
-def personajes
-  heros.map(&:personaje).uniq
-end
-
 def jugadores
   (heros + renegados).map(&:jugador).uniq
 end
