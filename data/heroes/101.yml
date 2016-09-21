@@ -3,7 +3,8 @@ personaje: "invicto"
 jugador:   "Alberto"
 status:    "reserva"
 nivel:     2
-xp:        0
+xp:        2
+repu:      1
 cuerpo:    7
 mente:     3
 mov:       8

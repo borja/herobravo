@@ -29,10 +29,10 @@
 -
   id:     7
   nombre: "moribundo"
-  efecto: > 
-    -1PC al realizar una acción.
-    Los moribundos tumbados doblan sus turnos de agonía.
-    Excepciones: Girar y el paso gratuito de movimiento.
+  efecto:
+          "-1PC al realizar una acción.
+           Los moribundos tumbados doblan sus turnos de agonía.
+           Excepciones: Girar y el paso gratuito de movimiento."
 -
   id:     8
   nombre: "paralizado"
@@ -45,3 +45,7 @@
   id:     10
   nombre: "envenenado"
   efecto: "Al inicio de tu turno tirarás 1 dado especial verde por cada contador de veneno sobre ti."
+-
+  id:     11
+  nombre: "cegado"
+  efecto: "Al atacar, tu defensor esquivará con un solo éxito de defensa. Las miniaturas en sigilo, tendrán rango 3, y no empujas."
