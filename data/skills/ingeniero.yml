@@ -1,59 +1,65 @@
 -
   id:          0
-  name:        "Chatarrero"
-  description: "+1 pieza al desactivar satisfactoriamente una trampa"
-  type:        "disparada"
   nivel:       2
   rangos:      2
+  name:        "Chatarrero"
+  type:        "disparada"
+  description: "+1 pieza al desactivar satisfactoriamente una trampa"
+
 -
   id:          1
+  nivel:       2
   name:        "Artillería"
-  description: "Disparo a distancia con el arma equipada. (Puede ser melee)"
   type:        "activa"
   coste:       "1 pieza"
-  nivel:       2
+  description: "Disparo a distancia con el arma equipada. (Puede ser melee)"
 -
   id:          2
-  name:        "Fuego amigo"
-  description: "Permite disparar a través de aliados sin dañarlos."
-  type:        "pasiva"
   nivel:       2
+  name:        "Fuego amigo"
+  type:        "pasiva"
+  description: "Permite disparar a través de aliados sin dañarlos."
 -
   id:          3
-  name:        "Cachivache"
-  description: "Comienzas el reto con rango/cachivaches. Solo podrás llevar 1 activo."
-  invocacion:  "droide con forma de araña y un depósito líquido con 3 PE. A cambio de 2 piezas puedes regenerarlo. Puede hacer las siguientes funciones: autodestrucción (dado de fuego) +1 a buscar si se coloca en el casco permite disparo oblicuo si se coloca en la mirilla."
-  type:        "pasiva"
   rangos:      4
   nivel:       2
   requisitos:  [0]
+  name:        "Cachivache"
+  type:        "pasiva"
+  description: "Comienzas el reto con rango/cachivaches (PcV)"
+  invocacion:
+               "droide con forma de araña y un depósito líquido con 3 PE. A cambio de 2 piezas puedes regenerarlo.
+                Puede hacer las siguientes funciones: autodestrucción (dado de fuego)
+                +1 a buscar si se coloca en el casco permite disparo oblicuo si se coloca en la mirilla."
 -
   id:          4
-  name:        "Desvalijar"
-  description: "Permite desmontar una puerta para obtener 1 pieza"
-  type:        "activa"
   nivel:       3
-  requisitos:  [0,0]
+  name:        "Desvalijar"
+  type:        "activa"
+  description: "Permite desmontar una puerta para obtener 1 pieza"
 -
   id:          5
-  name:        "Retroceso"
-  description: "El exceso de potencia de disparo hará que el ingeniero pueda elegir retroceder pudiendo golpear al posible enemigo con el que se choque."
-  type:        "disparada"
   nivel:       3
   requisitos:  [1]
+  name:        "Retroceso"
+  type:        "disparada"
+  description: 
+               "El exceso de potencia de disparo hará que el ingeniero pueda elegir retroceder
+                pudiendo golpear al posible enemigo con el que se choque."
+
 -
   id:          6
-  name:        "Éter"
-  description: "+3 puntos de éter (PE) al inicio del juego."
-  type:        "pasiva"
   nivel:       3
+  name:        "Éter"
+  type:        "pasiva"
+  description: "+3 puntos de éter (PE) al inicio del juego."
 -
   id:          7
-  name:        "Disparo a bocajarro"
-  description: "Permite disparar a melee con el arma otorgando fuerza +1 en el disparo"
-  type:        "pasiva"
   nivel:       3
   requisitos:  [1]
+  name:        "Disparo a bocajarro"
+  type:        "pasiva"
+  description: "Permite disparar a melee con el arma otorgando fuerza +1 en el disparo"
 -
   id:          8
   name:        "Disparo perforante"
@@ -64,19 +70,19 @@
   requisitos:  [1]
 -
   id:          9
-  name:        "Diógenes"
-  description: "Si causas daños al disparar artillería no gastas piezas."
-  type:        "pasiva"
   nivel:       4
   requisitos:  [1,5]
+  name:        "Diógenes"
+  type:        "pasiva"
+  description: "Si causas daños al disparar artillería no gastas piezas."
 -
   id:          10
-  name:        "Éter curativo"
-  description: "Permite utilizar el eter para recuperar 1 PC/rango por PE."
-  type:        "pasiva"
   nivel:       4
-  requisitos:  [6]
   rangos:      2
+  requisitos:  [6]
+  name:        "Éter curativo"
+  type:        "pasiva"
+  description: "Permite utilizar el eter para recuperar 1 PC/rango por PE."
 -
   id:          11
   name:        "Fuego a discreción"
