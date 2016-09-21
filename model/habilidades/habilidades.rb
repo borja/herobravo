@@ -22,6 +22,14 @@ def maestrodearmas
   load_yaml('skills/maestrodearma')
 end
 
+def magisters
+  load_yaml('skills/magisters')
+end
+
+def magister(id)
+  magisters.find { |m| m['id'] == id }.merge('char' => 'magister')
+end
+
 def maestrodearma(id)
   maestrodearmas.find { |m| m['id'] == id }.merge('char' => 'maestrodearmas')
 end

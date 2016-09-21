@@ -232,6 +232,12 @@
     main: "ciudad/maestrodearmas"
     right: "reglamento/derecha/personajes"
 -
+  ruta:  "magister"
+  title: "Magister"
+  template:
+    main: "ciudad/magister"
+    right: "reglamento/derecha/personajes"
+-
   ruta:  "notaria"
   title: "Notaría"
   template:

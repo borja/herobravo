@@ -1,0 +1,19 @@
+<table id='tresp'>
+	<thead>
+		<th colspan=2>Pericia</th>
+		<th>Descripción</th>
+		<th>Coste</th>
+	</thead>
+	<tbody>
+		<% magisters.each do |m| %>
+			<tr>
+				<td><% img_path = "'../images/skills/magisters/#{m['name']}.png'" %>
+					<img src=<%=img_path%> alt=<%=m['name']%>, id='icon' />
+				</td>
+				<td><%= m['name'] %></td>
+				<td><%= m['description'] %></td>
+				<td><%= m['coste'] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
