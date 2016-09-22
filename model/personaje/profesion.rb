@@ -24,24 +24,12 @@ class Profesion < Hash
   def maestrias
     profesion(id)['maestro']
   end
-  
+
   def imped
-    %w(clérigo bárbaro elfo mago enano 
-    tiefling rakshasa ladrón elohim)[id]
+    prof_impeds.keys[id]
   end
-  
+
   def why
-    case imped
-    when 'clérigo'  then 'Las artes Oscuras de la alquimia son heréticas'
-    when 'bárbaro'  then 'Los bárbaros son analfabetos'
-    when 'elfo'     then 'El cadáver de una bestia debe ser respetado'
-    when 'mago'     then 'La mejor táctica suele ser quemarlo todo'
-    when 'enano'    then 'Los encantamientos son deshonorables para la guerra'
-    when 'tiefling' then 'Prefieren alejarse de la plata, en la medida lo posible'
-    when 'rakshasa' then 'La madera es un material escaso en los lejanos desiertos del león'
-    when 'ladrón'   then 'Se niegan a hacer horas extra, y tienen un código de honor.'
-    when 'elohim'   then 'Según sus preceptos de fe, las aves son libres de toda servidumbre'
-    end
+    prof_impeds[imped]
   end
-  
 end
