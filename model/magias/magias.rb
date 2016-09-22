@@ -24,7 +24,7 @@ def hielos
 end
 
 def spells
-  load_yaml('magia/spells').map    { |s| Elemental.new(s) }
+  load_yaml('magia/spells').map { |s| Elemental.new(s) }
 end
 
 # TODO: tune up this!

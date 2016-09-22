@@ -28,6 +28,10 @@ def profesions
   profesions
 end
 
+def prof_impeds
+  load_yaml('profesiones/imped')
+end
+
 def profesion(id) # TODO : This is not working
   profesions[id]
 end
