@@ -608,3 +608,9 @@
   name:         "del serafín"
   descripcion:  "+1 Plegaria y +1 magia aleatoria de agua al iniciar el reto"
   tipo:         "agua"
+  -
+  id:           117
+  name:         "antiponzoñoso"
+  descripcion:  "+1 vs Peste"
+  tipo:         "agua"
+  
