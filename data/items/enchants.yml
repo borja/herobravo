@@ -613,4 +613,9 @@
   name:         "antiponzoñoso"
   descripcion:  "+1 vs Peste"
   tipo:         "agua"
+    -
+  id:           118
+  name:         "imperceptible"
+  descripcion:  "1/reto: +2 sigilo"
+  tipo:         "sombras"
   
