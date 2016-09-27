@@ -14,9 +14,9 @@ armas:
   - { id: 26, gemas: [31] }
   - { id: 7 }
 miscelaneas:
-  - { id: 6, enchants: [111] }
+  - { id: 6, enchants: [118] }
 protecciones:
-  - { id: 1 }
+  - { id: 1, enchants: [7] } }
   - { id: 3 }
   - { id: 4 }
   - { id: 8 }
