@@ -1,10 +1,11 @@
 name:      "Moorp"
 personaje: "conjurador"
 jugador:   "Arturo Salcedo"
-cuerpo:    4
-mente:     6
+nivel:     3
+cuerpo:    5
+mente:     7
 mov:       7
-oro:       22
+oro:       149
 familiar:  { id: 5, name: "Vladimir", torpe: true }
 pareja:    { nombre: "Leandra", raza: "maga", tipo: "pnj" }
 armadura:  { id: 1, gemas: [4] }
@@ -13,4 +14,7 @@ protecciones:
   - { id: 4, ranuras: 1 }
 miscelaneas:
   - { id: 2, ranuras: 1, enchants: [77] }
+  - { id: 1, gemas: [34] }
+  - { id: 1, enchants: [111] }
 hechizos: [0, 1, 2, 12, 13, 14, 18, 19, 20]
+skills: [0, 1, 3, 5]
