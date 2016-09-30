@@ -158,7 +158,7 @@
   template:
     left: "personaje/razas/left/links"
     main: "personaje/razas/center/main"
-    #right: "personaje/razas/right/stats"
+    right: "personaje/razas/right/stats"
 -
   ruta:  "raza"
   title: "view"
