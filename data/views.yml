@@ -151,14 +151,14 @@
   title: "view"
   template:
     main: "ciudad/profesiones"
-    right: "reglamento/derecha/personajes"
+    right: "personaje/profesiones/index"
     right2: "reglamento/derecha/personajes"
 -
   ruta:  "razas"
   template:
     left: "personaje/razas/left/links"
     main: "personaje/razas/center/main"
-    right: "personaje/razas/right/stats"
+    #right: "personaje/razas/right/stats"
 -
   ruta:  "raza"
   title: "view"

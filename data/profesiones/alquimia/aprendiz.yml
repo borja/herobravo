@@ -21,3 +21,8 @@
   coste:  300
   efecto: "Crea una poción curativa con 2 viales de sangre de demonio."
   venta:  50
+-
+  name:   "Redoma de ladrón"
+  coste:  100
+  efecto: "+1 sigilo hasta tu siguiente turno"
+  venta:  25

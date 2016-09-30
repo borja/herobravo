@@ -1,4 +1,4 @@
 -
   name:   "Maestro de táctica"
   coste:  1000
-  efecto: "Ninguna criatura con menor empuje puede empujarle."
+  efecto: "Los aliados pueden declararte como objetivo en tu turno (declarativas)"

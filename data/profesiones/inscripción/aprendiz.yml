@@ -17,3 +17,15 @@
   name:   "Origami"
   coste:  250
   efecto: "Puedes vender pergaminos en blanco por 50g."
+-
+  name:   "Transcribir"
+  coste:  150
+  efecto: "Bendice un pergamino mágico (transcripción), para poder ser utilizado por usuarios que no dominen esa escuela."
+-
+  name:   "Educción imperial"
+  coste:  250
+  efecto: "+1 a la recompensa que debe ofrecerse por cumplir objetivos secundarios en un reto."
+-
+  name:   "Solfeo"
+  coste:  200
+  efecto: "Requiere un instrumento musical. Permite cambiar el área de un efecto de pergamino, a visión(V)"
