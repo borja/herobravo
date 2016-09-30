@@ -2,3 +2,8 @@
   name:   "Maestro de inscripción"
   coste:  1000
   efecto: "Permite combinar dos runas en una runa única."
+-
+  name:   "Calcografía orfre"
+  coste:  500
+  matts:  [8]
+  efecto: "Requiere oro mágico. Añade un efecto de ardid a un pergamino mágico"

@@ -30,8 +30,8 @@
 -
   id:          4
   name:        "Maldecir"
-  description: "Ejecuta un hechizo contra un enemigo. Si sobrevive tirará 1DC. Con una calavera sufrirá su efecto todos los turnos."
-  type:        "activa"
+  description: "Maldice al objetivo (acción de hechizo). Todos los hechizos dañinos contra el objetivo, se recuperan."
+  type:        "única"
   coste:       "1PC"
   nivel:       2
 -
