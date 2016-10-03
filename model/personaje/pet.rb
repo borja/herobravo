@@ -11,8 +11,11 @@ class Pet < Hash
   end
 
   def personajes
-    pet(id)['personajes']
-    # TODO: "todos" <- a veces la respuesta es para todos
+    if pet(id)['personajes'] == 'todos'
+      ['enano', 'elfo', 'bárbaro', 'mago']
+    else
+      pet(id)['personajes']
+    end
   end
 
   def lacra
