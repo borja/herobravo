@@ -204,3 +204,9 @@
   personajes: "todos"
   bono:       "ataque: 1, defensa: 2, movimiento: 10, PC: 2, PM: 1, vuela"
   lacra:      "No puede participar en mazmorras cubiertas/ con techo, sin consumir 1 mano."
+-
+  id:         32
+  name:       "gato perdido"
+  personajes: "todos"
+  bono:       "+1 movimiento"
+  lacra:      "Los lobos y los skavens obtienen odio hacia su portador."

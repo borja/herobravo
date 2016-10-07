@@ -1,0 +1,25 @@
+name:      "Dracon"
+personaje: "matador"
+jugador:   "Aitor Arranz"
+status:    "activo"
+familiar:  { id: 32, name: "Arturillo", torpe: true }
+nivel:     2
+xp:        5
+cuerpo:    7
+mente:     3
+mov:       8
+oro:       36
+armadura:  2
+armas:
+  - { id: 29 }
+  - { id: 11 }
+protecciones:
+  - { id: 4, enchants: [117] }
+pergaminos:
+  - { id: 1, spells: [66] }
+abalorios:
+  - { id: 8 }
+piezas:    [3]
+skills:    [0, 2]
+master:    [6, 7]
+pociones:  [1]

@@ -5,7 +5,7 @@
   name:     "Tormenta de arena"
   tipo:     "Evocación - Área"
   efecto:   "Todas las miniaturas en la sala están cegadas y silenciadas."
-  diablura: "Desplaza a las miniaturas 2 casillas hacia una dirección a tu elección"
+  diablura: "Desplaza a las miniaturas 2 casillas hacia una misma dirección a tu elección"
   potencia: "+1 turno de duración"
 - 
   id:       1
