@@ -46,3 +46,9 @@
      1/reto: Invoca un desangrador de Khorne"
   size:   4
   precio: 500
+-
+  id:     8
+  name:   "libro del magistrado"
+  efecto: "Rentas: +1"
+  size:   4
+  precio: 200
