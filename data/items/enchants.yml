@@ -610,6 +610,11 @@
   tipo:         "agua"
 -
   id:           117
-  name:         "antitóxico"
+  name:         "antiponzoñoso"
   descripcion:  "+1 vs Peste"
-  tipo:         "tierra"
+  tipo:         "agua"
+-
+  id:           118
+  name:         "imperceptible"
+  descripcion:  "1/reto: +2 sigilo"
+  tipo:         "sombras"
