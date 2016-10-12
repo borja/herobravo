@@ -1,6 +1,7 @@
 name:      "Moorp"
 personaje: "conjurador"
 jugador:   "Arturo Salcedo"
+status:    "activo"
 nivel:     3
 cuerpo:    5
 mente:     7
