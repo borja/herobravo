@@ -19,7 +19,6 @@ pergaminos:
   - { id: 1, spells: [66] }
 abalorios:
   - { id: 8 }
-piezas:    [3]
 skills:    [0, 2]
 master:    [6, 7]
 pociones:  [1]
