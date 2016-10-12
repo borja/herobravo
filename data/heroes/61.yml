@@ -4,9 +4,9 @@ jugador:   "Iris"
 gender:    "female"
 status:    "reserva"
 profesion: { id: 8, aprendiz: [0, 5] }
-nivel:     4
+nivel:     5
 xp:        9
-cuerpo:    8
+cuerpo:    9
 mente:     5
 mov:       7
 armadura:  2
@@ -24,7 +24,7 @@ protecciones:
   - { id: 13 }
 miscelaneas:
   - { id: 6,  enchants: [111] }
-skills:   [0, 1, 2, 3, 6, 8]
+skills:   [0, 1, 2, 3, 4, 5, 6, 8]
 master:   [8]
 shadows:  [0, 1, 2, 3, 4, 5]
 pociones: [3]
