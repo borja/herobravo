@@ -1,5 +1,5 @@
 build:
-  image: borjamartin/herobravo
+  image: borjamartin/herobravo:0.0.2
   commands:
     - bundle install
     - bundle exec rake
