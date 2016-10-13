@@ -1,4 +1,5 @@
-image: borjamartin/herobravo
-script:
-  - bundle install
-  - rspec
+build:
+  image: borjamartin/herobravo
+  commands:
+    - bundle install
+    - bundle exec rake
