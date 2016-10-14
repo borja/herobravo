@@ -12,7 +12,7 @@ class Pet < Hash
 
   def personajes
     if pet(id)['personajes'] == 'todos'
-      ['enano', 'elfo', 'bárbaro', 'mago']
+      %w(enano elfo bárbaro mago)
     else
       pet(id)['personajes']
     end
