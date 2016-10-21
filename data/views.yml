@@ -25,6 +25,11 @@
     main: "reglamento/dado"
     right: "reglamento/derecha/combate"
 -
+  ruta:  "sigilo"
+  template:
+    main: "reglamento/combate/sigilo"
+    right: "reglamento/derecha/combate"
+-
   ruta:  "fases"
   title: "Fases"
   template:
