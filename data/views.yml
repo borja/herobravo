@@ -27,7 +27,7 @@
 -
   ruta:  "sigilo"
   template:
-    main: "reglamento/combate/sigilo"
+    main: "reglamento/combate/sigilo/main"
     right: "reglamento/derecha/combate"
 -
   ruta:  "fases"

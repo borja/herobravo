@@ -2,52 +2,50 @@
   id: 0
   pregunta: "¿De qué material vas a construir tu nueva morada?"
   respuestas:
-     - ["Estalagmitas", { drow: 5, goblin: 3 }]
-     - ["Adobe", { orco: 3, ungor: 2, goblin: 1 }]
-     - ["Piedra",  { enano: 2, clérigo: 1 }]
-     - ["Tierra húmeda", { nomuerto: 5 }]
-     - ["Plomo", { skaven: 5 }]
-     - ["Cuero", { ungor: 3, orco: 1, goblin: 1 }]
+     - ["Estalagmitas", { drow: 3, goblin: 1 }]
+     - ["Adobe", { orco: 2, ungor: 1, goblin: 1 }]
+     - ["Tierra húmeda", { nomuerto: 3 }]
+     - ["Plomo", { skaven: 3 }]
+     - ["Cuero", { ungor: 2, orco: 1, goblin: 1 }]
 -
   id: 1
   pregunta: "¿Qué bebida te gusta tomar?"
   respuestas:
-     - ["Sangre", { nomuerto: 5 }]
-     - ["Grog", { orco: 5 }]
-     - ["Mojito de Setas", { orco: 5 }]
-     - ["Vino dulce", { orco: 5 }]
-     - ["Leche agria", { orco: 5 }]
+     - ["Sangre", { nomuerto: 3, ungor: 1 }]
+     - ["Grog", { orco: 2 }]
+     - ["Mojito de Setas", { goblin: 3, orco: 1 }]
+     - ["Vino dulce", { drow: 3 }]
+     - ["Leche agria", { orco: 1, skaven: 2, ungor: 2 }]
 -
   id: 2
   pregunta: "¿Qué es lo más verde de ti?"
   respuestas:
-     - ["Mi pulmón", { ladrón: 2, enano: 1, bárbaro: 1 }]
-     - ["Mi piel", { clérigo: 3 }]
-     - ["La sangre de mis esclavos", { elfo: 2, bárbaro: 2, mago: 2 }]
-     - ["Mi almuerzo", { tiefling: 2, mago: 2, ladrón: 1 }]
-     - ["Soy daltónico", { elfo: 3 }]
+     - ["Mi pulmón", { nomuerto: 2 }]
+     - ["Mi piel", { orco: 3, goblin: 2 }]
+     - ["La sangre de mis esclavos", { drow: 3 }]
+     - ["Mi almuerzo", { ungor: 3, skaven: 2 }]
+     - ["Soy daltónico", { nomuerto: 1, skaven: 1 }]
 -
   id: 3
   pregunta: "¿A quién prestarías mil piezas de oro?"
   respuestas:
-     - ["A cualquiera con capacidad de devolvérmelo", { enano: 2 }]
-     - ["Al proveedor de zetaz", { ladrón: 2, mago: 1 }]
-     - ["Por ese precio se vendía mi madre", { ladrón: 2, tiefling: 2 }]
-     - ["A mi príncipe", { enano: 2, clérigo: 2 }]
-     - ["A cualquiera de mis camaradas", { bárbaro: 2, elfo: 2 }]
-     - ["A Jacyx, el prestamista, con un 20% de comisión", { enano: 1, ladrón: 1, mago: 1 }]
-     - ["A Greo, el hortelano necesitado", { clérigo: 2, elfo: 2 }]
+     - ["A cualquiera con capacidad de devolvérmelo", { ungor: 1, nomuerto: 1 }]
+     - ["Al proveedor de zetaz", { goblin: 2 }]
+     - ["Por ese precio se vendía mi madre", { orco: 1, goblin: 1 }]
+     - ["A cualquiera de mis camaradas", { orco: 1, ungor: 1 }]
+     - ["A Jacyx, el prestamista, con un 20% de comisión", { goblin: 1, drow: 3, nomuerto: 2 }]
+     - ["A mi señor de clan", { orco: 1, ungor: 1 }]
 
 -
   id: 4
-  pregunta: "¿Qué te pedirías de menú en la posada de Emma?"
+  pregunta: "¿Qué te pedirías de menú en la posada de Khark?"
   respuestas:
-     - ["Cordero asado con patatas y grasa de cerdo", { enano: 2, bárbaro: 2 }]
-     - ["Lubina al horno", { mago: 1, elfo: 1 }]
-     - ["Morcillas de sangre", { tiefling: 1 }]
-     - ["Pan seco con vino dulce", { ladrón: 2, clérigo: 2 }]
-     - ["Tostadas de mermelada con azúcar", { elfo: 2 }]
-
+     - ["Cordero asado con nabos y grasa de cerdo", { orco: 3, ungor: 1 }]
+     - ["Lenguados en salsa de ostras", { drow: 3 }]
+     - ["Boletus rebozados con ali-oli", { goblin: 3 }]
+     - ["Sesos aliñados con guindillas", { nomuerto: 3 }]
+     - ["Hígados con acelgas al pesto", { ungor: 2 }]
+     - ["Provoleta de queso de cabrales", { skaven: 3 }]
 -
   id: 5
   pregunta: "¿Qué pasó en tu última reyerta tabernaria?"
@@ -62,10 +60,10 @@
      - ["Bañé las calles con su sangre", { bárbaro: 2, tiefling: 2 }]
 -
   id: 6
-  pregunta: "¿Qué brilla más en tu corazón?"
+  pregunta: "¿Qué procuce un brillo intenso en tus ojos?"
   respuestas:
      - ["El recuerdo de mi madre", {}]
-     - ["El oro, el oro, el oro!", { ladrón: 2, enano: 2 }]
+     - ["El oro, el oro, el oro!", { goblin: 2, orco: 1 }]
      - ["Mi alma y mi honor", { clérigo: 2, enano: 2 }]
      - ["Mi corazón es un pozo de miseria", { tiefling: 3, ladrón: 2 }]
      - ["La gloria", { bárbaro: 3, enano: 1 }]
@@ -76,14 +74,12 @@
   id: 7
   pregunta: "¿Qué harías con un ejemplar manuscrito del pergamino Necrocódice?"
   respuestas:
-     - ["Cogerlo, divertirme con los dibujitos, ignorarlo", { bárbaro: 2, enano: 1 }]
-     - ["Fundar una nueva secta en torno a él.", { ladrón: 3, tiefling: 1, mago: 1 }]
-     - ["Quemarlo en una hoguera", { elfo: 2, clérigo: 1 }]
-     - ["Quemarlo en una pira sacramental", { clérigo: 3 }]
-     - ["Usarlo de papel higiénico", { bárbaro: 2 }]
-     - ["Esconderlo y venderlo en el mercado negro", { ladrón: 3 }]
-     - ["Leerlo, aprenderlo y ocultarlo", { mago: 3, ladrón: 1, tiefling: 1 }]
-
+     - ["Cogerlo, divertirme con los dibujitos, ignorarlo", { orco: 2 }]
+     - ["Fundar una nueva secta en torno a él.", { nomuerto: 2, drow: 1, skaven: 1 }]
+     - ["Usarlo de papel higiénico", { orco: 1, ungor: 1 }]
+     - ["Esconderlo y venderlo en el mercado negro", { drow: 1, skaven: 2, goblin: 2 }]
+     - ["Leerlo, aprenderlo y ocultarlo", { drow: 1, goblin: 1, nomuerto: 1 }]
+     - ["Quemarlo como sacrificio", { ungor: 2 }]
 -
   id: 8
   pregunta: "¿Cuál de éstas llaves has usado más?"
@@ -99,7 +95,7 @@
      - ["La llave de las mazmorras", { tiefling: 2, ladrón: 2 }]
 -
   id: 9
-  pregunta: "Un héroe jamás debería…"
+  pregunta: "Un renegado jamás debería…"
   respuestas:
      - ["Avanzar en el pasillo sin buscar trampas", { enano: 2 }]
      - ["Entrar en la vanguardia", { mago: 3 }]

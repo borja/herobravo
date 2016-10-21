@@ -24,8 +24,10 @@
 	Cualquier tirada de búsqueda exitosa, afectará a las unidades en sigilo.
 	(Por tanto se puede declarar como acción gratuita interaccionar contra las unidades descubiertas,
 	como si se tratara de una trampa encontrada, una puerta abierta, o un monstruo errante)
-	Los enemigos, "buscarán" a los personajes desaparecidos en función de su inteligencia.
-	Generalmente, tendrán prioridad los personajes "visibles" sobre los "invisibles"
+	Los enemigos, "decidirán buscar" a los personajes desaparecidos en función de su inteligencia.
+	Generalmente, tendrán prioridad los personajes "visibles" sobre los "invisibles",
+	pero enemigos con más Mente que el rango de sigilo alcanzado, podrían decantarse por buscar
+	en lugar de efectuar su acción de ataque. (A elección del Malvado Brujo)
 </p>
 <h3>Inmunidad al sigilo</h3>
 <p>
@@ -35,4 +37,4 @@
 <header>
 	<h2>Tabla de rangos de Sigilo</h2>
 </header>
-<%= erb :'reglamento/combate/tablasigilo' %>
+<%= erb :'reglamento/combate/sigilo/rangos' %>
