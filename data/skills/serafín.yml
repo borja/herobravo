@@ -33,3 +33,10 @@
   description: 
                "Cualquier aliado puede pagar 1 acción: Todos recuperarán 1PM,
                 y tú recuperarás 1 plegaria por cada 3 acciones invertidas."
+-
+  id:          5
+  nivel:       3
+  requisitos:  [2]
+  name:        "Templanza"
+  type:        "reactiva"
+  description: "+1 PM al defender con éxito"

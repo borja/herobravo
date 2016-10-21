@@ -33,3 +33,54 @@
   description: 
                "Cualquier aliado puede pagar 1PM: Recuperas tantos PC como puntos pagados,
                 y un hechizo de sangre por cada 3PM pagados."
+-
+  id:          5
+  nivel:       3
+  requisitos:  [2]
+  name:        "Morbosidad"
+  type:        "reactiva"
+  description: "+1 PM al causar daños con efectos de sangrado."
+-
+  id:          6
+  nivel:       3
+  requisitos:  [0]
+  name:        "Manantial de sangre"
+  type:        "única"
+  description: "Ataca con X dados desangradores a las miniaturas colindantes. (X = tus heridas)"
+-
+  id:          7
+  nivel:       4
+  requisitos:  [0]
+  name:        "Grito desgarrador"
+  type:        "única"
+  description: "Instinto: La siguiente vez que fueras a recibir X daño, inflinge XdC de daño mental a tu agresor"
+-
+  id:          8
+  nivel:       4
+  requisitos:  [2,3]
+  name:        "Mentira criminal"
+  type:        "pasiva"
+  description: "+1 sigilo (acumulable) al matar un enemigo por la espalda"
+-
+  id:          9
+  nivel:       5
+  requisitos:  [2, 4, 8]
+  name:        "No hay catarsis"
+  type:        "Reactiva"
+  description: "Recupera: Cosechar pecados al matar en sigilo por la espalda."
+-
+  id:          10
+  nivel:       5
+  rangos:      3
+  requisitos:  [2]
+  name:        "Sangre antigua"
+  type:        "pasiva"
+  description: "+1 potencia a los efectos de sangrado"
+-
+  id:          11
+  nivel:       6
+  rangos:      2
+  requisitos:  [1]
+  name:        "Sangre primigenia"
+  type:        "pasiva"
+  description: "+1 fuerza a los efectos de sangrado"
