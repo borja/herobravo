@@ -64,12 +64,12 @@
   nivel:        4
 -
   id:           9
+  nivel:        4
+  requisitos:   [3]
   name:         "Disparo encantado"
-  description:  "Se imbuye un hechizo a una flecha. Si la flecha impacta el objetivo recibe el hechizo. (Los hechizos benficiosos no inflingen daño)"
   type:         "activa"
   coste:        "1 magia"
-  requisitos:   [3]
-  nivel:        4
+  description:  "Se imbuye un hechizo a una flecha. Si la flecha impacta el objetivo recibe el hechizo. (Los hechizos benficiosos no inflingen daño)"
 -
   id:           10
   name:         "Lluvia de flechas"
@@ -87,39 +87,46 @@
   nivel:        5
 -
   id:           12
-  name:         "Cargar disparo"
-  description:  "Renuncia a su ataque para ganar el doble de potencia en su siguiente disparo"
-  type:         "declarativa"
-  requisitos:   [5]
   nivel:        5
+  requisitos:   [5]
+  name:         "Cargar disparo"
+  type:         "declarativa"
+  description:  "Renuncia a su ataque para ganar el doble de potencia en su siguiente disparo"
 -
   id:           13
   name:         "Tiro certero"
-  description:  "Por describir"
   type:         "activa"
+  description:  "Por describir"
 -
   id:           14
+  nivel:        5
+  requisitos:   [9]
   name:         "Arcanismo"
-  description:  "Si fallas recuperas"
-  type:         "activa"
+  type:         "reactiva"
+  description:  "Si dañas con un disparo encantado, recuperas el hechizo"
 -
   id:           15
+  nivel:        5
   name:         "Temple"
-  description:  "Ganas puntos de sosiego (PS) al matar"
   type:         "reactiva"
+  description:  "Ganas 1 punto de sosiego (PS) al matar"
 -
   id:           16
+  nivel:        6
+  requisitos:   [15]
   name:         "Salvavidas"
-  description:  "Ganas PS al matar si hay un aliado a melé"
   type:         "reactiva"
+  description:  "Ganas 1PS al matar si hay un aliado a melé"
 -
   id:           17
+  nivel:        6
   name:         "Tiro desesperado"
-  description:  "Otorga X armadura"
   type:         "activa"
   coste:        "X PS"
+  description:  "Otorga X armadura"
 -
   id:           18
+  nivel:        4
   name:         "Enfocar"
   description:  "Ganas puntos de enfoque (PE) al renunciar al movimiento cuando hay enemigos en línea de visión."
   type:         "reactiva"
