@@ -1,0 +1,15 @@
+name:      "Nala"
+personaje: "cazadora"
+jugador:   "Javier Galindo"
+status:    "reserva"
+gender:    "female"
+xp:        2
+cuerpo:    7
+mente:     3
+mov:       7
+armadura:  2
+armas:
+  - { id: 31 }
+  - { id: 7 }
+protecciones:
+  - { id: 3 }
