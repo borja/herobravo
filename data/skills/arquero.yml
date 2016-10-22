@@ -99,49 +99,49 @@
   type:         "activa"
 -
   id:           14
-  name:         "arcanismo"
+  name:         "Arcanismo"
   description:  "Si fallas recuperas"
   type:         "activa"
 -
   id:           15
-  name:         "temple"
+  name:         "Temple"
   description:  "Ganas puntos de sosiego (PS) al matar"
   type:         "reactiva"
 -
   id:           16
-  name:         "salvavidas"
+  name:         "Salvavidas"
   description:  "Ganas PS al matar si hay un aliado a melé"
   type:         "reactiva"
 -
   id:           17
-  name:         "tiro desesperado"
+  name:         "Tiro desesperado"
   description:  "Otorga X armadura"
   type:         "activa"
   coste:        "X PS"
 -
   id:           18
-  name:         "enfocar"
+  name:         "Enfocar"
   description:  "Ganas puntos de enfoque (PE) al renunciar al movimiento cuando hay enemigos en línea de visión."
   type:         "reactiva"
 -
   id:           19
-  name:         "tiro al corazón"
+  name:         "Tiro al corazón"
   description:  "+1 a la fuerza por cada PS que tengas."
   type:         "activa"
   coste:        "1PE"
 -
   id:           20
-  name:         "retroceso"
+  name:         "Retroceso"
   description:  "Puedes retroceder 1 casilla por cada exceso de daño al matar un enemigo pudiendo golpear hacia atrás."
   type:         "única"
 -
   id:           21
-  name:         "retroceder"
+  name:         "Retroceder"
   description:  "Recuperas retroceso al esquivar."
   type:         "reactiva"
 -
   id:           22
-  name:         "quemarropa"
+  name:         "Quemarropa"
   description:  "Ganas 1 PE al matar a melé."
   type:         "reactiva"
   nivel:        7

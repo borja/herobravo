@@ -267,3 +267,11 @@
   ranuras:     3
   diagonal:    true
   precio:      200
+-
+  id:          33
+  name:        "arco largo"
+  categoria:   "distancia"
+  ataque:      3
+  ranuras:     3
+  diagonal:    false
+  precio:      550
