@@ -55,13 +55,13 @@
   nivel:        3
 -
   id:           8
-  name:         "Disparo de rebote"
-  description:  "Permite disparar hacia un objeto u objetivo con un giro extra de trayectoria por rango"
-  type:         "activa"
-  rangos:       3
-  coste:        "3 movimiento"
-  requisitos:   [1,7]
   nivel:        4
+  rangos:       3
+  requisitos:   [1,7]
+  name:         "Disparo de rebote"
+  type:         "activa"
+  coste:        "3 movimiento"
+  description:  "Permite disparar hacia un objeto u objetivo con un giro extra de trayectoria por rango"
 -
   id:           9
   nivel:        4

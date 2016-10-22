@@ -4,19 +4,19 @@ jugador:   "Iris"
 gender:    "female"
 status:    "reserva"
 profesion: { id: 8, aprendiz: [0, 5] }
-nivel:     5
-xp:        9
+nivel:     6
+xp:        2
 cuerpo:    9
 mente:     5
 mov:       7
-armadura:  2
+armadura:  { id: 3, runas: [8] }
 armas:
   - { id: 26, gemas: [31] }
   - { id: 7 }
 miscelaneas:
-  - { id: 6, enchants: [118] }
+  - { id: 6, enchants: [111] }
 protecciones:
-  - { id: 1, enchants: [7] } 
+  - { id: 1, enchants: [118] } 
   - { id: 3 }
   - { id: 4 }
   - { id: 8 }

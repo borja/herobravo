@@ -24,6 +24,6 @@ miscelaneas:
 pergaminos:
   - { id: 1, spells: [66] }
 hechizos:  [12, 13, 14]
-skills:    [1, 2, 6, 7]
+skills:    [1, 2, 4, 5, 6, 7]
 master:    [12]
 magister:  [0]
