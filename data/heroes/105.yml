@@ -1,0 +1,13 @@
+name:      "Endus"
+personaje: "hoplita"
+jugador:   "Verion"
+xp:        2
+cuerpo:    8
+mente:     2
+mov:       7
+armadura:  2
+armas:
+  - { id: 1 }
+  - { id: 7 }
+protecciones:
+  - { id: 3 }
