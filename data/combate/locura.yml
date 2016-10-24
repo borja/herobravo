@@ -1,0 +1,46 @@
+-
+  nombre: "Poseído por el Caos"
+  efecto:
+          "El MB toma el control del personaje, ignorando las posteriores
+           tiradas de locura siempre que consiga provocar daños a sus aliados."
+-
+  nombre: "Histérico"
+  efecto: 
+          "El personaje sale corriendo en dirección aleatoria (sprint). En esa carrera
+           solo podrá efectuar 2 giros, pudiendo recibir daño por colisión en caso de impactar.
+           (1 dado de ataque por cada casilla de exceso)"
+-
+  nombre: "Masoquista"
+  efecto:
+          "El personaje golpea su cuerpo con la pared más cercana. Se inflingirá un ataque
+           sin armas que no podrá defender."
+-
+  nombre: "Esquizofrénico"
+  efecto:
+          "El personaje recorre la sala buscando setas en una vorágine de alucinaciones,
+           activando todas las trampas, puertas secretas y realizando una búsqueda de tesoros."
+-
+  nombre: "Paranoico"
+  efecto:
+          "El personaje golpea con su arma principal al objetivo más cercano (aleatoriamente).
+           podría golpear a sus compañeros."
+-
+  nombre: "Autista"
+  efecto: "El personaje no responde, aunque sea atacado, a ningún estímulo."
+-
+  nombre: "Estresado"
+  efecto: "El personaje huye hacia la salida."
+-
+  nombre: "Eufórico"
+  efecto: "El personaje se desnuda mientras grita al viento que se siente fértil."
+-
+  nombre: "Bipolar"
+  efecto: "El personaje copiará el último turno del jugador sentado a su derecha."
+-
+  nombre: "Enajenado"
+  efecto:
+          "Los personajes mágicos hechizarán aleatoriamente a un héroe. (pudiendo ser ellos mismos).
+           los personajes físicos utilizarán una habilidad aleatoria en su lugar."
+-
+  nombre: "Lúcido"
+  efecto: "Durante este turno, el héroe ignora todos los efectos de locura"

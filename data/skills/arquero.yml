@@ -1,58 +1,58 @@
 -
   id:           0
-  name:         "Tiro de misericordia"
-  description:  "+1 fuerza contra objetivos con más heridas que PC. Al matar con tiro de misericordia recupéralo."
-  type:         "única"
   nivel:        2
+  name:         "Tiro de misericordia"
+  type:         "única"
+  description:  "+1 fuerza contra objetivos con más heridas que PC. Al matar con tiro de misericordia recupéralo."
 -
   id:           1
-  name:         "Disparo oblicuo"
-  description:  "Permite disparar en diagonal"
-  type:         "pasiva"
   nivel:        2
+  name:         "Disparo oblicuo"
+  type:         "pasiva"
+  description:  "Permite disparar en diagonal"
 -
   id:           2
-  name:         "Disparo a bocajarro"
-  description:  "Permite disparar cuerpo a cuerpo"
-  type:         "pasiva"
   nivel:        2
+  name:         "Disparo a bocajarro"
+  type:         "pasiva"
+  description:  "Permite disparar cuerpo a cuerpo"
 -
   id:           3
+  nivel:        2
+  rangos:       3
   name:         "Disparo arcano"
-  description:  "+1/rango potencia de ataque"
   type:         "activa"
   coste:        "1/rango PM"
-  rangos:       3
-  nivel:        2
+  description:  "+1/rango potencia de ataque"
 -
   id:           4
-  name:         "Ataque furtivo"
-  description:  "Si un enemigo ataca a un aliado que este al lado del arquero este puede atacar al monstruo con una daga"
-  type:         "única"
   nivel:        2
+  name:         "Ataque furtivo"
+  type:         "única"
+  description:  "Si un enemigo ataca a un aliado que este al lado del arquero este puede atacar al monstruo con una daga"
 -
   id:           5
+  nivel:        2
+  rangos:       3
   name:         "Disparo firme"
-  description:  "+1 potencia a un dado de ataque"
   type:         "activa"
   coste:        "(6 -1/rango) movimiento"
-  rangos:       3
-  nivel:        2
+  description:  "+1 potencia a un dado de ataque"
 -
   id:           6
+  nivel:        3
+  rangos:       2
   name:         "Disparo múltiple"
-  description:  "1 tiro extra/rango"
   type:         "activa"
   coste:        "5 movimiento"
-  rangos:       2
-  nivel:        3
+  description:  "1 tiro extra/rango"
 -
   id:           7
-  name:         "Dominio del arco"
-  description:  "Permite disparar sin efectuar líneas rectas. (No puede atravesar enemigos)"
-  type:         "pasiva"
-  requisitos:   [1]
   nivel:        3
+  requisitos:   [1]
+  name:         "Dominio del arco"
+  type:         "pasiva"
+  description:  "Permite disparar sin efectuar líneas rectas. (No puede atravesar enemigos)"
 -
   id:           8
   nivel:        4
@@ -72,19 +72,19 @@
   description:  "Se imbuye un hechizo a una flecha. Si la flecha impacta el objetivo recibe el hechizo. (Los hechizos benficiosos no inflingen daño)"
 -
   id:           10
+  nivel:        5
+  requisitos:   [3]
   name:         "Lluvia de flechas"
-  description:  "1 tiro básico a todas las unidades dentro de la misma sala/pasillo. (excepto el arquero)"
   type:         "activa"
   coste:        "4 PM"
-  requisitos:   [3]
-  nivel:        5
+  description:  "1 tiro básico a todas las unidades dentro de la misma sala/pasillo. (excepto el arquero)"
 -
   id:           11
-  name:         "Fuego amigo"
-  description:  "Permite disparar a través de unidades amigas"
-  type:         "pasiva"
-  requisitos:   [5]
   nivel:        5
+  requisitos:   [5]
+  name:         "Fuego amigo"
+  type:         "pasiva"
+  description:  "Permite disparar a través de unidades amigas"
 -
   id:           12
   nivel:        5
@@ -133,22 +133,23 @@
 -
   id:           19
   name:         "Tiro al corazón"
-  description:  "+1 a la fuerza por cada PS que tengas."
   type:         "activa"
   coste:        "1PE"
+  description:  "+1 a la fuerza por cada PS que tengas."
 -
   id:           20
   name:         "Retroceso"
-  description:  "Puedes retroceder 1 casilla por cada exceso de daño al matar un enemigo pudiendo golpear hacia atrás."
   type:         "única"
+  description:  "Puedes retroceder 1 casilla por cada exceso de daño al matar un enemigo pudiendo golpear hacia atrás."
 -
   id:           21
   name:         "Retroceder"
-  description:  "Recuperas retroceso al esquivar."
+  requisitos:   [20]
   type:         "reactiva"
+  description:  "Recuperas retroceso al esquivar."
 -
   id:           22
-  name:         "Quemarropa"
-  description:  "Ganas 1 PE al matar a melé."
-  type:         "reactiva"
   nivel:        7
+  name:         "Quemarropa"
+  type:         "reactiva"
+  description:  "Ganas 1 PE al matar a melé."

@@ -30,6 +30,11 @@
     main: "reglamento/combate/sigilo/main"
     right: "reglamento/derecha/combate"
 -
+  ruta:  "locura"
+  template:
+    main: "reglamento/combate/locura"
+    right: "reglamento/derecha/combate"
+-
   ruta:  "fases"
   title: "Fases"
   template:

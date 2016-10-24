@@ -1,0 +1,32 @@
+<header>
+	<h2>Locura</h2>
+</header>
+<p>
+	Cuando los puntos de mente de un personaje descienden a cero, el personaje perderá
+	toda su cordura, y todos los turnos deberá realizar una tirada en la tabla de locura.
+</p>
+<h3>Inmunidad</h3>
+<p>
+	Lo no-muertos están exentos de esta condición, según las leyes de la no-vida.
+	A su vez, los personajes en estado furioso podrán utilizar su personaje para combatir,
+	mientras que permanezcan en tal estado
+</p>
+</p>
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>2d6</th>
+			<th>Resultado</th>
+			<th>Efecto</th>
+		</tr>
+	</thead>
+	<tbody>
+			<% locura.each_with_index do |loc, i | %>
+				<tr>
+					<td><%= i+2 %></td>
+					<td><%= loc['nombre'] %></td>
+					<td><%= loc['efecto'] %></td>
+				</tr>
+			<% end %>
+	</tbody>
+</table>

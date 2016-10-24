@@ -18,3 +18,7 @@ end
 def posicion(id)
   posiciones[id]
 end
+
+def locura
+  load_yaml('combate/locura')
+end
