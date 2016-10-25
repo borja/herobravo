@@ -5,6 +5,7 @@ jugador:   "Javier Galindo"
 status:    "activo"
 familiar:  { id: 15, name: "Viviana"}
 profesion: { id: 3, aprendiz: [0, 3] }
+pareja:    { nombre: "Raulph", raza: "pirado", tipo: "pnj" }
 progenitores: 
   - "Gabrielle"
   - 59
