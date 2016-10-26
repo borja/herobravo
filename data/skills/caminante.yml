@@ -1,6 +1,6 @@
 -
   id:           0
-  name:         "golpe sombrío"
+  name:         "Golpe sombrío"
   nivel:        2
   description:  "1 PS: +1 potencia a un golpe (no-frontal) a melé."
   type:         "Activa"
@@ -30,7 +30,7 @@
   nivel:        3
 -
   id:           5
-  name:         "Dos Armas"
+  name:         "Dos armas"
   description:  "Permite llevar un arma en la mano torpe pudiendo llevar así dos armas a la vez. Nivel I: Puede llevar una daga. Nivel II: Puede llevar espadas cortas. Nivel III: Puede llevar espadas largas."
   type:         "Pasiva"
   nivel:        3
