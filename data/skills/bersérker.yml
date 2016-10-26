@@ -80,7 +80,7 @@
   nivel:        6
   rangos:       2
   requisitos:   [3]
-  name:         "Brazo del heroe"
+  name:         "Brazo del héroe"
   type:         "Pasiva"
   description:  "Permite llevar en 1/rango mano, armas a dos manos"
 -
