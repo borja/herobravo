@@ -1,4 +1,5 @@
 <% char = nomalize_pj(request.path_info.split('/').last) %>
+<% char.gsub!('se%C3%B1or%20de%20las%20bestias', 'beastslord') %>
 <table id='tresp'>
 	<thead>
 		<tr><th>Nivel</th>
