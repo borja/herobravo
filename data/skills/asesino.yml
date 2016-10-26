@@ -39,7 +39,7 @@
   nivel:        3
   requisitos:   [2]
   name:         "Formado entre asesinos"
-  type:         "Única"
+  type:         "única"
   description:  "Antes de ejecutar un ataque contra el asesino giras la miniatura para encarar a tu agresor."
 -
   id:           5
@@ -94,7 +94,7 @@
   nivel:        6
   requisitos:   [3]
   name:         "Golpe a la carótida"
-  type:         "Única"
+  type:         "única"
   description:  "Requiere dagas. No utilizable en ciertos enemigos. El objetivo debe defenderse con defensa verdadera."
 -
   id:           11

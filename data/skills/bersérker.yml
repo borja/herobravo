@@ -15,7 +15,7 @@
   id:           2
   nivel:        2
   name:         "Barrido"
-  type:         "Única"
+  type:         "única"
   description:  "Hace un ataque a todo su alrededor. Requiere armas a dos manos"
 -
   id:           3
@@ -29,7 +29,7 @@
   nivel:        2
   name:         "Grito de batalla"
   description:  "+1 Potencia al primer éxito del ataque de todos los aliados en S/P"
-  type:         "Única"
+  type:         "única"
 -
   id:           5
   nivel:        3
@@ -51,7 +51,7 @@
   nivel:        4
   requisitos:   [0]
   name:         "Grito de sangre"
-  type:         "Única"
+  type:         "única"
   description:  "Todos los aliados en S/P: +1 PC al matar un enemigo hasta final de turno."
 -
   id:           8

@@ -18,8 +18,12 @@
 						<table>
 							<tr>
 								<% c.requisitos.each do |r| %>
-									<% req = Habilidad.new(send(char,r)) %>
-									<td><%= erb :'display/skill', locals: { skill: req } %></td>
+									<% if r.is_a? Fixnum %>
+										<% req = Habilidad.new(send(char,r)) %>
+										<td><%= erb :'display/skill', locals: { skill: req } %></td>
+									<% else %>
+										<td><%= r %></td>
+									<% end %>
 								<% end %>
 							</tr>
 						</table>

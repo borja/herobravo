@@ -1,29 +1,66 @@
 -
   id:          0
-  name:        "Golpe santificado"
-  description: "1 plegaria: +1 fuerza en tu siguiente ataque."
-  type:        "activa"
   nivel:       2
+  name:        "Acto santificado"
+  type:        "activa"
+  coste:       "1PM"
+  description: "Desactiva automáticamente una trampa recién descubierta"
 -
-  id:           0
-  name:         "plegaria santa"
-  description:  "sin definir"
-  type:         "única"
-  nivel:        2
+  id:          1
+  nivel:       2
+  name:        "Plegaria santa"
+  type:        "única"
+  description: "Puedes elegir el resultado de tu próxima plegaria"
 -
-  id:           1
-  name:         "aura de bienaventura"
-  description:  "sin definir"
-  type:         "pasiva"
-  nivel:        2
+  id:          2
+  nivel:       2
+  rangos:      2
+  name:        "Aura de bienaventura"
+  type:        "pasiva"
+  description: "Al sanar PC a un aliado, puede elegir recuperar la minusmitad PM (+1/rango) en su lugar."
 -
-  id:           2
-  nivel:        3
-  name:         "último ruego"
-  description:  "Se aplica cuando el sacerdote está muriendo."
-  type:         "pasiva"
+  id:          3
+  nivel:       2
+  rangos:      3
+  name:        "Santurronería"
+  type:        "activa"
+  coste:       "1PM"
+  description:
+               "Cuando ejecutas una plegaria sin enemigos visibles,
+                puedes guardar su resultado (1/rango). Podrás ejecutarla
+                en cualquier momento como acción gratuita, por 1PM."
 -
-  id:           3
-  name:         "armonía"
-  description:  "Si el sacerdote cura a 1 aliado obtiene +1/Zen."
-  type:         "pasiva"
+  id:          4
+  nivel:       3
+  name:        "Último ruego"
+  type:        "pasiva"
+  description:
+               "Se aplica cuando el sacerdote está muriendo:
+                las plegarias, habilidades únicas y habilidades activas, no tienen coste."
+-
+  id:          5
+  nivel:       3
+  name:        "Armonía"
+  type:        "pasiva"
+  description: "Si eres el personaje con más PM actuales, podrás dormir gratuitamente a un aliado"
+-
+  id:          6
+  nivel:       3
+  name:        "Ruego"
+  type:        "activa"
+  coste:       "1PM"
+  description: "Tu próxima plegaria será summum. (Se debe decir antes de tirar)"
+-
+  id:          7
+  nivel:       4
+  requisitos:  [1, 5]
+  name:        "Luz de Sigmar"
+  type:        "reactiva"
+  description: "Al ejecutar Imposición de Manos sobre un aliado, si sobrepasas su máximo de vida, recupera Plegaria santa"
+-
+  id:          8
+  nivel:       4
+  requisitos:  [2, 3, 5]
+  name:        "Líder espiritual"
+  type:        "pasiva"
+  description: "Los aliados cuerpo a cuerpo, atacarán con +1 potencia en su primer éxito."
