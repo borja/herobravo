@@ -1,3 +1,9 @@
+<header>
+	<h2><%= params[:param].capitalize %></h2>
+</header>
+<h3>Descripción</h3>
+<%= erb :"reglamento/bestiario/#{params[:param]}" %>
+<h3>Estadísticas</h3>
 <table id='tresp'>
 	<thead>
 		<tr>

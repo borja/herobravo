@@ -46,3 +46,11 @@
   movimiento: 8
   mente:      0
   cuerpo:     2
+-
+  id:         6
+  nombre:     'vampiro'
+  ataque:     3
+  defensa:    5
+  movimiento: 7
+  mente:      5
+  cuerpo:     4
