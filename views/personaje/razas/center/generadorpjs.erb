@@ -1,0 +1,21 @@
+<table id='tresp'>
+	<thead>
+		<tr>
+			<th>1d8</th>
+			<th colspan=2>Personaje</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% elegibles = razas.to_a.select{|pj| pj.last.last != 'humano' } %>
+		<% elegibles.each_with_index do |pj, i| %>
+			<tr>
+				<td><%= i+1 %></td>
+				<td><img src=../images/personajes/<%= pj.first %>.png alt="<%= pj.first %>" /, id='icon'></td>
+				<td><%= pj.first %></td>
+			</tr>
+		<% end %>
+		<tr>
+			<td>8</td>
+			<td colspan=2>Puedes elegir el personaje que desees</td>
+	</tbody>
+</table>

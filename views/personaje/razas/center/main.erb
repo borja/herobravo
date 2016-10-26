@@ -3,10 +3,28 @@
 </header>
 <h3>Las <%= total_razas %> razas disponibles</h3>
 <p>
-	Hay muchas razas en el Viejo Mundo. Pero las razas disponibles para los personajes,
-	son 4: elfos, enanos, humanos y tieflings. Aunque éstos últimos no están disponibles.
-	Cada raza tiene sus particularidades, como las estadísticas que puedes comprobar en la derecha,
+	Hay muchas razas en el Viejo Mundo. Cada raza tiene sus particularidades,
+	como las estadísticas que puedes comprobar en la derecha, su lenguaje,
 	su forma de engendrar descendencia, o incluso su filosofía ante la vida y la muerte.
+</p>
+<p>
+	Los jugadores que no tengan un personaje previo, deberán escoger un personaje
+	entre las razas iniciales. En el caso del humano, solo estarán disponibles
+	los humanos sin parangón (bárbaros y magos). Los clérigos y ladrones, solo
+	pueden ser utilizados cuando un jugador haya tenido descendientes.
+</p>
+<h3>Creando un personaje alternativo (reservista)</h3>
+<p>
+	Los reservistas son personajes que los jugadores pueden crear para aumentar
+	su <a href='/jugadores' target="_blank">puntuación de honor</a>, o bien
+	para equilibrar el nivel respecto a sus compañeros de grupo.<br/>(Ya que lo recomendable,
+	es nunca superar una diferencia de 6 niveles entre el personaje de mayor y menor nivel,
+	durante una partida).
+</p>
+<p>
+	Solamente en este caso especial, los jugadores podrán jugar con razas especiales,
+	si deciden tirar en la siguiente tabla de generación aleatoria:
+	<%= erb :'personaje/razas/center/generadorpjs'%>
 </p>
 <h3>El inevitable fin de un héroe</h3>
 <p>
