@@ -1,6 +1,6 @@
 <header>
 	<h2>Pregunta Nº <%= params[:param].length %> / <%= preguntas.count %></h2>
-	<h3><%= preguntas[params[:param].length-1][:pregunta] %></h3>
+	<h3><%= preguntas[params[:param].length-1]['pregunta'] %></h3>
 </header>
 <ul class="link-list">
 	<% preguntas[params[:param].length-1]['respuestas'].each_with_index do |respuesta,num| %>
