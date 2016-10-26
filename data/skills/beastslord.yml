@@ -11,43 +11,55 @@
 -
   id:           1
   nivel:        2
+  requisitos:  [0]
   name:         "Moverse entre bestias"
   type:         "Pasiva"
-  description:  "Permite a los otros jugadores poder moverse a través de los animales invocados."
+  description:  "Permite a los otros jugadores poder moverse a través de tus esbirros."
 -
   id:           2
   nivel:        2
   name:         "Ira poderosa"
   type:         "Pasiva"
-  description:  "Por describir."
+  description:
+                "+1 potencia a todas las miniaturas que golpeen (melee) al mismo objetivo
+                 que el Señor de las Bestias, mientras esté enfurecido."
 -
   id:           3
-  nivel:        3
-  name:         "Poderío de la naturaleza"
-  type:         "Pasiva"
-  description:  "Por describir."
--
-  id:           4
+  nivel:        2
   name:         "Salto poderoso"
   type:         "Pasiva"
-  description:  "No hay penalización a la hora de bajar desde una posición elevada."
+  description:  "No hay penalización al moverse entre diferentes alturas."
+-
+  id:           4
+  nivel:        3
+  requisitos:  [0]
+  name:         "Poderío de la naturaleza"
+  type:         "Pasiva"
+  description:  "+1 ataque a las bestias invocadas al atacar en conjunto"
 -
   id:           5
+  nivel:        3
   name:         "Grito de batalla"
-  type:         "Activa"
-  description:  "+1 Potencia en la tirada de ataque."
+  type:         "Única"
+  description:  "+1 Potencia de ataque a todos los aliados y esbirros en la sala"
 -
   id:           6
+  nivel:        4
   name:         "Búsqueda exhaustiva"
   type:         "Pasiva"
-  description:  "Permite buscar tesoros en pasillos."
+  description:  "Te permite buscar tesoros en pasillos."
 -
   id:           7
+  nivel:        6
+  requisitos:  [0]
   name:         "Rituales"
-  type:         "Pasiva"
-  description:  "Por describir."
+  type:         "Activa"
+  coste:        "2PC"
+  description:  "Obtienes una habilidad pasiva de un esbirro, mientras permanezca con vida."
 -
   id:           8
+  nivel:        9
+  requisitos:  [7]
   name:         "Sangre de la naturaleza"
   type:         "Pasiva"
   description:  "Permite que el señor de las bestias reciba daño en lugar de sus animales (ritual)."
