@@ -1,0 +1,22 @@
+name:      "Michonne"
+personaje: "cazadora"
+jugador:   "Daniel Cabañas"
+gender:    "female"
+profesion: { id: 3, aprendiz: [0] }
+nivel:     2
+xp:        0
+cuerpo:    7
+mente:     3
+mov:       8
+oro:       17
+armadura:  2
+armas:
+  - { id: 1, enchants: [83, 47] }
+  - { id: 7 }
+protecciones:
+  - { id: 2 }
+skills:   [0, 1]
+pociones: [3]
+tesoro:
+  gemas: [7]
+master:   [0]
