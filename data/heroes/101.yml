@@ -2,6 +2,7 @@ name:      "Mufasa"
 personaje: "invicto"
 jugador:   "Alberto"
 status:    "reserva"
+pareja:    { char: 106, tipo: "pj" }
 nivel:     2
 xp:        2
 repu:      1
