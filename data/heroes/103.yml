@@ -1,9 +1,10 @@
 name:      "Dracon"
 personaje: "matador"
 jugador:   "Aitor Arranz"
-status:    "activo"
+muerto:    true
+status:    "retirado"
 familiar:  { id: 32, name: "Arturillo", torpe: true }
-nivel:     2
+nivel:     4
 xp:        5
 cuerpo:    7
 mente:     3

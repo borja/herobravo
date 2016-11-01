@@ -2,7 +2,8 @@ name:      "Estella"
 personaje: "derviche"
 gender:    "female"
 jugador:   "Javier Galindo"
-status:    "activo"
+muerto:    true
+status:    "retirado"
 familiar:  { id: 15, name: "Viviana"}
 profesion: { id: 3, aprendiz: [0, 3] }
 pareja:    { nombre: "Raulph", raza: "pirado", tipo: "pnj" }
