@@ -4,13 +4,25 @@ jugador:     "Iris"
 status:      "reserva"
 profesion:   { id: 1, aprendiz: [0] }
 nivel:       3
+xp:          6
 cuerpo:      8
 mente:       4
 mov:         7
 armadura:    1
+armas:        
+  - { id: 20, enchants: [119] }
+  - { id: 4, enchants: [120] }
+protecciones:
+  - { id: 8 }
 miscelaneas:
   - { id: 21, enchants: [100, 56] }
+pergaminos:
+  - { id: 1, spells: [11] }
 hechizos: [0, 1, 2]
 shadows:  [0, 1, 2]
 blood:    [0, 1, 2]
 skills:   [0, 3, 6, 8]
+pociones: [3]
+oro:      213
+tesoro:
+  gemas: [1]

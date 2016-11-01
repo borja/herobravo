@@ -618,3 +618,13 @@
   name:         "imperceptible"
   descripcion:  "1/reto: +2 sigilo"
   tipo:         "sombras"
+-
+  id:           119
+  name:         "sombraluz"
+  descripcion:  "Al ejecutar una plegaria, lanzará un hechizo de sombras y viceversa."
+  tipo:         "sombras"
+-
+  id:           120
+  name:         "de las sombras"
+  descripcion:  "+1 potencia en magias de sombras"
+  tipo:         "sombras"
