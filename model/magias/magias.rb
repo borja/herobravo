@@ -7,6 +7,10 @@ def plegarias
   load_yaml('magia/plegarias').map { |s| Plegaria.new(s) }
 end
 
+def execraciones
+  load_yaml('magia/execraciones').map { |s| Execracion.new(s) }
+end
+
 def sangres
   load_yaml('magia/sangres').map   { |s|    Sangre.new(s) }
 end

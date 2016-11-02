@@ -305,6 +305,12 @@
     left2: "torre/left/elementales"
     main: "magia/plegarias"
 -
+  ruta:  "execraciones"
+  template:
+    left: "torre/left/sagradas"
+    left2: "torre/left/elementales"
+    main: "magia/execraciones"
+-
   ruta:  "elficas"
   title: "Magias élficas"
   template:

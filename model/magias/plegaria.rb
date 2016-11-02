@@ -8,3 +8,9 @@ class Plegaria < Magia
     'plegaria'
   end
 end
+
+class Execracion < Plegaria
+  def elemento
+    'execración'
+  end
+end

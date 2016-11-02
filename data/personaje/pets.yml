@@ -7,7 +7,7 @@
 -
   id:         1
   name:       "gato"
-  personajes: ["mago"]
+  personajes: ["mago","rakshasa"]
   bono:       "+1 movimiento"
   lacra:      "Los lobos y los skavens obtienen odio hacia su portador."
 -
@@ -45,7 +45,7 @@
 -
   id:         7
   name:       "culebra"
-  personajes: ["mago"]
+  personajes: ["mago","rakshasa"]
   bono:       "dagas/cuchillos: envenenan"
   lacra:      "-1 Movimiento"
   sex:        "female"
@@ -58,7 +58,7 @@
 -
   id:         9
   name:       "araña"
-  personajes: ["mago"]
+  personajes: ["mago","rakshasa"]
   bono:       "+1 saltar fosos"
   lacra:      "Todos los elfos tienen odio contra su portador."
   sex:        "female"
@@ -155,7 +155,7 @@
 -
   id:         24
   name:       "armadillo"
-  personajes: ["enano"]
+  personajes: ["enano","rakshasa"]
   bono:       "1/reto: Puedes defender con defensa verdadera"
   lacra:      "Fallar una tirada de miedo: te tumbas en posición fetal."
 -
@@ -210,3 +210,15 @@
   personajes: "todos"
   bono:       "+1 movimiento"
   lacra:      "Los lobos y los skavens obtienen odio hacia su portador."
+-
+  id:         33
+  name:       "escorpión"
+  personajes: ["rakshasa"]
+  bono:       "armas de asta/ dos manos: envenenan"
+  lacra:      "Si por error envenenas a un aliado, la herida es mortal."
+-
+  id:         34
+  name:       "escarabajo dorado"
+  personajes: ["rakshasa"]
+  bono:       "Ignora la primera maldición del tesoro"
+  lacra:      "El Malvado Brujo podrá repetir el dado de Sigmar en la próxima maldición del grupo"
