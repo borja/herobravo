@@ -30,7 +30,7 @@
 			</table><br/>
 		</center>
 		<ul>
-			<% if spell.elemento == 'plegaria' %>
+			<% if %w(plegaria execración).include? spell.elemento %>
 				<li>Chakra : <%= spell.chakra %></li>
 				<li>Summun : <%= spell.summun %></li>
 			<% end %>

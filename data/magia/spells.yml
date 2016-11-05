@@ -1,5 +1,7 @@
 -
   id:       0
+  alcance:  "M"
+  duracion: 0
   name:     "bola de fuego"
   tipo:     "Conjuro"
   efecto:   "Causa 2 dados de ataque por fuego."
@@ -9,6 +11,8 @@
   ardid:    "Miniaturas colindantes a las víctimas sufren Fuego de Ira."
 -
   id:       1
+  alcance:  "V"
+  duracion: "∞"
   name:     "fuego de ira"
   tipo:     "Superchería"
   efecto:   "Causa 1 dado de ataque directo a un enemigo del tablero."
@@ -18,6 +22,8 @@
   ardid:    "Si el objetivo está en línea de visión el daño es físico y mental."
 -
   id:       2
+  alcance:  "V"
+  duracion: "E"
   name:     "valentía"
   tipo:     "Bendición"
   efecto:   "+1 ataque de un aliado."
@@ -27,6 +33,8 @@
   ardid:    "Si se lanza como aura los dados de ataque son negros."
 -
   id:       3
+  alcance:  "V"
+  duracion: "∞"
   name:     "maldición de fuego"
   tipo:     "Maldición"
   efecto:   "El objetivo queda envuelto en llamas."
@@ -36,6 +44,8 @@
   ardid:    "Duplica el daño de efectos de fuego sobre el objetivo."
 -
   id:       4
+  alcance:  0
+  duracion: "E"
   name:     "prender arma"
   tipo:     "Bendición"
   efecto:   "El arma objetivo añade un dado de fuego al atacar."
@@ -45,6 +55,8 @@
   ardid:    "Las calaveras en los dados de fuego recuperan este hechizo."
 -
   id:       5
+  alcance:  0
+  duracion: 0
   name:     "aliento dragón"
   tipo:     "Conjuro"
   efecto:   "La casilla frontal recibe un daño de 3 dados de combate."
@@ -55,6 +67,8 @@
 # Aire nivel 1"
 -
   id:       6
+  alcance:  "V"
+  duracion: 0
   name:     "genio"
   tipo:     "Invocación"
   efecto:   "Causa 4 dados de ataque por aire o abre una puerta revelando la sala."
@@ -64,6 +78,8 @@
   ardid:    "Al utilizarse para abrir puertas se recupera con X+ (X son los enemigos tras la puerta)"
 -
   id:       7
+  alcance:  "V"
+  duracion: 1
   name:     "tempestad"
   tipo:     "Maldición"
   efecto:   "Aturde a un enemigo un turno."
@@ -73,6 +89,8 @@
   ardid:    "Cada turno que dure el efecto causa un dado de daño eléctrico a los adyacentes."
 -
   id:       8
+  alcance:  "V"
+  duracion: 1
   name:     "ráfaga"
   tipo:     "Bendición"
   efecto:   "+5 puntos de movimiento."
@@ -82,6 +100,8 @@
   ardid:    "Si el movimiento es linear las miniaturas adyacentes son empujadas perpendicularmente 1 casilla."
 -
   id:       9
+  alcance:  "V"
+  duracion: 1
   name:     "flauta mágica"
   tipo:     "Maldición"
   efecto:   "Un objetivo entra un turno en locura"
@@ -91,6 +111,8 @@
   ardid:    "Si el resultado de la locura es 7 puedes elegir que la víctima ejecute flauta mágica silbando."
 -
   id:       10
+  alcance:  "V"
+  duracion: 1
   name:     "viento en popa"
   tipo:     "Superchería"
   efecto:   "+3 movimiento de todos los aliados"
@@ -100,6 +122,8 @@
   ardid:    "Los aliados no pueden ser empujados."
 -
   id:       11
+  alcance:  "V"
+  duracion: "A"
   name:     "disparo certero"
   tipo:     "Bendición"
   efecto:   "+2 de potencia al siguiente ataque de proyectil del objetivo."
@@ -110,6 +134,8 @@
 # Tierra nivel 1"
 -
   id:       12
+  alcance:  "V"
+  duracion: "D"
   name:     "piel de piedra"
   tipo:     "Bendición"
   efecto:   "+1 dado de defensa."
@@ -119,6 +145,8 @@
   ardid:    "Los dados son azules."
 -
   id:       13
+  alcance:  1
+  duracion: 1
   name:     "atravesar muros"
   tipo:     "Bendición"
   efecto:   "Permite atravesar muros."
@@ -128,6 +156,8 @@
   ardid:    "Los enemigos atravesados reciben un golpe imparable sin armas igual a la potencia."
 -
   id:       14
+  alcance:  0
+  duracion: 0
   name:     "cura corporal"
   tipo:     "Sanación"
   efecto:   "Restaura 4 PC."
@@ -137,10 +167,12 @@
   ardid:    "Se recupera con X+ (X es la sanación sobrante)"
 -
   id:       15
+  alcance:  "V"
+  duracion: 1
   name:     "manos de piedra"
   tipo:     "Maldición"
   efecto:   
-            "Durante 1 turno el objetivo es inmovilizado por dos grandes manos de piedra que surgen del suelo. 
+            "El objetivo es inmovilizado por dos grandes manos de piedra que surgen del suelo. 
              Se puede resistir si obtiene menos de su movimiento con 2d6."
   diablura: "Si falla la tirada recibe el exceso como daño defendible."
   potencia: "+1 a la tirada del objetivo."
@@ -148,6 +180,8 @@
   ardid:    "Si el objetivo obtiene el mismo número con ambos dados la potencia de hechizos de piedra aumenta dicha cantidad contra él."
 -
   id:       16
+  alcance:  "V"
+  duracion: "A"
   name:     "obelisco"
   tipo:     "Bendición"
   efecto:
@@ -159,9 +193,11 @@
   ardid:    "5+: Los hechizos dirigidos contra el objetivo pueden ser redireccionados por el lanzador."
 -
   id:       17
+  alcance:  0
+  duracion: "X"
   name:     "restituir"
   tipo:     "Sanación"
-  efecto:   "El objetivo restaura 1PC por turno."
+  efecto:   "El objetivo restaura 1PC por turno hasta quedar totalmente curado (X)."
   diablura: "- 1 al empuje de los enemigos sobre el objetivo."
   potencia: "+1 turno de duración"
   maestría: "+ 1PC por turno"
@@ -169,6 +205,8 @@
 # Agua nivel 1"
 -
   id:       18
+  alcance:  "V"
+  duracion: 1
   name:     "niebla"
   tipo:     "Bendición"
   efecto:   "Permite moverse sin ser visto."
@@ -178,6 +216,8 @@
   ardid:    "El objetivo obtiene +2 vs Magia Veneno y Peste."
 -
   id:       19
+  alcance:  "V"
+  duracion: 0
   name:     "agua que cura"
   tipo:     "Sanación"
   efecto:   "Restaura 4 PC."
@@ -187,6 +227,8 @@
   ardid:    "Durante el efecto el objetivo es inmune a veneno y peste."
 -
   id:       20
+  alcance:  "V"
+  duracion: 0
   name:     "dormir"
   tipo:     "Maldición"
   efecto:   "Duerme al objetivo."
@@ -196,6 +238,8 @@
   ardid:    "En caso de despertar el objetivo despertará en locura."
 -
   id:       21
+  alcance:  1
+  duracion: 0
   name:     "choque de agua"
   tipo:     "Conjuro"
   efecto:   "Un golpe de agua proyecta 2 casillas hacia atrás a un enemigo."
@@ -205,17 +249,19 @@
   ardid:    "El objetivo puede ser proyectado diagonalmente."
 -
   id:       22
-  name:     "carámbano"
-  tipo:     "Invocación"
-  efecto:
-            "Una daga de hielo mágico que puede ser empleada como arma de empuñadura.<br/>
-             Tirará 1 dado de Escarcha cuya potencia es el nivel del hechicero."
-  diablura: "Se puede lanzar como una daga y recuperar con 1 PM."
-  potencia: "+1 dado de hielo."
-  maestría: "+1 fuerza de la daga"
-  ardid:    "Matar con la daga recupera una magia de agua aleatoria."
+  alcance:  "V"
+  duracion: 0
+  name:     "trance calmado"
+  tipo:     "Sanación"
+  efecto:   "Puedes elegir restaurar 4 PM a un objetivo, que perderá su próximo turno."
+  diablura: "Si no hay enemigos visibles, el objetivo podrá recuperar un hechizo en su lugar."
+  potencia: "+1 PM"
+  maestría: "-1 daño recibido por el objetivo mientras dure el efecto"
+  ardid:    "Mientras estén relajados el lanzador y el objetivo, éste no morirá."
 -
   id:       23
+  alcance:  "∞"
+  duracion: 0
   name:     "esperanza"
   tipo:     "Sanación"
   efecto:   "Todos aliados del lanzador recuperan a su elección un punto de cuerpo ó mente."
