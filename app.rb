@@ -9,7 +9,7 @@ class App < Sinatra::Base
   get('/revenge') { erb :'revenge/index' }
 
   get '/:view/:param' do |view, param| # Templates with double-routing
-    hechizo = %w(aire agua fuego tierra).include?(view)
+    hechizo = %w(aire agua fuego tierra hielo sombra sangre arena).include?(view)
     hechizo ? preview('hechizos') : preview(view)
   end
 

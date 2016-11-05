@@ -245,8 +245,9 @@
   ruta:  "magister"
   title: "Magister"
   template:
+    left: "reglamento/derecha/personajes"
     main: "ciudad/magister"
-    right: "reglamento/derecha/personajes"
+    right: "torre/right/menu"
 -
   ruta:  "notaria"
   title: "Notaría"
@@ -391,7 +392,21 @@
     left: "torre/left/elementales"
     left2: "torre/left/sagradas"
     main: "torre/main"
-    right: "torre/right/tipos"
+    right: "torre/right/menu"
+-
+  ruta:  "magia"
+  title: "Historia arcana"
+  template:
+    left: "torre/left/elementales"
+    main: "torre/historia"
+    right: "torre/right/menu"
+-
+  ruta:  "tipos"
+  title: "Magia"
+  template:
+    left: "torre/left/elementales"
+    main: "torre/tipos"
+    right: "torre/right/menu"
 -
   ruta:  "magisters"
   template:
@@ -417,7 +432,10 @@
 -
   ruta:  "escuelas"
   template:
-    main: "magia/escuelas"
+    left:  "torre/left/elementales"
+    left2: "torre/left/sagradas"
+    main:  "magia/escuelas"
+    right: "torre/right/menu"
 -
   ruta:  "mazmorra"
   template:

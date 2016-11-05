@@ -53,7 +53,7 @@
   duracion: "D"
   potencia: 4
   alcance:  0
-  name:     "Guadaña Negra"
+  name:     "Guadaña negra"
   tipo:     "maldición"
   efecto:   "El objetivo no podrá atacar ni mover hasta que sea atacado. Podrá defender y empujará de la forma habitual."
   summun:   "El objetivo golpeará a melé (siempre que pueda) cuando tú seas atacado como acción de interrupción."
