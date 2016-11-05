@@ -276,6 +276,8 @@
   tipo:     "Conjuro"
   efecto:   "Cono de 1-3-5. 2 dados rojos de ataque por fuego defendibles."
   potencia: "+1 potencia del ataque"
+  diablura: "Las calaveras directas aumentan el área de efecto 1 casilla en esa dirección"
+  ardid:    "El daño es aullante y los efectos de arder se propagan al colisionar."
 -
   id:       25
   name:     "rayo ígneo"
@@ -284,6 +286,8 @@
             "3 dados de ataque. 2 dados defendibles por cada herida causada.<br/>
              El rayo avanza a más victimas y se defienden con 1 dado adicional a la victima anterior."
   potencia: "+1 dado de ataque."
+  diablura: "Los objetivos dañados pierden su escudo"
+  ardid:    "Las objetivos en llamas tirarán resistencia al miedo: 1/efecto"
 -
   id:       26
   name:     "aura de calor"

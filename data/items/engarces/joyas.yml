@@ -160,3 +160,9 @@
       "+1 opresión al no dañar con un hechizo de aire.<br/>
        Activa3o.: Lanzas un genio durante la fase de instintos.<br/>
        Pasiva (5o.): +1 para recuperar el hechizo: genio"
+-
+  id:   21
+  name: "de la Luna Negra"
+  fits:
+    cuello: "Lanzarás una execración al defender con éxito."
+    arma:   "+1 Fuerza al atacar con dados negros."

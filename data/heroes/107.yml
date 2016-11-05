@@ -1,0 +1,18 @@
+name:         "Valkon"
+personaje:    "falangista"
+jugador:      "Daniel de Haro"
+status:       "reservista"
+progenitores: [8]
+profesion:    { id: 3, aprendiz: [0, 1, 3] }
+familiar:     { id: 18, name: "pendeja" }
+nivel:        10
+xp:           6
+cuerpo:       11
+mente:        4
+mov:          8
+armadura:     1
+armas:
+  - { id: 7 }
+  - { id: 7 }
+skills: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14]
+master: [0]
