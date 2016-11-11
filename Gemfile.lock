@@ -1,11 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    codacy-coverage (1.1.0)
+    codacy-coverage (1.1.1)
       simplecov (>= 0.10.0)
-    codeclimate-test-reporter (0.6.0)
-      simplecov (>= 0.7.1, < 1.0.0)
-    codecov (0.1.5)
+    codeclimate-test-reporter (1.0.3)
+      simplecov
+    codecov (0.1.7)
       json
       simplecov
       url
@@ -62,9 +62,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  codacy-coverage (~> 1.1.0)
-  codeclimate-test-reporter (~> 0.6.0)
-  codecov
+  codacy-coverage (~> 1.1.1)
+  codeclimate-test-reporter (~> 1.0.3)
+  codecov (~> 0.1.7)
   coveralls
   minitest (~> 5.9.1)
   rack
