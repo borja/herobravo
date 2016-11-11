@@ -80,17 +80,6 @@ td, th {
   vertical-align: middle;
 }
 
-#table-2 {
-  width: 100%;
- 	vertical-align: middle;
-  margin-left:auto; 
-  margin-right:auto;
-}
-#table-2 td, #table-2 th {
-	text-align:center;
- 	vertical-align: middle;
-}
-
 /* 
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px

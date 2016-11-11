@@ -3,7 +3,7 @@
 	<header>
 		<center><h2>Tesoros</h2></center>
 	</header>
-	<table id='table-2'>
+	<table>
 		<thead>
 			<tr><% %w(gemas joyas runas).each do |engarce| %>
 					<th><%= engarce.capitalize %></th>
@@ -15,7 +15,7 @@
 				<% %w(gemas joyas runas).each do |engarce| %>
 					<td>
 						<% if tesoros = h.tesoro[engarce] %>
-							<table id='table-2'>
+							<table>
 								<tbody>
 									<tr>
 										<% tesoros.each do |t| %>

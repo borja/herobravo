@@ -4,7 +4,7 @@
 		<td width='20%'>
 			<%= erb :'ficha/inventario/armas' %>
 			<br>
-			<table id='table-2'>
+			<table>
 				<thead>
 					<tr><th width='80%'>Armadura</th>
 						<td><%= erb :'display/armadura', locals: { a: @heroe.armadura } %></td>
@@ -18,7 +18,7 @@
 		<td width='20%'>
 			<%= erb :'ficha/inventario/anillos' %>
 			<br>
-			<table id='table-2'>
+			<table>
 				<thead>
 					<% fields[1].each do |field| %>
 						<%= erb :'ficha/inventario/field', locals: { fits: field } %>
@@ -30,7 +30,7 @@
 		<td width='20%'>
 			<%= erb :'ficha/inventario/amuletos' %>
 			<br>
-			<table id='table-2'>
+			<table>
 				<thead>
 					<% fields[2].each do |field| %>
 						<%= erb :'ficha/inventario/field', locals: { fits: field } %>

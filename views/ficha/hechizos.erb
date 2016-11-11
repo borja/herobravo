@@ -1,4 +1,4 @@
-<table id='table-2'>
+<table>
 	<% h = hero(params[:param].to_i) %>
 	<thead>
 		<tr><th><a href=../spells/<%= h.id %>>Lista de hechizos</a></th>
@@ -7,7 +7,7 @@
 	<tbody>
 		<tr><td>
 				<link rel="stylesheet" href="/css/bravo.css" />
-				<table id='table-2'>
+				<table>
 					<tbody>
 						<tr><% h.elementos.each do |e| %>	
 								<td><%= erb :'display/display', locals: {
