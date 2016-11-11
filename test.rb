@@ -1,14 +1,13 @@
 # CI Engines requirements:
 
-require 'codeclimate-test-reporter'
-CodeClimate::TestReporter.start
-
 require 'codacy-coverage'
 Codacy::Reporter.start
 
 require 'coveralls'
 Coveralls.wear!
 
+# https://github.com/codeclimate/ruby-test-reporter/blob/master/README.md
+# 'codeclimate-test-reporter' was replaced
 require 'simplecov'
 SimpleCov.start
 
