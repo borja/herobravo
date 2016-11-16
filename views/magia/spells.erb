@@ -13,7 +13,7 @@
 		<tbody>
 			<% leyes.each do |ley| %>
 				<% if h = hero.send(ley[:nombre]) %>
-					<% h.each do |magia|%>	
+					<% h.each do |magia|%>
 						<% m = send(ley[:method], magia) %>
 						<tr style=<%= m.color %>>	
 							<td><%= m.nivel %></td>	

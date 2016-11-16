@@ -49,6 +49,14 @@ def sombra(id)
   sombras[id]
 end
 
+def hielo(id)
+  hielos[id]
+end
+
+def arena(id)
+  arenas[id]
+end
+
 def spell(id)
   spells[id]
 end

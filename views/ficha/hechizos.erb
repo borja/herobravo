@@ -9,7 +9,8 @@
 				<link rel="stylesheet" href="/css/bravo.css" />
 				<table>
 					<tbody>
-						<tr><% h.elementos.each do |e| %>	
+						<tr>
+							<% h.elementos.each do |e| %>	
 								<td><%= erb :'display/display', locals: {
 									title:       e,
 									path:        "'../images/elements/#{e}.png'",

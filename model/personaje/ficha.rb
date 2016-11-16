@@ -14,5 +14,7 @@ end
 def leyes
   [{ nombre: 'hechizos', method: 'spell'  },
    { nombre: 'shadows',  method: 'sombra' },
-   { nombre: 'blood',    method: 'sangre' }]
+   { nombre: 'blood',    method: 'sangre' },
+   { nombre: 'ice',      method: 'hielo'  },
+   { nombre: 'sand',     method: 'arena'  }]
 end

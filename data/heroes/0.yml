@@ -1,20 +1,17 @@
 name:      "Amru"
 jugador:   "Borja"
+ciudad:    "Xanandra"
 titulo:    "Creador del Universo"
 personaje: "hechicero"
-camino:
-  - "El Oscuro"
-  - 2
-ciudad:       "Xanandra"
-descendencia: true
-familiar:     { id: 8, name: "Peróculo", torpe: true }
-repu:         1
-nivel:        6
-cuerpo:       5
-mente:        10
-mov:          7
-armadura:     1
-armas:        { id: 8, enchants: [59], ranuras: 1 }
+camino:    ["El Oscuro", 2]
+familiar:  { id: 8, name: "Peróculo", torpe: true }
+repu:      1
+nivel:     6
+cuerpo:    5
+mente:     10
+mov:       7
+armadura:  1
+armas:     { id: 8, enchants: [59], ranuras: 1 }
 miscelaneas:
   - { id: 2,  enchants: [30, 31], ranuras: 1 }
   - { id: 16, enchants: [60] }
@@ -23,5 +20,6 @@ protecciones:
 pergaminos:
   - { id: 1, spells: [11] }
 skills:   [0, 1, 2, 3, 4, 5, 6]
-hechizos: [0, 1, 2, 6, 7, 8, 12, 13, 14, 18, 19, 20, 29, 39]
+hechizos: [0, 1, 2, 12, 13, 14, 18, 19, 20, 29, 39]
+sand:     [3, 4, 5]
 magister: [4]

@@ -4,7 +4,7 @@ class Hero < Hash
     :personaje, :jugador, :status, :muerto, :gender,
     :repu, :cuerpo, :mente, :mov, :historia, :premio,
     :familiar, :mounts, :descendencia, :pareja, :progenitores,
-    :hechizos, :shadows, :blood, :skills, :master,
+    :hechizos, :shadows, :blood, :sand, :ice, :skills, :master,
     :armas, :armadura, :protecciones, :miscelaneas, :abalorios,
     :profesion, :ciudad, :titulo, :camino, :hijos,
     :piezas, :pociones, :pergaminos, :materiales, :oro, :tesoro
@@ -114,6 +114,7 @@ class Hero < Hash
     elementos = magias.map(&:elemento).uniq if magias
     elementos << 'sombras' if shadows
     elementos << 'sangre'  if blood
+    elementos << 'arena'   if sand
     elementos
   end
 
@@ -229,6 +230,10 @@ class Hero < Hash
 
   def shadow_magic
     shadows.map  { |num| sombra(num) } if shadows
+  end
+
+  def sand_magic
+    arenas.map  { |num| arena(num) } if sand
   end
 
   def sin_recursos
