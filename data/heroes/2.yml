@@ -26,7 +26,6 @@ protecciones:
   - { id: 10, gemas: [25] }
   - { id: 14 }
   - { id: 15, gemas: [21], enchants: [20, 34, 49, 50, 51, 52], ranuras: 4 }
-  
 miscelaneas:
   - { id:  1, gemas: [25], enchants: [9] }
   - { id:  9, gemas: [25, 26, 28], enchants: [39] }

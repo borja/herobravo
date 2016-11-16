@@ -1,13 +1,13 @@
 # Main app class
 class Hero < Hash
   attr_accessor :id, :name, :nivel,
-                :personaje, :jugador, :status, :muerto, :gender,
-                :repu, :cuerpo, :mente, :mov, :historia, :premio,
-                :familiar, :mounts, :descendencia, :pareja, :progenitores,
-                :hechizos, :shadows, :blood, :skills, :master,
-                :armas, :armadura, :protecciones, :miscelaneas, :abalorios,
-                :profesion, :ciudad, :titulo, :camino, :hijos,
-                :piezas, :pociones, :pergaminos, :materiales, :oro, :tesoro
+    :personaje, :jugador, :status, :muerto, :gender,
+    :repu, :cuerpo, :mente, :mov, :historia, :premio,
+    :familiar, :mounts, :descendencia, :pareja, :progenitores,
+    :hechizos, :shadows, :blood, :skills, :master,
+    :armas, :armadura, :protecciones, :miscelaneas, :abalorios,
+    :profesion, :ciudad, :titulo, :camino, :hijos,
+    :piezas, :pociones, :pergaminos, :materiales, :oro, :tesoro
 
   def initialize(args)
     args.each do |k, v|

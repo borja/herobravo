@@ -1656,6 +1656,7 @@
         1,
         0,
         0,
+        0,
         null,
         null,
         1,
@@ -1666,7 +1667,6 @@
         null,
         1,
         1,
-        null,
         null
       ],
       "/Users/bmartinf/Repositories/misc/herobravo/model/ciudades.rb": [
@@ -3604,6 +3604,6 @@
         null
       ]
     },
-    "timestamp": 1478848431
+    "timestamp": 1478866236
   }
 }

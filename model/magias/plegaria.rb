@@ -9,6 +9,7 @@ class Plegaria < Magia
   end
 end
 
+# Todas las plegarias oscuras
 class Execracion < Plegaria
   def elemento
     'execración'

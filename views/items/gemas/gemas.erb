@@ -1,14 +1,38 @@
-<div class="row">
-	<% 3.times do |i| %>
-		<div class="4u">
-			<%= erb :'items/gemas/calibre', locals: { i: i } %>
-		</div>
-	<% end%>
-</div>
-<div class="row">
-	<% 3.times do |i| %>
-		<div class="4u">
-			<%= erb :'items/gemas/calibre', locals: { i: i+3 } %>
-		</div>
-	<% end%>
-</div>
+<header>
+	<h2>Las gemas como piezas de engarce</h2>
+</header>
+<h3>¿Cómo conseguir gemas?</h3>
+<p>
+	Las gemas no se pueden comprar, solo pueden
+	obtenerse como recompensa del tesoro, o mediante
+	tratos y recompensa de misiones.
+</p>
+<h3>Profesiones: engarzando y triturando</h3>
+<p>
+	Hay ciertas profesiones que interactúan con las gemas.
+	Los encantadores las trituran para obtener polvo
+	mágico en sus recetas de encantamiento. Los orfebres,
+	pueden engarzarlas en los objetos para incrementar
+	sus características mágicas. Pulsa el siguiente enlace,
+	para calcular el precio de engarzar un objeto:
+	<a href='/calculador'>Calculadora de engarces</a> 
+</p>
+<h3>El calibre de una gema</h3>
+<p>
+	En la tirada de tesoro, al obtener un resultado de gema,
+	deberás tirar 2d6 para calcular el calibre de la gema:
+</p>
+<table>
+	<thead>
+		<th>Resultado</th>
+		<th>Calibre</th>
+		<th>%</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2-6</td>
+			<td><a href='/calibre/1'>Gemas comunes</a></td>
+			<td>40%</td>
+		</tr>
+	</tbody>
+</table>

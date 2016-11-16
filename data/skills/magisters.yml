@@ -29,3 +29,21 @@
   name:        "Ardid"
   type:        "Pasiva"
   description: "+1 ardid a un hechizo específico"
+-
+  id:          4
+  coste:       250
+  name:        "Solitudinem"
+  type:        "Pasiva"
+  description: "Puedes escoger un set de arenas en lugar de un set de otra escuela."
+-
+  id:          5
+  coste:       250
+  name:        "Sanguinis"
+  type:        "Pasiva"
+  description: "Puedes escoger un set de sangre en lugar de un set de otra escuela."
+-
+  id:          6
+  coste:       250
+  name:        "Umbrae"
+  type:        "Pasiva"
+  description: "Puedes escoger un set de sombras en lugar de un set de otra escuela."

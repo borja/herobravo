@@ -18,8 +18,8 @@ class Magia < Hash
     colors = %w(FF6633 CCFFFF CC9966 44CCFF CC9999
                 EED6AF 99FFCC CC4545 FAEE96 E0FFFF
                 688426)
-    elems  = %w(fuego  aire   tierra agua   sombra
-                arena  elfico sangre plegaria hielo
+    elems  = %w(fuego aire tierra agua sombra
+                arena elfico sangre plegaria hielo
                 execración)
 
     'background-color:#' + colors[elems.find_index(elemento)]

@@ -118,7 +118,7 @@
   template:
     left: "objetos/left/content2"
     main: "objetos/calculador"
-    right: "objetos/left/content1"
+    right: "items/gemas/listado"
 -
   ruta:  "monturas"
   template:
@@ -139,13 +139,21 @@
   ruta:  "runa"
   title: "view"
   template:
-    right: "items/runas/runa"
-    main:  "items/runas/main"
     left:  "objetos/left/runas"
+    main:  "items/runas/main"
+    right: "items/runas/runa"
 -
   ruta:  "gemas"
   template:
-    main: "items/gemas/gemas"
+    left:  "objetos/left/content2"
+    main:  "items/gemas/gemas"
+    right: "items/gemas/listado"
+-
+  ruta:  "calibre"
+  template:
+    left:  "objetos/left/content2"
+    main:  "items/gemas/calibre"
+    right: "items/gemas/listado"
 -
   ruta:  "tiers"
   template:
