@@ -1,12 +1,14 @@
 <header>
 	<h2>Las gemas como piezas de engarce</h2>
 </header>
+
 <h3>¿Cómo conseguir gemas?</h3>
 <p>
 	Las gemas no se pueden comprar, solo pueden
 	obtenerse como recompensa del tesoro, o mediante
 	tratos y recompensa de misiones.
 </p>
+
 <h3>Profesiones: engarzando y triturando</h3>
 <p>
 	Hay ciertas profesiones que interactúan con las gemas.
@@ -17,22 +19,38 @@
 	para calcular el precio de engarzar un objeto:
 	<a href='/calculador'>Calculadora de engarces</a> 
 </p>
+
 <h3>El calibre de una gema</h3>
 <p>
 	En la tirada de tesoro, al obtener un resultado de gema,
 	deberás tirar 2d6 para calcular el calibre de la gema:
+	<table>
+		<thead>
+			<th>2d6</th>
+			<th>Nombre</th>
+			<th>Calibre</th>
+			<th>%</th>
+		</thead>
+		<tbody>
+			<% 6.times do |calibre| %>
+				<tr>
+					<% g = gema_calidades[calibre] %>
+					<td><%= g['2d6'] %></td>
+					<td><a href='/calibre/<%= g['calibre'] %>'><%= g['name'] %></a></td>
+					<td><%= g['calibre'] %></td>
+					<td><%= g['prob'] %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
 </p>
-<table>
-	<thead>
-		<th>Resultado</th>
-		<th>Calibre</th>
-		<th>%</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td>2-6</td>
-			<td><a href='/calibre/1'>Gemas comunes</a></td>
-			<td>40%</td>
-		</tr>
-	</tbody>
-</table>
+
+<h3>Las gemas insólitas</h3>
+<p>
+	Ciertas gemas han adquirido energías ajenas al conocimiento
+	de los encantadores y magos. Se las conoce como: 
+	<a href='/calibre/0'>Gemas Insólitas</a>. Algunas pueden
+	ser halladas como tesoro de reto, o recompensa. Otras pueden ser fabricadas.
+	Su valor generalmente es de 0 monedas, pues guardan misterios ocultos,
+	que la mayor parte de la gente desconoce.
+</p>

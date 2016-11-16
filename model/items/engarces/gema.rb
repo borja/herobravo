@@ -1,7 +1,7 @@
 # Tipo de engarce basico
 class Gema < Engarce
   def calidad
-    gema_calidades[id / 8]
+    gema_calidades.find { |g| (g["calibre"] - 1 )  == (id / 8) }
   end
 
   def precio_venta

@@ -11,6 +11,10 @@ def categorías # Armas
   armas.map { |a| a['categoria'] }.uniq
 end
 
+def gema_calidades
+  load_yaml('items/engarces/calibres')
+end
+
 def gemas
   load_yaml('items/engarces/gemas').map { |g| Gema.new(g) }
 end

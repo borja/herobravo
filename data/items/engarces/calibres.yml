@@ -1,0 +1,35 @@
+- 
+  calibre:  1
+  name:    'Gemas Comunes'
+  2d6:     '2 - 6'
+  prob:    '42%'
+- 
+  calibre:  2
+  name:    'Gemas Infrecuentes'
+  2d6:     '7'
+  prob:    '17%'
+-
+  calibre:  3
+  name:    'Gemas Valiosas'
+  2d6:     '8'
+  prob:    '14%'
+-
+  calibre:  4
+  name:    'Piedras Preciosas'
+  2d6:     '9-10'
+  prob:    '19%'
+-
+  calibre:  5
+  name:    'Piedras de Poder'
+  2d6:     '11'
+  prob:    '5%'
+-
+  calibre:  6
+  name:    'Gemas Legendarias'
+  2d6:     '12'
+  prob:    '3%'
+-
+  calibre: 7
+  name:    'Gemas Insólitas'
+  2d6:     'Especial'
+  prob:    '0%'
