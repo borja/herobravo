@@ -1,0 +1,15 @@
+<% magias = send(params[:view]+'s') %>
+<% magias.each do |s|%>
+	<% if params[:param].to_i == s.nivel %>
+		<% magic = s %>
+		<tr style=<%= magic.color %>>
+			<td><%= erb :'display/spell', locals: { spell: magic } %></td>
+			<% if params[:view] == 'hechizos' %>
+				<td><%= magic.elemento.capitalize %></td>
+			<% end %>
+			<td><%= magic.name.capitalize %></td>
+			<td><%= magic.efecto %></td>
+			<td><%= magic.potencia %></td>
+		</tr>
+	<% end %>
+<% end %>

@@ -1,7 +1,7 @@
 <header>
 	<h2>Escuelas de la magia</h2>
 </header>
-<table id='tresponsive'>
+<table>
 	<thead>
 		<tr>
 			<th>Glifo</th>
@@ -10,23 +10,20 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% %w(Aire Fuego Agua Tierra Sombras Hielo Arena Tenebro Sangre Luz).each do |escuela| %>
+		<% %w(Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz).each do |escuela| %>
 			<tr>
 				<td>
-					<a href='<%= "/#{escuela.gsub('Luz','plegarias').downcase}/1" %>'>
+					<% url = escuela.gsub('Luz','plegarias').gsub('Tenebro','execraciones').downcase %>
+					<a href='<%= "/#{url}/1" %>'>
 					<% img_path = "'../images/magia/schools/#{escuela}.png'" %>
 						<img src=<%=img_path%> alt='<%= escuela %>' id='icon3' />
 					</a>
 				</td>
 				<td><%= escuela %></td>
-				<% 4.times do |nivel| %>
-					<td>
-						<a href='<%= "/#{escuela.gsub('Luz','plegarias').downcase}/#{nivel+1}" %>'>
-							<%= nivel+1 %>
-						</a>
-					</td>
+				<% 4.times do |n| %>
+					<td><a href='<%= "/#{url}/#{n + 1}" %>'><%= n + 1 %></a></td>
 				<% end %>
 			</tr>
-		<% end %>	
+		<% end %>
 	</tbody>
 </table>

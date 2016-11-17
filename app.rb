@@ -9,9 +9,14 @@ class App < Sinatra::Base
   get('/revenge') { erb :'revenge/index' }
 
   get '/:view/:param' do |view, _param| # Templates with double-routing
-    hechizo = %w(aire agua fuego tierra hielo sombra sangre arena)
-    es_hechizo = hechizo.include?(view)
-    es_hechizo ? preview('hechizos') : preview(view)
+    es_element = %w(aire agua fuego tierra).include?(view)
+    es_sagrada = %w(arena hielo sombra sangre).include?(view)
+    # Custom case for redundant spell lists
+    case
+      when es_element then preview('hechizos')
+      when es_sagrada then preview('sagradas')
+      else preview(view) # Usual rooting
+    end
   end
 
   get '/:view' do |view| # Templates with simple root-viewer

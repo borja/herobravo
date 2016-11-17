@@ -2,19 +2,14 @@
 	<% if params[:param].to_i == s.nivel %>
 		<% if (params[:view] == s.elemento) || params[:view] == 'hechizos' %>
 			<% magic = spell(s.id) %>
-			<tr style=<%= magic.color %>>				
+			<tr style=<%= magic.color %>>
 				<td><%= erb :'display/spell', locals: { spell: magic } %></td>
 				<% if params[:view] == 'hechizos' %>
 					<td><%= magic.elemento.capitalize %></td>
 				<% end %>
 				<td><%= magic.name.capitalize %></td>
 				<td><%= magic.efecto %></td>
-				<% if params[:param].to_i == 1 %>
-					<td><%= magic.diablura %></td>
-					<td><%= magic.ardid %></td>
-					<td><%= magic.maestría %></td>
-				<% end %>	
-				<td><%= magic.potencia %></td>			
+				<td><%= magic.potencia %></td>
 			</tr>
 		<% end %>
 	<% end %>

@@ -129,6 +129,7 @@
   template:
     left: "objetos/left/content2"
     main: "items/joyas"
+    right: "objetos/left/joyas"
 -
   ruta:  "runas"
   template:
@@ -290,11 +291,10 @@
     left2: "torre/left/especializaciones"
     main: "magia/hechizos"
 -
-  ruta:  "sombras"
+  ruta:  "sagradas"
   template:
-    left: "torre/left/elementales"
-    left2: "torre/left/sagradas"
-    main: "magia/sombras"
+    left: "torre/left/sagradas"
+    main: "magia/sagradas"
 -
   ruta:  "arenas"
   template:

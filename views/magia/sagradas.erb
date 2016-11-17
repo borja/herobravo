@@ -1,7 +1,7 @@
 <header>
 	<h2>
 		<% if params[:view] == 'hechizos' %>
-			Hechizos elementales
+			Hechizos sagrados
 			de nivel <%= params[:param].to_i || 1 %>
 		<% else %>
 			Hechizos de <%= params[:view] %>
@@ -12,7 +12,7 @@
 <table class='tspells'>
 	<thead>
 		<th>Icono</th>
-		<% unless %w(aire tierra fuego agua).include?(params[:view]) %>
+		<% unless %w(sombra arena hielo sangre).include?(params[:view]) %>
 			<th>Elemento</th>
 		<% end %>
 		<th>Nombre</th>
@@ -20,6 +20,6 @@
 		<th>Potencia</th>
 	</thead>
 	<tbody>
-		<%= erb :'magia/hechizos/elemental' %>
+		<%= erb :'magia/hechizos/sagradas' %>
 	</tbody>
 </table>
