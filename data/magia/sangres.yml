@@ -1,39 +1,66 @@
 -
   id:       0
+  alcance:  0
+  duracion: "D"
   name:     "vampirismo"
+  tipo:     "bendición - Aura"
   efecto:   "Recupera 1 PC por cada enemigo(vivo que mates."
   diablura: "Puedes renunciar en cualquier momento a 2 PC para recuperar vampirismo."
+  ardid:    "2PC: El aliado objetivo es bendecido con vampirismo (-1 potencia)"
   potencia: "+1 PC recuperado (Siempre que la víctima tenga al menos esos PC"
 -
   id:       1
+  alcance:  1
+  duracion: 0
   name:     "coagular"
+  tipo:     "Sanación"
   efecto:   "El objetivo recupera todos los PC perdidos en una única herida."
   diablura: "Elimina la penalización de sangrado del objetivo."
   potencia: "+1 PC"
 -
   id:       2
+  alcance:  1
+  duracion: "∞"
   name:     "pacto de sangre"
-  efecto:   "El próximo daño que fuera a recibir el objetivo lo recibe en su lugar dividido a la mitad(redondeado hacia abajo el lanzador del hechizo"
+  tipo:     "Superchería"
+  efecto:
+            "El lanzador del hechizo recibe dividido a la minusmitad,
+            el próximo daño que fuera a recibir el objetivo"
   diablura: "El hechizo puede funcionar en sentido contrario."
-  potencia: "+1 ó -1 al daño recibido (a elegir"
+  potencia: "+1 ó -1 al daño recibido (a elegir)"
 -
   id:       3
+  alcance:  "V"
+  duracion: "E"
   name:     "ansia de sangre"
+  tipo:     "Bendición"
   efecto:   "El objetivo gana +1 ATQ."
   diablura: "El objetivo se considera furioso."
+  ardid:    "El objetivo obtiene: 1PM: +1 turno de duración"
   potencia: "+1 fuerza al dado de bonificación"
 -
   id:       4
+  alcance:  "V"
+  duracion: "E"
   name:     "caldero de sangre"
-  efecto:   "Cada vez que muere una criatura viva añade 1 PC al caldero. Un aliado puede renunciando a una acción beberse todo el caldero. El hechizo concluye al llegar a 6 PC al ser bebido o si el caldero no es alimentado en 1 turno."
+  tipo:     "Superchería"
+  efecto:
+            "Cada vez que muere una criatura viva añade 1 PC al caldero.
+             Un aliado puede renunciando a una acción beberse todo el caldero.
+             El hechizo concluye al llegar a 6 PC al ser bebido
+             o si el caldero no es alimentado en 1 turno."
   diablura: "Su portador da miedo +1 miedo por cada punto del caldero"
   potencia: "+1 turno sin ser alimentado"
 -
   id:       5
   name:     "anemia"
+  alcance:  "V"
+  duracion: 0
+  tipo:     "Maldición"
   efecto:   "El objetivo recibe un daño defendible igual a tus heridas."
   diablura: "Puedes perder tantos PC como heridas para recuperar anemia."
-  potencia: "+1 potencia del ataque a ser defendido"
+  ardid:    "Si el objetivo no muere en estado anémico, recupera anemia."
+  potencia: "+1 duración"
 -
   id:       6
   name:     "tablilla de sangre"

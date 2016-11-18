@@ -3,18 +3,20 @@
   alcance:  "V"
   duracion: 1
   name:     "Flechas de la noche"
-  tipo:     "Evocación"
+  tipo:     "Evocación - Miríada"
   efecto:   "3 dados de ataque de sombras que se pueden repartir entre objetivos visibles"
   diablura: "Cada punto de daño causado recupera 1 PM"
+  ardid:    "Por cada objetivo muerto, lanza un hechizo de sombras aleatorio desde su cadáver."
   potencia: "+1 dado de ataque de sombras"
 - 
   id:       1
   alcance:  "V"
   duracion: 1
   name:     "Manto de oscuridad"
-  tipo:     "Evocación"
+  tipo:     "Evocación - Sala"
   efecto:   "Nadie puede atacar en la sala."
   diablura: "+1 potencia a los hechizos de sombras en la sala."
+  ardid:    ""
   potencia: "+1 objetivo es inmune a este efecto."
 - 
   id:       2
@@ -30,7 +32,7 @@
   alcance:  0
   duracion: 1
   name:     "Pesadillas"
-  tipo:     "Aura"
+  tipo:     "Bendición - Aura"
   efecto:   "El lanzador da miedo 5+."
   diablura: "Los no-muertos se ven afectados."
   potencia: "+1 al miedo generado"
@@ -48,7 +50,7 @@
   alcance:  1
   duracion: 0
   name:     "Caricia de Nagash"
-  tipo:     "Evocación"
+  tipo:     "Evocación - Toque"
   efecto:   "El objetivo recibe un ataque (no defendible de un dado con su propia fuerza."
   diablura: "Utiliza dados negros para el ataque."
   potencia: "+1 fuerza"
@@ -57,7 +59,7 @@
   alcance:  "V"
   duracion: 0
   name:     "Bola de Oscuridad"
-  tipo:     "Evocación"
+  tipo:     "Conjuro - Bola"
   efecto:   "Causa 3 dados negros de daño directo."
   diablura: "Al matar puedes lanzar: manto de oscuridad sobre la sala."
   potencia: "+1 dado negro"
@@ -86,7 +88,7 @@
   alcance:  0
   duracion: "D"
   name:     "Vigor siniestro"
-  tipo:     "Aura"
+  tipo:     "Bendición - Aura"
   efecto:   "Añade 1 dado negro a tu ataque, de potencia igual a las magias de sombras disponibles."
   diablura: "Añade un dado especial negro."
   potencia: "+1 dado"

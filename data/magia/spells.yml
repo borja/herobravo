@@ -3,7 +3,7 @@
   alcance:  "M"
   duracion: 0
   name:     "bola de fuego"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Bola"
   efecto:   "Causa 2 dados de ataque por fuego."
   diablura: "Dados de ataque negros."
   potencia: "+1 dado de ataque."
@@ -14,7 +14,7 @@
   alcance:  "V"
   duracion: "∞"
   name:     "fuego de ira"
-  tipo:     "Superchería"
+  tipo:     "Maldición"
   efecto:   "Causa 1 dado de ataque directo a un enemigo del tablero."
   diablura: "Se recupera si falla."
   potencia: "+1 Fuerza de ataque"
@@ -58,7 +58,7 @@
   alcance:  0
   duracion: 0
   name:     "aliento dragón"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Cono"
   efecto:   "La casilla frontal recibe un daño de 3 dados de combate."
   diablura: "El lanzador causa miedo dracónico 6+ durante el efecto."
   potencia: "+1 dado de daño."
@@ -241,7 +241,7 @@
   alcance:  1
   duracion: 0
   name:     "choque de agua"
-  tipo:     "Conjuro"
+  tipo:     "Evocación - Toque"
   efecto:   "Un golpe de agua proyecta 2 casillas hacia atrás a un enemigo."
   diablura: "El objetivo queda desarmado."
   potencia: "+1 casilla"
@@ -273,7 +273,7 @@
 -
   id:       24
   name:     "cono de llamas"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Cono"
   efecto:   "Cono de 1-3-5. 2 dados rojos de ataque por fuego defendibles."
   potencia: "+1 potencia del ataque"
   diablura: "Las calaveras directas aumentan el área de efecto 1 casilla en esa dirección"
@@ -281,7 +281,7 @@
 -
   id:       25
   name:     "rayo ígneo"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Rayo"
   efecto:   
             "3 dados de ataque. 2 dados defendibles por cada herida causada.<br/>
              El rayo avanza a más victimas y se defienden con 1 dado adicional a la victima anterior."
@@ -291,25 +291,25 @@
 -
   id:       26
   name:     "aura de calor"
-  tipo:     "Aura"
+  tipo:     "Bendición - Aura"
   efecto:   "Las miniaturas a melee arden. Se pierde el aura cuando se sufre una herida y se obtiene una defensa vs fuego de 4+ o +1."
   potencia: "+1 efecto de llamas a las miniaturas colindantes"
 -
   id:       27
   name:     "muro de fuego"
-  tipo:     "Muro"
+  tipo:     "Evocación - Muro"
   efecto:   "En 5 casillas lineales si se atraviesan hace 3 daños defensibles por fuego. Se puede reducir las casillas aumentando el daño a 5."
   potencia: "+1 daño extra de fuego"
 -
   id:       28
   name:     "lluvia de fuego"
-  tipo:     "Conjuro"
+  tipo:     "Evocación - Sala"
   efecto:   "En una sala ataque de 1 dado de fuego. Todo objeto es destruido. Los enemigos se defienden con 1 solo dado."
   potencia: "+1 fuerza del atauqe"
 -
   id:       29
   name:     "infierno"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Área"
   efecto:
             "En 1 casilla ataque igneo de dados =mente del conjurador/2. Las casillas contiguas reciben 2.
              Elemental sacrificada= +1 casilla de fuego."
@@ -318,38 +318,38 @@
 -
   id:       30
   name:     "rayo destructor"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Rayo"
   efecto:   "1 dado de ataque eléctrico."
   potencia: "+1 fuerza del ataque."
 -
   id:       31
   name:     "rayo prismático"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Rayo"
   efecto:   "3 dados de ataque de un primer rayo. Después brotan rayos adicionales a objetivos extra disminuyendo el ataque en 1. Cesa al llegar a 0."
   potencia: "El lanzador puede añadir +1 dado de ataque"
 -
   id:       32
   name:     "tornado"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Área"
   efecto:   "4 dados de ataque en una casilla. El tornado se puede mover a otra casilla con un dado a eleccion del mago (1-4) o del master (5-6)."
   duracion: "Si el hechicero se mueve sufre una herida o el tornado repite la casilla."
   potencia: "+1 potencia del ataque."
 -
   id:       33
   name:     "relámpago"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Rayo"
   efecto:   "3 dados de ataque electrico defendibles por el objetivo con dados de combate. 1 escudo de su categoria defiende 2 ataques."
   potencia: "+1 Fuerza del daño."
 -
   id:       34
   name:     "aura de la tormenta"
-  tipo:     "Aura"
+  tipo:     "Bendición - Aura"
   efecto:   "Se usa sobre uno mismo. Defensa: +1. Los seres que se acerquen a melee sufren 1 ataque electrico y al final de su turno deben retroceder una casilla hacia atras pudiendo sufrir colisión."
   duracion: "hasta que el mago sufra una herida."
   potencia: "+1 de defensa +1 dado de ataque eléctrico y +1 casilla desplazada."
 -
   id:       35
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Área"
   name:     "área de vacío"
   efecto:   "El mago elige 3 casillas contiguas y no lineales. El objetivo dentro de esas casillas sufre un ataque de 1 dado. Si el objetivo sale de las casillas el ataque sera de 3 pero el efecto desaparecera en las casillas anteriores."
   potencia: "+1 casilla ó +1 ataque en todas las tiradas del efecto a elección del lanzador.
@@ -363,20 +363,20 @@
 -
   id:       37
   name:     "muro de piedra"
-  tipo:     "Muro"
+  tipo:     "Evocación - Muro"
   efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas se convertiran en bloques de piedra."
   duracion: "mente del hechicero."
   potencia: "+1 grosor del muro."
 -
   id:       38
-  tipo:     "Conjuro"
+  tipo:     "Evocación - Sala"
   name:     "tromba de meteoros"
   efecto:   "Las miniaturas sufren un ataque de 2 dados que podran defender."
   potencia: "+1 dado de ataque."
 -
   id:       39
   name:     "hecatombe"
-  tipo:     "Conjuro"
+  tipo:     "Evocación"
   efecto:   "Se invoca una roca cuyo ataque es la mente del lanzador."
   potencia: "+1 potencia de ataque."
 -
@@ -388,38 +388,54 @@
   potencia: "+1 casilla ó turno de duración extra."
 -
   id:       41
-  tipo:     "Invocación"
   name:     "escudo torreón"
-  efecto:   "Un escudo de granito surge en la casilla frontal del mago. Se mueve con el ocupando una casilla adyacente a eleccion. La defensa aumenta en +2."
+  tipo:     "Invocación"
+  efecto:
+            "Un escudo de granito surge en la casilla frontal del mago.
+            Se mueve con el ocupando una casilla adyacente a eleccion.
+            La defensa aumenta en +2."
   duracion: "hasta recibir daño o que no quepa el escudo."
-  potencia: "+1 potencia defensiva del escudo.
+  potencia: "+1 potencia defensiva del escudo."
 # Agua nivel 2"
 -
   id:       42
   name:     "contrarrestar"
   tipo:     "Interrupción"
-  efecto:   "El hechizo objetivo es anulado. Con un dado, si se obtiene una tirada igual o menor a la mente del adversario se descarta la carta. Si no, se recupera."
+  efecto:
+            "El hechizo objetivo es anulado.
+            Con un dado, si se obtiene una tirada igual o menor
+            a la mente del adversario se descarta la carta.
+            Si no, se recupera."
   potencia: "-1 a la tirada posterior."
   diablura: "Si el hechizo es descartado, róbaselo hasta final de turno."
   ardid:    "Si el hechizo es descartado, redirígeselo al objetivo."
 -
   id:       43
   name:     "nube venenosa"
-  tipo:     "Conjuro"
-  efecto:   "No afecta a no-muertos. En 4 casillas elegidas no lineales el personaje que atraviese la nube pierde 1 PM siendo defendible. Se puede desplazar la nube."
-  duracion: "mente del hechicero."
-  potencia: "+1 casilla extra"
+  tipo:     "Conjuro - Área"
+  efecto:
+            "No afecta a no-muertos. En 4 casillas elegidas no lineales
+            el personaje que atraviese la nube pierde 1 PM siendo defendible.
+            Se puede desplazar la nube."
+  duracion: "M"
+  potencia: "+1 casilla"
 -
   id:       44
   name:     "cono ácido"
-  tipo:     "Conjuro"
-  efecto:   "La casilla frontal al hechicero sufre un ataque por acido de 3 dados. Las 3 casillas posteriores centradas en la frontal 2 dados y las 5 siguientes centradas 1 dado."
+  tipo:     "Conjuro - Cono"
+  efecto:
+            "La casilla frontal al hechicero sufre un ataque por acido de 3 dados.
+            Las 3 casillas posteriores centradas en la frontal 2 dados
+            y las 5 siguientes centradas 1 dado."
   potencia: "+1 fuerza del ácido."
 -
   id:       45
   name:     "borbotón"
-  tipo:     "Conjuro"
-  efecto:   "Proyecta a un enemigo en el aire y en el impacto de la caida sufre un ataque de 3 por agua y otros 4 por combate. El oponente puede estar en cualquier lugar del tablero."
+  tipo:     "Conjuro - Área"
+  efecto:
+            "Proyecta a un enemigo en el aire y en el impacto de la caida
+            sufre un ataque de 3 por agua y otros 4 por combate.
+            El oponente puede estar en cualquier lugar del tablero."
   potencia: "+1 potencia del ataque de agua y +1 fuerza del impacto de la caída."
 -
   id:       46
@@ -429,13 +445,18 @@
   potencia: "+1 a la sanación y al ataque contra muertos vivientes."
 -
   id:       47
+  alcance:  "∞"
+  duracion: 0
   name:     "tsunami"
-  tipo:     "Conjuro"
-  efecto:   "Se inunda una habitacion ya revelada. Todos los objetos no magicos son destruidos. Defendible: sacando un escudo con 2 dados o reducir en 1 sus puntos de cuerpo."
+  tipo:     "Evocación - Sala"
+  efecto:
+            "Se inunda una habitacion ya revelada. Todos los objetos no magicos son destruidos.
+            Defendible: sacando un escudo con 2 dados o reducir en 1 sus puntos de cuerpo."
   potencia: "Se produce un tusnami extra en una sala contigua o en la misma sala.
 # Fuego nivel 3"
 -
   id:       48
+  duracion: 0
   name:     "deflagración"
   tipo:     "Conjuro"
   efecto:   "Todas las casillas adyacentes al lanzador sufren un Fuego de Ira. Es repetible al turno siguiente si se sacrifican 2 PC."
@@ -448,15 +469,18 @@
   potencia: "1 casilla extra."
 -
   id:       50
+  duracion: 0
   name:     "gran bola de fuego"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - bola"
   efecto:   "El objetivo recibe 6 daños de fuego. Se defenderá con 5 dados de combate."
   potencia: "+2 daños de fuego extra."
 -
   id:       51
+  duracion: "1d6"
+  alcance:  "V"
   name:     "recinto ígneo"
-  tipo:     "Conjuro"
-  efecto:   "El mago elige 4 casillas no contiguas y paralelas entre sí. De ellas brotarán 4 rayos ígneos 1d6 turnos."
+  tipo:     "Conjuro - Área"
+  efecto:   "El mago elige 4 casillas no contiguas y paralelas entre sí, de las que brotarán 4 rayos ígneos."
   potencia: "+1 turno extra."
 -
   id:       52
@@ -486,22 +510,33 @@
   potencia: "+2 a la tirada."
 -
   id:       56
+  alcance:  0
+  duracion: "D"
   name:     "levitar"
-  tipo:     "Aura"
-  efecto:   "El conjurador se eleva quedando inmune a trampas foso. Duración: hasta que reciba un daño."
+  tipo:     "Bendición - Aura"
+  efecto:   "El conjurador se eleva quedando inmune a trampas foso y considerándose posición elevada."
   potencia: "+1 daño necesario para el cese de levitar."
+  diablura: "Puedes dar pasos de combate"
+  ardid:    "Puedes situarte encima de otras miniaturas. Los hechizos de aire son gratuitos hacia ellos."
 -
   id:       57
   name:     "desvío"
-  tipo:     "Superchería"
-  efecto:   "Elemental instantánea. Cualquier proyectil o trampa flecha queda anulada. El mago puede elegir perder 2 PM y recuperar el hechizo una única vez."
+  tipo:     "Interrupción"
+  efecto:
+            "Cualquier proyectil o trampa flecha queda anulada.
+             El mago puede elegir perder 2 PM y recuperar el hechizo una única vez."
   potencia: "+1 recuperación / reto."
+  ardid:    "Funciona contra conjuros y evocaciones."
 -
   id:       58
+  duración: 3
+  alcance:  "V"
   name:     "puntería"
   tipo:     "Bendición"
-  efecto:   "El lanzador encanta un arma de proyectiles para que en los próximos 3 asaltos pueda repetir cualquier dado de ataque fallido."
-  potencia: "+1 asalto."
+  efecto:   "El lanzador encanta un arma de proyectiles con: Odio"
+  potencia: "+1 duración"
+  diablura: "Los dados repetidos exigen defensa verdadera"
+  ardid:    "El disparo tiene hendedura en línea recta gratuita."
 -
   id:       59
   name:     "tormenta desatada"
@@ -549,8 +584,10 @@
 -
   id:       66
   name:     "glifo de agua"
-  tipo:     "Bendición"
-  efecto:   "Sigue al objetivo hasta que muera. En ese momento el objetivo resucitará en estado de dormido con tantos puntos de cuerpo como tenga su mente."
+  tipo:     "Bendición - Glifo"
+  efecto:
+            "Sigue al objetivo hasta que muera. En ese momento el objetivo resucitará,
+            en estado de dormido con tantos puntos de cuerpo como tenga su mente."
   potencia: "+1 PM y +1 PC al objetivo cuando resucita."
 -
   id:       67
