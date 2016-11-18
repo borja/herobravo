@@ -89,7 +89,7 @@
   id:       8
   alcance:  0
   duracion: "M"
-  name:     "Escudo de Arena"
+  name:     "Escudo de arena"
   tipo:     "Bendición - Aura"
   efecto:   "El objetivo añade 2 dados amarillos a su defensa."
   diablura: "Las calaveras en los dados, se tiran como represalias."
