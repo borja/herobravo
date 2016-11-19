@@ -409,6 +409,13 @@
     main: "torre/historia"
     right: "torre/right/menu"
 -
+  ruta:  "vientos"
+  title: "Poder mágico"
+  template:
+    left: "torre/left/elementales"
+    main: "torre/vientos"
+    right: "torre/right/menu"
+-
   ruta:  "tipos"
   title: "Magia"
   template:
