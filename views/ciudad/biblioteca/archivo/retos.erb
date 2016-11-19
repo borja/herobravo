@@ -1,0 +1,30 @@
+<% r = retos.find { |reto| reto.id == params[:param].to_i } %>
+<header>
+	<h2><%= r.name %></h2>
+</header>
+<h3>Objetivo: <%= r.target %> (Tipo: <%= r.type %>)</h3>
+<p><%= r.desc %></p>
+<h3>Personajes</h3>
+<table>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th colspan=3>Héroe</th>
+			<th>Nivel</th>
+			<th><a href=/familiares>Familiar</a></th>
+			<th><a href=/profesiones>Profesión</a></th>
+			<th><a href=/armas>Armas</a></th>
+			<th><a href=/armaduras>Armadura</a></th>
+			<th>Reputación</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% r.pjs.each_with_index do |pj, i| %>
+			<%= erb :'heroes/hero', locals: { hero: hero(pj), index: i } %>
+		<% end %>
+	</tbody>
+</table>
+<h3>Personajes no-Jugador (PnJ)</h3>
+<%= r.pnjs %>
+<h3>Recompensa</h3>
+<%= r.reward %>

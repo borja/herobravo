@@ -340,6 +340,11 @@
     main:  "ciudad/biblioteca/archivo/main"
     right: "ciudad/biblioteca/biblioteca"
 -
+  ruta:  "reto"
+  template:
+    left:  "ciudad/biblioteca/archivo/left"
+    main:  "ciudad/biblioteca/archivo/retos"
+-
   ruta:  "biblioteca"
   template:
     left:  "ciudad/biblioteca/biblioteca"

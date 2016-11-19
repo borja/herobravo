@@ -1,6 +1,6 @@
 # Clase para aventuras
 class Reto < Hash
-  attr_accessor :id, :name, :pjs, :desc, :reward
+  attr_accessor :id, :name, :pjs, :pnjs, :desc, :reward, :target, :type
 
   def initialize(args)
     args.each do |k, v|
