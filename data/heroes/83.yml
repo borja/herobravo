@@ -4,6 +4,7 @@ jugador:   "Daniel de Haro"
 ciudad:    "Xanandra"
 familiar: { id: 17, name: "Pinta"}
 nivel:     3
+repu:      1
 cuerpo:    7
 mente:     4
 mov:       8

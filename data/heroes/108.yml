@@ -8,6 +8,7 @@ nivel:     2
 cuerpo:    7
 mente:     3
 mov:       8
+repu:      1
 armadura:  2
 armas:
   - { id: 31 }
