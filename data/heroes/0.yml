@@ -3,14 +3,16 @@ jugador:   "Borja"
 ciudad:    "Xanandra"
 titulo:    "Creador del Universo"
 personaje: "hechicero"
-camino:    ["El Oscuro", 2]
-familiar:  { id: 8, name: "Peróculo", torpe: true }
+familiar:  { id: 8, name: "Peróculo"}
+profesion: { id: 1, aprendiz: [0] }
 repu:      1
 nivel:     6
+xp:        7
 cuerpo:    5
 mente:     10
 mov:       7
 armadura:  1
+oro:       8
 armas:     { id: 8, enchants: [59], ranuras: 1 }
 miscelaneas:
   - { id: 2,  enchants: [30, 31], ranuras: 1 }
