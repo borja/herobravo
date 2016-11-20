@@ -2,6 +2,7 @@ name:      "Straüss"
 personaje: "matador"
 jugador:   "Daniel de Haro"
 ciudad:    "Xanandra"
+familiar: { id: 17, name: "Pinta"}
 nivel:     3
 cuerpo:    7
 mente:     4
