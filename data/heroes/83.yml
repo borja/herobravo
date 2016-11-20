@@ -16,5 +16,5 @@ pergaminos:
   - { id: 1, spells: [8] }
   - { id: 1, spells: [8] }
 skills:   [0, 2, 4, 5]
-pociones: [1, 4]
+pociones: [1, 4, 12]
 gemas: [3]
