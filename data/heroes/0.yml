@@ -5,7 +5,7 @@ titulo:    "Creador del Universo"
 personaje: "hechicero"
 familiar:  { id: 8, name: "Peróculo"}
 profesion: { id: 1, aprendiz: [0] }
-repu:      1
+repu:      2
 nivel:     6
 xp:        7
 cuerpo:    5
