@@ -49,12 +49,7 @@ class Pet < Hash
   end
 
   def conocidos
-    total = []
-    heros.each do |h|
-      next unless h.pet
-      (total << h.id) if h.pet.id == id
-    end
-    total
+    familiares_conocidos(id)
   end
 end
 

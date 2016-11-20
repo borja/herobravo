@@ -97,3 +97,24 @@
   type: 'reactiva'
   requisitos: [5,12]
   nivel: 6
+-
+  id: 14
+  name: 'Ensañamiento'
+  description: 'Recuperas ataque combinado al matar tú el último enemigo visible.'
+  type: 'reactiva'
+  requisitos: [1, 7]
+  nivel: 6
+-
+  id: 15
+  nivel: 6
+  requisitos: [0, 9]
+  name: 'Ferocidad'
+  description: 'La primera vez en el turno que se usa una habilidad única, se considera gratuita.'
+  type: 'pasiva'
+-
+  id: 16
+  nivel: 7
+  requisitos: [9]
+  name: 'Romper la guardia'
+  type: 'única'
+  description: 'Si tu ataque no tiene más dados que la defensa del objetivo, éste tirará defensa verdadera.'
