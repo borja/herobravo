@@ -109,7 +109,7 @@
   nivel: 6
   requisitos: [0, 9]
   name: 'Ferocidad'
-  description: 'La primera vez en el turno que se usa una habilidad única, se considera gratuita.'
+  description: 'La primera vez en el turno que se usa una habilidad única, se considera acción gratuita.'
   type: 'pasiva'
 -
   id: 16
