@@ -31,7 +31,7 @@
   name:         "Dos armas"
   type:         "pasiva"
   description:  "Permite llevar un arma en la mano torpe de tamaño igual o inferior al rango."
-  -
+-
   id:           5
   nivel:        3
   rangos:       2
