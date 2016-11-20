@@ -3,6 +3,7 @@ gender:    "female"
 personaje: "derviche"
 jugador:   "Iris"
 ciudad:    "Xanandra"
+familiar: { id: 15, name: "Mari", torpe: true }
 nivel:     6
 cuerpo:    8
 mente:     4
