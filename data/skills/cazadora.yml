@@ -27,6 +27,12 @@
   description:  "Al causar daño en un ataque en conjunto, la víctima perderá su movimiento."
 -
   id:           4
+  nivel:        2
+  name:         "Dos armas"
+  type:         "pasiva"
+  description:  "Permite llevar un arma en la mano torpe de tamaño igual o inferior al rango."
+  -
+  id:           5
   nivel:        3
   rangos:       2
   requisitos:   [0]
@@ -34,7 +40,7 @@
   type:         "pasiva"
   description:  "+1/rango potencia a los ataques no-frontales estando en sigilo"
 -
-  id:           5
+  id:           6
   nivel:        3
   name:         "Infalible"
   type:         "reactiva"
@@ -42,21 +48,21 @@
                 "Tras matar un enemigo cuerpo a cuerpo, podrás arrojar un arma como acción gratuita<br/>
                  (Podrá arrojar incluso armas que no sean arrojadizas)"
 -
-  id:           6
+  id:           7
   nivel:        3
   requisitos:   [3]
   name:         "Dentellada"
   type:         "pasiva"
   description:  "Añade dos veces tu ataque sin armas, cuando ataques a enemigos con movimiento reducido."
 -
-  id:           7
+  id:           8
   nivel:        3
   requisitos:   [0,1]
   name:         "Emboscada súbita"
   type:         "reactiva"
   description:  "Recupera salto feroz si todos los enemigos de la fase trepidante han sido eliminados ese turno."
 -
-  id:           8
+  id:           9
   nivel:        4
   requisitos:   [0]
   name:         "Hoja de la manada"
