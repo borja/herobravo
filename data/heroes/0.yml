@@ -21,7 +21,10 @@ protecciones:
   - { id: 8 }
 pergaminos:
   - { id: 1, spells: [11] }
-skills:   [0, 1, 2, 3, 4, 5, 6]
+skills:   [0, 1, 5, 6, 10, 11]
 hechizos: [0, 1, 2, 12, 13, 14, 18, 19, 20, 29, 39]
 sand:     [3, 4, 5]
 magister: [4]
+gemas: [0, 1, 25, 9, 27, 34, 37, 44]
+joyas: [1, 11]
+piezas: [4]
