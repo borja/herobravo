@@ -1,0 +1,17 @@
+
+name:      "Tani"
+personaje: "cazadora"
+jugador:   "Eva"
+status:    "reserva"
+gender:    "female"
+xp:        1
+nivel:     2
+cuerpo:    7
+mente:     3
+mov:       8
+armadura:  2
+armas:
+  - { id: 31 }
+  - { id: 7 }
+gemas: [15, 3]
+skills: [0, 1]

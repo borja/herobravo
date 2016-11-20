@@ -3,16 +3,24 @@ gender:    "female"
 personaje: "derviche"
 jugador:   "Iris"
 ciudad:    "Xanandra"
-nivel:     5
-cuerpo:    6
+nivel:     6
+cuerpo:    8
 mente:     4
-mov:       12
-armadura:  2
+mov:       13
+profesion: { id: 3, aprendiz: [0] }
+armadura:  { id: 2, gemas: [29] }
 armas:
   - { id: 5, gemas: [17] }
   - { id: 1, gemas: [18] }
+protecciones:
+  - { id: 2, joyas: 3 }
+  - { id: 4}
+  - { id: 10}
 miscelaneas:
   - { id: 6, ranuras: 2 }
   - { id: 2, enchants: [9] }
 hechizos: [7, 8, 9]
-skills:   [0, 1, 2, 3, 4]
+skills:   [0, 1, 2, 3, 4, 7]
+master: [0, 1]
+gemas: [16, 0, 1, 17, 24, 7, 2]
+runas: [10, 4]

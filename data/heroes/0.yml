@@ -5,7 +5,7 @@ titulo:    "Creador del Universo"
 personaje: "hechicero"
 familiar:  { id: 8, name: "Peróculo"}
 profesion: { id: 1, aprendiz: [0] }
-repu:      1
+repu:      2
 nivel:     6
 xp:        7
 cuerpo:    5
@@ -18,10 +18,13 @@ miscelaneas:
   - { id: 2,  enchants: [30, 31], ranuras: 1 }
   - { id: 16, enchants: [60] }
 protecciones:
-  - { id: 8 }
+  - { id: 8, gemas: [26] }
 pergaminos:
   - { id: 1, spells: [11] }
-skills:   [0, 1, 2, 3, 4, 5, 6]
+skills:   [0, 1, 5, 6, 10, 11]
 hechizos: [0, 1, 2, 12, 13, 14, 18, 19, 20, 29, 39]
 sand:     [3, 4, 5]
 magister: [4]
+gemas: [0, 1, 25, 9, 27, 34, 37, 44]
+joyas: [1, 11]
+piezas: [4]

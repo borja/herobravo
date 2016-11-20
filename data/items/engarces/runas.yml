@@ -45,7 +45,7 @@
   name: "bek"
   fits:
     cabeza:   "+1 dado de defensa potencia 3"
-    espada:   "Evenena 2 escudos negros: dormir"
+    espada:   "Envenena 2 escudos negros: dormir"
     hacha:    "Eléctrica 2 escudos negros: obtienes ráfaga."
     daga:     "+2 de potencia en los ataques por la espalda"
     espalda:  "+1 PC al ser atacado por la espalda, por enemigos en sigilo"

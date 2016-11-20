@@ -1,6 +1,6 @@
 -
       id:           0 
-      name:         "Hechicería" 
+      name:         "Recuperar" 
       description:  "N+: Recupera una magia (N = 7-rango)" 
       type:         "disparada" 
       nivel:        2 

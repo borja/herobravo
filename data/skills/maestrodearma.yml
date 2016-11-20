@@ -7,7 +7,7 @@
 - 
   id:          1
   name:        "Dominio de la lanza"
-  description: "Permite llevar lanzas en una mano"
+  description: "Permite llevar lanzas en una mano y permite atacar en +1 casilla de distancia de manera frontal"
   coste:       "100"
   type:        "Pasiva"
 - 
