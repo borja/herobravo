@@ -20,7 +20,7 @@ protecciones:
 miscelaneas:
   - { id: 6, ranuras: 2 }
   - { id: 2, enchants: [9] }
-hechizos: [7, 8, 9]
+hechizos: [12, 13, 14]
 skills:   [0, 1, 2, 3, 4, 7]
 master:   [0, 1]
 tesoro:
