@@ -20,7 +20,7 @@ repu:   6
 cuerpo: 10
 mente:  6
 mov:    8
-exp:    10
+exp:    15
 oro:    376
 rentas: 1
 familiar:  { id: 18, name: "Menta", torpe: true }
