@@ -1,7 +1,7 @@
 # Todos los hechizos de tipo hielo
 class Hielo < Magia
   def nivel
-    1
+    ((id / 6) + 1).to_i
   end
 
   def elemento

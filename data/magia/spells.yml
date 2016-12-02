@@ -11,8 +11,8 @@
   ardid:    "Miniaturas colindantes a las víctimas sufren Fuego de Ira."
 -
   id:       1
-  alcance:  "V"
-  duracion: "∞"
+  alcance:  "∞"
+  duracion: 0
   name:     "fuego de ira"
   tipo:     "Maldición"
   efecto:   "Causa 1 dado de ataque directo a un enemigo del tablero."
