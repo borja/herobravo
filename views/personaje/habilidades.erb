@@ -9,7 +9,13 @@
 	<tbody>
 		<tr>
 			<% clases.keys.each do |clase| %>
-				<td><img src=../images/personajes/<%= clase %>.png alt="<%= clase %>" /, id='icon2'></td>
+				<td>
+					<a href='/personaje/<%= clase %>'>
+						<img src="images/personajes/<%= clase %>.png"
+							alt="<%= clase %>" 
+							id='icon2' />
+					</a>
+				</td>
 			<% end %>
 		</tr>
 		<% 3.times do |i| %>

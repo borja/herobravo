@@ -51,7 +51,6 @@
   name: "dado magiorco"
   max:  1
   fits: "amuleto"
-  artefacto: true
   precio: 500
 -
   id:   9
@@ -77,7 +76,6 @@
   name: "saco garrapato"
   max:  1
   fits: "amuleto"
-  artefacto: true
   precio: 650
 -
   id:   13

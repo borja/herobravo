@@ -62,6 +62,19 @@
     main: "lore/pnjs/:param"
     right: "lore/derecha"
 -
+  ruta:  "personaje"
+  title: "view"
+  template:
+    left:  "personaje/razas/left/links"
+    main:  "personaje/clases/clase"
+    right: "personaje/razas/right/stats"
+-
+  ruta:  "especial"
+  title: "view"
+  template:
+    left:  "personaje/razas/left/links"
+    main:  "personaje/especializaciones/:param"
+-
   ruta:  "mapa"
   template:
     left: "mapa/ciudades"
@@ -86,16 +99,23 @@
   ruta:  "tarot"
   title: "Tarot Maligno"
   template:
-    left: "items/tarot/left"
-    main: "items/tarot/tarot"
-    right: "reglamento/derecha/combate"
+    left:  "objetos/right/artefactos"
+    main:  "items/tarot/tarot"
+    right: "items/tarot/left"
 -
   ruta:  "espadaroja"
   title: "Espada Roja"
   template:
-    left: "items/espadaroja/left"
-    main: "items/espadaroja/adivinanza"
-    right: "reglamento/derecha/combate"
+    left:  "objetos/right/artefactos"
+    main:  "items/espadaroja/adivinanza"
+    right: "items/espadaroja/right"
+-
+  ruta:  "listanegra"
+  title: "Lista Negra"
+  template:
+    left:  "objetos/right/artefactos"
+    main:  "items/listanegra/main"
+    right: "items/listanegra/listado"
 -
   ruta:  "habilidad"
   title: "view"
@@ -173,6 +193,18 @@
     right: "personaje/profesiones/index"
     right2: "reglamento/derecha/personajes"
 -
+  ruta:  "personajes"
+  template:
+    left: "personaje/razas/left/links"
+    main: "personaje/personajes"
+    right: "personaje/razas/right/stats"
+-
+  ruta:  "descendientes"
+  template:
+    left: "personaje/razas/left/links"
+    main: "personaje/razas/center/descendientes"
+    right: "personaje/razas/right/stats"
+-
   ruta:  "razas"
   template:
     left: "personaje/razas/left/links"
@@ -184,23 +216,24 @@
   template:
     left: "personaje/razas/left/links"
     main: "personaje/razas/center/:param"
-    right: "personaje/razas/right/:param"
+    right: "personaje/razas/right/special"
 -
   ruta:  "manuales"
   title: "Reglamento"
   template:
-    left: "reglamento/izquierda/bestiario"
-    main: "reglamento/principal"
+    left:  "reglamento/izquierda/bestiariocompact"
+    left2: "reglamento/derecha/personajes"
+    main:  "reglamento/principal"
     right: "reglamento/derecha/combate"
-    right2: "reglamento/derecha/personajes"
+    right2: "reglamento/derecha/dados"
 -
   ruta:  "objetos"
   template:
     left: "objetos/left/content1"
     left2: "objetos/left/content2"
     main: "objetos/main"
-    right: "objetos/right/content1"
-    right2: "objetos/right/content2"
+    right: "objetos/right/contenedores"
+    right2: "objetos/right/artefactos"
 -
   ruta:  "tesoro"
   template:

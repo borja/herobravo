@@ -1,0 +1,28 @@
+<header>
+	<h2>Especializaciones</h2>
+</header>
+<a href='/raza/<%= params[:param] %>' class='feature-image'>
+	<img
+		src='/images/razas/<%= params[:param] %>.jpg' 
+		alt='<%= params[:param] %>'
+	/>
+</a>
+<h3>Tipos de <%= pj = params[:param] %></h3>
+<ul class="link-list">
+	<% case pj
+	   when 'humanos'%>
+				<li><a href="/personaje/bárbaro">Bárbaro</a></li>
+				<li><a href="/personaje/paladín">Paladín</a></li>
+				<li><a href="/personaje/ladrón">Ladrón</a></li>
+				<li><a href="/personaje/clérigo">Clérigo</a></li>
+				<li><a href="/personaje/mago">Mago</a></li>
+	<% when 'elohim' %>
+		<% clases['elohim'].each do |special| %>
+			<li><a href="/special/<%= special %>"><%= special %></a></li>
+		<% end %>
+	<% else %>
+		<% clases[pj[0..-2]].each do |special| %>
+			<li><a href="/especial/<%= special %>"><%= special %></a></li>
+		<% end %>
+	<% end %>
+</ul>

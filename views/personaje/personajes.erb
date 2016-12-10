@@ -1,0 +1,22 @@
+<header>
+	<h2>Personajes</h2>
+</header>
+<p>
+	La primera vez que un jugador inicia su primera partida,
+	deberá escoger un personaje entre los 4 personajes iniciales:
+	<%= erb :'personaje/principal/iniciales' %>
+</p>
+<h3>Características principales del personaje</h3>
+<%= erb :'personaje/principal/elegir' %>
+<h3>Especializaciones</h3>
+<p>
+	Los jugadores que alcancen nivel 2, podrán "especializarse",
+	es decir, decidir cuál de las 3 especializaciones de su personaje
+	quieren jugar. Las especializaciones dependen del personaje
+	elegido, y una vez escogidas, no se podrán cambiar.
+</p>
+<p>
+	Por ejemplo, si Daniel escogió que su enano fuera
+	falangista, después no podrá elegir habilidades del
+	enano ingeniero, por mucho que le parezcan interesantes...
+</p>

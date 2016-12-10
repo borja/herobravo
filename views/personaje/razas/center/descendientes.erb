@@ -1,0 +1,90 @@
+<header>
+	<h2>Engendrando descendencia</h2>
+</header>
+
+<h3>Usar un descendiente</h3>
+<p>
+	Morir, usar al hijo, herencia, mujeres vs hombre, profesiones, familiares
+	y muchos links en este párrafo.
+</p>
+
+<h3>Amor entre personajes</h3>
+<p>
+	Esto explica los corazoncitos y los gemelos
+</p>
+
+<h3>Pagar</h3>
+<p>
+	Esto explica muy sutilmente la cuestión de Emma (link, please)
+</p>
+
+<h3>Tabla de emparejamientos</h3>
+<table>
+	<thead>
+		<tr>
+			<th>PJ</th>
+			<th><img src=../images/personajes/humano.png alt="humano" /, id='icon'></th>
+			<% razas.each do |r| %>
+				<% next if r.last.last == 'humano' %>
+				<% next if r.last.last == 'parangón' %>
+				<th><img src=../images/personajes/<%= r.first %>.png alt="<%= r.first %>" /, id='icon'></th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th><img src='images/personajes/maga.png' alt="humana" /, id='icon'></th>
+			<td><img src='images/personajes/humano.png' alt="humano" /, id='icon'></td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td>50%</td>
+			<td>50%</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/enano.png' alt="enano" /, id='icon'></th>
+			<td>X</td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/elfa.png' alt="elfa" /, id='icon'></th>
+			<td>50%</td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td><img src='images/personajes/elfo.png' alt="elfo" /, id='icon'></td>
+			<td>50%</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/tieflina.png' alt="tieflina" /, id='icon'></th>
+			<td>50%</td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td>50%</td>
+			<td><img src='images/personajes/tiefling.png' alt="tiefling" /, id='icon'></td>
+			<td>50%</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/rakshasi.png' alt="rakshasi" /, id='icon'></th>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>50%</td>
+			<td><img src='images/personajes/rakshasa.png' alt="rakshasa" /, id='icon'></td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/elohim.png' alt="elohim" /, id='icon'></th>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+	</tbody>
+</table>
