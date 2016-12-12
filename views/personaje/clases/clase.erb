@@ -1,5 +1,5 @@
 <header>
-	<h2>Personaje: <%= params[:param] %></h2>
+	<h2>El <%= params[:param] %> como personaje</h2>
 </header>
 
 <h3>Habilidades iniciales</h3>
@@ -15,7 +15,7 @@
 			<tr><td><%= erb :'display/skillbase', locals: { skill: hab} %></td>
 				<td><%= hab.name %></td>
 				<td><%= hab.description %></td>
-			</tr>			
+			</tr>
 		<% end %>
 	</tbody>
 </table>

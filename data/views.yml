@@ -65,14 +65,14 @@
   ruta:  "personaje"
   title: "view"
   template:
-    left:  "personaje/razas/left/links"
+    left:  "personaje/principal/menu"
     main:  "personaje/clases/clase"
-    right: "personaje/razas/right/stats"
+    right: "personaje/principal/specific"
 -
   ruta:  "especial"
   title: "view"
   template:
-    left:  "personaje/razas/left/links"
+    left:  "personaje/principal/menu"
     main:  "personaje/especializaciones/:param"
 -
   ruta:  "mapa"
@@ -131,7 +131,7 @@
 -
   ruta:  "materiales"
   template:
-    left: "objetos/right/content2"
+    left: "objetos/right/contenedores"
     main: "items/materiales"
 -
   ruta:  "calculador"
@@ -195,7 +195,7 @@
 -
   ruta:  "personajes"
   template:
-    left: "personaje/razas/left/links"
+    left:  "personaje/principal/menu"
     main: "personaje/personajes"
     right: "personaje/razas/right/stats"
 -
@@ -265,17 +265,17 @@
 -
   ruta:  "piezas"
   template:
-    left: "objetos/right/content2"
+    left: "objetos/right/contenedores"
     main: "items/piezas"
 -
   ruta:  "pociones"
   template:
-    left: "objetos/right/content2"
+    left: "objetos/right/contenedores"
     main: "items/pociones"
 -
   ruta:  "abalorios"
   template:
-    left: "objetos/right/content2"
+    left: "objetos/right/contenedores"
     main: "items/abalorios"
 -
   ruta:  "maestrodearmas"
