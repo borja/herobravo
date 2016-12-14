@@ -110,6 +110,13 @@
     main:  "items/espadaroja/adivinanza"
     right: "items/espadaroja/right"
 -
+  ruta:  "solve"
+  title: "Espada Roja"
+  template:
+    left:  "objetos/right/artefactos"
+    main:  "items/espadaroja/solucion"
+    right: "items/espadaroja/right"
+-
   ruta:  "listanegra"
   title: "Lista Negra"
   template:
