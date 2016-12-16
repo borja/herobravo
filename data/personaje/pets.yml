@@ -9,7 +9,7 @@
   name:       "gato"
   personajes: ["mago","rakshasa"]
   bono:       "+1 movimiento"
-  lacra:      "Lobos & skavens te odian"
+  lacra:      "Lobos y skavens te odian"
 -
   id:         2
   name:       "mapache"
@@ -209,7 +209,7 @@
   name:       "gato perdido"
   personajes: "todos"
   bono:       "+1 movimiento"
-  lacra:      "Lobos & skavens te odian"
+  lacra:      "Lobos y skavens te odian"
 -
   id:         33
   name:       "escorpión"
