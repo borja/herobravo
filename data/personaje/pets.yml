@@ -3,26 +3,26 @@
   name:       "castor"
   personajes: ["enano"]
   bono:       "+1 puertas secretas"
-  lacra:      "Al final de la partida destruye un objeto aleatorio de madera."
+  lacra:      "Al final de la partida destruye un objeto aleatorio de madera"
 -
   id:         1
   name:       "gato"
   personajes: ["mago","rakshasa"]
   bono:       "+1 movimiento"
-  lacra:      "Los lobos y los skavens obtienen odio hacia su portador."
+  lacra:      "Los lobos y los skavens obtienen odio hacia su portador"
 -
   id:         2
   name:       "mapache"
   personajes: ["bárbaro","enano"]
   bono:       "+1 encontrar puertas secretas"
-  lacra:      "Te hace cosquillas: -1 desactivar trampas."
+  lacra:      "Te hace cosquillas: -1 desactivar trampas"
 -
   id:         3
   name:       "marmota"
   personajes: ["bárbaro","enano"]
   bono:       "+1 bonificacion en comida y bebida"
   sex:        "female"
-  lacra:      "Con 1 PM o menos tu personaje se queda dormido."
+  lacra:      "Con 1 PM o menos tu personaje se queda dormido"
 -
   id:         4
   name:       "rata"
@@ -35,7 +35,7 @@
   name:       "murciélago"
   personajes: ["mago"]
   bono:       "dagas/cuchillos: +1 robo de vida"
-  lacra:      "-2 Resistencia a la magia de sangre."
+  lacra:      "-2 Resistencia a la magia de sangre"
 -
   id:         6
   name:       "sapo"
@@ -54,13 +54,13 @@
   name:       "búho"
   personajes: ["mago"]
   bono:       "+1 hechizo"
-  lacra:       "Mientras el buho sea visible todos los familiares roedores de los aliados se negaran a salir."
+  lacra:       "Mientras el buho sea visible todos los familiares roedores de los aliados se negaran a salir"
 -
   id:         9
   name:       "araña"
   personajes: ["mago","rakshasa"]
   bono:       "+1 saltar fosos"
-  lacra:      "Todos los elfos tienen odio contra su portador."
+  lacra:      "Todos los elfos tienen odio contra su portador"
   sex:        "female"
 -
   id:         10
@@ -74,7 +74,7 @@
   name:       "saprolín"
   personajes: ["elfo"]
   bono:       "+1 PV"
-  lacra:      "Empiezas con un hechizo menos la partida."
+  lacra:      "Empiezas la partida con un hechizo menos"
 -
   id:         12
   name:       "duende"
@@ -86,7 +86,7 @@
   name:       "hada"
   personajes: ["elfo"]
   bono:       "+1 hechizo élfico"
-  lacra:      "Muere inmediatamente si el portador recibe daño de fuego en una zona de efecto."
+  lacra:      "Muere inmediatamente si el portador recibe daño de fuego en una zona de efecto"
 -
   id:         14
   name:       "luciérnaga"
@@ -99,7 +99,7 @@
   name:       "mariposa"
   personajes: ["elfo"]
   bono:       "+1 resistencia (todo)"
-  lacra:       "Si muere el personaje ella tambien muere."
+  lacra:       "Si muere el personaje ella tambien muere"
   sex:        "female"
 -
   id:         16
@@ -113,20 +113,20 @@
   personajes: ["bárbaro","enano"]
   bono:       "+1 PM"
   sex:        "female"
-  lacra:      "x2 Fuerza del primer ataque mental que recibas."
+  lacra:      "x2 Fuerza del primer ataque mental que recibas"
 -
   id:         18
   name:       "comadreja"
   personajes: ["bárbaro","enano"]
   bono:       "+1 resistencia vs Peste"
-  lacra:      "Roba el primer tesoro de comida del reto podrida o no."
+  lacra:      "Roba el primer tesoro de comida del reto podrida o no"
   sex:        "female"
 -
   id:         19
   name:       "pitufo"
   personajes: ["elfo"]
   bono:       "+1 PM"
-  lacra:      "No puedes realizar magia de un elemento aleatorio determinado al inicio de cada partida."
+  lacra:      "No puedes realizar magia de un elemento aleatorio determinado al inicio de cada partida"
 -
   id:         20
   name:       "diablillo chillón"
@@ -138,50 +138,50 @@
   name:       "mariquita"
   personajes: ["elfo","enano"]
   bono:       "+1 PM al saltar con éxito. (solo cuenta el primer salto)"
-  lacra:      "El personaje no puede enamorarse de héroes de sexo opuesto."
+  lacra:      "El personaje no puede enamorarse de héroes de sexo opuesto"
   sex:        "female"
 -
   id:         22
   name:       "griemling"
   personajes: ["enano","mago"]
-  bono:       "+1 PC cuando el personaje es objetivo de un hechizo de agua otro jugador aleatorio obtiene un griemling como familiar."
-  lacra:      "Si la partida es nocturna la comida resta PM en lugar de añadir PC/PM."
+  bono:       "+1 PC cuando el personaje es objetivo de un hechizo de agua otro jugador aleatorio obtiene un griemling como familiar"
+  lacra:      "Si la partida es nocturna la comida resta PM en lugar de añadir PC/PM"
 -
   id:         23
   name:       "estorbito"
   personajes: ["bárbaro","mago"]
-  bono:       "Cuando un hechizo fuera a causarte la muerte mata al estorbito en su lugar."
-  lacra:      "Cuando un golpe de arma fuera a causarte la muerte no puedes utilizar gloria del héroe."
+  bono:       "Cuando un hechizo fuera a causarte la muerte mata al estorbito en su lugar"
+  lacra:      "Cuando un golpe de arma fuera a causarte la muerte no puedes utilizar gloria del héroe"
 -
   id:         24
   name:       "armadillo"
   personajes: ["enano","rakshasa"]
   bono:       "1/reto: Puedes defender con defensa verdadera"
-  lacra:      "Fallar una tirada de miedo: te tumbas en posición fetal."
+  lacra:      "Fallar una tirada de miedo: te tumbas en posición fetal"
 -
   id:         25
   name:       "puercoespín"
   personajes: ["enano","bárbaro"]
-  bono:       "1/reto: Puedes inflingir el exceso de defensa como ataque gratuito."
+  bono:       "1/reto: Puedes inflingir el exceso de defensa como ataque gratuito"
   lacra:      "Duplica el daño en fosos trampa"
 -
   id:         26
   name:       "wombat"
   personajes: ["enano","bárbaro"]
-  bono:       "Puedes descartar la comida al final del reto en lugar del final del turno."
+  bono:       "Puedes descartar la comida al final del reto en lugar del final del turno"
   lacra:      "Entrarás en locura a partir de 1PM"
 -
   id:         27
   name:       "gusiluz"
   personajes: ["mago","enano"]
   bono:       "Se puede llevar como objeto a 1 mano: Ilumina"
-  lacra:      "Eres más apetecible para las arañas: Te odian."
+  lacra:      "Eres más apetecible para las arañas: Te odian"
 -
   id:         28
   name:       "lechúcico"
   personajes: ["elfo","mago"]
-  bono:       "1/reto: Te cuenta un secreto."
-  lacra:      "1/reto: Te miente."
+  bono:       "1/reto: Te cuenta un secreto"
+  lacra:      "1/reto: Te miente"
 -
   id:         29
   name:       "gallo antipático"
@@ -192,7 +192,7 @@
   id:         30
   name:       "calabacino siniestro"
   personajes: ["ladrón","tiefling"]
-  bono:       "Cuando una magia te causa daños obtienes 15 de oro."
+  bono:       "Cuando una magia te causa daños obtienes 15 de oro"
   lacra:      >
     Al final del reto tira 1 dado de combate:
     <p align=left><b>Calavera</b>: Te roba el oro total obtenido<br>
@@ -203,19 +203,19 @@
   name:       "águila imperial"
   personajes: "todos"
   bono:       "ataque: 1, defensa: 2, movimiento: 10, PC: 2, PM: 1, vuela"
-  lacra:      "No puede participar en mazmorras cubiertas/ con techo, sin consumir 1 mano."
+  lacra:      "No puede participar en mazmorras cubiertas/ con techo, sin consumir 1 mano"
 -
   id:         32
   name:       "gato perdido"
   personajes: "todos"
   bono:       "+1 movimiento"
-  lacra:      "Los lobos y los skavens obtienen odio hacia su portador."
+  lacra:      "Los lobos y los skavens obtienen odio hacia su portador"
 -
   id:         33
   name:       "escorpión"
   personajes: ["rakshasa"]
   bono:       "armas de asta/ dos manos: envenenan"
-  lacra:      "Si por error envenenas a un aliado, la herida es mortal."
+  lacra:      "Si por error envenenas a un aliado, la herida es mortal"
 -
   id:         34
   name:       "escarabajo dorado"
