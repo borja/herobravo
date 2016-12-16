@@ -137,8 +137,8 @@
   id:         21
   name:       "mariquita"
   personajes: ["elfo","enano"]
-  bono:       "+1 PM al saltar con éxito. (solo cuenta el primer salto)"
-  lacra:      "El personaje no puede enamorarse de héroes de sexo opuesto"
+  bono:       "+1 PM al saltar con éxito (solo cuenta el 1º salto)"
+  lacra:      "El personaje no puede enamorarse de héroes del sexo opuesto"
   sex:        "female"
 -
   id:         22
