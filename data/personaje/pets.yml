@@ -9,7 +9,7 @@
   name:       "gato"
   personajes: ["mago","rakshasa"]
   bono:       "+1 movimiento"
-  lacra:      "Los lobos y los skavens obtienen odio hacia su portador"
+  lacra:      "Lobos & skavens te odian"
 -
   id:         2
   name:       "mapache"
