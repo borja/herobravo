@@ -1,0 +1,23 @@
+<table>
+	<thead>
+		<tr>
+			<th>Icono</th>
+			<th>Nombre</th>
+			<th>Bonificador</th>
+			<th>Penalizador</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% pets.each do |familiar| %>
+		<% p = Pet.new(familiar) %>
+		<% permitido = (p.personajes.include? pj || p.personajes == "Todos" ) %>
+		<% next unless permitido %>
+			<tr>
+				<td><img src=<%= p.img_path %> alt=<%= p.bicho %>, id='icon' /></td>
+				<td><%= p.bicho %></td>
+				<td><%= p.bono %></td>
+				<td><%= p.lacra %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
