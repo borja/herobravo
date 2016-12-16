@@ -1,24 +1,34 @@
+<% pj = params[:param] %>
 <header>
-	<h2>El <%= params[:param] %> como personaje</h2>
+	<h2>El <%= pj %> como personaje</h2>
 </header>
 
-<h3>Habilidades iniciales</h3>
-<table>
-	<thead>
-		<tr>
-			<th colspan='2'>Habilidad</th>
-			<th>Descripción</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% habilidad_base(params[:param]).each do |hab| %>
-			<tr><td><%= erb :'display/skillbase', locals: { skill: hab} %></td>
-				<td><%= hab.name %></td>
-				<td><%= hab.description %></td>
+<p>
+	<h3>Habilidades iniciales</h3>
+	<table>
+		<thead>
+			<tr>
+				<th colspan='2'>Habilidad</th>
+				<th>Descripción</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% habilidad_base(pj).each do |hab| %>
+				<tr><td><%= erb :'display/skillbase', locals: { skill: hab} %></td>
+					<td><%= hab.name %></td>
+					<td><%= hab.description %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</p>
 
-<h3>Especializaciones</h3>
-<%= erb :'personaje/clases/special_table' %>
+<p>
+	<h3>Especializaciones</h3>
+	<%= erb :'personaje/clases/special_table', locals: {pj: pj} %>
+</p>
+
+<p>
+	<h3>Familiares disponibles del <%= pj %></h3>
+	<%= erb :'personaje/clases/pets_table', locals: {pj: pj} %>
+</p>
