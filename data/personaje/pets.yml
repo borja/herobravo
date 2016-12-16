@@ -98,8 +98,8 @@
   id:         15
   name:       "mariposa"
   personajes: ["elfo"]
-  bono:       "+1 resistencia (todo)"
-  lacra:       "Si muere el personaje ella tambien muere"
+  bono:       "+1 resistencia (elementos)"
+  lacra:       "Si muere el personaje ella también muere"
   sex:        "female"
 -
   id:         16
