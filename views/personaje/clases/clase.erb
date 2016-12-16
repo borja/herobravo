@@ -32,3 +32,27 @@
 	<h3>Familiares disponibles del <%= pj %></h3>
 	<%= erb :'personaje/clases/pets_table', locals: {pj: pj} %>
 </p>
+
+<p>
+	<% prof = profesions.detect {|p| p.imped == pj }%>
+	<h3>Profesión prohibida: <%= prof.name %></h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Icono</th>
+				<th>Justificación</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% profesions.each do |p| %>
+			<% next unless p.imped == pj %>
+				<tr>
+					<td><a href="/profesion/<%= p.name %>">
+						<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon' />
+					</a></td>
+					<td><%= p.why %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</p>
