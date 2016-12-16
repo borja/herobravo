@@ -11,8 +11,8 @@
   ardid:    "Miniaturas colindantes a las víctimas sufren Fuego de Ira."
 -
   id:       1
-  alcance:  "V"
-  duracion: "∞"
+  alcance:  "∞"
+  duracion: 0
   name:     "fuego de ira"
   tipo:     "Maldición"
   efecto:   "Causa 1 dado de ataque directo a un enemigo del tablero."
@@ -345,7 +345,7 @@
   name:     "aura de la tormenta"
   tipo:     "Bendición - Aura"
   efecto:   "Se usa sobre uno mismo. Defensa: +1. Los seres que se acerquen a melee sufren 1 ataque electrico y al final de su turno deben retroceder una casilla hacia atras pudiendo sufrir colisión."
-  duracion: "hasta que el mago sufra una herida."
+  duracion: "D"
   potencia: "+1 de defensa +1 dado de ataque eléctrico y +1 casilla desplazada."
 -
   id:       35
@@ -642,7 +642,9 @@
   id:       75
   name:     "derretir la piedra"
   tipo:     "Superchería"
-  efecto:   "El lanzador puede crear una puerta en una pared siempre que la otro lado haya casillas válidas. Puede gastar 3 PM o 1 magia para recuperar ésta."
+  efecto:
+            "El lanzador puede crear una puerta en una pared siempre que la otro lado haya casillas válidas.
+             Puede gastar 3 PM o 1 magia para recuperar ésta."
   potencia: "+1 puerta creada siempre que el lanzador así lo desee."
 -
   id:       76

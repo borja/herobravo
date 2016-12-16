@@ -1,7 +1,7 @@
 <table>
 	<thead>
 		<tr>
-			<th>1d8</th>
+			<th>d10</th>
 			<th colspan=2>Personaje</th>
 		</tr>
 	</thead>
@@ -11,11 +11,22 @@
 			<tr>
 				<td><%= i+1 %></td>
 				<td><img src=../images/personajes/<%= pj.first %>.png alt="<%= pj.first %>" /, id='icon'></td>
-				<td><%= pj.first %></td>
+				<td><a href='/personaje/<%= pj.first %>'><%= pj.first %></a></td>
 			</tr>
 		<% end %>
 		<tr>
 			<td>8</td>
+			<td><img src=../images/personajes/clérigo.png alt="Clérigo" /, id='icon'></td>
+			<td><a href='/personaje/clérigo'>clérigo</a></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><img src=../images/personajes/ladrón.png alt="Ladrón" /, id='icon'></td>
+			<td><a href='/personaje/ladrón'>ladrón</a></td>
+		</tr>
+		<tr>
+			<td>10</td>
 			<td colspan=2>Puedes elegir el personaje que desees</td>
+		</tr>
 	</tbody>
 </table>

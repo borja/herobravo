@@ -1,0 +1,23 @@
+<% pj = params[:param] %>
+<table>
+	<thead>
+		<tr>
+			<th width='30%'>Emblema</th>
+			<th>Nombre</th>
+			<th width='30%'>Salón</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% clases[pj].each do |special| %>
+			<tr>
+				<td>
+					<a href="/habilidad/<%= special %>">
+						<img src="/images/clases/<%= special %>.png" alt=<%= special %> /, id='icon4'>
+					</a>
+				</td>
+				<td><a href='/especial/<%= special %>'><%= special %></a></td>
+				<td><a href='/fama/<%= special %>'><%= fama(special) %></a></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

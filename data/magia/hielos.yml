@@ -65,3 +65,68 @@
   diablura: "Las águilas de los dados, dañan y congelan simultáneamente"
   potencia: "+1 dado de hielo de ataque"
   ardid:    "Si este hechizo es recuperado o lanzado por una habilidad, puedes ejecutarlo contra otro enemigo."
+- 
+  id:       6
+  alcance:  "M"
+  duracion: 0
+  name:     "Orbe helado"
+  tipo:     "Conjuro - Bola"
+  efecto:   "2 dados de frío de daño directo a lo largo de su recorrido. Al matar aumenta la fuerza para la siguiente casilla"
+  diablura: "Recuperas X(PM) por cada enemigo congelado. X = la potencia del hechizo"
+  potencia: "+1 dado de frío"
+  ardid:    "Los enemigos congelados pierden su resistencia a la escarcha"
+- 
+  id:       7
+  alcance:  "∞"
+  duracion: 0
+  name:     "Ira de escarcha"
+  tipo:     "Maldición"
+  efecto:   "Causa 1 dado de frío de ataque directo a un enemigo del tablero. Si muere, inmediatamente lanzas una copia de Ira de escarcha."
+  diablura: "Recupera el hechizo al causar daño con él."
+  potencia: "+1 fuerza"
+  ardid:    "Odias al objetivo"
+-
+  id:       8
+  alcance:  "V"
+  duracion: "∞"
+  name:     "Muro de hielo"
+  tipo:     "Evocación - Muro"
+  efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas se convertiran en bloques de hielo."
+  diablura: "1PM: El muro persiste a pesar de ser destruido"
+  potencia: "+1 grosor del muro."
+  ardid:    "Al romperse una casilla del muro, se lanza gratuitamente: Helada (con diablura)"
+-
+  id:       9
+  alcance:  0
+  duracion: 1
+  name:     "Toque helado"
+  tipo:     "Maldición - Toque"
+  efecto:   "El objetivo queda congelado. Si recibe daño contundente, será destruido."
+  diablura: "Al inicio de su turno, la víctima tira un dado de congelación de daño directo"
+  potencia: "+1 duración"
+  ardid:    "El efecto se propaga a las miniaturas colindantes."
+-
+  id:       10
+  alcance:  "V"
+  duracion: 1
+  name:     "Bendición de escarcha"
+  tipo:     "Bendición"
+  efecto:   "Insinto: El objetivo puede reununciar a su próximo movimiento para duplicar sus dados de defensa como azules."
+  diablura: "Girar no supondrá una fase movimiento"
+  potencia: "+1 potencia a los dados duplicados."
+  ardid:    "El objetivo podrá conservar la bendición si no la declara en fase de instintos."
+-
+  id:       11
+  alcance:  0
+  duracion: "X"
+  name:     "Calavera de runas"
+  tipo:     "Aura"
+  efecto:
+            "1 carga de calavera tallada flota a tu alrededor. -1 carga/turno.<br/>
+             - 1 carga: (Instinto) añade un dado azul de defensa verdadera<br/>
+             - 1 carga: Recupera un hechizo consumido de frío<br/>
+             - 1 carga: Añade un dado de frío a tu siguiente ataque/conjuro<br/>
+             (Ganas una carga al matar con magia de hielo)"
+  diablura: "Ganas cargas simplemente con dañar. (No es necesario matar)"
+  potencia: "+1 carga"
+  ardid:    "1PM (instinto): +1 resistencia mágica por cada calavera a tu alrededor"

@@ -22,6 +22,7 @@
   id:     4
   name:   "La Lista Negra"
   efecto: "Listado de víctimas a ejecutar. Algunas ya están tachadas."
+  unico:  "listanegra"
   size:   1
 -
   id:     5

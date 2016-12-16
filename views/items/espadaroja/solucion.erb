@@ -1,0 +1,23 @@
+<header>
+	<h2>Solución al acertijo</h2>
+</header>
+<p>
+	Tu ignorancia ha solicitado una respuesta, un premio.
+	Sin duda mereces pagar el precio de sangre.
+	Tu deliciosa sangre te servirá como recordatorio de tu propia
+	naturaleza inane y de lo mucho que distas de ser considerado
+	un digno portador de mi empuñadura.
+</p>
+<h3>Este era el enigma planteado:</h3>
+<% pregunta_id = params[:param] %>
+<center>
+	<%= erb :"items/espadaroja/adivinanzas/#{pregunta_id}" %>
+</center>
+<h3>
+	Solución: 
+	<%= erb :"items/espadaroja/soluciones/#{pregunta_id}" %>
+</h3>
+<p>
+	Espero que puedas considerar cuan abyecta criatura me resultas
+	y el oprobio que te profeso por este fracaso.
+</p>

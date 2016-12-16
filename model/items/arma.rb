@@ -20,6 +20,10 @@ class Arma < Item
     arma(id)['precio']
   end
 
+  def unico
+    arma(id)['unico']
+  end
+
   def fits
     'arma'
   end
