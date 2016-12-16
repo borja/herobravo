@@ -209,7 +209,7 @@
   name:       "gato perdido"
   personajes: "todos"
   bono:       "+1 movimiento"
-  lacra:      "Los lobos y los skavens obtienen odio hacia su portador"
+  lacra:      "Los lobos y los skavens te odian"
 -
   id:         33
   name:       "escorpión"
