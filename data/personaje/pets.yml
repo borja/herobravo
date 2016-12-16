@@ -144,7 +144,7 @@
   id:         22
   name:       "griemling"
   personajes: ["enano","mago"]
-  bono:       "+1 PC cuando el personaje es objetivo de un hechizo de agua otro jugador aleatorio obtiene un griemling como familiar"
+  bono:       "+1 PC cuando el personaje es objetivo de un hechizo de agua. Además, otro jugador aleatorio obtiene un griemling como familiar"
   lacra:      "Si la partida es nocturna la comida resta PM en lugar de añadir PC/PM"
 -
   id:         23
