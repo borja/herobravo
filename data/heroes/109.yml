@@ -1,9 +1,11 @@
-
 name:      "Homera Van Houten"
+ciudad:    "Xanandra"
 personaje: "bersérker"
+gender:    "female"
 jugador:   "Irene"
 cuerpo:    8
 mente:     3
 mov:       7
+repu:      1
 armadura:  2
 armas:     2

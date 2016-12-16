@@ -12,6 +12,10 @@ class Abalorio < Item
     abalorio(id)['precio']
   end
 
+  def unico
+    abalorio(id)['unico']
+  end
+
   def fits
     'abalorio'
   end

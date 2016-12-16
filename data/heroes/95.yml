@@ -1,7 +1,8 @@
-name:      "Ashai"
-personaje: "asesino"
-jugador:   "Cristina"
-status:    "reserva"
+name:         "Asshai"
+personaje:    "asesino"
+jugador:      "Cristina"
+status:       "reserva"
+progenitores: [7]
 cuerpo:    5
 mente:     6
 mov:       7

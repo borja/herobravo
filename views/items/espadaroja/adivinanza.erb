@@ -3,8 +3,9 @@
 	<h3>Resuelve la adivinanza:</h3>
 </header>
 <center>
-	<%= erb :"items/espadaroja/adivinanzas/#{rand(1..6)}" %>
+	<% pregunta_id = rand(1..total_adivinanzas) %>
+	<p><%= erb :"items/espadaroja/adivinanzas/#{pregunta_id}" %></p>
 </center>
 <br/>
 <p>De lo contrario, deberás pagar el precio de sangre..</p>
-<a href="/error">Descubre la solución</a>
+<a href="/solve/<%= pregunta_id %>">Descubre la solución</a>

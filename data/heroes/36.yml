@@ -3,11 +3,13 @@ gender:    "female"
 personaje: "derviche"
 jugador:   "Iris"
 ciudad:    "Xanandra"
-familiar: { id: 15, name: "Mari", torpe: true }
+familiar:  { id: 15, name: "Mari", torpe: true }
+pareja:    { nombre: "Alain", raza: "elfo", tipo: "pnj" }
 nivel:     6
 cuerpo:    8
 mente:     4
 mov:       13
+repu:      2
 profesion: { id: 3, aprendiz: [0] }
 armadura:  { id: 2, gemas: [29] }
 armas:
@@ -20,7 +22,7 @@ protecciones:
 miscelaneas:
   - { id: 6, ranuras: 2 }
   - { id: 2, enchants: [9] }
-hechizos: [7, 8, 9]
+hechizos: [12, 13, 14]
 skills:   [0, 1, 2, 3, 4, 7]
 master:   [0, 1]
 tesoro:
