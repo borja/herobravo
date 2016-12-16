@@ -32,15 +32,11 @@ Build Status
 +--------------+-------------------+
 | Circle CI    | |CircleCi Status| |
 +--------------+-------------------+
-| Snap CI      | |Snap CI|         |
-+--------------+-------------------+
 | CodeShip     | |CodeShip|        |
 +--------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
-.. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
-   :target: https://snap-ci.com/borja/herobravo/branch/master
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
    :target: https://semaphoreci.com/borja/herobravo
 .. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
@@ -122,6 +118,8 @@ Non-supported building platforms
 +==========+============+===============================+ 
 | Drone    | |Drone|    | *Ruby >v.2.0 not supported*   |
 +----------+------------+-------------------------------+
+| Snap CI  | |Snap CI|  | *Ruby >v.2.3.1 not supported* |
++----------+------------+-------------------------------+
 | Appveyor | |Appveyor| | *Current ruby env deprecated* |
 +----------+------------+-------------------------------+
 
@@ -129,6 +127,8 @@ Non-supported building platforms
    :target: https://drone.io/github.com/borja/herobravo/latest
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
+.. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
+   :target: https://snap-ci.com/borja/herobravo/branch/master
 
 DIY & Manual Configuration
 ==========================
