@@ -1,15 +1,20 @@
 name:      "Nala"
 personaje: "cazadora"
 jugador:   "Javier Galindo"
-status:    "reserva"
+status:    "activo"
+familiar:  { id: 1, name: "Vodka"}
 gender:    "female"
-xp:        2
+xp:        0
 cuerpo:    7
 mente:     3
-mov:       7
-armadura:  2
+mov:       9
+armadura:  { id: 2, gemas: [14] }
+pociones:  [1]
+mounts:    [0]
 armas:
-  - { id: 31 }
+  - { id: 2 }
   - { id: 7 }
 protecciones:
-  - { id: 3 }
+  - { id: 2, gemas: [30] }
+  - { id: 3, enchants: [115] }
+  - { id: 4 }
