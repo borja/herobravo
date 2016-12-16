@@ -8,6 +8,17 @@ from their HeroQuest games on an non-official non-profit web.
 QA Dashboard
 ============
 
+Vulnerabilities Report
+------------
++--------------+-------------------+
+| **Platform** | **Badge**         |
++==============+===================+
+| snyk         | |Vulnerabilities| |
++--------------+-------------------+
+
+.. |Vulnerabilities| image:: https://snyk.io/test/github/borja/herobravo/badge.svg
+   :target: https://snyk.io/test/github/borja/herobravo
+
 Build Status
 ------------
 +--------------+-------------------+
