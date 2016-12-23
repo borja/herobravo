@@ -5,7 +5,6 @@
 			<th>Dueños</th>
 			<th>Bonificador</th>
 			<th>Penalizador</th>
-			<th>Conocidos</th>
 		</tr>	
 	</thead>
 	<tbody>
@@ -38,10 +37,6 @@
 				</td>
 				<td><%= p.bono %></td>
 				<td><%= p.lacra %></td>
-				<td><%= erb :'display/bazarfamiliares', locals: { 
-							bazar:    p.conocidos, 
-							item_id:  p.id } %>
-				</td>
 			</tr>
 		<% end %>
 	</tbody>
