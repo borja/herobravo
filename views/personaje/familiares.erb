@@ -1,43 +1,36 @@
+<header>
+	<h2>Un miembro más de la familia</h2>
+</header>
+<h3>Descripción</h3>
 <p>
-	El familiar es una pequeña mascota espiritual que acompaña al héroe en sus aventuras.
-	No todos los familiares pueden ser escogidos por los personajes. Los hay torpes y hábiles.
-	Cuestan 1px y se pueden mejorar invirtiendo 1px adicional para eliminar el penalizador.
+	El familiar es una pequeña mascota espiritual
+	que acompaña al héroe en sus aventuras.
+	No todos los familiares pueden ser escogidos por los personajes.
+	Los hay torpes y hábiles.	Cuestan 1px	y se pueden mejorar
+	invirtiendo 1px adicional para eliminar el penalizador.
+	Haz click en la imagen para conocer más información sobre un familiar
+	específicamente.
 </p>
-<table>
-	<thead>
-		<tr>
-			<th>Icono</th>
-			<th>Nombre</th>
-			<th>Dueños</th>
-			<th>Bonificador</th>
-			<th>Penalizador</th>
-			<th>Conocidos</th>
-		</tr>	
-	</thead>
-	<tbody>
-		<% pets.each do |familiar| %>
-		<% p = Pet.new(familiar) %>
-			<tr>
-				<td><img src=<%= p.img_path %> alt=<%= p.bicho %>, id='icon2' /></td>
-				<td><%= p.bicho %></td>
-				<td>
-					<table>
- 						<tbody>
-							<tr><% p.personajes.each do |pj| %>
-								<td><img src=../images/personajes/<%= pj %>.png alt=<%= pj %> /, id='icon'>
-								</td>
-							<% end %>
-							</tr>
-						</tbody>
-					</table
-				</td>
-				<td><%= p.bono %></td>
-				<td><%= p.lacra %></td>
-				<td><%= erb :'display/bazarfamiliares', locals: { 
-							bazar:    p.conocidos, 
-							item_id:  p.id } %>
-				</td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+
+<h3>Lealtad a la familia</h3>
+<p>
+	Tras la muerte de su dueño, el familiar permanece fiel a la familia.
+	Por ello, los jugadores cuyos personajes hayan muerto con descendientes,
+	podrán reasignar al familiar a sus vástagos, manteniendo las bonificaciones
+	que tuvieran y todas sus características.
+	Esta es la manera habitual en la que un personaje (hijo-de, como por ejemplo
+	el ladrón), podría tener un familiar.
+</p>
+
+<h3>Familiares sabios</h3>
+<p>
+	Cada vez que un héroe suba de nivel, con un familiar junto a él,
+	tirará un dado de Sigmar. Si obtiene un resultado de un cometa,
+	podrá invertir 1px en volver "sabio" a su familiar, obteniendo
+	la característica "aumento" adicionalmente a su bonificador.
+</p>
+
+<p>
+	<h3>Tabla de familiares</h3>
+	<%= erb :'personaje/familiares/tabla_familiares' %>
+</p>

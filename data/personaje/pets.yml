@@ -2,20 +2,23 @@
   id:         0
   name:       "castor"
   personajes: ["enano"]
-  bono:       "+1 puertas secretas"
+  bono:       "+1 detectar puertas secretas"
   lacra:      "Al final de la partida destruye un objeto aleatorio de madera"
+  aumento:    "1/reto: Bloqueas una puerta, duplicando su defensa"
 -
   id:         1
   name:       "gato"
   personajes: ["mago","rakshasa"]
   bono:       "+1 movimiento"
   lacra:      "Lobos y skavens te odian"
+  aumento:    "+1 dificultad a ser detectado en sigilo"
 -
   id:         2
   name:       "mapache"
   personajes: ["bárbaro","enano"]
-  bono:       "+1 encontrar puertas secretas"
+  bono:       "+1 detectar puertas secretas"
   lacra:      "Te hace cosquillas: -1 desactivar trampas"
+  aumento:    "1/reto: Furia"
 -
   id:         3
   name:       "marmota"
@@ -23,6 +26,7 @@
   bono:       "+1 bonificacion en comida y bebida"
   sex:        "female"
   lacra:      "Con 1 PM o menos tu personaje se queda dormido"
+  aumento:    "Siempre puedes elegir dormirte, en lugar de tirar locura"
 -
   id:         4
   name:       "rata"
@@ -30,18 +34,21 @@
   bono:       "+1 PM"
   sex:        "female"
   lacra:      "-1 Reputación"
+  aumento:    "Los skavens nunca te atacarán si estás muerto/muriendo"
 -
   id:         5
   name:       "murciélago"
   personajes: ["mago"]
   bono:       "dagas/cuchillos: +1 robo de vida"
   lacra:      "-2 Resistencia a la magia de sangre"
+  aumento:    "1/reto: +3 inspirar miedo"
 -
   id:         6
   name:       "sapo"
   personajes: ["mago"]
   bono:       "+1 PC"
   lacra:      "-1 vs Peste"
+  aumento:    "1/reto: Elimina una toxina y entra 1 turno en locura"
 -
   id:         7
   name:       "culebra"
@@ -49,12 +56,14 @@
   bono:       "dagas/cuchillos: envenenan"
   lacra:      "-1 Movimiento"
   sex:        "female"
+  aumento:    "1/reto: Los enemigos no te empujan, las trampas no te afectan."
 -
   id:         8
   name:       "búho"
   personajes: ["mago"]
   bono:       "+1 hechizo"
   lacra:       "Mientras el buho sea visible todos los familiares roedores de los aliados se negaran a salir"
+  aumento:    "+1 ardid (nivel 1)"
 -
   id:         9
   name:       "araña"
@@ -62,6 +71,7 @@
   bono:       "+1 saltar fosos"
   lacra:      "Todos los elfos tienen odio contra su portador"
   sex:        "female"
+  aumento:    "1/reto: Puedes caminar por la pared."
 -
   id:         10
   name:       "urraca púrpura"
@@ -69,24 +79,28 @@
   bono:       "+10 al oro del tesoro"
   lacra:      "Roba la mitad de oro de la primera tirada de tesoro de un aliado"
   sex:        "female"
+  aumento:    "1/reto: Multiplica por 1d6 el resultado de ¡Oro!"
 -
   id:         11
   name:       "saprolín"
   personajes: ["elfo"]
   bono:       "+1 PV"
   lacra:      "Empiezas la partida con un hechizo menos"
+  aumento:    "1/reto: Todas las miniaturas colindantes recuperan 1PM"
 -
   id:         12
   name:       "duende"
   personajes: ["elfo"]
   bono:       "+10 al oro del tesoro"
   lacra:      "Se queda tu primer tesoro de tipo <¡oro!>"
+  aumento:    "1/reto: Recupera un hechizo consumido"
 -
   id:         13
   name:       "hada"
   personajes: ["elfo"]
   bono:       "+1 hechizo élfico"
   lacra:      "Muere inmediatamente si el portador recibe daño de fuego en una zona de efecto"
+  aumento:    "1/reto: Puedes volar"
 -
   id:         14
   name:       "luciérnaga"
@@ -94,6 +108,7 @@
   bono:       "+1 detectar trampas"
   lacra:      "-1 PM al iniciar el reto"
   sex:        "female"
+  aumento:    "Iluminas (alcance 0)"
 -
   id:         15
   name:       "mariposa"
@@ -101,12 +116,14 @@
   bono:       "+1 resistencia (elementos)"
   lacra:       "Si muere el personaje ella también muere"
   sex:        "female"
+  aumento:    "+1 resistencia (elementos)"
 -
   id:         16
   name:       "hurón"
   personajes: ["bárbaro","enano"]
   bono:       "+1 movimiento"
   lacra:      "Mordisquear los pies: -1 PC al iniciar el reto"
+  aumento:    "+1 movimiento"
 -
   id:         17
   name:       "ardilla"
@@ -114,6 +131,7 @@
   bono:       "+1 PM"
   sex:        "female"
   lacra:      "x2 Fuerza del primer ataque mental que recibas"
+  aumento:    "Recuperas 1PM al morir el último enemigo visible"
 -
   id:         18
   name:       "comadreja"
@@ -121,18 +139,21 @@
   bono:       "+1 resistencia vs Peste"
   lacra:      "Roba el primer tesoro de comida del reto podrida o no"
   sex:        "female"
+  aumento:    "Puedes alimentarte de cadáveres de alimañas (+1PC)"
 -
   id:         19
   name:       "pitufo"
   personajes: ["elfo"]
   bono:       "+1 PM"
   lacra:      "No puedes realizar magia de un elemento aleatorio determinado al inicio de cada partida"
+  aumento:    "Comienzas el reto con 1 seta mágica"
 -
   id:         20
   name:       "diablillo chillón"
   personajes: ["tiefling"]
   bono:       "+1 Punto de Sombra"
   lacra:      "1/reto: el Malvado Brujo podra hacer repetir la tirada de locura que le interese"
+  aumento:    "1/reto: Ignora un efecto de silencio"
 -
   id:         21
   name:       "mariquita"
@@ -140,18 +161,21 @@
   bono:       "+1 PM al saltar con éxito (solo cuenta el 1º salto)"
   lacra:      "El personaje no puede enamorarse de héroes del sexo opuesto"
   sex:        "female"
+  aumento:    "+1 recompensa de reto de PNJ de tu mismo sexo."
 -
   id:         22
   name:       "griemling"
   personajes: ["enano","mago"]
   bono:       "+1 PC cuando el personaje es objetivo de un hechizo de agua. Además, otro jugador aleatorio obtiene un griemling como familiar"
   lacra:      "Si la partida es nocturna la comida resta PM en lugar de añadir PC/PM"
+  aumento:    "Si la partida es diurna, ningún enemigo puede odiarte"
 -
   id:         23
   name:       "estorbito"
   personajes: ["bárbaro","mago"]
   bono:       "Cuando un hechizo fuera a causarte la muerte mata al estorbito en su lugar"
   lacra:      "Cuando un golpe de arma fuera a causarte la muerte no puedes utilizar gloria del héroe"
+  aumento:    "Obtienes: 5+ : Recuperas Gloria del Héroe (se tira al declarar)"
 -
   id:         24
   name:       "armadillo"
@@ -164,30 +188,35 @@
   personajes: ["enano","bárbaro"]
   bono:       "1/reto: Puedes inflingir el exceso de defensa como ataque gratuito"
   lacra:      "Duplica el daño en fosos trampa"
+  aumento:    "Recupera espinas (bono), al fallar una tirada de defensa."
 -
   id:         26
   name:       "wombat"
   personajes: ["enano","bárbaro"]
-  bono:       "Puedes descartar la comida al final del reto en lugar del final del turno"
+  bono:       "Invoca un único guardián del nivel del reto, cada vez que en el tesoro haya ¡Comida!. (Rata / Lobo / Oso)"
   lacra:      "Entrarás en locura a partir de 1PM"
+  aumento:    "El guardián invocado tiene sabiduría espiritual"
 -
   id:         27
   name:       "gusiluz"
   personajes: ["mago","enano"]
   bono:       "Se puede llevar como objeto a 1 mano: Ilumina"
   lacra:      "Eres más apetecible para las arañas: Te odian"
+  aumento:    "Todas tus sanaciones tienen ardid, siempre que renuncies a tu movimiento"
 -
   id:         28
   name:       "lechúcico"
   personajes: ["elfo","mago"]
   bono:       "1/reto: Te cuenta un secreto"
   lacra:      "1/reto: Te miente"
+  aumento:    "El lechúcico pone 1d6 huevos de paladio, y se marcha para siempre."
 -
   id:         29
   name:       "gallo antipático"
   personajes: ["bárbaro","mago"]
   bono:       "Cuando caes dormido quiquiriquea despertándote: -1PM"
   lacra:      "También quiquiriquea a las demás miniaturas de tu S/P"
+  aumento:    "Si un enemigo te ataca por la espalda, le chillará, atacándole con tu ataque (mental) base. Este daño interrumpe."
 -
   id:         30
   name:       "calabacino siniestro"
@@ -198,27 +227,36 @@
     <p align=left><b>Calavera</b>: Te roba el oro total obtenido<br>
     <b>Escudo blanco</b>: Te duplica el oro<br>
     <b>Escudo negro</b>: Se come tu gema menos valiosa</p>
+  aumento:    >
+    Al final del reto tira 1 dado de combate:
+    <p align=left><b>Calavera</b>: Te vomita una gema aleatoria (calidad -3)<br>
+    <b>Escudo blanco</b>: Te vomita un goblin que te atacará en tu siguiente reto<br>
+    <b>Escudo negro</b>: Te vomita una joya aleatoria</p>
 -
   id:         31
   name:       "águila imperial"
   personajes: "todos"
   bono:       "ataque: 1, defensa: 2, movimiento: 10, PC: 2, PM: 1, vuela"
   lacra:      "No puede participar en mazmorras cubiertas/ con techo, sin consumir 1 mano"
+  aumento:    "Ver profesión: cetrería"
 -
   id:         32
   name:       "gato perdido"
   personajes: "todos"
   bono:       "+1 movimiento"
   lacra:      "Lobos y skavens te odian"
+  aumento:    "Encuentra a su auténtico dueño. Obtén un punto de tu camino."
 -
   id:         33
   name:       "escorpión"
   personajes: ["rakshasa"]
   bono:       "armas de asta/ dos manos: envenenan"
   lacra:      "Si por error envenenas a un aliado, la herida es mortal"
+  aumento:    "Eres inmune a los efectos perjudiciales de la magia de arena"
 -
   id:         34
   name:       "escarabajo dorado"
   personajes: ["rakshasa"]
   bono:       "Ignora la primera maldición del tesoro"
   lacra:      "El Malvado Brujo podrá repetir el dado de Sigmar en la próxima maldición del grupo"
+  aumento:    "Recuperas amuleto (bono), al obtener un cometa en una tirada de tesoro."

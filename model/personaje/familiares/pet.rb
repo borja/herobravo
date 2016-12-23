@@ -2,7 +2,7 @@
 # encoding: UTF-8
 # Clase para gestionar las minimascotas familiares del heroe.
 class Pet < Hash
-  attr_accessor :id, :name, :torpe
+  attr_accessor :id, :name, :torpe, :sabio
 
   def initialize(args)
     args.each do |k, v|
@@ -26,6 +26,10 @@ class Pet < Hash
     pet(id)['bono']
   end
 
+  def aumento
+    pet(id)['aumento']
+  end
+  
   def sex
     pet(id)['sex']
   end
@@ -35,7 +39,7 @@ class Pet < Hash
   end # > "pitufo", "rata"
 
   def img_path
-    "'../../images/pets/#{bicho}.png'"
+    "/images/pets/#{bicho}.png"
   end
 
   def nombre
@@ -51,25 +55,4 @@ class Pet < Hash
   def conocidos
     familiares_conocidos(id)
   end
-end
-
-# DB Loader
-def pets
-  load_yaml('personaje/pets')
-end
-
-def pet(id)
-  pets[id]
-end
-
-# % Statistics
-def porcentaje_heroes_con_familiar
-  h_familiares = heros.select(&:pet)
-  ((h_familiares.count / heros.count.to_f) * 100.0).round(2)
-end
-
-def porcentaje_familiares_torpes
-  h_familiares = heros.select(&:pet)
-  familiares_torpes = h_familiares.count { |h| h.pet.torpe }
-  ((familiares_torpes.to_f / h_familiares.count) * 100.0).round(2)
 end

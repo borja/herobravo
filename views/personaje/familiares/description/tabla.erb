@@ -1,0 +1,36 @@
+<% f = familiar params[:param] %>
+<table>
+	<thead>
+		<tr>
+			<th>Icono</th>
+			<th>Dueños</th>
+			<th>Aumento (sabio)<th>
+		</tr>	
+	</thead>
+	<tbody>
+		<tbody>
+				<tr>
+					<td>
+						<img src='<%= f.img_path %>',
+								 alt='<%= f.bicho %>',
+								 id='icon2' />
+					</td>
+					<td>
+						<table>
+							<tbody>
+								<tr><% f.personajes.each do |pj| %>
+									<td>
+										<img src='/images/personajes/<%= pj %>.png'
+												 alt='<%= pj %>',
+												 id='icon' />
+									</td>
+								<% end %>
+								</tr>
+							</tbody>
+						</table
+					</td>
+					<td><%= f.aumento %></td>
+				</tr>
+		</tbody>
+	</tbody>
+</table>

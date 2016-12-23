@@ -1,0 +1,48 @@
+<table>
+	<thead>
+		<tr>
+			<th colspan=2>Familiar</th>
+			<th>Dueños</th>
+			<th>Bonificador</th>
+			<th>Penalizador</th>
+			<th>Conocidos</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% pets.each do |familiar| %>
+		<% p = Pet.new(familiar) %>
+			<tr>
+				<td>
+					<a href='/familiar/<%= p.bicho %>'>
+						<img src='<%= p.img_path %>'
+								 alt='<%= p.bicho %>',
+								 id='icon2' />
+					</a>
+				</td>
+				<td>
+					<a href='/familiar/<%= p.bicho %>'>
+						<%= p.bicho %></a>
+					</td>
+				<td>
+					<table>
+						<tbody>
+							<tr><% p.personajes.each do |pj| %>
+								<td><img src="../images/personajes/<%= pj %>.png",
+												 alt=<%= pj %>,
+												 id='icon' />
+								</td>
+							<% end %>
+							</tr>
+						</tbody>
+					</table
+				</td>
+				<td><%= p.bono %></td>
+				<td><%= p.lacra %></td>
+				<td><%= erb :'display/bazarfamiliares', locals: { 
+							bazar:    p.conocidos, 
+							item_id:  p.id } %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

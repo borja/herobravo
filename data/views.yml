@@ -86,6 +86,13 @@
   template:
     main: "ciudad/ciudad"
 -
+  ruta:  "familiar"
+  title: "view"
+  template:
+    main: "personaje/familiares/description/description"
+    left:  "personaje/pets"
+    right: "heroes/sidebar"
+-
   ruta:  "familiares"
   template:
     main: "personaje/familiares"

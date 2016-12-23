@@ -1,0 +1,30 @@
+<% f = familiar params[:param] %>
+<header>
+	<h2>
+		<%= f.sex == 'female' ? 'La' : 'El' %> <%= f.bicho.capitalize %>
+		como familiar	
+	</h2>
+</header>
+
+<h3>Bonificador</h3>
+<p><%= f.bono %>.</p>
+
+<h3>Penalizador (familiares torpes)</h3>
+<p><%= f.lacra %>.</p>
+
+<h3>Descripción</h3>
+<p><%= erb :"personaje/familiares/description/lista/#{f.bicho}" %></p>
+
+<p>
+	<h3>Tabla de características</h3>
+	<%= erb :'personaje/familiares/description/tabla' %></p>
+</p>
+
+<p>
+	<h3>Hall de la fama</h3>
+	<% if f.conocidos.empty? %>
+		Desgraciadamente no hay ningún espécimen conocido.
+	<% else %>
+		<%= erb :'personaje/familiares/description/conocidos' %></p>
+	<% end %>
+</p>

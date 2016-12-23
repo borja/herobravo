@@ -11,7 +11,7 @@ class Habilidad < Hash
   end
 
   def ranks
-    (type == 'única') ? 6 : rangos
+    type == 'única' ? 6 : rangos
   end
 
   def img_path

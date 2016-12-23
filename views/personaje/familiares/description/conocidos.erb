@@ -1,0 +1,34 @@
+<% f = familiar params[:param] %>
+<table>
+	<tr>
+		<th colspan=2>Héroe</th>
+		<th>Jugador</th>
+		<th colspan=2>Nombre</th>
+		<th>¿Torpe?</th>
+	</tr>
+	<% f.conocidos.each do |h| %>
+		<tr>
+			<td>
+				<a href="/hero/<%= hero(h).id %>">
+					<img src=<%= hero(h).img_path %>
+							 alt='<%= hero(h).name %>',
+							 id='icon' />
+				</a>
+			</td>
+			<td>
+				<a href="/hero/<%= hero(h).id %>">
+					<%= hero(h).name %>
+				</a>
+			</td>
+			<td><%= hero(h).jugador %></td>
+			<td>
+				<%= erb :'display/display', locals: {
+										title:       f.nombre, 
+										path:        f.img_path,
+										description: f.descripcion } %>
+			</td>
+			<td><%= hero(h).pet.name %></td>
+			<td><%= hero(h).pet.torpe ? 'Sí' : 'No' %></td>
+		</tr>
+	<% end %>
+</table>
