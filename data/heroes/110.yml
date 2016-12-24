@@ -1,0 +1,16 @@
+name:      "Kaiser"
+personaje: "bersérker"
+jugador:   "Kerman"
+familiar:  { id: 17, name: "Bernardita" }
+profesion: { id: 4, aprendiz: [0] }
+cuerpo:    8
+mente:     2
+mov:       7
+repu:      1
+armadura:  3
+armas:     2
+protecciones:
+  - { id: 5 }
+pociones: [1]
+oro:       25
+xp:        2
