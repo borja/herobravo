@@ -2,7 +2,7 @@
   id:        0
   name:      "caballo"
   distancia: "3"
-  bono:      "bono"
+  bono:      "El amigo siempre fiel"
   precio:    500
   recorrido: "tierra"
 -
@@ -33,3 +33,38 @@
   bono:      "Permite al portador transportar a un compañero (-2 movimiento)."
   precio:    10000
   recorrido: "aire"
+-
+  id:        5
+  name:      "caballo espectral"
+  distancia: 3
+  bono:      "reputación -1"
+  precio:    1000
+  recorrido: "páramos"
+-
+  id:        6
+  name:      "león gigante"
+  distancia: 3
+  bono:      "Solo para políticos"
+  precio:    1500
+  recorrido: "tierra"
+-
+  id:        7
+  name:      "pantera gigante"
+  distancia: 3
+  bono:      "+1 evitar encuentros"
+  precio:    1000
+  recorrido: "selva"
+-
+  id:        8
+  name:      "oso de monta"
+  distancia: 2
+  bono:      "Infunde respeto en regiones Kislevitas"
+  precio:    1000
+  recorrido: "glaciares"
+-
+  id:        9
+  name:      "camello"
+  distancia: 3
+  bono:      "Puede soportar elevadas temperaturas"
+  precio:    450
+  recorrido: "desierto"

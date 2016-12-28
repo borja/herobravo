@@ -26,9 +26,12 @@
 					<table>
 						<tbody>
 							<tr><% p.personajes.each do |pj| %>
-								<td><img src="../images/personajes/<%= pj %>.png",
+								<td>
+									<a href='/personaje/<%= pj %>'>
+										<img src="../images/personajes/<%= pj %>.png",
 												 alt=<%= pj %>,
 												 id='icon' />
+									</a>
 								</td>
 							<% end %>
 							</tr>

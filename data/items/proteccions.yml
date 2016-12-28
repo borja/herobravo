@@ -45,7 +45,7 @@
   defensa:   1
   ranuras:   2
   fits:      'hombros'
-  precio:	 300
+  precio:    300
 -
   id:        6
   name:      'corona'

@@ -13,7 +13,13 @@
 		<% permitido = (p.personajes.include? pj || p.personajes == "Todos" ) %>
 		<% next unless permitido %>
 			<tr>
-				<td><img src=<%= p.img_path %> alt=<%= p.bicho %>, id='icon' /></td>
+				<td>
+					<a href="/familiar/<%= p.bicho %>">
+						<img src="<%= p.img_path %>"
+								 alt=<%= p.bicho %>,
+								 id='icon' />
+					</a>
+				</td>
 				<td><%= p.bicho %></td>
 				<td><%= p.bono %></td>
 				<td><%= p.lacra %></td>

@@ -74,6 +74,8 @@ Quality Grades
 +--------------+----------------+-------------------+
 | Scrutinizer  | |Scrutinizer|  | |ScrutCov|        |
 +--------------+----------------+-------------------+
+| bitHound     | |bitHound|     |                   |
++--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herobravo
@@ -91,6 +93,8 @@ Quality Grades
   :target: https://scrutinizer-ci.com/g/borja/herobravo/
 .. |ScrutCov| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/coverage.png?b=master
   :target: https://scrutinizer-ci.com/g/borja/herobravo/
+.. |bitHound| image:: https://www.bithound.io/github/borja/herobravo/badges/score.svg
+   :target: https://www.bithound.io/github/borja/herobravo
 
 Documentation
 -------------
