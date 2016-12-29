@@ -55,3 +55,18 @@
            Una banda de mercenarios ha asolado las poblaciones cercanas.
            Liderados por Garmehx, un ettin vengativo y cobarde,
            han saqueado las aldeas vecinas. Los héroes deberán matarle y recuperar los alimentos." 
+-
+  id:     4
+  name:   "Las Gemas del Caos"
+  pjs:    [0,36,83,108,109]
+  pnjs:   []
+  evil:   "Seguidores del Caos"
+  lugar:  "Comarca de Nandrei"
+  type:   "Ruinas"
+  reward: "Sin otorgar"
+  target: "Descubrir el misterio tras las Gemas del Caos"
+  desc:
+          "Han empezado a aparecer unas extrañas joyas que laten con el poder de la Disformidad, pero nadie conoce
+          su verdadera naturaleza. Los orfebres dicen que no muestran propiedades mágicas aparentes, no son fragmentos
+          de Piedra Bruja, y sus colores son extraños y misteriosos, como de otro mundo, o incluso otra realidad. ¿Cuál
+          es la verdadera historia que relata el origen de estas piedras?" 
