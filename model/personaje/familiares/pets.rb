@@ -14,7 +14,7 @@ end
 
 # Name search
 def familiar(nombre)
-  pet = pets.find {|p| p['name'] == nombre }
+  pet = pets.find { |p| p['name'] == nombre }
   Pet.new(pet)
 end
 
