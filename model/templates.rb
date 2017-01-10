@@ -6,6 +6,19 @@ def get_center(template) # Responsive main method (12 units)
   "#{col}u important(collapse)" # return total units
 end
 
+def get_title(params) # Will set website title (top left corner)
+	vista = params[:view] ||= 'Herosheet' 
+	title ||= vista.capitalize 
+	title = params[:param].capitalize if title == 'view' 
+	if (vista == 'historia' || vista == 'hero') 
+		 title = hero(params[:param].to_i).name 
+	end 
+	if vista == 'runa' 
+		 title = runa(params['param'].to_i).name.upcase 
+	end 
+	title.gsub!('Beastslord','Señor de las Bestias') 
+end
+
 # DB Loader
 def views
   load_yaml('views')

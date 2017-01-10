@@ -10,7 +10,7 @@
 		<% if vista == 'runa' %>
 			<% title = runa(params['param'].to_i).name.upcase %>
 		<% end %>
-		<% title.gsub!('Beastslord','Señor de las Bestias')%>
+		<% title.gsub!('Beastslord','Señor de las Bestias') %>
 		<%= erb :head, locals: {title: "HeroSheet: #{title}"} %>
 	</head>
 	<body class="subpage">
@@ -32,7 +32,7 @@
 								<% end %>
 								<div class='<%= get_center(template) %>'>
 									<section><%= load_partial(template['main']) %></section>
-								</div>							
+								</div>
 								<% if template['right'] %>
 									<div class="3u">
 										<section><%= load_partial(template['right']) %></section>

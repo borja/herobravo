@@ -103,6 +103,10 @@
   template:
     main: "personaje/habilidades"
 -
+  ruta:  "dones"
+  template:
+    main: "revenge/dones"
+-
   ruta:  "tarot"
   title: "Tarot Maligno"
   template:
