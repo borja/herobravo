@@ -5,6 +5,8 @@ Definition
 This project was created as an amateur idea, a group of friends willing to gather information
 from their HeroQuest games on an non-official non-profit web.
 
+The Herosheet is written in Ruby on Sinatra with a fake-DB in YAML.
+
 QA Dashboard
 ============
 
