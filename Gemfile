@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'sinatra', github: 'sinatra/sinatra'
 gem 'tilt', '~> 2.0.5'
 gem 'minitest', '~> 5.10.1'
-gem 'require_all'
+gem 'require_all', '~> 1.4.0'
 
 group :test do
   gem 'rack-test'
