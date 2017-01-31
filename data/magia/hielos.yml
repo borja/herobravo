@@ -71,7 +71,7 @@
   duracion: 0
   name:     "Orbe helado"
   tipo:     "Conjuro - Bola"
-  efecto:   "2 dados de frío de daño directo a lo largo de su recorrido. Al matar aumenta la fuerza para la siguiente casilla"
+  efecto:   "2 dados de combate de daño de frío directo a lo largo de su recorrido. Al matar aumenta la fuerza para la siguiente casilla"
   diablura: "Recuperas X(PM) por cada enemigo congelado. X = la potencia del hechizo"
   potencia: "+1 dado de frío"
   ardid:    "Los enemigos congelados pierden su resistencia a la escarcha"
@@ -122,7 +122,8 @@
   name:     "Calavera de runas"
   tipo:     "Aura"
   efecto:
-            "1 carga de calavera tallada flota a tu alrededor. -1 carga/turno.<br/>
+            "1 carga de calavera tallada flota a tu alrededor.
+             -1 carga/turno.<br/>
              - 1 carga: (Instinto) añade un dado azul de defensa verdadera<br/>
              - 1 carga: Recupera un hechizo consumido de frío<br/>
              - 1 carga: Añade un dado de frío a tu siguiente ataque/conjuro<br/>
@@ -130,3 +131,81 @@
   diablura: "Ganas cargas simplemente con dañar. (No es necesario matar)"
   potencia: "+1 carga"
   ardid:    "1PM (instinto): +1 resistencia mágica por cada calavera a tu alrededor"
+# nivel 3
+-
+  id:       12
+  alcance:  0
+  duracion: "E"
+  name:     "Núcleo helado"
+  tipo:     "Invocación"
+  efecto:
+            "Invocas un orbe que puedes usar como arma
+             para lanzar orbes helados o chuzos de frío por 1PM (hechizar)"
+  diablura: "Los aliados pueden donar 1PM para pagar el coste"
+  potencia: "+1 potencia a los hechizos del orbe"
+  maestría: "+1 maestría a los hechizos del orbe"
+  ardid:    "Si el orbe matara con sus hechizos recupera un hechizo de frío"
+-
+  id:       13
+  alcance:  0
+  duracion: 4
+  name:     "Sello de frío"
+  tipo:     "Dádiva"
+  efecto:
+            "El objetivo es inmune al sangrado, obtiene +2 vs Fuego
+             y los enemigos que le ataquen sin éxito quedan congelados."
+  diablura: "Reinicia la duración al cuando el sello congele a un enemigo"
+  potencia: "+2 turnos de duración"
+  maestría: "+1 empujar del objetivo"
+  ardid:    "Puedes lanzarlo como aura, obteniendo además +1 potencia de frío."
+-
+  id:       14
+  alcance:  "V"
+  duracion: "E"
+  name:     "Congelar"
+  tipo:     "Maldición"
+  efecto:   "-X al movimiento del objetivo. (X es la minusmitad de tu mente)"
+  diablura: "Si el objetivo pierde su movimiento completo, perderá su turno."
+  potencia: "+1 duración"
+  maestría: "+1 Fuerza de los golpes contra el objetivo"
+  ardid:    "Si el objetivo muere, además es destruido"
+-
+  id:       15
+  alcance:  "V"
+  duracion: 1
+  name:     "Tumba helada"
+  tipo:     "Muro"
+  efecto:
+            "Un inmenso bloque de hielo cubre al objetivo, formando un muro.
+             Todo el daño físico será directo. Perderá su movimiento."
+  diablura: "Los golpes con potencia podrán sumar fuerza en su lugar."
+  potencia: "+1 duración"
+  maestría: "+1 objetivo (siempre que sea colindante)"
+  ardid:    "Si el objetivo muere, recupera Tumba helada"
+-
+  id:       16
+  alcance:  "V"
+  duracion: 0
+  name:     "Dentellada glacial"
+  tipo:     "Conjuro"
+  efecto:
+            "Unas enormes cuchillas de hielo afilado brotan del suelo,
+             causando 6 dados de ataque y 2 dados de frío a la víctima."
+  diablura: "El daño por frío es directo"
+  potencia: "+1 potencia a todos los dados"
+  maestría: "+1 fuerza a todos los dados"
+  ardid:    "Si obtienes un águila al atacar, repite este hechizo."
+-
+  id:       17
+  alcance:  "V"
+  duracion: "∞"
+  name:     "Tortura helada"
+  tipo:     "Maldición"
+  efecto:
+            "Todas las criaturas de la sala quedan malditas.
+             Recibirán 1 dado de ataque por hielo durante la fase de instintos.
+             Un resultado nulo, cancela la maldición"
+  diablura: "El daño es directo"
+  potencia: "+1 dado"
+  maestría: "-1 de defensa para resistir"
+  ardid:    "Las miniaturas dañadas quedarán congeladas"

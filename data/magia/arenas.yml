@@ -47,10 +47,15 @@
   name:     "Arenas movedizas"
   tipo:     "Evocación"
   efecto:
-            "Elige 3 casillas de la sala pudiendo anotarlas en secreto al MB.<br/>
-             Las miniaturas que caigan, quedarán atrapados si no superan una TS de movimiento (2d6).<br/>
-             Al inicio del turno perderán 3 dados de combate de daño mental. Si no disponen, cuerpo."
-  diablura: "Al matar una miniatura en las arenas, recupera un hechizo de arena."
+            "Elige 3 casillas de la sala pudiendo anotarlas
+             en secreto al MB.<br/>
+             Las miniaturas que caigan, quedarán atrapados
+             si no superan una TS de movimiento (2d6).<br/>
+             Al inicio del turno perderán 3 dados de combate de daño mental.
+             Si no disponen, cuerpo."
+  diablura:
+            "Al matar una miniatura en las arenas,
+             recupera un hechizo de arena."
   ardid:    "Puedes elegir daño físico en lugar de mental."
   potencia: "+1 ataque del efecto"
 - 
@@ -60,7 +65,8 @@
   name:     "Gusano de arena"
   tipo:     "Invocación"
   efecto:   
-            "Un gusano de las arenas, emerge del suelo y golpea al objetivo con 3 dados.<br/>
+            "Un gusano de las arenas, emerge del suelo y golpea al objetivo
+             con 3 dados.<br/>
              Si lo mata, lo engullirá. En ese caso, recupera este hechizo y cualquier botín de la víctima."
   diablura: "Si recuperas el hechizo puedes volver a lanzarlo inmediatamente."
   ardid:    "El gusano ataca por la espalda"

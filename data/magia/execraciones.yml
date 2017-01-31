@@ -45,7 +45,9 @@
   alcance:  "V"
   name:     "Guardián demoníaco"
   tipo:     "Invocación"
-  efecto:   "Un demonio ataca con 3 dados a un enemigo frontalmente. Tú recibes: +3 ataque y recuperas 1PC."
+  efecto:
+            "Un demonio ataca con 3 dados a un enemigo frontalmente.
+             Tú recibes: +3 ataque y recuperas 1PC."
   summun:   "Si el demonio mata, recupéralo."
   chakra:   "Se puede escoger como objetivo a un aliado."
 -
@@ -55,7 +57,9 @@
   alcance:  0
   name:     "Guadaña negra"
   tipo:     "maldición"
-  efecto:   "El objetivo no podrá atacar ni mover hasta que sea atacado. Podrá defender y empujará de la forma habitual."
+  efecto:
+            "El objetivo no podrá atacar ni mover hasta que sea atacado.
+             Podrá defender y empujará de la forma habitual."
   summun:   "El objetivo golpeará a melé (siempre que pueda) cuando tú seas atacado como acción de interrupción."
   chakra:   "Si el objetivo es sanado luchará a tu lado el turno de la sanación."
 -

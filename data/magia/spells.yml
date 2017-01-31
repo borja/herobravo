@@ -741,6 +741,8 @@
   potencia: "+1 fuerza a los ataques realizados."
 -
   id:       91
+  alcance:  "V"
+  duración: 1
   name:     "maestro genio"
   tipo:     "Invocación"
   efecto:   "Ataca con 10 dados y puede golpear a 3 enemigos distintos repartiendo su ataque. Si el mago invierte 2PM podrá en lugar de atacar absorber la energía del genio recuperando sus PC la carta de hechizo Genio y ganando una resistencia al viente de 2+."
@@ -749,23 +751,59 @@
   id:       92
   name:     "reposición"
   tipo:     "Sanación"
-  efecto:   "El objetivo recupera sus PM y PC. El objetivo puede invertir 3 PM para que el lanzador recupere este hechizo. No se puede usar 2 veces sobre la misma miniatura."
+  efecto:
+            "El objetivo recupera sus PM y PC.
+             El objetivo puede invertir 3 PM para que el lanzador
+             recupere este hechizo. No se puede usar 2 veces
+             sobre la misma miniatura."
   potencia: "+1 repetición posible sobre el mismo objetivo."
+  diablura: "El objetivo pierde una maldición"
+  ardid:    "El objetivo pierde todos los efectos perjudiciales"
 -
   id:       93
   name:     "globo de agua"
   tipo:     "Invocación"
-  efecto:   "Seguirá al mago y sanará todos los turnos 1 PC a un aliado adyacente. El globo no ocupa espacio y desaparecerá cuando el mago pierda 2PM simultáneos. El mago puede gastar 1PM para hacer que el globo sane PM en lugar de PC y viceversa."
+  efecto:
+            "Seguirá al mago y sanará todos los turnos 1 PC
+             a un aliado adyacente. El globo no ocupa espacio y desaparecerá
+             cuando el mago pierda 2PM simultáneos.
+             El mago puede gastar 1PM para hacer que el globo sane PM
+             en lugar de PC y viceversa."
   potencia: "+1 PC/sanación"
+  diablura:
+            "Puedes explotar el globo y lanzar aleatoriamente un hechizo
+             de agua de nivel 1 a todas las miniaturas adyacentes.
+             (Incluido tú)"
+  ardid:    "Podrá absorber la primera maldición que recibas, desapareciendo."
 -
   id:       94
+  alcance:  "V"
+  duracion: 0
   name:     "deshidratación abrasiva"
   tipo:     "Maldición"
-  efecto:   "La víctima sufre un ataque de 2d6 dados aunque sólo le harán efecto los escudos negros. No defendible."
+  efecto:
+            "La víctima sufre 2d6 dados de combate de daño no defendible,
+             aunque sólo le harán efecto los escudos negros."
   potencia: "+1 dado de ataque y +1 fuerza."
+  maestría: "+1 duración, +1 fuerza"
+  diablura: "Elimina los efectos beneficiosos de agua/hielo de la víctima"
+  ardid:    "Si sufre daños, la víctima entrará en locura"
 -
   id:       95
+  alcance:  "V"
+  duracion: "D / 1PM"
   name:     "bruma mística"
   tipo:     "Conjuro"
-  efecto:   "En la sala/pasillo sólo se podrá combatir cuerpo a cuerpo y las miniaturas defenderán con la mitad redondeada hacia arriba de su defensa. Cualquier magia conjurada deberá superar una tirada de mente para que tenga éxito. El efecto dura mientras el mago invierta 1PM al principio de su turno y no reciba daño."
-  potencia: "+1 al daño necesario para que cese el efecto. +1 PM para el lanzador."
+  efecto:
+            "Solo se podrá combatir cuerpo a cuerpo y las miniaturas
+             defenderán con la mitad redondeada hacia arriba de su defensa.
+             Cualquier magia conjurada deberá superar una tirada de mente
+             para que tenga éxito. El efecto dura mientras el mago
+             invierta 1PM al principio de su turno y no reciba daño."
+  potencia:
+            "+1 al daño necesario para que cese el efecto.
+             +1 PM para el lanzador."
+  diablura: "1PM: 1 proyectil de un aliado, ignorará la bruma."
+  ardid:
+            "Las magias de efecto conjuradas previas al hechizo,
+             afectarán solo a los objetivos elegidos por el conjurador"
