@@ -55,8 +55,8 @@ Deployment Status
 | **Project model**      | |Gemnasium|     |
 +------------------------+-----------------+
 
-.. |Gemnasium| image:: https://gemnasium.com/Borja/herobravo.svg
-   :target: https://gemnasium.com/Borja/herobravo
+.. |Gemnasium| image:: https://gemnasium.com/borja/herobravo.svg
+   :target: https://gemnasium.com/borja/herobravo
 .. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
    :target: http://herosheet.herokuapp.com/
 
