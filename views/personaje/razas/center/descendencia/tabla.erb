@@ -1,0 +1,69 @@
+<table>
+	<thead>
+		<tr>
+			<th>PJ</th>
+			<th><img src=../images/personajes/humano.png alt="humano" /, id='icon'></th>
+			<% razas.each do |r| %>
+				<% next if r.last.last == 'humano' %>
+				<% next if r.last.last == 'parangón' %>
+				<th><img src=../images/personajes/<%= r.first %>.png alt="<%= r.first %>" /, id='icon'></th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th><img src='images/personajes/maga.png' alt="humana" /, id='icon'></th>
+			<td><img src='images/personajes/humano.png' alt="humano" /, id='icon'></td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td>50%</td>
+			<td>50%</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th>*</th>
+			<td>X</td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/elfa.png' alt="elfa" /, id='icon'></th>
+			<td>50%</td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td><img src='images/personajes/elfo.png' alt="elfo" /, id='icon'></td>
+			<td>50%</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/tieflina.png' alt="tieflina" /, id='icon'></th>
+			<td>50%</td>
+			<td><img src='images/personajes/enano.png' alt="enano" /, id='icon'></td>
+			<td>50%</td>
+			<td><img src='images/personajes/tiefling.png' alt="tiefling" /, id='icon'></td>
+			<td>50%</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/rakshasi.png' alt="rakshasi" /, id='icon'></th>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>50%</td>
+			<td><img src='images/personajes/rakshasa.png' alt="rakshasa" /, id='icon'></td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<th><img src='images/personajes/elohim.png' alt="elohim" /, id='icon'></th>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr>
+	</tbody>
+</table>
