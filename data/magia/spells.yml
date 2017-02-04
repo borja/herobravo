@@ -1,3 +1,4 @@
+# Fuego nivel 1
 -
   id:       0
   alcance:  "M"
@@ -5,9 +6,9 @@
   name:     "bola de fuego"
   tipo:     "Conjuro - Bola"
   efecto:   "Causa 2 dados de ataque por fuego."
-  diablura: "Dados de ataque negros."
   potencia: "+1 dado de ataque."
   maestría: "+1 efecto de área."
+  diablura: "Dados de ataque negros."
   ardid:    "Miniaturas colindantes a las víctimas sufren Fuego de Ira."
 -
   id:       1
@@ -16,9 +17,9 @@
   name:     "fuego de ira"
   tipo:     "Maldición"
   efecto:   "Causa 1 dado de ataque directo a un enemigo del tablero."
-  diablura: "Se recupera si falla."
   potencia: "+1 Fuerza de ataque"
   maestría: "+1 objetivo de efecto"
+  diablura: "Se recupera si falla."
   ardid:    "Si el objetivo está en línea de visión el daño es físico y mental."
 -
   id:       2
@@ -27,9 +28,9 @@
   name:     "valentía"
   tipo:     "Bendición"
   efecto:   "+1 ataque de un aliado."
-  diablura: "Resistencia al miedo 2+"
   potencia: "+1 dado de bonificador."
   maestría: "+1 objetivo aliado"
+  diablura: "Resistencia al miedo 2+"
   ardid:    "Si se lanza como aura los dados de ataque son negros."
 -
   id:       3
@@ -38,9 +39,9 @@
   name:     "maldición de fuego"
   tipo:     "Maldición"
   efecto:   "El objetivo queda envuelto en llamas."
-  diablura: "El objetivo pierde su resistencia al fuego."
   potencia: "+1 penetración mágica."
   maestría: "+1 dado de fuego"
+  diablura: "El objetivo pierde su resistencia al fuego."
   ardid:    "Duplica el daño de efectos de fuego sobre el objetivo."
 -
   id:       4
@@ -49,9 +50,9 @@
   name:     "prender arma"
   tipo:     "Bendición"
   efecto:   "El arma objetivo añade un dado de fuego al atacar."
-  diablura: "El arma puede quemar puertas."
   potencia: "+1 dado de fuego al atacar."
   maestría: "+1 fuerza en daños ígneos"
+  diablura: "El arma puede quemar puertas."
   ardid:    "Las calaveras en los dados de fuego recuperan este hechizo."
 -
   id:       5
@@ -60,22 +61,26 @@
   name:     "aliento dragón"
   tipo:     "Conjuro - Cono"
   efecto:   "La casilla frontal recibe un daño de 3 dados de combate."
-  diablura: "El lanzador causa miedo dracónico 6+ durante el efecto."
   potencia: "+1 dado de daño."
   maestría: "+1 área de efecto (cono)"
-  ardid:    "Si no ha habido víctimas por el efecto persiste un turno extra.
-# Aire nivel 1"
+  diablura: "El lanzador causa miedo dracónico 6+ durante el efecto."
+  ardid:    "Si no ha habido víctimas por el efecto persiste un turno extra."
+# Aire nivel 1
 -
   id:       6
   alcance:  "V"
   duracion: 0
   name:     "genio"
   tipo:     "Invocación"
-  efecto:   "Causa 4 dados de ataque por aire o abre una puerta revelando la sala."
-  diablura: "Si el genio mata tu siguiente magia será diablura."
+  efecto:
+            "Causa 4 dados de ataque por aire o
+             abre una puerta revelando la sala."
   potencia: "+1 potencia de ataque del genio"
   maestría: "+1 turno de invocación."
-  ardid:    "Al utilizarse para abrir puertas se recupera con X+ (X son los enemigos tras la puerta)"
+  diablura: "Si el genio mata tu siguiente magia será diablura."
+  ardid:
+            "Al utilizarse para abrir puertas se recupera con X+
+             (X son los enemigos tras la puerta)"
 -
   id:       7
   alcance:  "V"
@@ -83,10 +88,12 @@
   name:     "tempestad"
   tipo:     "Maldición"
   efecto:   "Aturde a un enemigo un turno."
-  diablura: "Cada turno que dure el efecto causa un dado de daño eléctrico."
   potencia: "+1 turno aturdido"
   maestría: "+1 objetivo (debe ser colindante)"
-  ardid:    "Cada turno que dure el efecto causa un dado de daño eléctrico a los adyacentes."
+  diablura: "Cada turno del efecto causa un dado de daño eléctrico."
+  ardid:
+            "Cada turno del efecto causa un dado de daño eléctrico
+             a las miniaturas adyacentes."
 -
   id:       8
   alcance:  "V"
@@ -94,10 +101,12 @@
   name:     "ráfaga"
   tipo:     "Bendición"
   efecto:   "+5 puntos de movimiento."
-  diablura: "Además el objetivo podrá volar."
   potencia: "+2 puntos de movimiento"
   maestría: "+1 turno de efecto."
-  ardid:    "Si el movimiento es linear las miniaturas adyacentes son empujadas perpendicularmente 1 casilla."
+  diablura: "Además el objetivo podrá volar."
+  ardid:
+            "Si el movimiento es linear las miniaturas adyacentes
+             son empujadas perpendicularmente 1 casilla."
 -
   id:       9
   alcance:  "V"
