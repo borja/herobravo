@@ -15,9 +15,9 @@ GEM
   specs:
     codacy-coverage (1.1.6)
       simplecov
-    codeclimate-test-reporter (1.0.5)
+    codeclimate-test-reporter (1.0.6)
       simplecov
-    codecov (0.1.9)
+    codecov (0.1.10)
       json
       simplecov
       url
@@ -70,8 +70,8 @@ PLATFORMS
 
 DEPENDENCIES
   codacy-coverage (~> 1.1.6)
-  codeclimate-test-reporter (~> 1.0.5)
-  codecov (~> 0.1.9)
+  codeclimate-test-reporter (~> 1.0.6)
+  codecov (~> 0.1.10)
   coveralls (~> 0.8.19)
   minitest (~> 5.10.1)
   rack-test
