@@ -105,7 +105,21 @@
 -
   ruta:  "dones"
   template:
-    main: "revenge/dones"
+    main: "revenge/dones/dones"
+-
+  ruta:  "habilidad"
+  title: "view"
+  template:
+    left: "personaje/left/logo"
+    left2: "personaje/left/personajes"
+    main: "personaje/disciplinas"
+-
+  ruta:  "don"
+  title: "view"
+  template:
+    left:  "personaje/left/logo"
+    #left2: "revenge/personaje/left/personajes"
+    main:  "revenge/personaje/dones"
 -
   ruta:  "tarot"
   title: "Tarot Maligno"
@@ -134,13 +148,6 @@
     left:  "objetos/right/artefactos"
     main:  "items/listanegra/main"
     right: "items/listanegra/listado"
--
-  ruta:  "habilidad"
-  title: "view"
-  template:
-    left: "personaje/left/logo"
-    left2: "personaje/left/personajes"
-    main: "personaje/disciplinas"
 -
   ruta:  "caminos"
   template:

@@ -1,0 +1,7 @@
+-
+  id:           0
+  nivel:        1
+  name:         "Promesa de guerra"
+  type:         "activa"
+  coste:        "1 PC"
+  description:  "Todo aliado que mate este turno, recupera 1PM"
