@@ -20,8 +20,12 @@ Vulnerabilities Report
 .. |Vulnerabilities| image:: https://snyk.io/test/github/borja/herobravo/badge.svg
    :target: https://snyk.io/test/github/borja/herobravo
 
-Build Status
+Build Status |ruby version|
 ------------
+
+.. |ruby version| image:: https://img.shields.io/ruby/2.4.1.png?color=green
+   :target: https://github/borja/herobravo
+
 +--------------+-------------------+
 | **Platform** | **Badge**         |
 +==============+===================+
