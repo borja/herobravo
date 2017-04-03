@@ -1,7 +1,6 @@
 Thumbs.db
 *DS_Store
 .project
-.bundle/config
 
 # Just in case:
 helpers/
