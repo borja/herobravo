@@ -1,11 +1,13 @@
 ruby '2.4.1'
 source 'https://rubygems.org'
 
+# Production requirements
 gem 'sinatra', github: 'sinatra/sinatra'
 gem 'tilt', '~> 2.0.7'
 gem 'minitest', '~> 5.10.1'
 gem 'require_all', '~> 1.4.0'
 
+# Testing and metrics (not necessary in production)
 group :test do
   gem 'rack-test'
   gem 'rspec', '~> 3.5.0'
