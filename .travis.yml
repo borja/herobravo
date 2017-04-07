@@ -3,7 +3,10 @@ rvm:
   - 2.4.1
 
 # Sinatra gem is loaded from github, instead of rubygems
-script: bundle config github.https true
+script:
+  - bundle config github.https true
+  - bundle install
+  - bundle exec ruby -S rackup -w config.ru
 
 addons:
   code_climate:
