@@ -1,7 +1,10 @@
 language: ruby
 rvm:
   - 2.4.1
-bundler_args: config github.https true
+
+# Sinatra gem is loaded from github, instead of rubygems
+script: bundle config github.https true
+
 addons:
   code_climate:
     repo_token: 21daec0460198a2112bd481550dfc6f9a9d37da9f21e357ebcdf0cb77c4d4635
