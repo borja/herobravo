@@ -9,5 +9,6 @@ mente:     6
 mov:       7
 armadura:  1
 armas:
-  - { id: 1 }
+  - { id: 17 }
+  - { id: 4 }
 pociones:  [1]
