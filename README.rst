@@ -33,8 +33,6 @@ Build Status |ruby version|
 +--------------+-------------------+
 | Scrutinizer  | |Scrut Status|    |
 +--------------+-------------------+
-| Semaphore    | |Semaphore|       |
-+--------------+-------------------+
 | Circle CI    | |CircleCi Status| |
 +--------------+-------------------+
 | CodeShip     | |CodeShip|        |
@@ -42,8 +40,6 @@ Build Status |ruby version|
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
-.. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
-   :target: https://semaphoreci.com/borja/herobravo
 .. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
    :target: https://codeship.com/projects/160114
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
@@ -122,15 +118,17 @@ Documentation
 
 Non-supported building platforms
 --------------------------------
-+----------+------------+-------------------------------+
-| Platform | Badge      | Issue                         |
-+==========+============+===============================+ 
-| Drone    | |Drone|    | *Ruby >v.2.0 not supported*   |
-+----------+------------+-------------------------------+
-| Snap CI  | |Snap CI|  | *Ruby >v.2.3.1 not supported* |
-+----------+------------+-------------------------------+
-| Appveyor | |Appveyor| | *Current ruby env deprecated* |
-+----------+------------+-------------------------------+
++-----------+------------+-------------------------------+
+| Platform  | Badge      | Issue                         |
++===========+============+===============================+ 
+| Drone     | |Drone|    | *Ruby >v.2.0 not supported*   |
++-----------+------------+-------------------------------+
+| Snap CI   | |Snap CI|  | *Ruby >v.2.3.1 not supported* |
++-----------+------------+-------------------------------+
+| Appveyor  | |Appveyor| | *Current ruby env deprecated* |
++-----------+------------+-------------------------------+
+| Semaphore | |Semaphore|| *Ruby >v.2.0 not supported*   |
++-----------+------------+-------------------------------+
 
 .. |Drone| image:: https://drone.io/github.com/borja/herobravo/status.png
    :target: https://drone.io/github.com/borja/herobravo/latest
@@ -138,6 +136,8 @@ Non-supported building platforms
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
 .. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
    :target: https://snap-ci.com/borja/herobravo/branch/master
+.. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
+   :target: https://semaphoreci.com/borja/herobravo
 
 DIY & Manual Configuration
 ==========================
