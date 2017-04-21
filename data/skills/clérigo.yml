@@ -115,3 +115,11 @@
   name:         "Equilibrio de fuerzas"
   type:         "reactiva"
   description:  "Si tus dados de ataque y defensa son iguales tus plegarias sagradas de nivel 1/rango se ejecutarán con súmmum."
+-
+  id:           16
+  nivel:        7
+  requisitos:   [14, 15]
+  name:         "Sintonizar"
+  type:         "activa"
+  coste:        "1 Plegaria"
+  description:  "(Trepidante) Elige a un aliado: durante su próximo turno se considerará bajo la Gloria del Héroe. La sintonía requiere 1 acción de turno."
