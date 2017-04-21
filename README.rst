@@ -121,15 +121,11 @@ Non-supported building platforms
 +-----------+------------+-------------------------------+
 | Platform  | Badge      | Issue                         |
 +===========+============+===============================+ 
-| Drone     | |Drone|    | *Ruby >v.2.0 not supported*   |
-+-----------+------------+-------------------------------+
 | Appveyor  | |Appveyor| | *Current ruby env deprecated* |
 +-----------+------------+-------------------------------+
 | Semaphore | |Semaphore|| *Ruby >v.2.0 not supported*   |
 +-----------+------------+-------------------------------+
 
-.. |Drone| image:: https://drone.io/github.com/borja/herobravo/status.png
-   :target: https://drone.io/github.com/borja/herobravo/latest
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
