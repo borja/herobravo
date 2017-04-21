@@ -26,12 +26,14 @@
 -
   id:           4
   nivel:        3
+  rangos:       2
   name:         "Teocracia"
-  description:  "Mientras tus heridas superen a los enemigos de la sala puedes sumar 1 al valor del dado de plegaria."
+  description:  "Mientras tus heridas superen a los enemigos de la sala puedes sumar 1/rango al valor del dado de plegaria."
   type:         "reactiva"
 -
   id:           5
   nivel:        3
+  rangos:       3
   name:         "Aura de entusiasmo"
   description:  "+1 movimiento de todos los aliados de la S/P"
   type:         "pasiva"
@@ -97,3 +99,19 @@
   name:         "Escudriñar almas"
   type:         "pasiva"
   description:  "Mientras estés bajo los efectos de una bendición, obtienes +2 para detectar enemigos emboscados."
+-
+  id:           14
+  nivel:        6
+  requisitos:   [0, 7]
+  name:         "Símbolo de sintonía"
+  type:         "activa"
+  coste:        "1 PM"
+  description:  "(Instinto, plegaria) Elige a un aliado: la siguiente fuente de daño que reciba, lo sufrirá en el próximo turno del Malvado Brujo"
+-
+  id:           15
+  nivel:        6
+  rangos:       2
+  requisitos:   [3, 7]
+  name:         "Equilibrio de fuerzas"
+  type:         "reactiva"
+  description:  "Si tus dados de ataque y defensa son iguales tus plegarias sagradas de nivel 1/rango se ejecutarán con súmmum."

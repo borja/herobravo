@@ -1,7 +1,6 @@
 name:      "Nala"
 personaje: "cazadora"
 jugador:   "Javier Galindo"
-status:    "activo"
 familiar:  { id: 1, name: "Vodka"}
 gender:    "female"
 xp:        0
