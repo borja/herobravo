@@ -13,7 +13,7 @@ before_install:
 # Main test usging bundler (not working)
 script:
   - bundle install --path vendor/bundle
-  - bundle exec ruby -S rackup -w config.ru
+  - bundle exec rspec test.rb
 
 # Code Metrics tokens
 addons:
