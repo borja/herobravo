@@ -7,12 +7,12 @@ rvm:
   - 2.4.1
 before_install:
   - gem install bundler --no-document -v '~> 1.13.3'
+  # Sinatra gem is loaded from github, instead of rubygems:
+  - bundle config github.https true
 
 # Main test usging bundler (not working)
 script:
-  # Sinatra gem is loaded from github, instead of rubygems:
-  - bundle config github.https true
-  - bundle install
+  - bundle install --path vendor/bundle
   - bundle exec ruby -S rackup -w config.ru
 
 # Code Metrics tokens
@@ -23,8 +23,14 @@ addons:
 # Git properties
 git:
   depth: 2
-# Git branch whitelist
+
+# Whitelisted (Safe)
 branches:
   only:
     - master
     - develop
+
+# Excluded (Block)
+branches:
+  except:
+    - gh-pages
