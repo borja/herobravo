@@ -1,0 +1,18 @@
+# Try ruby > 2.3.3 (2.4.1 current version)
+environment:
+  matrix:
+    - RUBY_VERSION: 241
+
+install:
+  - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
+  - bundle install --path vendor/bundle
+
+build: off
+
+before_test:
+  - ruby -v
+  - gem -v
+  - bundle -v
+
+test_script:
+  - bundle exec rspec test.rb
