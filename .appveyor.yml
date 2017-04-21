@@ -5,6 +5,7 @@ environment:
 
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
+  - bundle config github.https true
   - bundle install --path vendor/bundle
 
 build: off
