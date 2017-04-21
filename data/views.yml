@@ -151,8 +151,13 @@
 -
   ruta:  "caminos"
   template:
-    main: "personaje/caminos"
+    main: "personaje/caminos/lista"
     right: "heroes/sidebar"
+-
+  ruta:  "camino"
+  template:
+    left: "reglamento/derecha/personajes"
+    main: "personaje/caminos/manual"
 -
   ruta:  "materiales"
   template:
