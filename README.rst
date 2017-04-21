@@ -34,15 +34,19 @@ Build Status
 +--------------+-------------------+
 | CodeShip     | |CodeShip|        |
 +--------------+-------------------+
+| Semaphore    | |Semaphore|       |
++--------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
    :target: https://travis-ci.org/borja/herobravo
-.. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
-   :target: https://codeship.com/projects/160114
-.. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
-   :target: https://circleci.com/gh/borja/herobravo
 .. |Scrut Status| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/build.png?b=master
    :target: https://scrutinizer-ci.com/g/borja/herobravo
+.. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
+   :target: https://circleci.com/gh/borja/herobravo
+.. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
+   :target: https://codeship.com/projects/160114
+.. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
+   :target: https://semaphoreci.com/borja/herobravo
 
 Deployment Status
 -----------------
@@ -115,18 +119,14 @@ Documentation
 
 Non-supported building platforms
 --------------------------------
-+-----------+------------+-------------------------------+
-| Platform  | Badge      | Issue                         |
-+===========+============+===============================+ 
-| Appveyor  | |Appveyor| | *Current ruby env deprecated* |
-+-----------+------------+-------------------------------+
-| Semaphore | |Semaphore|| *Ruby >v.2.0 not supported*   |
-+-----------+------------+-------------------------------+
++-----------+------------+-----------------------------+
+| Platform  | Badge      | Issue                       |
++===========+============+=============================+ 
+| Appveyor  | |Appveyor| | *Ruby >2.3.3 not supported* |
++-----------+------------+-----------------------------+
 
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/7lm7txpwnr0cxj6x?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
-.. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
-   :target: https://semaphoreci.com/borja/herobravo
 
 DIY & Manual Configuration
 ==========================
