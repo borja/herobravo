@@ -1,4 +1,4 @@
-FROM ruby:2.3.0
+FROM ruby:2.4.1
 
 MAINTAINER borja "https://github.com/borja"
 
@@ -9,7 +9,8 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app/
 
 # Intall requested gems
-RUN bundle install
+RUN bundle install --path vendor/bundle
+
 
 # Sinatra server launching port
 EXPOSE 9292
