@@ -156,8 +156,9 @@
 -
   ruta:  "camino"
   template:
-    left: "reglamento/derecha/personajes"
-    main: "personaje/caminos/manual"
+    left:  "personaje/caminos/miniature"
+    left2: "reglamento/derecha/personajes"
+    main:  "personaje/caminos/manual"
 -
   ruta:  "materiales"
   template:
