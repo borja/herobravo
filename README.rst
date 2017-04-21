@@ -126,7 +126,7 @@ Non-supported building platforms
 | Semaphore | |Semaphore|| *Ruby >v.2.0 not supported*   |
 +-----------+------------+-------------------------------+
 
-.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/7lm7txpwnr0cxj6x?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
    :target: https://semaphoreci.com/borja/herobravo
