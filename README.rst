@@ -123,8 +123,6 @@ Non-supported building platforms
 +===========+============+===============================+ 
 | Drone     | |Drone|    | *Ruby >v.2.0 not supported*   |
 +-----------+------------+-------------------------------+
-| Snap CI   | |Snap CI|  | *Ruby >v.2.3.1 not supported* |
-+-----------+------------+-------------------------------+
 | Appveyor  | |Appveyor| | *Current ruby env deprecated* |
 +-----------+------------+-------------------------------+
 | Semaphore | |Semaphore|| *Ruby >v.2.0 not supported*   |
@@ -134,8 +132,6 @@ Non-supported building platforms
    :target: https://drone.io/github.com/borja/herobravo/latest
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/c9ao5apb9qlaby84?svg=true
    :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
-.. |Snap CI| image:: https://snap-ci.com/borja/herobravo/branch/master/build_image
-   :target: https://snap-ci.com/borja/herobravo/branch/master
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
    :target: https://semaphoreci.com/borja/herobravo
 
