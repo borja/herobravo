@@ -628,3 +628,23 @@
   name:         "de las sombras"
   descripcion:  "+1 potencia en magias de sombras"
   tipo:         "sombras"
+-
+  id:           121
+  name:         "de gula incontenida"
+  descripcion:  "Deberá comerse cualquier comida o volverse loco."
+  tipo:         "tenebro"
+-
+  id:           122
+  name:         "de llamas vivas"
+  descripcion:  "1/reto: Puedes lanzar prender arma"
+  tipo:         "fuego"
+-
+  id:           123
+  name:         "de llamas candentes"
+  descripcion:  "1/reto: Puedes lanzar valentía"
+  tipo:         "fuego"
+-
+  id:           124
+  name:         "de llamas danzantes"
+  descripcion:  "Las miniaturas que entren a melé reciben 1 fuego de Ira"
+  tipo:         "fuego"

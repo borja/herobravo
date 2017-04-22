@@ -2,17 +2,20 @@ name:      "Shama"
 personaje: "invocador"
 jugador:   "Aitor Arranz"
 familiar:  { id: 8, name: "Hotoke"}
+profesion: { id: 1, aprendiz: [0] }
 gender:    "female"
 status:    "activo"
 nivel:     2
 xp:        5
 repu:      1
-cuerpo:    4
+cuerpo:    6
 mente:     7
 mov:       7
 armadura:  1
 armas:
   - { id: 17 }
-  - { id: 4 }
+  - { id: 4, enchants: [122, 123, 124] }
+miscelaneas:
+  - { id: 1, enchants: [114, 121] }
 skills:   [0, 1, 2, 3, 5]
 hechizos: [0, 1, 2, 6, 12, 13, 14, 18, 19, 20]
