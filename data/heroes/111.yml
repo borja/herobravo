@@ -1,6 +1,7 @@
 name:      "Shama"
 personaje: "hechicero"
 jugador:   "Aitor Arranz"
+familiar:  { id: 8, name: "Hotoke"}
 gender:    "female"
 status:    "activo"
 xp:        5
@@ -11,4 +12,5 @@ armadura:  1
 armas:
   - { id: 17 }
   - { id: 4 }
+hechizos: [0, 1, 2, 6, 12, 13, 14, 18, 19, 20]
 pociones:  [1]
