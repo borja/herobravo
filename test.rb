@@ -1,8 +1,4 @@
 # CI Engines requirements:
-
-require 'codacy-coverage'
-Codacy::Reporter.start
-
 require 'coveralls'
 Coveralls.wear!
 
