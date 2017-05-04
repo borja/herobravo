@@ -99,9 +99,15 @@
     right:  "personaje/pets"
     right2: "heroes/sidebar"
 -
+  ruta:  "habs"
+  template:
+    main: "personaje/habilidades/casillero"
+-
   ruta:  "habilidades"
   template:
-    main: "personaje/habilidades"
+    left:  "personaje/principal/menu"
+    main:  "personaje/habilidades/reglas"
+    right: "reglamento/derecha/personajes"
 -
   ruta:  "dones"
   template:
@@ -112,7 +118,7 @@
   template:
     left: "personaje/left/logo"
     left2: "personaje/left/personajes"
-    main: "personaje/disciplinas"
+    main: "personaje/habilidades/listado"
 -
   ruta:  "don"
   title: "view"

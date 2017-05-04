@@ -47,3 +47,9 @@
   name:        "Umbrae"
   type:        "Pasiva"
   description: "Puedes escoger un set de sombras en lugar de un set de otra escuela."
+-
+  id:          7
+  coste:       250
+  name:        "Glaciem"
+  type:        "Pasiva"
+  description: "Puedes escoger un set de hielo en lugar de un set de otra escuela."
