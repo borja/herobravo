@@ -32,7 +32,7 @@
   id:          5
   name:        "Ataque poderoso"
   description: "+1 fuerza de ataque. Tu defensa deberá ser verdadera durante el turno del Malvado Brujo."
-  coste:       "400"
+  coste:       "200"
   type:        "Activa"
 -
   id:          6
@@ -62,7 +62,7 @@
   id:          10
   name:        "Pértiga"
   description: "+1 saltar fosos al estar equipado con un bastón."
-  coste:       "250"
+  coste:       "50"
   type:        "Pasiva"
 - 
   id:          11
@@ -81,4 +81,16 @@
   name:        "Refugiarse en el escudo"
   description: "-1 daño recibido de conjuros."
   coste:       "450"
+  type:        "Pasiva"
+- 
+  id:          14
+  name:        "Vigor de combate"
+  description: "+1 de fuerza en armas a 2 manos."
+  coste:       "500"
+  type:        "Pasiva"
+- 
+  id:          15
+  name:        "Combate furioso"
+  description: "+1 potencia si el turno anterior recibiste daño"
+  coste:       "350"
   type:        "Pasiva"
