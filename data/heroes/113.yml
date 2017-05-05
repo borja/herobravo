@@ -1,0 +1,33 @@
+name:      "Unoke"
+personaje: "arquero"
+gender:    "female"
+jugador:   "Rocío"
+status:    "activo"
+profesion: { id: 6, aprendiz: [0] }
+progenitores: 
+  - 89
+nivel:     4
+xp:        6
+repu:      3
+cuerpo:    6
+mente:     5
+mov:       10
+oro:       308
+armadura:  2
+armas:
+  - { id: 33 }
+  - { id: 25 }
+protecciones:
+  - { id: 1, ranuras: 1 }
+  - { id: 2 }
+  - { id: 4 }
+miscelaneas:
+  - { id:  1, enchants: [111] }
+  - { id:  1 }
+pergaminos:
+  - { id: 1, spells: [66] }
+hechizos:  [12, 13, 14]
+shadows:   []
+skills:    [1, 2, 4, 5, 6, 7]
+master:    [12]
+magister:  [0]
