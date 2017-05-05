@@ -94,3 +94,9 @@
   description: "+1 potencia si el turno anterior recibiste daño"
   coste:       "350"
   type:        "Pasiva"
+- 
+  id:          16
+  name:        "Escudo de vanguardia"
+  description: "(Requiere escudo) Ignora interrupciones y penalizaciones por movimiento si cargas frontalmente a un enemigo."
+  coste:       "150"
+  type:        "Pasiva"
