@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/sinatra/sinatra.git
-  revision: 8fdd35c731ec6915bae393c6383b2357450665f0
+  revision: 88ede968ecd1ce3bd5f2a58f386b7687b489d8c1
   specs:
-    rack-protection (2.0.0.rc2)
+    rack-protection (2.0.0)
       rack
-    sinatra (2.0.0.rc2)
+    sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.0.rc2)
+      rack-protection (= 2.0.0)
       tilt (~> 2.0)
 
 GEM
