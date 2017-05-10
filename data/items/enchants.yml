@@ -658,3 +658,8 @@
   name:         "reforzado"
   descripcion:  "+1 protección"
   tipo:         "tierra"
+-
+  id:           127
+  name:         "de hielo arcano"
+  descripcion:  "+1 potencia a magias de hielo (Permite usar magia de hielo)"
+  tipo:         "hielo"
