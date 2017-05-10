@@ -1,0 +1,17 @@
+name:      "Indrion"
+personaje: "arquero"
+jugador:   "Javi López"
+status:    "activo"
+nivel:     1
+xp:        5
+cuerpo:    6
+mente:     4
+mov:       8
+oro:       100
+armadura:  {id: 2}
+armas:
+  - { id: 14 }
+  - { id: 25 }
+pergaminos:
+  - { id: 1, spells: [66] }
+hechizos:  [6, 7, 8]
