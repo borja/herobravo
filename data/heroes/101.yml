@@ -3,14 +3,17 @@ personaje: "invicto"
 jugador:   "Alberto"
 status:    "reserva"
 pareja:    { char: 106, tipo: "pj" }
-nivel:     2
-xp:        2
+profesion: { id: 7, aprendiz: [0] }
+nivel:     3
+xp:        1
 repu:      1
-cuerpo:    7
+cuerpo:    8
 mente:     3
 mov:       8
-profesion: { id: 7, aprendiz: [0] }
 armadura:  { id: 1, enchants: [116, 74] }
-armas:     [30]
-skills:    [0, 1]
+armas:
+  {id: 30}
+skills:    [0, 1, 4, 5]
 pociones:  [1]
+tesoro:
+  gemas: [1]

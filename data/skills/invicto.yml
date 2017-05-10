@@ -40,10 +40,11 @@
 -
   id:           6
   nivel:        3
+  rangos:       2
   requisitos:   [1]
   name:         "Rugido de orden"
   type:         "única"
-  description:  "Todos los aliados de la sala obtienen la bonificación del corazón de león."
+  description:  "Todos los aliados de la sala obtienen la bonificación del corazón de león. En rango 2 se activa siempre que se ejecute rugido."
 -
   id:           7
   nivel:        4
