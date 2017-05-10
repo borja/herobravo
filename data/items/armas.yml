@@ -274,3 +274,11 @@
   ranuras:     3
   diagonal:    false
   precio:      550
+-
+  id:          34
+  name:        "báculo"
+  categoria:   "bastón"
+  ataque:      2
+  ranuras:     4
+  diagonal:    true
+  precio:      300

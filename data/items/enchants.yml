@@ -648,3 +648,13 @@
   name:         "de llamas danzantes"
   descripcion:  "Las miniaturas que entren a melé reciben 1 fuego de Ira"
   tipo:         "fuego"
+-
+  id:           125
+  name:         "de panzudo"
+  descripcion:  "1/reto: Aparece un cordero"
+  tipo:         "tierra"
+-
+  id:           126
+  name:         "reforzado"
+  descripcion:  "+1 protección"
+  tipo:         "tierra"
