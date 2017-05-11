@@ -5,7 +5,9 @@ Coveralls.wear!
 # https://github.com/codeclimate/ruby-test-reporter/blob/master/README.md
 # 'codeclimate-test-reporter' was replaced
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do
+  add_filter "/lib/" # Lib methods will be ignored.
+end
 
 require 'codecov'
 SimpleCov.formatter = SimpleCov::Formatter::Codecov
@@ -32,6 +34,7 @@ def app
   Sinatra::Application
 end
 
+puts '[TEST] Class: hero'
 describe '.hero' do
   it 'should say true' do
     heros.each_with_index do |h, i|
