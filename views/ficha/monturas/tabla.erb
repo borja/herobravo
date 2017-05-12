@@ -1,0 +1,26 @@
+<table>
+	<thead>
+		<tr>
+			<th colspan=2>Montura</th>
+			<th>Recorrido</th>
+			<th>Distancia</th>
+			<th>Precio</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% monturas.each do |montura| %>
+			<% m = Montura.new(montura) %>
+			<tr>
+				<td><%= erb :'display/display', locals: {
+					title:       m.name,
+					path:        m.img_path,
+					description: m.bono } %>
+				</td>
+				<td><%= m.name %></td>
+				<td><%= m.recorrido.capitalize %></td>
+				<td><%= m.distancia %></td>
+				<td><%= m.precio %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

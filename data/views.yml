@@ -180,7 +180,7 @@
   ruta:  "monturas"
   template:
     left: "mapa/ciudades"
-    main: "ficha/monturas"
+    main: "ficha/monturas/desc"
 -
   ruta:  "joyas"
   template:
