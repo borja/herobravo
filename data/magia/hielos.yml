@@ -90,7 +90,7 @@
   alcance:  "V"
   duracion: "∞"
   name:     "Muro de hielo"
-  tipo:     "Evocación - Muro"
+  tipo:     "Muro"
   efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas se convertiran en bloques de hielo."
   diablura: "1PM: El muro persiste a pesar de ser destruido"
   potencia: "+1 grosor del muro."
@@ -209,3 +209,94 @@
   potencia: "+1 dado"
   maestría: "-1 de defensa para resistir"
   ardid:    "Las miniaturas dañadas quedarán congeladas"
+# Nivel 4
+-
+  id:       18
+  alcance:  "V"
+  duracion: 0
+  name:     "Cataclismo gélido"
+  tipo:     "Evocación - Sala"
+  efecto:
+            "Todas las criaturas de la sala reciben un ataque de un dado
+             de frío de fuerza igual a tu mente y potencia igual a los
+             hechizos de hielo utilizados hasta el momento en el Reto."
+  diablura: "Los aliados recuperan 1PM en lugar de recibir daño"
+  potencia: "+1 duración"
+  maestría: "+1 dado"
+  ardid:    "El ataque se ejecuta con Odio"
+-
+  id:       19
+  alcance:  6
+  duracion: 0
+  name:     "Brecha glaciar"
+  tipo:     "Conjuro - Rayo"
+  efecto:
+            "El rayo se propaga siempre diagonalmente, a lo largo de 6 casillas
+             causando un ataque a cada enemigo afectado igual
+             a tus PM actuales. (Daño por frío, dados de combate normales
+             de potencia igual a las magias de hielo disponibles y fuerza 2)"
+  diablura: "Recupera un hechizo de hielo de nivel N (enemigos eliminados)"
+  potencia: "+1 alcance"
+  maestría: "+1 rayo (puede repetir recorrido)"
+  ardid:    "Las miniaturas multiplican el daño por cada esquina afectada."
+-
+  id:       20
+  alcance:  1
+  duracion: "E"
+  name:     "Venganza fría"
+  tipo:     "Bendición"
+  efecto:
+            "El objetivo sanará 1PM al lanzador cada vez que sufra daños.
+             En ese momento, el lanzador podrá conjurar un hechizo de hielo
+             de nivel N, que tenga disponible, desde el objetivo con coste
+             N Puntos de Mente."
+  diablura: "No necesitas pagar el coste."
+  potencia: "+1 PM recuperado"
+  maestría: "+1 hechizo para ser ejecutado"
+  ardid:    "No necesitas descartar el hechizo"
+-
+  id:       21
+  alcance:  0
+  duracion: 4
+  name:     "Trono de hielo"
+  tipo:     "Invocación"
+  efecto:
+            "Mientras esté sentado en el trono de hielo, el lanzador tendrá
+             +1 maestría al hielo, +2 potencia al hielo y renunciará a su
+             movimiento, a cambio de poder ejecutar 1 magia extra por turno,
+             siempre y cuando sea de hielo. Aumenta su defensa a tantos dados
+             como magias de hielo tenga disponibles (azules)."
+  diablura: "El trono levita y puedes mover la minusmitad"
+  potencia: "+1 potencia de hielo"
+  maestría: "+1 maestría de hielo"
+  ardid:    "Todo enemigo que te ataque quedará congelado si no saca 4+"
+-
+  id:       22
+  alcance:  0
+  duracion: 3
+  name:     "Muerte Helada"
+  tipo:     "Abjuración"
+  efecto:
+            "Una espada de hielo mágico que puede ser empleada
+             como arma de empuñadura. Tirará 2 dados de Escarcha y
+             3 dados azules cuya potencia es el nivel del hechicero.
+             y cuya fuerza es igual al número de magias de hielo disponibles"
+  diablura: "Se puede usar telekinéticamente por 1 PM/turno."
+  potencia: "+1 dado azul."
+  maestría: "+1 ataque por turno"
+  ardid:    "5+, matar: recupera el hechizo: Muerte Helada"
+-
+  id:       23
+  alcance:  0
+  duracion: 3
+  name:     "Escudo de Cristal"
+  tipo:     "Abjuración"
+  efecto:
+            "Un escudo de hielo cristalino y resistente que reduce en X
+             los puntos de daño sufridos por ataques frontales, y aumenta
+             en X la resistencia a la magia. (X es el número de magias
+             de hielo disponibles). +1 Defensa."
+  diablura: "El escudo no ocupa mano."
+  potencia: "+1 X"
+  maestría: "+2 duración"
+  ardid:    "Recupera un hechizo de hielo aleatorio al defender exitosamente."
