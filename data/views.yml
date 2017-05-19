@@ -224,6 +224,7 @@
     main:  "items/gemas/main"
 -
   ruta:  "calibre"
+  title: "Gemas"
   template:
     left:  "objetos/left/content2"
     main:  "items/gemas/calibre"
