@@ -1,12 +1,7 @@
 <header>
 	<h2>
-		<% if params[:view] == 'hechizos' %>
-			Hechizos sagrados
-			de nivel <%= params[:param].to_i || 1 %>
-		<% else %>
-			Hechizos de <%= params[:view] %>
-			de nivel <%= params[:param].to_i || 1 %>
-		<% end %>
+		Hechizos de <%= params[:view] %>
+		de nivel <%= params[:param] %>
 	</h2>
 </header>
 
