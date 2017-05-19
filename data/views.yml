@@ -218,6 +218,11 @@
     main:  "items/gemas/gemas"
     right: "items/gemas/listado"
 -
+  ruta:  "gema"
+  template:
+    left: "items/gemas/listado"
+    main:  "items/gemas/main"
+-
   ruta:  "calibre"
   template:
     left:  "objetos/left/content2"

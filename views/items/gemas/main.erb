@@ -1,0 +1,27 @@
+<% g = gema(params[:param].to_i) %>
+
+<header>
+	<h2><%= g.name.capitalize %></h2>
+</header>
+
+<p>
+	<h3>
+		Calibre: (<%= g.calidad["calibre"] %>)
+		<%= g.calidad["name"] %>
+	</h3>	
+	<%= erb :'items/gemas/detalle', locals: { g: g } %>
+</p>
+
+<p>
+	<h3>Propiedades mágicas</h3>
+	<%= erb :'items/gemas/propiedades', locals: { g: g } %>
+</p>
+
+<p>
+	<h3>Disponibilidad</h3>
+	<% unless g.disponibles.empty? %>
+		<%= erb :'items/gemas/disponibilidad', locals: { g: g } %>
+	<% else %>
+		Ningún héroe posee esta gema.
+	<% end %>
+</p>
