@@ -1,27 +1,52 @@
 <% calibre = gema_calidades[params[:param].to_i - 1] %>
-<header><h2><%= calibre['name'] %></h2></header>
-<table>
-	<thead>
-		<tr>
-			<th>ID</th>
-			<th>Icono</th>
-			<th>Disponibles</th>
-			<th>Nombre</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% gemas.each do |g| %>
-			<% if g.calidad == calibre %>
-				<tr><td><%= g.id %></td>
-					<td><%= erb :'display/gema', locals: { gema: g } %></td>
-					<td><%= erb :'display/bazar', locals: {
-						bazar:   g.disponibles,
-						item_id: g.id, 
-						engarce: 'gemas' } %>
-					</td>
-					<td><%= g.name %></td>
-				</tr>
+<% pvp = [10,25,50,100,250,500] %>
+<% precio = pvp[params[:param].to_i - 1 ] %>
+
+<header>
+	<h2>Las <%= calibre['name'].downcase %></h2>
+</header>
+
+<p>
+	
+	<h3>Precio de mercado: <%= precio.to_s %></h3>
+</p>
+
+<p>
+	<h3>Listado de <%= calibre['name'] %></h3>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Icono</th>
+				<th>Disponibles</th>
+				<th>Nombre</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% gemas.each do |g| %>
+				<% if g.calidad == calibre %>
+					<tr><td><%= g.id %></td>
+						<td><%= erb :'display/gema', locals: { gema: g } %></td>
+						<td><%= erb :'display/bazar', locals: {
+							bazar:   g.disponibles,
+							item_id: g.id, 
+							engarce: 'gemas' } %>
+						</td>
+						<td>
+							<a href='/gema/<%= g.id %>'>
+								<%= g.name %>
+							</a>
+						</td>
+					</tr>
+				<% end %>
 			<% end %>
-		<% end %>
-	</tbody>
-</table>
+		</tbody>
+	</table>
+</p>
+
+<p>
+	<h3>Estadísticas</h3>
+	Estas gemas tienen un <%= calibre['prob'] %> de posibilidades
+	de aparecer en una tirada de tesoro. (Al obtener un resultado:
+	<%= calibre['2d6']%> con la tirada de 2d6)
+</p>

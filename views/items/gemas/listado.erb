@@ -5,13 +5,17 @@
 	<img src='/images/nav/gemas.png' alt='Gemas'/>
 </a>
 <p>
+	<h3>Calibre de una gema</h3>
 	Mide la calidad de la gema.
 	Cuánto mayor es su calibre, mayor es su precio
 	y mejores son sus propiedades mágicas.
 </p>
-<ul class="link-list">
-	<% 6.times do |calibre| %>
-		<% c = gema_calidades[calibre] %>
-		<li><a href='/calibre/<%= c['calibre'] %>'><%= c['name'] %></a></li>
-	<% end %>
-</ul>
+<p>
+	<h3>Listado de calibres</h3>
+	<ul class="link-list">
+		<% 6.times do |calibre| %>
+			<% c = gema_calidades[calibre] %>
+			<li><a href='/calibre/<%= c['calibre'] %>'><%= c['name'] %></a></li>
+		<% end %>
+	</ul>
+</p>
