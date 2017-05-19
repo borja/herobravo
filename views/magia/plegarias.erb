@@ -1,15 +1,20 @@
-<table>
-	<thead>
-		<th colspan='2'>Plegaria</th>
-		<th>Efecto</th>
-	</thead>
-	<tbody>
-		<% plegarias.each do |p|%>
-			<tr style=<%= p.color %>>
-				<td><%= erb :'display/spell', locals: { spell: p } %></td>
-				<td><%= p.name.capitalize %></td>
-				<td><%= p.efecto %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+<header>
+	<h2>
+		<%= params[:view].capitalize %>
+		de nivel <%= params[:param].to_i || 1 %>
+	</h2>
+</header>
+
+<p>
+	<table>
+		<thead>
+			<th colspan='2'>Plegaria</th>
+			<th>Efecto</th>
+			<th>summun</th>
+			<th>chakra</th>
+		</thead>
+		<tbody>
+			<%= erb :'magia/hechizos/plegarias' %>
+		</tbody>
+	</table>
+</p>

@@ -1,7 +1,9 @@
-<% plegarias.each do |s|%>
-	<% if @spelllevel.to_i == s.nivel %>
+<% magias = send(params[:view]) %>
+<% magias.each do |s|%>
+	<% if params[:param].to_i == s.nivel %>
+		<% magic = s %>
 		<tr style=<%= s.color %>>
-			<td><img src=<%= s.img_path %> alt=<%= s.name %>, id='icon' /></td>
+			<td><%= erb :'display/spell', locals: { spell: magic } %></td>
 			<td><%= s.name.capitalize %></td>
 			<td><%= s.efecto %></td>
 			<td><%= s.summun %></td>

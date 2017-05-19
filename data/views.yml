@@ -383,29 +383,10 @@
     left: "torre/left/sagradas"
     main: "magia/sagradas"
 -
-  ruta:  "arenas"
-  template:
-    left:  "torre/left/sagradas"
-    left2: "torre/left/elementales"
-    main:  "magia/arenas"
--
-  ruta:  "hielos"
-  template:
-    left:  "torre/left/sagradas"
-    left2: "torre/left/elementales"
-    main:  "magia/hielos"
--
   ruta:  "plegarias"
   template:
     left: "torre/left/sagradas"
-    left2: "torre/left/elementales"
     main: "magia/plegarias"
--
-  ruta:  "execraciones"
-  template:
-    left: "torre/left/sagradas"
-    left2: "torre/left/elementales"
-    main: "magia/execraciones"
 -
   ruta:  "elficas"
   title: "Magias élficas"
