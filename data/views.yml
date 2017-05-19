@@ -188,6 +188,17 @@
     main: "items/joyas"
     right: "objetos/left/joyas"
 -
+  ruta:  "joyasespeciales"
+  template:
+    left: "objetos/left/content2"
+    main: "items/joyas/especiales"
+    right: "objetos/left/joyas"
+-
+  ruta:  "joya"
+  template:
+    left:  "objetos/left/joyas"
+    main:  "items/joyas/main"
+-
   ruta:  "runas"
   template:
     left:  "objetos/left/content2"

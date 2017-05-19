@@ -1,0 +1,14 @@
+<table>
+	<thead>
+		<th>Posición</th>
+		<th>Bonificación</th>
+	</thead>
+	<tbody>
+		<% j.fits.keys.each_with_index do |posicion, i| %>
+			<tr>
+				<td><%= posicion %></td>
+				<td><%= j.fits.values[i] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

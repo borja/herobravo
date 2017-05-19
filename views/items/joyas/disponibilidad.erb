@@ -1,0 +1,17 @@
+<table>
+	<tr>
+		<th colspan=2>Héroe</th>
+		<th>Jugador</th>
+		<th>Disponibles</th>
+	</tr>
+	<% j.disponibles.uniq.each do |h| %>
+		<tr>
+			<td><a href='/hero/<%= h %>'>
+					<%= erb :'display/portrait', locals: { h: hero(h) } %></a>
+			</td>
+			<td><%= hero(h).name %></td>
+			<td><%= hero(h).jugador %></td>
+			<td><%= hero(h).tesoro['joyas'].count(j.id) %></td>
+		</tr>
+	<% end %>
+</table>

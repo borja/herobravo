@@ -1,42 +1,20 @@
 <% j = joya(params[:param].to_i) %>
-<header><h2>Descripción</h2></header>
+
+<header>
+	<h2>La joya <%= j.name %></h2>
+</header>
+
 <p><%= erb :"items/joyas/descripciones/#{ j.name }" %></p>
+<p>
+	<h3>Propiedades mágicas</h3>
+	<%= erb :'items/joyas/propiedades', locals: { j: j } %>
+</p>
 
-<h3>Propiedades mágicas</h3>
-<table>
-	<thead>
-		<th>Posición</th>
-		<th>Bonificación</th>
-	</thead>
-	<tbody>
-		<% j.fits.keys.each_with_index do |posicion, i| %>
-			<tr>
-				<td><%= posicion %></td>
-				<td><%= j.fits.values[i] %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table><br/>
-
-<h3>Disponibilidad</h3>
-<% unless j.disponibles.empty? %>
-	<table>
-		<tr>
-			<th colspan=2>Héroe</th>
-			<th>Jugador</th>
-			<th>Disponibles</th>
-		</tr>
-		<% j.disponibles.uniq.each do |h| %>
-			<tr>
-				<td><a href='/hero/<%= h %>'>
-						<%= erb :'display/portrait', locals: { h: hero(h) } %></a>
-				</td>
-				<td><%= hero(h).name %></td>
-				<td><%= hero(h).jugador %></td>
-				<td><%= hero(h).tesoro['joyas'].count(j.id) %></td>
-			</tr>
-		<% end %>
-	</table>
-<% else %>
-	Ningún héroe posee esta joya.
-<% end %>
+<p>
+	<h3>Disponibilidad</h3>
+	<% unless j.disponibles.empty? %>
+		<%= erb :'items/joyas/disponibilidad', locals: { j: j } %>
+	<% else %>
+		Ningún héroe posee esta joya.
+	<% end %>
+</p>

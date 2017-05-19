@@ -1,8 +1,0 @@
-<% r = joya(params[:param].to_i) %>
-<header>
-	<h2>La joya <%= j.name.upcase %></h2>
-</header>
-<a href='/joya/<%= j.id %>' class='feature-image'>
-	<img src=<%= j.big_img %> alt='<%= j.name.upcase %>'/>
-</a>
-<p><%= erb :"items/joyas/lenguaje/#{ j.name }" %></p>

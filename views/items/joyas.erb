@@ -1,21 +1,30 @@
-<table>
-	<thead>
-		<tr>
-			<th colspan='2'>Joya</th>
-			<th width='20%'>Disponibles</th>
-		</tr>	
-	</thead>
-	<tbody>
-		<% joyas.each do |j| %>
+<header><h2>Lista de joyas de engarce</h2></header>
+<p>
+	<table>
+		<thead>
 			<tr>
-				<td><%= erb :'display/joya', locals: { joya: j } %></td>
-				<td><%= 'Joya ' + j.name %></td>
-				<td><%= erb :'display/bazar', locals: { 
-					bazar:   j.disponibles, 
-					engarce: 'joyas', 
-					item_id: j.id } %>
-				</td>						
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+				<th>#</th>
+				<th colspan='2'>Joya</th>
+				<th width='20%'>Disponibles</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% joyas[0..11].each_with_index do |j, i| %>
+				<tr>
+					<td><%= i + 1 %></td>
+					<td><%= erb :'display/joya', locals: { joya: j } %></td>
+					<td>
+						<a target="_blank" href="/joya/<%= j.id %>">
+							<%= 'Joya ' + j.name %>
+						</a>
+					</td>
+					<td><%= erb :'display/bazar', locals: { 
+						bazar:   j.disponibles, 
+						engarce: 'joyas', 
+						item_id: j.id } %>
+					</td>						
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</p>
