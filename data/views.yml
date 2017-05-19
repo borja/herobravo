@@ -364,7 +364,7 @@
   title: "Hechizos"
   template:
     left: "ficha/izquierda/izquierda"
-    main: "magia/spells"
+    main: "magia/heros/spells"
 -
   ruta:  "ensalada"
   title: "Contadores"

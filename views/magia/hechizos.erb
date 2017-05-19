@@ -1,14 +1,15 @@
 <header>
 	<h2>
+		Hechizos
 		<% if params[:view] == 'hechizos' %>
-			Hechizos elementales
-			de nivel <%= params[:param].to_i || 1 %>
+			elementales
 		<% else %>
-			Hechizos de <%= params[:view] %>
-			de nivel <%= params[:param].to_i || 1 %>
+			de <%= params[:view] %>
 		<% end %>
+		de nivel <%= params[:param].to_i || 1 %>
 	</h2>
 </header>
+
 <p>
 	<table class='tspells'>
 		<thead>

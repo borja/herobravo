@@ -1,0 +1,14 @@
+<% hero = hero(params[:param].to_i) %>
+
+<header>
+	<h2>Hechizos de <%= hero.name %></h2>
+</header>
+
+<p>
+	<% if hero.elementos.empty? %>
+		<h3><%= hero.name %> no conoce ningun hechizo.</h3>
+		No todos los héroes son sensibles a las sutilezas de la magia.
+	<% else %>
+		<%= erb :'magia/heros/lista', locals: { hero: hero } %>	
+	<% end %>
+</p>
