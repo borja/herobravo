@@ -395,13 +395,6 @@
     left2: "torre/left/sagradas"
     main: "magia/elficas"
 -
-  ruta:  "sangre"
-  title: "Magia de sangre"
-  template:
-    left: "torre/left/elementales"
-    left2: "torre/left/sagradas"
-    main: "magia/sangre"
--
   ruta:  "archivo"
   template:
     left:  "ciudad/biblioteca/archivo/left"
