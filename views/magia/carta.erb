@@ -1,0 +1,22 @@
+<% h = spells.find {|s| s.name == params[:param] } %>
+<header>
+	<h2>Estadísticas</h2>
+</header>
+<a href="hechizo/<%= h.name %>" class="feature-image">
+	<img src="/images/ilustraciones/<%= h.name %>.png" 
+			 alt="<%= h.name %>" />
+</a>
+<p>
+	<table>
+		<tbody>
+			<tr>
+				<td>Alcance</td>
+				<td width="50%"><%= h.alcance %></td>
+			</tr>
+			<tr>
+				<td>Duración</td>
+				<td width="50%"><%= h.duracion %></td>
+			</tr>
+		</tbody>
+	</table>
+</p>

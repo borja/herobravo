@@ -7,7 +7,11 @@
 				<% if params[:view] == 'hechizos' %>
 					<td><%= magic.elemento.capitalize %></td>
 				<% end %>
-				<td><%= magic.name.capitalize %></td>
+				<td>
+					<a href="/hechizo/<%= magic.name %>" target="_blank">
+						<%= magic.name.capitalize %>
+					</a>
+				</td>
 				<td><%= magic.efecto %></td>
 				<td><%= magic.potencia %></td>
 			</tr>

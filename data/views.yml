@@ -378,6 +378,13 @@
     left2: "torre/left/especializaciones"
     main: "magia/hechizos"
 -
+  ruta:  "hechizo"
+  title: "view"
+  template:
+    left:  "torre/left/elementales"
+    main:  "magia/hechizo"
+    right: "magia/carta"
+-
   ruta:  "sagradas"
   template:
     left: "torre/left/sagradas"

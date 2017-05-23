@@ -114,10 +114,12 @@
   name:     "flauta mágica"
   tipo:     "Maldición"
   efecto:   "Un objetivo entra un turno en locura"
-  diablura: "Todos los aliados recuperan 1PM."
   potencia: "El lanzador puede sumar/restar 1 a la tirada de locura."
   maestría: "+1 objetivo."
-  ardid:    "Si el resultado de la locura es 7 puedes elegir que la víctima ejecute flauta mágica silbando."
+  diablura: "Todos los aliados recuperan 1PM."
+  ardid:
+            "Si el resultado de la locura es 7 puedes elegir
+             que la víctima ejecute flauta mágica silbando."
 -
   id:       10
   alcance:  "V"
@@ -125,9 +127,9 @@
   name:     "viento en popa"
   tipo:     "Superchería"
   efecto:   "+3 movimiento de todos los aliados"
-  diablura: "En su lugar puedes reducir en 3 el movimiento enemigo."
   potencia: "+1 al modificador de movimiento"
   maestría: "+1 turno de efecto."
+  diablura: "En su lugar puedes reducir en 3 el movimiento enemigo."
   ardid:    "Los aliados no pueden ser empujados."
 -
   id:       11
@@ -136,11 +138,11 @@
   name:     "disparo certero"
   tipo:     "Bendición"
   efecto:   "+2 de potencia al siguiente ataque de proyectil del objetivo."
-  diablura: "Añade además un dado eléctrico al ataque."
   potencia: "+1 potencia extra"
   maestría: "El efecto dura un ataque extra."
-  ardid:    "El disparo es aullante. (Retrocede 1 casilla por herida causada)
-# Tierra nivel 1"
+  diablura: "1 dado eléctrico extra al ataque."
+  ardid:    "El disparo es aullante."
+# Tierra nivel 1
 -
   id:       12
   alcance:  "V"
@@ -148,9 +150,9 @@
   name:     "piel de piedra"
   tipo:     "Bendición"
   efecto:   "+1 dado de defensa."
-  diablura: "Permite defender con un escudo negro por dado adicional."
-  potencia: "+1 dado de defensa extra."
+  potencia: "+1 dado extra."
   maestría: "+1 al número de veces necesario para que el efecto cese."
+  diablura: "Permite defender con un escudo negro por dado adicional."
   ardid:    "Los dados son azules."
 -
   id:       13
@@ -159,10 +161,12 @@
   name:     "atravesar muros"
   tipo:     "Bendición"
   efecto:   "Permite atravesar muros."
-  diablura: "Permite atravesar enemigos también."
   potencia: "+1 turno de duración"
   maestría: "+1 objetivo"
-  ardid:    "Los enemigos atravesados reciben un golpe imparable sin armas igual a la potencia."
+  diablura: "Permite atravesar enemigos también."
+  ardid:
+            "Ataque (imparable) sin armas igual a la potencia
+             al atravesar enemigos."
 -
   id:       14
   alcance:  0
@@ -170,9 +174,9 @@
   name:     "cura corporal"
   tipo:     "Sanación"
   efecto:   "Restaura 4 PC."
-  diablura: "Permite curar PM en lugar de cuerpo."
   potencia: "+1 PC extra"
   maestría: "+1 objetivo"
+  diablura: "Permite curar PM en lugar de cuerpo."
   ardid:    "Se recupera con X+ (X es la sanación sobrante)"
 -
   id:       15
@@ -181,12 +185,15 @@
   name:     "manos de piedra"
   tipo:     "Maldición"
   efecto:   
-            "El objetivo es inmovilizado por dos grandes manos de piedra que surgen del suelo. 
-             Se puede resistir si obtiene menos de su movimiento con 2d6."
-  diablura: "Si falla la tirada recibe el exceso como daño defendible."
+            "El objetivo es inmovilizado por dos grandes manos de piedra
+             que surgen del suelo. Se puede resistir si obtiene
+             menos de su movimiento con 2d6."
   potencia: "+1 a la tirada del objetivo."
   maestría: "+1 turno"
-  ardid:    "Si el objetivo obtiene el mismo número con ambos dados la potencia de hechizos de piedra aumenta dicha cantidad contra él."
+  ardid:
+            "Si el objetivo obtiene el mismo número (N) con ambos dados,
+             la potencia de hechizos de piedra contra él, aumenta en N."
+  diablura: "Si falla la tirada recibe el exceso como daño defendible."
 -
   id:       16
   alcance:  "V"
@@ -194,12 +201,17 @@
   name:     "obelisco"
   tipo:     "Bendición"
   efecto:
-            "El objetivo amistoso queda convertido en un obelisco (no podrá combatir ni moverse)
+            "El objetivo amistoso queda convertido en un obelisco
+             (no podrá combatir ni moverse)
              cuya defensa es igual a la mente del conjurador."
-  diablura: "Obelisco puede ser lanzado como maldición."
-  potencia: "El lanzador puede incrementar en 1 la potencia defensiva del objetivo."
+  potencia:
+            "El lanzador puede incrementar en 1
+             la potencia defensiva del objetivo."
   maestría: "+1 muro de piedra alrededor del objetivo durante el efecto."
-  ardid:    "5+: Los hechizos dirigidos contra el objetivo pueden ser redireccionados por el lanzador."
+  diablura: "Puede ser lanzado como maldición."
+  ardid:
+            "5+: Los hechizos dirigidos contra el objetivo
+             pueden ser redireccionados por el lanzador."
 -
   id:       17
   alcance:  0
@@ -207,10 +219,10 @@
   name:     "restituir"
   tipo:     "Sanación"
   efecto:   "El objetivo restaura 1PC por turno hasta quedar totalmente curado (X)."
-  diablura: "- 1 al empuje de los enemigos sobre el objetivo."
   potencia: "+1 turno de duración"
   maestría: "+ 1PC por turno"
-  ardid:    "Cuando el objetivo restaura su último PC obtiene Piel de Piedra (del lanzador).
+  diablura: "- 1 al empuje de los enemigos sobre el objetivo."
+  ardid:    "Cuando el objetivo restaura su último PC obtiene Piel de Piedra (del lanzador)."
 # Agua nivel 1"
 -
   id:       18
@@ -219,9 +231,9 @@
   name:     "niebla"
   tipo:     "Bendición"
   efecto:   "Permite moverse sin ser visto."
-  diablura: "Los enemigos colindantes reciben un ataque de frío"
   potencia: "+1 turno de duración"
   maestría: "+1 objetivo (colindante)"
+  diablura: "Los enemigos colindantes reciben un ataque de frío"
   ardid:    "El objetivo obtiene +2 vs Magia Veneno y Peste."
 -
   id:       19
@@ -230,9 +242,9 @@
   name:     "agua que cura"
   tipo:     "Sanación"
   efecto:   "Restaura 4 PC."
-  diablura: "La sanación se puede repartir entre objetivos"
   potencia: "+1 PC"
   maestría: "+ turno extra de efecto."
+  diablura: "La sanación se puede repartir entre objetivos"
   ardid:    "Durante el efecto el objetivo es inmune a veneno y peste."
 -
   id:       20
@@ -241,9 +253,9 @@
   name:     "dormir"
   tipo:     "Maldición"
   efecto:   "Duerme al objetivo."
-  diablura: "El objetivo queda envenenado. (No despertará por este daño)"
   potencia: "+1 a la tirada del objetivo para despertarse."
   maestría: "+1 objetivo"
+  diablura: "El objetivo queda envenenado. (No despertará por este daño)"
   ardid:    "En caso de despertar el objetivo despertará en locura."
 -
   id:       21
@@ -252,78 +264,114 @@
   name:     "choque de agua"
   tipo:     "Evocación - Toque"
   efecto:   "Un golpe de agua proyecta 2 casillas hacia atrás a un enemigo."
-  diablura: "El objetivo queda desarmado."
-  potencia: "+1 casilla"
+  potencia: "+1 casilla, +1 alcance"
   maestría: "+1 dado de daño sin armas (no defendible)"
-  ardid:    "El objetivo puede ser proyectado diagonalmente."
+  diablura: "Desarma al objetivo. Si muere, recupera choque de agua."
+  ardid:    "+1 fuerza al daño por cada hechizo de agua disponible"
 -
   id:       22
   alcance:  "V"
   duracion: 0
   name:     "trance calmado"
   tipo:     "Sanación"
-  efecto:   "Puedes elegir restaurar 4 PM a un objetivo, que perderá su próximo turno."
-  diablura: "Si no hay enemigos visibles, el objetivo podrá recuperar un hechizo en su lugar."
+  efecto:   "El objetivo amistoso pierde su próximo turno y recupera 4PM"
   potencia: "+1 PM"
   maestría: "-1 daño recibido por el objetivo mientras dure el efecto"
-  ardid:    "Mientras estén relajados el lanzador y el objetivo, éste no morirá."
+  diablura:
+            "El objetivo podrá recuperar un hechizo en lugar de PM,
+             si no hay enemigos visibles."
+  ardid:
+            "Mientras estén relajados el lanzador y el objetivo,
+             éste no morirá."
 -
   id:       23
   alcance:  "∞"
   duracion: 0
   name:     "esperanza"
   tipo:     "Sanación"
-  efecto:   "Todos aliados del lanzador recuperan a su elección un punto de cuerpo ó mente."
-  diablura: "Todos los aliados recuperan ambos puntos."
+  efecto:   "Todos aliados del lanzador recuperan a su elección: 1PC ó 1PM"
   potencia: "+1 punto del mismo tipo escogido."
   maestría: "+1 turno de efecto."
-  ardid:    "Todos los aliados eliminan venenos peste y enfermedades.
-# Fuego nivel 2"
+  diablura: "Se recuperan ambos puntos."
+  ardid:    "Se eliminan además, venenos peste y enfermedades."
+# Fuego nivel 2
 -
   id:       24
+  alcance:  "1-3-5"
+  duracion: 0
   name:     "cono de llamas"
   tipo:     "Conjuro - Cono"
-  efecto:   "Cono de 1-3-5. 2 dados rojos de ataque por fuego defendibles."
-  potencia: "+1 potencia del ataque"
-  diablura: "Las calaveras directas aumentan el área de efecto 1 casilla en esa dirección"
-  ardid:    "El daño es aullante y los efectos de arder se propagan al colisionar."
+  efecto:   "2 dados rojos de ataque."
+  potencia: "+1 potencia"
+  diablura: "Calaveras directas: +1 alcance de esa casilla"
+  ardid:    "Aullante. Además, los efectos de arder se propagan al colisionar."
 -
   id:       25
+  alcance:  "m"
+  duracion: 0
   name:     "rayo ígneo"
   tipo:     "Conjuro - Rayo"
   efecto:   
-            "3 dados de ataque. 2 dados defendibles por cada herida causada.<br/>
-             El rayo avanza a más victimas y se defienden con 1 dado adicional a la victima anterior."
-  potencia: "+1 dado de ataque."
+            "3 dados de ataque. 2 dados defendibles por cada herida causada.
+             El rayo avanza a más victimas y se defienden con 1 dado adicional               a la victima anterior."
+  potencia: "+1 ataque."
+  maestría: "+1 fuerza"
   diablura: "Los objetivos dañados pierden su escudo"
   ardid:    "Las objetivos en llamas tirarán resistencia al miedo: 1/efecto"
 -
   id:       26
+  alcance:  1
+  duracion: "D"
   name:     "aura de calor"
   tipo:     "Bendición - Aura"
-  efecto:   "Las miniaturas a melee arden. Se pierde el aura cuando se sufre una herida y se obtiene una defensa vs fuego de 4+ o +1."
-  potencia: "+1 efecto de llamas a las miniaturas colindantes"
+  efecto:   "Miniaturas a melee al inicio de su turno: arden. +3 vs Calor"
+  potencia: "+1 efecto de llamas a las miniaturas colindantes."
+  maestría: "+1 alcance (melee)"
+  diablura: "El daño es interruptor"
+  ardid:    "Los aliados son inmunes"
 -
   id:       27
+  alcance:  "M"
+  duracion: 4
   name:     "muro de fuego"
   tipo:     "Evocación - Muro"
-  efecto:   "En 5 casillas lineales si se atraviesan hace 3 daños defensibles por fuego. Se puede reducir las casillas aumentando el daño a 5."
-  potencia: "+1 daño extra de fuego"
+  efecto:
+            "En 5 casillas lineales brota un muro de llamas.
+             Si se atraviesan atacará con 3 dados de fuego.
+             1PM: Se pueden reducir N casillas aumentando el ataque en N"
+  potencia: "+1 ataque"
+  maestría: "+1 casilla"
+  diablura: "Ejecuta el ataque también al ejecutar el hechizo"
+  ardid:    "Los enemigos que mueren al arder, depositan una antracita"
 -
   id:       28
+  alcance:  "V"
+  duracion: 0
   name:     "lluvia de fuego"
   tipo:     "Evocación - Sala"
-  efecto:   "En una sala ataque de 1 dado de fuego. Todo objeto es destruido. Los enemigos se defienden con 1 solo dado."
-  potencia: "+1 fuerza del atauqe"
+  efecto:
+            "Ataque de 1 dado de fuego. Todo objeto mundano es destruido.
+             Los enemigos se defienden con 1 solo dado."
+  potencia: "+1 fuerza del ataque."
+  maestría: "+1 dado de fuego"
+  diablura: "Odias durante los ataques"
+  ardid:    "Causas miedo N+ por cada enemigo ardiendo"
 -
   id:       29
+  alcance:  "V"
+  duracion: 0
   name:     "infierno"
   tipo:     "Conjuro - Área"
   efecto:
-            "En 1 casilla ataque igneo de dados =mente del conjurador/2. Las casillas contiguas reciben 2.
-             Elemental sacrificada= +1 casilla de fuego."
-  potencia: "+1 potencia del atauqe
-# Aire nivel 2"
+            "En 1 casilla: ataque ígneo de la minusmitad
+             de la mente del conjurador y 2 dados a las casillas contiguas.
+             +1 casilla de área contigua por cada magia elemental sacrificada."
+  potencia: "+1 potencia del atauqe"
+  maestría: "+1 casilla (debe ser contigua)"
+  diablura: "Si la casilla central muere, puedes ocupar su posición"
+  ardid:    "N piezas: Invoca un elemental de fuego en la casilla de nivel N"
+
+# Aire nivel 2
 -
   id:       30
   name:     "rayo destructor"
@@ -361,8 +409,8 @@
   tipo:     "Conjuro - Área"
   name:     "área de vacío"
   efecto:   "El mago elige 3 casillas contiguas y no lineales. El objetivo dentro de esas casillas sufre un ataque de 1 dado. Si el objetivo sale de las casillas el ataque sera de 3 pero el efecto desaparecera en las casillas anteriores."
-  potencia: "+1 casilla ó +1 ataque en todas las tiradas del efecto a elección del lanzador.
-# Tierra nivel 2"
+  potencia: "+1 casilla ó +1 ataque en todas las tiradas del efecto a elección del lanzador."
+# Tierra nivel 2
 -
   id:       36
   name:     "maldición de piedra"
@@ -405,7 +453,7 @@
             La defensa aumenta en +2."
   duracion: "hasta recibir daño o que no quepa el escudo."
   potencia: "+1 potencia defensiva del escudo."
-# Agua nivel 2"
+# Agua nivel 2
 -
   id:       42
   name:     "contrarrestar"
@@ -461,8 +509,8 @@
   efecto:
             "Se inunda una habitacion ya revelada. Todos los objetos no magicos son destruidos.
             Defendible: sacando un escudo con 2 dados o reducir en 1 sus puntos de cuerpo."
-  potencia: "Se produce un tusnami extra en una sala contigua o en la misma sala.
-# Fuego nivel 3"
+  potencia: "Se produce un tusnami extra en una sala contigua o en la misma sala."
+# Fuego nivel 3
 -
   id:       48
   duracion: 0
@@ -503,8 +551,8 @@
   name:     "valor desmesurado"
   tipo:     "Bendición"
   efecto:   "El objetivo incrementa en 3 dados su ataque y su movimiento. Duración: mientras haya enemigos visibles. Si un aliado adyacente recibe daño el objetivo puede sufrirlos por él siendo el doble de daño."
-  potencia: "+1 ataque +1 movimiento.
-# Aire nivel 3"
+  potencia: "+1 ataque +1 movimiento."
+# Aire nivel 3
 -
   id:       54
   name:     "relámpago rístico"
@@ -551,8 +599,8 @@
   name:     "tormenta desatada"
   tipo:     "Conjuro"
   efecto:   "El lanzador tira 1d6 y lanzará el hechizo Tormenta a tantos objetivos como indique el dado. Luego con 1d6 será la duración del hechizo. Si el número coincide esos objetivos sufrirán un ataque defendible de aire de 1 dado/turno."
-  potencia: "+1 repetición a cualquiera de las dos tiradas
-# Tierra nivel 3"
+  potencia: "+1 repetición a cualquiera de las dos tiradas"
+# Tierra nivel 3
 -
   id:       60
   name:     "piel de adamantita"
@@ -588,8 +636,8 @@
   name:     "maza de piedra rúnica"
   tipo:     "Invocación"
   efecto:   "La maza golpea con magia térrea y disipa efectos beneficiosos. Duplica su daño contra no-muertos y dura hasta el final del reto."
-  potencia: "+1 potencia / fuerza de la maza.
-# Agua nivel 3"
+  potencia: "+1 potencia / fuerza de la maza."
+# Agua nivel 3
 -
   id:       66
   name:     "glifo de agua"
@@ -627,8 +675,8 @@
   name:     "reposición mental"
   tipo:     "Sanación"
   efecto:   "El lanzador recupera sus puntos de mente. Si es sobre un objetivo éste recuperará tanta mente como le ceda su benefactor. El mago podrá recuperar el hechizo si renuncia a un efecto beneficioso sobre él."
-  potencia: "-2 al gasto de mente cuando se usa para ceder mente.
-# Fuego nivel 4"
+  potencia: "-2 al gasto de mente cuando se usa para ceder mente."
+# Fuego nivel 4
 -
   id:       72
   name:     "foco de abrasión vengativa"
@@ -666,8 +714,8 @@
   name:     "sangre ígnea"
   tipo:     "Bendición"
   efecto:   "El objetivo perderá 1 PM si no obtiene un escudo negro con 1 dado. Atacará con 3 dados adicionales y siempre que pierda 1 PC hará un ataque no-defendible de 2 dados por fuego a las casillas contiguas. Al comienzo del turno del Malvado Brujo si no invierte 2 PC el efecto cesará y le provocará 1 daño por fuego si no obtiene un escudo negro."
-  potencia: "+1 a todos los valores citados en la descripción.
-# Aire nivel 4"
+  potencia: "+1 a todos los valores citados en la descripción."
+# Aire nivel 4
 -
   id:       78
   name:     "rayo dracónico"
@@ -703,8 +751,8 @@
   name:     "ojo de la tormenta"
   tipo:     "Conjuro"
   efecto:   "Todas las miniaturas en la misma sala que el lanzador se moverá hasta la pared más cercana y sufrirán un ataque igual a la distancia recorrida.  El mago elige el recorrido. Si el mago gasta 1PM podrá mantener este efecto 1 turno adicional tantas veces como desee. Se considerará que está hechizado."
-  potencia: "+1 potencia del ataque sufrido.
-# Tierra nivel 4"
+  potencia: "+1 potencia del ataque sufrido."
+# Tierra nivel 4
 -
   id:       84
   name:     "fisura"
@@ -740,8 +788,8 @@
   name:     "invocar gárgola"
   tipo:     "Invocación"
   efecto:   "La gárgola lucha junto al invocador. Si el invocador invierte puntos de cuerpo la gárgola obtendrá +1 regeneración por cada 2 puntos invertidos. Si la gárgola es destruida el controlador deberá descartarse de una magia."
-  potencia: "+1 potencia regeneración (si hubiera) y fuerza de la gárgola.
-# Agua nivel 4"
+  potencia: "+1 potencia regeneración (si hubiera) y fuerza de la gárgola."
+# Agua nivel 4
 -
   id:       90
   name:     "cono de frío"
