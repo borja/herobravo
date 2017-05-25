@@ -1,37 +1,47 @@
 -
   id:       0
+  alcance:  0
+  duracion: "Escudo negro"
   name:     "Carámbano"
   tipo:     "Invocación"
   efecto:
-            "Una daga de hielo mágico que puede ser empleada como arma de empuñadura.<br/>
-             Tirará 1 dado de Escarcha cuya potencia es el nivel del hechicero."
-  diablura: "Se puede lanzar como una daga y recuperar con 1 PM."
+            "Una daga de hielo mágico que puede ser empleada como arma
+             de empuñadura. Tirará 1 dado de Escarcha
+             cuya potencia es el nivel del hechicero."
   potencia: "+1 dado de hielo."
   maestría: "+1 fuerza de la daga"
+  diablura: "Se puede lanzar como una daga y recuperar con 1 PM."
   ardid:    "Matar con la daga recupera una magia de agua aleatoria."
 - 
   id:       1
-  alcance:  0
-  duracion: 1
+  alcance:  1
+  duracion: "M"
   name:     "Puente de hielo"
   tipo:     "Superchería"
-  efecto:   "1 carga de hielo: Fabricas un puente de hielo (se destruye por fuego) que deshabilita temporalmente un foso."
-  diablura: "Puedes destruir el puente mientras un enemigo lo cruza"
-  ardid:    "2PM: Añade una carga de hielo"
+  efecto:
+            "1 carga de hielo: Fabricas un puente de hielo
+             (se destruye por fuego) que deshabilita temporalmente un foso."
   potencia: "+1 carga de hielo"
+  maestría: "1PM/maestría: Añade una carga de hielo"
+  diablura: "Puedes destruir el puente mientras un enemigo lo cruza"
+  ardid:    "Las cargas de hielo no empleadas permiten ejecutar: Chuzo de frío"
 - 
   id:       2
   alcance:  2
   duracion: "∞"
   name:     "Espejo mágico"
   tipo:     "superchería"
-  efecto:   
-            "1 carga de hielo: Mientras no haya enemigos visibles, puedes colocar un espejo de hielo en un muro vertical.
-             En cualquier momento puedes gastar una acción, para que al atravesar cualquier puerta,
+  efecto:
+            "1 carga de hielo: Mientras no haya enemigos visibles,
+             puedes colocar un espejo de hielo en un muro vertical.
+             En cualquier momento puedes gastar una acción,
+             para que al atravesar cualquier puerta,
              salgas por el espejo en su lugar. (Cesando el efecto)"
-  diablura: "Podrás ejecutar hechizos desde el espejo, una vez cruzado, cuyo alcance será la puerta."
+  potencia: "+1 1 carga de hielo, para colocar en el mapa.
+             Podrás elegir por cuál cruzar."
+  diablura: "Podrás ejecutar hechizos desde el espejo, una vez cruzado,
+             cuyo alcance será la puerta."
   ardid:    "2PM: El efecto no cesa una vez atravesado el espejo."
-  potencia: "+1 1 carga de hielo, para colocar en el mapa. Podrás elegir por cuál cruzar."
 - 
   id:       3
   alcance:  0
@@ -39,9 +49,10 @@
   name:     "Aura de escarcha"
   tipo:     "aura"
   efecto:   "+1 empujar, +1 potencia a las magias de hielo"
+  potencia: "+1 alcance"
+  maestría: "+1 empujar"
   diablura: "Puedes lanzarlo como bendición"
   ardid:    "Añade el efecto del ardid a las magias de hielo."
-  potencia: "+1 alcance"
 - 
   id:       4
   alcance:  "V"
@@ -50,21 +61,28 @@
   tipo:     "Evocación - Sala"
   efecto:
             "Hiela el suelo de la sala. Todos los ataques serán aullantes,
-             Todas las miniaturas que se desplacen moverán 1d6 adicional (obligatoriamente),
-             pudiendo colisionar. En el caso de la colisión entre miniaturas y paredes, el daño será por frío."
+             Todas las miniaturas que se desplacen moverán 1d6 adicional
+             (obligatoriamente), pudiendo colisionar. En el caso de la colisión
+             entre miniaturas y paredes, el daño será por frío."
   potencia: "+1 sala colindante afectada"
-  diablura: "Cualquier daños por frío en la sala, suma tanta fuerza como tu potencia de frío."
+  maestría: "+1 potencia de colisión de los enemigos"
+  diablura: "Cualquier daño por frío en la sala, suma tanta fuerza
+             como tu potencia de frío."
   ardid:    "Tus aliados pueden renunciar al movimiento adicional"
 - 
   id:       5
   alcance:  "M"
   duracion: 0
   name:     "Chuzo de frío"
-  tipo:     "conjuro"
-  efecto:   "Una esquirla de hielo puro golpea a un objetivo, con 2 dados de hielo."
-  diablura: "Las águilas de los dados, dañan y congelan simultáneamente"
+  tipo:     "Conjuro - Misil"
+  efecto:   "Una esquirla de hielo puro golpea a un objetivo,
+             con 2 dados de hielo."
   potencia: "+1 dado de hielo de ataque"
-  ardid:    "Si este hechizo es recuperado o lanzado por una habilidad, puedes ejecutarlo contra otro enemigo."
+  maestría: "+1 enemigo colindante afectado"
+  diablura: "Las águilas de los dados, dañan además de congelar"
+  ardid:    "1PM: Si este hechizo es recuperado o lanzado por una habilidad,
+             puedes ejecutarlo inmediatamente contra otro enemigo."
+# Nivel 2
 - 
   id:       6
   alcance:  "M"
@@ -101,9 +119,10 @@
   duracion: 1
   name:     "Toque helado"
   tipo:     "Maldición - Toque"
-  efecto:   "El objetivo queda congelado. Si recibe daño contundente, será destruido."
-  diablura: "Al inicio de su turno, la víctima tira un dado de congelación de daño directo"
+  efecto:   "Congela al objetivo. Si recibe daño contundente, será destruido."
   potencia: "+1 duración"
+  maestría: "-1 para resistir este hechizo"
+  diablura: "El objetivo tirará un daño de congelación al inicio de su turno"
   ardid:    "El efecto se propaga a las miniaturas colindantes."
 -
   id:       10
@@ -111,26 +130,29 @@
   duracion: 1
   name:     "Bendición de escarcha"
   tipo:     "Bendición"
-  efecto:   "Insinto: El objetivo puede reununciar a su próximo movimiento para duplicar sus dados de defensa como azules."
-  diablura: "Girar no supondrá una fase movimiento"
+  efecto:   "Insinto: El objetivo puede reununciar a su próximo movimiento
+             para duplicar sus dados de defensa como azules."
   potencia: "+1 potencia a los dados duplicados."
-  ardid:    "El objetivo podrá conservar la bendición si no la declara en fase de instintos."
+  maestría: "+1 duración"
+  diablura: "Girar no supondrá una fase movimiento"
+  ardid:    "El objetivo podrá conservar la bendición
+             aunque no la declare en fase de instintos."
 -
   id:       11
   alcance:  0
   duracion: "X"
   name:     "Calavera de runas"
   tipo:     "Aura"
-  efecto:
-            "1 carga de calavera tallada flota a tu alrededor.
-             -1 carga/turno.<br/>
+  efecto:   "1 carga de calavera tallada flota a tu alrededor:<br/>
+             - Se pierde 1 carga/turno.<br/>
+             - Ganas 1 carga al matar con magia de hielo
              - 1 carga: (Instinto) añade un dado azul de defensa verdadera<br/>
              - 1 carga: Recupera un hechizo consumido de frío<br/>
-             - 1 carga: Añade un dado de frío a tu siguiente ataque/conjuro<br/>
-             (Ganas una carga al matar con magia de hielo)"
-  diablura: "Ganas cargas simplemente con dañar. (No es necesario matar)"
+             - 1 carga: +1 dado de frío a tu siguiente ataque/conjuro<br/>"
   potencia: "+1 carga"
-  ardid:    "1PM (instinto): +1 resistencia mágica por cada calavera a tu alrededor"
+  maestría: "+1 carga al matar con hielo"
+  diablura: "Ganas cargas simplemente con dañar, sin necesidad de matar."
+  ardid:    "1PM (instinto): +1 resistencia mágica por cada carga."
 # nivel 3
 -
   id:       12
@@ -138,12 +160,11 @@
   duracion: "E"
   name:     "Núcleo helado"
   tipo:     "Invocación"
-  efecto:
-            "Invocas un orbe que puedes usar como arma
+  efecto:   "Invocas un orbe que puedes usar como arma
              para lanzar orbes helados o chuzos de frío por 1PM (hechizar)"
-  diablura: "Los aliados pueden donar 1PM para pagar el coste"
   potencia: "+1 potencia a los hechizos del orbe"
   maestría: "+1 maestría a los hechizos del orbe"
+  diablura: "Los aliados pueden donar 1PM para pagar el coste"
   ardid:    "Si el orbe matara con sus hechizos recupera un hechizo de frío"
 -
   id:       13
@@ -154,9 +175,9 @@
   efecto:
             "El objetivo es inmune al sangrado, obtiene +2 vs Fuego
              y los enemigos que le ataquen sin éxito quedan congelados."
-  diablura: "Reinicia la duración al cuando el sello congele a un enemigo"
   potencia: "+2 turnos de duración"
   maestría: "+1 empujar del objetivo"
+  diablura: "Reinicia la duración al cuando el sello congele a un enemigo"
   ardid:    "Puedes lanzarlo como aura, obteniendo además +1 potencia de frío."
 -
   id:       14
@@ -165,9 +186,9 @@
   name:     "Congelar"
   tipo:     "Maldición"
   efecto:   "-X al movimiento del objetivo. (X es la minusmitad de tu mente)"
-  diablura: "Si el objetivo pierde su movimiento completo, perderá su turno."
   potencia: "+1 duración"
   maestría: "+1 Fuerza de los golpes contra el objetivo"
+  diablura: "Si el objetivo pierde su movimiento completo, perderá su turno."
   ardid:    "Si el objetivo muere, además es destruido"
 -
   id:       15
@@ -187,7 +208,7 @@
   alcance:  "V"
   duracion: 0
   name:     "Dentellada glacial"
-  tipo:     "Conjuro"
+  tipo:     "Evocación - Área"
   efecto:
             "Unas enormes cuchillas de hielo afilado brotan del suelo,
              causando 6 dados de ataque y 2 dados de frío a la víctima."
