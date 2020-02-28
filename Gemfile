@@ -12,7 +12,7 @@ group :test do
   gem 'codecov', '~> 0.1.10', require: false
   gem 'coveralls', '~> 0.8.21', require: false
   gem 'rack-test'
-  gem 'rake', '~> 12.0.0'
+  gem 'rake', '~> 12.3.3'
   gem 'rspec', '~> 3.6.0'
   gem 'scrutinizer-ocular', require: false
   gem 'yaml-lint', '~> 0.0.9'
