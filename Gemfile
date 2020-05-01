@@ -14,6 +14,6 @@ group :test do
   gem 'rack-test'
   gem 'rake', '~> 12.0.0'
   gem 'rspec', '~> 3.6.0'
-  gem 'scrutinizer-ocular', require: false
+  gem 'scrutinizer-ocular', '>= 1.0.1', require: false
   gem 'yaml-lint', '~> 0.0.9'
 end
