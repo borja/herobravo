@@ -1,13 +1,13 @@
 GIT
-  remote: https://github.com/sinatra/sinatra.git
-  revision: a58834812b455101111ef332c7510bc9083c30d0
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 91477e6dad7c9d8eb1c358e47b9d83b73d626f84
   specs:
-    rack-protection (2.0.0)
+    rack-protection (2.1.0)
       rack
-    sinatra (2.0.0)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
 
 GEM
@@ -27,10 +27,11 @@ GEM
     docile (1.1.5)
     json (2.1.0)
     minitest (5.10.2)
-    mustermann (1.0.0)
-    rack (2.0.3)
-    rack-test (0.6.3)
-      rack (>= 1.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    rack (2.2.2)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rake (12.0.0)
     require_all (1.4.0)
     rspec (3.6.0)
@@ -46,6 +47,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
+    ruby2_keywords (0.0.2)
     scrutinizer-ocular (1.0.1)
       simplecov (>= 0.7)
     simplecov (0.14.1)
@@ -56,7 +58,7 @@ GEM
     term-ansicolor (1.6.0)
       tins (~> 1.0)
     thor (0.19.4)
-    tilt (2.0.7)
+    tilt (2.0.10)
     tins (1.14.0)
     url (0.3.2)
     yaml-lint (0.0.9)
@@ -68,7 +70,7 @@ DEPENDENCIES
   codecov (~> 0.1.10)
   coveralls (~> 0.8.21)
   minitest (~> 5.10.1)
-  rack-test
+  rack-test (>= 0.6.3)
   rake (~> 12.0.0)
   require_all (~> 1.4.0)
   rspec (~> 3.6.0)
@@ -81,4 +83,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.0
+   1.17.3
